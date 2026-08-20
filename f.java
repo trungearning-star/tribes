@@ -1,6947 +1,6630 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.microedition.lcdui.Canvas
+ *  javax.microedition.lcdui.Displayable
+ *  javax.microedition.lcdui.Graphics
+ *  javax.microedition.lcdui.Image
+ *  javax.microedition.rms.RecordStore
+ */
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.FilterOutputStream;
 import java.io.OutputStream;
 import java.util.Random;
 import javax.microedition.lcdui.Canvas;
+import javax.microedition.lcdui.Displayable;
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;
 import javax.microedition.rms.RecordStore;
 
-public final class f extends Canvas implements Runnable {
-   static int a = -6;
-   static int b = -7;
-   boolean a = true;
-   tribes a;
-   b a;
-   c a;
-   boolean b;
-   int c;
-   int d;
-   int e;
-   int f;
-   int g;
-   int h;
-   int i;
-   int j = 120;
-   int k = 1;
-   boolean c;
-   static byte a = 0;
-   String a;
-   boolean d;
-   byte b;
-   byte c;
-   byte d;
-   int l = 1;
-   final String[] a = new String[]{"en", "fr", "it", "de", "es"};
-   byte[] a;
-   short[] a;
-   short[] b;
-   short[] c;
-   byte e;
-   static byte f;
-   static byte g;
-   byte[] b;
-   a a;
-   byte h;
-   int m;
-   boolean e;
-   boolean f;
-   boolean g;
-   boolean h;
-   boolean i;
-   boolean j;
-   boolean k;
-   byte i;
-   static boolean l;
-   static boolean m;
-   byte j;
-   int n;
-   int o;
-   int p;
-   boolean n;
-   boolean o;
-   boolean p;
-   byte k;
-   byte l;
-   boolean q;
-   int q;
-   int r;
-   int s;
-   int t;
-   int u;
-   boolean r;
-   int v = -1;
-   int w = -1;
-   int x;
-   int y;
-   int z;
-   byte m;
-   byte n;
-   byte o;
-   boolean s;
-   byte p;
-   byte q;
-   byte r;
-   byte s = -1;
-   byte t = -1;
-   byte u;
-   byte v = 2;
-   short a;
-   short b;
-   int A;
-   int[][] a;
-   byte w;
-   byte x;
-   byte y;
-   byte z;
-   byte A;
-   byte B;
-   byte C;
-   byte D;
-   int B;
-   int C;
-   int D;
-   int E;
-   boolean t = false;
-   boolean u = false;
-   byte E;
-   int F;
-   int G;
-   int H;
-   byte F;
-   byte G;
-   byte[][] a;
-   boolean v = false;
-   boolean w = false;
-   int I;
-   byte H;
-   int J;
-   int K;
-   int L;
-   int M;
-   byte I;
-   byte J;
-   byte K;
-   byte L;
-   int N;
-   int O;
-   int P;
-   int Q;
-   int R;
-   int S;
-   int T;
-   int[] a;
-   int[] b;
-   int[] c;
-   int[] d;
-   byte[] c;
-   byte[] d;
-   static final Image[] a = new Image[4];
-   static final Graphics[] a = new Graphics[4];
-   static byte M = 0;
-   byte N = 1;
-   short c = 96;
-   short d = 96;
-   short e = 96;
-   short f = 96;
-   byte O;
-   byte P;
-   byte[][] b;
-   byte[][] c;
-   int[][][] a;
-   boolean[][] a;
-   short[][] a;
-   byte[] e;
-   byte[][] d;
-   boolean x;
-   int[] e;
-   byte[] f;
-   byte[] g = new byte[11];
-   byte[] h = new byte[11];
-   byte[] i = new byte[11];
-   byte[][] e;
-   byte[][][] a;
-   byte[][] f;
-   byte[][][] b;
-   byte[][][] c;
-   int U = 5;
-   int V;
-   byte[][] g;
-   byte[][] h;
-   byte[][] i;
-   Image[][] a;
-   short[][] b;
-   byte[][] j;
-   int W;
-   int X;
-   int[][] b;
-   int Y;
-   byte Q;
-   byte R;
-   byte S;
-   int Z;
-   int aa;
-   int ab;
-   byte T;
-   byte U;
-   byte V = 4;
-   boolean y;
-   byte W;
-   int ac = 1000;
-   boolean z;
-   boolean A;
-   boolean B;
-   boolean C;
-   int ad;
-   int ae;
-   int af;
-   int ag;
-   int ah;
-   int ai;
-   int aj;
-   int ak;
-   boolean D;
-   byte X;
-   int al = -1;
-   int am;
-   int an;
-   int ao;
-   int ap;
-   int aq;
-   int ar;
-   byte Y;
-   int as;
-   int at;
-   int au;
-   int av;
-   int aw;
-   int ax;
-   int ay;
-   int az;
-   byte Z;
-   byte aa;
-   byte ab;
-   byte ac;
-   int aA;
-   boolean E;
-   byte ad;
-   boolean[] a = new boolean[20];
-   boolean[] b = new boolean[20];
-   boolean[] c = new boolean[9];
-   boolean[] d = new boolean[9];
-   boolean F;
-   byte[] j = new byte[8];
-   byte[] k;
-   short[] d;
-   int aB;
-   int aC;
-   int aD;
-   int aE;
-   int aF;
-   int aG;
-   int aH;
-   int aI;
-   byte ae;
-   boolean G;
-   static byte af;
-   int[] f = new int[]{0, 5251341, 16704820, 16033043, 12010496};
-   byte[] l = new byte[]{0, 1, 1, 1, 1};
-   byte[] m = new byte[]{0, 1, 1, 2, 3};
-   byte[] n = new byte[]{100, 98, 0, 0, 0};
-   byte[] o = new byte[]{5, 3, 1, 1, 1};
-   static byte ag = 40;
-   static byte ah = 47;
-   int aJ;
-   int aK;
-   int aL;
-   int aM;
-   boolean H;
-   boolean I;
-   int aN;
-   int aO;
-   int aP;
-   byte ai;
-   int aQ;
-   byte aj;
-   byte ak;
-   byte al;
-   byte am;
-   byte an;
-   int aR;
-   byte[] p = new byte[40];
-   int aS;
-   byte ao;
-   boolean J;
-   boolean K;
-   byte ap;
-   boolean L;
-   boolean M;
-   boolean N;
-   boolean O;
-   byte aq = 2;
-   byte[] q = new byte[2];
-   boolean P;
-   boolean Q;
-   boolean R;
-   byte ar;
-   byte as = 3;
-   static int aT;
-   static int aU;
-   int aV;
-   int aW;
-   int aX;
-   int aY;
-   byte at;
-   byte au;
-   byte av;
-   boolean S;
-   byte[] r;
-   byte[] s;
-   boolean T;
-   boolean U;
-   boolean V;
-   byte aw = 2;
-   byte[] t;
-   int aZ;
-   int ba;
-   byte ax;
-   byte[] u = new byte[10];
-   byte[][] k = new byte[3][10];
-   int[] g = new int[10];
-   byte ay;
-   int[] h;
-   byte[] v;
-   int bb;
-   int bc;
-   int bd;
-   int be;
-   String b = "t";
-   boolean W;
-   boolean X;
-   Random a = new Random(1L);
-   boolean Y = false;
-   boolean Z = false;
-   boolean aa = false;
-   boolean ab;
-   boolean ac;
-   boolean ad;
-   static short[] e;
-   static short[] f;
-   static byte[] w;
-   int[] i;
-   int[] j;
-   boolean ae;
-   boolean af;
-   boolean ag;
-
-   public f(tribes var1) {
-      ((Canvas)this).setFullScreenMode(true);
-      this.a = var1;
-   }
-
-   public final void a() {
-      (new Thread(this)).start();
-   }
-
-   public final void b() {
-      this.b = false;
-      this.z = false;
-      this.aR();
-      this.a.notifyDestroyed();
-   }
-
-   private void f() {
-      this.a = new b();
-      System.gc();
-      Thread.yield();
-      new e(this);
-      af = 98;
-      this.a((int)0);
-      this.a.a.setCurrent(this);
-      this.y = true;
-   }
-
-   private void g() {
-      System.gc();
-      Thread.yield();
-      this.g = new byte[this.P + 3][this.O];
-      this.h = new byte[13][101];
-      this.i = new byte[13][101];
-      this.a = new int[2][3][96];
-      this.a = new boolean[this.P + 3][this.O];
-      System.gc();
-      Thread.yield();
-      this.a = new byte[5][50];
-      this.a = new short[2][26];
-      this.d = new byte[7][10];
-      this.e = new int[]{14680064, 14999808, 55808, 55808};
-      this.f = new byte[12];
-      this.e = new byte[3][30];
-      this.a = new byte[2][10][12];
-      this.f = new byte[4][30];
-      this.b = new byte[2][5][30];
-      this.c = new byte[2][5][5];
-      System.gc();
-      Thread.yield();
-      this.b = new int[][]{{7250486, 11637795, 2652080, 2454300, 3881776, 4605510, 16766976, 14352640, 10966528, 16750080, 7406848, -1}, {5276696, 8810262, 678290, 480512, 1907986, 2631720, 16766976, -1, -1, 16750080, 5439488, -1}};
-      this.k = new byte[107];
-      this.d = new short[107];
-      this.r = new byte[50];
-      this.s = new byte[100];
-      System.gc();
-      Thread.yield();
-      this.a.a = new byte[2][101][65];
-      this.a.b = new byte[2][22][5];
-      this.a.c = new byte[5][6][6];
-      this.a.a = new byte[5][50];
-      this.a.c = new byte[2];
-      this.a.d = new byte[6];
-      this.a.e = new byte[3];
-      this.a.f = new byte[3];
-      this.a.d = new byte[3][2][96];
-      this.a.g = new byte[3];
-      this.a.e = new byte[2][3][10];
-      this.a.h = new byte[10];
-      this.a.c = new byte[6][10];
-      this.a.a = new boolean[3];
-      this.a.d = new byte[2][50];
-      this.a.d = new short[6];
-      this.a.i = new byte[8];
-      this.a.e = new byte[4][8];
-      this.a.f = new byte[2][10];
-      this.a.g = new byte[3][20];
-      this.a.j = new byte[50];
-      this.a.k = new byte[4];
-      this.i = new int[6];
-      this.j = new int[]{98, 118, 121, 110, 114};
-      this.t = new byte[3];
-   }
-
-   public final void run() {
-      try {
-         this.f();
-         this.g();
-         this.a.a(this);
-         if (!this.d((int)0)) {
-            this.d((int)1);
-            this.d((int)2);
-         }
-
-         this.Q = 14;
-         this.v = 0;
-         this.H = true;
-         this.R = this.U;
-         this.v = 59;
-         this.c = -1;
-         this.k[55] = -1;
-         this.a[0][3] = -1000;
-         this.aa = true;
-         this.b = true;
-         this.i();
-
-         while(true) {
-            if (!this.b) {
-               return;
-            }
-
-            long var1 = a();
-            this.aS();
-            this.h();
-            if (!this.b) {
-               break;
-            }
-
-            this.m();
-            this.l();
-
-            while(this.z && !this.Z) {
-               Thread.yield();
-            }
-
-            long var5 = a() - var1;
-            if ((var5 = (long)this.i - var5) < 0L || var5 > (long)this.i) {
-               var5 = 0L;
-            }
-
-            tribes.a((int)var5);
-         }
-      } catch (Exception var8) {
-      }
-
-   }
-
-   private void h() {
-      this.i = this.c ? 50 : this.j;
-      this.k = this.j / this.i;
-      ++this.e;
-      if (this.e >= 6) {
-         this.E = false;
-         this.q = false;
-      }
-
-      if (this.e >= 8) {
-         this.e = 0;
-      }
-
-      Thread.yield();
-      if (this.v == 0) {
-         this.ak();
-         this.o = false;
-      } else if (this.v == 1) {
-         if (this.i == 0) {
-            this.i = -1;
-            if (this.w != 3 && !this.a[6] && !this.a[8] && !this.a[7]) {
-               if (this.a[0]) {
-                  this.m = 0;
-               } else if (this.a[4]) {
-                  this.m = 1;
-                  if (this.a[this.a[296] + this.a.g] == 3) {
-                     this.a.J = (byte)(120 - this.a[this.a[298] + this.a.g]);
-                  }
-               }
-
-               this.v = 0;
-               this.l(this.a[this.a[305] + this.a[this.a[306] + this.m] + 0]);
-               this.Q = 25;
-               this.R = 28;
-               this.Z = 0;
-               this.H = true;
-               this.z = this.y;
-               this.B = this.A;
-               this.J = this.I;
-               this.L = this.K;
-            }
-         } else if (this.w != 2 && this.w != 4) {
-            this.V();
-            this.o = false;
-            this.k();
-         } else {
-            this.ae();
-            this.o = false;
-         }
-
-         if (this.v == 1) {
-            ++this.d;
-            if (this.d > 5) {
-               this.d = 0;
-               this.a((byte)100, (byte)0, (byte)0, (byte)0);
-            }
-
-            if (this.E <= 4) {
-               ++this.E;
-            } else if (this.E >= 0) {
-               this.n = 0;
-            }
-
-            ++this.j;
-            this.j();
-            if (this.P && this.w != 4 && this.w != 3) {
-               this.Z();
-            }
-
-            this.P = false;
-         }
-      }
-
-      ++this.g;
-      ++this.f;
-      if (this.f >= 120) {
-         this.f = 0;
-      }
-
-      if (this.o < 3) {
-         ++this.o;
-         this.n = true;
-      } else if (this.o == 3) {
-         ++this.o;
-         this.i();
-         this.n = false;
-      }
-
-      if (this.k) {
-         this.k = false;
-         this.s = 0;
-         this.l(-1);
-         this.P = false;
-         this.a(true, true, false, false);
-         this.F = false;
-         this.w = 0;
-         this.k = 0;
-         this.q = 0;
-         this.B = this.C = this.D = this.E = 0;
-         this.F = -1;
-         this.aI();
-         this.u = false;
-         this.t = false;
-         this.i();
-      }
-
-      if (this.p) {
-         this.p = false;
-         this.i();
-      }
-
-      ++this.p;
-   }
-
-   private void i() {
-      m = false;
-      l = false;
-      this.e = this.f = this.g = this.h = false;
-      this.i = this.v = false;
-      this.E = 4;
-      this.w = false;
-      this.i = -1;
-      this.t = false;
-      this.n = 0;
-   }
-
-   private void j() {
-      try {
-         this.a.g();
-         this.a.e();
-         this.a.h();
-         this.a.i();
-      } catch (Exception var3) {
-      }
-
-      ++this.c;
-      ++this.h;
-      if (this.h >= 100) {
-         int var1;
-         if ((var1 = this.h - 100) >= this.d - 1) {
-            this.h = 0;
-         }
-
-         for(int var2 = 0; var2 < this.c; ++var2) {
-            if (this.c[var1][var2] <= -114 && this.c[var1][var2] > -117) {
-               this.c[var1][var2] = 0;
-               this.c(var2, var1, 1, 1);
-            }
-         }
-      }
-
-      if (this.u > 0 && this.v == 1) {
-         ++this.u;
-         if (this.u == 41 || this.u == 90) {
-            this.v = 0;
-            this.Q = 24;
-            this.H = true;
-            this.v = 56 + 41 / this.u;
-            this.o = (byte)(11 - 41 / this.u);
-            this.o = 0;
-         }
-      }
-
-   }
-
-   private void k() {
-      int var1 = this.I + this.y;
-      int var2 = this.K + this.A;
-
-      try {
-         byte var3 = this.c[var2][var1];
-         if (this.u || var3 <= -1 && var3 >= -30) {
-            this.W = 0;
-            return;
-         }
-
-         boolean var4 = false;
-         if ((var3 < 51 || this.w != 1) && (var3 < 1 || var3 > 50)) {
-            for(int var9 = -1; var9 <= 1; ++var9) {
-               for(int var10 = -1; var10 <= 1; ++var10) {
-                  if (var1 + var10 >= 0 && var2 + var9 >= 0 && var1 + var10 < this.c && var2 + var9 < this.d && ((var3 = this.c[var2 + var9][var1 + var10]) >= 51 && this.w == 1 || var3 >= 1 && var3 <= 50)) {
-                     int var7 = this.e[202 + var3];
-                     int var8 = this.e[303 + var3];
-                     var8 = var9 < 0 ? 16 - var8 : (var9 == 0 ? 0 : 16 + var8);
-                     int var13;
-                     var7 = (var13 = var10 < 0 ? 22 - var7 : (var10 == 0 ? 0 : 22 + var7)) * var13;
-                     int var16;
-                     int var6 = ((var16 = var8 * var8) + var7) / 2;
-                     if (this.W == var3 && (var6 < 13 || var3 <= 50)) {
-                        this.ac = var6;
-                        var4 = true;
-                     }
-
-                     if (var6 < this.ac && (var6 < 13 || var3 <= 50)) {
-                        this.ac = var6;
-                        this.W = var3;
-                        var4 = true;
-                     }
-                  }
-               }
-            }
-
-            if (!var4) {
-               this.W = 0;
-               this.ac = 1000;
-            }
-         } else {
-            this.W = var3;
-         }
-
-         if (this.W < 50 && this.w == 1) {
-            this.W = 0;
-         }
-      } catch (Exception var11) {
-      }
-
-   }
-
-   private void l() {
-      this.z = true;
-      ((Canvas)this).repaint();
-      Thread.yield();
-   }
-
-   protected final void paint(Graphics var1) {
-      if (this.v == 1) {
-         a(var1, a[this.c[1]], 0, 0, 320, this.A, this.a - 0, this.b - 0 + this.ba - this.ax, 0);
-
-         for(byte var2 = 0; var2 < 20; ++var2) {
-            if (this.a[var2]) {
-               a(var1, a[this.c[this.a[this.a[195] + 0 + var2]]], 0, this.c[this.a[this.a[195] + 0 + var2]], this.a[this.a[this.a[195] + 0 + var2]] + 0, this.b[this.a[this.a[195] + 0 + var2]], this.a - 0, this.b + this.d[this.a[this.a[195] + 0 + var2]] + 0, 0);
-            }
-         }
-      } else {
-         a(var1, a[M], 0, 0, 320, 240, this.a - 0, this.b - 0 + 0, 0);
-         if (this.s && !this.J && this.aN < 0) {
-            var1.setColor(0);
-            b(var1, this.a - 0, this.b - 0 + 0, 320, 16 + -this.aN);
-            b(var1, this.a - 0, this.b - 0 + 16 + 240 - -this.aN + 0, 320, -this.aN);
-         }
-      }
-
-      this.z = false;
-   }
-
-   private void m() {
-      if (this.v != 1) {
-         if (this.v == 0) {
-            this.F();
-         }
-
-      } else {
-         this.N = this.c[1];
-         this.n();
-         this.w();
-         this.u();
-         this.c(this.y * 22, this.A * 16);
-         this.S = false;
-
-         for(byte var1 = 0; var1 < 20; ++var1) {
-            if (this.a[var1]) {
-               this.a((byte)var1, (int)0, (int)(this.c[this.a[this.a[195] + 0 + var1]] - 0));
-               this.N = this.c[1];
-               if (var1 == 8 || var1 == 7) {
-                  int var2 = this.b[this.a[this.a[195] + 0 + var1]] - 55 + this.d[this.a[this.a[195] + 0 + var1]] + 11;
-                  this.a((int)560, (int)(this.a[this.a[this.a[195] + 0 + var1]] - 68), (int)var2);
-               }
-
-               if (this.a[this.a[195] + 20 + var1] == 1) {
-                  this.a((int)526, (int)0, (int)this.ax);
-               } else if (this.a[this.a[195] + 20 + var1] == 2) {
-                  this.a((int)532, (int)0, (int)(240 - this.ba - this.aZ + this.ax));
-               }
-            }
-         }
-
-      }
-   }
-
-   private void n() {
-      try {
-         if (this.ae != 0 && this.ad != 0) {
-            this.A = true;
-         }
-
-         this.ah = 0;
-         this.ai = 0;
-         if (this.A) {
-            this.A = false;
-            this.C = false;
-            this.aj = this.O - 1;
-            this.ak = this.P - 1;
-            this.ad = this.ae = 0;
-            this.o();
-         } else {
-            this.ag = 0;
-            this.ak = -1;
-            if (this.ad != 0) {
-               this.ah = -this.ad * 22;
-            } else if (this.ae != 0) {
-               this.ai = -this.ae * 16;
-            }
-
-            a(a[this.c[1]], a[this.c[0]], 0, 0, 350, this.A, this.ah, this.ai, 0);
-            if (this.ad != 0) {
-               this.ah = ((this.ad - 2) / 2 + 1) * (this.O - 1);
-               this.aj = this.ah;
-               this.ai = 0;
-               this.ak = this.P - 1;
-               this.ad = 0;
-               this.o();
-            }
-
-            if (this.ae != 0) {
-               this.ai = ((this.ae - 2) / 2 + 1) * (this.P - 1);
-               this.ak = this.ai;
-               this.ah = 0;
-               this.aj = this.O - 1;
-               this.ae = 0;
-               this.o();
-            }
-
-            if (this.C) {
-               this.C = false;
-               this.ah = 0;
-               this.aj = this.O - 1;
-               this.ai = this.P - 1 - 3;
-               this.ak = this.P - 1;
-               this.o();
-            }
-
-            if (this.B) {
-               this.B = false;
-               this.ah = 0;
-               this.aj = this.O - 1;
-               this.ai = 0;
-               this.ak = this.P - 1;
-               this.D = true;
-               this.o();
-               this.D = false;
-            }
-         }
-
-         if (this.ak != -1 && !this.s) {
-            a(a[this.c[0]], a[this.c[1]], 0, 0, 350, this.A, 0, 0, 0);
-         }
-
-      } catch (Exception var2) {
-      }
-   }
-
-   private void o() {
-      for(this.ag = this.ai; this.ag <= this.ak; ++this.ag) {
-         for(this.af = this.ah; this.af <= this.aj; ++this.af) {
-            if (this.D) {
-               if (!this.a[this.ag][this.af]) {
-                  continue;
-               }
-
-               this.a[this.ag][this.af] = false;
-            }
-
-            if (!this.s || this.b(this.af + this.I, this.ag + this.K)) {
-               int var1;
-               if ((var1 = this.b[this.ag + this.K][this.af + this.I] & 255) < 175) {
-                  this.a(var1, this.af * 22, this.ag * 16);
-               } else {
-                  this.a((int)var1, (byte)0);
-               }
-
-               byte var2;
-               if ((var2 = this.c[this.ag + this.K][this.af + this.I]) < 0 && var2 >= -123) {
-                  this.a((int)var2, (byte)0);
-               }
-            }
-         }
-      }
-
-   }
-
-   private void a(int var1, byte var2) {
-      int var3 = -var1;
-      int var4 = 0;
-      byte var5 = 0;
-      byte var7 = 0;
-      int var8 = 0;
-      int var9 = 0;
-      int var10 = this.af * 22;
-      int var11 = this.ag * 16;
-      if (b(var1) != 2) {
-         var4 = this.e[8749 + var3];
-         var5 = this.a[this.a[138] + 104 + var4];
-         var7 = this.e[9115 + var3];
-         var8 = this.af + this.I - this.e[8383 + var3];
-         var9 = this.ag + this.K - this.e[8444 + var3];
-         var10 -= var8 * 22;
-         var11 -= var9 * 16;
-         this.N = this.b[0][var4 + 1];
-         this.O = this.j[0][var4 + 1];
-         if (var2 == 0) {
-            int var13 = 0;
-            int var12 = var5 * var9 + var8;
-
-            while(true) {
-               if ((this.j[3][this.N] & 255) >> 6 == 0) {
-                  if (var13 == var12) {
-                     break;
-                  }
-
-                  ++var13;
-               }
-
-               if ((this.j[3][this.N] & 7) != 0) {
-                  break;
-               }
-
-               ++this.N;
-               --this.O;
-            }
-         } else {
-            for(byte var15 = this.e[8993 + var3]; var15 > 0; var15 = this.e[4545 + var15]) {
-               this.g[this.e[4646 + var15]] = (byte)var15;
-            }
-         }
-      } else if (c(var1)) {
-         var3 -= 61;
-         var4 = this.e[9833 + var3];
-         var7 = this.e[9933 + var3];
-         this.N = this.b[0][var4 + 27 - 1];
-         this.O = this.j[0][var4 + 27 - 1];
-      } else if (c(var1) != 2) {
-         if (c(var1) != 3) {
-            this.g[0] = this.c[this.K + this.ag][this.I + this.af];
-            if (c((int)this.g[0]) != 2) {
-               if (c((int)this.g[0]) == 1) {
-                  var2 = -1;
-               }
-
-               var4 = 20 - (this.g[0] + 111);
-               var7 = 1;
-            } else if (c((int)this.e[4545 + this.g[0]]) != 2) {
-               var4 = 20 - (this.e[4545 + this.g[0]] + 111);
-               var7 = 2;
-            }
-
-            while(var4 > 22) {
-               var4 -= 3;
-            }
-         } else {
-            var4 = 23;
-            var7 = 0;
-         }
-
-         this.N = this.b[0][var4 + 1];
-         this.O = this.j[0][var4 + 1];
-         var3 = 0;
-      } else if (var1 >= 1000) {
-         var10 = this.S;
-         var11 = this.T;
-         var4 = var1 - 1000;
-         this.N = this.b[0][var4];
-         this.O = this.j[0][var4];
-         if (this.v == 0) {
-            this.g[0] = 1;
-            this.g[1] = 2;
-            this.g[2] = 3;
-            this.e[2930] = 39;
-            this.e[2931] = 42;
-            this.e[2932] = 42;
-            this.e[607] = 1;
-            this.e[608] = 0;
-            this.e[609] = 6;
-            this.e[1415] = 25;
-            this.e[1416] = 45;
-            this.e[1417] = 70;
-            this.e[3031] = (byte)(this.f % 8);
-            this.e[3032] = (byte)(this.f % 8);
-            this.e[3033] = (byte)(this.f % 10);
-            this.e[5152] = 8;
-            this.e[6566] = 9;
-            this.e[5153] = 5;
-            this.e[6567] = 2;
-            this.e[5154] = 10;
-            this.e[6568] = 0;
-            this.e[1314] = this.e[1315] = this.e[1316] = 0;
-            this.e[6465] = this.e[6466] = this.e[6467] = 0;
-         }
-
-         var7 = 0;
-         var3 = 0;
-      } else if (var1 >= 175) {
-         var4 = var1 - 180 + 34;
-         this.N = this.b[0][var4];
-         this.O = this.j[0][var4];
-         var11 += this.aO;
-         var7 = 0;
-         var3 = 0;
-      }
-
-      if (var2 == 0) {
-         do {
-            this.P = (this.j[3][this.N] & 255) >> 6;
-            if (this.P <= var7) {
-               this.a(this.b[1][this.N] & 4095, (this.af - var8) * 22 + this.j[1][this.N], (this.ag - var9) * 16 + this.j[2][this.N]);
-            }
-
-            ++this.N;
-         } while((this.j[3][this.N] & 7) == 0 && (this.j[3][this.N] & 255) >> 6 != 0);
-      } else {
-         this.a(var3, var7, (byte)var4, var10, var11, var2);
-      }
-
-      for(byte var16 = 0; var16 < 8; ++var16) {
-         this.g[var16] = this.h[var16] = this.i[var16] = 0;
-      }
-
-   }
-
-   private void a(int var1, byte var2, byte var3, int var4, int var5, byte var6) {
-      int var9 = 0;
-      int var10 = this.f;
-      byte var11 = 0;
-      this.U = 0;
-
-      try {
-         for(int var15 = 0; var15 < this.O; ++var15) {
-            int var8 = this.j[3][this.N] & 7;
-            var11 = (byte)((this.j[3][this.N] & 63) >> 3);
-            this.P = (this.j[3][this.N] & 255) >> 6;
-            this.X = this.g[var11];
-            boolean var12 = false;
-            int var14 = (this.b[1][this.N] & '쀀') >> 14 << 7;
-            if (var8 == 0 && var6 == 2 && this.P == var2) {
-               this.a(this.b[1][this.N] & 4095, var4 + this.j[1][this.N] + var14, var5 + this.j[2][this.N]);
-            } else if (var8 == 1 && this.P <= var2) {
-               if (var3 == 6 && this.U < 5) {
-                  this.a[0][this.a[this.a[142]]] = (short)((byte)(this.a[0][5] + this.a[0][8] + this.a[0][5] + this.a[0][9] + this.a[0][10]));
-                  if (this.a[0][this.a[this.a[142] + this.U]] > 0 || var1 >= 31) {
-                     this.V = this.a[0][this.a[this.a[142] + this.U]] / 7 / (this.U == 0 ? 1 : 10);
-                     if (this.V >= 5 || var1 >= 31) {
-                        this.V = 4;
-                     }
-
-                     this.a((this.b[1][this.N] & 4095) + this.V, var4 + this.j[1][this.N] + var14, var5 + this.j[2][this.N]);
-                  }
-
-                  ++this.U;
-               } else if (var3 == 4 && this.U < 1) {
-                  if (var1 >= 31) {
-                     this.a((this.b[1][this.N] & 4095) + 2, var4 + this.j[1][this.N] + var14, var5 + this.j[2][this.N]);
-                  } else if (this.a[0][0] >= 5) {
-                     this.V = this.a[0][0] > 35 ? 2 : (this.a[0][0] - 5) / 15;
-                     this.a((this.b[1][this.N] & 4095) + this.V, var4 + this.j[1][this.N] + var14, var5 + this.j[2][this.N]);
-                  }
-
-                  ++this.U;
-               } else {
-                  this.a(this.b[1][this.N] & 4095, var4 + this.j[1][this.N] + var14, var5 + this.j[2][this.N]);
-               }
-            } else if ((var8 == 2 || var8 == 4 || var8 == 6) && var6 != 2) {
-               if (this.P == 0 || this.P <= var2) {
-                  int var7 = this.N;
-                  var9 = this.b[1][this.N] & 4095;
-                  if (var8 == 6) {
-                     for(var10 += this.K + this.ag + this.N * 2; var10 >= 120; var10 -= 120) {
-                     }
-
-                     if (var11 == 1 || var11 == 2 && (this.e[8627 + var1] == 1 || this.e[8627 + var1] == 2)) {
-                        if (var1 >= 31) {
-                           ++var9;
+public final class f
+extends Canvas
+implements Runnable {
+    static int var_int_a;
+    static int var_int_b;
+    boolean var_boolean_a = true;
+    tribes var_tribes_a;
+    b var_b_a;
+    c var_c_a;
+    boolean var_boolean_b;
+    int var_int_c;
+    int var_int_d;
+    int var_int_e;
+    int var_int_f;
+    int var_int_g;
+    int var_int_h;
+    int var_int_i;
+    int var_int_j = 120;
+    int var_int_k = 1;
+    boolean var_boolean_c;
+    static byte var_byte_a;
+    String var_java_lang_String_a;
+    boolean var_boolean_d;
+    byte var_byte_b;
+    byte var_byte_c;
+    byte var_byte_d;
+    int var_int_l = 1;
+    final String[] var_java_lang_String_arr_a = new String[]{"en", "fr", "it", "de", "es"};
+    byte[] var_byte_arr_a;
+    short[] var_short_arr_a;
+    short[] var_short_arr_b;
+    short[] var_short_arr_c;
+    byte var_byte_e;
+    static byte var_byte_f;
+    static byte var_byte_g;
+    byte[] var_byte_arr_b;
+    a var_a_a;
+    byte var_byte_h;
+    int var_int_m;
+    boolean var_boolean_e;
+    boolean var_boolean_f;
+    boolean var_boolean_g;
+    boolean var_boolean_h;
+    boolean var_boolean_i;
+    boolean var_boolean_j;
+    boolean var_boolean_k;
+    byte var_byte_i;
+    static boolean var_boolean_l;
+    static boolean var_boolean_m;
+    byte var_byte_j;
+    int var_int_n;
+    int var_int_o;
+    int var_int_p;
+    boolean var_boolean_n;
+    boolean var_boolean_o;
+    boolean var_boolean_p;
+    byte var_byte_k;
+    byte var_byte_l;
+    boolean var_boolean_q;
+    int var_int_q;
+    int var_int_r;
+    int var_int_s;
+    int var_int_t;
+    int var_int_u;
+    boolean var_boolean_r;
+    int var_int_v = -1;
+    int var_int_w = -1;
+    int var_int_x;
+    int var_int_y;
+    int var_int_z;
+    byte var_byte_m;
+    byte var_byte_n;
+    byte var_byte_o;
+    boolean var_boolean_s;
+    byte var_byte_p;
+    byte var_byte_q;
+    byte var_byte_r;
+    byte var_byte_s = (byte)-1;
+    byte var_byte_t = (byte)-1;
+    byte var_byte_u;
+    byte var_byte_v = (byte)2;
+    short var_short_a;
+    short var_short_b;
+    int var_int_A;
+    int[][] var_int_arr_arr_a;
+    byte var_byte_w;
+    byte var_byte_x;
+    byte var_byte_y;
+    byte var_byte_z;
+    byte var_byte_A;
+    byte var_byte_B;
+    byte var_byte_C;
+    byte var_byte_D;
+    int var_int_B;
+    int var_int_C;
+    int var_int_D;
+    int var_int_E;
+    boolean var_boolean_t = false;
+    boolean var_boolean_u = false;
+    byte var_byte_E;
+    int var_int_F;
+    int var_int_G;
+    int var_int_H;
+    byte var_byte_F;
+    byte var_byte_G;
+    byte[][] var_byte_arr_arr_a;
+    boolean var_boolean_v = false;
+    boolean var_boolean_w = false;
+    int var_int_I;
+    byte var_byte_H;
+    int var_int_J;
+    int var_int_K;
+    int var_int_L;
+    int var_int_M;
+    byte var_byte_I;
+    byte var_byte_J;
+    byte var_byte_K;
+    byte var_byte_L;
+    int var_int_N;
+    int var_int_O;
+    int var_int_P;
+    int var_int_Q;
+    int var_int_R;
+    int var_int_S;
+    int var_int_T;
+    int[] var_int_arr_a;
+    int[] var_int_arr_b;
+    int[] var_int_arr_c;
+    int[] var_int_arr_d;
+    byte[] var_byte_arr_c;
+    byte[] var_byte_arr_d;
+    static final Image[] var_javax_microedition_lcdui_Image_arr_a;
+    static final Graphics[] var_javax_microedition_lcdui_Graphics_arr_a;
+    static byte var_byte_M;
+    byte var_byte_N = 1;
+    short var_short_c = (short)96;
+    short var_short_d = (short)96;
+    short var_short_e = (short)96;
+    short var_short_f = (short)96;
+    byte var_byte_O;
+    byte var_byte_P;
+    byte[][] var_byte_arr_arr_b;
+    byte[][] var_byte_arr_arr_c;
+    int[][][] var_int_arr_arr_arr_a;
+    boolean[][] var_boolean_arr_arr_a;
+    short[][] var_short_arr_arr_a;
+    byte[] var_byte_arr_e;
+    byte[][] var_byte_arr_arr_d;
+    boolean var_boolean_x;
+    int[] var_int_arr_e;
+    byte[] var_byte_arr_f;
+    byte[] var_byte_arr_g = new byte[11];
+    byte[] var_byte_arr_h = new byte[11];
+    byte[] var_byte_arr_i = new byte[11];
+    byte[][] var_byte_arr_arr_e;
+    byte[][][] var_byte_arr_arr_arr_a;
+    byte[][] var_byte_arr_arr_f;
+    byte[][][] var_byte_arr_arr_arr_b;
+    byte[][][] var_byte_arr_arr_arr_c;
+    int var_int_U = 5;
+    int var_int_V;
+    byte[][] var_byte_arr_arr_g;
+    byte[][] var_byte_arr_arr_h;
+    byte[][] var_byte_arr_arr_i;
+    Image[][] var_javax_microedition_lcdui_Image_arr_arr_a;
+    short[][] var_short_arr_arr_b;
+    byte[][] var_byte_arr_arr_j;
+    int var_int_W;
+    int var_int_X;
+    int[][] var_int_arr_arr_b;
+    int var_int_Y;
+    byte var_byte_Q;
+    byte var_byte_R;
+    byte var_byte_S;
+    int var_int_Z;
+    int var_int_aa;
+    int var_int_ab;
+    byte var_byte_T;
+    byte var_byte_U;
+    byte var_byte_V = (byte)4;
+    boolean var_boolean_y;
+    byte var_byte_W;
+    int var_int_ac = 1000;
+    boolean var_boolean_z;
+    boolean var_boolean_A;
+    boolean var_boolean_B;
+    boolean var_boolean_C;
+    int var_int_ad;
+    int var_int_ae;
+    int var_int_af;
+    int var_int_ag;
+    int var_int_ah;
+    int var_int_ai;
+    int var_int_aj;
+    int var_int_ak;
+    boolean var_boolean_D;
+    byte var_byte_X;
+    int var_int_al = -1;
+    int var_int_am;
+    int var_int_an;
+    int var_int_ao;
+    int var_int_ap;
+    int var_int_aq;
+    int var_int_ar;
+    byte var_byte_Y;
+    int var_int_as;
+    int var_int_at;
+    int var_int_au;
+    int var_int_av;
+    int var_int_aw;
+    int var_int_ax;
+    int var_int_ay;
+    int az;
+    byte var_byte_Z;
+    byte var_byte_aa;
+    byte var_byte_ab;
+    byte var_byte_ac;
+    int aA;
+    boolean var_boolean_E;
+    byte var_byte_ad;
+    boolean[] var_boolean_arr_a = new boolean[20];
+    boolean[] var_boolean_arr_b = new boolean[20];
+    boolean[] var_boolean_arr_c = new boolean[9];
+    boolean[] var_boolean_arr_d = new boolean[9];
+    boolean var_boolean_F;
+    byte[] var_byte_arr_j = new byte[8];
+    byte[] var_byte_arr_k;
+    short[] var_short_arr_d;
+    int aB;
+    int aC;
+    int aD;
+    int aE;
+    int aF;
+    int aG;
+    int aH;
+    int aI;
+    byte var_byte_ae;
+    boolean var_boolean_G;
+    static byte var_byte_af;
+    int[] var_int_arr_f = new int[]{0, 5251341, 16704820, 16033043, 12010496};
+    byte[] var_byte_arr_l = new byte[]{0, 1, 1, 1, 1};
+    byte[] var_byte_arr_m = new byte[]{0, 1, 1, 2, 3};
+    byte[] var_byte_arr_n = new byte[]{100, 98, 0, 0, 0};
+    byte[] var_byte_arr_o = new byte[]{5, 3, 1, 1, 1};
+    static byte var_byte_ag;
+    static byte var_byte_ah;
+    int aJ;
+    int aK;
+    int aL;
+    int aM;
+    boolean var_boolean_H;
+    boolean var_boolean_I;
+    int aN;
+    int aO;
+    int aP;
+    byte var_byte_ai;
+    int aQ;
+    byte var_byte_aj;
+    byte var_byte_ak;
+    byte var_byte_al;
+    byte var_byte_am;
+    byte var_byte_an;
+    int aR;
+    byte[] var_byte_arr_p = new byte[40];
+    int aS;
+    byte var_byte_ao;
+    boolean var_boolean_J;
+    boolean var_boolean_K;
+    byte var_byte_ap;
+    boolean var_boolean_L;
+    boolean var_boolean_M;
+    boolean var_boolean_N;
+    boolean var_boolean_O;
+    byte var_byte_aq = (byte)2;
+    byte[] var_byte_arr_q = new byte[2];
+    boolean var_boolean_P;
+    boolean var_boolean_Q;
+    boolean var_boolean_R;
+    byte var_byte_ar;
+    byte var_byte_as = (byte)3;
+    static int aT;
+    static int aU;
+    int aV;
+    int aW;
+    int aX;
+    int aY;
+    byte var_byte_at;
+    byte var_byte_au;
+    byte var_byte_av;
+    boolean var_boolean_S;
+    byte[] var_byte_arr_r;
+    byte[] var_byte_arr_s;
+    boolean var_boolean_T;
+    boolean var_boolean_U;
+    boolean var_boolean_V;
+    byte var_byte_aw = (byte)2;
+    byte[] var_byte_arr_t;
+    int aZ;
+    int ba;
+    byte var_byte_ax;
+    byte[] var_byte_arr_u = new byte[10];
+    byte[][] var_byte_arr_arr_k = new byte[3][10];
+    int[] var_int_arr_g = new int[10];
+    byte var_byte_ay;
+    int[] var_int_arr_h;
+    byte[] var_byte_arr_v;
+    int bb;
+    int bc;
+    int bd;
+    int be;
+    String var_java_lang_String_b = "t";
+    boolean var_boolean_W;
+    boolean var_boolean_X;
+    Random var_java_util_Random_a = new Random(1L);
+    boolean var_boolean_Y = false;
+    boolean var_boolean_Z = false;
+    boolean var_boolean_aa = false;
+    boolean var_boolean_ab;
+    boolean var_boolean_ac;
+    boolean var_boolean_ad;
+    static short[] var_short_arr_e;
+    static short[] var_short_arr_f;
+    static byte[] var_byte_arr_w;
+    int[] var_int_arr_i;
+    int[] var_int_arr_j;
+    boolean var_boolean_ae;
+    boolean var_boolean_af;
+    boolean var_boolean_ag;
+
+    public f(tribes tribes2) {
+        this.setFullScreenMode(true);
+        this.var_tribes_a = tribes2;
+    }
+
+    public final void void_a() {
+        Thread thread = new Thread(this);
+        thread.start();
+    }
+
+    public final void void_b() {
+        this.var_boolean_b = false;
+        this.var_boolean_z = false;
+        this.aR();
+        this.var_tribes_a.notifyDestroyed();
+    }
+
+    private void f() {
+        this.var_b_a = new b();
+        System.gc();
+        Thread.yield();
+        new e(this);
+        var_byte_af = (byte)98;
+        this.void_a(0);
+        this.var_tribes_a.var_javax_microedition_lcdui_Display_a.setCurrent((Displayable)this);
+        this.var_boolean_y = true;
+    }
+
+    private void g() {
+        System.gc();
+        Thread.yield();
+        this.var_byte_arr_arr_g = new byte[this.var_byte_P + 3][this.var_byte_O];
+        this.var_byte_arr_arr_h = new byte[13][101];
+        this.var_byte_arr_arr_i = new byte[13][101];
+        this.var_int_arr_arr_arr_a = new int[2][3][96];
+        this.var_boolean_arr_arr_a = new boolean[this.var_byte_P + 3][this.var_byte_O];
+        System.gc();
+        Thread.yield();
+        this.var_byte_arr_arr_a = new byte[5][50];
+        this.var_short_arr_arr_a = new short[2][26];
+        this.var_byte_arr_arr_d = new byte[7][10];
+        this.var_int_arr_e = new int[]{0xE00000, 14999808, 55808, 55808};
+        this.var_byte_arr_f = new byte[12];
+        this.var_byte_arr_arr_e = new byte[3][30];
+        this.var_byte_arr_arr_arr_a = new byte[2][10][12];
+        this.var_byte_arr_arr_f = new byte[4][30];
+        this.var_byte_arr_arr_arr_b = new byte[2][5][30];
+        this.var_byte_arr_arr_arr_c = new byte[2][5][5];
+        System.gc();
+        Thread.yield();
+        this.var_int_arr_arr_b = new int[][]{{7250486, 11637795, 2652080, 2454300, 0x3B3B30, 0x464646, 16766976, 14352640, 10966528, 16750080, 7406848, -1}, {5276696, 8810262, 678290, 480512, 0x1D1D12, 0x282828, 16766976, -1, -1, 16750080, 0x530000, -1}};
+        this.var_byte_arr_k = new byte[107];
+        this.var_short_arr_d = new short[107];
+        this.var_byte_arr_r = new byte[50];
+        this.var_byte_arr_s = new byte[100];
+        System.gc();
+        Thread.yield();
+        this.var_b_a.var_byte_arr_arr_arr_a = new byte[2][101][65];
+        this.var_b_a.var_byte_arr_arr_arr_b = new byte[2][22][5];
+        this.var_b_a.var_byte_arr_arr_arr_c = new byte[5][6][6];
+        this.var_b_a.var_byte_arr_arr_a = new byte[5][50];
+        this.var_b_a.var_byte_arr_c = new byte[2];
+        this.var_b_a.var_byte_arr_d = new byte[6];
+        this.var_b_a.var_byte_arr_e = new byte[3];
+        this.var_b_a.var_byte_arr_f = new byte[3];
+        this.var_b_a.var_byte_arr_arr_arr_d = new byte[3][2][96];
+        this.var_b_a.var_byte_arr_g = new byte[3];
+        this.var_b_a.var_byte_arr_arr_arr_e = new byte[2][3][10];
+        this.var_b_a.var_byte_arr_h = new byte[10];
+        this.var_b_a.var_byte_arr_arr_c = new byte[6][10];
+        this.var_b_a.var_boolean_arr_a = new boolean[3];
+        this.var_b_a.var_byte_arr_arr_d = new byte[2][50];
+        this.var_b_a.var_short_arr_d = new short[6];
+        this.var_b_a.var_byte_arr_i = new byte[8];
+        this.var_b_a.var_byte_arr_arr_e = new byte[4][8];
+        this.var_b_a.var_byte_arr_arr_f = new byte[2][10];
+        this.var_b_a.var_byte_arr_arr_g = new byte[3][20];
+        this.var_b_a.var_byte_arr_j = new byte[50];
+        this.var_b_a.var_byte_arr_k = new byte[4];
+        this.var_int_arr_i = new int[6];
+        this.var_int_arr_j = new int[]{98, 118, 121, 110, 114};
+        this.var_byte_arr_t = new byte[3];
+    }
+
+    public final void run() {
+        block7: {
+            try {
+                this.f();
+                this.g();
+                this.var_b_a.a(this);
+                if (!this.boolean_d(0)) {
+                    this.boolean_d(1);
+                    this.boolean_d(2);
+                }
+                this.var_byte_Q = (byte)14;
+                this.var_byte_v = 0;
+                this.var_boolean_H = true;
+                this.var_byte_R = this.var_byte_U;
+                this.var_int_v = 59;
+                this.var_int_c = -1;
+                this.var_byte_arr_k[55] = -1;
+                this.var_int_arr_arr_a[0][3] = -1000;
+                this.var_boolean_aa = true;
+                this.var_boolean_b = true;
+                this.i();
+                while (this.var_boolean_b) {
+                    long l = f.long_a();
+                    this.aS();
+                    this.h();
+                    if (this.var_boolean_b) {
+                        this.m();
+                        this.l();
+                        while (this.var_boolean_z && !this.var_boolean_Z) {
+                            Thread.yield();
                         }
-
-                        var12 = true;
-                     } else if (var11 != 2) {
-                        var12 = true;
-                     }
-                  } else if (this.q == 3 && var1 == 31 && var11 == 0) {
-                     if (var9 == 118 && var8 == 4) {
-                        var12 = true;
-                        var10 = 0;
-                     }
-                  } else if (var8 == 2 && (this.e[1313 + this.X] <= 0 || this.e[1313 + this.X] >= 50)) {
-                     var12 = true;
-                     if (this.e[1313 + this.X] == 51) {
-                        this.i[var11] = 1;
-                     }
-                  } else if (var8 == 4 && this.i[var11] == 0 && this.e[1313 + this.X] >= 1 && this.e[1313 + this.X] != 50) {
-                     var9 = this.b[1][this.N + this.e[1313 + this.X] - 1] & 4095;
-                     var10 = this.e[3030 + this.X];
-                     var12 = true;
-                     this.i[var11] = 1;
-                     if (this.e[8749 + var1] == 2 && this.e[1313 + this.X] == 2) {
-                        this.d(90, var4 + this.j[1][var7] + var14, var5 + this.j[2][var7], this.f);
-                     }
-                  }
-
-                  if (var12) {
-                     this.d(var9, var4 + this.j[1][var7] + var14, var5 + this.j[2][var7], var10);
-                  }
-               }
-            } else if ((var8 == 3 || var8 == 5 || var8 == 7) && this.h[var11] == 0 && this.X > 0 && var6 != 2) {
-               byte var13 = 0;
-               if (var1 < 31 || (this.e[9176 + var1] & 3) >= 2) {
-                  if (var8 == 7 && this.e[1313 + this.X] == 50) {
-                     var12 = true;
-                  } else if (var8 == 3 && this.e[1313 + this.X] >= 1 && this.e[1313 + this.X] != 50) {
-                     switch (var13 = this.a[this.a[139] + this.a[this.a[140] + var3] + var11]) {
-                        case -1:
-                           var13 = this.e[606 + this.X];
-                        default:
-                           var12 = true;
-                     }
-                  } else if (var8 == 5 && this.e[1313 + this.X] <= 0) {
-                     var12 = true;
-                     if ((this.e[3535 + this.X] != 0 || this.e[6565 + this.X] == 1) && var3 != 10 && var3 != 11) {
-                        this.x = true;
-                     }
-
-                     if (this.v == 0) {
-                        var13 = this.e[606 + this.X];
-                     }
-                  }
-               }
-
-               if (var12) {
-                  this.a((int)this.X, (int)(var4 + this.j[1][this.N] + var14), (int)(var5 + this.j[2][this.N]), (int)var13, (byte)29);
-                  this.h[var11] = 1;
-               }
-            }
-
-            ++this.N;
-         }
-      } catch (Exception var16) {
-      }
-
-      this.X = 0;
-   }
-
-   private void a(int var1, int var2, int var3, int var4, byte var5) {
-      try {
-         this.ao = var1;
-         this.ap = var2;
-         this.aq = var3;
-         this.ar = var4;
-         this.Y = var5;
-         this.at = this.e[this.b[this.Y] + this.ao] & 255;
-         int var6 = 0;
-         if (this.ar >= 0) {
-            this.ar = this.a[this.a[99] + ((this.b[3][this.at] >> 14 & 3) << 3) + this.ar];
-            var6 = (this.b[2][this.at] & 4095) + this.ar * this.j[4][this.at] + this.e[this.b[this.Y + 1] + this.ao];
-            this.as = this.b[4][var6];
-            this.ap += this.j[7][var6];
-            this.aq += this.j[8][var6] + this.aO;
-            if (this.x) {
-               if (this.at != 124) {
-                  this.as += 48;
-                  this.at = 1;
-               }
-
-               this.x = false;
-            }
-
-            if (this.at == 141 || this.at == 142 || this.at == 143 || this.at == 144) {
-               this.ap += 22 * this.a[this.a[1] + this.e[606 + this.ao]];
-            }
-         } else {
-            this.at = -this.ar;
-            if (this.e[1414 + this.ao] < 12) {
-               this.at = 14;
-               this.aq -= 6;
-            }
-
-            this.as = this.b[4][(this.b[2][this.at] & 4095) + 2];
-         }
-
-         this.au = (this.b[2][this.at] & '\uf000') >> 14;
-         this.p();
-         if (this.v != 0) {
-            this.q();
-         }
-
-      } catch (Exception var7) {
-      }
-   }
-
-   private void p() {
-      this.ay = this.b[8][this.as];
-      this.am = -1;
-      this.an = -1;
-
-      for(this.az = 0; this.az < this.j[15][this.as]; ++this.az) {
-         this.ax = this.ay + this.az;
-         if (this.b[7][this.ax] != 0) {
-            this.av = 0;
-            this.aw = this.j[14][this.ax] & 15;
-            if (this.Y == 29) {
-               if (!this.a()) {
-                  continue;
-               }
-
-               if (this.e[1414 + this.ao] >= 12) {
-                  if (this.ao >= 51) {
-                     this.al = 4;
-                  }
-
-                  if (!this.b()) {
-                     continue;
-                  }
-               } else {
-                  if (this.aw == 7 && this.e[1515 + this.ao] == 0) {
-                     continue;
-                  }
-
-                  if (this.aw == 0) {
-                     this.an = this.ax;
-                     if (this.ao >= 51) {
-                        ++this.av;
-                     }
-                  } else if (this.aw == 9) {
-                     this.am = this.ax;
-                     this.av = this.e[5151 + this.ao] & 1;
-                  } else if (this.aw == 5) {
-                     continue;
-                  }
-               }
-
-               if (this.b[7][this.ax] == 1) {
-                  continue;
-               }
-            } else if (this.aw == 0) {
-               this.am = this.an = this.ax;
-            }
-
-            if ((this.j[14][this.ax] & 255) >> 7 == 0) {
-               this.b(this.b[7][this.ax] + this.av, this.ap + this.j[12][this.ax], this.aq + this.j[13][this.ax]);
-            } else {
-               this.a(this.b[7][this.ax] + this.av, this.ap + this.j[12][this.ax], this.aq + this.j[13][this.ax]);
-            }
-
-            this.al = -1;
-         }
-      }
-
-   }
-
-   private boolean a() {
-      if (this.aw == 10 && !this.s && this.v == 1 && this.ar > -1) {
-         if ((this.e[909 + this.ao] == 0 || this.e[909 + this.ao] != this.F) && (this.F != -1 || this.k != this.ao)) {
-            if (this.W == this.ao) {
-               this.av = 1;
-               if (this.W >= 51) {
-                  this.av = 3;
-               }
-            }
-         } else {
-            this.a((int)603, (int)(this.ap + this.j[12][this.ax]), (int)(this.aq + this.j[13][this.ax]));
-         }
-
-         this.aA = 0;
-
-         for(int var1 = this.C + 1; var1 <= this.C + this.E; ++var1) {
-            for(int var2 = this.B + 1; var2 <= this.B + this.D; ++var2) {
-               byte var3;
-               if ((var3 = this.c[var1][var2]) >= 1 && var3 <= 50 && this.e[1919 + var3] > 0) {
-                  ++this.aA;
-                  if (var3 == this.ao) {
-                     this.av = 1;
-                  }
-               }
-            }
-         }
-      }
-
-      return true;
-   }
-
-   private boolean b() {
-      if (this.aw == 0) {
-         this.an = this.ax;
-         this.av = 0;
-         this.av = this.e[5151 + this.ao] >> 2 & 3;
-         if (this.av > 1) {
-            this.av -= 2;
-            this.al = 0;
-         }
-
-         this.av *= 72;
-         if (this.ao >= 51) {
-            this.av += 36;
-         }
-
-         this.av += this.e[1515 + this.ao] * 18;
-      } else if (this.aw == 9) {
-         this.am = this.ax;
-         this.av = 0;
-         this.av = this.e[5151 + this.ao] & 3;
-         if (this.ao >= 51) {
-            this.al = 3;
-         } else if (this.av > 0) {
-            this.al = this.av;
-         }
-
-         this.av = this.e[1515 + this.ao] == 1 ? 1 : (this.e[1414 + this.ao] < 30 ? 3 : (this.e[1414 + this.ao] < 50 ? 2 : 0));
-         this.av *= 12;
-      } else if (this.aw == 7) {
-         if (this.ao == this.a[0][17]) {
-            this.av += 2;
-         } else {
-            if (this.a[this.a[42] + this.a[this.a[41] + this.e[6464 + this.ao]]] == 0) {
-               return false;
-            }
-
-            this.av += this.a[this.a[42] + this.a[this.a[41] + this.e[6464 + this.ao]]] - 1;
-         }
-      } else if (this.au == 0 && this.aw >= 5 && this.aw <= 8) {
-         if (this.ar < 0 && this.e[6565 + this.ao] == 1) {
-            return false;
-         }
-
-         if ((this.aw != 5 || this.e[6565 + this.ao] != 4) && (this.aw != 6 || this.e[6565 + this.ao] != 5)) {
-            if (this.a[this.a[145] + this.e[6565 + this.ao]] != this.aw) {
-               return false;
-            }
-         } else {
-            this.av = 1;
-         }
-      } else if (this.au == 2) {
-         if (this.e[3535 + this.ao] != 0) {
-            if (this.aw != 4 || this.e[3636 + this.ao] <= 0 && this.at != 113 && this.at != 114 && this.at != 115 && this.at != 116) {
-               if (this.aw == 5) {
-                  if (this.e[6565 + this.ao] == 9) {
-                     return false;
-                  }
-
-                  this.av += this.e[6565 + this.ao];
-               } else if (this.aw == 8) {
-                  return false;
-               }
-            } else {
-               this.av += this.e[3535 + this.ao];
-            }
-         } else if (this.e[3535 + this.ao] == 0) {
-            if (this.aw == 4) {
-               return false;
-            }
-
-            if (this.aw == 5) {
-               if (this.e[6565 + this.ao] == 1) {
-                  return false;
-               }
-
-               if (this.e[6565 + this.ao] == 9) {
-                  return false;
-               }
-
-               this.av += this.e[6565 + this.ao];
-            } else if (this.aw == 8 && this.e[6565 + this.ao] != 1) {
-               return false;
-            }
-         }
-      } else if (this.au == 1 && this.aw == 5) {
-         if (this.e[6565 + this.ao] == 9) {
-            return false;
-         }
-
-         this.av += this.e[6565 + this.ao];
-      }
-
-      return true;
-   }
-
-   private void q() {
-      if (!this.s && this.am >= 0 && this.an >= 0 && this.v == 1) {
-         this.a.a(this.Y == 29 ? this.ao : 101 + this.ao, this.ap + this.j[12][this.am] + 4, this.aq + this.j[13][this.am]);
-         if (this.Y == 29 && this.ar > -1) {
-            for(int var1 = 0; var1 < 30; ++var1) {
-               if (this.b[0][2][var1] == this.ao && this.b[0][1][var1] != 3) {
-                  this.d(65 + (1 - this.b[0][4][var1]) * 5 + this.b[0][1][var1], this.ap + this.j[12][this.an], this.aq + this.j[13][this.an], this.f);
-                  break;
-               }
-            }
-
-            if (this.e[4646 + this.ao] == 1 && this.e[2828 + this.ao] == 51 && this.e[1313 + this.ao] > 0) {
-               this.d(65, this.ap + this.j[12][this.an], this.aq + this.j[13][this.an], this.f);
-            }
-
-            if (this.e[3333 + this.ao] > -1) {
-               this.d(77 + this.e[3333 + this.ao], this.ap + this.j[12][this.am], this.aq + this.j[13][this.am], (this.c - (this.ao & 7)) % 15);
-            }
-
-            if (this.e[4646 + this.ao] < -1) {
-               this.d(-this.e[4646 + this.ao], this.ap + this.j[12][this.an], this.aq + this.j[13][this.an], this.e[3030 + this.ao]);
-            }
-
-            if ((this.e[7979 + this.ao] & 4) == 4) {
-               this.d(73, this.ap + this.j[12][this.am], this.aq + this.j[13][this.am], this.f + this.ao);
-            }
-
-            if ((this.e[7979 + this.ao] & 8) == 8) {
-               this.d(69, this.ap + this.j[12][this.an], this.aq + this.j[13][this.an], this.f);
-            }
-
-            if (this.ao <= 50) {
-               if (this.aq == 0 || this.aq == 1 && (this.ao == this.k || this.ao == this.W || this.e[909 + this.ao] == this.F || this.ao == this.c[this.K + this.A][this.I + this.y] || this.X != 0 && -this.c[this.K + this.A][this.I + this.y] == this.e[4444 + this.ao])) {
-                  this.a(581 + this.e[2222 + this.ao], this.ap + this.j[12][this.am], this.aq + this.j[13][this.am]);
-               }
-
-               if (!this.F && this.e[1919 + this.ao] > 0 && (this.ao == this.k || this.ao == this.W || this.e[909 + this.ao] == this.F || this.ao == this.c[this.K + this.A][this.I + this.y] || this.e[6767 + this.ao] / 3 * 2 > this.e[1919 + this.ao] || this.X != 0 && -this.c[this.K + this.A][this.I + this.y] == this.e[4444 + this.ao])) {
-                  int var3 = this.e[6767 + this.ao] / 20;
-                  byte var2 = 0;
-                  if (this.e[1616 + this.ao] >= 5 || this.e[1717 + this.ao] >= 5 || this.e[7575 + this.ao] > 5) {
-                     var2 = 2;
-                     this.a(606 + (this.e[1616 + this.ao] > this.e[1717 + this.ao] ? (this.e[1616 + this.ao] > this.e[7575 + this.ao] ? this.e[1616 + this.ao] : (this.e[1717 + this.ao] >= this.e[7575 + this.ao] ? this.e[1717 + this.ao] : this.e[7575 + this.ao] - 1)) : (this.e[1717 + this.ao] >= this.e[7575 + this.ao] ? this.e[1717 + this.ao] : this.e[7575 + this.ao] - 1)) - 5, this.ap + this.j[12][this.am] + 2 - var3 + 2 - 10, this.aq + this.j[13][this.am]);
-                  }
-
-                  this.a(611 + var3, this.ap + this.j[12][this.am] + var2, this.aq + this.j[13][this.am]);
-                  a[this.N].setColor(this.e[(this.e[1919 + this.ao] - 1) * 3 / this.e[6767 + this.ao]]);
-                  b(a[this.N], this.ap + this.j[12][this.am] + 2 - var3 + var2, this.aq + this.j[13][this.am] - 4, this.a[this.a[128] + var3] * this.e[1919 + this.ao] / this.e[6767 + this.ao], 2);
-               }
-            }
-
-            if ((this.F || this.V) && this.ao == this.l) {
-               this.d(41, this.ap + this.j[12][this.an] - 1, this.aq + this.j[13][this.an] - 16 - 5, this.e);
-            }
-         }
-      }
-
-   }
-
-   final void a(int var1, int var2, int var3, int var4) {
-      for(int var5 = 0; var5 < 10; ++var5) {
-         if (this.d[0][var5] == 0) {
-            this.d[1][var5] = 0;
-            this.d[0][var5] = (byte)var4;
-            this.d[2][var5] = (byte)var3;
-            this.d[6][var5] = (byte)var2;
-            this.d[5][var5] = (byte)var1;
-            return;
-         }
-      }
-
-   }
-
-   private void r() {
-      boolean var1 = false;
-      int var2 = 0;
-      int var3 = 0;
-      byte var4 = 0;
-      int var5 = 0;
-      short var6 = 0;
-      int var7 = 0;
-      short var8 = 0;
-      this.ao = -1;
-
-      try {
-         for(int var12 = 0; var12 < 10; ++var12) {
-            if (this.d[0][var12] > 0) {
-               byte var9 = 29;
-               this.ao = this.d[5][var12];
-               if (this.d[6][var12] == 1) {
-                  var2 = this.e[0 + this.ao];
-                  var3 = this.e[101 + this.ao];
-               } else if (this.d[6][var12] == 2) {
-                  var2 = this.e[9359 + this.ao];
-                  var3 = this.e[9381 + this.ao];
-                  var9 = 108;
-                  this.d[2][var12] = 0;
-               } else {
-                  var2 = this.e[8383 + this.ao] + (this.d[2][var12] & 15);
-                  var3 = this.e[8444 + this.ao] + (this.d[2][var12] >> 4 & 15);
-               }
-
-               if (!this.a(var2, var3) || this.a(var2, var3) != 0 || this.e[1919 + this.ao] <= 0 && this.d[6][var12] == 1) {
-                  this.d[0][var12] = 0;
-                  return;
-               }
-
-               var2 = (var2 - this.I) * 22;
-               var3 = (var3 - this.K) * 16;
-               if (this.d[6][var12] == 1 || this.d[6][var12] == 2) {
-                  var4 = this.e[606 + this.ao];
-                  var4 = this.a[this.a[99] + (this.b[3][this.e[this.b[var9] + this.ao] & 255] >> 14 & 3) * 8 + var4];
-                  var5 = (this.b[2][this.e[this.b[var9] + this.ao] & 255] & 4095) + var4 * this.j[4][this.e[this.b[var9] + this.ao] & 255] + this.e[this.b[var9 + 1] + this.ao];
-                  var6 = this.b[4][var5];
-                  var7 = 0;
-                  var8 = this.b[8][this.b[4][var5]];
-
-                  for(short var10 = 0; var10 < this.j[15][var6]; ++var10) {
-                     var7 = var8 + var10;
-                     if ((this.j[14][var7] & 15) == this.d[2][var12]) {
-                        break;
-                     }
-                  }
-
-                  if (this.d[6][var12] == 1) {
-                     var2 += this.e[202 + this.ao] + this.j[12][var7];
-                     var3 += this.e[303 + this.ao] + this.j[13][var7];
-                  } else if (this.d[6][var12] == 2) {
-                     var2 += this.e[9403 + this.ao] + this.j[12][var7];
-                     var3 += this.e[9425 + this.ao] + this.j[13][var7];
-                  }
-               }
-
-               this.d(this.d[0][var12], var2, var3, this.d[1][var12]);
-               ++this.d[1][var12];
-               if (this.d[1][var12] >= this.j[9][this.d[0][var12]]) {
-                  this.d[0][var12] = 0;
-               }
-            }
-         }
-
-      } catch (Exception var11) {
-      }
-   }
-
-   final void a(int var1, int var2) {
-      for(int var3 = 0; var3 < 30; ++var3) {
-         if (this.e[0][var3] == 0) {
-            this.e[1][var3] = 0;
-            this.e[2][var3] = (byte)var2;
-            this.e[0][var3] = (byte)var1;
-            return;
-         }
-      }
-
-   }
-
-   private void s() {
-      for(int var6 = 0; var6 < 30; ++var6) {
-         if (this.e[0][var6] != 0) {
-            byte var1 = this.e[0][var6];
-            byte var2 = this.e[8383 + var1];
-            int var3 = this.e[8444 + var1] - 1;
-            byte var4 = this.a[this.a[138] + 104 + this.e[8749 + var1]];
-            byte var5 = this.a[this.a[138] + 130 + this.e[8749 + var1]];
-            if (this.e[1][var6] >= 20) {
-               this.e[0][var6] = 0;
-               if (this.e[2][var6] == 3) {
-                  this.c(var1, false);
-                  this.e[8627 + var1] = 3;
-               }
-
-               this.c(var2, var3 + 1, var4, var5);
-               this.d((int)var1);
-            } else {
-               for(int var7 = 0; var7 < var5 + 1; var7 += 2) {
-                  for(int var8 = 0; var8 < var4; var8 += 2) {
-                     if (this.a(var2 + var8, var3 + var7)) {
-                        this.d(74, (var2 + var8 - this.I) * 22, (var3 + var7 - this.K) * 16, (var8 * 2 + var7) * 2 + this.e[1][var6] - 1);
-                     }
-                  }
-               }
-            }
-
-            ++this.e[1][var6];
-         }
-      }
-
-   }
-
-   private boolean a(int var1, int var2) {
-      return var1 >= this.I && var1 < this.I + this.O && var2 >= this.K && var2 < this.K + this.P;
-   }
-
-   private void t() {
-      for(byte var1 = 0; var1 < 10; ++var1) {
-         this.d[0][var1] = 0;
-      }
-
-   }
-
-   private void d(int var1, int var2, int var3, int var4) {
-      int var5 = this.b[5][var1] + var4 % this.j[9][var1];
-      this.a((int)this.b[6][var5], (int)(var2 + this.j[10][var5]), (int)(var3 + this.j[11][var5]));
-   }
-
-   final void a(int var1, int var2, int var3) {
-      int var4 = this.b[9][var1] & 8191;
-      int var5;
-      if ((var5 = (this.b[9][var1] & '\uffff') >> 14 & 3) != 0) {
-         this.b((var5 - 1) * 3 + 1, var2, var3);
-      }
-
-      for(int var8 = var4; var8 < var4 + (this.j[16][var1] & 63); ++var8) {
-         int var6 = this.b[10][var8] & 8191;
-         int var7 = (this.b[10][var8] & '쀀') >> 14 << 7;
-         if ((this.b[10][var8] & 8192) >> 13 == 0) {
-            this.b(var6, var2 + this.j[18][var8] + var7, var3 + this.j[19][var8]);
-         } else {
-            this.a(var6, var2 + this.j[18][var8] + var7, var3 + this.j[19][var8]);
-         }
-      }
-
-   }
-
-   private void b(int var1, int var2, int var3) {
-      if (var1 != 0) {
-         int var4;
-         if ((var4 = this.j[20][var1] & 31) < 27) {
-            boolean var5 = false;
-            if (this.al > -1) {
-               if (this.al == 0) {
-                  if (var4 == 5) {
-                     var4 = this.al;
-                     var5 = true;
-                  }
-               } else if (this.al == 4) {
-                  if (var4 == 14) {
-                     var4 = 4;
-                     var5 = true;
-                  } else if (var4 == 15) {
-                     var4 = 5;
-                     var5 = true;
-                  }
-               } else if (var4 == 9) {
-                  var4 = this.al;
-                  var5 = true;
-               }
-            }
-
-            if (!var5) {
-               a(a[this.N], this.a[0][var4], this.j[21][var1] & 127, this.j[22][var1], this.j[23][var1], this.j[24][var1], var2, var3, 20);
-               return;
-            }
-
-            if (a(a[this.N], this.a[1][var4], this.j[21][var1] & 127, this.j[22][var1], this.j[23][var1], this.j[24][var1], var2, var3, 20)) {
-               return;
-            }
-         } else {
-            int var6 = (this.j[20][var1] & 255) >> 5 | (this.j[21][var1] & 128) >> 4;
-            a[this.N].setColor(this.j[17][var6 * 3 + 0] & 255, this.j[17][var6 * 3 + 1] & 255, this.j[17][var6 * 3 + 2] & 255);
-            if (var4 == 27) {
-               d(a[this.N], var2 + (this.j[21][var1] & 127), var3 + this.j[22][var1], var2 + this.j[23][var1], var3 + this.j[24][var1]);
-               return;
-            }
-
-            if (var4 == 28) {
-               a(a[this.N], var2 + (this.j[21][var1] & 127), var3 + this.j[22][var1], this.j[23][var1], this.j[24][var1]);
-               return;
-            }
-
-            if (var4 == 29) {
-               b(a[this.N], var2 + (this.j[21][var1] & 127) - 0, var3 + this.j[22][var1] - 0, this.j[23][var1], this.j[24][var1]);
-               return;
-            }
-
-            if (var4 == 30) {
-               b(a[this.N], var2 + (this.j[21][var1] & 127) * 4 - 0, var3 + this.j[22][var1] * 4 - 0, this.j[23][var1] * 4, this.j[24][var1] * 4);
-            }
-         }
-
-      }
-   }
-
-   private void i(int var1) {
-      byte var4 = 0;
-      byte var5 = 0;
-      int var6 = 0;
-      int var7 = 0;
-      boolean var8 = true;
-
-      try {
-         do {
-            if (!var8) {
-               var1 = this.e[6060 + var1];
-            }
-
-            var8 = false;
-            var4 = this.e[7676 + var1];
-            var6 = 0 + (this.e[5252 + var1] - this.I) * 22 + 11 + this.e[5454 + var1];
-            var7 = 0 + (this.e[5353 + var1] - this.K) * 16 + 8 + this.e[5555 + var1] - this.h[this.e[5858 + var1]][var1] - 10;
-            if ((var5 = this.e[6565 + var1]) == 1 || var5 == 2 || var5 == 5) {
-               this.a(292 + this.a[this.a[190 + this.a[this.a[77] + var5]] + var4 * this.a[this.a[193] + 6 + var5] + this.i[this.e[5858 + var1]][var1]] + this.a[this.a[193] + var5], var6, var7);
-            }
-         } while(this.e[6060 + var1] != 0);
-
-      } catch (Exception var10) {
-      }
-   }
-
-   private void u() {
-      int var1 = 0;
-      int var2 = 0;
-      byte var4 = 0;
-      int var5 = 0;
-
-      try {
-         this.v();
-
-         for(this.ag = 0; this.ag < this.P + 3; ++this.ag) {
-            int var7;
-            if ((var7 = this.ag + this.K) < this.d) {
-               for(this.af = this.O - 1 + 0; this.af >= 0; --this.af) {
-                  int var8 = this.af + this.I;
-                  if (!this.s || var7 >= 0 && var7 < this.d && var8 >= 0 && var8 < this.c) {
-                     var1 = this.af * 22;
-                     byte var3 = this.a(var8, var7);
-                     if (this.s && !this.J) {
-                        var3 = 0;
-                     }
-
-                     var4 = this.c[var7][var8];
-                     var5 = this.b[var7][var8] & 255;
-                     if (var4 != 0) {
-                        if (var3 >= 2 || (var5 < 180 || var5 > 231) && var5 != 243) {
-                           if (var3 < 1 && var4 >= 1 && var4 <= 100 && (!this.s || this.ao != 9)) {
-                              if (c((int)this.e[4545 + var4]) != 2) {
-                                 this.a((int)this.e[4545 + var4], (byte)1);
-                              }
-
-                              if (c((int)this.e[4545 + var4]) == 2 || this.e[2929 + var4] <= 14) {
-                                 if (this.ag >= 0 && this.af - 1 >= 0 && this.e[9833 + (this.c[var7][var8 - 1] + 61) * -1] == 5 && c((int)this.c[var7][var8 - 1])) {
-                                    if (this.af < this.O) {
-                                       this.g[this.ag][this.af] = 0;
-                                    }
-
-                                    --this.af;
-                                    var8 = this.af + this.I;
-                                    this.a((int)this.c[var7][var8], (byte)1);
-                                 }
-
-                                 if (a((int)var4) == 0 || (this.e[7979 + var4] & 2) == 0) {
-                                    this.a((int)var4, (int)(var1 + this.e[202 + var4]), (int)(var2 + this.e[303 + var4]), (int)this.e[606 + var4], (byte)29);
-                                 }
-                              }
-                           } else if (var4 <= -1 && var4 >= -60 && (var3 < 2 || this.e[9176 + -var4] > 0)) {
-                              if ((this.e[9176 + -var4] & 4) != 0) {
-                                 switch (var3) {
-                                    case 0:
-                                       this.e[9176 + -var4] = 6;
-                                       break;
-                                    case 1:
-                                       this.e[9176 + -var4] = 5;
-                                 }
-                              }
-
-                              switch (this.e[9176 + -var4] & 3) {
-                                 case 1:
-                                    var3 = 1;
-                                    break;
-                                 case 2:
-                                    var3 = 0;
-                              }
-
-                              if ((this.e[8871 + -var4] & 1) == 0) {
-                                 this.a((int)var4, (byte)1);
-                                 byte[] var10000 = this.e;
-                                 var10000[8871 + -var4] = (byte)(var10000[8871 + -var4] | 1);
-                                 byte var9 = this.e[8749 + -var4];
-                                 byte var10 = this.a[this.a[138] + 104 + var9];
-                                 byte var11 = this.a[this.a[138] + 130 + var9];
-                                 if ((this.e[9176 + -var4] & 4) == 0) {
-                                    this.a.S = 0;
-                                    this.a.a((int)this.e[8383 + -var4], (int)this.e[8444 + -var4], (int)var10, (int)var11);
-                                    this.a.S = 1;
-                                    this.e[9176 + -var4] = 4;
-                                 }
-
-                                 if (!this.s && var9 < 22) {
-                                    if ((this.a[this.a[138] + 156 + var9] != -1 || this.e[8627 + -var4] == 1 || this.e[8627 + -var4] == 2) && this.e[8810 + -var4] == 0 && b((int)var4) == 0) {
-                                       this.d(40, (this.e[8383 + -var4] - this.I) * 22 + var10 * 11 - 11, (this.e[8444 + -var4] - this.K) * 16 + var11 * 8 - 8, this.e);
-                                    }
-
-                                    if ((this.e[8505 + -var4] > 0 && (var4 == this.c[this.K + this.A][this.I + this.y] || this.e[8566 + -var4] / 2 > this.e[8505 + -var4]) || this.e[8627 + -var4] == 1 || this.e[8627 + -var4] == 2 || var9 >= 12) && b((int)var4) == 0) {
-                                       int var12 = this.e[8566 + -var4] / 80 + 6;
-                                       int var13 = (this.e[8383 + -var4] - this.I) * 22 + var10 * 11 - 11;
-                                       int var14 = var2 - this.a[this.a[138] + 520 + var9] * 8 - 5;
-                                       this.a(611 + var12, var13, var14);
-                                       a[this.N].setColor(this.e[(this.e[8505 + -var4] - 1) * 3 / this.e[8566 + -var4]]);
-                                       b(a[this.N], var13 + 1, var14 + 1, this.a[this.a[128] + var12] * this.e[8505 + -var4] / this.e[8566 + -var4], 2);
-                                       if (var4 == this.c[this.K + this.A][this.I + this.y]) {
-                                          byte var15;
-                                          int var16 = (var15 = this.a.a(-var4)) >> 4 & 15;
-                                          int var17 = var15 & 15;
-                                          int var18;
-                                          if ((var18 = var16 + var17) > 0) {
-                                             var13 = var13 + 1 + this.a[this.a[128] + var12] / 2 - 4 * var18 / 2 + 1;
-                                             var14 += 6;
-                                             a[this.N].setColor(0);
-                                             b(a[this.N], var13 - 0, var14 - 1, var18 * 4 - 1, 4);
-                                             b(a[this.N], var13 - 1, var14 - 0, var18 * 4 + 1, 2);
-
-                                             for(byte var22 = 0; var22 < var18; ++var22) {
-                                                a[this.N].setColor(var22 < var17 ? 16164864 : 4207389);
-                                                b(a[this.N], var13 + var22 * 4, var14, 3, 2);
-                                             }
-                                          }
-                                       }
-                                    }
-                                 }
-                              }
-                           } else if (var3 < 1 && b((int)var4)) {
-                              int var6 = var4 - 101;
-                              this.a((int)var6, (int)(var1 + this.e[9403 + var6]), (int)(var2 + this.e[9425 + var6]), (int)this.e[9491 + var6], (byte)108);
-                           } else if (var3 >= 2 || !c((int)var4) && c((int)var4) != 3) {
-                              if (var3 == 0 && var4 <= -114 && var4 > -117) {
-                                 if (this.h >= 94 + var7 && this.h <= 100 + var7) {
-                                    this.d(75, var1, var2, this.h - (100 + var7) + 6);
-                                 } else if ((this.h + this.af + this.ag) % 10 < 5) {
-                                    this.a(this.b[var7][var8] & 255, var1, var2);
-                                 }
-                              }
-                           } else {
-                              this.a((int)var4, (byte)1);
-                           }
-                        } else {
-                           this.a((int)var5, (byte)1);
+                        long l2 = f.long_a();
+                        long l3 = l2 - l;
+                        if ((l3 = (long)this.var_int_i - l3) < 0L || l3 > (long)this.var_int_i) {
+                            l3 = 0L;
                         }
-                     }
+                        tribes.a((int)l3);
+                        continue;
+                    }
+                    break block7;
+                }
+                return;
+            }
+            catch (Exception exception) {}
+        }
+    }
 
-                     if (this.g[this.ag][this.af] > 0) {
-                        this.i(this.g[this.ag][this.af]);
-                        this.g[this.ag][this.af] = 0;
-                     }
-
-                     if (var3 == 1) {
-                        this.b(12, var1 - 2, var2 - 4);
-                     } else if (var3 == 2) {
-                        a[this.c[1]].setColor(0);
-                        if (var8 != 0 && var8 != this.c - 1 && var7 != 0 && var7 != this.d - 1 && this.a(var8 - 1, var7) == 2 && this.a(var8 + 1, var7) == 2 && this.a(var8, var7 - 1) == 2 && this.a(var8, var7 + 1) == 2) {
-                           b(a[this.c[1]], var1, var2, 22, 16);
-                        } else {
-                           this.b(11, var1 - 3, var2 - 2);
+    private void h() {
+        this.var_int_i = this.var_boolean_c ? 50 : this.var_int_j;
+        this.var_int_k = this.var_int_j / this.var_int_i;
+        ++this.var_int_e;
+        if (this.var_int_e >= 6) {
+            this.var_boolean_E = false;
+            this.var_boolean_q = false;
+        }
+        if (this.var_int_e >= 8) {
+            this.var_int_e = 0;
+        }
+        Thread.yield();
+        if (this.var_byte_v == 0) {
+            this.ak();
+            this.var_boolean_o = false;
+        } else if (this.var_byte_v == 1) {
+            if (this.var_byte_i == 0) {
+                this.var_byte_i = (byte)-1;
+                if (!(this.var_byte_w == 3 || this.var_boolean_arr_a[6] || this.var_boolean_arr_a[8] || this.var_boolean_arr_a[7])) {
+                    if (this.var_boolean_arr_a[0]) {
+                        this.var_byte_m = 0;
+                    } else if (this.var_boolean_arr_a[4]) {
+                        this.var_byte_m = 1;
+                        if (this.var_byte_arr_a[this.var_short_arr_a[296] + this.var_b_a.var_byte_g] == 3) {
+                            this.var_b_a.var_byte_J = (byte)(120 - this.var_byte_arr_a[this.var_short_arr_a[298] + this.var_b_a.var_byte_g]);
                         }
-                     }
-
-                     if (this.ag == this.A && this.af == this.y) {
-                        this.Z = var3;
-                     }
-                  }
-               }
-
-               if ((this.L || this.N) && this.q[1] - this.K == this.ag) {
-                  this.d(107, (this.q[0] - this.I) * 22, var2, this.f);
-               }
-
-               var2 += 16;
-            }
-         }
-
-         this.r();
-         this.s();
-         if (!this.N) {
-            if (this.L) {
-               this.d(31, 298, 11, this.f);
-            }
-
-            return;
-         }
-
-         this.d(30, 298, 11, this.f);
-      } catch (Exception var23) {
-      }
-
-   }
-
-   private void v() {
-      for(int var1 = 1; var1 <= 60; ++var1) {
-         byte[] var10000 = this.e;
-         var10000[8871 + var1] = (byte)(var10000[8871 + var1] & 254);
-         if (this.e[9176 + var1] > 0) {
-            this.e[9176 + var1] = 5;
-         }
-      }
-
-      byte var5 = 0;
-
-      for(int var2 = 0; var2 < 5; ++var2) {
-         if (this.c[var5][var2][2] >= 0 && this.c[var5][var2][3] == 1 && this.c[var5][var2][0] >= this.I - 1 && this.c[var5][var2][0] <= this.I + this.O + 1 && this.c[var5][var2][1] >= this.K - 1 && this.c[var5][var2][1] <= this.K + this.P + 1) {
-            for(int var3 = 0; var3 < 9; ++var3) {
-               if (this.a(this.c[var5][var2][0] + this.a[this.a[141] + 0 + var3], this.c[var5][var2][1] + this.a[this.a[141] + 9 + var3]) == 0) {
-                  this.d(68, (this.c[var5][var2][0] - this.I + this.a[this.a[141] + 0 + var3]) * 22, (this.c[var5][var2][1] - this.K + this.a[this.a[141] + 9 + var3]) * 16, this.f);
-               }
-            }
-         }
-
-         if (var2 == 4 && var5 == 0) {
-            var2 = 0;
-            var5 = 1;
-         }
-      }
-
-      for(int var6 = 0; var6 < 30; ++var6) {
-         byte var7 = this.b[0][2][var6];
-         byte var4 = this.b[0][3][var6];
-         if (this.b[0][1][var6] == 3 && this.b[0][0][var6] != 0 && var7 >= this.I - 1 && var7 <= this.I + this.O + 1 && var4 >= this.K - 1 && var4 <= this.K + this.P + 1 && this.a((int)var7, (int)var4) == 0) {
-            this.d(68 + (1 - this.b[0][4][var6]) * 5, (var7 - this.I - 0) * 22, (var4 - this.K - 0) * 16, this.f);
-         }
-      }
-
-   }
-
-   private void w() {
-      if (this.u) {
-         this.Q = this.G - this.I <= this.y ? this.G - this.I : this.y;
-         this.B = this.Q + this.I - 1;
-         this.R = this.H - this.K <= this.A ? this.H - this.K : this.A;
-         this.C = this.R + this.K - 1;
-         this.Q *= 22;
-         this.R *= 16;
-         int var1 = this.I + this.y - this.G;
-         int var2 = this.K + this.A - this.H;
-         if (var1 < 0) {
-            var1 *= -1;
-         }
-
-         this.D = var1 + 1;
-         if (var2 < 0) {
-            var2 *= -1;
-         }
-
-         this.E = var2 + 1;
-         var1 = (var1 + 1) * 22;
-         var2 = (var2 + 1) * 16;
-         a[this.c[1]].setColor(0);
-         a(a[this.c[1]], 0 + this.Q + 1, 0 + this.R + 1, var1, var2);
-         a[this.c[1]].setColor(1105252);
-         a(a[this.c[1]], 0 + this.Q, 0 + this.R, var1, var2);
-      }
-
-      byte var8;
-      if (b((int)(var8 = this.c[this.K + this.A][this.I + this.y])) == 0) {
-         int var10 = (this.e[8383 + -var8] - this.I) * 22;
-         int var3 = (this.e[8444 + -var8] - this.K) * 16;
-         int var4 = this.a[this.a[138] + 104 + this.e[8749 + -var8]] * 22;
-         int var5 = this.a[this.a[138] + 130 + this.e[8749 + -var8]] * 16;
-         this.d(6, var10, var3, this.e);
-         this.d(7, var10 + var4, var3, this.e);
-         this.d(8, var10, var3 + var5, this.e);
-         this.d(9, var10 + var4, var3 + var5, this.e);
-      }
-
-   }
-
-   private void c(int var1, int var2) {
-      if (this.aa != 0) {
-         this.d(34 + this.aa, (this.ab - this.I) * 22, (this.ac - this.K) * 16, this.e);
-         if (this.e == 5) {
-            this.aa = 0;
-         }
-      }
-
-      byte var4 = this.c[this.K + this.A][this.I + this.y];
-      if (this.w != 2) {
-         byte var5 = -1;
-         int var3 = 32;
-         if (this.w == 1) {
-            if (this.k != 0) {
-               var5 = 1;
-            } else if (this.F != -1) {
-               var5 = 0;
-
-               for(int var9 = 0; var9 < 50; ++var9) {
-                  if (this.a[this.F][var9] != 0) {
-                     ++var5;
-                  }
-               }
-            }
-
-            var3 = this.Z != 0 || b((int)var4) != 1 && !b((int)var4) && (a((int)var4) != 1 || (this.e[7979 + var4] & 2) != 0) ? 33 : 34;
-         } else if (this.w == 3) {
-            int var10000;
-            if (this.s == 100) {
-               this.r = true;
-               var10000 = 107;
-            } else if (this.s >= 0 && this.s > 3) {
-               byte var6 = this.a[this.a[138] + 104 + this.s];
-               byte var7 = this.a[this.a[138] + 130 + this.s];
-               this.t = this.y - var6 / 2;
-               this.u = this.A - var7 / 2;
-               this.S = var1 - var6 / 2 * 22;
-               this.T = var2 - var7 / 2 * 16 - 5 + this.e;
-               this.a((int)(1000 + this.s + 1), (byte)2);
-               this.r = this.a(this.s, this.I + this.t, this.K + this.u, true);
-               var10000 = this.r ? 41 : 40;
-            } else if ((a((int)var4) != 0 || this.e[1414 + var4] < 12) && (a((int)this.W) != 0 || this.e[1414 + this.W] < 12)) {
-               if (this.s == 3) {
-                  this.r = true;
-                  var10000 = 33;
-               } else {
-                  this.r = false;
-                  var10000 = 32;
-               }
+                    }
+                    this.var_byte_v = 0;
+                    this.l(this.var_byte_arr_a[this.var_short_arr_a[305] + this.var_byte_arr_a[this.var_short_arr_a[306] + this.var_byte_m] + 0]);
+                    this.var_byte_Q = (byte)25;
+                    this.var_byte_R = (byte)28;
+                    this.var_int_Z = 0;
+                    this.var_boolean_H = true;
+                    this.var_byte_z = this.var_byte_y;
+                    this.var_byte_B = this.var_byte_A;
+                    this.var_byte_J = this.var_byte_I;
+                    this.var_byte_L = this.var_byte_K;
+                }
+            } else if (this.var_byte_w == 2 || this.var_byte_w == 4) {
+                this.ae();
+                this.var_boolean_o = false;
             } else {
-               this.r = this.W;
-               this.t = this.e[0 + this.r];
-               this.u = this.e[101 + this.r];
-               this.r = true;
-               var10000 = 33;
+                this.V();
+                this.var_boolean_o = false;
+                this.k();
             }
-
-            var3 = var10000;
-         }
-
-         if (this.E && this.e < 2 && var3 <= 34) {
-            var3 = (byte)(var3 + 5);
-         }
-
-         this.d(var3, var1, var2, this.e);
-         if (var5 > 0) {
-            this.a.a(var1 + 22, var2 + 8, 0, "" + var5, 1);
-            this.a.a(a[this.N]);
-         }
-
-         if (this.aA > 0) {
-            this.a.a(var1 + 22, var2 + 8, 0, "" + this.aA, 1);
-            this.a.a(a[this.N]);
-         }
-
-         if (this.w == 3) {
-            if (this.s < 0) {
-               this.a(664 - this.s - 1, var1 + 11 + 5, var2 + 8 + 5);
-            } else if (this.s <= 3) {
-               this.d(this.s + 48, var1, var2, this.e);
+            if (this.var_byte_v == 1) {
+                ++this.var_int_d;
+                if (this.var_int_d > 5) {
+                    this.var_int_d = 0;
+                    this.a((byte)100, (byte)0, (byte)0, (byte)0);
+                }
+                if (this.var_byte_E <= 4) {
+                    this.var_byte_E = (byte)(this.var_byte_E + 1);
+                } else if (this.var_byte_E >= 0) {
+                    this.var_int_n = 0;
+                }
+                this.var_byte_j = (byte)(this.var_byte_j + 1);
+                this.j();
+                if (this.var_boolean_P && this.var_byte_w != 4 && this.var_byte_w != 3) {
+                    this.Z();
+                }
+                this.var_boolean_P = false;
             }
-         }
-      }
-
-      int var8 = 0;
-      if (this.w == 1) {
-         if (this.q && this.aa != 0) {
-            var8 = 47;
-            this.Z = 0;
-         } else if (var4 == -124) {
-            var8 = 44;
-         } else if (var4 == -125) {
-            var8 = 45;
-         } else if (b((int)var4) == 0 && this.e[8749 + -var4] != 10) {
-            var8 = 41;
-         } else if (c((int)var4)) {
-            var8 = this.e[9833 + (var4 + 61) * -1] == 7 ? 46 : 43;
-         } else if (b((int)var4) && this.Z == 0) {
-            var8 = 43;
-         }
-
-         if (var8 != 0 && this.Z != 2) {
-            this.d(var8, var1, var2, this.e);
-         }
-      }
-
-   }
-
-   private void a(byte var1, int var2, int var3) {
-      this.aB = var1;
-
-      try {
-         boolean var4 = this.c();
-         if (this.b[var1]) {
-            this.b[17] = true;
-            this.ae = 0;
-         } else if (var4) {
-            this.ae = 1;
-         } else {
-            if (this.a[this.a[195] + 80 + var1] != 1) {
-               return;
-            }
-
-            this.ae = 2;
-         }
-
-         this.N = this.c[this.a[this.a[195] + 0 + var1]];
-         this.aC = this.a[this.a[195] + 60 + var1];
-         byte var5 = this.a[this.a[195] + 40 + var1];
-         boolean var6 = false;
-
-         for(int var7 = this.b[0][var5]; var7 < this.b[0][var5] + this.j[0][var5]; ++var7) {
-            int var8 = (this.j[3][var7] & 255) >> 6;
-            int var9 = this.j[3][var7] & 7;
-            this.aG = this.b[1][var7] & 4095;
-            if (var8 < this.ae && !var6) {
-               if (var8 == 1) {
-                  var6 = true;
-               }
-            } else {
-               this.aD = 0;
-               if (var6) {
-                  var6 = false;
-                  if (this.k[this.aC] == 0 && this.ae > 0 || this.k[this.aC] < 0) {
-                     ++this.aC;
-                     continue;
-                  }
-
-                  this.aD = this.d[this.aC];
-                  this.k[this.aC] = 0;
-                  ++this.aC;
-               } else if (var8 == 1) {
-                  var6 = true;
-                  if (this.k[this.aC] == 0 && this.ae > 0 || this.aG == 0 || var8 < this.ae || this.k[this.aC] < 0) {
-                     continue;
-                  }
-               } else if (var8 == 2 && this.k[this.aC] < 0) {
-                  continue;
-               }
-
-               int var10 = (this.b[1][var7] >> 14 & 3) << 7;
-               int var11 = (this.b[1][var7] >> 12 & 3) << 7;
-               this.aH = this.j[1][var7];
-               this.aI = this.j[2][var7];
-               if (var1 >= 13 && var1 <= 16) {
-                  this.aH += 110;
-                  this.aI += 70;
-               } else {
-                  this.aH += var2;
-                  this.aI += var3;
-               }
-
-               this.aH += var10;
-               this.aI += var11;
-               if (var7 == 1013) {
-                  this.aG = this.b[1][1009] & 4095;
-                  this.aD = this.d[3];
-                  this.d(var9, 1009);
-                  this.aG = 0;
-               }
-
-               if (var7 == 1012) {
-                  this.a(var7, this.ae, this.aI);
-               } else if (var7 == 1143) {
-                  this.c(var7, this.aH, this.aI);
-               } else if (var9 == 0 && (this.j[3][var7] & 255) >> 6 == 3) {
-                  a[this.N].setColor(0);
-                  byte var12 = 99;
-                  if (var7 == 1034) {
-                     var12 = this.e[6767 + this.l];
-                  }
-
-                  if (this.aD >= 0) {
-                     int var13 = this.j[23][this.aG] * this.aD / var12;
-                     b(a[this.N], this.aH + var13 + 1, this.aI, this.j[23][this.aG] - var13, 4);
-                  }
-               } else if (var9 == 3 && this.aG >= 3 && this.aG <= 4) {
-                  if (this.v != -1) {
-                     if (this.b[var1] || this.v != this.w) {
-                        this.a.b(this.aE, this.aF, this.j[23][this.b[1][var7 - 1] & 4095] * 4, this.j[24][this.b[1][var7 - 1] & 4095] * 4, this.v, (this.j[3][var7] & 255) >> 6, this.aG - 3);
-                     }
-
-                     if (this.w != this.v) {
-                        this.w = this.v;
-                        this.y = 0;
-                     }
-
-                     this.z = this.y;
-                     this.a.a(a[this.N], this.y);
-                  }
-               } else if (this.aG != 0) {
-                  this.d(var9, var7);
-               }
-            }
-         }
-
-         this.a.a(a[this.N]);
-         this.b[var1] = false;
-      } catch (Exception var14) {
-      }
-   }
-
-   private void d(int var1, int var2) {
-      if (var1 == 0) {
-         this.b(this.aG, this.aH, this.aI);
-         this.aE = this.aH;
-         this.aF = this.aI;
-      } else if (var1 == 1) {
-         this.j(var2);
-      } else if (var1 == 2) {
-         if ((!this.Q || this.aG != 4 && this.aG != 94) && (!this.R || this.aG != 5 && this.aG != 95) && (this.T || this.aG != 1) && (this.U || this.aG != 2)) {
-            if (var2 - 1 == 1209) {
-               a[M].setColor(1105252);
-               a(a[M], 0 + this.aH + (this.I - this.W) * 7, 0 + this.aI + (this.K - this.X + this.aJ) * 4, this.O * 7 - 1, this.P * 4 - 1);
-               this.d(this.aG, this.aH + (this.y + this.I - this.W) * 7 - 11, this.aI + (this.A + this.K - this.X + this.aJ) * 4 - 8, this.f / this.k);
-            } else {
-               this.d(this.aG, this.aH, this.aI, this.f / this.k);
-            }
-
-            this.S = true;
-         }
-      } else if (var1 == 3 && this.aG == 11) {
-         a(a[M], a[this.c[1]], 0, 0, this.j[23][this.b[1][1188] & 4095] * 4, this.j[24][this.b[1][1188] & 4095] * 4, 0 + this.aH, 0 + this.aI, 0);
-      } else if (var1 == 3 && this.aG == 10) {
-         try {
-            this.c(this.o);
-            a[M].drawImage(this.a[2][0], (0 + this.aH) * 1, (0 + this.aI) * 1, 3);
-         } catch (Exception var4) {
-         }
-      } else if (var1 == 3 && this.aG <= 2) {
-         this.k(var2);
-      } else if (var1 == 3 && this.aG <= 6) {
-         if (var2 - 1 == 1134 && (this.u[0] == 3 || this.u[0] == 1)) {
-            this.a.a(this.aH, this.aI, (this.j[3][var2] & 255) >> 6, 108 + this.e[6868 + this.k[2][0]], this.aD + (this.e[1515 + this.k[2][0]] == 0 ? 0 : 1), -1, this.aG - 5);
-         } else {
-            this.a.a(this.aH, this.aI, (this.j[3][var2] & 255) >> 6, this.aD, this.aG - 5);
-         }
-      } else {
-         if (var1 == 4) {
-            if (this.aG != 1) {
-               int var3 = this.aG;
-               this.bb = 0 + this.aH + (this.j[21][var3] & 127);
-               this.bc = 0 + this.aI + this.j[22][var3];
-               this.bd = this.j[23][var3];
-               this.be = this.j[24][var3];
-               c(a[this.N], this.bb, this.bc, this.bd, this.be);
-               return;
-            }
-
-            this.bb = 0;
-            this.bc = 0;
-            this.bd = 700;
-            this.be = 544;
-            c(a[this.N], this.bb, this.bc, this.bd, this.be);
-         }
-
-      }
-   }
-
-   private void j(int var1) {
-      if (var1 - 1 == 1123) {
-         int var7 = this.r[this.as];
-         if (this.ad != 6) {
-            var7 = var7 == 16 ? this.e[8749 + this.q] : var7 + -6 + 20;
-         }
-
-         byte var8 = this.a[this.a[138] + 468 + var7];
-         int var9 = 0;
-
-         for(int var6 = 0; var6 < 3; ++var6) {
-            if (this.a[this.a[138] + (10 + var6) * 26 + var7] != 0) {
-               int var10 = this.aI - this.a[this.a[283] + 2] * (var8 - 1) / 2 + (this.a[this.a[283] + 2] + 2) * var9;
-               ++var9;
-               this.a(632 + var6, this.aH - 10 + 3, var10);
-               this.a.a(this.aH + 19, var10, (this.j[3][var1] & 255) >> 6, String.valueOf(this.a[this.a[138] + (10 + var6) * 26 + var7]), 0);
-            }
-         }
-
-      } else if (var1 - 1 == 1112) {
-         int var2 = this.r[this.as] + 12;
-         int var3 = 0;
-
-         for(int var5 = 0; var5 < 3; ++var5) {
-            if (this.a[this.a[138] + (10 + var5) * 26 + var2] != 0) {
-               int var4 = this.aH - 34 * (this.a[this.a[138] + 468 + var2] - 1) / 2 + 30 * var3;
-               ++var3;
-               this.a(632 + var5, var4 - 2 - 4, this.aI);
-               this.a.a(var4 + 15, this.aI, (this.j[3][var1] & 255) >> 6, String.valueOf(this.a[this.a[138] + (10 + var5) * 26 + var2]), 0);
-            }
-         }
-
-         this.d[8] = 0;
-         if (this.e[8749 + this.q] == 6 && this.r[this.as] != 1) {
-            this.d[8] = -20;
-         }
-
-      } else {
-         switch (var1 - 1) {
-            case 1077:
-               this.aD /= 21;
-            default:
-               this.a(this.aG + this.aD, this.aH, this.aI);
-         }
-      }
-   }
-
-   private void k(int var1) {
-      switch (var1 - 1) {
-         case 1047:
-         case 1051:
-         case 1055:
-         case 1063:
-         case 1067:
-            if (this.aD < 0 || this.a[this.a[126] + this.aD] == -1) {
-               return;
-            }
-
-            this.aD = this.e[this.b[this.a[this.a[126] + this.aD]] + this.l] + this.a[this.a[127] + this.aD];
-         case 1048:
-         case 1049:
-         case 1050:
-         case 1052:
-         case 1053:
-         case 1054:
-         case 1056:
-         case 1057:
-         case 1058:
-         case 1060:
-         case 1061:
-         case 1062:
-         case 1064:
-         case 1065:
-         case 1066:
-         case 1068:
-         case 1069:
-         case 1070:
-         default:
-            break;
-         case 1059:
-            this.aD = (9 - this.aD) * 2 + 1;
-            break;
-         case 1071:
-            if (this.aD == 0 || this.e[3535 + this.l] == 0 || this.e[3535 + this.l] == 15) {
-               return;
-            }
-      }
-
-      switch (var1 - 1) {
-         case 1018:
-            this.a.a(this.aH, this.aI, (this.j[3][var1] & 255) >> 6, this.aD + "/" + this.a[0][16], this.aG - 1);
-            return;
-         default:
-            this.a.a(this.aH, this.aI, (this.j[3][var1] & 255) >> 6, String.valueOf(this.aD), this.aG - 1);
-      }
-   }
-
-   private boolean c() {
-      this.G = false;
-      if (this.aB == 0) {
-         for(int var1 = 0; var1 < 5; ++var1) {
-            if (this.a[0][this.a[this.a[146] + var1]] != this.d[this.a[this.a[195] + 60 + 0] + var1]) {
-               this.G = true;
-               this.d[this.a[this.a[195] + 60 + 0] + var1] = this.a[0][this.a[this.a[146] + var1]];
-               this.k[this.a[this.a[195] + 60 + 0] + var1] = 1;
-            }
-         }
-      } else if (this.aB != 1 && this.aB != 9) {
-         if (this.aB != 2 && this.aB != 5) {
-            if (this.aB == 4) {
-               this.y();
-            } else if (this.aB == 6) {
-               this.A();
-            } else if (this.aB != 7 && this.aB != 8) {
-               if (this.aB == 10) {
-                  if (this.Q == 16 && this.z != this.y) {
-                     this.k[53] = 1;
-                  }
-               } else if (this.aB != 11) {
-                  if (this.aB == 15) {
-                     this.d[73] = (short)(98 + this.m);
-                     if (this.z != this.y) {
-                        this.k[72] = 1;
-                        this.G = true;
-                     }
-                  } else if (this.aB == 12) {
-                     if (this.am >= 51 && this.q <= 2) {
-                        this.am = 51;
-                     }
-
-                     this.d[57] = this.a[0][17] == this.am ? 104 : (short)(108 + this.e[6868 + this.am]);
-                     if (this.Q == 17 && this.al == 3 && (this.ai == 35 || this.ai == 50 || this.ai == 54)) {
-                        this.d[57] = 105;
-                     }
-
-                     this.d[58] = (short)this.e[2727 + this.am];
-                     if (this.z != this.y) {
-                        this.k[56] = 1;
-                        this.G = true;
-                     }
-                  } else if (this.aB == 13) {
-                     this.d[62] = (short)(82 + (this.q == 7 ? 21 : this.a[this.a[248] + this.q]));
-                     this.d[63] = (short)this.ak;
-                     if (this.z != this.y) {
-                        this.k[61] = 1;
-                        this.G = true;
-                     }
-                  } else if (this.aB == 14) {
-                     this.T = this.W != 0;
-                     this.U = this.W + ag < this.c;
-                     this.Q = this.X == 0;
-                     this.R = this.X + ah >= this.d;
-                     if (this.d[66] != this.W || this.d[71] != this.X) {
-                        this.d[66] = (short)this.W;
-                        this.d[71] = (short)this.X;
-                        this.D();
-                     }
-
-                     this.k[66] = 1;
-                     this.ad = this.ae = 0;
-                  } else if (this.aB == 17) {
-                     this.B();
-                  } else if (this.aB == 16) {
-                     if (this.z != this.y) {
-                        this.k[76] = 1;
-                        this.G = true;
-                     }
-                  } else if (this.aB == 18 || this.aB == 19) {
-                     for(int var2 = 0; var2 < this.a[this.a[307] + this.m]; ++var2) {
-                        this.k[this.a[this.a[195] + 60 + this.aB] + var2] = (byte)(var2 == this.Z ? 1 : 0);
-                     }
-                  }
-               }
-            } else if (this.d[46] != this.r[this.as] || this.b[this.aB]) {
-               this.d[46] = (short)this.r[this.as];
-               this.G = true;
-               if (this.r[this.as] < 10) {
-                  this.d[this.a[this.a[195] + 60 + this.aB]] = (short)this.r[this.as];
-                  this.d[this.a[this.a[195] + 60 + this.aB] + 1] = (short)this.a[this.a[138] + 338 + this.r[this.as] + 12];
-                  this.d[this.a[this.a[195] + 60 + this.aB] + 2] = (short)this.a[this.a[138] + 364 + this.r[this.as] + 12];
-               }
-            }
-         } else {
-            this.z();
-         }
-      } else {
-         this.x();
-      }
-
-      return this.G;
-   }
-
-   private void x() {
-      this.k[47] = this.ay;
-
-      for(int var1 = 0; var1 < 2; ++var1) {
-         this.k[48 + var1] = (byte)(this.F == 2 + var1 ? 2 : (this.a[2 + var1][0] > 0 ? 1 : 0));
-      }
-
-      this.k[50] = (byte)(41 + this.u[0]);
-      this.k[51] = this.a[this.a[304] + this.u[0]];
-
-      for(int var2 = this.a[this.a[195] + 60 + 9]; var2 < this.a[this.a[195] + 60 + 9] + 5; ++var2) {
-         if (this.k[var2] != -1) {
-            if (this.d[var2] != this.k[var2]) {
-               this.d[var2] = (short)this.k[var2];
-               this.k[var2] = 1;
-               this.G = true;
-            } else {
-               this.k[var2] = 0;
-            }
-         }
-      }
-
-   }
-
-   private void y() {
-      for(int var1 = 0; var1 < 23; ++var1) {
-         if (this.e[this.b[this.a[this.a[147] + var1]] + this.l] != this.d[this.a[this.a[195] + 60 + 4] + var1]) {
-            this.G = true;
-            this.d[this.a[this.a[195] + 60 + 4] + var1] = (short)this.e[this.b[this.a[this.a[147] + var1]] + this.l];
-            this.k[this.a[this.a[195] + 60 + 4] + var1] = 1;
-         }
-      }
-
-      if (this.k[11] == 1 || this.k[12] == 1) {
-         this.k[11] = this.k[12] = 1;
-      }
-
-      if (this.e[3636 + this.l] == 0) {
-         this.d[29] = 0;
-      }
-
-      this.d[14] = (short)(108 + this.e[6868 + this.l]);
-   }
-
-   private void z() {
-      if (this.d[4] > 0) {
-         this.v = this.d[4];
-         this.k[5] = this.k[3] = -1;
-         this.G = true;
-      } else {
-         if (this.d[5] != this.r[this.as] || this.b[this.aB]) {
-            this.d[5] = (short)this.r[this.as];
-            this.k[5] = this.k[3] = 1;
-            this.d[3] = this.r[this.as] >= 10 ? (short)(21 + this.r[this.as] - 10) : (this.r[this.as] >= 0 ? (short)(12 + this.r[this.as]) : (this.K ? 41 : (!this.F && this.V ? 29 : (short)(108 + this.e[6868 + -this.r[this.as]]))));
-            this.k[4] = -1;
-            this.G = true;
-         }
-
-      }
-   }
-
-   private void A() {
-      if (this.d[36] != this.r[this.as] || this.b[this.aB]) {
-         this.v = 0 + this.r[this.as];
-         this.d[36] = (short)this.r[this.as];
-         this.k[36] = this.k[38] = this.k[34] = 1;
-         this.k[35] = this.k[37] = 1;
-         this.G = true;
-      }
-
-      if (this.z != this.y) {
-         this.k[38] = 1;
-         this.G = true;
-      }
-
-      this.d[34] = (short)(0 + this.r[this.as]);
-   }
-
-   private void B() {
-      if (this.v == 1) {
-         this.k[this.a[this.a[195] + 60 + this.aB]] = (byte)(this.w != 3 && this.Y != 4 && (this.q <= 0 || this.e[8749 + this.q] != 0 || this.r[this.as] < 0 || this.r[this.as] > 5) ? (this.w != 4 && this.w != 2 ? 1 : 0) : 2);
-         this.k[this.a[this.a[195] + 60 + this.aB] + 1] = (byte)(this.K ? 2 : (this.w != 1 && this.F == -1 && (this.ad == 1 || this.ad == 9) ? 1 : 0));
-      } else if (this.Q == 32) {
-         this.k[this.a[this.a[195] + 60 + this.aB]] = 2;
-         this.k[this.a[this.a[195] + 60 + this.aB] + 1] = 3;
-      } else {
-         this.k[this.a[this.a[195] + 60 + this.aB]] = this.a[this.a[153] + 116 + this.Q];
-         this.k[this.a[this.a[195] + 60 + this.aB] + 1] = this.a[this.a[153] + 145 + this.Q];
-      }
-
-      for(int var1 = this.a[this.a[195] + 60 + 17]; var1 < this.a[this.a[195] + 60 + 17] + 2; ++var1) {
-         if (this.d[var1] != this.k[var1]) {
-            this.d[var1] = (short)this.k[var1];
-            this.k[var1] = 1;
-            this.G = true;
-         } else {
-            this.k[var1] = 0;
-         }
-      }
-
-   }
-
-   private void a(int var1, byte var2, int var3) {
-      boolean var4 = false;
-
-      for(int var10 = 0; var10 < this.aV; ++var10) {
-         this.N = var1;
-         int var7 = aU * var10;
-         byte var5 = 1;
-         if (this.aW + var10 == this.as) {
-            var5 = 0;
-         } else if (var2 == 2) {
-            continue;
-         }
-
-         this.b(this.b[1][var1] & 4095, this.aX + var7, var3 - 1);
-         this.a(552 + var5, this.aX + var7, var3);
-         byte var6;
-         f var10000;
-         byte var10001;
-         int var10002;
-         int var10003;
-         int var10004;
-         if ((var6 = this.r[this.aW + var10]) < 0) {
-            this.a((int)(-var6), (int)(this.aX + var7 - -1), (int)(var3 + 8 + 2 + 3), (int)-8, (byte)29);
-            if (!this.V || this.F || this.aW + var10 != this.as) {
-               continue;
-            }
-
-            var10000 = this;
-            var10001 = 18;
-            var10002 = this.aX + var7;
-            var10003 = var3;
-            var10004 = this.f;
-         } else {
-            if (var6 <= 8) {
-               this.a(664 + var6, this.aX + var7, var3);
-               byte var8 = 0;
-               byte var9 = 0;
-               if (this.e[8749 + this.q] == 6) {
-                  var8 = -1;
-                  var9 = 6;
-               }
-
-               this.a.a(this.aX + var7 + 19 + var8 + 6, var3 + 5 + var9 + 2, 1, String.valueOf(this.s[var10 + this.aW]), 0);
-               if (this.e[8749 + this.q] != 6 && this.aW + var10 < this.av && this.aW + var10 == this.as) {
-                  this.d(3, this.aX + var7 + 6, var3 + 2 + 2, this.f);
-                  this.S = true;
-               }
-               continue;
-            }
-
-            var10000 = this;
-            var10001 = var6;
-            var10002 = this.aX + var7;
-            var10003 = var3;
-            var10004 = this.aW + var10 == this.as ? this.f : 0;
-         }
-
-         var10000.d(var10001, var10002, var10003, var10004);
-      }
-
-      if (this.T) {
-         this.d(1, this.aX - 9, var3 + 8 - 0, this.e);
-      }
-
-      if (this.U) {
-         this.d(2, this.aX + this.aY - 9 + 9, var3 + 8 - 0, this.e);
-      }
-
-   }
-
-   private void c(int var1, int var2, int var3) {
-      int var6 = this.a[this.a[283] + 2] + 6;
-      int var7 = 0;
-      this.ab = this.a[this.a[152] + this.Q + 1] - this.a[this.a[152] + this.Q];
-      int var4 = var2 + this.j[23][this.b[1][var1] & 4095] / 2 * 4;
-      int var5 = var3 - this.ab * var6 / 2 + var6 / 2;
-
-      for(int var8 = 0; var8 < this.ab; ++var8) {
-         if (var8 == this.Z) {
-            var7 = var5;
-         }
-
-         this.b(this.b[1][var1] & 4095, var2, var5);
-         this.a.a(var4, var5, 1, 57 + this.a[this.a[151] + this.a[this.a[152] + this.Q] + var8], 0);
-         var5 += var6;
-      }
-
-      this.a.a(a[this.N]);
-      this.d(2, var4 - 50 - 20, var7 + 4, this.e);
-      this.d(1, var4 + 49 + 20, var7 + 4, this.e);
-   }
-
-   final void a(int var1) {
-      af = (byte)(af + var1);
-      if (af > 98) {
-         af = 98;
-      }
-
-      this.n[2] = this.n[3] = this.n[4] = af;
-
-      for(int var2 = 0; var2 < 5; ++var2) {
-         a[M].setColor(this.f[var2]);
-         b(a[M], 110 + this.l[var2], 232 + this.m[var2], this.n[var2], this.o[var2]);
-      }
-
-      if (!this.y) {
-         this.a.a.a();
-         Thread.yield();
-      } else {
-         this.l();
-      }
-   }
-
-   private void c(byte var1) {
-      boolean var5 = false;
-
-      try {
-         System.gc();
-         Thread.yield();
-         DataInputStream var8 = new DataInputStream(this.getClass().getResourceAsStream("/pi8"));
-
-         byte var4;
-         for(byte var10 = 0; var10 < 12 && (var4 = (byte)(var8.readByte() & 255)) != 255; ++var10) {
-            short var6;
-            byte[] var7 = new byte[var6 = (short)(var4 << 8 | var8.readByte() & 255)];
-            var8.read(var7, 0, var6);
-            if (var10 == var1) {
-               this.a[2][0] = Image.createImage(var7, 0, var6);
-               break;
-            }
-         }
-
-         var8.close();
-      } catch (Exception var9) {
-      }
-   }
-
-   private void C() {
-      this.aK = this.c > ag ? ag : this.c;
-      this.aL = this.d > ah ? ah : this.d;
-      this.N = 1;
-      this.b(this.b[1][1188] & 4095, 0, 0);
-      int var3 = 0;
-      int var4 = 0;
-      boolean var5 = false;
-
-      for(int var6 = 0; var6 < this.aL; ++var6) {
-         int var2 = 0;
-         int var1 = -1;
-
-         for(int var7 = 0; var7 <= this.aK; ++var7) {
-            if (var7 == this.aK) {
-               var5 = true;
-            } else {
-               this.e(this.W + var7, this.X + var6);
-            }
-
-            if (!var5 && this.aM == var1) {
-               ++var4;
-            } else {
-               if (var4 > 0) {
-                  a[this.N].setColor(var1);
-                  b(a[this.N], var2 * 7 - 0, (this.aJ + var3) * 4 - 0, var4 * 7, 4);
-                  var4 = 0;
-               }
-
-               if (var5) {
-                  var5 = false;
-               } else {
-                  var1 = this.aM;
-                  var2 = var7;
-                  var3 = var6;
-                  var4 = 1;
-               }
-            }
-         }
-      }
-
-   }
-
-   private void D() {
-      this.N = M;
-      int var2 = (this.b[1][1188] >> 12 & 3) << 7;
-      this.b(this.b[1][1188] & 4095, 160 + this.j[1][1188] + 0, 120 + this.j[2][1188] + 0 + var2);
-      a(a[M], a[this.c[1]], (this.ad + 1) / 2 * 7, (this.ae + 1) / 2 * 4, 7 * ag, 4 * ah, 160 + this.j[1][1188] + (-this.ad + 1) / 2 * 7, 120 + this.j[2][1188] + (-this.ae + 1) / 2 * 4 + var2, 0);
-      a[this.c[1]].drawImage(a[this.c[0]], -(160 + this.j[1][1188] + 0) * 1, -(120 + this.j[2][1188] + 0 + var2) * 1, 0);
-      int var3 = (this.ad + 1 >> 1) * (this.aK - 1);
-      int var4 = (this.ae + 1 >> 1) * (this.aL - 1);
-      this.N = 1;
-      if (this.ae == 0) {
-         a[this.N].setColor(11180356);
-         b(a[this.N], var3 * 7 - 0, var4 - 0, 7, ah * 4);
-
-         for(int var6 = 0; var6 < this.aL; ++var6) {
-            this.e(this.W + var3, this.X + var6);
-            a[this.N].setColor(this.aM);
-            b(a[this.N], var3 * 7 - 0, (this.aJ + var6) * 4 - 0, 7, 4);
-         }
-      } else if (this.ad == 0) {
-         for(int var5 = 0; var5 < this.aK; ++var5) {
-            this.e(this.W + var5, this.X + var4);
-            a[this.N].setColor(this.aM);
-            b(a[this.N], var5 * 7 - 0, (this.aJ + var4) * 4 - 0, 7, 4);
-         }
-      }
-
-   }
-
-   private void e(int var1, int var2) {
-      this.aM = -1;
-      byte var3;
-      if ((var3 = this.a(var1, var2)) != 2) {
-         if (this.c[var2][var1] <= 0) {
-            if (this.c[var2][var1] < 0) {
-               this.aM = this.b[var3][b((int)this.c[var2][var1]) + 9];
-            }
-         } else {
-            this.aM = a((int)this.c[var2][var1]) == 1 && (this.e[7979 + this.c[var2][var1]] & 2) != 0 ? -1 : this.b[var3][a((int)this.c[var2][var1]) + 6];
-         }
-
-         if (this.aM == -1) {
-            this.aM = this.b[var3][this.a[this.a[194] + (this.b[var2][var1] & 255)]];
-            return;
-         }
-      } else {
-         this.aM = 6049325;
-      }
-
-   }
-
-   private void E() {
-      this.W = this.I - ag / 2 + (this.O >> 1);
-      this.W = this.W < 0 ? 0 : (this.W + ag >= this.c ? this.c - ag : this.W);
-      if (ah > this.d) {
-         this.aJ = ah - this.d >> 1;
-      } else {
-         this.X = this.K - ah / 2 + (this.P >> 1);
-         this.X = this.X < 0 ? 0 : (this.X + ah >= this.d ? this.d - ah : this.X);
-      }
-   }
-
-   private void F() {
-      if (this.c == -1 && this.a[this.a[153] + 0 + this.Q] == 1) {
-         this.G();
-      } else if (this.a[this.a[153] + 0 + this.Q] == 1) {
-         this.H();
-      } else if (this.Q == 23) {
-         this.I();
-      } else if (this.Q == 15) {
-         this.J();
-      } else if (this.Q == 17) {
-         this.P();
-      } else if (this.Q == 20) {
-         this.K();
-      } else if (this.Q == 18) {
-         if (this.H) {
-            this.H = false;
-            this.b[13] = true;
-            this.b[11] = true;
-            this.a((byte)11, (int)0, (int)0);
-            this.a((byte)17, (int)0, (int)240);
-         }
-
-         this.a((byte)13, (int)0, (int)0);
-      } else if (this.Q == 19) {
-         this.L();
-      } else if (this.Q == 24) {
-         if (this.H) {
-            this.H = false;
-            this.b[11] = this.b[16] = true;
-            this.a((byte)11, (int)0, (int)0);
-            this.a((byte)16, (int)0, (int)0);
-            this.a((byte)17, (int)0, (int)240);
-         }
-      } else if (this.Q == 25) {
-         this.M();
-      } else if (this.Q == 27) {
-         this.N();
-      } else if (this.Q == 32 && this.H) {
-         this.H = false;
-
-         try {
-            a[M].drawImage(Image.createImage("/l3"), 0, 0, 20);
-         } catch (Exception var2) {
-         }
-
-         this.b[17] = true;
-         this.a((byte)17, (int)0, (int)240);
-      }
-
-      this.N = this.c[1];
-   }
-
-   private void G() {
-      if (this.H) {
-         this.H = false;
-         this.N = this.c[1];
-         a[this.N].setColor(9422847);
-         b(a[this.N], 0, 0, this.a[this.N], this.b[this.N]);
-         a[this.N].setColor(940839);
-         b(a[this.N], 0, 0 + this.b[this.N] - 64, this.a[this.N], 64);
-         this.S = 0;
-         this.T = 160;
-         this.a((int)1118, (byte)2);
-         if (this.Q != this.U && this.Q != 3 && this.Q != 12 && this.Q != 13 && this.Q != 2 && this.Q != this.V && this.Q != 9 && this.Q != 14) {
-            if (this.Q == 16 || this.Q == 21 || this.Q == 22) {
-               this.k[53] = 1;
-               this.k[54] = -1;
-            }
-         } else {
-            this.k[53] = -1;
-            this.k[54] = 1;
-         }
-
-         this.k[52] = -1;
-      }
-
-      this.N = M;
-      a[this.N].drawImage(a[this.c[1]], 0, 240, 36);
-      a[this.N].setColor(9422847);
-      b(a[this.N], 0, 0, this.a[this.N], 80);
-
-      for(int var1 = 0; var1 < 4; ++var1) {
-         if (this.a[0][var1] > 320 || this.a[0][3] == -1000) {
-            this.a[0][var1] = -88 - this.a((int)65535, (int)80);
-            this.a[1][var1] = this.a((int)65535, (int)48);
-            this.a[2][var1] = this.a((int)255, (int)4);
-         }
-
-         int var10001 = 1674 + this.a[2][var1];
-         int[] var10002 = this.a[0];
-         int var2 = var10002[var1] += this.a[2][var1] + 2 >> 1;
-         int[] var10003 = this.a[1];
-         this.a(var10001, var2, var10003[var1] += this.a((int)255, (int)5) == 0 ? this.a((int)255, (int)3) - 1 : 0);
-      }
-
-      if (this.Q != this.U && this.Q != 12 && this.Q != 13 && this.Q != 2 && this.Q != this.V && this.Q != 9 && this.Q != 14) {
-         if (this.Q == 16 || this.Q == 21 || this.Q == 22) {
-            this.k[53] = 1;
-            this.k[54] = -1;
-         }
-      } else {
-         this.k[53] = -1;
-         this.k[54] = 1;
-      }
-
-      this.k[52] = -1;
-      this.b[10] = true;
-      this.a((int)1672, (int)160, (int)0);
-      this.S = 0;
-      this.T = 192;
-      this.a((int)1118, (byte)1);
-      this.a((byte)10, (int)65, (int)54);
-      this.b[17] = true;
-      this.a((byte)17, (int)0, (int)240);
-   }
-
-   private void H() {
-      if (this.H) {
-         this.H = false;
-         this.O();
-         if (this.Q != 10 && this.Q != 11 && this.Q != 12 && this.Q != 13) {
-            if (this.Q == 16 || this.Q == 21 || this.Q == 22) {
-               this.k[53] = 1;
-               this.k[54] = -1;
-            }
-         } else {
-            this.k[53] = -1;
-            this.k[54] = 1;
-         }
-
-         this.k[52] = -1;
-         this.b[10] = true;
-      }
-
-      this.a((byte)10, (int)65, (int)32);
-      this.a((byte)17, (int)0, (int)240);
-   }
-
-   private void I() {
-      if (this.H) {
-         this.H = false;
-         this.b[11] = true;
-         this.v = 69;
-         this.k[55] = 1;
-         this.a((byte)11, (int)0, (int)0);
-         this.k[55] = -1;
-      }
-
-   }
-
-   private void J() {
-      if (this.H) {
-         this.H = false;
-         this.b[11] = this.b[15] = true;
-         this.a((byte)11, (int)0, (int)0);
-         this.a((byte)17, (int)0, (int)240);
-      }
-
-      this.a((byte)15, (int)0, (int)0);
-      this.a((byte)17, (int)0, (int)240);
-   }
-
-   private void K() {
-      if (this.H) {
-         this.H = false;
-         this.A = true;
-         this.n();
-         this.u();
-         this.O();
-         this.b[12] = true;
-      }
-
-      this.a((byte)12, (int)0, (int)0);
-      this.a((byte)17, (int)0, (int)240);
-   }
-
-   private void L() {
-      if (this.H) {
-         this.H = false;
-         this.b[11] = true;
-         this.a((byte)11, (int)0, (int)0);
-         this.b[14] = true;
-         this.C();
-      }
-
-      this.a((byte)14, (int)160, (int)120);
-      this.b[17] = true;
-      this.a((byte)17, (int)0, (int)240);
-   }
-
-   private void M() {
-      if (this.H) {
-         this.H = false;
-         if (!this.I) {
-            this.O();
-            a[1].drawImage(a[0], 0, 0, 0);
-         }
-
-         this.b[2] = true;
-      }
-
-      a(a[0], a[1], 0, 0, 350, 240 - this.aZ, 0, 0, 0);
-      this.a((byte)((byte)(18 + this.m)), (int)0, (int)0);
-      this.a((byte)2, (int)0, (int)this.d[this.a[this.a[195] + 0 + 2]]);
-      this.a((byte)17, (int)0, (int)240);
-      this.I = true;
-   }
-
-   private void N() {
-      if (this.ab) {
-         this.ab = false;
-         this.x = this.v;
-         this.v = 61;
-         this.b[11] = true;
-         this.k[55] = 1;
-         this.a((byte)11, (int)0, (int)0);
-         this.k[55] = -1;
-         this.a((byte)17, (int)0, (int)240);
-      }
-
-   }
-
-   private void O() {
-      this.c[9] = this.c[8] = 0;
-      a(a[this.c[0]], a[this.c[1]], 0, 0, 350, this.A, 0, this.ba - this.ax + this.aP, 0);
-
-      for(byte var1 = 0; var1 < 20; ++var1) {
-         if (this.a[var1]) {
-            this.b[var1] = true;
-            this.a((byte)var1, (int)0, (int)this.d[this.a[this.a[195] + 0 + var1]]);
-            this.N = this.c[0];
-            if (this.a[this.a[195] + 20 + var1] == 1 && this.Q != 20) {
-               this.a((int)526, (int)0, (int)(0 + this.ba));
-            } else if (this.a[this.a[195] + 20 + var1] == 2) {
-               this.a((int)532, (int)0, (int)(240 - this.aZ));
-            }
-         }
-      }
-
-      this.c[9] = this.c[8] = 2;
-   }
-
-   private void P() {
-      if (this.aN > 0 && !this.J) {
-         this.aN += 4;
-         a[M].setColor(0);
-         b(a[M], 0, 0, 320, 16 + this.aN);
-         b(a[M], 0, 256 - this.aN, 320, this.aN);
-         this.c = true;
-         if (this.aN - 4 <= 120) {
-            return;
-         }
-
-         this.aN = -this.aN;
-         this.c = false;
-         this.i();
-      }
-
-      if (this.H && !this.J) {
-         this.b[12] = true;
-         a[M].setColor(0);
-         b(a[M], 0, 0, 320, 96);
-         b(a[M], 0, 192, 320, 64);
-      }
-
-      if (this.a[this.a[155] + 0 + this.aR] == 1) {
-         if (this.aQ >= 0) {
-            if (this.aQ >= this.a[this.a[155] + 84 + this.aR] && this.am == 0) {
-               if (this.am == 0 && this.aR != 0) {
-                  this.aQ = -1;
-                  this.j = true;
-                  return;
-               }
-            } else {
-               this.N = 0;
-               a[M].setColor(0);
-               b(a[M], 0, 96, 320, 96);
-               this.d(100 + this.a[this.a[155] + 28 + this.aR], 160, 136, this.am == 0 ? this.aQ : this.f);
-               this.d(106, 160, 136, this.f);
-               this.aQ = this.am == 0 ? this.aQ + 1 : this.aQ;
-            }
-         }
-      } else if (this.a[this.a[155] + 0 + this.aR] >= 2 || this.a[this.a[155] + 0 + this.ao] >= 2) {
-         this.Q();
-         this.R();
-      }
-
-      this.H = false;
-      if (this.aN < 0) {
-         this.aN += 4;
-         this.c = true;
-         if (this.aN >= -48) {
-            this.aN = 0;
-            this.c = false;
+        }
+        ++this.var_int_g;
+        ++this.var_int_f;
+        if (this.var_int_f >= 120) {
+            this.var_int_f = 0;
+        }
+        if (this.var_int_o < 3) {
+            ++this.var_int_o;
+            this.var_boolean_n = true;
+        } else if (this.var_int_o == 3) {
+            ++this.var_int_o;
             this.i();
-         }
-      }
+            this.var_boolean_n = false;
+        }
+        if (this.var_boolean_k) {
+            this.var_boolean_k = false;
+            this.var_int_s = 0;
+            this.l(-1);
+            this.var_boolean_P = false;
+            this.a(true, true, false, false);
+            this.var_boolean_F = false;
+            this.var_byte_w = 0;
+            this.var_byte_k = 0;
+            this.var_int_q = 0;
+            this.var_int_E = 0;
+            this.var_int_D = 0;
+            this.var_int_C = 0;
+            this.var_int_B = 0;
+            this.var_byte_F = (byte)-1;
+            this.aI();
+            this.var_boolean_u = false;
+            this.var_boolean_t = false;
+            this.i();
+        }
+        if (this.var_boolean_p) {
+            this.var_boolean_p = false;
+            this.i();
+        }
+        ++this.var_int_p;
+    }
 
-      if (this.aN == 0 && this.al != 0) {
-         this.a((byte)12, (int)0, (int)0);
-         this.a((byte)17, (int)0, (int)240);
-      }
+    private void i() {
+        var_boolean_m = false;
+        var_boolean_l = false;
+        this.var_boolean_h = false;
+        this.var_boolean_g = false;
+        this.var_boolean_f = false;
+        this.var_boolean_e = false;
+        this.var_boolean_v = false;
+        this.var_boolean_i = false;
+        this.var_byte_E = (byte)4;
+        this.var_boolean_w = false;
+        this.var_byte_i = (byte)-1;
+        this.var_boolean_t = false;
+        this.var_int_n = 0;
+    }
 
-   }
-
-   private void Q() {
-      if (this.aR > 0 && this.aQ >= 0 && (this.aN == 0 || this.H)) {
-         if (this.aQ == 0 && this.a[this.a[155] + 28 + this.aR] > 0) {
-            for(int var2 = 0; var2 < this.p.length; ++var2) {
-               if (this.p[var2] != 0) {
-                  int var1 = var2 > 6 ? 6 : var2;
-                  if (this.a[this.a[196] + var1 * 33 + 0 + this.a[this.a[155] + 28 + this.aR] * 3] != 0) {
-                     this.e[2929 + this.p[var2]] = this.a[this.a[196] + var1 * 33 + 0 + this.a[this.a[155] + 28 + this.aR] * 3];
-                     this.e[1313 + this.p[var2]] = this.a[this.a[196] + var1 * 33 + 2 + this.a[this.a[155] + 28 + this.aR] * 3];
-                     this.e[2828 + this.p[var2]] = 105;
-                  }
-
-                  if (this.a[this.a[196] + var1 * 33 + 1 + this.a[this.a[155] + 28 + this.aR] * 3] != 0) {
-                     this.e[606 + this.p[var2]] = (byte)(-10 + this.a[this.a[196] + var1 * 33 + 1 + this.a[this.a[155] + 28 + this.aR] * 3]);
-                     this.e[808 + this.p[var2]] = 0;
-                  }
-
-                  this.e[3030 + this.p[var2]] = 0;
-               }
+    private void j() {
+        try {
+            this.var_b_a.void_g();
+            this.var_b_a.void_e();
+            this.var_b_a.void_h();
+            this.var_b_a.void_i();
+        }
+        catch (Exception exception) {}
+        ++this.var_int_c;
+        ++this.var_int_h;
+        if (this.var_int_h >= 100) {
+            int n = this.var_int_h - 100;
+            if (n >= this.var_short_d - 1) {
+                this.var_int_h = 0;
             }
-         }
-
-         if (this.aQ >= this.a[this.a[155] + 84 + this.aR]) {
-            this.aQ = -2;
-            if (this.al == 0) {
-               this.j = true;
-               return;
+            for (int i = 0; i < this.var_short_c; ++i) {
+                if (this.var_byte_arr_arr_c[n][i] > -114 || this.var_byte_arr_arr_c[n][i] <= -117) continue;
+                this.var_byte_arr_arr_c[n][i] = 0;
+                this.c(i, n, 1, 1);
             }
-         }
+        }
+        if (this.var_byte_u > 0 && this.var_byte_v == 1) {
+            this.var_byte_u = (byte)(this.var_byte_u + 1);
+            if (this.var_byte_u == 41 || this.var_byte_u == 90) {
+                this.var_byte_v = 0;
+                this.var_byte_Q = (byte)24;
+                this.var_boolean_H = true;
+                this.var_int_v = 56 + 41 / this.var_byte_u;
+                this.var_byte_o = (byte)(11 - 41 / this.var_byte_u);
+                this.var_int_o = 0;
+            }
+        }
+    }
 
-         ++this.aQ;
-         if (this.aQ > 0) {
-            this.j();
-         }
-      }
+    private void k() {
+        block10: {
+            int n = this.var_byte_I + this.var_byte_y;
+            int n2 = this.var_byte_K + this.var_byte_A;
+            try {
+                byte by = this.var_byte_arr_arr_c[n2][n];
+                if (!(this.var_boolean_u || by <= -1 && by >= -30)) {
+                    boolean bl = false;
+                    if (by >= 51 && this.var_byte_w == 1 || by >= 1 && by <= 50) {
+                        this.var_byte_W = by;
+                    } else {
+                        for (int i = -1; i <= 1; ++i) {
+                            for (int j = -1; j <= 1; ++j) {
+                                if (n + j < 0 || n2 + i < 0 || n + j >= this.var_short_c || n2 + i >= this.var_short_d || ((by = this.var_byte_arr_arr_c[n2 + i][n + j]) < 51 || this.var_byte_w != 1) && (by < 1 || by > 50)) continue;
+                                int n3 = this.var_byte_arr_e[202 + by];
+                                int n4 = this.var_byte_arr_e[303 + by];
+                                int n5 = i < 0 ? 16 - n4 : (n4 = i == 0 ? 0 : 16 + n4);
+                                n3 = j < 0 ? 22 - n3 : (j == 0 ? 0 : 22 + n3);
+                                n3 = n3 * n3;
+                                n4 *= n4;
+                                int n6 = (n4 + n3) / 2;
+                                if (this.var_byte_W == by && (n6 < 13 || by <= 50)) {
+                                    this.var_int_ac = n6;
+                                    bl = true;
+                                }
+                                if (n6 >= this.var_int_ac || n6 >= 13 && by > 50) continue;
+                                this.var_int_ac = n6;
+                                this.var_byte_W = by;
+                                bl = true;
+                            }
+                        }
+                        if (!bl) {
+                            this.var_byte_W = 0;
+                            this.var_int_ac = 1000;
+                        }
+                    }
+                    if (this.var_byte_W < 50 && this.var_byte_w == 1) {
+                        this.var_byte_W = 0;
+                    }
+                    break block10;
+                }
+                this.var_byte_W = 0;
+                return;
+            }
+            catch (Exception exception) {}
+        }
+    }
 
-   }
+    private void l() {
+        this.var_boolean_z = true;
+        this.repaint();
+        Thread.yield();
+    }
 
-   private void R() {
-      if (this.an != 0 || this.a[this.a[155] + 84 + this.ao] >= -1 || this.aQ > 0) {
-         if (this.H) {
-            this.A = true;
-            this.N = 1;
+    protected final void paint(Graphics graphics) {
+        if (this.var_byte_v == 1) {
+            f.a(graphics, var_javax_microedition_lcdui_Image_arr_a[this.var_byte_arr_c[1]], 0, 0, 320, this.var_int_A, this.var_short_a - 0, this.var_short_b - 0 + this.ba - this.var_byte_ax, 0);
+            for (int n = 0; n < 20; n = (int)((byte)(n + 1))) {
+                if (!this.var_boolean_arr_a[n]) continue;
+                f.a(graphics, var_javax_microedition_lcdui_Image_arr_a[this.var_byte_arr_c[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + n]]], 0, this.var_int_arr_c[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + n]], this.var_int_arr_a[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + n]] + 0, this.var_int_arr_b[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + n]], this.var_short_a - 0, this.var_short_b + this.var_int_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + n]] + 0, 0);
+            }
+        } else {
+            f.a(graphics, var_javax_microedition_lcdui_Image_arr_a[var_byte_M], 0, 0, 320, 240, this.var_short_a - 0, this.var_short_b - 0 + 0, 0);
+            if (this.var_boolean_s && !this.var_boolean_J && this.aN < 0) {
+                graphics.setColor(0);
+                f.b(graphics, this.var_short_a - 0, this.var_short_b - 0 + 0, 320, 16 + -this.aN);
+                f.b(graphics, this.var_short_a - 0, this.var_short_b - 0 + 16 + 240 - -this.aN + 0, 320, -this.aN);
+            }
+        }
+        this.var_boolean_z = false;
+    }
+
+    private void m() {
+        if (this.var_byte_v == 1) {
+            this.var_byte_N = this.var_byte_arr_c[1];
             this.n();
-            this.aP = 0;
-         }
-
-         if (this.J) {
-            if (this.H) {
-               this.H = false;
-               this.A = true;
-               this.n();
-               this.u();
-               this.O();
-               this.b[12] = true;
-               return;
-            }
-         } else if (this.aN == 0 || this.H) {
-            this.aO = 0;
-            if (this.aR == 24) {
-               this.aO = this.a((int)255, (int)8);
-            }
-
-            a(a[this.c[0]], a[this.c[1]], 0, 96, 350, 96 - this.aO, 0, 96 + this.aO, 0);
-            if (this.aR == 24) {
-               a[M].setColor(0);
-               b(a[M], 88, 0, 320, 8);
-               b(a[M], 0, 192, 320, 16);
-            }
-
-            this.N = 0;
-            this.bb = 0;
-            this.bc = 96;
-            this.bd = 350;
-            this.be = 96;
-            c(a[this.N], this.bb, this.bc, this.bd, this.be);
+            this.w();
             this.u();
+            this.c(this.var_byte_y * 22, this.var_byte_A * 16);
+            this.var_boolean_S = false;
+            for (byte by = 0; by < 20; by = (byte)((byte)(by + 1))) {
+                if (!this.var_boolean_arr_a[by]) continue;
+                this.a(by, 0, this.var_int_arr_c[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + by]] - 0);
+                this.var_byte_N = this.var_byte_arr_c[1];
+                if (by == 8 || by == 7) {
+                    int n = this.var_int_arr_b[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + by]] - 55 + this.var_int_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + by]] + 11;
+                    this.a(560, this.var_int_arr_a[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + by]] - 68, n);
+                }
+                if (this.var_byte_arr_a[this.var_short_arr_a[195] + 20 + by] == 1) {
+                    this.a(526, 0, (int)this.var_byte_ax);
+                    continue;
+                }
+                if (this.var_byte_arr_a[this.var_short_arr_a[195] + 20 + by] != 2) continue;
+                this.a(532, 0, 240 - this.ba - this.aZ + this.var_byte_ax);
+            }
+            return;
+        }
+        if (this.var_byte_v == 0) {
+            this.F();
+        }
+    }
+
+    private void n() {
+        try {
+            if (this.var_int_ae != 0 && this.var_int_ad != 0) {
+                this.var_boolean_A = true;
+            }
+            this.var_int_ah = 0;
+            this.var_int_ai = 0;
+            if (this.var_boolean_A) {
+                this.var_boolean_A = false;
+                this.var_boolean_C = false;
+                this.var_int_aj = this.var_byte_O - 1;
+                this.var_int_ak = this.var_byte_P - 1;
+                this.var_int_ae = 0;
+                this.var_int_ad = 0;
+                this.o();
+            } else {
+                this.var_int_ag = 0;
+                this.var_int_ak = -1;
+                if (this.var_int_ad != 0) {
+                    this.var_int_ah = -this.var_int_ad * 22;
+                } else if (this.var_int_ae != 0) {
+                    this.var_int_ai = -this.var_int_ae * 16;
+                }
+                f.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[1]], var_javax_microedition_lcdui_Image_arr_a[this.var_byte_arr_c[0]], 0, 0, 350, this.var_int_A, this.var_int_ah, this.var_int_ai, 0);
+                if (this.var_int_ad != 0) {
+                    this.var_int_aj = this.var_int_ah = ((this.var_int_ad - 2) / 2 + 1) * (this.var_byte_O - 1);
+                    this.var_int_ai = 0;
+                    this.var_int_ak = this.var_byte_P - 1;
+                    this.var_int_ad = 0;
+                    this.o();
+                }
+                if (this.var_int_ae != 0) {
+                    this.var_int_ak = this.var_int_ai = ((this.var_int_ae - 2) / 2 + 1) * (this.var_byte_P - 1);
+                    this.var_int_ah = 0;
+                    this.var_int_aj = this.var_byte_O - 1;
+                    this.var_int_ae = 0;
+                    this.o();
+                }
+                if (this.var_boolean_C) {
+                    this.var_boolean_C = false;
+                    this.var_int_ah = 0;
+                    this.var_int_aj = this.var_byte_O - 1;
+                    this.var_int_ai = this.var_byte_P - 1 - 3;
+                    this.var_int_ak = this.var_byte_P - 1;
+                    this.o();
+                }
+                if (this.var_boolean_B) {
+                    this.var_boolean_B = false;
+                    this.var_int_ah = 0;
+                    this.var_int_aj = this.var_byte_O - 1;
+                    this.var_int_ai = 0;
+                    this.var_int_ak = this.var_byte_P - 1;
+                    this.var_boolean_D = true;
+                    this.o();
+                    this.var_boolean_D = false;
+                }
+            }
+            if (this.var_int_ak != -1 && !this.var_boolean_s) {
+                f.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[0]], var_javax_microedition_lcdui_Image_arr_a[this.var_byte_arr_c[1]], 0, 0, 350, this.var_int_A, 0, 0, 0);
+            }
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
+
+    private void o() {
+        this.var_int_ag = this.var_int_ai;
+        while (this.var_int_ag <= this.var_int_ak) {
+            this.var_int_af = this.var_int_ah;
+            while (this.var_int_af <= this.var_int_aj) {
+                block10: {
+                    block9: {
+                        if (!this.var_boolean_D) break block9;
+                        if (!this.var_boolean_arr_arr_a[this.var_int_ag][this.var_int_af]) break block10;
+                        this.var_boolean_arr_arr_a[this.var_int_ag][this.var_int_af] = false;
+                    }
+                    if (!this.var_boolean_s || this.boolean_b(this.var_int_af + this.var_byte_I, this.var_int_ag + this.var_byte_K)) {
+                        int n = this.var_byte_arr_arr_b[this.var_int_ag + this.var_byte_K][this.var_int_af + this.var_byte_I] & 0xFF;
+                        if (n < 175) {
+                            this.a(n, this.var_int_af * 22, this.var_int_ag * 16);
+                        } else {
+                            this.void_a(n, (byte)0);
+                        }
+                        byte by = this.var_byte_arr_arr_c[this.var_int_ag + this.var_byte_K][this.var_int_af + this.var_byte_I];
+                        if (by < 0 && by >= -123) {
+                            this.void_a((int)by, (byte)0);
+                        }
+                    }
+                }
+                ++this.var_int_af;
+            }
+            ++this.var_int_ag;
+        }
+    }
+
+    private void void_a(int n, byte by) {
+        int n2;
+        int n3;
+        int n4;
+        int n5;
+        int n6;
+        int n7;
+        int n8;
+        int n9;
+        block28: {
+            n9 = -n;
+            n8 = 0;
+            byte by2 = 0;
+            n7 = 0;
+            n6 = 0;
+            n5 = 0;
+            n4 = this.var_int_af * 22;
+            n3 = this.var_int_ag * 16;
+            if (f.byte_b(n) != 2) {
+                n8 = this.var_byte_arr_e[8749 + n9];
+                by2 = this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + n8];
+                n7 = this.var_byte_arr_e[9115 + n9];
+                n6 = this.var_int_af + this.var_byte_I - this.var_byte_arr_e[8383 + n9];
+                n5 = this.var_int_ag + this.var_byte_K - this.var_byte_arr_e[8444 + n9];
+                n4 -= n6 * 22;
+                n3 -= n5 * 16;
+                this.var_int_N = this.var_short_arr_arr_b[0][n8 + 1];
+                this.var_int_O = this.var_byte_arr_arr_j[0][n8 + 1];
+                if (by == 0) {
+                    int n10 = 0;
+                    n2 = by2 * n5 + n6;
+                    while (true) {
+                        if ((this.var_byte_arr_arr_j[3][this.var_int_N] & 0xFF) >> 6 == 0) {
+                            if (n10 == n2) break block28;
+                            ++n10;
+                        }
+                        if ((this.var_byte_arr_arr_j[3][this.var_int_N] & 7) == 0) {
+                            ++this.var_int_N;
+                            --this.var_int_O;
+                            continue;
+                        }
+                        break block28;
+                        break;
+                    }
+                }
+                n2 = this.var_byte_arr_e[8993 + n9];
+                while (n2 > 0) {
+                    this.var_byte_arr_g[this.var_byte_arr_e[4646 + n2]] = (byte)n2;
+                    n2 = this.var_byte_arr_e[4545 + n2];
+                }
+            } else if (f.boolean_c(n)) {
+                n8 = this.var_byte_arr_e[9833 + (n9 -= 61)];
+                n7 = this.var_byte_arr_e[9933 + n9];
+                this.var_int_N = this.var_short_arr_arr_b[0][n8 + 27 - 1];
+                this.var_int_O = this.var_byte_arr_arr_j[0][n8 + 27 - 1];
+            } else if (f.byte_c(n) != 2) {
+                if (f.byte_c(n) != 3) {
+                    this.var_byte_arr_g[0] = this.var_byte_arr_arr_c[this.var_byte_K + this.var_int_ag][this.var_byte_I + this.var_int_af];
+                    if (f.byte_c(this.var_byte_arr_g[0]) != 2) {
+                        if (f.byte_c(this.var_byte_arr_g[0]) == 1) {
+                            by = (byte)-1;
+                        }
+                        n8 = 20 - (this.var_byte_arr_g[0] + 111);
+                        n7 = 1;
+                    } else if (f.byte_c(this.var_byte_arr_e[4545 + this.var_byte_arr_g[0]]) != 2) {
+                        n8 = 20 - (this.var_byte_arr_e[4545 + this.var_byte_arr_g[0]] + 111);
+                        n7 = 2;
+                    }
+                    while (n8 > 22) {
+                        n8 -= 3;
+                    }
+                } else {
+                    n8 = 23;
+                    n7 = 0;
+                }
+                this.var_int_N = this.var_short_arr_arr_b[0][n8 + 1];
+                this.var_int_O = this.var_byte_arr_arr_j[0][n8 + 1];
+                n9 = 0;
+            } else if (n >= 1000) {
+                n4 = this.var_int_S;
+                n3 = this.var_int_T;
+                n8 = n - 1000;
+                this.var_int_N = this.var_short_arr_arr_b[0][n8];
+                this.var_int_O = this.var_byte_arr_arr_j[0][n8];
+                if (this.var_byte_v == 0) {
+                    this.var_byte_arr_g[0] = 1;
+                    this.var_byte_arr_g[1] = 2;
+                    this.var_byte_arr_g[2] = 3;
+                    this.var_byte_arr_e[2930] = 39;
+                    this.var_byte_arr_e[2931] = 42;
+                    this.var_byte_arr_e[2932] = 42;
+                    this.var_byte_arr_e[607] = 1;
+                    this.var_byte_arr_e[608] = 0;
+                    this.var_byte_arr_e[609] = 6;
+                    this.var_byte_arr_e[1415] = 25;
+                    this.var_byte_arr_e[1416] = 45;
+                    this.var_byte_arr_e[1417] = 70;
+                    this.var_byte_arr_e[3031] = (byte)(this.var_int_f % 8);
+                    this.var_byte_arr_e[3032] = (byte)(this.var_int_f % 8);
+                    this.var_byte_arr_e[3033] = (byte)(this.var_int_f % 10);
+                    this.var_byte_arr_e[5152] = 8;
+                    this.var_byte_arr_e[6566] = 9;
+                    this.var_byte_arr_e[5153] = 5;
+                    this.var_byte_arr_e[6567] = 2;
+                    this.var_byte_arr_e[5154] = 10;
+                    this.var_byte_arr_e[6568] = 0;
+                    this.var_byte_arr_e[1316] = 0;
+                    this.var_byte_arr_e[1315] = 0;
+                    this.var_byte_arr_e[1314] = 0;
+                    this.var_byte_arr_e[6467] = 0;
+                    this.var_byte_arr_e[6466] = 0;
+                    this.var_byte_arr_e[6465] = 0;
+                }
+                n7 = 0;
+                n9 = 0;
+            } else if (n >= 175) {
+                n8 = n - 180 + 34;
+                this.var_int_N = this.var_short_arr_arr_b[0][n8];
+                this.var_int_O = this.var_byte_arr_arr_j[0][n8];
+                n3 += this.aO;
+                n7 = 0;
+                n9 = 0;
+            }
+        }
+        if (by == 0) {
+            do {
+                this.var_int_P = (this.var_byte_arr_arr_j[3][this.var_int_N] & 0xFF) >> 6;
+                if (this.var_int_P <= n7) {
+                    this.a(this.var_short_arr_arr_b[1][this.var_int_N] & 0xFFF, (this.var_int_af - n6) * 22 + this.var_byte_arr_arr_j[1][this.var_int_N], (this.var_int_ag - n5) * 16 + this.var_byte_arr_arr_j[2][this.var_int_N]);
+                }
+                ++this.var_int_N;
+            } while ((this.var_byte_arr_arr_j[3][this.var_int_N] & 7) == 0 && (this.var_byte_arr_arr_j[3][this.var_int_N] & 0xFF) >> 6 != 0);
+        } else {
+            this.a(n9, (byte)n7, (byte)n8, n4, n3, by);
+        }
+        for (n2 = 0; n2 < 8; n2 = (int)((byte)(n2 + 1))) {
+            this.var_byte_arr_i[n2] = 0;
+            this.var_byte_arr_h[n2] = 0;
+            this.var_byte_arr_g[n2] = 0;
+        }
+    }
+
+    private void a(int n, byte by, byte by2, int n2, int n3, byte by3) {
+        int n4 = 0;
+        int n5 = this.var_int_f;
+        byte by4 = 0;
+        this.var_int_U = 0;
+        try {
+            for (int i = 0; i < this.var_int_O; ++i) {
+                int n6 = this.var_byte_arr_arr_j[3][this.var_int_N] & 7;
+                by4 = (byte)((this.var_byte_arr_arr_j[3][this.var_int_N] & 0x3F) >> 3);
+                this.var_int_P = (this.var_byte_arr_arr_j[3][this.var_int_N] & 0xFF) >> 6;
+                this.var_byte_X = this.var_byte_arr_g[by4];
+                boolean bl = false;
+                int n7 = (this.var_short_arr_arr_b[1][this.var_int_N] & 0xC000) >> 14 << 7;
+                if (n6 == 0 && by3 == 2 && this.var_int_P == by) {
+                    this.a(this.var_short_arr_arr_b[1][this.var_int_N] & 0xFFF, n2 + this.var_byte_arr_arr_j[1][this.var_int_N] + n7, n3 + this.var_byte_arr_arr_j[2][this.var_int_N]);
+                } else if (n6 == 1 && this.var_int_P <= by) {
+                    if (by2 == 6 && this.var_int_U < 5) {
+                        this.var_short_arr_arr_a[0][this.var_byte_arr_a[this.var_short_arr_a[142]]] = (byte)(this.var_short_arr_arr_a[0][5] + this.var_short_arr_arr_a[0][8] + this.var_short_arr_arr_a[0][5] + this.var_short_arr_arr_a[0][9] + this.var_short_arr_arr_a[0][10]);
+                        if (this.var_short_arr_arr_a[0][this.var_byte_arr_a[this.var_short_arr_a[142] + this.var_int_U]] > 0 || n >= 31) {
+                            this.var_int_V = this.var_short_arr_arr_a[0][this.var_byte_arr_a[this.var_short_arr_a[142] + this.var_int_U]] / 7 / (this.var_int_U == 0 ? 1 : 10);
+                            if (this.var_int_V >= 5 || n >= 31) {
+                                this.var_int_V = 4;
+                            }
+                            this.a((this.var_short_arr_arr_b[1][this.var_int_N] & 0xFFF) + this.var_int_V, n2 + this.var_byte_arr_arr_j[1][this.var_int_N] + n7, n3 + this.var_byte_arr_arr_j[2][this.var_int_N]);
+                        }
+                        ++this.var_int_U;
+                    } else if (by2 == 4 && this.var_int_U < 1) {
+                        if (n >= 31) {
+                            this.a((this.var_short_arr_arr_b[1][this.var_int_N] & 0xFFF) + 2, n2 + this.var_byte_arr_arr_j[1][this.var_int_N] + n7, n3 + this.var_byte_arr_arr_j[2][this.var_int_N]);
+                        } else if (this.var_short_arr_arr_a[0][0] >= 5) {
+                            this.var_int_V = this.var_short_arr_arr_a[0][0] > 35 ? 2 : (this.var_short_arr_arr_a[0][0] - 5) / 15;
+                            this.a((this.var_short_arr_arr_b[1][this.var_int_N] & 0xFFF) + this.var_int_V, n2 + this.var_byte_arr_arr_j[1][this.var_int_N] + n7, n3 + this.var_byte_arr_arr_j[2][this.var_int_N]);
+                        }
+                        ++this.var_int_U;
+                    } else {
+                        this.a(this.var_short_arr_arr_b[1][this.var_int_N] & 0xFFF, n2 + this.var_byte_arr_arr_j[1][this.var_int_N] + n7, n3 + this.var_byte_arr_arr_j[2][this.var_int_N]);
+                    }
+                } else if ((n6 == 2 || n6 == 4 || n6 == 6) && by3 != 2) {
+                    if (this.var_int_P == 0 || this.var_int_P <= by) {
+                        int n8 = this.var_int_N;
+                        n4 = this.var_short_arr_arr_b[1][this.var_int_N] & 0xFFF;
+                        if (n6 == 6) {
+                            n5 += this.var_byte_K + this.var_int_ag + this.var_int_N * 2;
+                            while (n5 >= 120) {
+                                n5 -= 120;
+                            }
+                            if (by4 == 1 || by4 == 2 && (this.var_byte_arr_e[8627 + n] == 1 || this.var_byte_arr_e[8627 + n] == 2)) {
+                                if (n >= 31) {
+                                    ++n4;
+                                }
+                                bl = true;
+                            } else if (by4 != 2) {
+                                bl = true;
+                            }
+                        } else if (this.var_byte_q == 3 && n == 31 && by4 == 0) {
+                            if (n4 == 118 && n6 == 4) {
+                                bl = true;
+                                n5 = 0;
+                            }
+                        } else if (n6 == 2 && (this.var_byte_arr_e[1313 + this.var_byte_X] <= 0 || this.var_byte_arr_e[1313 + this.var_byte_X] >= 50)) {
+                            bl = true;
+                            if (this.var_byte_arr_e[1313 + this.var_byte_X] == 51) {
+                                this.var_byte_arr_i[by4] = 1;
+                            }
+                        } else if (n6 == 4 && this.var_byte_arr_i[by4] == 0 && this.var_byte_arr_e[1313 + this.var_byte_X] >= 1 && this.var_byte_arr_e[1313 + this.var_byte_X] != 50) {
+                            n4 = this.var_short_arr_arr_b[1][this.var_int_N + this.var_byte_arr_e[1313 + this.var_byte_X] - 1] & 0xFFF;
+                            n5 = this.var_byte_arr_e[3030 + this.var_byte_X];
+                            bl = true;
+                            this.var_byte_arr_i[by4] = 1;
+                            if (this.var_byte_arr_e[8749 + n] == 2 && this.var_byte_arr_e[1313 + this.var_byte_X] == 2) {
+                                this.d(90, n2 + this.var_byte_arr_arr_j[1][n8] + n7, n3 + this.var_byte_arr_arr_j[2][n8], this.var_int_f);
+                            }
+                        }
+                        if (bl) {
+                            this.d(n4, n2 + this.var_byte_arr_arr_j[1][n8] + n7, n3 + this.var_byte_arr_arr_j[2][n8], n5);
+                        }
+                    }
+                } else if ((n6 == 3 || n6 == 5 || n6 == 7) && this.var_byte_arr_h[by4] == 0 && this.var_byte_X > 0 && by3 != 2) {
+                    int n9 = 0;
+                    if (n < 31 || (this.var_byte_arr_e[9176 + n] & 3) >= 2) {
+                        if (n6 == 7 && this.var_byte_arr_e[1313 + this.var_byte_X] == 50) {
+                            bl = true;
+                        } else if (n6 == 3 && this.var_byte_arr_e[1313 + this.var_byte_X] >= 1 && this.var_byte_arr_e[1313 + this.var_byte_X] != 50) {
+                            n9 = this.var_byte_arr_a[this.var_short_arr_a[139] + this.var_byte_arr_a[this.var_short_arr_a[140] + by2] + by4];
+                            switch (n9) {
+                                case -1: {
+                                    n9 = this.var_byte_arr_e[606 + this.var_byte_X];
+                                }
+                            }
+                            bl = true;
+                        } else if (n6 == 5 && this.var_byte_arr_e[1313 + this.var_byte_X] <= 0) {
+                            bl = true;
+                            if ((this.var_byte_arr_e[3535 + this.var_byte_X] != 0 || this.var_byte_arr_e[6565 + this.var_byte_X] == 1) && by2 != 10 && by2 != 11) {
+                                this.var_boolean_x = true;
+                            }
+                            if (this.var_byte_v == 0) {
+                                n9 = this.var_byte_arr_e[606 + this.var_byte_X];
+                            }
+                        }
+                    }
+                    if (bl) {
+                        this.a((int)this.var_byte_X, n2 + this.var_byte_arr_arr_j[1][this.var_int_N] + n7, n3 + this.var_byte_arr_arr_j[2][this.var_int_N], n9, (byte)29);
+                        this.var_byte_arr_h[by4] = 1;
+                    }
+                }
+                ++this.var_int_N;
+            }
+        }
+        catch (Exception exception) {}
+        this.var_byte_X = 0;
+    }
+
+    private void a(int n, int n2, int n3, int n4, byte by) {
+        try {
+            this.var_int_ao = n;
+            this.var_int_ap = n2;
+            this.var_int_aq = n3;
+            this.var_int_ar = n4;
+            this.var_byte_Y = by;
+            this.var_int_at = this.var_byte_arr_e[this.var_short_arr_b[this.var_byte_Y] + this.var_int_ao] & 0xFF;
+            int n5 = 0;
+            if (this.var_int_ar >= 0) {
+                this.var_int_ar = this.var_byte_arr_a[this.var_short_arr_a[99] + ((this.var_short_arr_arr_b[3][this.var_int_at] >> 14 & 3) << 3) + this.var_int_ar];
+                n5 = (this.var_short_arr_arr_b[2][this.var_int_at] & 0xFFF) + this.var_int_ar * this.var_byte_arr_arr_j[4][this.var_int_at] + this.var_byte_arr_e[this.var_short_arr_b[this.var_byte_Y + 1] + this.var_int_ao];
+                this.var_int_as = this.var_short_arr_arr_b[4][n5];
+                this.var_int_ap += this.var_byte_arr_arr_j[7][n5];
+                this.var_int_aq += this.var_byte_arr_arr_j[8][n5] + this.aO;
+                if (this.var_boolean_x) {
+                    if (this.var_int_at != 124) {
+                        this.var_int_as += 48;
+                        this.var_int_at = 1;
+                    }
+                    this.var_boolean_x = false;
+                }
+                if (this.var_int_at == 141 || this.var_int_at == 142 || this.var_int_at == 143 || this.var_int_at == 144) {
+                    this.var_int_ap += 22 * this.var_byte_arr_a[this.var_short_arr_a[1] + this.var_byte_arr_e[606 + this.var_int_ao]];
+                }
+            } else {
+                this.var_int_at = -this.var_int_ar;
+                if (this.var_byte_arr_e[1414 + this.var_int_ao] < 12) {
+                    this.var_int_at = 14;
+                    this.var_int_aq -= 6;
+                }
+                this.var_int_as = this.var_short_arr_arr_b[4][(this.var_short_arr_arr_b[2][this.var_int_at] & 0xFFF) + 2];
+            }
+            this.var_int_au = (this.var_short_arr_arr_b[2][this.var_int_at] & 0xF000) >> 14;
+            this.p();
+            if (this.var_byte_v != 0) {
+                this.q();
+            }
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
+
+    private void p() {
+        this.var_int_ay = this.var_short_arr_arr_b[8][this.var_int_as];
+        this.var_int_am = -1;
+        this.var_int_an = -1;
+        this.az = 0;
+        while (this.az < this.var_byte_arr_arr_j[15][this.var_int_as]) {
+            block6: {
+                block12: {
+                    block7: {
+                        block9: {
+                            block11: {
+                                block10: {
+                                    block8: {
+                                        this.var_int_ax = this.var_int_ay + this.az;
+                                        if (this.var_short_arr_arr_b[7][this.var_int_ax] == 0) break block6;
+                                        this.var_int_av = 0;
+                                        this.var_int_aw = this.var_byte_arr_arr_j[14][this.var_int_ax] & 0xF;
+                                        if (this.var_byte_Y != 29) break block7;
+                                        if (!this.boolean_a()) break block6;
+                                        if (this.var_byte_arr_e[1414 + this.var_int_ao] < 12) break block8;
+                                        if (this.var_int_ao >= 51) {
+                                            this.var_int_al = 4;
+                                        }
+                                        if (this.boolean_b()) break block9;
+                                        break block6;
+                                    }
+                                    if (this.var_int_aw == 7 && this.var_byte_arr_e[1515 + this.var_int_ao] == 0) break block6;
+                                    if (this.var_int_aw != 0) break block10;
+                                    this.var_int_an = this.var_int_ax;
+                                    if (this.var_int_ao >= 51) {
+                                        ++this.var_int_av;
+                                    }
+                                    break block9;
+                                }
+                                if (this.var_int_aw != 9) break block11;
+                                this.var_int_am = this.var_int_ax;
+                                this.var_int_av = this.var_byte_arr_e[5151 + this.var_int_ao] & 1;
+                                break block9;
+                            }
+                            if (this.var_int_aw == 5) break block6;
+                        }
+                        if (this.var_short_arr_arr_b[7][this.var_int_ax] != 1) break block12;
+                        break block6;
+                    }
+                    if (this.var_int_aw == 0) {
+                        this.var_int_am = this.var_int_an = this.var_int_ax;
+                    }
+                }
+                if ((this.var_byte_arr_arr_j[14][this.var_int_ax] & 0xFF) >> 7 == 0) {
+                    this.b(this.var_short_arr_arr_b[7][this.var_int_ax] + this.var_int_av, this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_ax], this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_ax]);
+                } else {
+                    this.a(this.var_short_arr_arr_b[7][this.var_int_ax] + this.var_int_av, this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_ax], this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_ax]);
+                }
+                this.var_int_al = -1;
+            }
+            ++this.az;
+        }
+    }
+
+    private boolean boolean_a() {
+        if (this.var_int_aw == 10 && !this.var_boolean_s && this.var_byte_v == 1 && this.var_int_ar > -1) {
+            if (this.var_byte_arr_e[909 + this.var_int_ao] != 0 && this.var_byte_arr_e[909 + this.var_int_ao] == this.var_byte_F || this.var_byte_F == -1 && this.var_byte_k == this.var_int_ao) {
+                this.a(603, this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_ax], this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_ax]);
+            } else if (this.var_byte_W == this.var_int_ao) {
+                this.var_int_av = 1;
+                if (this.var_byte_W >= 51) {
+                    this.var_int_av = 3;
+                }
+            }
+            this.aA = 0;
+            for (int i = this.var_int_C + 1; i <= this.var_int_C + this.var_int_E; ++i) {
+                for (int j = this.var_int_B + 1; j <= this.var_int_B + this.var_int_D; ++j) {
+                    byte by = this.var_byte_arr_arr_c[i][j];
+                    if (by < 1 || by > 50 || this.var_byte_arr_e[1919 + by] <= 0) continue;
+                    ++this.aA;
+                    if (by != this.var_int_ao) continue;
+                    this.var_int_av = 1;
+                }
+            }
+        }
+        return true;
+    }
+
+    private boolean boolean_b() {
+        if (this.var_int_aw == 0) {
+            this.var_int_an = this.var_int_ax;
+            this.var_int_av = 0;
+            this.var_int_av = this.var_byte_arr_e[5151 + this.var_int_ao] >> 2 & 3;
+            if (this.var_int_av > 1) {
+                this.var_int_av -= 2;
+                this.var_int_al = 0;
+            }
+            this.var_int_av *= 72;
+            if (this.var_int_ao >= 51) {
+                this.var_int_av += 36;
+            }
+            this.var_int_av += this.var_byte_arr_e[1515 + this.var_int_ao] * 18;
+        } else if (this.var_int_aw == 9) {
+            this.var_int_am = this.var_int_ax;
+            this.var_int_av = 0;
+            this.var_int_av = this.var_byte_arr_e[5151 + this.var_int_ao] & 3;
+            if (this.var_int_ao >= 51) {
+                this.var_int_al = 3;
+            } else if (this.var_int_av > 0) {
+                this.var_int_al = this.var_int_av;
+            }
+            this.var_int_av = this.var_byte_arr_e[1515 + this.var_int_ao] == 1 ? 1 : (this.var_byte_arr_e[1414 + this.var_int_ao] < 30 ? 3 : (this.var_byte_arr_e[1414 + this.var_int_ao] < 50 ? 2 : 0));
+            this.var_int_av *= 12;
+        } else if (this.var_int_aw == 7) {
+            if (this.var_int_ao == this.var_short_arr_arr_a[0][17]) {
+                this.var_int_av += 2;
+            } else {
+                if (this.var_byte_arr_a[this.var_short_arr_a[42] + this.var_byte_arr_a[this.var_short_arr_a[41] + this.var_byte_arr_e[6464 + this.var_int_ao]]] == 0) {
+                    return false;
+                }
+                this.var_int_av += this.var_byte_arr_a[this.var_short_arr_a[42] + this.var_byte_arr_a[this.var_short_arr_a[41] + this.var_byte_arr_e[6464 + this.var_int_ao]]] - 1;
+            }
+        } else if (this.var_int_au == 0 && this.var_int_aw >= 5 && this.var_int_aw <= 8) {
+            if (this.var_int_ar < 0 && this.var_byte_arr_e[6565 + this.var_int_ao] == 1) {
+                return false;
+            }
+            if (this.var_int_aw == 5 && this.var_byte_arr_e[6565 + this.var_int_ao] == 4 || this.var_int_aw == 6 && this.var_byte_arr_e[6565 + this.var_int_ao] == 5) {
+                this.var_int_av = 1;
+            } else if (this.var_byte_arr_a[this.var_short_arr_a[145] + this.var_byte_arr_e[6565 + this.var_int_ao]] != this.var_int_aw) {
+                return false;
+            }
+        } else if (this.var_int_au == 2) {
+            if (this.var_byte_arr_e[3535 + this.var_int_ao] != 0) {
+                if (this.var_int_aw == 4 && (this.var_byte_arr_e[3636 + this.var_int_ao] > 0 || this.var_int_at == 113 || this.var_int_at == 114 || this.var_int_at == 115 || this.var_int_at == 116)) {
+                    this.var_int_av += this.var_byte_arr_e[3535 + this.var_int_ao];
+                } else if (this.var_int_aw == 5) {
+                    if (this.var_byte_arr_e[6565 + this.var_int_ao] == 9) {
+                        return false;
+                    }
+                    this.var_int_av += this.var_byte_arr_e[6565 + this.var_int_ao];
+                } else if (this.var_int_aw == 8) {
+                    return false;
+                }
+            } else if (this.var_byte_arr_e[3535 + this.var_int_ao] == 0) {
+                if (this.var_int_aw == 4) {
+                    return false;
+                }
+                if (this.var_int_aw == 5) {
+                    if (this.var_byte_arr_e[6565 + this.var_int_ao] == 1) {
+                        return false;
+                    }
+                    if (this.var_byte_arr_e[6565 + this.var_int_ao] == 9) {
+                        return false;
+                    }
+                    this.var_int_av += this.var_byte_arr_e[6565 + this.var_int_ao];
+                } else if (this.var_int_aw == 8 && this.var_byte_arr_e[6565 + this.var_int_ao] != 1) {
+                    return false;
+                }
+            }
+        } else if (this.var_int_au == 1 && this.var_int_aw == 5) {
+            if (this.var_byte_arr_e[6565 + this.var_int_ao] == 9) {
+                return false;
+            }
+            this.var_int_av += this.var_byte_arr_e[6565 + this.var_int_ao];
+        }
+        return true;
+    }
+
+    private void q() {
+        if (!this.var_boolean_s && this.var_int_am >= 0 && this.var_int_an >= 0 && this.var_byte_v == 1) {
+            this.var_c_a.a(this.var_byte_Y == 29 ? this.var_int_ao : 101 + this.var_int_ao, this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_am] + 4, this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_am]);
+            if (this.var_byte_Y == 29 && this.var_int_ar > -1) {
+                int n;
+                for (n = 0; n < 30; ++n) {
+                    if (this.var_byte_arr_arr_arr_b[0][2][n] != this.var_int_ao || this.var_byte_arr_arr_arr_b[0][1][n] == 3) continue;
+                    this.d(65 + (1 - this.var_byte_arr_arr_arr_b[0][4][n]) * 5 + this.var_byte_arr_arr_arr_b[0][1][n], this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_an], this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_an], this.var_int_f);
+                    break;
+                }
+                if (this.var_byte_arr_e[4646 + this.var_int_ao] == 1 && this.var_byte_arr_e[2828 + this.var_int_ao] == 51 && this.var_byte_arr_e[1313 + this.var_int_ao] > 0) {
+                    this.d(65, this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_an], this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_an], this.var_int_f);
+                }
+                if (this.var_byte_arr_e[3333 + this.var_int_ao] > -1) {
+                    this.d(77 + this.var_byte_arr_e[3333 + this.var_int_ao], this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_am], this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_am], (this.var_int_c - (this.var_int_ao & 7)) % 15);
+                }
+                if (this.var_byte_arr_e[4646 + this.var_int_ao] < -1) {
+                    this.d(-this.var_byte_arr_e[4646 + this.var_int_ao], this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_an], this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_an], this.var_byte_arr_e[3030 + this.var_int_ao]);
+                }
+                if ((this.var_byte_arr_e[7979 + this.var_int_ao] & 4) == 4) {
+                    this.d(73, this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_am], this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_am], this.var_int_f + this.var_int_ao);
+                }
+                if ((this.var_byte_arr_e[7979 + this.var_int_ao] & 8) == 8) {
+                    this.d(69, this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_an], this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_an], this.var_int_f);
+                }
+                if (this.var_int_ao <= 50) {
+                    if (this.var_byte_aq == 0 || this.var_byte_aq == 1 && (this.var_int_ao == this.var_byte_k || this.var_int_ao == this.var_byte_W || this.var_byte_arr_e[909 + this.var_int_ao] == this.var_byte_F || this.var_int_ao == this.var_byte_arr_arr_c[this.var_byte_K + this.var_byte_A][this.var_byte_I + this.var_byte_y] || this.var_byte_X != 0 && -this.var_byte_arr_arr_c[this.var_byte_K + this.var_byte_A][this.var_byte_I + this.var_byte_y] == this.var_byte_arr_e[4444 + this.var_int_ao])) {
+                        this.a(581 + this.var_byte_arr_e[2222 + this.var_int_ao], this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_am], this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_am]);
+                    }
+                    if (!this.var_boolean_F && this.var_byte_arr_e[1919 + this.var_int_ao] > 0 && (this.var_int_ao == this.var_byte_k || this.var_int_ao == this.var_byte_W || this.var_byte_arr_e[909 + this.var_int_ao] == this.var_byte_F || this.var_int_ao == this.var_byte_arr_arr_c[this.var_byte_K + this.var_byte_A][this.var_byte_I + this.var_byte_y] || this.var_byte_arr_e[6767 + this.var_int_ao] / 3 * 2 > this.var_byte_arr_e[1919 + this.var_int_ao] || this.var_byte_X != 0 && -this.var_byte_arr_arr_c[this.var_byte_K + this.var_byte_A][this.var_byte_I + this.var_byte_y] == this.var_byte_arr_e[4444 + this.var_int_ao])) {
+                        n = this.var_byte_arr_e[6767 + this.var_int_ao] / 20;
+                        int n2 = 0;
+                        if (this.var_byte_arr_e[1616 + this.var_int_ao] >= 5 || this.var_byte_arr_e[1717 + this.var_int_ao] >= 5 || this.var_byte_arr_e[7575 + this.var_int_ao] > 5) {
+                            n2 = 2;
+                            this.a(606 + (this.var_byte_arr_e[1616 + this.var_int_ao] > this.var_byte_arr_e[1717 + this.var_int_ao] ? (this.var_byte_arr_e[1616 + this.var_int_ao] > this.var_byte_arr_e[7575 + this.var_int_ao] ? this.var_byte_arr_e[1616 + this.var_int_ao] : (this.var_byte_arr_e[1717 + this.var_int_ao] >= this.var_byte_arr_e[7575 + this.var_int_ao] ? this.var_byte_arr_e[1717 + this.var_int_ao] : this.var_byte_arr_e[7575 + this.var_int_ao] - 1)) : (this.var_byte_arr_e[1717 + this.var_int_ao] >= this.var_byte_arr_e[7575 + this.var_int_ao] ? this.var_byte_arr_e[1717 + this.var_int_ao] : this.var_byte_arr_e[7575 + this.var_int_ao] - 1)) - 5, this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_am] + 2 - n + 2 - 10, this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_am]);
+                        }
+                        this.a(611 + n, this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_am] + n2, this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_am]);
+                        var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(this.var_int_arr_e[(this.var_byte_arr_e[1919 + this.var_int_ao] - 1) * 3 / this.var_byte_arr_e[6767 + this.var_int_ao]]);
+                        f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_am] + 2 - n + n2, this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_am] - 4, this.var_byte_arr_a[this.var_short_arr_a[128] + n] * this.var_byte_arr_e[1919 + this.var_int_ao] / this.var_byte_arr_e[6767 + this.var_int_ao], 2);
+                    }
+                }
+                if ((this.var_boolean_F || this.var_boolean_V) && this.var_int_ao == this.var_byte_l) {
+                    this.d(41, this.var_int_ap + this.var_byte_arr_arr_j[12][this.var_int_an] - 1, this.var_int_aq + this.var_byte_arr_arr_j[13][this.var_int_an] - 16 - 5, this.var_int_e);
+                }
+            }
+        }
+    }
+
+    final void a(int n, int n2, int n3, int n4) {
+        for (int i = 0; i < 10; ++i) {
+            if (this.var_byte_arr_arr_d[0][i] != 0) continue;
+            this.var_byte_arr_arr_d[1][i] = 0;
+            this.var_byte_arr_arr_d[0][i] = (byte)n4;
+            this.var_byte_arr_arr_d[2][i] = (byte)n3;
+            this.var_byte_arr_arr_d[6][i] = (byte)n2;
+            this.var_byte_arr_arr_d[5][i] = (byte)n;
+            return;
+        }
+    }
+
+    private void r() {
+        int n = 0;
+        int n2 = 0;
+        int n3 = 0;
+        byte by = 0;
+        int n4 = 0;
+        short s = 0;
+        int n5 = 0;
+        short s2 = 0;
+        this.var_int_ao = -1;
+        try {
+            for (n = 0; n < 10; ++n) {
+                if (this.var_byte_arr_arr_d[0][n] <= 0) continue;
+                int n6 = 29;
+                this.var_int_ao = this.var_byte_arr_arr_d[5][n];
+                if (this.var_byte_arr_arr_d[6][n] == 1) {
+                    n2 = this.var_byte_arr_e[0 + this.var_int_ao];
+                    n3 = this.var_byte_arr_e[101 + this.var_int_ao];
+                } else if (this.var_byte_arr_arr_d[6][n] == 2) {
+                    n2 = this.var_byte_arr_e[9359 + this.var_int_ao];
+                    n3 = this.var_byte_arr_e[9381 + this.var_int_ao];
+                    n6 = 108;
+                    this.var_byte_arr_arr_d[2][n] = 0;
+                } else {
+                    n2 = this.var_byte_arr_e[8383 + this.var_int_ao] + (this.var_byte_arr_arr_d[2][n] & 0xF);
+                    n3 = this.var_byte_arr_e[8444 + this.var_int_ao] + (this.var_byte_arr_arr_d[2][n] >> 4 & 0xF);
+                }
+                if (!this.boolean_a(n2, n3) || this.byte_a(n2, n3) != 0 || this.var_byte_arr_e[1919 + this.var_int_ao] <= 0 && this.var_byte_arr_arr_d[6][n] == 1) {
+                    this.var_byte_arr_arr_d[0][n] = 0;
+                    return;
+                }
+                n2 = (n2 - this.var_byte_I) * 22;
+                n3 = (n3 - this.var_byte_K) * 16;
+                if (this.var_byte_arr_arr_d[6][n] == 1 || this.var_byte_arr_arr_d[6][n] == 2) {
+                    by = this.var_byte_arr_e[606 + this.var_int_ao];
+                    by = this.var_byte_arr_a[this.var_short_arr_a[99] + (this.var_short_arr_arr_b[3][this.var_byte_arr_e[this.var_short_arr_b[n6] + this.var_int_ao] & 0xFF] >> 14 & 3) * 8 + by];
+                    n4 = (this.var_short_arr_arr_b[2][this.var_byte_arr_e[this.var_short_arr_b[n6] + this.var_int_ao] & 0xFF] & 0xFFF) + by * this.var_byte_arr_arr_j[4][this.var_byte_arr_e[this.var_short_arr_b[n6] + this.var_int_ao] & 0xFF] + this.var_byte_arr_e[this.var_short_arr_b[n6 + 1] + this.var_int_ao];
+                    s = this.var_short_arr_arr_b[4][n4];
+                    n5 = 0;
+                    s2 = this.var_short_arr_arr_b[8][this.var_short_arr_arr_b[4][n4]];
+                    for (short s3 = 0; s3 < this.var_byte_arr_arr_j[15][s] && (this.var_byte_arr_arr_j[14][n5 = s2 + s3] & 0xF) != this.var_byte_arr_arr_d[2][n]; s3 = (short)(s3 + 1)) {
+                    }
+                    if (this.var_byte_arr_arr_d[6][n] == 1) {
+                        n2 += this.var_byte_arr_e[202 + this.var_int_ao] + this.var_byte_arr_arr_j[12][n5];
+                        n3 += this.var_byte_arr_e[303 + this.var_int_ao] + this.var_byte_arr_arr_j[13][n5];
+                    } else if (this.var_byte_arr_arr_d[6][n] == 2) {
+                        n2 += this.var_byte_arr_e[9403 + this.var_int_ao] + this.var_byte_arr_arr_j[12][n5];
+                        n3 += this.var_byte_arr_e[9425 + this.var_int_ao] + this.var_byte_arr_arr_j[13][n5];
+                    }
+                }
+                this.d(this.var_byte_arr_arr_d[0][n], n2, n3, this.var_byte_arr_arr_d[1][n]);
+                byte[] byArray = this.var_byte_arr_arr_d[1];
+                int n7 = n;
+                byArray[n7] = (byte)(byArray[n7] + 1);
+                if (this.var_byte_arr_arr_d[1][n] < this.var_byte_arr_arr_j[9][this.var_byte_arr_arr_d[0][n]]) continue;
+                this.var_byte_arr_arr_d[0][n] = 0;
+            }
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
+
+    final void void_a(int n, int n2) {
+        for (int i = 0; i < 30; ++i) {
+            if (this.var_byte_arr_arr_e[0][i] != 0) continue;
+            this.var_byte_arr_arr_e[1][i] = 0;
+            this.var_byte_arr_arr_e[2][i] = (byte)n2;
+            this.var_byte_arr_arr_e[0][i] = (byte)n;
+            return;
+        }
+    }
+
+    private void s() {
+        for (int i = 0; i < 30; ++i) {
+            if (this.var_byte_arr_arr_e[0][i] == 0) continue;
+            byte by = this.var_byte_arr_arr_e[0][i];
+            byte by2 = this.var_byte_arr_e[8383 + by];
+            int n = this.var_byte_arr_e[8444 + by] - 1;
+            int n2 = this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + this.var_byte_arr_e[8749 + by]];
+            byte by3 = this.var_byte_arr_a[this.var_short_arr_a[138] + 130 + this.var_byte_arr_e[8749 + by]];
+            if (this.var_byte_arr_arr_e[1][i] >= 20) {
+                this.var_byte_arr_arr_e[0][i] = 0;
+                if (this.var_byte_arr_arr_e[2][i] == 3) {
+                    this.c((int)by, false);
+                    this.var_byte_arr_e[8627 + by] = 3;
+                }
+                this.c(by2, n + 1, n2, by3);
+                this.void_d((int)by);
+            } else {
+                for (int j = 0; j < by3 + 1; j += 2) {
+                    for (int k = 0; k < n2; k += 2) {
+                        if (!this.boolean_a(by2 + k, n + j)) continue;
+                        this.d(74, (by2 + k - this.var_byte_I) * 22, (n + j - this.var_byte_K) * 16, (k * 2 + j) * 2 + this.var_byte_arr_arr_e[1][i] - 1);
+                    }
+                }
+            }
+            byte[] byArray = this.var_byte_arr_arr_e[1];
+            int n3 = i;
+            byArray[n3] = (byte)(byArray[n3] + 1);
+        }
+    }
+
+    private boolean boolean_a(int n, int n2) {
+        return n >= this.var_byte_I && n < this.var_byte_I + this.var_byte_O && n2 >= this.var_byte_K && n2 < this.var_byte_K + this.var_byte_P;
+    }
+
+    private void t() {
+        for (int n = 0; n < 10; n = (int)((byte)(n + 1))) {
+            this.var_byte_arr_arr_d[0][n] = 0;
+        }
+    }
+
+    private void d(int n, int n2, int n3, int n4) {
+        int n5 = this.var_short_arr_arr_b[5][n] + n4 % this.var_byte_arr_arr_j[9][n];
+        this.a((int)this.var_short_arr_arr_b[6][n5], n2 + this.var_byte_arr_arr_j[10][n5], n3 + this.var_byte_arr_arr_j[11][n5]);
+    }
+
+    final void a(int n, int n2, int n3) {
+        int n4 = this.var_short_arr_arr_b[9][n] & 0x1FFF;
+        int n5 = (this.var_short_arr_arr_b[9][n] & 0xFFFF) >> 14 & 3;
+        if (n5 != 0) {
+            this.b((n5 - 1) * 3 + 1, n2, n3);
+        }
+        for (int i = n4; i < n4 + (this.var_byte_arr_arr_j[16][n] & 0x3F); ++i) {
+            int n6 = this.var_short_arr_arr_b[10][i] & 0x1FFF;
+            int n7 = (this.var_short_arr_arr_b[10][i] & 0xC000) >> 14 << 7;
+            if ((this.var_short_arr_arr_b[10][i] & 0x2000) >> 13 == 0) {
+                this.b(n6, n2 + this.var_byte_arr_arr_j[18][i] + n7, n3 + this.var_byte_arr_arr_j[19][i]);
+                continue;
+            }
+            this.a(n6, n2 + this.var_byte_arr_arr_j[18][i] + n7, n3 + this.var_byte_arr_arr_j[19][i]);
+        }
+    }
+
+    private void b(int n, int n2, int n3) {
+        block18: {
+            int n4;
+            block15: {
+                block17: {
+                    block16: {
+                        if (n == 0) {
+                            return;
+                        }
+                        n4 = this.var_byte_arr_arr_j[20][n] & 0x1F;
+                        if (n4 >= 27) break block15;
+                        boolean bl = false;
+                        if (this.var_int_al > -1) {
+                            if (this.var_int_al == 0) {
+                                if (n4 == 5) {
+                                    n4 = this.var_int_al;
+                                    bl = true;
+                                }
+                            } else if (this.var_int_al == 4) {
+                                if (n4 == 14) {
+                                    n4 = 4;
+                                    bl = true;
+                                } else if (n4 == 15) {
+                                    n4 = 5;
+                                    bl = true;
+                                }
+                            } else if (n4 == 9) {
+                                n4 = this.var_int_al;
+                                bl = true;
+                            }
+                        }
+                        if (!bl) break block16;
+                        if (f.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], this.var_javax_microedition_lcdui_Image_arr_arr_a[1][n4], this.var_byte_arr_arr_j[21][n] & 0x7F, this.var_byte_arr_arr_j[22][n], this.var_byte_arr_arr_j[23][n], this.var_byte_arr_arr_j[24][n], n2, n3, 20)) break block17;
+                        break block18;
+                    }
+                    f.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], this.var_javax_microedition_lcdui_Image_arr_arr_a[0][n4], this.var_byte_arr_arr_j[21][n] & 0x7F, this.var_byte_arr_arr_j[22][n], this.var_byte_arr_arr_j[23][n], this.var_byte_arr_arr_j[24][n], n2, n3, 20);
+                }
+                return;
+            }
+            int n5 = (this.var_byte_arr_arr_j[20][n] & 0xFF) >> 5 | (this.var_byte_arr_arr_j[21][n] & 0x80) >> 4;
+            var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(this.var_byte_arr_arr_j[17][n5 * 3 + 0] & 0xFF, this.var_byte_arr_arr_j[17][n5 * 3 + 1] & 0xFF, this.var_byte_arr_arr_j[17][n5 * 3 + 2] & 0xFF);
+            if (n4 == 27) {
+                f.d(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n2 + (this.var_byte_arr_arr_j[21][n] & 0x7F), n3 + this.var_byte_arr_arr_j[22][n], n2 + this.var_byte_arr_arr_j[23][n], n3 + this.var_byte_arr_arr_j[24][n]);
+                return;
+            }
+            if (n4 == 28) {
+                f.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n2 + (this.var_byte_arr_arr_j[21][n] & 0x7F), n3 + this.var_byte_arr_arr_j[22][n], this.var_byte_arr_arr_j[23][n], this.var_byte_arr_arr_j[24][n]);
+                return;
+            }
+            if (n4 == 29) {
+                f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n2 + (this.var_byte_arr_arr_j[21][n] & 0x7F) - 0, n3 + this.var_byte_arr_arr_j[22][n] - 0, this.var_byte_arr_arr_j[23][n], this.var_byte_arr_arr_j[24][n]);
+                return;
+            }
+            if (n4 == 30) {
+                f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n2 + (this.var_byte_arr_arr_j[21][n] & 0x7F) * 4 - 0, n3 + this.var_byte_arr_arr_j[22][n] * 4 - 0, this.var_byte_arr_arr_j[23][n] * 4, this.var_byte_arr_arr_j[24][n] * 4);
+            }
+        }
+    }
+
+    private void i(int n) {
+        byte by = 0;
+        byte by2 = 0;
+        int n2 = 0;
+        int n3 = 0;
+        boolean bl = true;
+        try {
+            do {
+                if (!bl) {
+                    n = this.var_byte_arr_e[6060 + n];
+                }
+                bl = false;
+                by = this.var_byte_arr_e[7676 + n];
+                n2 = 0 + (this.var_byte_arr_e[5252 + n] - this.var_byte_I) * 22 + 11 + this.var_byte_arr_e[5454 + n];
+                n3 = 0 + (this.var_byte_arr_e[5353 + n] - this.var_byte_K) * 16 + 8 + this.var_byte_arr_e[5555 + n] - this.var_byte_arr_arr_h[this.var_byte_arr_e[5858 + n]][n] - 10;
+                by2 = this.var_byte_arr_e[6565 + n];
+                if (by2 != 1 && by2 != 2 && by2 != 5) continue;
+                this.a(292 + this.var_byte_arr_a[this.var_short_arr_a[190 + this.var_byte_arr_a[this.var_short_arr_a[77] + by2]] + by * this.var_byte_arr_a[this.var_short_arr_a[193] + 6 + by2] + this.var_byte_arr_arr_i[this.var_byte_arr_e[5858 + n]][n]] + this.var_byte_arr_a[this.var_short_arr_a[193] + by2], n2, n3);
+            } while (this.var_byte_arr_e[6060 + n] != 0);
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
+
+    private void u() {
+        int n = 0;
+        int n2 = 0;
+        byte by = 0;
+        int n3 = 0;
+        try {
+            this.v();
+            this.var_int_ag = 0;
+            while (this.var_int_ag < this.var_byte_P + 3) {
+                int n4 = this.var_int_ag + this.var_byte_K;
+                if (n4 < this.var_short_d) {
+                    this.var_int_af = this.var_byte_O - 1 + 0;
+                    while (this.var_int_af >= 0) {
+                        int n5 = this.var_int_af + this.var_byte_I;
+                        if (!this.var_boolean_s || n4 >= 0 && n4 < this.var_short_d && n5 >= 0 && n5 < this.var_short_c) {
+                            n = this.var_int_af * 22;
+                            byte by2 = this.byte_a(n5, n4);
+                            if (this.var_boolean_s && !this.var_boolean_J) {
+                                by2 = 0;
+                            }
+                            by = this.var_byte_arr_arr_c[n4][n5];
+                            n3 = this.var_byte_arr_arr_b[n4][n5] & 0xFF;
+                            if (by != 0) {
+                                if (by2 < 2 && (n3 >= 180 && n3 <= 231 || n3 == 243)) {
+                                    this.void_a(n3, (byte)1);
+                                } else if (!(by2 >= 1 || by < 1 || by > 100 || this.var_boolean_s && this.var_byte_ao == 9)) {
+                                    if (f.byte_c(this.var_byte_arr_e[4545 + by]) != 2) {
+                                        this.void_a((int)this.var_byte_arr_e[4545 + by], (byte)1);
+                                    }
+                                    if (f.byte_c(this.var_byte_arr_e[4545 + by]) == 2 || this.var_byte_arr_e[2929 + by] <= 14) {
+                                        if (this.var_int_ag >= 0 && this.var_int_af - 1 >= 0 && this.var_byte_arr_e[9833 + (this.var_byte_arr_arr_c[n4][n5 - 1] + 61) * -1] == 5 && f.boolean_c(this.var_byte_arr_arr_c[n4][n5 - 1])) {
+                                            if (this.var_int_af < this.var_byte_O) {
+                                                this.var_byte_arr_arr_g[this.var_int_ag][this.var_int_af] = 0;
+                                            }
+                                            --this.var_int_af;
+                                            n5 = this.var_int_af + this.var_byte_I;
+                                            this.void_a((int)this.var_byte_arr_arr_c[n4][n5], (byte)1);
+                                        }
+                                        if (f.byte_a(by) == 0 || (this.var_byte_arr_e[7979 + by] & 2) == 0) {
+                                            this.a((int)by, n + this.var_byte_arr_e[202 + by], n2 + this.var_byte_arr_e[303 + by], (int)this.var_byte_arr_e[606 + by], (byte)29);
+                                        }
+                                    }
+                                } else if (by <= -1 && by >= -60 && (by2 < 2 || this.var_byte_arr_e[9176 + -by] > 0)) {
+                                    if ((this.var_byte_arr_e[9176 + -by] & 4) != 0) {
+                                        switch (by2) {
+                                            case 0: {
+                                                this.var_byte_arr_e[9176 + -by] = 6;
+                                                break;
+                                            }
+                                            case 1: {
+                                                this.var_byte_arr_e[9176 + -by] = 5;
+                                            }
+                                        }
+                                    }
+                                    switch (this.var_byte_arr_e[9176 + -by] & 3) {
+                                        case 1: {
+                                            by2 = 1;
+                                            break;
+                                        }
+                                        case 2: {
+                                            by2 = 0;
+                                        }
+                                    }
+                                    if ((this.var_byte_arr_e[8871 + -by] & 1) == 0) {
+                                        this.void_a((int)by, (byte)1);
+                                        int n6 = 8871 + -by;
+                                        this.var_byte_arr_e[n6] = (byte)(this.var_byte_arr_e[n6] | 1);
+                                        byte by3 = this.var_byte_arr_e[8749 + -by];
+                                        byte by4 = this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + by3];
+                                        byte by5 = this.var_byte_arr_a[this.var_short_arr_a[138] + 130 + by3];
+                                        if ((this.var_byte_arr_e[9176 + -by] & 4) == 0) {
+                                            this.var_b_a.var_byte_S = 0;
+                                            this.var_b_a.void_a((int)this.var_byte_arr_e[8383 + -by], (int)this.var_byte_arr_e[8444 + -by], (int)by4, (int)by5);
+                                            this.var_b_a.var_byte_S = 1;
+                                            this.var_byte_arr_e[9176 + -by] = 4;
+                                        }
+                                        if (!this.var_boolean_s && by3 < 22) {
+                                            if ((this.var_byte_arr_a[this.var_short_arr_a[138] + 156 + by3] != -1 || this.var_byte_arr_e[8627 + -by] == 1 || this.var_byte_arr_e[8627 + -by] == 2) && this.var_byte_arr_e[8810 + -by] == 0 && f.byte_b(by) == 0) {
+                                                this.d(40, (this.var_byte_arr_e[8383 + -by] - this.var_byte_I) * 22 + by4 * 11 - 11, (this.var_byte_arr_e[8444 + -by] - this.var_byte_K) * 16 + by5 * 8 - 8, this.var_int_e);
+                                            }
+                                            if ((this.var_byte_arr_e[8505 + -by] > 0 && (by == this.var_byte_arr_arr_c[this.var_byte_K + this.var_byte_A][this.var_byte_I + this.var_byte_y] || this.var_byte_arr_e[8566 + -by] / 2 > this.var_byte_arr_e[8505 + -by]) || this.var_byte_arr_e[8627 + -by] == 1 || this.var_byte_arr_e[8627 + -by] == 2 || by3 >= 12) && f.byte_b(by) == 0) {
+                                                int n7;
+                                                byte by6;
+                                                int n8;
+                                                int n9;
+                                                int n10 = this.var_byte_arr_e[8566 + -by] / 80 + 6;
+                                                int n11 = (this.var_byte_arr_e[8383 + -by] - this.var_byte_I) * 22 + by4 * 11 - 11;
+                                                int n12 = n2 - this.var_byte_arr_a[this.var_short_arr_a[138] + 520 + by3] * 8 - 5;
+                                                this.a(611 + n10, n11, n12);
+                                                var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(this.var_int_arr_e[(this.var_byte_arr_e[8505 + -by] - 1) * 3 / this.var_byte_arr_e[8566 + -by]]);
+                                                f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n11 + 1, n12 + 1, this.var_byte_arr_a[this.var_short_arr_a[128] + n10] * this.var_byte_arr_e[8505 + -by] / this.var_byte_arr_e[8566 + -by], 2);
+                                                if (by == this.var_byte_arr_arr_c[this.var_byte_K + this.var_byte_A][this.var_byte_I + this.var_byte_y] && (n9 = (n8 = (by6 = this.var_b_a.byte_a((int)(-by))) >> 4 & 0xF) + (n7 = by6 & 0xF)) > 0) {
+                                                    n11 = n11 + 1 + this.var_byte_arr_a[this.var_short_arr_a[128] + n10] / 2 - 4 * n9 / 2 + 1;
+                                                    var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(0);
+                                                    f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n11 - 0, (n12 += 6) - 1, n9 * 4 - 1, 4);
+                                                    f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n11 - 1, n12 - 0, n9 * 4 + 1, 2);
+                                                    for (int n13 = 0; n13 < n9; n13 = (int)((byte)(n13 + 1))) {
+                                                        var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(n13 < n7 ? 16164864 : 4207389);
+                                                        f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n11 + n13 * 4, n12, 3, 2);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                } else if (by2 < 1 && f.boolean_b(by)) {
+                                    int n14 = by - 101;
+                                    this.a(n14, n + this.var_byte_arr_e[9403 + n14], n2 + this.var_byte_arr_e[9425 + n14], (int)this.var_byte_arr_e[9491 + n14], (byte)108);
+                                } else if (by2 < 2 && (f.boolean_c(by) || f.byte_c(by) == 3)) {
+                                    this.void_a((int)by, (byte)1);
+                                } else if (by2 == 0 && by <= -114 && by > -117) {
+                                    if (this.var_int_h >= 94 + n4 && this.var_int_h <= 100 + n4) {
+                                        this.d(75, n, n2, this.var_int_h - (100 + n4) + 6);
+                                    } else if ((this.var_int_h + this.var_int_af + this.var_int_ag) % 10 < 5) {
+                                        this.a(this.var_byte_arr_arr_b[n4][n5] & 0xFF, n, n2);
+                                    }
+                                }
+                            }
+                            if (this.var_byte_arr_arr_g[this.var_int_ag][this.var_int_af] > 0) {
+                                this.i(this.var_byte_arr_arr_g[this.var_int_ag][this.var_int_af]);
+                                this.var_byte_arr_arr_g[this.var_int_ag][this.var_int_af] = 0;
+                            }
+                            if (by2 == 1) {
+                                this.b(12, n - 2, n2 - 4);
+                            } else if (by2 == 2) {
+                                var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[1]].setColor(0);
+                                if (n5 == 0 || n5 == this.var_short_c - 1 || n4 == 0 || n4 == this.var_short_d - 1 || this.byte_a(n5 - 1, n4) != 2 || this.byte_a(n5 + 1, n4) != 2 || this.byte_a(n5, n4 - 1) != 2 || this.byte_a(n5, n4 + 1) != 2) {
+                                    this.b(11, n - 3, n2 - 2);
+                                } else {
+                                    f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[1]], n, n2, 22, 16);
+                                }
+                            }
+                            if (this.var_int_ag == this.var_byte_A && this.var_int_af == this.var_byte_y) {
+                                this.var_byte_Z = by2;
+                            }
+                        }
+                        --this.var_int_af;
+                    }
+                    if ((this.var_boolean_L || this.var_boolean_N) && this.var_byte_arr_q[1] - this.var_byte_K == this.var_int_ag) {
+                        this.d(107, (this.var_byte_arr_q[0] - this.var_byte_I) * 22, n2, this.var_int_f);
+                    }
+                    n2 += 16;
+                }
+                ++this.var_int_ag;
+            }
+            this.r();
+            this.s();
+            if (!this.var_boolean_N) {
+                if (this.var_boolean_L) {
+                    this.d(31, 298, 11, this.var_int_f);
+                }
+                return;
+            }
+            this.d(30, 298, 11, this.var_int_f);
+        }
+        catch (Exception exception) {}
+    }
+
+    private void v() {
+        int n;
+        int n2;
+        int n3;
+        for (n3 = 1; n3 <= 60; ++n3) {
+            int n4 = 8871 + n3;
+            this.var_byte_arr_e[n4] = (byte)(this.var_byte_arr_e[n4] & 0xFE);
+            if (this.var_byte_arr_e[9176 + n3] <= 0) continue;
+            this.var_byte_arr_e[9176 + n3] = 5;
+        }
+        n3 = 0;
+        for (n2 = 0; n2 < 5; ++n2) {
+            if (this.var_byte_arr_arr_arr_c[n3][n2][2] >= 0 && this.var_byte_arr_arr_arr_c[n3][n2][3] == 1 && this.var_byte_arr_arr_arr_c[n3][n2][0] >= this.var_byte_I - 1 && this.var_byte_arr_arr_arr_c[n3][n2][0] <= this.var_byte_I + this.var_byte_O + 1 && this.var_byte_arr_arr_arr_c[n3][n2][1] >= this.var_byte_K - 1 && this.var_byte_arr_arr_arr_c[n3][n2][1] <= this.var_byte_K + this.var_byte_P + 1) {
+                for (n = 0; n < 9; ++n) {
+                    if (this.byte_a(this.var_byte_arr_arr_arr_c[n3][n2][0] + this.var_byte_arr_a[this.var_short_arr_a[141] + 0 + n], this.var_byte_arr_arr_arr_c[n3][n2][1] + this.var_byte_arr_a[this.var_short_arr_a[141] + 9 + n]) != 0) continue;
+                    this.d(68, (this.var_byte_arr_arr_arr_c[n3][n2][0] - this.var_byte_I + this.var_byte_arr_a[this.var_short_arr_a[141] + 0 + n]) * 22, (this.var_byte_arr_arr_arr_c[n3][n2][1] - this.var_byte_K + this.var_byte_arr_a[this.var_short_arr_a[141] + 9 + n]) * 16, this.var_int_f);
+                }
+            }
+            if (n2 != 4 || n3 != 0) continue;
+            n2 = 0;
+            n3 = 1;
+        }
+        for (n2 = 0; n2 < 30; ++n2) {
+            n = this.var_byte_arr_arr_arr_b[0][2][n2];
+            byte by = this.var_byte_arr_arr_arr_b[0][3][n2];
+            if (this.var_byte_arr_arr_arr_b[0][1][n2] != 3 || this.var_byte_arr_arr_arr_b[0][0][n2] == 0 || n < this.var_byte_I - 1 || n > this.var_byte_I + this.var_byte_O + 1 || by < this.var_byte_K - 1 || by > this.var_byte_K + this.var_byte_P + 1 || this.byte_a(n, (int)by) != 0) continue;
+            this.d(68 + (1 - this.var_byte_arr_arr_arr_b[0][4][n2]) * 5, (n - this.var_byte_I - 0) * 22, (by - this.var_byte_K - 0) * 16, this.var_int_f);
+        }
+    }
+
+    private void w() {
+        int n;
+        int n2;
+        if (this.var_boolean_u) {
+            this.var_int_Q = this.var_int_G - this.var_byte_I <= this.var_byte_y ? this.var_int_G - this.var_byte_I : this.var_byte_y;
+            this.var_int_B = this.var_int_Q + this.var_byte_I - 1;
+            this.var_int_R = this.var_int_H - this.var_byte_K <= this.var_byte_A ? this.var_int_H - this.var_byte_K : this.var_byte_A;
+            this.var_int_C = this.var_int_R + this.var_byte_K - 1;
+            this.var_int_Q *= 22;
+            this.var_int_R *= 16;
+            n2 = this.var_byte_I + this.var_byte_y - this.var_int_G;
+            n = this.var_byte_K + this.var_byte_A - this.var_int_H;
+            if (n2 < 0) {
+                n2 *= -1;
+            }
+            this.var_int_D = n2 + 1;
+            if (n < 0) {
+                n *= -1;
+            }
+            this.var_int_E = n + 1;
+            n2 = (n2 + 1) * 22;
+            n = (n + 1) * 16;
+            var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[1]].setColor(0);
+            f.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[1]], 0 + this.var_int_Q + 1, 0 + this.var_int_R + 1, n2, n);
+            var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[1]].setColor(1105252);
+            f.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[1]], 0 + this.var_int_Q, 0 + this.var_int_R, n2, n);
+        }
+        if (f.byte_b(n2 = this.var_byte_arr_arr_c[this.var_byte_K + this.var_byte_A][this.var_byte_I + this.var_byte_y]) == 0) {
+            n = (this.var_byte_arr_e[8383 + -n2] - this.var_byte_I) * 22;
+            int n3 = (this.var_byte_arr_e[8444 + -n2] - this.var_byte_K) * 16;
+            int n4 = this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + this.var_byte_arr_e[8749 + -n2]] * 22;
+            int n5 = this.var_byte_arr_a[this.var_short_arr_a[138] + 130 + this.var_byte_arr_e[8749 + -n2]] * 16;
+            this.d(6, n, n3, this.var_int_e);
+            this.d(7, n + n4, n3, this.var_int_e);
+            this.d(8, n, n3 + n5, this.var_int_e);
+            this.d(9, n + n4, n3 + n5, this.var_int_e);
+        }
+    }
+
+    private void c(int n, int n2) {
+        int n3;
+        if (this.var_byte_aa != 0) {
+            this.d(34 + this.var_byte_aa, (this.var_byte_ab - this.var_byte_I) * 22, (this.var_byte_ac - this.var_byte_K) * 16, this.var_int_e);
+            if (this.var_int_e == 5) {
+                this.var_byte_aa = 0;
+            }
+        }
+        byte by = this.var_byte_arr_arr_c[this.var_byte_K + this.var_byte_A][this.var_byte_I + this.var_byte_y];
+        if (this.var_byte_w != 2) {
+            int n4 = -1;
+            n3 = 32;
+            if (this.var_byte_w == 1) {
+                if (this.var_byte_k != 0) {
+                    n4 = 1;
+                } else if (this.var_byte_F != -1) {
+                    n4 = 0;
+                    for (int i = 0; i < 50; ++i) {
+                        if (this.var_byte_arr_arr_a[this.var_byte_F][i] == 0) continue;
+                        n4 = (byte)(n4 + 1);
+                    }
+                }
+                n3 = this.var_byte_Z == 0 && (f.byte_b(by) == 1 || f.boolean_b(by) || f.byte_a(by) == 1 && (this.var_byte_arr_e[7979 + by] & 2) == 0) ? 34 : 33;
+            } else if (this.var_byte_w == 3) {
+                int n5;
+                if (this.var_int_s == 100) {
+                    this.var_boolean_r = true;
+                    n5 = 107;
+                } else if (this.var_int_s < 0 || this.var_int_s <= 3) {
+                    if (f.byte_a(by) == 0 && this.var_byte_arr_e[1414 + by] >= 12 || f.byte_a(this.var_byte_W) == 0 && this.var_byte_arr_e[1414 + this.var_byte_W] >= 12) {
+                        this.var_int_r = this.var_byte_W;
+                        this.var_int_t = this.var_byte_arr_e[0 + this.var_int_r];
+                        this.var_int_u = this.var_byte_arr_e[101 + this.var_int_r];
+                        this.var_boolean_r = true;
+                        n5 = 33;
+                    } else if (this.var_int_s == 3) {
+                        this.var_boolean_r = true;
+                        n5 = 33;
+                    } else {
+                        this.var_boolean_r = false;
+                        n5 = 32;
+                    }
+                } else {
+                    byte by2 = this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + this.var_int_s];
+                    byte by3 = this.var_byte_arr_a[this.var_short_arr_a[138] + 130 + this.var_int_s];
+                    this.var_int_t = this.var_byte_y - by2 / 2;
+                    this.var_int_u = this.var_byte_A - by3 / 2;
+                    this.var_int_S = n - by2 / 2 * 22;
+                    this.var_int_T = n2 - by3 / 2 * 16 - 5 + this.var_int_e;
+                    this.void_a(1000 + this.var_int_s + 1, (byte)2);
+                    this.var_boolean_r = this.a(this.var_int_s, this.var_byte_I + this.var_int_t, this.var_byte_K + this.var_int_u, true);
+                    n5 = n3 = this.var_boolean_r ? 41 : 40;
+                }
+            }
+            if (this.var_boolean_E && this.var_int_e < 2 && n3 <= 34) {
+                n3 = (byte)(n3 + 5);
+            }
+            this.d(n3, n, n2, this.var_int_e);
+            if (n4 > 0) {
+                this.var_c_a.a(n + 22, n2 + 8, 0, "" + n4, 1);
+                this.var_c_a.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N]);
+            }
+            if (this.aA > 0) {
+                this.var_c_a.a(n + 22, n2 + 8, 0, "" + this.aA, 1);
+                this.var_c_a.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N]);
+            }
+            if (this.var_byte_w == 3) {
+                if (this.var_int_s < 0) {
+                    this.a(664 - this.var_int_s - 1, n + 11 + 5, n2 + 8 + 5);
+                } else if (this.var_int_s <= 3) {
+                    this.d(this.var_int_s + 48, n, n2, this.var_int_e);
+                }
+            }
+        }
+        n3 = 0;
+        if (this.var_byte_w == 1) {
+            if (this.var_boolean_q && this.var_byte_aa != 0) {
+                n3 = 47;
+                this.var_byte_Z = 0;
+            } else if (by == -124) {
+                n3 = 44;
+            } else if (by == -125) {
+                n3 = 45;
+            } else if (f.byte_b(by) == 0 && this.var_byte_arr_e[8749 + -by] != 10) {
+                n3 = 41;
+            } else if (f.boolean_c(by)) {
+                n3 = this.var_byte_arr_e[9833 + (by + 61) * -1] == 7 ? 46 : 43;
+            } else if (f.boolean_b(by) && this.var_byte_Z == 0) {
+                n3 = 43;
+            }
+            if (n3 != 0 && this.var_byte_Z != 2) {
+                this.d(n3, n, n2, this.var_int_e);
+            }
+        }
+    }
+
+    private void a(byte by, int n, int n2) {
+        this.aB = by;
+        try {
+            boolean bl = this.boolean_c();
+            if (this.var_boolean_arr_b[by]) {
+                this.var_boolean_arr_b[17] = true;
+                this.var_byte_ae = 0;
+            } else if (bl) {
+                this.var_byte_ae = 1;
+            } else if (this.var_byte_arr_a[this.var_short_arr_a[195] + 80 + by] == 1) {
+                this.var_byte_ae = (byte)2;
+            } else {
+                return;
+            }
+            this.var_byte_N = this.var_byte_arr_c[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + by]];
+            this.aC = this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + by];
+            byte by2 = this.var_byte_arr_a[this.var_short_arr_a[195] + 40 + by];
+            boolean bl2 = false;
+            for (int i = this.var_short_arr_arr_b[0][by2]; i < this.var_short_arr_arr_b[0][by2] + this.var_byte_arr_arr_j[0][by2]; ++i) {
+                int n3;
+                int n4 = (this.var_byte_arr_arr_j[3][i] & 0xFF) >> 6;
+                int n5 = this.var_byte_arr_arr_j[3][i] & 7;
+                this.aG = this.var_short_arr_arr_b[1][i] & 0xFFF;
+                if (n4 < this.var_byte_ae && !bl2) {
+                    if (n4 != 1) continue;
+                    bl2 = true;
+                    continue;
+                }
+                this.aD = 0;
+                if (bl2) {
+                    bl2 = false;
+                    if (this.var_byte_arr_k[this.aC] == 0 && this.var_byte_ae > 0 || this.var_byte_arr_k[this.aC] < 0) {
+                        ++this.aC;
+                        continue;
+                    }
+                    this.aD = this.var_short_arr_d[this.aC];
+                    this.var_byte_arr_k[this.aC] = 0;
+                    ++this.aC;
+                } else if (n4 == 1) {
+                    bl2 = true;
+                    if (this.var_byte_arr_k[this.aC] == 0 && this.var_byte_ae > 0 || this.aG == 0 || n4 < this.var_byte_ae || this.var_byte_arr_k[this.aC] < 0) {
+                        continue;
+                    }
+                } else if (n4 == 2 && this.var_byte_arr_k[this.aC] < 0) continue;
+                int n6 = (this.var_short_arr_arr_b[1][i] >> 14 & 3) << 7;
+                int n7 = (this.var_short_arr_arr_b[1][i] >> 12 & 3) << 7;
+                this.aH = this.var_byte_arr_arr_j[1][i];
+                this.aI = this.var_byte_arr_arr_j[2][i];
+                if (by >= 13 && by <= 16) {
+                    this.aH += 110;
+                    this.aI += 70;
+                } else {
+                    this.aH += n;
+                    this.aI += n2;
+                }
+                this.aH += n6;
+                this.aI += n7;
+                if (i == 1013) {
+                    this.aG = this.var_short_arr_arr_b[1][1009] & 0xFFF;
+                    this.aD = this.var_short_arr_d[3];
+                    this.d(n5, 1009);
+                    this.aG = 0;
+                }
+                if (i == 1012) {
+                    this.a(i, this.var_byte_ae, this.aI);
+                    continue;
+                }
+                if (i == 1143) {
+                    this.c(i, this.aH, this.aI);
+                    continue;
+                }
+                if (n5 == 0 && (this.var_byte_arr_arr_j[3][i] & 0xFF) >> 6 == 3) {
+                    var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(0);
+                    n3 = 99;
+                    if (i == 1034) {
+                        n3 = this.var_byte_arr_e[6767 + this.var_byte_l];
+                    }
+                    if (this.aD < 0) continue;
+                    int n8 = this.var_byte_arr_arr_j[23][this.aG] * this.aD / n3;
+                    f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], this.aH + n8 + 1, this.aI, this.var_byte_arr_arr_j[23][this.aG] - n8, 4);
+                    continue;
+                }
+                if (n5 == 3 && this.aG >= 3 && this.aG <= 4) {
+                    if (this.var_int_v == -1) continue;
+                    if (this.var_boolean_arr_b[by] || this.var_int_v != this.var_int_w) {
+                        this.var_c_a.b(this.aE, this.aF, this.var_byte_arr_arr_j[23][this.var_short_arr_arr_b[1][i - 1] & 0xFFF] * 4, this.var_byte_arr_arr_j[24][this.var_short_arr_arr_b[1][i - 1] & 0xFFF] * 4, this.var_int_v, (this.var_byte_arr_arr_j[3][i] & 0xFF) >> 6, this.aG - 3);
+                    }
+                    if (this.var_int_w != this.var_int_v) {
+                        this.var_int_w = this.var_int_v;
+                        this.var_int_y = 0;
+                    }
+                    this.var_int_z = this.var_int_y;
+                    this.var_c_a.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], this.var_int_y);
+                    continue;
+                }
+                if (this.aG == 0) continue;
+                n3 = i;
+                this.d(n5, n3);
+            }
+            this.var_c_a.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N]);
+            this.var_boolean_arr_b[by] = false;
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
+
+    private void d(int n, int n2) {
+        if (n == 0) {
+            this.b(this.aG, this.aH, this.aI);
+            this.aE = this.aH;
+            this.aF = this.aI;
+            return;
+        }
+        if (n == 1) {
+            this.j(n2);
+            return;
+        }
+        if (n == 2) {
+            if (this.var_boolean_Q && (this.aG == 4 || this.aG == 94) || this.var_boolean_R && (this.aG == 5 || this.aG == 95) || !this.var_boolean_T && this.aG == 1 || !this.var_boolean_U && this.aG == 2) {
+                return;
+            }
+            if (n2 - 1 == 1209) {
+                var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M].setColor(1105252);
+                f.a(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], 0 + this.aH + (this.var_byte_I - this.var_int_W) * 7, 0 + this.aI + (this.var_byte_K - this.var_int_X + this.aJ) * 4, this.var_byte_O * 7 - 1, this.var_byte_P * 4 - 1);
+                this.d(this.aG, this.aH + (this.var_byte_y + this.var_byte_I - this.var_int_W) * 7 - 11, this.aI + (this.var_byte_A + this.var_byte_K - this.var_int_X + this.aJ) * 4 - 8, this.var_int_f / this.var_int_k);
+            } else {
+                this.d(this.aG, this.aH, this.aI, this.var_int_f / this.var_int_k);
+            }
+            this.var_boolean_S = true;
+            return;
+        }
+        if (n == 3 && this.aG == 11) {
+            f.a(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], var_javax_microedition_lcdui_Image_arr_a[this.var_byte_arr_c[1]], 0, 0, this.var_byte_arr_arr_j[23][this.var_short_arr_arr_b[1][1188] & 0xFFF] * 4, this.var_byte_arr_arr_j[24][this.var_short_arr_arr_b[1][1188] & 0xFFF] * 4, 0 + this.aH, 0 + this.aI, 0);
+            return;
+        }
+        if (n == 3 && this.aG == 10) {
+            try {
+                this.c(this.var_byte_o);
+                var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M].drawImage(this.var_javax_microedition_lcdui_Image_arr_arr_a[2][0], (0 + this.aH) * 1, (0 + this.aI) * 1, 3);
+                return;
+            }
+            catch (Exception exception) {
+                return;
+            }
+        }
+        if (n == 3 && this.aG <= 2) {
+            this.k(n2);
+            return;
+        }
+        if (n == 3 && this.aG <= 6) {
+            if (n2 - 1 == 1134 && (this.var_byte_arr_u[0] == 3 || this.var_byte_arr_u[0] == 1)) {
+                this.var_c_a.a(this.aH, this.aI, (this.var_byte_arr_arr_j[3][n2] & 0xFF) >> 6, 108 + this.var_byte_arr_e[6868 + this.var_byte_arr_arr_k[2][0]], this.aD + (this.var_byte_arr_e[1515 + this.var_byte_arr_arr_k[2][0]] == 0 ? 0 : 1), -1, this.aG - 5);
+                return;
+            }
+            this.var_c_a.a(this.aH, this.aI, (this.var_byte_arr_arr_j[3][n2] & 0xFF) >> 6, this.aD, this.aG - 5);
+            return;
+        }
+        if (n == 4) {
+            if (this.aG != 1) {
+                int n3 = this.aG;
+                this.bb = 0 + this.aH + (this.var_byte_arr_arr_j[21][n3] & 0x7F);
+                this.bc = 0 + this.aI + this.var_byte_arr_arr_j[22][n3];
+                this.bd = this.var_byte_arr_arr_j[23][n3];
+                this.be = this.var_byte_arr_arr_j[24][n3];
+                f.c(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], this.bb, this.bc, this.bd, this.be);
+                return;
+            }
             this.bb = 0;
             this.bc = 0;
             this.bd = 700;
             this.be = 544;
-            c(a[this.N], this.bb, this.bc, this.bd, this.be);
-         }
-      }
+            f.c(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], this.bb, this.bc, this.bd, this.be);
+        }
+    }
 
-   }
-
-   final void b(int var1) {
-      this.i();
-      if (var1 >= 0) {
-         this.ai = (byte)var1;
-         this.S();
-         this.T();
-      } else {
-         if (this.ak == this.aj - 1) {
-            this.U();
+    private void j(int n) {
+        if (n - 1 == 1123) {
+            int n2 = this.var_byte_arr_r[this.var_byte_as];
+            if (this.var_byte_ad != 6) {
+                n2 = n2 == 16 ? this.var_byte_arr_e[8749 + this.var_int_q] : n2 + -6 + 20;
+            }
+            byte by = this.var_byte_arr_a[this.var_short_arr_a[138] + 468 + n2];
+            int n3 = 0;
+            for (int i = 0; i < 3; ++i) {
+                if (this.var_byte_arr_a[this.var_short_arr_a[138] + (10 + i) * 26 + n2] == 0) continue;
+                int n4 = this.aI - this.var_byte_arr_a[this.var_short_arr_a[283] + 2] * (by - 1) / 2 + (this.var_byte_arr_a[this.var_short_arr_a[283] + 2] + 2) * n3;
+                ++n3;
+                this.a(632 + i, this.aH - 10 + 3, n4);
+                this.var_c_a.a(this.aH + 19, n4, (this.var_byte_arr_arr_j[3][n] & 0xFF) >> 6, String.valueOf(this.var_byte_arr_a[this.var_short_arr_a[138] + (10 + i) * 26 + n2]), 0);
+            }
             return;
-         }
+        }
+        if (n - 1 == 1112) {
+            int n5 = this.var_byte_arr_r[this.var_byte_as] + 12;
+            int n6 = 0;
+            for (int i = 0; i < 3; ++i) {
+                if (this.var_byte_arr_a[this.var_short_arr_a[138] + (10 + i) * 26 + n5] == 0) continue;
+                int n7 = this.aH - 34 * (this.var_byte_arr_a[this.var_short_arr_a[138] + 468 + n5] - 1) / 2 + 30 * n6;
+                ++n6;
+                this.a(632 + i, n7 - 2 - 4, this.aI);
+                this.var_c_a.a(n7 + 15, this.aI, (this.var_byte_arr_arr_j[3][n] & 0xFF) >> 6, String.valueOf(this.var_byte_arr_a[this.var_short_arr_a[138] + (10 + i) * 26 + n5]), 0);
+            }
+            this.var_int_arr_d[8] = 0;
+            if (this.var_byte_arr_e[8749 + this.var_int_q] == 6 && this.var_byte_arr_r[this.var_byte_as] != 1) {
+                this.var_int_arr_d[8] = -20;
+            }
+            return;
+        }
+        switch (n - 1) {
+            case 1077: {
+                this.aD /= 21;
+            }
+        }
+        this.a(this.aG + this.aD, this.aH, this.aI);
+    }
 
-         ++this.ak;
-      }
+    private void k(int n) {
+        switch (n - 1) {
+            case 1047: 
+            case 1051: 
+            case 1055: 
+            case 1063: 
+            case 1067: {
+                if (this.aD >= 0 && this.var_byte_arr_a[this.var_short_arr_a[126] + this.aD] != -1) {
+                    this.aD = this.var_byte_arr_e[this.var_short_arr_b[this.var_byte_arr_a[this.var_short_arr_a[126] + this.aD]] + this.var_byte_l] + this.var_byte_arr_a[this.var_short_arr_a[127] + this.aD];
+                    break;
+                }
+                return;
+            }
+            case 1071: {
+                if (this.aD != 0 && this.var_byte_arr_e[3535 + this.var_byte_l] != 0 && this.var_byte_arr_e[3535 + this.var_byte_l] != 15) break;
+                return;
+            }
+            case 1059: {
+                this.aD = (9 - this.aD) * 2 + 1;
+            }
+        }
+        switch (n - 1) {
+            case 1018: {
+                this.var_c_a.a(this.aH, this.aI, (this.var_byte_arr_arr_j[3][n] & 0xFF) >> 6, String.valueOf(this.aD) + "/" + this.var_short_arr_arr_a[0][16], this.aG - 1);
+                return;
+            }
+        }
+        this.var_c_a.a(this.aH, this.aI, (this.var_byte_arr_arr_j[3][n] & 0xFF) >> 6, String.valueOf(this.aD), this.aG - 1);
+    }
 
-      this.o = 0;
-      this.v = 71 + this.ak;
-      this.o = (byte)(this.a[this.a[154] + this.q] + this.ak);
-      this.aR = this.a[this.a[311] + 229 + this.aS + this.ak];
-      this.aQ = this.a[this.a[155] + 84 + this.aR] < 0 ? -1 : 0;
-      this.al = this.a[this.a[311] + 0 + this.aS + this.ak];
-      this.am = this.p[this.al];
-      this.an = this.a[this.a[311] + 458 + this.aS + this.ak];
-      if (this.an > 100) {
-         this.f(this.an, -2);
-      } else if (this.an == 99) {
-         this.am = this.p[0];
-         this.f(this.am, -2);
-      } else if (this.an > 0) {
-         this.f(this.p[this.an], -2);
-      } else if (this.an == -100) {
-         if (this.ai == 51) {
-            this.I = 8;
-            this.K = 67;
-         }
+    private boolean boolean_c() {
+        block8: {
+            block20: {
+                block19: {
+                    block18: {
+                        block17: {
+                            block16: {
+                                block15: {
+                                    block14: {
+                                        block13: {
+                                            block12: {
+                                                block11: {
+                                                    block10: {
+                                                        block9: {
+                                                            block7: {
+                                                                this.var_boolean_G = false;
+                                                                if (this.aB != 0) break block7;
+                                                                for (int i = 0; i < 5; ++i) {
+                                                                    if (this.var_short_arr_arr_a[0][this.var_byte_arr_a[this.var_short_arr_a[146] + i]] == this.var_short_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + 0] + i]) continue;
+                                                                    this.var_boolean_G = true;
+                                                                    this.var_short_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + 0] + i] = this.var_short_arr_arr_a[0][this.var_byte_arr_a[this.var_short_arr_a[146] + i]];
+                                                                    this.var_byte_arr_k[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + 0] + i] = 1;
+                                                                }
+                                                                break block8;
+                                                            }
+                                                            if (this.aB != 1 && this.aB != 9) break block9;
+                                                            this.x();
+                                                            break block8;
+                                                        }
+                                                        if (this.aB != 2 && this.aB != 5) break block10;
+                                                        this.z();
+                                                        break block8;
+                                                    }
+                                                    if (this.aB != 4) break block11;
+                                                    this.y();
+                                                    break block8;
+                                                }
+                                                if (this.aB != 6) break block12;
+                                                this.A();
+                                                break block8;
+                                            }
+                                            if (this.aB != 7 && this.aB != 8) break block13;
+                                            if (this.var_short_arr_d[46] == this.var_byte_arr_r[this.var_byte_as] && !this.var_boolean_arr_b[this.aB]) break block8;
+                                            this.var_short_arr_d[46] = this.var_byte_arr_r[this.var_byte_as];
+                                            this.var_boolean_G = true;
+                                            if (this.var_byte_arr_r[this.var_byte_as] < 10) {
+                                                this.var_short_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + this.aB]] = this.var_byte_arr_r[this.var_byte_as];
+                                                this.var_short_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + this.aB] + 1] = this.var_byte_arr_a[this.var_short_arr_a[138] + 338 + this.var_byte_arr_r[this.var_byte_as] + 12];
+                                                this.var_short_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + this.aB] + 2] = this.var_byte_arr_a[this.var_short_arr_a[138] + 364 + this.var_byte_arr_r[this.var_byte_as] + 12];
+                                            }
+                                            break block8;
+                                        }
+                                        if (this.aB != 10) break block14;
+                                        if (this.var_byte_Q != 16 || this.var_int_z == this.var_int_y) break block8;
+                                        this.var_byte_arr_k[53] = 1;
+                                        break block8;
+                                    }
+                                    if (this.aB == 11) break block8;
+                                    if (this.aB != 15) break block15;
+                                    this.var_short_arr_d[73] = (short)(98 + this.var_byte_m);
+                                    if (this.var_int_z == this.var_int_y) break block8;
+                                    this.var_byte_arr_k[72] = 1;
+                                    this.var_boolean_G = true;
+                                    break block8;
+                                }
+                                if (this.aB != 12) break block16;
+                                if (this.var_byte_am >= 51 && this.var_byte_q <= 2) {
+                                    this.var_byte_am = (byte)51;
+                                }
+                                short s = (short)(this.var_short_arr_d[57] = (short)(this.var_short_arr_arr_a[0][17] == this.var_byte_am ? 104 : (short)(108 + this.var_byte_arr_e[6868 + this.var_byte_am])));
+                                if (this.var_byte_Q == 17 && this.var_byte_al == 3 && (this.var_byte_ai == 35 || this.var_byte_ai == 50 || this.var_byte_ai == 54)) {
+                                    this.var_short_arr_d[57] = 105;
+                                }
+                                this.var_short_arr_d[58] = this.var_byte_arr_e[2727 + this.var_byte_am];
+                                if (this.var_int_z == this.var_int_y) break block8;
+                                this.var_byte_arr_k[56] = 1;
+                                this.var_boolean_G = true;
+                                break block8;
+                            }
+                            if (this.aB != 13) break block17;
+                            this.var_short_arr_d[62] = (short)(82 + (this.var_byte_q == 7 ? 21 : this.var_byte_arr_a[this.var_short_arr_a[248] + this.var_byte_q]));
+                            this.var_short_arr_d[63] = this.var_byte_ak;
+                            if (this.var_int_z == this.var_int_y) break block8;
+                            this.var_byte_arr_k[61] = 1;
+                            this.var_boolean_G = true;
+                            break block8;
+                        }
+                        if (this.aB != 14) break block18;
+                        this.var_boolean_T = this.var_int_W != 0;
+                        this.var_boolean_U = this.var_int_W + var_byte_ag < this.var_short_c;
+                        this.var_boolean_Q = this.var_int_X == 0;
+                        boolean bl = this.var_boolean_R = this.var_int_X + var_byte_ah >= this.var_short_d;
+                        if (this.var_short_arr_d[66] != this.var_int_W || this.var_short_arr_d[71] != this.var_int_X) {
+                            this.var_short_arr_d[66] = (short)this.var_int_W;
+                            this.var_short_arr_d[71] = (short)this.var_int_X;
+                            this.D();
+                        }
+                        this.var_byte_arr_k[66] = 1;
+                        this.var_int_ae = 0;
+                        this.var_int_ad = 0;
+                        break block8;
+                    }
+                    if (this.aB != 17) break block19;
+                    this.B();
+                    break block8;
+                }
+                if (this.aB != 16) break block20;
+                if (this.var_int_z == this.var_int_y) break block8;
+                this.var_byte_arr_k[76] = 1;
+                this.var_boolean_G = true;
+                break block8;
+            }
+            if (this.aB == 18 || this.aB == 19) {
+                for (int i = 0; i < this.var_byte_arr_a[this.var_short_arr_a[307] + this.var_byte_m]; ++i) {
+                    this.var_byte_arr_k[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + this.aB] + i] = i == this.var_int_Z ? (byte)1 : 0;
+                }
+            }
+        }
+        return this.var_boolean_G;
+    }
 
-         this.f(-100, -2);
-      } else if (this.an < 0) {
-         this.f(this.an, -3);
-         if (this.ai == 36 || this.ai == 38) {
-            this.I = (byte)(this.I + 4);
-            --this.K;
-         }
-      }
+    private void x() {
+        int n;
+        this.var_byte_arr_k[47] = this.var_byte_ay;
+        for (n = 0; n < 2; ++n) {
+            this.var_byte_arr_k[48 + n] = this.var_byte_F == 2 + n ? 2 : (this.var_byte_arr_arr_a[2 + n][0] > 0 ? 1 : 0);
+        }
+        this.var_byte_arr_k[50] = (byte)(41 + this.var_byte_arr_u[0]);
+        this.var_byte_arr_k[51] = this.var_byte_arr_a[this.var_short_arr_a[304] + this.var_byte_arr_u[0]];
+        for (n = this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + 9]; n < this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + 9] + 5; ++n) {
+            if (this.var_byte_arr_k[n] == -1) continue;
+            if (this.var_short_arr_d[n] != this.var_byte_arr_k[n]) {
+                this.var_short_arr_d[n] = this.var_byte_arr_k[n];
+                this.var_byte_arr_k[n] = 1;
+                this.var_boolean_G = true;
+                continue;
+            }
+            this.var_byte_arr_k[n] = 0;
+        }
+    }
 
-      this.H = true;
-   }
+    private void y() {
+        for (int i = 0; i < 23; ++i) {
+            if (this.var_byte_arr_e[this.var_short_arr_b[this.var_byte_arr_a[this.var_short_arr_a[147] + i]] + this.var_byte_l] == this.var_short_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + 4] + i]) continue;
+            this.var_boolean_G = true;
+            this.var_short_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + 4] + i] = this.var_byte_arr_e[this.var_short_arr_b[this.var_byte_arr_a[this.var_short_arr_a[147] + i]] + this.var_byte_l];
+            this.var_byte_arr_k[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + 4] + i] = 1;
+        }
+        if (this.var_byte_arr_k[11] == 1 || this.var_byte_arr_k[12] == 1) {
+            this.var_byte_arr_k[12] = 1;
+            this.var_byte_arr_k[11] = 1;
+        }
+        if (this.var_byte_arr_e[3636 + this.var_byte_l] == 0) {
+            this.var_short_arr_d[29] = 0;
+        }
+        this.var_short_arr_d[14] = (short)(108 + this.var_byte_arr_e[6868 + this.var_byte_l]);
+    }
 
-   private void S() {
-      this.aJ();
-      this.t();
-      this.ak = 0;
-      this.Z = 0;
-      this.a.a(this.ai);
-      this.aS = this.a[this.a[310] + 0 + this.ai] & 255;
-      this.ao = this.a[this.a[311] + 229 + this.aS];
-      if (this.ai == 4 || this.ao == 0) {
-         this.a[this.a[311] + 229 + this.aS] = this.ao = 27;
-      }
+    private void z() {
+        if (this.var_short_arr_d[4] > 0) {
+            this.var_int_v = this.var_short_arr_d[4];
+            this.var_byte_arr_k[3] = -1;
+            this.var_byte_arr_k[5] = -1;
+            this.var_boolean_G = true;
+            return;
+        }
+        if (this.var_short_arr_d[5] != this.var_byte_arr_r[this.var_byte_as] || this.var_boolean_arr_b[this.aB]) {
+            this.var_short_arr_d[5] = this.var_byte_arr_r[this.var_byte_as];
+            this.var_byte_arr_k[3] = 1;
+            this.var_byte_arr_k[5] = 1;
+            this.var_short_arr_d[3] = this.var_byte_arr_r[this.var_byte_as] >= 10 ? (short)(21 + this.var_byte_arr_r[this.var_byte_as] - 10) : (this.var_byte_arr_r[this.var_byte_as] >= 0 ? (short)(12 + this.var_byte_arr_r[this.var_byte_as]) : (this.var_boolean_K ? (short)41 : (this.var_boolean_F || !this.var_boolean_V ? (short)(108 + this.var_byte_arr_e[6868 + -this.var_byte_arr_r[this.var_byte_as]]) : (short)29)));
+            this.var_byte_arr_k[4] = -1;
+            this.var_boolean_G = true;
+        }
+    }
 
-      this.aj = (byte)((this.a[this.a[310] + 0 + this.ai + 1] & 255) - this.aS);
-      this.J = this.ao >= 27;
-      this.v = 0;
-      this.R = this.Q;
-      this.Q = 17;
-      this.aN = this.a[this.a[155] + 56 + this.ao];
-      if (this.aN == 1) {
-         this.O();
-      }
+    private void A() {
+        if (this.var_short_arr_d[36] != this.var_byte_arr_r[this.var_byte_as] || this.var_boolean_arr_b[this.aB]) {
+            this.var_int_v = 0 + this.var_byte_arr_r[this.var_byte_as];
+            this.var_short_arr_d[36] = this.var_byte_arr_r[this.var_byte_as];
+            this.var_byte_arr_k[34] = 1;
+            this.var_byte_arr_k[38] = 1;
+            this.var_byte_arr_k[36] = 1;
+            this.var_byte_arr_k[37] = 1;
+            this.var_byte_arr_k[35] = 1;
+            this.var_boolean_G = true;
+        }
+        if (this.var_int_z != this.var_int_y) {
+            this.var_byte_arr_k[38] = 1;
+            this.var_boolean_G = true;
+        }
+        this.var_short_arr_d[34] = (short)(0 + this.var_byte_arr_r[this.var_byte_as]);
+    }
 
-      if (this.ao != 9 && !this.J && this.aN != 1) {
-         --this.K;
-      }
+    private void B() {
+        if (this.var_byte_v == 1) {
+            this.var_byte_arr_k[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + this.aB]] = this.var_byte_w == 3 || this.var_int_Y == 4 || this.var_int_q > 0 && this.var_byte_arr_e[8749 + this.var_int_q] == 0 && this.var_byte_arr_r[this.var_byte_as] >= 0 && this.var_byte_arr_r[this.var_byte_as] <= 5 ? 2 : (this.var_byte_w != 4 && this.var_byte_w != 2 ? 1 : 0);
+            this.var_byte_arr_k[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + this.aB] + 1] = this.var_boolean_K ? 2 : (this.var_byte_w == 1 || this.var_byte_F != -1 || this.var_byte_ad != 1 && this.var_byte_ad != 9 ? 0 : 1);
+        } else if (this.var_byte_Q == 32) {
+            this.var_byte_arr_k[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + this.aB]] = 2;
+            this.var_byte_arr_k[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + this.aB] + 1] = 3;
+        } else {
+            this.var_byte_arr_k[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + this.aB]] = this.var_byte_arr_a[this.var_short_arr_a[153] + 116 + this.var_byte_Q];
+            this.var_byte_arr_k[this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + this.aB] + 1] = this.var_byte_arr_a[this.var_short_arr_a[153] + 145 + this.var_byte_Q];
+        }
+        for (int i = this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + 17]; i < this.var_byte_arr_a[this.var_short_arr_a[195] + 60 + 17] + 2; ++i) {
+            if (this.var_short_arr_d[i] != this.var_byte_arr_k[i]) {
+                this.var_short_arr_d[i] = this.var_byte_arr_k[i];
+                this.var_byte_arr_k[i] = 1;
+                this.var_boolean_G = true;
+                continue;
+            }
+            this.var_byte_arr_k[i] = 0;
+        }
+    }
 
-      this.d = new boolean[]{this.a[0], this.a[1], this.a[2], this.a[4], this.a[5], this.a[6], this.a[7], this.a[8], this.a[9]};
-      this.a(true, true, false, false);
-      this.s = true;
-      byte var1 = this.a[this.a[310] + 71 + this.ai];
-      System.arraycopy(this.a, this.a[156] + this.a[this.a[157] + var1], this.p, 0, this.a[this.a[157] + var1 + 1] - this.a[this.a[157] + var1]);
-   }
+    private void a(int n, byte by, int n2) {
+        int n3 = 0;
+        for (n3 = 0; n3 < this.aV; ++n3) {
+            int n4;
+            int n5;
+            int n6;
+            int n7;
+            f f2;
+            this.var_int_N = n;
+            int n8 = aU * n3;
+            int n9 = 1;
+            if (this.aW + n3 == this.var_byte_as) {
+                n9 = 0;
+            } else if (by == 2) continue;
+            this.b(this.var_short_arr_arr_b[1][n] & 0xFFF, this.aX + n8, n2 - 1);
+            this.a(552 + n9, this.aX + n8, n2);
+            int n10 = this.var_byte_arr_r[this.aW + n3];
+            if (n10 < 0) {
+                this.a(-n10, this.aX + n8 - -1, n2 + 8 + 2 + 3, -8, (byte)29);
+                if (!this.var_boolean_V || this.var_boolean_F || this.aW + n3 != this.var_byte_as) continue;
+                f2 = this;
+                n7 = 18;
+                n6 = this.aX + n8;
+                n5 = n2;
+                n4 = this.var_int_f;
+            } else {
+                if (n10 <= 8) {
+                    this.a(664 + n10, this.aX + n8, n2);
+                    int n11 = 0;
+                    int n12 = 0;
+                    if (this.var_byte_arr_e[8749 + this.var_int_q] == 6) {
+                        n11 = -1;
+                        n12 = 6;
+                    }
+                    this.var_c_a.a(this.aX + n8 + 19 + n11 + 6, n2 + 5 + n12 + 2, 1, String.valueOf(this.var_byte_arr_s[n3 + this.aW]), 0);
+                    if (this.var_byte_arr_e[8749 + this.var_int_q] == 6 || this.aW + n3 >= this.var_byte_av || this.aW + n3 != this.var_byte_as) continue;
+                    this.d(3, this.aX + n8 + 6, n2 + 2 + 2, this.var_int_f);
+                    this.var_boolean_S = true;
+                    continue;
+                }
+                f2 = this;
+                n7 = n10;
+                n6 = this.aX + n8;
+                n5 = n2;
+                n4 = this.aW + n3 == this.var_byte_as ? this.var_int_f : 0;
+            }
+            f2.d(n7, n6, n5, n4);
+        }
+        if (this.var_boolean_T) {
+            this.d(1, this.aX - 9, n2 + 8 - 0, this.var_int_e);
+        }
+        if (this.var_boolean_U) {
+            this.d(2, this.aX + this.aY - 9 + 9, n2 + 8 - 0, this.var_int_e);
+        }
+    }
 
-   private void T() {
-      if (this.ai == 3) {
-         this.d(5, 20, 2);
-         this.e[6161 + this.p[2]] = 3;
-         this.e[2828 + this.p[2]] = 105;
-         this.e[6262 + this.p[2]] = 5;
-         this.e[6363 + this.p[2]] = 10;
-         this.e[1313 + this.p[2]] = 3;
-         this.e[5050 + this.p[2]] = -1;
-      } else if (this.ai == 37) {
-         this.a.l();
-         this.aw = 1;
-         this.a.a(4, 46, 9, (byte)0, (byte)9);
-         this.a((byte)0, (byte)48, (byte)9, (byte)3, (byte)0);
-         this.e[2934] = 14;
-         this.e[611] = 2;
-         this.aw = 2;
-         this.a.a(1, 44, 9, (byte)1, (byte)2);
-         this.a.a(1, 45, 11, (byte)1, (byte)2);
-         this.e[658] = 7;
-         this.a.a(1, 48, 11, (byte)1, (byte)2);
-         this.e[659] = 5;
-         this.a.a(2, 48, 9, (byte)1, (byte)2);
-         this.a[0][17] = 0;
-      } else if (this.ai == 38) {
-         this.a.l();
-         this.a((byte)0, 2, 52, 18, 2, true, -1);
-         this.a((byte)0, 2, 54, 16, 2, true, -1);
-         this.a((byte)0, 2, 55, 19, 2, true, -1);
-         this.a((byte)0, 2, 58, 19, 2, true, -1);
-         this.aw = 0;
-         this.a.a(5, 60, 12, (byte)0, (byte)0);
-         this.aw = 2;
-         this.d(57, 17, 1);
-         this.a.a();
-      } else if (this.ai == 43) {
-         this.b(52, 7);
-      } else if (this.ai == 45) {
-         this.a.m();
-         this.b(57, 30);
-         this.b(1, 54, 30, 5);
-         this.b(1, 54, 31, 5);
-         this.b(1, 55, 31, 5);
-         this.b(1, 55, 32, 5);
-      } else {
-         if (this.ai == 48) {
-            this.q = 2;
+    private void c(int n, int n2, int n3) {
+        int n4 = this.var_byte_arr_a[this.var_short_arr_a[283] + 2] + 6;
+        int n5 = 0;
+        this.var_int_ab = this.var_byte_arr_a[this.var_short_arr_a[152] + this.var_byte_Q + 1] - this.var_byte_arr_a[this.var_short_arr_a[152] + this.var_byte_Q];
+        int n6 = n2 + this.var_byte_arr_arr_j[23][this.var_short_arr_arr_b[1][n] & 0xFFF] / 2 * 4;
+        int n7 = n3 - this.var_int_ab * n4 / 2 + n4 / 2;
+        for (int i = 0; i < this.var_int_ab; ++i) {
+            if (i == this.var_int_Z) {
+                n5 = n7;
+            }
+            this.b(this.var_short_arr_arr_b[1][n] & 0xFFF, n2, n7);
+            this.var_c_a.a(n6, n7, 1, 57 + this.var_byte_arr_a[this.var_short_arr_a[151] + this.var_byte_arr_a[this.var_short_arr_a[152] + this.var_byte_Q] + i], 0);
+            n7 += n4;
+        }
+        this.var_c_a.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N]);
+        this.d(2, n6 - 50 - 20, n5 + 4, this.var_int_e);
+        this.d(1, n6 + 49 + 20, n5 + 4, this.var_int_e);
+    }
+
+    final void void_a(int n) {
+        if ((var_byte_af = (byte)(var_byte_af + n)) > 98) {
+            var_byte_af = (byte)98;
+        }
+        this.var_byte_arr_n[3] = this.var_byte_arr_n[4] = var_byte_af;
+        this.var_byte_arr_n[2] = this.var_byte_arr_n[4];
+        for (int i = 0; i < 5; ++i) {
+            var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M].setColor(this.var_int_arr_f[i]);
+            f.b(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], 110 + this.var_byte_arr_l[i], 232 + this.var_byte_arr_m[i], this.var_byte_arr_n[i], this.var_byte_arr_o[i]);
+        }
+        if (!this.var_boolean_y) {
+            this.var_tribes_a.var_d_a.a();
+            Thread.yield();
+            return;
+        }
+        this.l();
+    }
+
+    private void c(byte by) {
+        byte by2 = 0;
+        try {
+            byte by3;
+            System.gc();
+            Thread.yield();
+            DataInputStream dataInputStream = new DataInputStream(this.getClass().getResourceAsStream("/pi8"));
+            for (by2 = 0; by2 < 12 && (by3 = (byte)(dataInputStream.readByte() & 0xFF)) != 255; by2 = (byte)(by2 + 1)) {
+                short s = (short)(by3 << 8 | dataInputStream.readByte() & 0xFF);
+                byte[] byArray = new byte[s];
+                dataInputStream.read(byArray, 0, s);
+                if (by2 != by) continue;
+                this.var_javax_microedition_lcdui_Image_arr_arr_a[2][0] = Image.createImage((byte[])byArray, (int)0, (int)s);
+                break;
+            }
+            dataInputStream.close();
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
+
+    private void C() {
+        this.aK = this.var_short_c > var_byte_ag ? var_byte_ag : this.var_short_c;
+        this.aL = this.var_short_d > var_byte_ah ? var_byte_ah : this.var_short_d;
+        this.var_byte_N = 1;
+        this.b(this.var_short_arr_arr_b[1][1188] & 0xFFF, 0, 0);
+        int n = 0;
+        int n2 = 0;
+        boolean bl = false;
+        for (int i = 0; i < this.aL; ++i) {
+            int n3 = 0;
+            int n4 = -1;
+            for (int j = 0; j <= this.aK; ++j) {
+                if (j == this.aK) {
+                    bl = true;
+                } else {
+                    this.e(this.var_int_W + j, this.var_int_X + i);
+                }
+                if (!bl && this.aM == n4) {
+                    ++n2;
+                    continue;
+                }
+                if (n2 > 0) {
+                    var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(n4);
+                    f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n3 * 7 - 0, (this.aJ + n) * 4 - 0, n2 * 7, 4);
+                    n2 = 0;
+                }
+                if (bl) {
+                    bl = false;
+                    continue;
+                }
+                n4 = this.aM;
+                n3 = j;
+                n = i;
+                n2 = 1;
+            }
+        }
+    }
+
+    private void D() {
+        block3: {
+            int n;
+            int n2;
+            block2: {
+                this.var_byte_N = var_byte_M;
+                int n3 = (this.var_short_arr_arr_b[1][1188] >> 12 & 3) << 7;
+                this.b(this.var_short_arr_arr_b[1][1188] & 0xFFF, 160 + this.var_byte_arr_arr_j[1][1188] + 0, 120 + this.var_byte_arr_arr_j[2][1188] + 0 + n3);
+                f.a(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], var_javax_microedition_lcdui_Image_arr_a[this.var_byte_arr_c[1]], (this.var_int_ad + 1) / 2 * 7, (this.var_int_ae + 1) / 2 * 4, 7 * var_byte_ag, 4 * var_byte_ah, 160 + this.var_byte_arr_arr_j[1][1188] + (-this.var_int_ad + 1) / 2 * 7, 120 + this.var_byte_arr_arr_j[2][1188] + (-this.var_int_ae + 1) / 2 * 4 + n3, 0);
+                var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[1]].drawImage(var_javax_microedition_lcdui_Image_arr_a[this.var_byte_arr_c[0]], -(160 + this.var_byte_arr_arr_j[1][1188] + 0) * 1, -(120 + this.var_byte_arr_arr_j[2][1188] + 0 + n3) * 1, 0);
+                n2 = (this.var_int_ad + 1 >> 1) * (this.aK - 1);
+                n = (this.var_int_ae + 1 >> 1) * (this.aL - 1);
+                this.var_byte_N = 1;
+                if (this.var_int_ae != 0) break block2;
+                var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(0xAA9944);
+                f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n2 * 7 - 0, n - 0, 7, var_byte_ah * 4);
+                for (n = 0; n < this.aL; ++n) {
+                    this.e(this.var_int_W + n2, this.var_int_X + n);
+                    var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(this.aM);
+                    f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n2 * 7 - 0, (this.aJ + n) * 4 - 0, 7, 4);
+                }
+                break block3;
+            }
+            if (this.var_int_ad != 0) break block3;
+            for (n2 = 0; n2 < this.aK; ++n2) {
+                this.e(this.var_int_W + n2, this.var_int_X + n);
+                var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(this.aM);
+                f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], n2 * 7 - 0, (this.aJ + n) * 4 - 0, 7, 4);
+            }
+        }
+    }
+
+    private void e(int n, int n2) {
+        this.aM = -1;
+        byte by = this.byte_a(n, n2);
+        if (by != 2) {
+            if (this.var_byte_arr_arr_c[n2][n] > 0) {
+                this.aM = f.byte_a(this.var_byte_arr_arr_c[n2][n]) == 1 && (this.var_byte_arr_e[7979 + this.var_byte_arr_arr_c[n2][n]] & 2) != 0 ? -1 : this.var_int_arr_arr_b[by][f.byte_a(this.var_byte_arr_arr_c[n2][n]) + 6];
+            } else if (this.var_byte_arr_arr_c[n2][n] < 0) {
+                this.aM = this.var_int_arr_arr_b[by][f.byte_b(this.var_byte_arr_arr_c[n2][n]) + 9];
+            }
+            if (this.aM == -1) {
+                this.aM = this.var_int_arr_arr_b[by][this.var_byte_arr_a[this.var_short_arr_a[194] + (this.var_byte_arr_arr_b[n2][n] & 0xFF)]];
+                return;
+            }
+        } else {
+            this.aM = 6049325;
+        }
+    }
+
+    private void E() {
+        this.var_int_W = this.var_byte_I - var_byte_ag / 2 + (this.var_byte_O >> 1);
+        int n = this.var_int_W < 0 ? 0 : (this.var_int_W = this.var_int_W + var_byte_ag >= this.var_short_c ? this.var_short_c - var_byte_ag : this.var_int_W);
+        if (var_byte_ah > this.var_short_d) {
+            this.aJ = var_byte_ah - this.var_short_d >> 1;
+            return;
+        }
+        this.var_int_X = this.var_byte_K - var_byte_ah / 2 + (this.var_byte_P >> 1);
+        this.var_int_X = this.var_int_X < 0 ? 0 : (this.var_int_X + var_byte_ah >= this.var_short_d ? this.var_short_d - var_byte_ah : this.var_int_X);
+    }
+
+    private void F() {
+        if (this.var_int_c == -1 && this.var_byte_arr_a[this.var_short_arr_a[153] + 0 + this.var_byte_Q] == 1) {
+            this.G();
+        } else if (this.var_byte_arr_a[this.var_short_arr_a[153] + 0 + this.var_byte_Q] == 1) {
+            this.H();
+        } else if (this.var_byte_Q == 23) {
+            this.I();
+        } else if (this.var_byte_Q == 15) {
+            this.J();
+        } else if (this.var_byte_Q == 17) {
+            this.P();
+        } else if (this.var_byte_Q == 20) {
+            this.K();
+        } else if (this.var_byte_Q == 18) {
+            if (this.var_boolean_H) {
+                this.var_boolean_H = false;
+                this.var_boolean_arr_b[13] = true;
+                this.var_boolean_arr_b[11] = true;
+                this.a((byte)11, 0, 0);
+                this.a((byte)17, 0, 240);
+            }
+            this.a((byte)13, 0, 0);
+        } else if (this.var_byte_Q == 19) {
+            this.L();
+        } else if (this.var_byte_Q == 24) {
+            if (this.var_boolean_H) {
+                this.var_boolean_H = false;
+                this.var_boolean_arr_b[16] = true;
+                this.var_boolean_arr_b[11] = true;
+                this.a((byte)11, 0, 0);
+                this.a((byte)16, 0, 0);
+                this.a((byte)17, 0, 240);
+            }
+        } else if (this.var_byte_Q == 25) {
+            this.M();
+        } else if (this.var_byte_Q == 27) {
+            this.N();
+        } else if (this.var_byte_Q == 32 && this.var_boolean_H) {
+            this.var_boolean_H = false;
+            try {
+                var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M].drawImage(Image.createImage((String)"/l3"), 0, 0, 20);
+            }
+            catch (Exception exception) {}
+            this.var_boolean_arr_b[17] = true;
+            this.a((byte)17, 0, 240);
+        }
+        this.var_byte_N = this.var_byte_arr_c[1];
+    }
+
+    private void G() {
+        if (this.var_boolean_H) {
+            this.var_boolean_H = false;
+            this.var_byte_N = this.var_byte_arr_c[1];
+            var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(9422847);
+            f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], 0, 0, this.var_int_arr_a[this.var_byte_N], this.var_int_arr_b[this.var_byte_N]);
+            var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(940839);
+            f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], 0, 0 + this.var_int_arr_b[this.var_byte_N] - 64, this.var_int_arr_a[this.var_byte_N], 64);
+            this.var_int_S = 0;
+            this.var_int_T = 160;
+            this.void_a(1118, (byte)2);
+            if (this.var_byte_Q == this.var_byte_U || this.var_byte_Q == 3 || this.var_byte_Q == 12 || this.var_byte_Q == 13 || this.var_byte_Q == 2 || this.var_byte_Q == this.var_byte_V || this.var_byte_Q == 9 || this.var_byte_Q == 14) {
+                this.var_byte_arr_k[53] = -1;
+                this.var_byte_arr_k[54] = 1;
+            } else if (this.var_byte_Q == 16 || this.var_byte_Q == 21 || this.var_byte_Q == 22) {
+                this.var_byte_arr_k[53] = 1;
+                this.var_byte_arr_k[54] = -1;
+            }
+            this.var_byte_arr_k[52] = -1;
+        }
+        this.var_byte_N = var_byte_M;
+        var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].drawImage(var_javax_microedition_lcdui_Image_arr_a[this.var_byte_arr_c[1]], 0, 240, 36);
+        var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N].setColor(9422847);
+        f.b(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], 0, 0, this.var_int_arr_a[this.var_byte_N], 80);
+        for (int i = 0; i < 4; ++i) {
+            if (this.var_int_arr_arr_a[0][i] > 320 || this.var_int_arr_arr_a[0][3] == -1000) {
+                this.var_int_arr_arr_a[0][i] = -88 - this.int_a(65535, 80);
+                this.var_int_arr_arr_a[1][i] = this.int_a(65535, 48);
+                this.var_int_arr_arr_a[2][i] = this.int_a(255, 4);
+            }
+            int[] nArray = this.var_int_arr_arr_a[0];
+            int n = i;
+            int n2 = nArray[n] + (this.var_int_arr_arr_a[2][i] + 2 >> 1);
+            nArray[n] = n2;
+            int[] nArray2 = this.var_int_arr_arr_a[1];
+            int n3 = i;
+            int n4 = nArray2[n3] + (this.int_a(255, 5) == 0 ? this.int_a(255, 3) - 1 : 0);
+            nArray2[n3] = n4;
+            this.a(1674 + this.var_int_arr_arr_a[2][i], n2, n4);
+        }
+        if (this.var_byte_Q == this.var_byte_U || this.var_byte_Q == 12 || this.var_byte_Q == 13 || this.var_byte_Q == 2 || this.var_byte_Q == this.var_byte_V || this.var_byte_Q == 9 || this.var_byte_Q == 14) {
+            this.var_byte_arr_k[53] = -1;
+            this.var_byte_arr_k[54] = 1;
+        } else if (this.var_byte_Q == 16 || this.var_byte_Q == 21 || this.var_byte_Q == 22) {
+            this.var_byte_arr_k[53] = 1;
+            this.var_byte_arr_k[54] = -1;
+        }
+        this.var_byte_arr_k[52] = -1;
+        this.var_boolean_arr_b[10] = true;
+        this.a(1672, 160, 0);
+        this.var_int_S = 0;
+        this.var_int_T = 192;
+        this.void_a(1118, (byte)1);
+        this.a((byte)10, 65, 54);
+        this.var_boolean_arr_b[17] = true;
+        this.a((byte)17, 0, 240);
+    }
+
+    private void H() {
+        if (this.var_boolean_H) {
+            this.var_boolean_H = false;
+            this.O();
+            if (this.var_byte_Q == 10 || this.var_byte_Q == 11 || this.var_byte_Q == 12 || this.var_byte_Q == 13) {
+                this.var_byte_arr_k[53] = -1;
+                this.var_byte_arr_k[54] = 1;
+            } else if (this.var_byte_Q == 16 || this.var_byte_Q == 21 || this.var_byte_Q == 22) {
+                this.var_byte_arr_k[53] = 1;
+                this.var_byte_arr_k[54] = -1;
+            }
+            this.var_byte_arr_k[52] = -1;
+            this.var_boolean_arr_b[10] = true;
+        }
+        this.a((byte)10, 65, 32);
+        this.a((byte)17, 0, 240);
+    }
+
+    private void I() {
+        if (this.var_boolean_H) {
+            this.var_boolean_H = false;
+            this.var_boolean_arr_b[11] = true;
+            this.var_int_v = 69;
+            this.var_byte_arr_k[55] = 1;
+            this.a((byte)11, 0, 0);
+            this.var_byte_arr_k[55] = -1;
+        }
+    }
+
+    private void J() {
+        if (this.var_boolean_H) {
+            this.var_boolean_H = false;
+            this.var_boolean_arr_b[15] = true;
+            this.var_boolean_arr_b[11] = true;
+            this.a((byte)11, 0, 0);
+            this.a((byte)17, 0, 240);
+        }
+        this.a((byte)15, 0, 0);
+        this.a((byte)17, 0, 240);
+    }
+
+    private void K() {
+        if (this.var_boolean_H) {
+            this.var_boolean_H = false;
+            this.var_boolean_A = true;
+            this.n();
+            this.u();
+            this.O();
+            this.var_boolean_arr_b[12] = true;
+        }
+        this.a((byte)12, 0, 0);
+        this.a((byte)17, 0, 240);
+    }
+
+    private void L() {
+        if (this.var_boolean_H) {
+            this.var_boolean_H = false;
+            this.var_boolean_arr_b[11] = true;
+            this.a((byte)11, 0, 0);
+            this.var_boolean_arr_b[14] = true;
+            this.C();
+        }
+        this.a((byte)14, 160, 120);
+        this.var_boolean_arr_b[17] = true;
+        this.a((byte)17, 0, 240);
+    }
+
+    private void M() {
+        if (this.var_boolean_H) {
+            this.var_boolean_H = false;
+            if (!this.var_boolean_I) {
+                this.O();
+                var_javax_microedition_lcdui_Graphics_arr_a[1].drawImage(var_javax_microedition_lcdui_Image_arr_a[0], 0, 0, 0);
+            }
+            this.var_boolean_arr_b[2] = true;
+        }
+        f.a(var_javax_microedition_lcdui_Graphics_arr_a[0], var_javax_microedition_lcdui_Image_arr_a[1], 0, 0, 350, 240 - this.aZ, 0, 0, 0);
+        this.a((byte)(18 + this.var_byte_m), 0, 0);
+        this.a((byte)2, 0, this.var_int_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + 2]]);
+        this.a((byte)17, 0, 240);
+        this.var_boolean_I = true;
+    }
+
+    private void N() {
+        if (this.var_boolean_ab) {
+            this.var_boolean_ab = false;
+            this.var_int_x = this.var_int_v;
+            this.var_int_v = 61;
+            this.var_boolean_arr_b[11] = true;
+            this.var_byte_arr_k[55] = 1;
+            this.a((byte)11, 0, 0);
+            this.var_byte_arr_k[55] = -1;
+            this.a((byte)17, 0, 240);
+        }
+    }
+
+    private void O() {
+        this.var_byte_arr_c[8] = 0;
+        this.var_byte_arr_c[9] = 0;
+        f.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[0]], var_javax_microedition_lcdui_Image_arr_a[this.var_byte_arr_c[1]], 0, 0, 350, this.var_int_A, 0, this.ba - this.var_byte_ax + this.aP, 0);
+        for (byte by = 0; by < 20; by = (byte)((byte)(by + 1))) {
+            if (!this.var_boolean_arr_a[by]) continue;
+            this.var_boolean_arr_b[by] = true;
+            this.a(by, 0, this.var_int_arr_d[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + by]]);
+            this.var_byte_N = this.var_byte_arr_c[0];
+            if (this.var_byte_arr_a[this.var_short_arr_a[195] + 20 + by] == 1 && this.var_byte_Q != 20) {
+                this.a(526, 0, 0 + this.ba);
+                continue;
+            }
+            if (this.var_byte_arr_a[this.var_short_arr_a[195] + 20 + by] != 2) continue;
+            this.a(532, 0, 240 - this.aZ);
+        }
+        this.var_byte_arr_c[8] = 2;
+        this.var_byte_arr_c[9] = 2;
+    }
+
+    private void P() {
+        if (this.aN > 0 && !this.var_boolean_J) {
+            this.aN += 4;
+            var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M].setColor(0);
+            f.b(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], 0, 0, 320, 16 + this.aN);
+            f.b(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], 0, 256 - this.aN, 320, this.aN);
+            this.var_boolean_c = true;
+            if (this.aN - 4 > 120) {
+                this.aN = -this.aN;
+                this.var_boolean_c = false;
+                this.i();
+            } else {
+                return;
+            }
+        }
+        if (this.var_boolean_H && !this.var_boolean_J) {
+            this.var_boolean_arr_b[12] = true;
+            var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M].setColor(0);
+            f.b(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], 0, 0, 320, 96);
+            f.b(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], 0, 192, 320, 64);
+        }
+        if (this.var_byte_arr_a[this.var_short_arr_a[155] + 0 + this.aR] == 1) {
+            if (this.aQ >= 0) {
+                if (this.aQ < this.var_byte_arr_a[this.var_short_arr_a[155] + 84 + this.aR] || this.var_byte_am != 0) {
+                    this.var_byte_N = 0;
+                    var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M].setColor(0);
+                    f.b(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], 0, 96, 320, 96);
+                    this.d(100 + this.var_byte_arr_a[this.var_short_arr_a[155] + 28 + this.aR], 160, 136, this.var_byte_am == 0 ? this.aQ : this.var_int_f);
+                    this.d(106, 160, 136, this.var_int_f);
+                    this.aQ = this.var_byte_am == 0 ? this.aQ + 1 : this.aQ;
+                } else if (this.var_byte_am == 0 && this.aR != 0) {
+                    this.aQ = -1;
+                    this.var_boolean_j = true;
+                    return;
+                }
+            }
+        } else if (this.var_byte_arr_a[this.var_short_arr_a[155] + 0 + this.aR] >= 2 || this.var_byte_arr_a[this.var_short_arr_a[155] + 0 + this.var_byte_ao] >= 2) {
+            this.Q();
+            this.R();
+        }
+        this.var_boolean_H = false;
+        if (this.aN < 0) {
+            this.aN += 4;
+            this.var_boolean_c = true;
+            if (this.aN >= -48) {
+                this.aN = 0;
+                this.var_boolean_c = false;
+                this.i();
+            }
+        }
+        if (this.aN == 0 && this.var_byte_al != 0) {
+            this.a((byte)12, 0, 0);
+            this.a((byte)17, 0, 240);
+        }
+    }
+
+    private void Q() {
+        if (this.aR > 0 && this.aQ >= 0 && (this.aN == 0 || this.var_boolean_H)) {
+            if (this.aQ == 0 && this.var_byte_arr_a[this.var_short_arr_a[155] + 28 + this.aR] > 0) {
+                for (int i = 0; i < this.var_byte_arr_p.length; ++i) {
+                    int n;
+                    if (this.var_byte_arr_p[i] == 0) continue;
+                    int n2 = n = i > 6 ? 6 : i;
+                    if (this.var_byte_arr_a[this.var_short_arr_a[196] + n * 33 + 0 + this.var_byte_arr_a[this.var_short_arr_a[155] + 28 + this.aR] * 3] != 0) {
+                        this.var_byte_arr_e[2929 + this.var_byte_arr_p[i]] = this.var_byte_arr_a[this.var_short_arr_a[196] + n * 33 + 0 + this.var_byte_arr_a[this.var_short_arr_a[155] + 28 + this.aR] * 3];
+                        this.var_byte_arr_e[1313 + this.var_byte_arr_p[i]] = this.var_byte_arr_a[this.var_short_arr_a[196] + n * 33 + 2 + this.var_byte_arr_a[this.var_short_arr_a[155] + 28 + this.aR] * 3];
+                        this.var_byte_arr_e[2828 + this.var_byte_arr_p[i]] = 105;
+                    }
+                    if (this.var_byte_arr_a[this.var_short_arr_a[196] + n * 33 + 1 + this.var_byte_arr_a[this.var_short_arr_a[155] + 28 + this.aR] * 3] != 0) {
+                        this.var_byte_arr_e[606 + this.var_byte_arr_p[i]] = (byte)(-10 + this.var_byte_arr_a[this.var_short_arr_a[196] + n * 33 + 1 + this.var_byte_arr_a[this.var_short_arr_a[155] + 28 + this.aR] * 3]);
+                        this.var_byte_arr_e[808 + this.var_byte_arr_p[i]] = 0;
+                    }
+                    this.var_byte_arr_e[3030 + this.var_byte_arr_p[i]] = 0;
+                }
+            }
+            if (this.aQ >= this.var_byte_arr_a[this.var_short_arr_a[155] + 84 + this.aR]) {
+                this.aQ = -2;
+                if (this.var_byte_al == 0) {
+                    this.var_boolean_j = true;
+                    return;
+                }
+            }
+            ++this.aQ;
+            if (this.aQ > 0) {
+                this.j();
+            }
+        }
+    }
+
+    private void R() {
+        if (this.var_byte_an != 0 || this.var_byte_arr_a[this.var_short_arr_a[155] + 84 + this.var_byte_ao] >= -1 || this.aQ > 0) {
+            if (this.var_boolean_H) {
+                this.var_boolean_A = true;
+                this.var_byte_N = 1;
+                this.n();
+                this.aP = 0;
+            }
+            if (this.var_boolean_J) {
+                if (this.var_boolean_H) {
+                    this.var_boolean_H = false;
+                    this.var_boolean_A = true;
+                    this.n();
+                    this.u();
+                    this.O();
+                    this.var_boolean_arr_b[12] = true;
+                    return;
+                }
+            } else if (this.aN == 0 || this.var_boolean_H) {
+                this.aO = 0;
+                if (this.aR == 24) {
+                    this.aO = this.int_a(255, 8);
+                }
+                f.a(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_arr_c[0]], var_javax_microedition_lcdui_Image_arr_a[this.var_byte_arr_c[1]], 0, 96, 350, 96 - this.aO, 0, 96 + this.aO, 0);
+                if (this.aR == 24) {
+                    var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M].setColor(0);
+                    f.b(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], 88, 0, 320, 8);
+                    f.b(var_javax_microedition_lcdui_Graphics_arr_a[var_byte_M], 0, 192, 320, 16);
+                }
+                this.var_byte_N = 0;
+                this.bb = 0;
+                this.bc = 96;
+                this.bd = 350;
+                this.be = 96;
+                f.c(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], this.bb, this.bc, this.bd, this.be);
+                this.u();
+                this.bb = 0;
+                this.bc = 0;
+                this.bd = 700;
+                this.be = 544;
+                f.c(var_javax_microedition_lcdui_Graphics_arr_a[this.var_byte_N], this.bb, this.bc, this.bd, this.be);
+            }
+        }
+    }
+
+    final void void_b(int n) {
+        this.i();
+        if (n >= 0) {
+            this.var_byte_ai = (byte)n;
+            this.S();
+            this.T();
+        } else {
+            if (this.var_byte_ak == this.var_byte_aj - 1) {
+                this.U();
+                return;
+            }
+            this.var_byte_ak = (byte)(this.var_byte_ak + 1);
+        }
+        this.var_int_o = 0;
+        this.var_int_v = 71 + this.var_byte_ak;
+        this.var_byte_o = (byte)(this.var_byte_arr_a[this.var_short_arr_a[154] + this.var_byte_q] + this.var_byte_ak);
+        this.aR = this.var_byte_arr_a[this.var_short_arr_a[311] + 229 + this.aS + this.var_byte_ak];
+        this.aQ = this.var_byte_arr_a[this.var_short_arr_a[155] + 84 + this.aR] < 0 ? -1 : 0;
+        this.var_byte_al = this.var_byte_arr_a[this.var_short_arr_a[311] + 0 + this.aS + this.var_byte_ak];
+        this.var_byte_am = this.var_byte_arr_p[this.var_byte_al];
+        this.var_byte_an = this.var_byte_arr_a[this.var_short_arr_a[311] + 458 + this.aS + this.var_byte_ak];
+        if (this.var_byte_an > 100) {
+            this.f(this.var_byte_an, -2);
+        } else if (this.var_byte_an == 99) {
+            this.var_byte_am = this.var_byte_arr_p[0];
+            this.f(this.var_byte_am, -2);
+        } else if (this.var_byte_an > 0) {
+            this.f(this.var_byte_arr_p[this.var_byte_an], -2);
+        } else if (this.var_byte_an == -100) {
+            if (this.var_byte_ai == 51) {
+                this.var_byte_I = (byte)8;
+                this.var_byte_K = (byte)67;
+            }
+            this.f(-100, -2);
+        } else if (this.var_byte_an < 0) {
+            this.f(this.var_byte_an, -3);
+            if (this.var_byte_ai == 36 || this.var_byte_ai == 38) {
+                this.var_byte_I = (byte)(this.var_byte_I + 4);
+                this.var_byte_K = (byte)(this.var_byte_K - 1);
+            }
+        }
+        this.var_boolean_H = true;
+    }
+
+    private void S() {
+        this.aJ();
+        this.t();
+        this.var_byte_ak = 0;
+        this.var_int_Z = 0;
+        this.var_c_a.a(this.var_byte_ai);
+        this.aS = this.var_byte_arr_a[this.var_short_arr_a[310] + 0 + this.var_byte_ai] & 0xFF;
+        this.var_byte_ao = this.var_byte_arr_a[this.var_short_arr_a[311] + 229 + this.aS];
+        if (this.var_byte_ai == 4 || this.var_byte_ao == 0) {
+            this.var_byte_ao = (byte)27;
+            this.var_byte_arr_a[this.var_short_arr_a[311] + 229 + this.aS] = 27;
+        }
+        this.var_byte_aj = (byte)((this.var_byte_arr_a[this.var_short_arr_a[310] + 0 + this.var_byte_ai + 1] & 0xFF) - this.aS);
+        this.var_boolean_J = this.var_byte_ao >= 27;
+        this.var_byte_v = 0;
+        this.var_byte_R = this.var_byte_Q;
+        this.var_byte_Q = (byte)17;
+        this.aN = this.var_byte_arr_a[this.var_short_arr_a[155] + 56 + this.var_byte_ao];
+        if (this.aN == 1) {
+            this.O();
+        }
+        if (this.var_byte_ao != 9 && !this.var_boolean_J && this.aN != 1) {
+            this.var_byte_K = (byte)(this.var_byte_K - 1);
+        }
+        this.var_boolean_arr_d = new boolean[]{this.var_boolean_arr_a[0], this.var_boolean_arr_a[1], this.var_boolean_arr_a[2], this.var_boolean_arr_a[4], this.var_boolean_arr_a[5], this.var_boolean_arr_a[6], this.var_boolean_arr_a[7], this.var_boolean_arr_a[8], this.var_boolean_arr_a[9]};
+        this.a(true, true, false, false);
+        this.var_boolean_s = true;
+        byte by = this.var_byte_arr_a[this.var_short_arr_a[310] + 71 + this.var_byte_ai];
+        System.arraycopy(this.var_byte_arr_a, this.var_short_arr_a[156] + this.var_byte_arr_a[this.var_short_arr_a[157] + by], this.var_byte_arr_p, 0, this.var_byte_arr_a[this.var_short_arr_a[157] + by + 1] - this.var_byte_arr_a[this.var_short_arr_a[157] + by]);
+    }
+
+    private void T() {
+        if (this.var_byte_ai == 3) {
+            this.d(5, 20, 2);
+            this.var_byte_arr_e[6161 + this.var_byte_arr_p[2]] = 3;
+            this.var_byte_arr_e[2828 + this.var_byte_arr_p[2]] = 105;
+            this.var_byte_arr_e[6262 + this.var_byte_arr_p[2]] = 5;
+            this.var_byte_arr_e[6363 + this.var_byte_arr_p[2]] = 10;
+            this.var_byte_arr_e[1313 + this.var_byte_arr_p[2]] = 3;
+            this.var_byte_arr_e[5050 + this.var_byte_arr_p[2]] = -1;
+            return;
+        }
+        if (this.var_byte_ai == 37) {
+            this.var_b_a.void_l();
+            this.var_byte_aw = 1;
+            this.var_b_a.a(4, 46, 9, (byte)0, (byte)9);
+            this.a((byte)0, (byte)48, (byte)9, (byte)3, (byte)0);
+            this.var_byte_arr_e[2934] = 14;
+            this.var_byte_arr_e[611] = 2;
+            this.var_byte_aw = (byte)2;
+            this.var_b_a.a(1, 44, 9, (byte)1, (byte)2);
+            this.var_b_a.a(1, 45, 11, (byte)1, (byte)2);
+            this.var_byte_arr_e[658] = 7;
+            this.var_b_a.a(1, 48, 11, (byte)1, (byte)2);
+            this.var_byte_arr_e[659] = 5;
+            this.var_b_a.a(2, 48, 9, (byte)1, (byte)2);
+            this.var_short_arr_arr_a[0][17] = 0;
+            return;
+        }
+        if (this.var_byte_ai == 38) {
+            this.var_b_a.void_l();
+            this.a((byte)0, 2, 52, 18, 2, true, -1);
+            this.a((byte)0, 2, 54, 16, 2, true, -1);
+            this.a((byte)0, 2, 55, 19, 2, true, -1);
+            this.a((byte)0, 2, 58, 19, 2, true, -1);
+            this.var_byte_aw = 0;
+            this.var_b_a.a(5, 60, 12, (byte)0, (byte)0);
+            this.var_byte_aw = (byte)2;
+            this.d(57, 17, 1);
+            this.var_c_a.a();
+            return;
+        }
+        if (this.var_byte_ai == 43) {
+            this.void_b(52, 7);
+            return;
+        }
+        if (this.var_byte_ai == 45) {
+            this.var_b_a.void_m();
+            this.void_b(57, 30);
+            this.b(1, 54, 30, 5);
+            this.b(1, 54, 31, 5);
+            this.b(1, 55, 31, 5);
+            this.b(1, 55, 32, 5);
+            return;
+        }
+        if (this.var_byte_ai == 48) {
+            this.var_byte_q = (byte)2;
             this.aM();
-            this.a.f = 6;
+            this.var_b_a.var_byte_f = (byte)6;
             this.aN();
-            this.q = 3;
+            this.var_byte_q = (byte)3;
             this.a((byte)0, 24, 18, 67, 2, true, -1);
             this.a((byte)0, 25, 19, 69, 2, true, -1);
             this.a((byte)0, 25, 21, 71, 2, true, -1);
-            this.a[0][12] = 0;
+            this.var_short_arr_arr_a[0][12] = 0;
             this.a((byte)0, (byte)26, (byte)69, (byte)60, (byte)0);
-            this.a[0][17] = 1;
-            this.a.a(7, 26, 69, (byte)0, (byte)2);
+            this.var_short_arr_arr_a[0][17] = 1;
+            this.var_b_a.a(7, 26, 69, (byte)0, (byte)2);
             this.d(23, 69, 1);
-            this.a.a(2, 1, 69, (byte)1, (byte)3);
+            this.var_b_a.a(2, 1, 69, (byte)1, (byte)3);
             this.a((byte)1, (byte)21, (byte)69, (byte)60, (byte)0);
-            this.e[659] = 0;
-            this.e[2982] = 42;
+            this.var_byte_arr_e[659] = 0;
+            this.var_byte_arr_e[2982] = 42;
             this.f(53, -2);
-            this.e[657] = 0;
-         }
+            this.var_byte_arr_e[657] = 0;
+        }
+    }
 
-      }
-   }
-
-   private void U() {
-      this.a.d();
-      if (this.ai == 26) {
-         this.s = false;
-         this.c();
-         this.s = true;
-      }
-
-      if (this.ao == 9) {
-         this.a.f();
-      } else if (this.ai == 28) {
-         this.d(5, 11, 0);
-         b var10000 = this.a;
-         var10000.I = (byte)(var10000.I & 254);
-         this.a.d[this.a[this.a[292] + 4]] = 0;
-      } else if (this.ai == 34) {
-         this.d(48, 15, 5);
-         this.a.I = 0;
-      } else if (this.ai == 38) {
-         this.d(65, 18, 1);
-         this.u = 1;
-      } else if (this.ai == 44) {
-         for(int var1 = 0; var1 < 10; ++var1) {
-            this.e[9601 + var1] = this.am;
-         }
-
-         this.d(53, 5, 0);
-         this.f(this.am, -2);
-         this.a.a();
-      } else if (this.ai == 48) {
-         this.u = 1;
-         this.d(45, 69, 6);
-      }
-
-      for(int var2 = 0; var2 < this.p.length; ++var2) {
-         if (this.e[2828 + this.p[var2]] == 105) {
-            if (this.e[4646 + this.p[var2]] < 0) {
-               this.e[2828 + this.p[var2]] = 69;
-            } else {
-               this.e[2828 + this.p[var2]] = 57;
+    private void U() {
+        int n;
+        this.var_b_a.void_d();
+        if (this.var_byte_ai == 26) {
+            this.var_boolean_s = false;
+            this.void_c();
+            this.var_boolean_s = true;
+        }
+        if (this.var_byte_ao == 9) {
+            this.var_b_a.void_f();
+        } else if (this.var_byte_ai == 28) {
+            this.d(5, 11, 0);
+            this.var_b_a.var_byte_I = (byte)(this.var_b_a.var_byte_I & 0xFE);
+            this.var_b_a.var_short_arr_d[this.var_byte_arr_a[this.var_short_arr_a[292] + 4]] = 0;
+        } else if (this.var_byte_ai == 34) {
+            this.d(48, 15, 5);
+            this.var_b_a.var_byte_I = 0;
+        } else if (this.var_byte_ai == 38) {
+            this.d(65, 18, 1);
+            this.var_byte_u = 1;
+        } else if (this.var_byte_ai == 44) {
+            for (n = 0; n < 10; ++n) {
+                this.var_byte_arr_e[9601 + n] = this.var_byte_am;
             }
-         }
-
-         this.p[var2] = 0;
-      }
-
-      if (this.a.f >= 50) {
-         this.a.F = this.ai == 15 ? 1000000 : this.c;
-         b var3 = this.a;
-         var3.f = (byte)(var3.f - 49);
-         this.a.g = this.a[this.a[294] + this.a.f - 1];
-         this.a.J = 0;
-      }
-
-      if (this.ao != 9) {
-         this.J = this.I;
-         this.L = this.K = this.J && !this.d[3] ? this.K : (byte)(this.K + 1);
-      } else {
-         this.I = this.J;
-         this.K = this.L;
-      }
-
-      this.s = false;
-      this.aK();
-      this.J = this.I;
-      this.L = this.K;
-      if (this.ai != 0 && this.ai != 1 && (this.ai != 2 || this.p == 0) && this.ai != 32 && this.ai != 36 && this.ai != 37 && this.ai != 39 && this.ai != 46 && this.ai != 47 && this.ai != 49 && this.ai != 55) {
-         if (this.ai != 59) {
-            this.v = 1;
-         }
-
-         this.A = true;
-         this.a(this.d[0], this.d[1], this.d[2], this.d[3], this.d[4], this.d[5], this.d[6], this.d[7], this.d[8]);
-         this.Q = this.R;
-      } else {
-         ++this.ai;
-         this.Q = 28;
-         this.b((int)this.ai);
-         if (this.ai == 47) {
-            this.Q = 18;
-            this.o = this.a[this.a[154] + 8];
-         }
-
-      }
-   }
-
-   private void d(int var1, int var2, int var3) {
-      for(int var4 = 0; var4 < this.p.length; ++var4) {
-         if (var4 == var3 || var4 >= 6) {
-            this.e(var1, var2, this.p[var4]);
-         }
-      }
-
-   }
-
-   private void e(int var1, int var2, int var3) {
-      this.e[2828 + var3] = 69;
-      this.e[3131 + var3] = (byte)var1;
-      this.e[3232 + var3] = (byte)var2;
-      this.e[6161 + var3] = 2;
-      this.e[4747 + var3] = 0;
-      byte[] var10000 = this.e;
-      var10000[7979 + var3] = (byte)(var10000[7979 + var3] & 191);
-   }
-
-   final void c() {
-      this.c = this.e;
-      this.d = this.f;
-      ++this.q;
-      this.aP();
-      this.a.G = this.a[219] + this.q * 4;
-   }
-
-   final void a(byte var1, byte var2, byte var3) {
-      if (var1 >= 18 || this.l != 0 && this.Q != 17 && (var1 == 18 || !this.K) && this.u <= 0) {
-         this.Z = 0;
-         this.o = 0;
-         this.i();
-         this.ap = var1;
-         this.v = 0;
-         this.Q = 20;
-         this.H = true;
-         this.v = 12 + var1;
-         this.am = var2;
-         this.an = var3;
-         this.d = new boolean[]{this.a[0], this.a[1], this.a[2], this.a[4], this.a[5], this.a[6], this.a[7], this.a[8], this.a[9]};
-         this.a(this.a[0], true, false, this.a[4]);
-         this.A = true;
-         if (var1 != 4 && var1 != 5 && var1 != 14 && var1 != 15) {
-            this.a[this.a[153] + 145 + 20] = 2;
-         } else {
-            this.a[this.a[153] + 145 + 20] = 0;
-         }
-      }
-   }
-
-   protected final void keyPressed(int var1) {
-      if (!this.n) {
-         if (!this.o) {
-            this.o = true;
-            if (a(var1)) {
-               this.j = 0;
-               if (var1 != a && var1 != -a && var1 != 117) {
-                  if (var1 != b && var1 != -b && var1 != 106) {
-                     if (this.a && this.y) {
-                        this.m(var1);
-                     }
-
-                     switch (var1) {
-                        case 106:
-                        case 107:
-                        case 108:
-                        case 111:
-                        case 112:
-                        case 113:
-                        case 115:
-                        case 116:
-                        case 117:
-                        case 119:
-                        case 120:
-                        default:
-                           try {
-                              this.m = ((Canvas)this).getGameAction(var1);
-                           } catch (Exception var3) {
-                              this.m = 666;
-                           }
-
-                           if (var1 == 103) {
-                              this.i = true;
-                              this.t = true;
-                              ++this.n;
-                              if (!this.u) {
-                                 this.E = 0;
-                              }
-
-                              return;
-                           } else if (var1 == 116) {
-                              this.e = true;
-                              return;
-                           } else if (var1 == 98) {
-                              this.f = true;
-                              return;
-                           } else if (var1 == 102) {
-                              this.g = true;
-                              return;
-                           } else if (var1 == 104) {
-                              this.h = true;
-                              return;
-                           } else {
-                              if (this.m != 8 && var1 != 103) {
-                                 if (this.m == 1 || var1 == 116) {
-                                    this.e = true;
-                                    return;
-                                 }
-
-                                 if (this.m == 6 || var1 == 98) {
-                                    this.f = true;
-                                    return;
-                                 }
-
-                                 if (this.m == 2 || var1 == 102) {
-                                    this.g = true;
-                                    return;
-                                 }
-
-                                 if (this.m == 5 || var1 == 104) {
-                                    this.h = true;
-                                 }
-                              } else {
-                                 this.i = true;
-                                 this.t = true;
-                                 ++this.n;
-                                 if (!this.u) {
-                                    this.E = 0;
-                                    return;
-                                 }
-                              }
-
-                              return;
-                           }
-                        case 109:
-                           this.i = 0;
-                           return;
-                        case 110:
-                           this.i = 9;
-                           this.w = true;
-                           return;
-                        case 114:
-                           this.i = 1;
-                           this.w = true;
-                           return;
-                        case 118:
-                           this.i = 7;
-                           this.w = true;
-                           return;
-                        case 121:
-                           this.i = 3;
-                           this.w = true;
-                     }
-                  } else {
-                     m = true;
-                  }
-               } else {
-                  l = true;
-               }
+            this.d(53, 5, 0);
+            this.f(this.var_byte_am, -2);
+            this.var_c_a.a();
+        } else if (this.var_byte_ai == 48) {
+            this.var_byte_u = 1;
+            this.d(45, 69, 6);
+        }
+        for (n = 0; n < this.var_byte_arr_p.length; ++n) {
+            if (this.var_byte_arr_e[2828 + this.var_byte_arr_p[n]] == 105) {
+                this.var_byte_arr_e[2828 + this.var_byte_arr_p[n]] = this.var_byte_arr_e[4646 + this.var_byte_arr_p[n]] < 0 ? 69 : 57;
             }
-         }
-      }
-   }
-
-   protected final void keyReleased(int var1) {
-      if (!this.n) {
-         if (a(var1)) {
-            this.j = 0;
-            switch (var1) {
-               case 106:
-               case 107:
-               case 108:
-               case 111:
-               case 112:
-               case 113:
-               case 115:
-               case 116:
-               case 117:
-               case 119:
-               case 120:
-               default:
-                  try {
-                     this.m = ((Canvas)this).getGameAction(var1);
-                  } catch (Exception var3) {
-                     this.m = 666;
-                  }
-
-                  if (var1 == 103 || this.m == 8) {
-                     this.t = false;
-                     if (this.E < 4) {
-                        this.v = true;
-                     }
-                  }
-
-                  if (this.o) {
-                     this.p = true;
-                     return;
-                  } else if (var1 == 116) {
-                     this.e = false;
-                     return;
-                  } else if (var1 == 98) {
-                     this.f = false;
-                     return;
-                  } else if (var1 == 102) {
-                     this.g = false;
-                     return;
-                  } else if (var1 == 104) {
-                     this.h = false;
-                     return;
-                  } else {
-                     if (var1 != 116 && this.m != 1) {
-                        if (var1 != 98 && this.m != 6) {
-                           if (var1 != 102 && this.m != 2) {
-                              if (var1 == 104 || this.m == 5) {
-                                 this.h = false;
-                              }
-
-                              return;
-                           }
-
-                           this.g = false;
-                           return;
-                        }
-
-                        this.f = false;
-                        return;
-                     }
-
-                     this.e = false;
-                     return;
-                  }
-               case 109:
-                  return;
-               case 110:
-                  this.w = false;
-                  return;
-               case 114:
-                  this.w = false;
-                  return;
-               case 118:
-                  this.w = false;
-                  return;
-               case 121:
-                  this.w = false;
+            this.var_byte_arr_p[n] = 0;
+        }
+        if (this.var_b_a.var_byte_f >= 50) {
+            this.var_b_a.var_int_F = this.var_byte_ai == 15 ? 1000000 : this.var_int_c;
+            this.var_b_a.var_byte_f = (byte)(this.var_b_a.var_byte_f - 49);
+            this.var_b_a.var_byte_g = this.var_byte_arr_a[this.var_short_arr_a[294] + this.var_b_a.var_byte_f - 1];
+            this.var_b_a.var_byte_J = 0;
+        }
+        if (this.var_byte_ao != 9) {
+            this.var_byte_J = this.var_byte_I;
+            this.var_byte_K = !this.var_boolean_J || this.var_boolean_arr_d[3] ? (byte)(this.var_byte_K + 1) : this.var_byte_K;
+            this.var_byte_L = this.var_byte_K;
+        } else {
+            this.var_byte_I = this.var_byte_J;
+            this.var_byte_K = this.var_byte_L;
+        }
+        this.var_boolean_s = false;
+        this.aK();
+        this.var_byte_J = this.var_byte_I;
+        this.var_byte_L = this.var_byte_K;
+        if (this.var_byte_ai == 0 || this.var_byte_ai == 1 || this.var_byte_ai == 2 && this.var_byte_p != 0 || this.var_byte_ai == 32 || this.var_byte_ai == 36 || this.var_byte_ai == 37 || this.var_byte_ai == 39 || this.var_byte_ai == 46 || this.var_byte_ai == 47 || this.var_byte_ai == 49 || this.var_byte_ai == 55) {
+            this.var_byte_ai = (byte)(this.var_byte_ai + 1);
+            this.var_byte_Q = (byte)28;
+            this.void_b((int)this.var_byte_ai);
+            if (this.var_byte_ai == 47) {
+                this.var_byte_Q = (byte)18;
+                this.var_byte_o = this.var_byte_arr_a[this.var_short_arr_a[154] + 8];
             }
-         }
-      }
-   }
-
-   private static boolean a(int var0) {
-      if (var0 == -10) {
-         return false;
-      } else {
-         return var0 != 100 && var0 != 107;
-      }
-   }
-
-   private void V() {
-      this.W();
-      if (this.u && this.i) {
-         this.i = false;
-         this.aF();
-      } else if (this.t && this.w != 3) {
-         this.i = false;
-         this.aE();
-      } else {
-         this.F = 0;
-      }
-
-      if (this.I >= 4 && this.w == 1) {
-         this.aG();
-      } else if (this.I > 0 && this.I < 4 && !this.w) {
-         this.aH();
-      }
-
-      if (this.v) {
-         this.v = false;
-         this.E = 4;
-         this.i = false;
-         byte var1 = this.c[this.K + this.A][this.I + this.y];
-         if (this.w == 1 && this.W >= 51 && this.W <= 100) {
-            this.y = (byte)(this.e[0 + this.W] - this.I);
-            this.A = (byte)(this.e[101 + this.W] - this.K);
-            this.e(this.W);
-         } else if (this.w == 1 && a((int)var1) != 0) {
-            this.e(var1);
-         } else if (this.w == 3) {
-            this.X();
-         } else if (a((int)var1) == 0) {
-            this.d(var1);
-         } else if (this.w == 0 && b((int)var1) == 0) {
-            this.f((byte)(-var1));
-         } else if (a((int)this.W) == 0) {
-            this.d(this.W);
-            this.y = (byte)(this.e[0 + this.W] - this.I);
-            this.A = (byte)(this.e[101 + this.W] - this.K);
-         }
-
-         this.E = true;
-         this.e = 0;
-      }
-
-      this.aL();
-      if (this.ad == 0 && this.ae == 0 && !this.C) {
-         this.Y();
-      }
-
-   }
-
-   private void W() {
-      if (l) {
-         l = false;
-         if (this.w != 3) {
-            this.a(true, false, false, false, true, false, false, false, false);
-            this.w = 2;
-            this.Z();
-         }
-      } else if (m) {
-         m = false;
-         if (this.w != 3) {
-            if (this.w != 1 && this.F == -1) {
-               this.v = 0;
-               this.Q = (byte)(this.q < 7 ? (this.t > -1 ? 10 : 11) : (this.W ? 10 : 11));
-               this.R = 28;
-               this.Z = 0;
-               this.H = true;
-               this.X = false;
-               this.z = this.y;
-               this.B = this.A;
-               this.J = this.I;
-               this.L = this.K;
-               return;
-            }
-
-            this.k = true;
             return;
-         }
+        }
+        if (this.var_byte_ai != 59) {
+            this.var_byte_v = 1;
+        }
+        this.var_boolean_A = true;
+        this.a(this.var_boolean_arr_d[0], this.var_boolean_arr_d[1], this.var_boolean_arr_d[2], this.var_boolean_arr_d[3], this.var_boolean_arr_d[4], this.var_boolean_arr_d[5], this.var_boolean_arr_d[6], this.var_boolean_arr_d[7], this.var_boolean_arr_d[8]);
+        this.var_byte_Q = this.var_byte_R;
+    }
 
-         this.s = 0;
-         this.l(-1);
-      }
+    private void d(int n, int n2, int n3) {
+        for (int i = 0; i < this.var_byte_arr_p.length; ++i) {
+            if (i != n3 && i < 6) continue;
+            this.e(n, n2, this.var_byte_arr_p[i]);
+        }
+    }
 
-      if (this.i == 1) {
-         this.i = -1;
-         if (this.ay == 1) {
-            this.ay = 0;
-            this.y = this.C;
-            this.I = (byte)(this.k[0][0] - this.y);
-            this.A = this.D;
-            this.K = (byte)(this.k[1][0] - this.A);
-            this.aK();
-            this.A = true;
-         }
+    private void e(int n, int n2, int n3) {
+        this.var_byte_arr_e[2828 + n3] = 69;
+        this.var_byte_arr_e[3131 + n3] = (byte)n;
+        this.var_byte_arr_e[3232 + n3] = (byte)n2;
+        this.var_byte_arr_e[6161 + n3] = 2;
+        this.var_byte_arr_e[4747 + n3] = 0;
+        int n4 = 7979 + n3;
+        this.var_byte_arr_e[n4] = (byte)(this.var_byte_arr_e[n4] & 0xBF);
+    }
 
-      } else if (this.i == 3) {
-         this.i = -1;
-         if (this.q == 3) {
-            this.a((byte)20, (byte)1, (byte)0);
-         } else {
-            this.v = 0;
-            this.Q = 19;
-            this.H = true;
-            this.v = -1;
-            this.Q = this.R = true;
-            this.c = true;
-            this.z = this.y;
-            this.B = this.A;
-            this.J = this.I;
-            this.L = this.K;
+    final void void_c() {
+        this.var_short_c = this.var_short_e;
+        this.var_short_d = this.var_short_f;
+        this.var_byte_q = (byte)(this.var_byte_q + 1);
+        this.aP();
+        this.var_b_a.var_int_G = this.var_short_arr_a[219] + this.var_byte_q * 4;
+    }
+
+    final void a(byte by, byte by2, byte by3) {
+        if (by < 18 && (this.var_int_l == 0 || this.var_byte_Q == 17 || by != 18 && this.var_boolean_K || this.var_byte_u > 0)) {
+            return;
+        }
+        this.var_int_Z = 0;
+        this.var_int_o = 0;
+        this.i();
+        this.var_byte_ap = by;
+        this.var_byte_v = 0;
+        this.var_byte_Q = (byte)20;
+        this.var_boolean_H = true;
+        this.var_int_v = 12 + by;
+        this.var_byte_am = by2;
+        this.var_byte_an = by3;
+        this.var_boolean_arr_d = new boolean[]{this.var_boolean_arr_a[0], this.var_boolean_arr_a[1], this.var_boolean_arr_a[2], this.var_boolean_arr_a[4], this.var_boolean_arr_a[5], this.var_boolean_arr_a[6], this.var_boolean_arr_a[7], this.var_boolean_arr_a[8], this.var_boolean_arr_a[9]};
+        this.a(this.var_boolean_arr_a[0], true, false, this.var_boolean_arr_a[4]);
+        this.var_boolean_A = true;
+        if (by == 4 || by == 5 || by == 14 || by == 15) {
+            this.var_byte_arr_a[this.var_short_arr_a[153] + 145 + 20] = 0;
+            return;
+        }
+        this.var_byte_arr_a[this.var_short_arr_a[153] + 145 + 20] = 2;
+    }
+
+    protected final void keyPressed(int n) {
+        if (this.var_boolean_n) {
+            return;
+        }
+        if (this.var_boolean_o) {
+            return;
+        }
+        this.var_boolean_o = true;
+        if (!f.boolean_a(n)) {
+            return;
+        }
+        this.var_byte_j = 0;
+        if (n == var_int_a || n == -var_int_a || n == 117) {
+            var_boolean_l = true;
+            return;
+        }
+        if (n == var_int_b || n == -var_int_b || n == 106) {
+            var_boolean_m = true;
+            return;
+        }
+        if (this.var_boolean_a && this.var_boolean_y) {
+            this.m(n);
+        }
+        switch (n) {
+            case 117: {
+                break;
+            }
+            case 106: {
+                break;
+            }
+            case 109: {
+                this.var_byte_i = 0;
+                return;
+            }
+            case 114: {
+                this.var_byte_i = 1;
+                this.var_boolean_w = true;
+                return;
+            }
+            case 121: {
+                this.var_byte_i = (byte)3;
+                this.var_boolean_w = true;
+                return;
+            }
+            case 118: {
+                this.var_byte_i = (byte)7;
+                this.var_boolean_w = true;
+                return;
+            }
+            case 110: {
+                this.var_byte_i = (byte)9;
+                this.var_boolean_w = true;
+                return;
+            }
+        }
+        try {
+            this.var_int_m = this.getGameAction(n);
+        }
+        catch (Exception exception) {
+            this.var_int_m = 666;
+        }
+        if (n == 103) {
+            this.var_boolean_i = true;
+            this.var_boolean_t = true;
+            ++this.var_int_n;
+            if (!this.var_boolean_u) {
+                this.var_byte_E = 0;
+            }
+            return;
+        }
+        if (n == 116) {
+            this.var_boolean_e = true;
+            return;
+        }
+        if (n == 98) {
+            this.var_boolean_f = true;
+            return;
+        }
+        if (n == 102) {
+            this.var_boolean_g = true;
+            return;
+        }
+        if (n == 104) {
+            this.var_boolean_h = true;
+            return;
+        }
+        if (this.var_int_m == 8 || n == 103) {
+            this.var_boolean_i = true;
+            this.var_boolean_t = true;
+            ++this.var_int_n;
+            if (!this.var_boolean_u) {
+                this.var_byte_E = 0;
+                return;
+            }
+        } else {
+            if (this.var_int_m == 1 || n == 116) {
+                this.var_boolean_e = true;
+                return;
+            }
+            if (this.var_int_m == 6 || n == 98) {
+                this.var_boolean_f = true;
+                return;
+            }
+            if (this.var_int_m == 2 || n == 102) {
+                this.var_boolean_g = true;
+                return;
+            }
+            if (this.var_int_m == 5 || n == 104) {
+                this.var_boolean_h = true;
+            }
+        }
+    }
+
+    protected final void keyReleased(int n) {
+        if (this.var_boolean_n) {
+            return;
+        }
+        if (!f.boolean_a(n)) {
+            return;
+        }
+        this.var_byte_j = 0;
+        switch (n) {
+            case 117: {
+                break;
+            }
+            case 106: {
+                break;
+            }
+            case 109: {
+                return;
+            }
+            case 114: {
+                this.var_boolean_w = false;
+                return;
+            }
+            case 121: {
+                this.var_boolean_w = false;
+                return;
+            }
+            case 118: {
+                this.var_boolean_w = false;
+                return;
+            }
+            case 110: {
+                this.var_boolean_w = false;
+                return;
+            }
+        }
+        try {
+            this.var_int_m = this.getGameAction(n);
+        }
+        catch (Exception exception) {
+            this.var_int_m = 666;
+        }
+        if (n == 103 || this.var_int_m == 8) {
+            this.var_boolean_t = false;
+            if (this.var_byte_E < 4) {
+                this.var_boolean_v = true;
+            }
+        }
+        if (this.var_boolean_o) {
+            this.var_boolean_p = true;
+            return;
+        }
+        if (n == 116) {
+            this.var_boolean_e = false;
+            return;
+        }
+        if (n == 98) {
+            this.var_boolean_f = false;
+            return;
+        }
+        if (n == 102) {
+            this.var_boolean_g = false;
+            return;
+        }
+        if (n == 104) {
+            this.var_boolean_h = false;
+            return;
+        }
+        if (n == 116 || this.var_int_m == 1) {
+            this.var_boolean_e = false;
+            return;
+        }
+        if (n == 98 || this.var_int_m == 6) {
+            this.var_boolean_f = false;
+            return;
+        }
+        if (n == 102 || this.var_int_m == 2) {
+            this.var_boolean_g = false;
+            return;
+        }
+        if (n == 104 || this.var_int_m == 5) {
+            this.var_boolean_h = false;
+        }
+    }
+
+    private static boolean boolean_a(int n) {
+        if (n == -10) {
+            return false;
+        }
+        return n != 100 && n != 107;
+    }
+
+    private void V() {
+        this.W();
+        if (this.var_boolean_u && this.var_boolean_i) {
+            this.var_boolean_i = false;
+            this.aF();
+        } else if (this.var_boolean_t && this.var_byte_w != 3) {
+            this.var_boolean_i = false;
+            this.aE();
+        } else {
+            this.var_int_F = 0;
+        }
+        if (this.var_int_I >= 4 && this.var_byte_w == 1) {
+            this.aG();
+        } else if (this.var_int_I > 0 && this.var_int_I < 4 && !this.var_boolean_w) {
+            this.aH();
+        }
+        if (this.var_boolean_v) {
+            this.var_boolean_v = false;
+            this.var_byte_E = (byte)4;
+            this.var_boolean_i = false;
+            byte by = this.var_byte_arr_arr_c[this.var_byte_K + this.var_byte_A][this.var_byte_I + this.var_byte_y];
+            if (this.var_byte_w == 1 && this.var_byte_W >= 51 && this.var_byte_W <= 100) {
+                this.var_byte_y = (byte)(this.var_byte_arr_e[0 + this.var_byte_W] - this.var_byte_I);
+                this.var_byte_A = (byte)(this.var_byte_arr_e[101 + this.var_byte_W] - this.var_byte_K);
+                this.e(this.var_byte_W);
+            } else if (this.var_byte_w == 1 && f.byte_a(by) != 0) {
+                this.e(by);
+            } else if (this.var_byte_w == 3) {
+                this.X();
+            } else if (f.byte_a(by) == 0) {
+                this.d(by);
+            } else if (this.var_byte_w == 0 && f.byte_b(by) == 0) {
+                this.f(-by);
+            } else if (f.byte_a(this.var_byte_W) == 0) {
+                this.d(this.var_byte_W);
+                this.var_byte_y = (byte)(this.var_byte_arr_e[0 + this.var_byte_W] - this.var_byte_I);
+                this.var_byte_A = (byte)(this.var_byte_arr_e[101 + this.var_byte_W] - this.var_byte_K);
+            }
+            this.var_boolean_E = true;
+            this.var_int_e = 0;
+        }
+        this.aL();
+        if (this.var_int_ad == 0 && this.var_int_ae == 0 && !this.var_boolean_C) {
+            this.Y();
+        }
+    }
+
+    private void W() {
+        if (var_boolean_l) {
+            var_boolean_l = false;
+            if (this.var_byte_w != 3) {
+                this.a(true, false, false, false, true, false, false, false, false);
+                this.var_byte_w = (byte)2;
+                this.Z();
+            }
+        } else if (var_boolean_m) {
+            var_boolean_m = false;
+            if (this.var_byte_w == 3) {
+                this.var_int_s = 0;
+                this.l(-1);
+            } else {
+                if (this.var_byte_w == 1 || this.var_byte_F != -1) {
+                    this.var_boolean_k = true;
+                    return;
+                }
+                this.var_byte_v = 0;
+                this.var_byte_Q = (byte)(this.var_byte_q < 7 ? (this.var_byte_t > -1 ? 10 : 11) : (this.var_boolean_W ? 10 : 11));
+                this.var_byte_R = (byte)28;
+                this.var_int_Z = 0;
+                this.var_boolean_H = true;
+                this.var_boolean_X = false;
+                this.var_byte_z = this.var_byte_y;
+                this.var_byte_B = this.var_byte_A;
+                this.var_byte_J = this.var_byte_I;
+                this.var_byte_L = this.var_byte_K;
+                return;
+            }
+        }
+        if (this.var_byte_i == 1) {
+            this.var_byte_i = (byte)-1;
+            if (this.var_byte_ay == 1) {
+                this.var_byte_ay = 0;
+                this.var_byte_y = this.var_byte_C;
+                this.var_byte_I = (byte)(this.var_byte_arr_arr_k[0][0] - this.var_byte_y);
+                this.var_byte_A = this.var_byte_D;
+                this.var_byte_K = (byte)(this.var_byte_arr_arr_k[1][0] - this.var_byte_A);
+                this.aK();
+                this.var_boolean_A = true;
+            }
+            return;
+        }
+        if (this.var_byte_i == 3) {
+            this.var_byte_i = (byte)-1;
+            if (this.var_byte_q == 3) {
+                this.a((byte)20, (byte)1, (byte)0);
+                return;
+            }
+            this.var_byte_v = 0;
+            this.var_byte_Q = (byte)19;
+            this.var_boolean_H = true;
+            this.var_int_v = -1;
+            this.var_boolean_R = true;
+            this.var_boolean_Q = true;
+            this.var_boolean_c = true;
+            this.var_byte_z = this.var_byte_y;
+            this.var_byte_B = this.var_byte_A;
+            this.var_byte_J = this.var_byte_I;
+            this.var_byte_L = this.var_byte_K;
             this.E();
             this.i();
-         }
-      }
-   }
-
-   private void X() {
-      if (this.r) {
-         if (this.s == 100) {
-            if (this.O) {
-               this.N = this.O;
-               this.L = this.M = false;
-               this.a.b();
-            } else if (this.M) {
-               this.L = this.M;
-               this.a.b();
-            }
-
-            this.q[0] = (byte)(this.I + this.y);
-            this.q[1] = (byte)(this.K + this.A);
-            this.l(-1);
             return;
-         }
+        }
+    }
 
-         if (this.s < 0) {
-            this.e[3131 + this.r] = this.e[8383 + this.q];
-            this.e[3232 + this.r] = this.e[8444 + this.q];
-            this.e[2828 + this.r] = (byte)(44 + -this.s - 1);
-            this.e[6161 + this.r] = 3;
+    private void X() {
+        if (this.var_boolean_r) {
+            if (this.var_int_s == 100) {
+                if (this.var_boolean_O) {
+                    this.var_boolean_N = this.var_boolean_O;
+                    this.var_boolean_M = false;
+                    this.var_boolean_L = false;
+                    this.var_b_a.void_b();
+                } else if (this.var_boolean_M) {
+                    this.var_boolean_L = this.var_boolean_M;
+                    this.var_b_a.void_b();
+                }
+                this.var_byte_arr_q[0] = (byte)(this.var_byte_I + this.var_byte_y);
+                this.var_byte_arr_q[1] = (byte)(this.var_byte_K + this.var_byte_A);
+                this.l(-1);
+                return;
+            }
+            if (this.var_int_s < 0) {
+                this.var_byte_arr_e[3131 + this.var_int_r] = this.var_byte_arr_e[8383 + this.var_int_q];
+                this.var_byte_arr_e[3232 + this.var_int_r] = this.var_byte_arr_e[8444 + this.var_int_q];
+                this.var_byte_arr_e[2828 + this.var_int_r] = (byte)(44 + -this.var_int_s - 1);
+                this.var_byte_arr_e[6161 + this.var_int_r] = 3;
+                return;
+            }
+            if (this.var_int_s <= 3) {
+                this.var_byte_n = 0;
+                while (this.var_byte_n < 29 && this.var_byte_arr_arr_arr_b[0][0][this.var_byte_n] != 0) {
+                    this.var_byte_n = (byte)(this.var_byte_n + 1);
+                }
+                this.var_byte_arr_arr_arr_b[0][1][this.var_byte_n] = (byte)this.var_int_s;
+                if (this.var_byte_arr_arr_arr_b[0][1][this.var_byte_n] == 3) {
+                    this.var_byte_arr_arr_arr_b[0][0][this.var_byte_n] = (byte)this.var_int_q;
+                    this.var_byte_arr_arr_arr_b[0][2][this.var_byte_n] = (byte)(this.var_byte_I + this.var_byte_y);
+                    this.var_byte_arr_arr_arr_b[0][3][this.var_byte_n] = (byte)(this.var_byte_K + this.var_byte_A);
+                    this.l(-1);
+                    return;
+                }
+                if (f.byte_a(this.var_int_r) == 0) {
+                    this.var_byte_arr_arr_arr_b[0][0][this.var_byte_n] = (byte)this.var_int_q;
+                    this.var_byte_arr_arr_arr_b[0][2][this.var_byte_n] = (byte)this.var_int_r;
+                    return;
+                }
+            } else if (this.boolean_b(this.var_byte_I + this.var_int_t, this.var_byte_K + this.var_int_u) && this.a((byte)0, this.var_int_s, this.var_byte_I + this.var_int_t, this.var_byte_K + this.var_int_u, 1, false, -1) > 0) {
+                this.l(-1);
+                this.var_byte_w = (byte)2;
+            }
+        }
+    }
+
+    private void d(byte by) {
+        if (this.var_int_n > 1) {
+            this.var_int_n = 0;
+            this.var_int_B = this.var_byte_I - 1;
+            this.var_int_C = this.var_byte_K - 1;
+            this.var_int_D = this.var_byte_O;
+            this.var_int_E = this.var_byte_P;
+            this.var_boolean_u = true;
+            this.var_boolean_t = true;
+            this.aF();
+            this.a(true, true, false, false);
+            this.var_byte_l = 0;
+            this.var_byte_k = 0;
             return;
-         }
-
-         if (this.s <= 3) {
-            for(this.n = 0; this.n < 29 && this.b[0][0][this.n] != 0; ++this.n) {
-            }
-
-            this.b[0][1][this.n] = (byte)this.s;
-            if (this.b[0][1][this.n] == 3) {
-               this.b[0][0][this.n] = (byte)this.q;
-               this.b[0][2][this.n] = (byte)(this.I + this.y);
-               this.b[0][3][this.n] = (byte)(this.K + this.A);
-               this.l(-1);
-               return;
-            }
-
-            if (a(this.r) == 0) {
-               this.b[0][0][this.n] = (byte)this.q;
-               this.b[0][2][this.n] = (byte)this.r;
-               return;
-            }
-         } else if (this.b(this.I + this.t, this.K + this.u) && this.a((byte)0, this.s, this.I + this.t, this.K + this.u, 1, false, -1) > 0) {
-            this.l(-1);
-            this.w = 2;
-         }
-      }
-
-   }
-
-   private void d(byte var1) {
-      if (this.n > 1) {
-         this.n = 0;
-         this.B = this.I - 1;
-         this.C = this.K - 1;
-         this.D = this.O;
-         this.E = this.P;
-         this.u = true;
-         this.t = true;
-         this.aF();
-         this.a(true, true, false, false);
-         this.k = this.l = 0;
-      } else {
-         if (this.e[1919 + var1] > 0) {
+        }
+        if (this.var_byte_arr_e[1919 + by] > 0) {
             this.a(false, true, false, true);
-            this.w = 1;
-            this.k = this.l = var1;
-            this.F = -1;
-         }
+            this.var_byte_w = 1;
+            this.var_byte_k = this.var_byte_l = by;
+            this.var_byte_F = (byte)-1;
+        }
+    }
 
-      }
-   }
-
-   private void e(byte var1) {
-      if (this.F != -1) {
-         for(int var2 = 0; var2 < 50; ++var2) {
-            if (this.a[this.F][var2] > 0) {
-               this.a(this.a[this.F][var2], var1);
+    private void e(byte by) {
+        if (this.var_byte_F != -1) {
+            for (int i = 0; i < 50; ++i) {
+                if (this.var_byte_arr_arr_a[this.var_byte_F][i] <= 0) continue;
+                this.a(this.var_byte_arr_arr_a[this.var_byte_F][i], by);
             }
-         }
-      } else {
-         this.a(this.k, var1);
-      }
+        } else {
+            this.a(this.var_byte_k, by);
+        }
+        this.var_int_n = 0;
+    }
 
-      this.n = 0;
-   }
-
-   private void a(byte var1, byte var2) {
-      if (this.e[505 + var1] >= 10 || this.N || this.L && (this.e[7979 + var1] & 64) != 0) {
-         if (b((int)var2) == 0 && this.e[8749 + -var2] == 6) {
-            this.a(true, false, true, false);
-            this.q = -var2;
-            this.w = 2;
-            this.Z();
-         } else {
-            if (this.n > 1 || this.e[3131 + var1] == this.y + this.I && this.e[3232 + var1] == this.A + this.K) {
-               this.q = true;
-               if (this.e[7777 + var1] == 0) {
-                  this.e[7777 + var1] = 3;
-                  this.a.b((int)var1);
-                  if (this.e[7777 + var1] > 0) {
-                     this.e[1111 + var1] = (byte)((this.e[1111 + var1] & 240) + this.a[this.a[129 + (this.e[606 + var1] & 1) * 2] + this.a[this.a[129 + (this.e[606 + var1] & 1) * 2 + 1] + this.e[1010 + var1] - 5] + (this.e[1111 + var1] & 15)]);
-                  }
-               }
-            } else if (this.e[7777 + var1] > 0) {
-               this.e[1111 + var1] = (byte)((this.e[1111 + var1] & 240) + this.a[this.a[133 + (this.e[606 + var1] & 1) * 2] + this.a[this.a[133 + (this.e[606 + var1] & 1) * 2 + 1] + this.e[1010 + var1] - 5] + (this.e[1111 + var1] & 15)]);
-               this.e[7777 + var1] = 0;
-            }
-
-            this.e[3131 + var1] = (byte)(this.y + this.I);
-            this.e[3232 + var1] = (byte)(this.A + this.K);
-            byte[] var10000 = this.e;
-            var10000[7979 + var1] = (byte)(var10000[7979 + var1] & 223);
-            this.e[6161 + var1] = 2;
-            this.e[4747 + var1] = var2;
-            this.ab = (byte)(this.y + this.I);
-            this.ac = (byte)(this.A + this.K);
-            this.aa = (byte)((a((int)var2) == 1 || b((int)var2) == 1 || b((int)var2)) && this.a(this.y + this.I, this.A + this.K) == 0 ? 2 : 1);
-         }
-      } else {
-         this.a.a((byte)12, (int)var1, (int)0);
-      }
-   }
-
-   final void c(int var1) {
-      for(int var2 = (var1 - 1) / 50 * 30 + 1; var2 <= (var1 - 1) / 50 * 30 + 30; ++var2) {
-         if (this.e[8810 + var2] == var1 && (this.e[8749 + var2] != 2 || this.e[8627 + var2] != 0)) {
-            this.a(var2, false);
-            this.e[8810 + var2] = 0;
-            this.e[9298 + var2] = 0;
+    private void a(byte by, byte by2) {
+        if (!(this.var_byte_arr_e[505 + by] >= 10 || this.var_boolean_N || this.var_boolean_L && (this.var_byte_arr_e[7979 + by] & 0x40) != 0)) {
+            this.var_b_a.a((byte)12, (int)by, 0);
             return;
-         }
-
-         if ((this.e[8627 + var2] == 2 || this.e[8627 + var2] == 1) && this.e[9237 + var2] == var1) {
-            this.e[9237 + var2] = 0;
-         }
-      }
-
-   }
-
-   final void a(int var1, boolean var2) {
-      for(byte var3 = this.e[8993 + var1]; var3 > 0; var3 = this.e[4545 + var3]) {
-         if ((this.e[4646 + var3] != 0 || var2) && (this.e[8749 + var1] != 11 || this.e[8627 + var1] != 0 || this.a[this.a[18] + this.e[6565 + var3]] == 0) && this.e[2929 + var3] != -108 && this.e[2929 + var3] != this.a[this.a[173] + this.a[this.a[174] + this.e[8749 + var1]] + this.e[4646 + var3]] && this.e[2929 + var3] != this.a[this.a[176] + this.a[this.a[177] + this.e[8749 + var1]] + this.e[4646 + var3]]) {
-            this.a(var3, var1, false, false);
-         }
-      }
-
-   }
-
-   private void f(byte var1) {
-      if (this.e[8749 + var1] == 3 && this.e[8932 + var1] == 0) {
-         this.r[0] = this.as = 0;
-         this.l(4);
-      } else {
-         this.a(true, false, true, false);
-         this.q = var1;
-         this.w = 2;
-         this.k = 0;
-         this.Z();
-      }
-   }
-
-   private void Y() {
-      if (!this.B) {
-         if (this.g) {
-            if (this.y > this.C) {
-               --this.y;
-               return;
+        }
+        if (f.byte_b(by2) == 0 && this.var_byte_arr_e[8749 + -by2] == 6) {
+            this.a(true, false, true, false);
+            this.var_int_q = -by2;
+            this.var_byte_w = (byte)2;
+            this.Z();
+            return;
+        }
+        if (this.var_int_n > 1 || this.var_byte_arr_e[3131 + by] == this.var_byte_y + this.var_byte_I && this.var_byte_arr_e[3232 + by] == this.var_byte_A + this.var_byte_K) {
+            this.var_boolean_q = true;
+            if (this.var_byte_arr_e[7777 + by] == 0) {
+                this.var_byte_arr_e[7777 + by] = 3;
+                this.var_b_a.byte_b((int)by);
+                if (this.var_byte_arr_e[7777 + by] > 0) {
+                    this.var_byte_arr_e[1111 + by] = (byte)((this.var_byte_arr_e[1111 + by] & 0xF0) + this.var_byte_arr_a[this.var_short_arr_a[129 + (this.var_byte_arr_e[606 + by] & 1) * 2] + this.var_byte_arr_a[this.var_short_arr_a[129 + (this.var_byte_arr_e[606 + by] & 1) * 2 + 1] + this.var_byte_arr_e[1010 + by] - 5] + (this.var_byte_arr_e[1111 + by] & 0xF)]);
+                }
             }
+        } else if (this.var_byte_arr_e[7777 + by] > 0) {
+            this.var_byte_arr_e[1111 + by] = (byte)((this.var_byte_arr_e[1111 + by] & 0xF0) + this.var_byte_arr_a[this.var_short_arr_a[133 + (this.var_byte_arr_e[606 + by] & 1) * 2] + this.var_byte_arr_a[this.var_short_arr_a[133 + (this.var_byte_arr_e[606 + by] & 1) * 2 + 1] + this.var_byte_arr_e[1010 + by] - 5] + (this.var_byte_arr_e[1111 + by] & 0xF)]);
+            this.var_byte_arr_e[7777 + by] = 0;
+        }
+        this.var_byte_arr_e[3131 + by] = (byte)(this.var_byte_y + this.var_byte_I);
+        this.var_byte_arr_e[3232 + by] = (byte)(this.var_byte_A + this.var_byte_K);
+        int n = 7979 + by;
+        this.var_byte_arr_e[n] = (byte)(this.var_byte_arr_e[n] & 0xDF);
+        this.var_byte_arr_e[6161 + by] = 2;
+        this.var_byte_arr_e[4747 + by] = by2;
+        this.var_byte_ab = (byte)(this.var_byte_y + this.var_byte_I);
+        this.var_byte_ac = (byte)(this.var_byte_A + this.var_byte_K);
+        this.var_byte_aa = (f.byte_a(by2) == 1 || f.byte_b(by2) == 1 || f.boolean_b(by2)) && this.byte_a(this.var_byte_y + this.var_byte_I, this.var_byte_A + this.var_byte_K) == 0 ? 2 : 1;
+    }
 
-            if (this.I > 0) {
-               --this.I;
-               this.ad = -1;
-               return;
+    final void void_c(int n) {
+        for (int i = (n - 1) / 50 * 30 + 1; i <= (n - 1) / 50 * 30 + 30; ++i) {
+            if (this.var_byte_arr_e[8810 + i] == n && (this.var_byte_arr_e[8749 + i] != 2 || this.var_byte_arr_e[8627 + i] != 0)) {
+                this.a(i, false);
+                this.var_byte_arr_e[8810 + i] = 0;
+                this.var_byte_arr_e[9298 + i] = 0;
+                return;
             }
+            if (this.var_byte_arr_e[8627 + i] != 2 && this.var_byte_arr_e[8627 + i] != 1 || this.var_byte_arr_e[9237 + i] != n) continue;
+            this.var_byte_arr_e[9237 + i] = 0;
+        }
+    }
 
-            if (this.y > 0) {
-               --this.y;
-               return;
+    final void a(int n, boolean bl) {
+        byte by = this.var_byte_arr_e[8993 + n];
+        while (by > 0) {
+            if (!(this.var_byte_arr_e[4646 + by] == 0 && !bl || this.var_byte_arr_e[8749 + n] == 11 && this.var_byte_arr_e[8627 + n] == 0 && this.var_byte_arr_a[this.var_short_arr_a[18] + this.var_byte_arr_e[6565 + by]] != 0 || this.var_byte_arr_e[2929 + by] == -108 || this.var_byte_arr_e[2929 + by] == this.var_byte_arr_a[this.var_short_arr_a[173] + this.var_byte_arr_a[this.var_short_arr_a[174] + this.var_byte_arr_e[8749 + n]] + this.var_byte_arr_e[4646 + by]] || this.var_byte_arr_e[2929 + by] == this.var_byte_arr_a[this.var_short_arr_a[176] + this.var_byte_arr_a[this.var_short_arr_a[177] + this.var_byte_arr_e[8749 + n]] + this.var_byte_arr_e[4646 + by]])) {
+                this.a((int)by, n, false, false);
             }
-         } else if (this.h) {
-            if (this.y < this.C) {
-               ++this.y;
-               return;
-            }
+            by = this.var_byte_arr_e[4545 + by];
+        }
+    }
 
-            if (this.I < this.c - this.O) {
-               ++this.I;
-               this.ad = 1;
-               return;
-            }
+    private void f(byte by) {
+        if (this.var_byte_arr_e[8749 + by] == 3 && this.var_byte_arr_e[8932 + by] == 0) {
+            this.var_byte_as = 0;
+            this.var_byte_arr_r[0] = 0;
+            this.l(4);
+            return;
+        }
+        this.a(true, false, true, false);
+        this.var_int_q = by;
+        this.var_byte_w = (byte)2;
+        this.var_byte_k = 0;
+        this.Z();
+    }
 
-            if (this.I + this.y < this.c - 1 - 0) {
-               ++this.y;
-               return;
+    private void Y() {
+        if (this.var_boolean_B) {
+            return;
+        }
+        if (this.var_boolean_g) {
+            if (this.var_byte_y > this.var_byte_C) {
+                this.var_byte_y = (byte)(this.var_byte_y - 1);
+                return;
             }
-         } else if (this.e) {
-            if (this.A > this.D) {
-               --this.A;
-               return;
+            if (this.var_byte_I > 0) {
+                this.var_byte_I = (byte)(this.var_byte_I - 1);
+                this.var_int_ad = -1;
+                return;
             }
-
-            if (this.K > 0 && !this.a[4] || this.K > 1 && this.a[4]) {
-               --this.K;
-               this.ae = -1;
-               return;
+            if (this.var_byte_y > 0) {
+                this.var_byte_y = (byte)(this.var_byte_y - 1);
+                return;
             }
-
-            if (this.A > 0) {
-               --this.A;
-               return;
+        } else if (this.var_boolean_h) {
+            if (this.var_byte_y < this.var_byte_C) {
+                this.var_byte_y = (byte)(this.var_byte_y + 1);
+                return;
             }
-         } else if (this.f) {
-            if (this.A < this.D) {
-               ++this.A;
-               return;
+            if (this.var_byte_I < this.var_short_c - this.var_byte_O) {
+                this.var_byte_I = (byte)(this.var_byte_I + 1);
+                this.var_int_ad = 1;
+                return;
             }
-
-            if (this.K < this.d - this.P - 1 - (this.aZ >> 5)) {
-               ++this.K;
-               this.ae = 1;
-               return;
+            if (this.var_byte_I + this.var_byte_y < this.var_short_c - 1 - 0) {
+                this.var_byte_y = (byte)(this.var_byte_y + 1);
+                return;
             }
-
-            if (this.K + this.A < this.d - 2 - 0 - (this.aZ >> 5)) {
-               ++this.A;
+        } else if (this.var_boolean_e) {
+            if (this.var_byte_A > this.var_byte_D) {
+                this.var_byte_A = (byte)(this.var_byte_A - 1);
+                return;
             }
-         }
-
-      }
-   }
-
-   private void Z() {
-      try {
-         if (this.a[2] || this.a[5] || this.a[6]) {
-            this.ar = 0;
-
-            for(byte var1 = 0; var1 < this.r.length; ++var1) {
-               this.r[var1] = 0;
+            if (this.var_byte_K > 0 && !this.var_boolean_arr_a[4] || this.var_byte_K > 1 && this.var_boolean_arr_a[4]) {
+                this.var_byte_K = (byte)(this.var_byte_K - 1);
+                this.var_int_ae = -1;
+                return;
             }
+            if (this.var_byte_A > 0) {
+                this.var_byte_A = (byte)(this.var_byte_A - 1);
+                return;
+            }
+        } else if (this.var_boolean_f) {
+            if (this.var_byte_A < this.var_byte_D) {
+                this.var_byte_A = (byte)(this.var_byte_A + 1);
+                return;
+            }
+            if (this.var_byte_K < this.var_short_d - this.var_byte_P - 1 - (this.aZ >> 5)) {
+                this.var_byte_K = (byte)(this.var_byte_K + 1);
+                this.var_int_ae = 1;
+                return;
+            }
+            if (this.var_byte_K + this.var_byte_A < this.var_short_d - 2 - 0 - (this.aZ >> 5)) {
+                this.var_byte_A = (byte)(this.var_byte_A + 1);
+            }
+        }
+    }
 
-            this.at = 99;
-            if (this.a[2]) {
-               this.aa();
-               this.ab();
-               this.ac();
-            } else if (this.a[5]) {
-               this.ad();
+    private void Z() {
+        try {
+            int n;
+            if (!(this.var_boolean_arr_a[2] || this.var_boolean_arr_a[5] || this.var_boolean_arr_a[6])) {
+                return;
+            }
+            this.var_byte_ar = 0;
+            for (n = 0; n < this.var_byte_arr_r.length; n = (int)((byte)(n + 1))) {
+                this.var_byte_arr_r[n] = 0;
+            }
+            this.var_byte_at = (byte)99;
+            if (this.var_boolean_arr_a[2]) {
+                this.aa();
+                this.ab();
+                this.ac();
+            } else if (this.var_boolean_arr_a[5]) {
+                this.ad();
+            } else if (this.var_boolean_arr_a[6]) {
+                n = this.var_byte_q > 1 ? 11 : (this.var_byte_ai < 18 ? 3 : 6);
+                for (int n2 = 0; n2 < n; n2 = (int)((byte)(n2 + 1))) {
+                    this.var_byte_arr_r[n2] = this.var_byte_arr_a[this.var_short_arr_a[137] + n2];
+                    this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+                }
             } else {
-               if (!this.a[6]) {
-                  this.ah();
-                  return;
-               }
-
-               int var4 = this.q > 1 ? 11 : (this.ai < 18 ? 3 : 6);
-
-               for(byte var2 = 0; var2 < var4; ++var2) {
-                  this.r[var2] = this.a[this.a[137] + var2];
-                  ++this.ar;
-               }
+                this.ah();
+                return;
             }
-
-            if (this.P) {
-               for(; this.aW + this.aV > this.ar && this.as != 0; --this.as) {
-                  if (this.aW > 0) {
-                     --this.aW;
-                  }
-               }
+            if (this.var_boolean_P) {
+                while (this.aW + this.aV > this.var_byte_ar && this.var_byte_as != 0) {
+                    if (this.aW > 0) {
+                        --this.aW;
+                    }
+                    this.var_byte_as = (byte)(this.var_byte_as - 1);
+                }
             } else {
-               this.as = 0;
-               this.aW = 0;
-               this.l = 0;
+                this.var_byte_as = 0;
+                this.aW = 0;
+                this.var_byte_l = 0;
             }
-
-            this.b[this.ad] = true;
+            this.var_boolean_arr_b[this.var_byte_ad] = true;
             this.aV = aT;
-            if (this.ar < this.aV) {
-               this.aV = this.ar;
+            if (this.var_byte_ar < this.aV) {
+                this.aV = this.var_byte_ar;
             }
-
             this.aY = aU * this.aV;
             this.aX = (320 - this.aY + 9) / 2;
             this.ai();
-         }
-      } catch (Exception var3) {
-      }
-   }
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-   private void aa() {
-      if (this.e[8749 + this.q] == 0) {
-         for(this.au = 0; this.a[0][this.au][11] != this.q; ++this.au) {
-         }
-
-         this.av = -1;
-         int var5 = this.e[9115 + this.q] - 1;
-
-         for(byte var2 = this.a[this.a[144] + var5]; var2 < this.a[this.a[144] + var5 + 1]; ++var2) {
-            if (0 + this.a[this.a[143] + var2] >= 6 && this.av == -1) {
-               this.av = (byte)(var2 - this.a[this.a[144] + var5]);
+    private void aa() {
+        if (this.var_byte_arr_e[8749 + this.var_int_q] == 0) {
+            this.var_byte_au = 0;
+            while (this.var_byte_arr_arr_arr_a[0][this.var_byte_au][11] != this.var_int_q) {
+                this.var_byte_au = (byte)(this.var_byte_au + 1);
             }
-
-            this.r[this.ar] = this.a[this.a[143] + var2];
-            this.s[var2 - this.a[this.a[144] + var5]] = this.a[0][this.au][this.a[this.a[143] + var2]];
-            ++this.ar;
-         }
-
-         this.at = 9;
-      } else if (this.e[8749 + this.q] == 6) {
-         if (this.k > 0) {
-            if (this.e[3636 + this.k] > 0) {
-               this.r[this.ar] = 29;
-               ++this.ar;
+            this.var_byte_av = (byte)-1;
+            int n = this.var_byte_arr_e[9115 + this.var_int_q] - 1;
+            for (byte by = this.var_byte_arr_a[this.var_short_arr_a[144] + n]; by < this.var_byte_arr_a[this.var_short_arr_a[144] + n + 1]; by = (byte)(by + 1)) {
+                if (0 + this.var_byte_arr_a[this.var_short_arr_a[143] + by] >= 6 && this.var_byte_av == -1) {
+                    this.var_byte_av = (byte)(by - this.var_byte_arr_a[this.var_short_arr_a[144] + n]);
+                }
+                this.var_byte_arr_r[this.var_byte_ar] = this.var_byte_arr_a[this.var_short_arr_a[143] + by];
+                this.var_byte_arr_s[by - this.var_byte_arr_a[this.var_short_arr_a[144] + n]] = this.var_byte_arr_arr_arr_a[0][this.var_byte_au][this.var_byte_arr_a[this.var_short_arr_a[143] + by]];
+                this.var_byte_ar = (byte)(this.var_byte_ar + 1);
             }
-         } else if (this.F != -1) {
-            for(byte var3 = 0; this.a[this.F][var3] != 0; ++var3) {
-               if (this.e[3636 + this.a[this.F][var3]] > 0) {
-                  this.r[this.ar] = 29;
-                  ++this.ar;
-                  break;
-               }
+            this.var_byte_at = (byte)9;
+            return;
+        }
+        if (this.var_byte_arr_e[8749 + this.var_int_q] == 6) {
+            int n;
+            if (this.var_byte_k > 0) {
+                if (this.var_byte_arr_e[3636 + this.var_byte_k] > 0) {
+                    this.var_byte_arr_r[this.var_byte_ar] = 29;
+                    this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+                }
+            } else if (this.var_byte_F != -1) {
+                n = 0;
+                while (this.var_byte_arr_arr_a[this.var_byte_F][n] != 0) {
+                    if (this.var_byte_arr_e[3636 + this.var_byte_arr_arr_a[this.var_byte_F][n]] > 0) {
+                        this.var_byte_arr_r[this.var_byte_ar] = 29;
+                        this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+                        break;
+                    }
+                    n = (byte)(n + 1);
+                }
             }
-         }
-
-         this.a[0][6] = (short)(this.a[0][3] / 5);
-         if (this.a[0][6] > this.at) {
-            this.a[0][6] = (short)this.at;
-         }
-
-         for(byte var4 = 0; var4 < 6; ++var4) {
-            if (this.a[0][5 + var4] > 0) {
-               this.r[this.ar] = var4;
-               this.s[this.ar] = (byte)this.a[0][5 + var4];
-               ++this.ar;
+            this.var_short_arr_arr_a[0][6] = (short)(this.var_short_arr_arr_a[0][3] / 5);
+            if (this.var_short_arr_arr_a[0][6] > this.var_byte_at) {
+                this.var_short_arr_arr_a[0][6] = this.var_byte_at;
             }
-         }
-
-      } else {
-         if (this.e[8749 + this.q] == 8) {
-            for(byte var1 = 0; var1 < this.e[9115 + this.q] * 2; ++var1) {
-               this.r[this.ar] = (byte)(19 + var1);
-               ++this.ar;
+            for (n = 0; n < 6; n = (int)((byte)(n + 1))) {
+                if (this.var_short_arr_arr_a[0][5 + n] <= 0) continue;
+                this.var_byte_arr_r[this.var_byte_ar] = n;
+                this.var_byte_arr_s[this.var_byte_ar] = (byte)this.var_short_arr_arr_a[0][5 + n];
+                this.var_byte_ar = (byte)(this.var_byte_ar + 1);
             }
-         }
-
-      }
-   }
-
-   private void ab() {
-      for(byte var1 = 0; var1 < 8; ++var1) {
-         this.j[var1] = 0;
-      }
-
-      byte var5 = 0;
-      int var2 = 0;
-      if (this.e[8810 + this.q] > 0 && (this.e[8749 + this.q] != 2 || this.e[8627 + this.q] != 0)) {
-         this.j[0] = this.e[8810 + this.q];
-         ++var2;
-         var5 = 1;
-      }
-
-      for(byte var3 = this.e[8993 + this.q]; var3 > 0; var3 = this.e[4545 + var3]) {
-         if (this.e[1313 + var3] > 0 && (this.e[8810 + this.q] != var3 || this.e[8749 + this.q] == 2 && this.e[8627 + this.q] == 0)) {
-            this.j[var5 + this.e[4646 + var3]] = var3;
-            ++var2;
-         }
-      }
-
-      byte var6 = 0;
-
-      for(byte var4 = 0; var4 < var2; ++var4) {
-         while(this.j[var6] == 0) {
-            ++var6;
-         }
-
-         this.r[this.ar] = (byte)(-this.j[var6]);
-         ++this.ar;
-         ++var6;
-      }
-
-   }
-
-   private void ac() {
-      if (this.e[8627 + this.q] == 2) {
-         this.r[this.ar] = 28;
-         ++this.ar;
-      } else if (this.e[8627 + this.q] != 1 && this.e[8749 + this.q] < 12 && this.e[9115 + this.q] < this.f[this.e[8749 + this.q]]) {
-         this.r[this.ar] = 16;
-         ++this.ar;
-      }
-
-      if (this.e[8627 + this.q] == 1) {
-         this.r[this.ar] = 27;
-         ++this.ar;
-      } else if (this.e[8505 + this.q] < this.e[8566 + this.q] && this.e[8749 + this.q] < 12) {
-         this.r[this.ar] = 26;
-         ++this.ar;
-      }
-
-      this.r[this.ar] = 17;
-      ++this.ar;
-   }
-
-   private void ad() {
-      if (!this.F) {
-         if (this.q != 3) {
-            this.r[this.ar] = 10;
-            ++this.ar;
-         }
-
-         this.r[this.ar] = (byte)(this.N ? 15 : 12);
-         ++this.ar;
-         if (!this.N) {
-            this.r[this.ar] = (byte)(this.L ? 14 : 11);
-            ++this.ar;
-         }
-
-         this.r[this.ar] = 13;
-         ++this.ar;
-         this.r[this.ar] = (byte)(this.aq + 23);
-         ++this.ar;
-      } else {
-         for(this.ao = 1; this.ao <= 50; ++this.ao) {
-            if (this.e[1919 + this.ao] > 0 && this.e[1414 + this.ao] >= 12) {
-               this.r[this.ar] = (byte)(-this.ao);
-               ++this.ar;
+            return;
+        }
+        if (this.var_byte_arr_e[8749 + this.var_int_q] == 8) {
+            for (int n = 0; n < this.var_byte_arr_e[9115 + this.var_int_q] * 2; n = (int)((byte)(n + 1))) {
+                this.var_byte_arr_r[this.var_byte_ar] = (byte)(19 + n);
+                this.var_byte_ar = (byte)(this.var_byte_ar + 1);
             }
-         }
+        }
+    }
 
-         if (!this.K) {
-            for(this.ao = 1; this.ao <= 50; ++this.ao) {
-               if (this.e[1919 + this.ao] > 0 && this.e[1414 + this.ao] < 12) {
-                  this.r[this.ar] = (byte)(-this.ao);
-                  ++this.ar;
-               }
+    private void ab() {
+        int n;
+        for (n = 0; n < 8; n = (int)((byte)(n + 1))) {
+            this.var_byte_arr_j[n] = 0;
+        }
+        n = 0;
+        int n2 = 0;
+        if (this.var_byte_arr_e[8810 + this.var_int_q] > 0 && (this.var_byte_arr_e[8749 + this.var_int_q] != 2 || this.var_byte_arr_e[8627 + this.var_int_q] != 0)) {
+            this.var_byte_arr_j[0] = this.var_byte_arr_e[8810 + this.var_int_q];
+            ++n2;
+            n = 1;
+        }
+        byte by = this.var_byte_arr_e[8993 + this.var_int_q];
+        while (by > 0) {
+            if (this.var_byte_arr_e[1313 + by] > 0 && (this.var_byte_arr_e[8810 + this.var_int_q] != by || this.var_byte_arr_e[8749 + this.var_int_q] == 2 && this.var_byte_arr_e[8627 + this.var_int_q] == 0)) {
+                this.var_byte_arr_j[n + this.var_byte_arr_e[4646 + by]] = by;
+                ++n2;
             }
-         }
-
-         this.a(false, false, false, true, true, false, false, false, false);
-      }
-   }
-
-   private void ae() {
-      if (this.n > 1) {
-         this.n = 0;
-      } else {
-         if (this.g && this.j != 1) {
-            if (this.as >= 0) {
-               if (this.as > 0) {
-                  --this.as;
-               }
-
-               if (this.as < this.aW) {
-                  --this.aW;
-               }
-
-               this.V = false;
-               this.ai();
-               return;
+            by = this.var_byte_arr_e[4545 + by];
+        }
+        by = 0;
+        for (int n3 = 0; n3 < n2; n3 = (int)((byte)(n3 + 1))) {
+            while (this.var_byte_arr_j[by] == 0) {
+                by = (byte)(by + 1);
             }
-         } else if (this.h && this.j != 1) {
-            if (this.as < this.ar - 1) {
-               if (this.as >= this.aV - 1 && this.as - this.aW == this.aV - 1) {
-                  ++this.aW;
-               }
+            this.var_byte_arr_r[this.var_byte_ar] = -this.var_byte_arr_j[by];
+            this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+            by = (byte)(by + 1);
+        }
+    }
 
-               ++this.as;
-               this.V = false;
-               this.ai();
-               return;
+    private void ac() {
+        if (this.var_byte_arr_e[8627 + this.var_int_q] == 2) {
+            this.var_byte_arr_r[this.var_byte_ar] = 28;
+            this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+        } else if (this.var_byte_arr_e[8627 + this.var_int_q] != 1 && this.var_byte_arr_e[8749 + this.var_int_q] < 12 && this.var_byte_arr_e[9115 + this.var_int_q] < this.var_byte_arr_f[this.var_byte_arr_e[8749 + this.var_int_q]]) {
+            this.var_byte_arr_r[this.var_byte_ar] = 16;
+            this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+        }
+        if (this.var_byte_arr_e[8627 + this.var_int_q] == 1) {
+            this.var_byte_arr_r[this.var_byte_ar] = 27;
+            this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+        } else if (this.var_byte_arr_e[8505 + this.var_int_q] < this.var_byte_arr_e[8566 + this.var_int_q] && this.var_byte_arr_e[8749 + this.var_int_q] < 12) {
+            this.var_byte_arr_r[this.var_byte_ar] = 26;
+            this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+        }
+        this.var_byte_arr_r[this.var_byte_ar] = 17;
+        this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+    }
+
+    private void ad() {
+        if (!this.var_boolean_F) {
+            if (this.var_byte_q != 3) {
+                this.var_byte_arr_r[this.var_byte_ar] = 10;
+                this.var_byte_ar = (byte)(this.var_byte_ar + 1);
             }
-         } else if (this.e && this.S) {
-            if (this.a[6]) {
-               if (!this.Q) {
-                  --this.y;
-                  return;
-               }
-            } else if (this.s[this.as] < this.at) {
-               ++this.s[this.as];
-               this.a[0][this.au][this.r[this.as]] = this.s[this.as];
-               return;
+            this.var_byte_arr_r[this.var_byte_ar] = this.var_boolean_N ? 15 : 12;
+            this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+            if (!this.var_boolean_N) {
+                this.var_byte_arr_r[this.var_byte_ar] = this.var_boolean_L ? 14 : 11;
+                this.var_byte_ar = (byte)(this.var_byte_ar + 1);
             }
-         } else if (this.f && this.S) {
-            if (this.a[6]) {
-               if (!this.R) {
-                  ++this.y;
-                  return;
-               }
-            } else if (this.s[this.as] > 0) {
-               --this.s[this.as];
-               this.a[0][this.au][this.r[this.as]] = this.s[this.as];
-               return;
+            this.var_byte_arr_r[this.var_byte_ar] = 13;
+            this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+            this.var_byte_arr_r[this.var_byte_ar] = (byte)(this.var_byte_aq + 23);
+            this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+            return;
+        }
+        this.var_int_ao = 1;
+        while (this.var_int_ao <= 50) {
+            if (this.var_byte_arr_e[1919 + this.var_int_ao] > 0 && this.var_byte_arr_e[1414 + this.var_int_ao] >= 12) {
+                this.var_byte_arr_r[this.var_byte_ar] = (byte)(-this.var_int_ao);
+                this.var_byte_ar = (byte)(this.var_byte_ar + 1);
             }
-         } else {
-            if (this.i || l) {
-               this.i = false;
-               l = false;
-               this.v = false;
-               this.E = 4;
-               if (this.w == 4 && this.Y == 3) {
-                  this.l(-2);
-                  return;
-               }
-
-               if (this.Y == 4) {
-                  return;
-               }
-
-               this.af();
-               return;
+            ++this.var_int_ao;
+        }
+        if (!this.var_boolean_K) {
+            this.var_int_ao = 1;
+            while (this.var_int_ao <= 50) {
+                if (this.var_byte_arr_e[1919 + this.var_int_ao] > 0 && this.var_byte_arr_e[1414 + this.var_int_ao] < 12) {
+                    this.var_byte_arr_r[this.var_byte_ar] = (byte)(-this.var_int_ao);
+                    this.var_byte_ar = (byte)(this.var_byte_ar + 1);
+                }
+                ++this.var_int_ao;
             }
+        }
+        this.a(false, false, false, true, true, false, false, false, false);
+    }
 
-            if (m) {
-               m = false;
-               this.ah();
-               return;
+    private void ae() {
+        if (this.var_int_n > 1) {
+            this.var_int_n = 0;
+            return;
+        }
+        if (this.var_boolean_g && this.var_byte_j != 1) {
+            if (this.var_byte_as >= 0) {
+                if (this.var_byte_as > 0) {
+                    this.var_byte_as = (byte)(this.var_byte_as - 1);
+                }
+                if (this.var_byte_as < this.aW) {
+                    --this.aW;
+                }
+                this.var_boolean_V = false;
+                this.ai();
+                return;
             }
-         }
-
-      }
-   }
-
-   private void af() {
-      if (this.r[this.as] == 13) {
-         this.aj();
-      } else if (this.r[this.as] < 0) {
-         if (this.F) {
-            if (this.k == this.l) {
-               if (this.c[this.e[101 + this.k]][this.e[0 + this.k]] != this.k) {
-                  this.a(this.k, this.e[4444 + this.k], true, true);
-               }
-
-               if (this.K) {
-                  this.a[0][17] = (short)this.k;
-                  this.K = false;
-                  this.a.b((int)this.k);
-               }
-
-               this.d(this.k);
-               this.F = false;
+        } else if (this.var_boolean_h && this.var_byte_j != 1) {
+            if (this.var_byte_as < this.var_byte_ar - 1) {
+                if (this.var_byte_as >= this.aV - 1 && this.var_byte_as - this.aW == this.aV - 1) {
+                    ++this.aW;
+                }
+                this.var_byte_as = (byte)(this.var_byte_as + 1);
+                this.var_boolean_V = false;
+                this.ai();
+                return;
             }
-
-            this.k = this.l;
-         } else if (this.V) {
-            this.a(this.l, this.q, true, true);
-            this.V = false;
-         } else {
-            this.V = true;
-            this.P = true;
-         }
-
-         this.f(this.e[4646 + this.l] >= 0 && this.e[2828 + this.l] != 92 && this.e[2828 + this.l] != 106 ? -this.e[4444 + this.l] : this.l, 0);
-      } else if (this.a[6]) {
-         this.aJ();
-         this.l(0);
-         this.s = this.a[this.a[138] + 416 + this.r[this.as]];
-      } else if (this.r[this.as] == 17) {
-         this.l(3);
-      } else if (this.r[this.as] != 16 && this.r[this.as] != 26) {
-         if (this.r[this.as] == 27) {
-            this.e[8566 + this.q] = this.a[this.a[138] + (7 + this.e[9115 + this.q] - 1) * 26 + this.e[8749 + this.q]];
-            if (this.e[8505 + this.q] > this.e[8566 + this.q]) {
-               this.e[8505 + this.q] = this.e[8566 + this.q];
+        } else if (this.var_boolean_e && this.var_boolean_S) {
+            if (this.var_boolean_arr_a[6]) {
+                if (!this.var_boolean_Q) {
+                    --this.var_int_y;
+                    return;
+                }
+            } else if (this.var_byte_arr_s[this.var_byte_as] < this.var_byte_at) {
+                byte by = this.var_byte_as;
+                this.var_byte_arr_s[by] = (byte)(this.var_byte_arr_s[by] + 1);
+                this.var_byte_arr_arr_arr_a[0][this.var_byte_au][this.var_byte_arr_r[this.var_byte_as]] = this.var_byte_arr_s[this.var_byte_as];
+                return;
             }
-
-            if (this.e[8505 + this.q] > this.a[this.a[138] + (7 + this.e[9115 + this.q] - 1) * 26 + this.e[8749 + this.q]]) {
-               this.e[8505 + this.q] = this.a[this.a[138] + (7 + this.e[9115 + this.q] - 1) * 26 + this.e[8749 + this.q]];
+        } else if (this.var_boolean_f && this.var_boolean_S) {
+            if (this.var_boolean_arr_a[6]) {
+                if (!this.var_boolean_R) {
+                    ++this.var_int_y;
+                    return;
+                }
+            } else if (this.var_byte_arr_s[this.var_byte_as] > 0) {
+                byte by = this.var_byte_as;
+                this.var_byte_arr_s[by] = (byte)(this.var_byte_arr_s[by] - 1);
+                this.var_byte_arr_arr_arr_a[0][this.var_byte_au][this.var_byte_arr_r[this.var_byte_as]] = this.var_byte_arr_s[this.var_byte_as];
+                return;
             }
+        } else {
+            if (this.var_boolean_i || var_boolean_l) {
+                this.var_boolean_i = false;
+                var_boolean_l = false;
+                this.var_boolean_v = false;
+                this.var_byte_E = (byte)4;
+                if (this.var_byte_w == 4 && this.var_int_Y == 3) {
+                    this.l(-2);
+                    return;
+                }
+                if (this.var_int_Y == 4) {
+                    return;
+                }
+                this.af();
+                return;
+            }
+            if (var_boolean_m) {
+                var_boolean_m = false;
+                this.ah();
+                return;
+            }
+        }
+    }
 
-            byte[] var1 = this.e;
-            int var2 = 9054 + this.q;
-            var1[var2] = (byte)(var1[var2] | 1);
-            this.P = true;
-         } else if (this.r[this.as] == 28) {
-            byte[] var10000 = this.e;
-            int var10001 = 9054 + this.q;
-            var10000[var10001] = (byte)(var10000[var10001] | 1);
-            this.P = true;
-         } else if (this.r[this.as] == 10) {
+    private void af() {
+        if (this.var_byte_arr_r[this.var_byte_as] == 13) {
+            this.aj();
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] < 0) {
+            if (this.var_boolean_F) {
+                if (this.var_byte_k == this.var_byte_l) {
+                    if (this.var_byte_arr_arr_c[this.var_byte_arr_e[101 + this.var_byte_k]][this.var_byte_arr_e[0 + this.var_byte_k]] != this.var_byte_k) {
+                        this.a((int)this.var_byte_k, (int)this.var_byte_arr_e[4444 + this.var_byte_k], true, true);
+                    }
+                    if (this.var_boolean_K) {
+                        this.var_short_arr_arr_a[0][17] = this.var_byte_k;
+                        this.var_boolean_K = false;
+                        this.var_b_a.void_b((int)this.var_byte_k);
+                    }
+                    this.d(this.var_byte_k);
+                    this.var_boolean_F = false;
+                }
+                this.var_byte_k = this.var_byte_l;
+            } else if (this.var_boolean_V) {
+                this.a((int)this.var_byte_l, this.var_int_q, true, true);
+                this.var_boolean_V = false;
+            } else {
+                this.var_boolean_V = true;
+                this.var_boolean_P = true;
+            }
+            this.f(this.var_byte_arr_e[4646 + this.var_byte_l] < 0 || this.var_byte_arr_e[2828 + this.var_byte_l] == 92 || this.var_byte_arr_e[2828 + this.var_byte_l] == 106 ? this.var_byte_l : -this.var_byte_arr_e[4444 + this.var_byte_l], 0);
+            return;
+        }
+        if (this.var_boolean_arr_a[6]) {
+            this.aJ();
+            this.l(0);
+            this.var_int_s = this.var_byte_arr_a[this.var_short_arr_a[138] + 416 + this.var_byte_arr_r[this.var_byte_as]];
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] == 17) {
+            this.l(3);
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] == 16 || this.var_byte_arr_r[this.var_byte_as] == 26) {
+            this.b(this.var_int_q, this.var_byte_arr_r[this.var_byte_as] == 16);
+            this.a(true, true, false, false);
+            this.var_byte_w = 0;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] == 27) {
+            this.var_byte_arr_e[8566 + this.var_int_q] = this.var_byte_arr_a[this.var_short_arr_a[138] + (7 + this.var_byte_arr_e[9115 + this.var_int_q] - 1) * 26 + this.var_byte_arr_e[8749 + this.var_int_q]];
+            if (this.var_byte_arr_e[8505 + this.var_int_q] > this.var_byte_arr_e[8566 + this.var_int_q]) {
+                this.var_byte_arr_e[8505 + this.var_int_q] = this.var_byte_arr_e[8566 + this.var_int_q];
+            }
+            if (this.var_byte_arr_e[8505 + this.var_int_q] > this.var_byte_arr_a[this.var_short_arr_a[138] + (7 + this.var_byte_arr_e[9115 + this.var_int_q] - 1) * 26 + this.var_byte_arr_e[8749 + this.var_int_q]]) {
+                this.var_byte_arr_e[8505 + this.var_int_q] = this.var_byte_arr_a[this.var_short_arr_a[138] + (7 + this.var_byte_arr_e[9115 + this.var_int_q] - 1) * 26 + this.var_byte_arr_e[8749 + this.var_int_q]];
+            }
+            int n = 9054 + this.var_int_q;
+            this.var_byte_arr_e[n] = (byte)(this.var_byte_arr_e[n] | 1);
+            this.var_boolean_P = true;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] == 28) {
+            int n = 9054 + this.var_int_q;
+            this.var_byte_arr_e[n] = (byte)(this.var_byte_arr_e[n] | 1);
+            this.var_boolean_P = true;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] == 10) {
             this.a(true, false, false, false, false, true, false, false, false);
-            this.P = true;
-         } else if (this.r[this.as] == 11) {
-            this.M = true;
+            this.var_boolean_P = true;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] == 11) {
+            this.var_boolean_M = true;
             this.l(2);
-            this.s = 100;
+            this.var_int_s = 100;
             this.aJ();
-         } else if (this.r[this.as] == 14) {
-            this.L = false;
-            this.M = false;
-            this.a.c();
-            this.P = true;
-         } else if (this.r[this.as] == 12) {
-            this.O = true;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] == 14) {
+            this.var_boolean_L = false;
+            this.var_boolean_M = false;
+            this.var_b_a.void_c();
+            this.var_boolean_P = true;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] == 12) {
+            this.var_boolean_O = true;
             this.l(2);
-            this.s = 100;
+            this.var_int_s = 100;
             this.aJ();
-         } else if (this.r[this.as] == 15) {
-            this.N = false;
-            this.O = false;
-            this.a.c();
-            this.P = true;
-         } else if (this.r[this.as] >= 23 && this.r[this.as] <= 25) {
-            ++this.aq;
-            if (this.aq > 2) {
-               this.aq = 0;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] == 15) {
+            this.var_boolean_N = false;
+            this.var_boolean_O = false;
+            this.var_b_a.void_c();
+            this.var_boolean_P = true;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] >= 23 && this.var_byte_arr_r[this.var_byte_as] <= 25) {
+            this.var_byte_aq = (byte)(this.var_byte_aq + 1);
+            if (this.var_byte_aq > 2) {
+                this.var_byte_aq = 0;
             }
-
-            this.P = true;
-         } else if (this.r[this.as] >= 6 && this.r[this.as] <= 8) {
+            this.var_boolean_P = true;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] >= 6 && this.var_byte_arr_r[this.var_byte_as] <= 8) {
             this.l(2);
-            this.s = 20 + this.r[this.as] - 6;
-         } else if (this.r[this.as] >= 6 && this.r[this.as] != 29) {
-            if (this.r[this.as] >= 19 && this.w != 3) {
-               this.l(this.r[this.as] == 22 ? 2 : 1);
-               this.s = (byte)(this.r[this.as] - 19);
-            }
-
-         } else {
+            this.var_int_s = 20 + this.var_byte_arr_r[this.var_byte_as] - 6;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] < 6 || this.var_byte_arr_r[this.var_byte_as] == 29) {
             this.ag();
-         }
-      } else {
-         this.b(this.q, this.r[this.as] == 16);
-         this.a(true, true, false, false);
-         this.w = 0;
-      }
-   }
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] >= 19 && this.var_byte_w != 3) {
+            this.l(this.var_byte_arr_r[this.var_byte_as] == 22 ? 2 : 1);
+            this.var_int_s = (byte)(this.var_byte_arr_r[this.var_byte_as] - 19);
+        }
+    }
 
-   private void ag() {
-      if (this.e[8749 + this.q] == 6) {
-         byte var1 = 3;
-         if (this.r[this.as] == 29) {
-            var1 = 2;
-         }
+    private void ag() {
+        if (this.var_byte_arr_e[8749 + this.var_int_q] == 6) {
+            int n = 3;
+            if (this.var_byte_arr_r[this.var_byte_as] == 29) {
+                n = 2;
+            }
+            if (this.var_byte_k > 0) {
+                this.var_byte_arr_e[3131 + this.var_byte_k] = (byte)(this.var_byte_y + this.var_byte_I);
+                this.var_byte_arr_e[3232 + this.var_byte_k] = (byte)(this.var_byte_A + this.var_byte_K);
+                this.var_byte_arr_e[2828 + this.var_byte_k] = (byte)(44 + this.var_byte_arr_r[this.var_byte_as]);
+                this.var_byte_arr_e[6161 + this.var_byte_k] = n;
+                this.a(false, true, false, true);
+                this.var_byte_w = 1;
+            } else if (this.var_byte_F != -1) {
+                int n2 = 0;
+                while (this.var_byte_arr_arr_a[this.var_byte_F][n2] > 0) {
+                    this.var_byte_arr_e[3131 + this.var_byte_arr_arr_a[this.var_byte_F][n2]] = (byte)(this.var_byte_y + this.var_byte_I);
+                    this.var_byte_arr_e[3232 + this.var_byte_arr_arr_a[this.var_byte_F][n2]] = (byte)(this.var_byte_A + this.var_byte_K);
+                    this.var_byte_arr_e[2828 + this.var_byte_arr_arr_a[this.var_byte_F][n2]] = (byte)(44 + this.var_byte_arr_r[this.var_byte_as]);
+                    this.var_byte_arr_e[6161 + this.var_byte_arr_arr_a[this.var_byte_F][n2]] = n;
+                    ++n2;
+                }
+                this.a(true, true, false, false);
+                this.var_byte_w = 1;
+            } else {
+                this.l(1);
+                this.var_int_s = -this.var_byte_arr_r[this.var_byte_as] - 1;
+            }
+            this.var_byte_l = this.var_byte_k;
+        }
+    }
 
-         if (this.k > 0) {
-            this.e[3131 + this.k] = (byte)(this.y + this.I);
-            this.e[3232 + this.k] = (byte)(this.A + this.K);
-            this.e[2828 + this.k] = (byte)(44 + this.r[this.as]);
-            this.e[6161 + this.k] = var1;
+    private void ah() {
+        if (this.var_boolean_K) {
+            return;
+        }
+        this.var_boolean_P = false;
+        if (this.var_byte_w == 4) {
+            this.l(-1);
+            return;
+        }
+        if (this.var_byte_k != 0) {
+            this.var_byte_w = 1;
+            this.var_byte_l = this.var_byte_k;
             this.a(false, true, false, true);
-            this.w = 1;
-         } else if (this.F == -1) {
-            this.l(1);
-            this.s = -this.r[this.as] - 1;
-         } else {
-            for(int var2 = 0; this.a[this.F][var2] > 0; ++var2) {
-               this.e[3131 + this.a[this.F][var2]] = (byte)(this.y + this.I);
-               this.e[3232 + this.a[this.F][var2]] = (byte)(this.A + this.K);
-               this.e[2828 + this.a[this.F][var2]] = (byte)(44 + this.r[this.as]);
-               this.e[6161 + this.a[this.F][var2]] = var1;
-            }
-
+        } else if (this.var_byte_F != -1) {
+            this.var_byte_w = 1;
             this.a(true, true, false, false);
-            this.w = 1;
-         }
+        } else {
+            this.var_byte_w = 0;
+            this.a(true, true, false, false);
+        }
+        this.var_int_q = 0;
+        this.var_boolean_F = false;
+        this.i();
+        this.var_boolean_V = false;
+    }
 
-         this.l = this.k;
-      }
-
-   }
-
-   private void ah() {
-      if (!this.K) {
-         this.P = false;
-         if (this.w == 4) {
-            this.l(-1);
-         } else {
-            if (this.k != 0) {
-               this.w = 1;
-               this.l = this.k;
-               this.a(false, true, false, true);
-            } else if (this.F != -1) {
-               this.w = 1;
-               this.a(true, true, false, false);
-            } else {
-               this.w = 0;
-               this.a(true, true, false, false);
-            }
-
-            this.q = 0;
-            this.F = false;
-            this.i();
-            this.V = false;
-         }
-      }
-   }
-
-   private void ai() {
-      this.b[2] = true;
-      if (this.ad == 6) {
-         this.T = this.as > 0;
-         this.U = this.as < this.ar - 1;
-      } else {
-         this.T = this.aW > 0;
-         this.U = this.aW + this.aV < this.ar;
-      }
-
-      if (this.r[this.as] < 0) {
-         this.l = (byte)(-this.r[this.as]);
-         this.a(false, false, this.a[2], true, this.a[5], false, false, false, false);
-      } else if (this.a[4]) {
-         this.l = 0;
-         this.a(true, false, true, false);
-      }
-
-      this.a[8] = false;
-      this.a[7] = false;
-      if (this.ad != 6 && (this.r[this.as] < 6 || this.r[this.as] > 8) && this.r[this.as] != 16) {
-         if (this.r[this.as] >= 0 && this.r[this.as] < 6) {
-            this.a[7] = this.b[7] = true;
-         }
-
-      } else {
-         this.a[8] = this.b[8] = true;
-      }
-   }
-
-   private void aj() {
-      this.F = true;
-      this.aW = this.as = 0;
-
-      for(this.k = 0; this.e[1919 + this.l] <= 0; ++this.l) {
-      }
-
-      this.P = true;
-   }
-
-   private void l(int var1) {
-      this.Y = var1;
-      if (this.Y > -1) {
-         this.d[4] = (short)(33 + this.Y);
-         this.k[4] = 1;
-         this.x = this.w;
-         this.c = new boolean[]{this.a[0], this.a[1], this.a[2], this.a[4], this.a[5], this.a[6], this.a[7], this.a[8], this.a[9]};
-         if (this.Y <= 5) {
+    private void ai() {
+        this.var_boolean_arr_b[2] = true;
+        if (this.var_byte_ad == 6) {
+            this.var_boolean_T = this.var_byte_as > 0;
+            this.var_boolean_U = this.var_byte_as < this.var_byte_ar - 1;
+        } else {
+            this.var_boolean_T = this.aW > 0;
+            boolean bl = this.var_boolean_U = this.aW + this.aV < this.var_byte_ar;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] < 0) {
+            this.var_byte_l = -this.var_byte_arr_r[this.var_byte_as];
+            this.a(false, false, this.var_boolean_arr_a[2], true, this.var_boolean_arr_a[5], false, false, false, false);
+        } else if (this.var_boolean_arr_a[4]) {
+            this.var_byte_l = 0;
             this.a(true, false, true, false);
-         } else {
-            this.a(this.a[0], false, true, this.a[4], this.a[5], this.a[6], this.a[7], this.a[8], this.a[9]);
-         }
+        }
+        this.var_boolean_arr_a[8] = false;
+        this.var_boolean_arr_a[7] = false;
+        if (this.var_byte_ad == 6 || this.var_byte_arr_r[this.var_byte_as] >= 6 && this.var_byte_arr_r[this.var_byte_as] <= 8 || this.var_byte_arr_r[this.var_byte_as] == 16) {
+            this.var_boolean_arr_b[8] = true;
+            this.var_boolean_arr_a[8] = true;
+            return;
+        }
+        if (this.var_byte_arr_r[this.var_byte_as] >= 0 && this.var_byte_arr_r[this.var_byte_as] < 6) {
+            this.var_boolean_arr_b[7] = true;
+            this.var_boolean_arr_a[7] = true;
+        }
+    }
 
-         this.w = (byte)(this.Y >= 3 ? 4 : 3);
-         this.b[2] = true;
-      } else if (this.Y == -2) {
-         this.c(this.q, true);
-         this.d[4] = 0;
-      } else {
-         this.w = this.x;
-         this.a(this.c[0], this.c[1], this.c[2], this.c[3], this.c[4], this.c[5], this.c[6], this.c[7], this.c[8]);
-         this.d[4] = 0;
-         if (this.s == 100) {
-            this.ah();
-         } else {
-            this.P = true;
-         }
+    private void aj() {
+        this.var_boolean_F = true;
+        this.var_byte_as = 0;
+        this.aW = 0;
+        this.var_byte_k = 0;
+        while (this.var_byte_arr_e[1919 + this.var_byte_l] <= 0) {
+            this.var_byte_l = (byte)(this.var_byte_l + 1);
+        }
+        this.var_boolean_P = true;
+    }
 
-         this.O = this.M = false;
-      }
-
-      this.s = 0;
-   }
-
-   final void d(int var1) {
-      if (this.w == 2 && var1 == this.q) {
-         this.P = true;
-      }
-
-   }
-
-   final void b(int var1, boolean var2) {
-      this.a.b((byte)var1);
-
-      for(byte var3 = this.e[8993 + var1]; var3 > 0; var3 = this.e[4545 + var3]) {
-         this.a(var3, var1, false, false);
-      }
-
-      this.e[8627 + var1] = (byte)(var2 ? 1 : 2);
-      if (var2) {
-         this.e[8566 + var1] = this.a[this.a[138] + (7 + this.e[9115 + var1]) * 26 + this.e[8749 + var1]];
-      }
-
-   }
-
-   private void ak() {
-      if (this.Q == 15 && this.m == 0) {
-         this.a[this.a[153] + 116 + 15] = (byte)(this.R ? 0 : 9);
-         this.b[17] = true;
-      }
-
-      try {
-         this.al();
-         if (this.Q != 22 && this.Q != 23) {
-            if (m) {
-               m = false;
-               this.an();
-            } else if ((this.i || l || this.j) && this.aQ <= 0 && this.aN == 0 && (this.Q < 28 || this.Q == 32)) {
-               this.i = this.j = false;
-               l = false;
-               this.v = false;
-               this.E = 4;
-               if (this.Q == 32) {
-                  return;
-               }
-
-               this.ao();
-            } else if (this.e) {
-               this.aB();
-            } else if (this.f) {
-               this.aC();
-            }
-         } else {
-            this.am();
-         }
-
-         this.aD();
-      } catch (Exception var2) {
-      }
-   }
-
-   private void al() {
-      if (this.Q == 27 && (this.i || l)) {
-         this.i = false;
-         l = false;
-         this.v = false;
-         this.E = 4;
-         this.i();
-         this.Q = this.R;
-         this.R = this.S;
-         this.H = true;
-         this.v = this.x;
-         if (this.e > 0) {
-            this.aQ();
-         }
-      }
-
-   }
-
-   private void am() {
-      this.Q = this.R;
-      this.H = true;
-      if (this.T == 0) {
-         this.g(this.q);
-         if (this.Q == 18) {
-            this.a(true, true, false, false);
-            this.m = 0;
-            this.Q = 28;
-            this.b((int)this.a[this.a[303] + this.q]);
-            this.Q = 18;
-         }
-
-      } else if (this.T == 1) {
-         if (this.u > 0 && this.u < 41) {
-            ++this.t;
-         }
-
-         if (!this.e(this.q < 7 ? 1 : 2)) {
-            if (this.q < 7) {
-               this.t = -1;
+    private void l(int n) {
+        this.var_int_Y = n;
+        if (this.var_int_Y > -1) {
+            this.var_short_arr_d[4] = (short)(33 + this.var_int_Y);
+            this.var_byte_arr_k[4] = 1;
+            this.var_byte_x = this.var_byte_w;
+            this.var_boolean_arr_c = new boolean[]{this.var_boolean_arr_a[0], this.var_boolean_arr_a[1], this.var_boolean_arr_a[2], this.var_boolean_arr_a[4], this.var_boolean_arr_a[5], this.var_boolean_arr_a[6], this.var_boolean_arr_a[7], this.var_boolean_arr_a[8], this.var_boolean_arr_a[9]};
+            if (this.var_int_Y <= 5) {
+                this.a(true, false, true, false);
             } else {
-               this.W = false;
+                this.a(this.var_boolean_arr_a[0], false, true, this.var_boolean_arr_a[4], this.var_boolean_arr_a[5], this.var_boolean_arr_a[6], this.var_boolean_arr_a[7], this.var_boolean_arr_a[8], this.var_boolean_arr_a[9]);
             }
-
-            this.v = 66;
-         } else {
-            this.v = 67;
-            this.e((int)0);
-         }
-
-         this.R = (byte)(this.q < 7 ? (this.t > -1 ? 10 : 11) : (this.W ? 10 : 11));
-         this.A = true;
-         this.v = 1;
-         this.n();
-         this.u();
-         this.v = 0;
-      } else {
-         if (this.T == 2 && !this.d(this.q < 7 ? 1 : 2)) {
-            this.R = this.Q;
-            this.T = 0;
-            this.Q = 23;
-         }
-
-      }
-   }
-
-   private void an() {
-      if (this.Q == 32) {
-         this.Q = this.U;
-         this.H = true;
-      } else {
-         if (this.a[this.a[153] + 29 + this.Q] == 1) {
-            if (this.Q == 25) {
-               this.l(-1);
-               this.P = false;
-               this.I = false;
+            this.var_byte_w = (byte)(this.var_int_Y >= 3 ? 4 : 3);
+            this.var_boolean_arr_b[2] = true;
+        } else if (this.var_int_Y == -2) {
+            this.c(this.var_int_q, true);
+            this.var_short_arr_d[4] = 0;
+        } else {
+            this.var_byte_w = this.var_byte_x;
+            this.a(this.var_boolean_arr_c[0], this.var_boolean_arr_c[1], this.var_boolean_arr_c[2], this.var_boolean_arr_c[3], this.var_boolean_arr_c[4], this.var_boolean_arr_c[5], this.var_boolean_arr_c[6], this.var_boolean_arr_c[7], this.var_boolean_arr_c[8]);
+            this.var_short_arr_d[4] = 0;
+            if (this.var_int_s == 100) {
+                this.ah();
+            } else {
+                this.var_boolean_P = true;
             }
+            this.var_boolean_M = false;
+            this.var_boolean_O = false;
+        }
+        this.var_int_s = 0;
+    }
 
-            this.Q = 28;
-         } else if (this.Q == this.U) {
-            this.R = this.Q;
-            this.Q = 30;
-         } else if (this.Q == 20) {
-            if (this.a[this.a[153] + 145 + 20] == 0) {
-               this.z = this.y;
-               this.B = this.A;
-               this.J = this.I;
-               this.L = this.K;
-               this.Q = 28;
-               this.a(this.d[0], this.d[1], this.d[2], this.d[3], this.d[4], this.d[5], this.d[6], this.d[7], this.d[8]);
+    final void void_d(int n) {
+        if (this.var_byte_w == 2 && n == this.var_int_q) {
+            this.var_boolean_P = true;
+        }
+    }
+
+    final void b(int n, boolean bl) {
+        this.var_b_a.boolean_b((byte)n);
+        byte by = this.var_byte_arr_e[8993 + n];
+        while (by > 0) {
+            this.a((int)by, n, false, false);
+            by = this.var_byte_arr_e[4545 + by];
+        }
+        int n2 = this.var_byte_arr_e[8627 + n] = bl ? 1 : 2;
+        if (bl) {
+            this.var_byte_arr_e[8566 + n] = this.var_byte_arr_a[this.var_short_arr_a[138] + (7 + this.var_byte_arr_e[9115 + n]) * 26 + this.var_byte_arr_e[8749 + n]];
+        }
+    }
+
+    private void ak() {
+        if (this.var_byte_Q == 15 && this.var_byte_m == 0) {
+            this.var_byte_arr_a[this.var_short_arr_a[153] + 116 + 15] = this.var_boolean_R ? 0 : 9;
+            this.var_boolean_arr_b[17] = true;
+        }
+        try {
+            this.al();
+            if (this.var_byte_Q == 22 || this.var_byte_Q == 23) {
+                this.am();
+            } else if (var_boolean_m) {
+                var_boolean_m = false;
+                this.an();
+            } else if ((this.var_boolean_i || var_boolean_l || this.var_boolean_j) && this.aQ <= 0 && this.aN == 0 && (this.var_byte_Q < 28 || this.var_byte_Q == 32)) {
+                this.var_boolean_j = false;
+                this.var_boolean_i = false;
+                var_boolean_l = false;
+                this.var_boolean_v = false;
+                this.var_byte_E = (byte)4;
+                if (this.var_byte_Q == 32) {
+                    return;
+                }
+                this.ao();
+            } else if (this.var_boolean_e) {
+                this.aB();
+            } else if (this.var_boolean_f) {
+                this.aC();
             }
-         } else if (this.Q == 16 && this.v == 60) {
-            this.T = 0;
-            this.Q = 22;
-            this.v = 69;
-            this.R = 18;
-         } else if (this.Q == 2) {
-            this.Q = this.U;
-            this.Z = 0;
-         } else if (this.Q != this.V && this.Q != 9) {
-            if (this.Q == 14) {
-               this.b();
-            } else if (this.a[this.a[153] + 58 + this.Q] == 1) {
-               if (this.Q == 12) {
-                  this.e((int)0);
-               }
+            this.aD();
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-               this.Q = this.R;
-               this.R = this.S;
-               this.Z = this.aa;
-               this.m = 0;
-               this.ac = true;
-            } else if (this.a[this.a[153] + 58 + this.Q] > 1) {
-               this.Q = this.a[this.a[153] + 58 + this.Q];
-               this.R = this.S;
-               this.Z = this.aa;
-               this.m = 0;
+    private void al() {
+        if (this.var_byte_Q == 27 && (this.var_boolean_i || var_boolean_l)) {
+            this.var_boolean_i = false;
+            var_boolean_l = false;
+            this.var_boolean_v = false;
+            this.var_byte_E = (byte)4;
+            this.i();
+            this.var_byte_Q = this.var_byte_R;
+            this.var_byte_R = this.var_byte_S;
+            this.var_boolean_H = true;
+            this.var_int_v = this.var_int_x;
+            if (this.var_byte_e > 0) {
+                this.aQ();
             }
-         } else {
-            this.Q = 13;
-            this.Z = 1;
-         }
+        }
+    }
 
-         this.H = true;
-      }
-   }
+    private void am() {
+        this.var_byte_Q = this.var_byte_R;
+        this.var_boolean_H = true;
+        if (this.var_byte_T == 0) {
+            this.g(this.var_byte_q);
+            if (this.var_byte_Q == 18) {
+                this.a(true, true, false, false);
+                this.var_byte_m = 0;
+                this.var_byte_Q = (byte)28;
+                this.void_b((int)this.var_byte_arr_a[this.var_short_arr_a[303] + this.var_byte_q]);
+                this.var_byte_Q = (byte)18;
+            }
+            return;
+        }
+        if (this.var_byte_T == 1) {
+            if (this.var_byte_u > 0 && this.var_byte_u < 41) {
+                this.var_byte_t = (byte)(this.var_byte_t + 1);
+            }
+            if (!this.boolean_e(this.var_byte_q < 7 ? 1 : 2)) {
+                if (this.var_byte_q < 7) {
+                    this.var_byte_t = (byte)-1;
+                } else {
+                    this.var_boolean_W = false;
+                }
+                this.var_int_v = 66;
+            } else {
+                this.var_int_v = 67;
+                this.boolean_e(0);
+            }
+            this.var_byte_R = (byte)(this.var_byte_q < 7 ? (this.var_byte_t > -1 ? 10 : 11) : (this.var_boolean_W ? 10 : 11));
+            this.var_boolean_A = true;
+            this.var_byte_v = 1;
+            this.n();
+            this.u();
+            this.var_byte_v = 0;
+            return;
+        }
+        if (this.var_byte_T == 2 && !this.boolean_d(this.var_byte_q < 7 ? 1 : 2)) {
+            this.var_byte_R = this.var_byte_Q;
+            this.var_byte_T = 0;
+            this.var_byte_Q = (byte)23;
+        }
+    }
 
-   private void ao() {
-      byte var1 = this.a[this.a[151] + this.a[this.a[152] + this.Q] + this.Z];
-      if (this.af) {
-         this.V = 8;
-         this.r = 4;
-      }
+    private void an() {
+        if (this.var_byte_Q == 32) {
+            this.var_byte_Q = this.var_byte_U;
+            this.var_boolean_H = true;
+            return;
+        }
+        if (this.var_byte_arr_a[this.var_short_arr_a[153] + 29 + this.var_byte_Q] == 1) {
+            if (this.var_byte_Q == 25) {
+                this.l(-1);
+                this.var_boolean_P = false;
+                this.var_boolean_I = false;
+            }
+            this.var_byte_Q = (byte)28;
+        } else if (this.var_byte_Q == this.var_byte_U) {
+            this.var_byte_R = this.var_byte_Q;
+            this.var_byte_Q = (byte)30;
+        } else if (this.var_byte_Q == 20) {
+            if (this.var_byte_arr_a[this.var_short_arr_a[153] + 145 + 20] == 0) {
+                this.var_byte_z = this.var_byte_y;
+                this.var_byte_B = this.var_byte_A;
+                this.var_byte_J = this.var_byte_I;
+                this.var_byte_L = this.var_byte_K;
+                this.var_byte_Q = (byte)28;
+                this.a(this.var_boolean_arr_d[0], this.var_boolean_arr_d[1], this.var_boolean_arr_d[2], this.var_boolean_arr_d[3], this.var_boolean_arr_d[4], this.var_boolean_arr_d[5], this.var_boolean_arr_d[6], this.var_boolean_arr_d[7], this.var_boolean_arr_d[8]);
+            }
+        } else if (this.var_byte_Q == 16 && this.var_int_v == 60) {
+            this.var_byte_T = 0;
+            this.var_byte_Q = (byte)22;
+            this.var_int_v = 69;
+            this.var_byte_R = (byte)18;
+        } else if (this.var_byte_Q == 2) {
+            this.var_byte_Q = this.var_byte_U;
+            this.var_int_Z = 0;
+        } else if (this.var_byte_Q == this.var_byte_V || this.var_byte_Q == 9) {
+            this.var_byte_Q = (byte)13;
+            this.var_int_Z = 1;
+        } else if (this.var_byte_Q == 14) {
+            this.void_b();
+        } else if (this.var_byte_arr_a[this.var_short_arr_a[153] + 58 + this.var_byte_Q] == 1) {
+            if (this.var_byte_Q == 12) {
+                this.boolean_e(0);
+            }
+            this.var_byte_Q = this.var_byte_R;
+            this.var_byte_R = this.var_byte_S;
+            this.var_int_Z = this.var_int_aa;
+            this.var_byte_m = 0;
+            this.var_boolean_ac = true;
+        } else if (this.var_byte_arr_a[this.var_short_arr_a[153] + 58 + this.var_byte_Q] > 1) {
+            this.var_byte_Q = this.var_byte_arr_a[this.var_short_arr_a[153] + 58 + this.var_byte_Q];
+            this.var_byte_R = this.var_byte_S;
+            this.var_int_Z = this.var_int_aa;
+            this.var_byte_m = 0;
+        }
+        this.var_boolean_H = true;
+    }
 
-      if (this.a[this.a[153] + 87 + this.Q] == 1) {
-         this.Q = this.R;
-      } else if (this.Q == 19) {
-         this.z = this.y;
-         this.B = this.A;
-         this.J = this.I;
-         this.L = this.K;
-         this.Q = 28;
-      } else if (this.Q == 20) {
-         this.ap();
-      } else if (this.Q != 18 && this.Q != 17) {
-         if (this.Q == 15) {
+    private void ao() {
+        byte by = this.var_byte_arr_a[this.var_short_arr_a[151] + this.var_byte_arr_a[this.var_short_arr_a[152] + this.var_byte_Q] + this.var_int_Z];
+        if (this.var_boolean_af) {
+            this.var_byte_V = (byte)8;
+            this.var_byte_r = (byte)4;
+        }
+        if (this.var_byte_arr_a[this.var_short_arr_a[153] + 87 + this.var_byte_Q] == 1) {
+            this.var_byte_Q = this.var_byte_R;
+        } else if (this.var_byte_Q == 19) {
+            this.var_byte_z = this.var_byte_y;
+            this.var_byte_B = this.var_byte_A;
+            this.var_byte_J = this.var_byte_I;
+            this.var_byte_L = this.var_byte_K;
+            this.var_byte_Q = (byte)28;
+        } else if (this.var_byte_Q == 20) {
+            this.ap();
+        } else if (this.var_byte_Q == 18 || this.var_byte_Q == 17) {
+            this.void_b(-1);
+        } else if (this.var_byte_Q == 15) {
             this.aq();
-         } else if (this.Q == 16) {
+        } else if (this.var_byte_Q == 16) {
             this.ar();
-         } else if (this.Q == 12) {
+        } else if (this.var_byte_Q == 12) {
             this.as();
-         } else if (this.Q == 13) {
+        } else if (this.var_byte_Q == 13) {
             this.at();
-         } else if (this.Q == this.V) {
+        } else if (this.var_byte_Q == this.var_byte_V) {
             this.au();
-         } else if (this.Q == 9) {
-            this.q = this.a[this.a[249] + var1 - 25];
-            this.T = 0;
-            this.Q = 22;
-            this.v = 69;
-            this.R = 29;
-         } else if (this.Q == 24) {
+        } else if (this.var_byte_Q == 9) {
+            this.var_byte_q = this.var_byte_arr_a[this.var_short_arr_a[249] + by - 25];
+            this.var_byte_T = 0;
+            this.var_byte_Q = (byte)22;
+            this.var_int_v = 69;
+            this.var_byte_R = (byte)29;
+        } else if (this.var_byte_Q == 24) {
             this.av();
-         } else if (this.Q == 25) {
-            ++this.Z;
-            if (this.Z >= this.a[this.a[307] + this.m]) {
-               this.Z = 0;
+        } else if (this.var_byte_Q == 25) {
+            ++this.var_int_Z;
+            if (this.var_int_Z >= this.var_byte_arr_a[this.var_short_arr_a[307] + this.var_byte_m]) {
+                this.var_int_Z = 0;
             }
-
-            this.d[4] = (short)(33 + this.a[this.a[305] + this.a[this.a[306] + this.m] + this.Z]);
-            this.b[2] = true;
-         } else if (this.Q == 14) {
-            a = (byte)this.Z;
-            this.a.b(0);
-            this.a.b(1);
-            this.Q = 16;
-         } else if (var1 == 6) {
-            this.Q = 28;
-         } else if (var1 == 0) {
-            this.R = this.Q;
-            this.Q = 2;
-            this.aa = this.Z;
-         } else if (var1 == 12) {
-            this.q = 0;
-            this.R = this.Q;
-            if (this.s > -1) {
-               this.Q = 3;
+            this.var_short_arr_d[4] = (short)(33 + this.var_byte_arr_a[this.var_short_arr_a[305] + this.var_byte_arr_a[this.var_short_arr_a[306] + this.var_byte_m] + this.var_int_Z]);
+            this.var_boolean_arr_b[2] = true;
+        } else if (this.var_byte_Q == 14) {
+            var_byte_a = (byte)this.var_int_Z;
+            this.var_c_a.b(0);
+            this.var_c_a.b(1);
+            this.var_byte_Q = (byte)16;
+        } else if (by == 6) {
+            this.var_byte_Q = (byte)28;
+        } else if (by == 0) {
+            this.var_byte_R = this.var_byte_Q;
+            this.var_byte_Q = (byte)2;
+            this.var_int_aa = this.var_int_Z;
+        } else if (by == 12) {
+            this.var_byte_q = 0;
+            this.var_byte_R = this.var_byte_Q;
+            if (this.var_byte_s > -1) {
+                this.var_byte_Q = (byte)3;
             } else {
-               this.Q = 13;
-               this.Z = 1;
+                this.var_byte_Q = (byte)13;
+                this.var_int_Z = 1;
             }
-
-            this.aa = 0;
-         } else if (var1 == 13) {
+            this.var_int_aa = 0;
+        } else if (by == 13) {
             this.aw();
-         } else if (var1 == 10) {
+        } else if (by == 10) {
             this.ax();
-         } else if (var1 == 11) {
-            this.Q = 31;
-         } else if (var1 == 9) {
+        } else if (by == 11) {
+            this.var_byte_Q = (byte)31;
+        } else if (by == 9) {
             this.ay();
-         } else if (var1 == 5) {
-            this.R = this.Q;
-            this.Q = 30;
-            this.aa = this.Z;
-         } else if (var1 == 1) {
+        } else if (by == 5) {
+            this.var_byte_R = this.var_byte_Q;
+            this.var_byte_Q = (byte)30;
+            this.var_int_aa = this.var_int_Z;
+        } else if (by == 1) {
             this.az();
-            this.a[this.a[153] + 116 + this.Q] = 4;
-            this.m = 1;
-            this.a.a(70);
-         } else if (var1 == 3) {
+            this.var_byte_arr_a[this.var_short_arr_a[153] + 116 + this.var_byte_Q] = 4;
+            this.var_byte_m = 1;
+            this.var_c_a.a(70);
+        } else if (by == 3) {
             this.az();
-            this.a[this.a[153] + 116 + this.Q] = 2;
-            this.m = 0;
-            this.a.a(74);
-         } else if (var1 == 2) {
-            this.R = this.Q;
-            this.Q = 12;
-            this.aa = this.Z;
-            this.Z = 1;
-            this.a[this.a[151] + this.a[this.a[152] + 12] + 1] = (byte)(17 + this.e / 2);
-            this.a[this.a[151] + this.a[this.a[152] + 12] + 3] = (byte)(17 + this.l);
-         } else if (var1 == 4) {
+            this.var_byte_arr_a[this.var_short_arr_a[153] + 116 + this.var_byte_Q] = 2;
+            this.var_byte_m = 0;
+            this.var_c_a.a(74);
+        } else if (by == 2) {
+            this.var_byte_R = this.var_byte_Q;
+            this.var_byte_Q = (byte)12;
+            this.var_int_aa = this.var_int_Z;
+            this.var_int_Z = 1;
+            this.var_byte_arr_a[this.var_short_arr_a[151] + this.var_byte_arr_a[this.var_short_arr_a[152] + 12] + 1] = (byte)(17 + this.var_byte_e / 2);
+            this.var_byte_arr_a[this.var_short_arr_a[151] + this.var_byte_arr_a[this.var_short_arr_a[152] + 12] + 3] = (byte)(17 + this.var_int_l);
+        } else if (by == 4) {
             try {
-               this.a.platformRequest(this.a.getAppProperty("GameUrl-" + this.a[a]));
-               Thread.yield();
-            } catch (Exception var3) {
+                this.var_tribes_a.platformRequest(this.var_tribes_a.getAppProperty("GameUrl-" + this.var_java_lang_String_arr_a[var_byte_a]));
+                Thread.yield();
             }
-         } else if (var1 == 7) {
+            catch (Exception exception) {}
+        } else if (by == 7) {
             this.aA();
-         } else if (var1 == 8) {
-            this.R = this.Q;
-            this.Q = 16;
-            this.aa = this.Z;
-            this.v = 63;
-         }
-      } else {
-         this.b((int)-1);
-      }
+        } else if (by == 8) {
+            this.var_byte_R = this.var_byte_Q;
+            this.var_byte_Q = (byte)16;
+            this.var_int_aa = this.var_int_Z;
+            this.var_int_v = 63;
+        }
+        this.var_boolean_H = true;
+    }
 
-      this.H = true;
-   }
-
-   private void ap() {
-      if (this.a[this.a[153] + 145 + 20] == 0) {
-         if (this.ap != 14 && this.ap != 15) {
-            this.f(this.an, 0);
-         } else {
-            this.e((int)this.am);
-            this.f((int)this.am);
-            this.a.v = this.am;
-            this.a.u = 0;
-            if (this.a.a(this.ap == 14 ? 4 : 2)) {
-               this.e[6161 + this.am] = 2;
+    private void ap() {
+        if (this.var_byte_arr_a[this.var_short_arr_a[153] + 145 + 20] == 0) {
+            if (this.var_byte_ap == 14 || this.var_byte_ap == 15) {
+                this.void_e((int)this.var_byte_am);
+                this.f((int)this.var_byte_am);
+                this.var_b_a.var_int_v = this.var_byte_am;
+                this.var_b_a.var_int_u = 0;
+                if (this.var_b_a.boolean_a(this.var_byte_ap == 14 ? 4 : 2)) {
+                    this.var_byte_arr_e[6161 + this.var_byte_am] = 2;
+                }
+            } else {
+                this.f(this.var_byte_an, 0);
             }
-         }
-
-         this.aJ();
-         if (this.w == 3) {
+            this.aJ();
+            if (this.var_byte_w == 3) {
+                this.l(-1);
+                this.ah();
+            } else {
+                this.a(this.var_boolean_arr_d[0], this.var_boolean_arr_d[1], this.var_boolean_arr_d[2], this.var_boolean_arr_d[3], this.var_boolean_arr_d[4], this.var_boolean_arr_d[5], this.var_boolean_arr_d[6], this.var_boolean_arr_d[7], this.var_boolean_arr_d[8]);
+            }
+        } else {
+            this.a(this.var_boolean_arr_d[0], this.var_boolean_arr_d[1], this.var_boolean_arr_d[2], this.var_boolean_arr_d[3], this.var_boolean_arr_d[4], this.var_boolean_arr_d[5], this.var_boolean_arr_d[6], this.var_boolean_arr_d[7], this.var_boolean_arr_d[8]);
+        }
+        this.var_byte_z = this.var_byte_y;
+        this.var_byte_B = this.var_byte_A;
+        this.var_byte_J = this.var_byte_I;
+        this.var_byte_L = this.var_byte_K;
+        this.var_byte_Q = (byte)28;
+        if (this.var_boolean_K) {
+            this.var_int_o = 0;
+            this.aJ();
             this.l(-1);
-            this.ah();
-         } else {
-            this.a(this.d[0], this.d[1], this.d[2], this.d[3], this.d[4], this.d[5], this.d[6], this.d[7], this.d[8]);
-         }
-      } else {
-         this.a(this.d[0], this.d[1], this.d[2], this.d[3], this.d[4], this.d[5], this.d[6], this.d[7], this.d[8]);
-      }
+            this.var_boolean_P = false;
+            this.a(true, false, false, false, true, false, false, false, false);
+            this.var_byte_w = (byte)2;
+            this.var_boolean_arr_b[4] = true;
+            this.Z();
+            this.aj();
+        }
+    }
 
-      this.z = this.y;
-      this.B = this.A;
-      this.J = this.I;
-      this.L = this.K;
-      this.Q = 28;
-      if (this.K) {
-         this.o = 0;
-         this.aJ();
-         this.l(-1);
-         this.P = false;
-         this.a(true, false, false, false, true, false, false, false, false);
-         this.w = 2;
-         this.b[4] = true;
-         this.Z();
-         this.aj();
-      }
-
-   }
-
-   private void aq() {
-      if (this.m < 4) {
-         if (this.m > 0) {
-            if (this.m == 3) {
-               this.a[this.a[153] + 116 + this.Q] = 2;
+    private void aq() {
+        if (this.var_byte_m >= 4) {
+            return;
+        }
+        if (this.var_byte_m > 0) {
+            if (this.var_byte_m == 3) {
+                this.var_byte_arr_a[this.var_short_arr_a[153] + 116 + this.var_byte_Q] = 2;
             }
-
-            this.a.a(70 + this.m);
-            this.v = 71;
-            ++this.m;
-         } else if (this.R && this.m == 0) {
+            this.var_c_a.a(70 + this.var_byte_m);
+            this.var_int_v = 71;
+            this.var_byte_m = (byte)(this.var_byte_m + 1);
+            return;
+        }
+        if (this.var_boolean_R && this.var_byte_m == 0) {
             try {
-               this.a.platformRequest("http://wap.prehistoric-games.com/");
-               Thread.yield();
-            } catch (Exception var2) {
+                this.var_tribes_a.platformRequest("http://wap.prehistoric-games.com/");
+                Thread.yield();
+                return;
             }
-         } else {
-            if (this.m == -1) {
-               if (this.u == 41) {
-                  this.aM();
-                  if (this.q < 5) {
-                     ++this.q;
-                     this.T = 0;
-                     this.Q = 23;
-                     this.v = 69;
-                     this.R = 18;
-                     this.s = this.a[this.a[248] + this.q];
-                     if (this.r < this.s) {
-                        this.r = this.s;
-                     }
-
-                     this.V = (byte)(4 + this.r);
-                     this.e((int)0);
-                  } else if (this.q == 6) {
-                     this.c = -1;
-                     this.Q = this.U;
-                     this.b((int)59);
-                     ++this.q;
-                     this.Q = 18;
-                  } else {
-                     this.c = -1;
-                     this.Q = this.U;
-                  }
-
-                  this.Z = 0;
-                  return;
-               }
-
-               if (this.q == 1 || this.q == 6) {
-                  --this.q;
-               }
-
-               this.aM();
-               this.R = this.U;
-               this.Q = 16;
-               this.v = 58;
-               this.Z = 0;
-               this.c = -1;
+            catch (Exception exception) {
+                return;
             }
+        }
+        if (this.var_byte_m == -1) {
+            if (this.var_byte_u == 41) {
+                this.aM();
+                if (this.var_byte_q < 5) {
+                    this.var_byte_q = (byte)(this.var_byte_q + 1);
+                    this.var_byte_T = 0;
+                    this.var_byte_Q = (byte)23;
+                    this.var_int_v = 69;
+                    this.var_byte_R = (byte)18;
+                    this.var_byte_s = this.var_byte_arr_a[this.var_short_arr_a[248] + this.var_byte_q];
+                    if (this.var_byte_r < this.var_byte_s) {
+                        this.var_byte_r = this.var_byte_s;
+                    }
+                    this.var_byte_V = (byte)(4 + this.var_byte_r);
+                    this.boolean_e(0);
+                } else if (this.var_byte_q == 6) {
+                    this.var_int_c = -1;
+                    this.var_byte_Q = this.var_byte_U;
+                    this.void_b(59);
+                    this.var_byte_q = (byte)(this.var_byte_q + 1);
+                    this.var_byte_Q = (byte)18;
+                } else {
+                    this.var_int_c = -1;
+                    this.var_byte_Q = this.var_byte_U;
+                }
+                this.var_int_Z = 0;
+                return;
+            }
+            if (this.var_byte_q == 1 || this.var_byte_q == 6) {
+                this.var_byte_q = (byte)(this.var_byte_q - 1);
+            }
+            this.aM();
+            this.var_byte_R = this.var_byte_U;
+            this.var_byte_Q = (byte)16;
+            this.var_int_v = 58;
+            this.var_int_Z = 0;
+            this.var_int_c = -1;
+        }
+    }
 
-         }
-      }
-   }
+    private void ar() {
+        if (this.var_int_v == 68) {
+            this.void_b();
+            return;
+        }
+        if (this.var_int_v == 65) {
+            this.aM();
+            this.var_byte_Q = this.var_byte_U;
+            this.var_int_Z = 0;
+            this.var_int_c = -1;
+            this.var_int_g = 0;
+            return;
+        }
+        if (this.var_int_v == 58) {
+            this.var_byte_T = 0;
+            this.var_byte_Q = (byte)22;
+            this.var_int_v = 69;
+            this.var_byte_R = (byte)(this.var_byte_q < 7 ? 18 : 29);
+            return;
+        }
+        if (this.var_int_v == 59) {
+            this.var_byte_e = (byte)2;
+            this.var_boolean_ac = true;
+            this.aQ();
+            this.var_byte_R = this.var_byte_Q = this.var_byte_U;
+            return;
+        }
+        if (this.var_int_v == 64) {
+            this.var_byte_T = 1;
+            this.var_byte_Q = (byte)22;
+            this.var_int_v = 69;
+            this.var_byte_R = (byte)21;
+            return;
+        }
+        if (this.var_int_v == 63) {
+            this.var_byte_Q = (byte)31;
+            return;
+        }
+        if (this.var_int_v == 60) {
+            this.var_byte_p = 1;
+            this.var_byte_T = 0;
+            this.var_byte_Q = (byte)22;
+            this.var_int_v = 69;
+            this.var_byte_R = (byte)18;
+            return;
+        }
+        if (this.var_int_v == 62) {
+            this.var_byte_s = (byte)-1;
+            this.var_byte_t = (byte)-2;
+            this.var_byte_Q = (byte)13;
+            this.var_byte_R = (byte)2;
+            this.var_int_Z = 1;
+            this.boolean_e(0);
+        }
+    }
 
-   private void ar() {
-      if (this.v == 68) {
-         this.b();
-      } else if (this.v == 65) {
-         this.aM();
-         this.Q = this.U;
-         this.Z = 0;
-         this.c = -1;
-         this.g = 0;
-      } else if (this.v == 58) {
-         this.T = 0;
-         this.Q = 22;
-         this.v = 69;
-         this.R = (byte)(this.q < 7 ? 18 : 29);
-      } else if (this.v == 59) {
-         this.e = 2;
-         this.ac = true;
-         this.aQ();
-         this.R = this.Q = this.U;
-      } else if (this.v == 64) {
-         this.T = 1;
-         this.Q = 22;
-         this.v = 69;
-         this.R = 21;
-      } else if (this.v == 63) {
-         this.Q = 31;
-      } else if (this.v == 60) {
-         this.p = 1;
-         this.T = 0;
-         this.Q = 22;
-         this.v = 69;
-         this.R = 18;
-      } else {
-         if (this.v == 62) {
-            this.s = -1;
-            this.t = -2;
-            this.Q = 13;
-            this.R = 2;
-            this.Z = 1;
-            this.e((int)0);
-         }
-
-      }
-   }
-
-   private void as() {
-      if (this.Z == 1) {
-         this.e = (byte)(this.e == 0 ? 2 : 0);
-         this.a[this.a[151] + this.a[this.a[152] + 12] + 1] = (byte)(17 + this.e / 2);
-         if (this.a != null) {
-            this.a.a(this.e);
-         } else {
+    private void as() {
+        if (this.var_int_Z == 1) {
+            this.var_byte_e = (byte)(this.var_byte_e == 0 ? 2 : 0);
+            this.var_byte_arr_a[this.var_short_arr_a[151] + this.var_byte_arr_a[this.var_short_arr_a[152] + 12] + 1] = (byte)(17 + this.var_byte_e / 2);
+            if (this.var_a_a != null) {
+                this.var_a_a.a(this.var_byte_e);
+                return;
+            }
             this.aR();
             this.aQ();
-         }
-      } else {
-         if (this.Z == 3) {
-            this.l = this.l == 0 ? 1 : 0;
-            this.a[this.a[151] + this.a[this.a[152] + 12] + 3] = (byte)(17 + this.l);
-         }
+            return;
+        }
+        if (this.var_int_Z == 3) {
+            this.var_int_l = this.var_int_l == 0 ? 1 : 0;
+            this.var_byte_arr_a[this.var_short_arr_a[151] + this.var_byte_arr_a[this.var_short_arr_a[152] + 12] + 3] = (byte)(17 + this.var_int_l);
+        }
+    }
 
-      }
-   }
-
-   private void at() {
-      this.b = (byte)(this.Z / 2);
-      if (this.q >= 7) {
-         this.Q = 9;
-         this.d = this.b;
-      } else {
-         if (this.r == 0) {
-            this.Q = 16;
-            this.v = 60;
-            this.p = 0;
-            this.s = 0;
-         } else {
-            this.Q = this.V;
-         }
-
-         this.c = this.b;
-         this.e((int)0);
-      }
-
-      this.Z = 0;
-   }
-
-   private void au() {
-      this.q = this.a[this.a[249] + this.a[this.a[151] + this.a[this.a[152] + this.Q] + this.Z] - 25];
-      this.s = this.a[this.a[248] + this.q];
-      if (this.q == 0) {
-         this.Q = 16;
-         this.v = 60;
-         this.p = 0;
-      } else {
-         this.T = 0;
-         this.Q = 22;
-         this.v = 69;
-      }
-
-      this.R = 18;
-      this.e((int)0);
-   }
-
-   private void av() {
-      this.Q = 15;
-      this.Z = 0;
-      this.a[this.a[153] + 116 + this.Q] = 0;
-      this.a[this.a[153] + 145 + this.Q] = 2;
-      this.a[this.a[153] + 58 + this.Q] = 0;
-      this.a.a(75);
-      this.v = 71;
-      this.m = -1;
-
-      for(int var1 = 0; var1 < 2; ++var1) {
-         for(int var2 = 0; var2 < 5; ++var2) {
-            short[] var10000 = this.a[var1];
-            var10000[24] = (short)(var10000[24] + this.a[var1][19 + var2] * this.a[this.a[112] + var2] / 10);
-         }
-      }
-
-   }
-
-   private void aw() {
-      this.q = 7;
-      this.R = this.Q;
-      if (this.W) {
-         this.Q = 3;
-         this.Z = 0;
-      } else if (this.r <= 0 && !this.af) {
-         this.v = 70;
-         this.Q = 21;
-         this.Z = 0;
-      } else {
-         this.Q = 13;
-         this.Z = 1;
-      }
-
-      this.aa = 1;
-   }
-
-   private void ax() {
-      this.Z = 0;
-      this.R = this.Q;
-      if (this.q < 7) {
-         if (this.s > -1) {
-            this.Q = 16;
-            this.v = 62;
-         } else if (this.Q == 4) {
-            this.Q = 16;
-            this.v = 60;
-            this.p = 0;
-         } else {
-            this.Q = this.V;
-         }
-      } else {
-         this.Q = 13;
-         this.Z = this.aa = 1;
-      }
-   }
-
-   private void ay() {
-      if (!this.X) {
-         this.R = this.Q;
-         this.Q = 16;
-         this.v = 65;
-      } else {
-         this.aM();
-         this.Q = this.U;
-         this.Z = 0;
-         this.c = -1;
-         this.g = 0;
-      }
-   }
-
-   private void az() {
-      this.R = this.Q;
-      this.Q = 15;
-      this.aa = this.Z;
-      this.v = 71;
-      this.a[this.a[153] + 145 + this.Q] = 0;
-      this.a[this.a[153] + 58 + this.Q] = 1;
-   }
-
-   private void aA() {
-      label14: {
-         this.R = this.Q;
-         this.aa = this.Z;
-         this.X = true;
-         if (this.q < 7) {
-            if (this.t > -1) {
-               break label14;
+    private void at() {
+        this.var_byte_b = (byte)(this.var_int_Z / 2);
+        if (this.var_byte_q >= 7) {
+            this.var_byte_Q = (byte)9;
+            this.var_byte_d = this.var_byte_b;
+        } else {
+            if (this.var_byte_r == 0) {
+                this.var_byte_Q = (byte)16;
+                this.var_int_v = 60;
+                this.var_byte_p = 0;
+                this.var_byte_s = 0;
+            } else {
+                this.var_byte_Q = this.var_byte_V;
             }
-         } else if (this.W) {
-            break label14;
-         }
+            this.var_byte_c = this.var_byte_b;
+            this.boolean_e(0);
+        }
+        this.var_int_Z = 0;
+    }
 
-         this.T = 1;
-         this.Q = 22;
-         this.v = 69;
-         this.R = 21;
-         return;
-      }
+    private void au() {
+        this.var_byte_q = this.var_byte_arr_a[this.var_short_arr_a[249] + this.var_byte_arr_a[this.var_short_arr_a[151] + this.var_byte_arr_a[this.var_short_arr_a[152] + this.var_byte_Q] + this.var_int_Z] - 25];
+        this.var_byte_s = this.var_byte_arr_a[this.var_short_arr_a[248] + this.var_byte_q];
+        if (this.var_byte_q == 0) {
+            this.var_byte_Q = (byte)16;
+            this.var_int_v = 60;
+            this.var_byte_p = 0;
+        } else {
+            this.var_byte_T = 0;
+            this.var_byte_Q = (byte)22;
+            this.var_int_v = 69;
+        }
+        this.var_byte_R = (byte)18;
+        this.boolean_e(0);
+    }
 
-      this.Q = 16;
-      this.v = 64;
-   }
-
-   private void aB() {
-      if (this.a[this.a[153] + 174 + this.Q] == 1) {
-         if (!this.Q) {
-            --this.y;
-            return;
-         }
-      } else {
-         if (this.Q == 12) {
-            --this.Z;
-         } else if (this.Q == 13 && this.Z == 1) {
-            --this.Z;
-         }
-
-         this.Z = this.Z > 0 ? this.Z - 1 : this.ab - 1;
-      }
-
-   }
-
-   private void aC() {
-      if (this.a[this.a[153] + 174 + this.Q] == 1) {
-         if (!this.R) {
-            ++this.y;
-            return;
-         }
-      } else {
-         this.Z = this.Z < this.ab - 1 ? this.Z + 1 : 0;
-         if (this.Q == 12) {
-            this.Z = this.Z / 2 * 2 + 1;
-            return;
-         }
-
-         if (this.Q == 13 && this.Z == 0) {
-            ++this.Z;
-         }
-      }
-
-   }
-
-   private void aD() {
-      if (this.Q == 31) {
-         if (this.t < this.s && this.q < 7) {
-            this.q = this.s;
-            if (this.q >= 1) {
-               ++this.q;
+    private void av() {
+        this.var_byte_Q = (byte)15;
+        this.var_int_Z = 0;
+        this.var_byte_arr_a[this.var_short_arr_a[153] + 116 + this.var_byte_Q] = 0;
+        this.var_byte_arr_a[this.var_short_arr_a[153] + 145 + this.var_byte_Q] = 2;
+        this.var_byte_arr_a[this.var_short_arr_a[153] + 58 + this.var_byte_Q] = 0;
+        this.var_c_a.a(75);
+        this.var_int_v = 71;
+        this.var_byte_m = (byte)-1;
+        for (int i = 0; i < 2; ++i) {
+            for (int j = 0; j < 5; ++j) {
+                short[] sArray = this.var_short_arr_arr_a[i];
+                sArray[24] = (short)(sArray[24] + this.var_short_arr_arr_a[i][19 + j] * this.var_byte_arr_a[this.var_short_arr_a[112] + j] / 10);
             }
+        }
+    }
 
-            this.T = 0;
-            this.Q = 22;
-            this.v = 69;
-            this.R = 18;
-         } else {
-            this.T = 2;
-            this.Q = 22;
-            this.v = 69;
-            this.R = 28;
-         }
+    private void aw() {
+        this.var_byte_q = (byte)7;
+        this.var_byte_R = this.var_byte_Q;
+        if (this.var_boolean_W) {
+            this.var_byte_Q = (byte)3;
+            this.var_int_Z = 0;
+        } else if (this.var_byte_r > 0 || this.var_boolean_af) {
+            this.var_byte_Q = (byte)13;
+            this.var_int_Z = 1;
+        } else {
+            this.var_int_v = 70;
+            this.var_byte_Q = (byte)21;
+            this.var_int_Z = 0;
+        }
+        this.var_int_aa = 1;
+    }
 
-         this.b = this.c;
-      }
+    private void ax() {
+        this.var_int_Z = 0;
+        this.var_byte_R = this.var_byte_Q;
+        if (this.var_byte_q < 7) {
+            if (this.var_byte_s > -1) {
+                this.var_byte_Q = (byte)16;
+                this.var_int_v = 62;
+                return;
+            }
+            if (this.var_byte_Q == 4) {
+                this.var_byte_Q = (byte)16;
+                this.var_int_v = 60;
+                this.var_byte_p = 0;
+                return;
+            }
+            this.var_byte_Q = this.var_byte_V;
+            return;
+        }
+        this.var_byte_Q = (byte)13;
+        this.var_int_aa = 1;
+        this.var_int_Z = 1;
+    }
 
-      if (this.Q == 28) {
-         this.a(this.a[0], this.a[1], this.a[2], this.a[4], this.a[5], this.a[6], this.a[7], this.a[8], this.a[9]);
-         this.c = false;
-         this.y = this.z;
-         this.A = this.B;
-         this.I = this.J;
-         this.K = this.L;
-         this.A = true;
-         this.v = 1;
-         this.i();
-      } else if (this.Q == 19) {
-         this.Y();
-         this.E();
-      } else if (this.Q == 30) {
-         this.Q = 16;
-         this.v = 68;
-         this.H = true;
-      } else {
-         if (this.Q == 29) {
+    private void ay() {
+        if (!this.var_boolean_X) {
+            this.var_byte_R = this.var_byte_Q;
+            this.var_byte_Q = (byte)16;
+            this.var_int_v = 65;
+            return;
+        }
+        this.aM();
+        this.var_byte_Q = this.var_byte_U;
+        this.var_int_Z = 0;
+        this.var_int_c = -1;
+        this.var_int_g = 0;
+    }
+
+    private void az() {
+        this.var_byte_R = this.var_byte_Q;
+        this.var_byte_Q = (byte)15;
+        this.var_int_aa = this.var_int_Z;
+        this.var_int_v = 71;
+        this.var_byte_arr_a[this.var_short_arr_a[153] + 145 + this.var_byte_Q] = 0;
+        this.var_byte_arr_a[this.var_short_arr_a[153] + 58 + this.var_byte_Q] = 1;
+    }
+
+    private void aA() {
+        this.var_byte_R = this.var_byte_Q;
+        this.var_int_aa = this.var_int_Z;
+        this.var_boolean_X = true;
+        if (this.var_byte_q < 7 ? this.var_byte_t > -1 : this.var_boolean_W) {
+            this.var_byte_Q = (byte)16;
+            this.var_int_v = 64;
+            return;
+        }
+        this.var_byte_T = 1;
+        this.var_byte_Q = (byte)22;
+        this.var_int_v = 69;
+        this.var_byte_R = (byte)21;
+    }
+
+    private void aB() {
+        if (this.var_byte_arr_a[this.var_short_arr_a[153] + 174 + this.var_byte_Q] == 1) {
+            if (!this.var_boolean_Q) {
+                --this.var_int_y;
+                return;
+            }
+        } else {
+            if (this.var_byte_Q == 12) {
+                --this.var_int_Z;
+            } else if (this.var_byte_Q == 13 && this.var_int_Z == 1) {
+                --this.var_int_Z;
+            }
+            this.var_int_Z = this.var_int_Z > 0 ? this.var_int_Z - 1 : this.var_int_ab - 1;
+        }
+    }
+
+    private void aC() {
+        if (this.var_byte_arr_a[this.var_short_arr_a[153] + 174 + this.var_byte_Q] == 1) {
+            if (!this.var_boolean_R) {
+                ++this.var_int_y;
+                return;
+            }
+        } else {
+            int n = this.var_int_Z = this.var_int_Z < this.var_int_ab - 1 ? this.var_int_Z + 1 : 0;
+            if (this.var_byte_Q == 12) {
+                this.var_int_Z = this.var_int_Z / 2 * 2 + 1;
+                return;
+            }
+            if (this.var_byte_Q == 13 && this.var_int_Z == 0) {
+                ++this.var_int_Z;
+            }
+        }
+    }
+
+    private void aD() {
+        if (this.var_byte_Q == 31) {
+            if (this.var_byte_t >= this.var_byte_s || this.var_byte_q >= 7) {
+                this.var_byte_T = (byte)2;
+                this.var_byte_Q = (byte)22;
+                this.var_int_v = 69;
+                this.var_byte_R = (byte)28;
+            } else {
+                this.var_byte_q = this.var_byte_s;
+                if (this.var_byte_q >= 1) {
+                    this.var_byte_q = (byte)(this.var_byte_q + 1);
+                }
+                this.var_byte_T = 0;
+                this.var_byte_Q = (byte)22;
+                this.var_int_v = 69;
+                this.var_byte_R = (byte)18;
+            }
+            this.var_byte_b = this.var_byte_c;
+        }
+        if (this.var_byte_Q == 28) {
+            this.a(this.var_boolean_arr_a[0], this.var_boolean_arr_a[1], this.var_boolean_arr_a[2], this.var_boolean_arr_a[4], this.var_boolean_arr_a[5], this.var_boolean_arr_a[6], this.var_boolean_arr_a[7], this.var_boolean_arr_a[8], this.var_boolean_arr_a[9]);
+            this.var_boolean_c = false;
+            this.var_byte_y = this.var_byte_z;
+            this.var_byte_A = this.var_byte_B;
+            this.var_byte_I = this.var_byte_J;
+            this.var_byte_K = this.var_byte_L;
+            this.var_boolean_A = true;
+            this.var_byte_v = 1;
+            this.i();
+            return;
+        }
+        if (this.var_byte_Q == 19) {
+            this.Y();
+            this.E();
+            return;
+        }
+        if (this.var_byte_Q == 30) {
+            this.var_byte_Q = (byte)16;
+            this.var_int_v = 68;
+            this.var_boolean_H = true;
+            return;
+        }
+        if (this.var_byte_Q == 29) {
             this.a(true, true, false, false);
-            this.A = true;
-            this.Q = 28;
-         }
+            this.var_boolean_A = true;
+            this.var_byte_Q = (byte)28;
+        }
+    }
 
-      }
-   }
-
-   private void aE() {
-      ++this.F;
-      if (this.F > 4) {
-         this.u = true;
-         this.t = false;
-         this.F = 0;
-         this.F = 4;
-         this.k = 0;
-         this.a(true, true, false, false);
-         this.q = 0;
-         this.G = this.y + this.I;
-         this.H = this.A + this.K;
-         this.aI();
-      }
-
-   }
-
-   private void aF() {
-      this.u = false;
-      this.t = false;
-      this.aI();
-      this.L = 0;
-
-      for(this.K = this.C + 1; this.K <= this.C + this.E; ++this.K) {
-         for(this.J = this.B + 1; this.J <= this.B + this.D; ++this.J) {
-            this.H = this.c[this.K][this.J];
-            if (this.H >= 1 && this.H <= 50 && this.e[1919 + this.H] > 0) {
-               if (this.L < 50) {
-                  this.a[4][this.L] = this.H;
-                  this.e[909 + this.H] = 4;
-               }
-
-               ++this.L;
-            }
-         }
-      }
-
-      if (this.a[4][0] == 0) {
-         this.w = 0;
-         this.k = 0;
-         this.F = -1;
-      } else if (this.a[4][1] == 0) {
-         this.e[909 + this.a[4][0]] = 0;
-         this.d(this.a[4][0]);
-         this.a[4][0] = 0;
-         this.F = -1;
-      } else {
-         this.F = 4;
-         this.w = 1;
-         this.M = this.L;
-         if (this.M > 50) {
-            this.M = 50;
-         }
-      }
-
-      this.B = this.C = this.D = this.E = 0;
-   }
-
-   private void aG() {
-      this.w = false;
-      this.I = 0;
-      switch (this.i) {
-         case 7:
-            this.G = 2;
-            break;
-         case 9:
-            this.G = 3;
-            break;
-         default:
-            return;
-      }
-
-      for(this.L = 0; this.L < 50; ++this.L) {
-         this.H = this.F != -1 ? this.a[this.F][this.L] : (this.L == 0 ? this.k : 0);
-         this.a[0][this.L] = this.H;
-         this.e[909 + this.a[this.G][this.L]] = 0;
-         this.a[this.G][this.L] = 0;
-      }
-
-      for(this.L = 0; this.L < 50; ++this.L) {
-         this.H = this.a[0][this.L];
-         if (this.H != 0) {
-            this.e((int)this.H);
-            this.a[this.G][this.L] = this.H;
-            this.e[909 + this.H] = this.G;
-         }
-      }
-
-      this.w = 1;
-      this.F = this.G;
-      this.k = 0;
-      this.a(true, true, false, false);
-   }
-
-   private void aH() {
-      this.w = false;
-      this.I = 0;
-      switch (this.i) {
-         case 7:
-            this.G = 2;
-            break;
-         case 9:
-            this.G = 3;
-            break;
-         default:
-            return;
-      }
-
-      if (this.F == this.G) {
-         this.f(this.a[this.F][0], 0);
-      } else {
-         if (this.a[this.G][0] != 0) {
-            this.F = this.G;
+    private void aE() {
+        ++this.var_int_F;
+        if (this.var_int_F > 4) {
+            this.var_boolean_u = true;
+            this.var_boolean_t = false;
+            this.var_int_F = 0;
+            this.var_byte_F = (byte)4;
+            this.var_byte_k = 0;
+            this.a(true, true, false, false);
+            this.var_int_q = 0;
+            this.var_int_G = this.var_byte_y + this.var_byte_I;
+            this.var_int_H = this.var_byte_A + this.var_byte_K;
             this.aI();
-            this.M = 0;
+        }
+    }
 
-            for(this.L = 0; this.L < 50; ++this.L) {
-               if (this.a[this.F][this.L] != 0) {
-                  this.e[909 + this.a[this.F][this.L]] = this.F;
-                  ++this.M;
-               }
+    private void aF() {
+        this.var_boolean_u = false;
+        this.var_boolean_t = false;
+        this.aI();
+        this.var_int_L = 0;
+        this.var_int_K = this.var_int_C + 1;
+        while (this.var_int_K <= this.var_int_C + this.var_int_E) {
+            this.var_int_J = this.var_int_B + 1;
+            while (this.var_int_J <= this.var_int_B + this.var_int_D) {
+                this.var_byte_H = this.var_byte_arr_arr_c[this.var_int_K][this.var_int_J];
+                if (this.var_byte_H >= 1 && this.var_byte_H <= 50 && this.var_byte_arr_e[1919 + this.var_byte_H] > 0) {
+                    if (this.var_int_L < 50) {
+                        this.var_byte_arr_arr_a[4][this.var_int_L] = this.var_byte_H;
+                        this.var_byte_arr_e[909 + this.var_byte_H] = 4;
+                    }
+                    ++this.var_int_L;
+                }
+                ++this.var_int_J;
             }
-
-            this.w = 1;
-            this.k = 0;
-            this.a(true, true, false, false);
-         }
-
-      }
-   }
-
-   final void e(int var1) {
-      for(int var5 = 0; var5 < 5; ++var5) {
-         byte var10000 = var5 < 4 ? this.a[this.a[125] + var5] : 4;
-         byte var6 = var10000;
-         if (var10000 != -1) {
-            for(int var4 = 0; var4 < 50; ++var4) {
-               if (this.a[var6][var4] == var1) {
-                  while(var4 < 50) {
-                     this.a[var6][var4] = var4 < 49 ? this.a[var6][var4 + 1] : 0;
-                     ++var4;
-                  }
-
-                  if (this.a[var6][0] == 0 && this.F == this.e[909 + var1]) {
-                     if (this.w == 1) {
-                        this.w = 0;
-                     }
-
-                     this.F = -1;
-                  }
-
-                  this.e[909 + var1] = 0;
-                  return;
-               }
+            ++this.var_int_K;
+        }
+        if (this.var_byte_arr_arr_a[4][0] == 0) {
+            this.var_byte_w = 0;
+            this.var_byte_k = 0;
+            this.var_byte_F = (byte)-1;
+        } else if (this.var_byte_arr_arr_a[4][1] == 0) {
+            this.var_byte_arr_e[909 + this.var_byte_arr_arr_a[4][0]] = 0;
+            this.d(this.var_byte_arr_arr_a[4][0]);
+            this.var_byte_arr_arr_a[4][0] = 0;
+            this.var_byte_F = (byte)-1;
+        } else {
+            this.var_byte_F = (byte)4;
+            this.var_byte_w = 1;
+            this.var_int_M = this.var_int_L;
+            if (this.var_int_M > 50) {
+                this.var_int_M = 50;
             }
-         }
-      }
+        }
+        this.var_int_E = 0;
+        this.var_int_D = 0;
+        this.var_int_C = 0;
+        this.var_int_B = 0;
+    }
 
-   }
-
-   private void aI() {
-      for(int var1 = 0; var1 < 50; ++var1) {
-         if (this.a[4][var1] != 0) {
-            this.e[909 + this.a[4][var1]] = 0;
-            this.a[4][var1] = 0;
-         }
-      }
-
-   }
-
-   private void aJ() {
-      if (this.u) {
-         this.u = false;
-         this.F = -1;
-         this.k = 0;
-         this.B = this.C = this.D = this.E = 0;
-      }
-
-   }
-
-   private void aK() {
-      this.y = this.C;
-
-      for(this.A = this.D; this.I < 0; ++this.I) {
-      }
-
-      while(this.K < 0 && !this.s) {
-         ++this.K;
-      }
-
-      while(this.I + this.O > this.c) {
-         --this.I;
-      }
-
-      while(this.K + this.P >= this.d - 1) {
-         --this.K;
-      }
-
-   }
-
-   private void aL() {
-      if (this.w) {
-         ++this.I;
-         if (this.I > 10) {
-            this.w = false;
-            this.I = 0;
-         }
-      }
-
-   }
-
-   private static byte a(int var0) {
-      if (var0 >= 1 && var0 <= 50) {
-         return 0;
-      } else {
-         return (byte)(var0 >= 51 && var0 <= 100 ? 1 : 2);
-      }
-   }
-
-   final byte a(byte var1, byte var2, byte var3, byte var4, byte var5) {
-      byte var7 = (byte)(1 + var1 * 50);
-
-      byte var6;
-      for(var6 = 0; this.e[1919 + var7 + var6] != 0; ++var6) {
-      }
-
-      if (var6 >= 50) {
-         return -1;
-      } else {
-         var6 = (byte)(var6 + var7);
-         if (this.F) {
-            this.P = true;
-         }
-
-         this.e[0 + var6] = this.e[6262 + var6] = this.e[3131 + var6] = var2;
-         this.e[101 + var6] = this.e[6363 + var6] = this.e[3232 + var6] = var3;
-         this.e[202 + var6] = this.e[303 + var6] = 0;
-         this.e[808 + var6] = 0;
-         this.e[909 + var6] = 0;
-         this.e[1111 + var6] = 0;
-         this.e[4949 + var6] = (byte)(4 + (var5 & 7));
-         this.e[606 + var6] = 3;
-         this.e[1313 + var6] = 0;
-         this.e[1414 + var6] = var4;
-         this.e[1616 + var6] = (byte)((var5 & 7) * 2 + this.a((int)255, (int)2));
-         this.e[1717 + var6] = (byte)((var5 & 7) * 2 + this.a((int)255, (int)2));
-         this.e[1818 + var6] = (byte)(3 + (var5 & 7));
-         this.e[2020 + var6] = (byte)(50 + 25 * (1 - var1) + this.a((int)255, (int)25));
-         this.e[2121 + var6] = (byte)(50 + 25 * (1 - var1) + this.a((int)255, (int)25));
-         this.e[505 + var6] = (byte)(50 + 25 * (1 - var1) + this.a((int)255, (int)25));
-         int var8 = (var5 & 32) != 0 ? 3 : 0;
-         int var9 = this.a((int)255, (int)3);
-         int var10 = this.a((int)255, (int)3);
-         this.e[6969 + var6] = (byte)(var9 == 0 ? 2 + this.a((int)255, (int)(2 + var8)) : 1);
-         this.e[7070 + var6] = (byte)(var9 == 1 ? 2 + this.a((int)255, (int)(2 + var8)) : 1);
-         this.e[7272 + var6] = (byte)(var9 == 2 ? 2 + this.a((int)255, (int)(2 + var8)) : 1);
-         this.e[7171 + var6] = (byte)(var10 == 0 ? 2 + this.a((int)255, (int)(2 + var8)) : 1);
-         this.e[7373 + var6] = (byte)(var10 == 1 ? 2 + var1 + this.a((int)255, (int)(2 + var8)) : 1 + var1);
-         this.e[7474 + var6] = (byte)(var10 == 2 ? 2 + this.a((int)255, (int)(2 + var8)) : 1);
-         this.e[7575 + var6] = (byte)(1 + (var5 >> 3 & 3) * 3 + this.a((int)255, (int)3));
-         this.e[6464 + var6] = 69;
-         this.e[3434 + var6] = -1;
-         this.e[3535 + var6] = 0;
-         this.e[3636 + var6] = 0;
-         this.e[3737 + var6] = (byte)(2 + this.a((int)255, (int)2));
-         this.e[3838 + var6] = var6;
-         this.e[4545 + var6] = 0;
-         this.e[4646 + var6] = -1;
-         this.e[4747 + var6] = var6;
-         this.e[4848 + var6] = 0;
-         int var11 = 0;
-         int var12 = 0;
-         var11 = this.a((int)255, (int)3);
-         var12 = this.a((int)15, (int)4);
-         this.e[5151 + var6] = (byte)(var12 << 2 | var11);
-         if ((this.a[var1][12] <= this.a[var1][13] || this.aw == 0) && this.aw != 1) {
-            this.e[1515 + var6] = 0;
-            ++this.a[var1][12];
-         } else {
-            this.e[1515 + var6] = 1;
-            ++this.a[var1][13];
-         }
-
-         if (var4 < 12) {
-            this.e[2828 + var6] = 17;
-            this.e[2929 + var6] = 14;
-            this.e[6767 + var6] = this.e[1919 + var6] = (byte)(5 + this.a((int)255, (int)10));
-            this.e[1010 + var6] = 8;
-         } else {
-            this.e[2828 + var6] = 69;
-            this.e[2929 + var6] = 8;
-            this.e[6767 + var6] = this.e[1919 + var6] = (byte)((this.q == 0 && var1 == 1 ? 20 : 40) + (this.e[1515 + var6] - 1) * -10 + this.a((int)255, (int)15));
-            this.e[1010 + var6] = (byte)((var5 & 7) == 0 ? 8 : 9 - (var5 & 7));
-         }
-
-         this.e[4444 + var6] = var6;
-         this.e[6565 + var6] = 9;
-         if ((var5 & 64) != 0) {
-            this.e[6565 + var6] = (byte)this.a((int)255, (int)(4 + var1 * 2));
-         }
-
-         if (this.q == 3) {
-            this.e[6565 + var6] = 0;
-         }
-
-         if ((this.q == 4 || this.q == 5) && this.e[6565 + var6] == 1) {
-            this.e[6565 + var6] = 3;
-         }
-
-         this.e[3333 + var6] = -1;
-         this.e[7979 + var6] = this.e[8282 + var6] = 0;
-         this.e[8080 + var6] = 0;
-         this.e[2222 + var6] = this.e[2323 + var6] = this.e[2424 + var6] = this.e[2525 + var6] = this.e[2626 + var6] = 0;
-         this.g((int)var6);
-         this.b(var6);
-         if (this.c[var3][var2] == 0) {
-            this.c[var3][var2] = var6;
-         }
-
-         if (!this.s) {
-            ++this.a[var1][11];
-            if (var1 == 0) {
-               this.a((byte)1, (byte)var2, (byte)var3, (byte)var6);
+    private void aG() {
+        this.var_boolean_w = false;
+        this.var_int_I = 0;
+        switch (this.var_byte_i) {
+            case 7: {
+                this.var_byte_G = (byte)2;
+                break;
             }
+            case 9: {
+                this.var_byte_G = (byte)3;
+                break;
+            }
+            default: {
+                return;
+            }
+        }
+        this.var_int_L = 0;
+        while (this.var_int_L < 50) {
+            this.var_byte_arr_arr_a[0][this.var_int_L] = this.var_byte_H = this.var_byte_F != -1 ? this.var_byte_arr_arr_a[this.var_byte_F][this.var_int_L] : (this.var_int_L == 0 ? this.var_byte_k : (byte)0);
+            this.var_byte_arr_e[909 + this.var_byte_arr_arr_a[this.var_byte_G][this.var_int_L]] = 0;
+            this.var_byte_arr_arr_a[this.var_byte_G][this.var_int_L] = 0;
+            ++this.var_int_L;
+        }
+        this.var_int_L = 0;
+        while (this.var_int_L < 50) {
+            this.var_byte_H = this.var_byte_arr_arr_a[0][this.var_int_L];
+            if (this.var_byte_H != 0) {
+                this.void_e((int)this.var_byte_H);
+                this.var_byte_arr_arr_a[this.var_byte_G][this.var_int_L] = this.var_byte_H;
+                this.var_byte_arr_e[909 + this.var_byte_H] = this.var_byte_G;
+            }
+            ++this.var_int_L;
+        }
+        this.var_byte_w = 1;
+        this.var_byte_F = this.var_byte_G;
+        this.var_byte_k = 0;
+        this.a(true, true, false, false);
+    }
 
-            ++this.a[var1][19];
-         }
-
-         if (var1 == 0) {
-            this.a.a((int)this.e[0 + var6], (int)this.e[101 + var6], (int)this.e[4949 + var6]);
-         }
-
-         return var6;
-      }
-   }
-
-   final void a(byte var1) {
-      byte var2 = (byte)((var1 - 1) / 50);
-      int var3 = this.e[0 + var1] + this.a[this.a[1] + this.e[606 + var1]];
-      int var4 = this.e[101 + var1] + this.a[this.a[1] + 8 + this.e[606 + var1]];
-      if ((this.e[2929 + var1] & 255) <= 7 && (this.e[1111 + var1] & 15) < (this.a[this.a[15] + (this.e[606 + var1] & 1) * 9 + this.e[1010 + var1] - this.e[7777 + var1]] + 1) / 2 && this.c[var4][var3] == -128) {
-         this.c[var4][var3] = (byte)(this.e[4545 + var1] >= 111 ? -this.e[4545 + var1] : 0);
-      }
-
-      this.e((int)var1);
-      this.f((int)var1);
-      this.e[1919 + var1] = -1;
-      this.c((int)var1);
-      if (this.F || var1 == this.e[8810 + this.q]) {
-         this.P = true;
-      }
-
-      if (!this.s) {
-         if (var2 == 0) {
-            this.a((byte)3, (byte)this.e[0 + var1], (byte)this.e[101 + var1], (byte)var1);
-         }
-
-         ++this.a[1 - var2][22];
-      }
-
-   }
-
-   private void f(int var1, int var2) {
-      this.J = this.I;
-      this.L = this.K;
-      if (var1 > 100) {
-         this.I = (byte)(this.e[9359 + var1 - 101] - this.C);
-         this.K = (byte)(this.e[9381 + var1 - 101] - this.D + var2);
-      } else if (var1 > 0) {
-         this.I = (byte)(this.e[0 + var1] - this.C);
-         this.K = (byte)(this.e[101 + var1] - this.D + var2);
-      } else if (var1 == -100) {
-         this.I -= this.C;
-         this.K = (byte)(this.K - (this.D - var2));
-      } else {
-         if (var1 >= 0) {
+    private void aH() {
+        this.var_boolean_w = false;
+        this.var_int_I = 0;
+        switch (this.var_byte_i) {
+            case 7: {
+                this.var_byte_G = (byte)2;
+                break;
+            }
+            case 9: {
+                this.var_byte_G = (byte)3;
+                break;
+            }
+            default: {
+                return;
+            }
+        }
+        if (this.var_byte_F == this.var_byte_G) {
+            this.f(this.var_byte_arr_arr_a[this.var_byte_F][0], 0);
             return;
-         }
-
-         this.I = (byte)(this.e[8383 + -var1] + (this.a[this.a[138] + 104 + this.e[8749 + -var1]] >> 1) - this.C);
-         this.K = (byte)(this.e[8444 + -var1] + (this.a[this.a[138] + 130 + this.e[8749 + -var1]] >> 1) - this.D + var2);
-      }
-
-      this.aK();
-      this.A = true;
-   }
-
-   final void b(int var1, int var2) {
-      for(byte var3 = 1; var3 <= 50; ++var3) {
-         if (this.e[1919 + var3] > 0) {
-            this.c[this.e[101 + var3]][this.e[0 + var3]] = 0;
-         }
-      }
-
-      for(byte var4 = 1; var4 <= 50; ++var4) {
-         if (this.e[1919 + var4] > 0) {
-            if (this.c[var2][var1] != 0) {
-               this.a.v = 0;
-               this.a.a((int)1, (int)127, (int)var1, (int)var2);
-               var1 = this.e[3131];
-               var2 = this.e[3232];
+        }
+        if (this.var_byte_arr_arr_a[this.var_byte_G][0] != 0) {
+            this.var_byte_F = this.var_byte_G;
+            this.aI();
+            this.var_int_M = 0;
+            this.var_int_L = 0;
+            while (this.var_int_L < 50) {
+                if (this.var_byte_arr_arr_a[this.var_byte_F][this.var_int_L] != 0) {
+                    this.var_byte_arr_e[909 + this.var_byte_arr_arr_a[this.var_byte_F][this.var_int_L]] = this.var_byte_F;
+                    ++this.var_int_M;
+                }
+                ++this.var_int_L;
             }
-
-            if ((this.e[2929 + var4] & 255) <= 7 && (this.e[1111 + var4] & 15) < (this.a[this.a[15] + (this.e[606 + var4] & 1) * 9 + this.e[1010 + var4] - this.e[7777 + var4]] + 1) / 2 && this.c[this.e[101 + var4] + this.a[this.a[1] + 8 + this.e[606 + var4]]][this.e[0 + var4] + this.a[this.a[1] + this.e[606 + var4]]] == -128) {
-               this.c[this.e[101 + var4] + this.a[this.a[1] + 8 + this.e[606 + var4]]][this.e[0 + var4] + this.a[this.a[1] + this.e[606 + var4]]] = 0;
-            }
-
-            this.e[0 + var4] = this.e[6262 + var4] = this.e[3131 + var4] = (byte)var1;
-            this.e[101 + var4] = this.e[6363 + var4] = this.e[3232 + var4] = (byte)var2;
-            this.e[202 + var4] = this.e[303 + var4] = 0;
-            this.e[808 + var4] = 0;
-            this.e[2828 + var4] = 69;
-            this.e[2929 + var4] = 8;
-            this.e[3030 + var4] = 0;
-            this.e[6161 + var4] = 0;
-            this.c[this.e[101 + var4]][this.e[0 + var4]] = var4;
-            this.a.a((int)this.e[0 + var4], (int)this.e[101 + var4], (int)this.e[4949 + var4]);
-         }
-      }
-
-   }
-
-   final void f(int var1) {
-      if (this.k == var1) {
-         this.k = 0;
-         if (this.w == 1) {
-            this.w = 0;
-            this.l = 0;
+            this.var_byte_w = 1;
+            this.var_byte_k = 0;
             this.a(true, true, false, false);
-            return;
-         }
+        }
+    }
 
-         if (this.w == 2 && this.e[8749 + this.q] == 6) {
-            this.w = 0;
-            this.a(true, true, false, false);
-         }
-      }
-
-   }
-
-   final void b(byte var1) {
-      int var2 = 2;
-      if (var1 >= 51) {
-         var2 = var1 == 51 ? 4 : 3;
-      } else if (this.e[1414 + var1] < 12) {
-         var2 = 0;
-      } else if (this.e[1414 + var1] < 35) {
-         var2 = 1;
-      }
-
-      this.e[2727 + var1] = (byte)(this.a[this.a[189] + this.e[1515 + var1] * 10 + var2 * 2] + this.a((int)255, (int)this.a[this.a[189] + this.e[1515 + var1] * 10 + var2 * 2 + 1]));
-      if (var1 == this.l) {
-         this.b[4] = this.a[4];
-      }
-
-   }
-
-   final void g(int var1) {
-      this.e[6868 + var1] = var1 != 51 && var1 != 52 ? (var1 > 51 ? -1 : (byte)((var1 > 3 ? 1 + this.a((int)65535, (int)58) : var1) % 60 + 60 * this.e[1515 + var1] - 1)) : -2;
-   }
-
-   private static byte b(int var0) {
-      if (var0 <= -1 && var0 >= -30) {
-         return 0;
-      } else {
-         return (byte)(var0 <= -31 && var0 >= -60 ? 1 : 2);
-      }
-   }
-
-   final byte a(byte var1, int var2, int var3, int var4, int var5, boolean var6, int var7) {
-      byte var8 = this.a[this.a[138] + 104 + var2];
-      byte var9 = this.a[this.a[138] + 130 + var2];
-      byte var11 = (byte)(1 + var1 * 30);
-      byte var10 = 0;
-
-      try {
-         while(this.e[8505 + var11 + var10] != 0) {
-            ++var10;
-         }
-
-         if (var10 >= 30) {
-            if (var1 == 0) {
-               this.s = 100;
-               this.l(-1);
-               this.u[0] = 0;
-               this.a((byte)10, (byte)0, (byte)0, (byte)0);
+    final void void_e(int n) {
+        for (int i = 0; i < 5; ++i) {
+            int n2 = i < 4 ? this.var_byte_arr_a[this.var_short_arr_a[125] + i] : 4;
+            if (n2 == -1) continue;
+            for (int j = 0; j < 50; ++j) {
+                if (this.var_byte_arr_arr_a[n2][j] != n) continue;
+                while (j < 50) {
+                    this.var_byte_arr_arr_a[n2][j] = j < 49 ? this.var_byte_arr_arr_a[n2][j + 1] : (byte)0;
+                    ++j;
+                }
+                if (this.var_byte_arr_arr_a[n2][0] == 0 && this.var_byte_F == this.var_byte_arr_e[909 + n]) {
+                    if (this.var_byte_w == 1) {
+                        this.var_byte_w = 0;
+                    }
+                    this.var_byte_F = (byte)-1;
+                }
+                this.var_byte_arr_e[909 + n] = 0;
+                return;
             }
+        }
+    }
 
+    private void aI() {
+        for (int i = 0; i < 50; ++i) {
+            if (this.var_byte_arr_arr_a[4][i] == 0) continue;
+            this.var_byte_arr_e[909 + this.var_byte_arr_arr_a[4][i]] = 0;
+            this.var_byte_arr_arr_a[4][i] = 0;
+        }
+    }
+
+    private void aJ() {
+        if (this.var_boolean_u) {
+            this.var_boolean_u = false;
+            this.var_byte_F = (byte)-1;
+            this.var_byte_k = 0;
+            this.var_int_E = 0;
+            this.var_int_D = 0;
+            this.var_int_C = 0;
+            this.var_int_B = 0;
+        }
+    }
+
+    private void aK() {
+        this.var_byte_y = this.var_byte_C;
+        this.var_byte_A = this.var_byte_D;
+        while (this.var_byte_I < 0) {
+            this.var_byte_I = (byte)(this.var_byte_I + 1);
+        }
+        while (this.var_byte_K < 0 && !this.var_boolean_s) {
+            this.var_byte_K = (byte)(this.var_byte_K + 1);
+        }
+        while (this.var_byte_I + this.var_byte_O > this.var_short_c) {
+            this.var_byte_I = (byte)(this.var_byte_I - 1);
+        }
+        while (this.var_byte_K + this.var_byte_P >= this.var_short_d - 1) {
+            this.var_byte_K = (byte)(this.var_byte_K - 1);
+        }
+    }
+
+    private void aL() {
+        if (this.var_boolean_w) {
+            ++this.var_int_I;
+            if (this.var_int_I > 10) {
+                this.var_boolean_w = false;
+                this.var_int_I = 0;
+            }
+        }
+    }
+
+    private static byte byte_a(int n) {
+        if (n >= 1 && n <= 50) {
+            return 0;
+        }
+        if (n >= 51 && n <= 100) {
+            return 1;
+        }
+        return 2;
+    }
+
+    final byte a(byte by, byte by2, byte by3, byte by4, byte by5) {
+        byte by6 = (byte)(1 + by * 50);
+        byte by7 = 0;
+        while (this.var_byte_arr_e[1919 + by6 + by7] != 0) {
+            by7 = (byte)(by7 + 1);
+        }
+        if (by7 >= 50) {
             return -1;
-         } else {
-            var10 = (byte)(var10 + var11);
-            if (var7 == -1) {
-               if (!this.a(var2, var3, var4, !var6)) {
-                  return -2;
-               }
-            } else {
-               var10 = (byte)var7;
+        }
+        by7 = (byte)(by7 + by6);
+        if (this.var_boolean_F) {
+            this.var_boolean_P = true;
+        }
+        byte by8 = by2;
+        this.var_byte_arr_e[3131 + by7] = by8;
+        this.var_byte_arr_e[6262 + by7] = by8;
+        this.var_byte_arr_e[0 + by7] = by8;
+        byte by9 = by3;
+        this.var_byte_arr_e[3232 + by7] = by9;
+        this.var_byte_arr_e[6363 + by7] = by9;
+        this.var_byte_arr_e[101 + by7] = by9;
+        this.var_byte_arr_e[303 + by7] = 0;
+        this.var_byte_arr_e[202 + by7] = 0;
+        this.var_byte_arr_e[808 + by7] = 0;
+        this.var_byte_arr_e[909 + by7] = 0;
+        this.var_byte_arr_e[1111 + by7] = 0;
+        this.var_byte_arr_e[4949 + by7] = (byte)(4 + (by5 & 7));
+        this.var_byte_arr_e[606 + by7] = 3;
+        this.var_byte_arr_e[1313 + by7] = 0;
+        this.var_byte_arr_e[1414 + by7] = by4;
+        this.var_byte_arr_e[1616 + by7] = (byte)((by5 & 7) * 2 + this.int_a(255, 2));
+        this.var_byte_arr_e[1717 + by7] = (byte)((by5 & 7) * 2 + this.int_a(255, 2));
+        this.var_byte_arr_e[1818 + by7] = (byte)(3 + (by5 & 7));
+        this.var_byte_arr_e[2020 + by7] = (byte)(50 + 25 * (1 - by) + this.int_a(255, 25));
+        this.var_byte_arr_e[2121 + by7] = (byte)(50 + 25 * (1 - by) + this.int_a(255, 25));
+        this.var_byte_arr_e[505 + by7] = (byte)(50 + 25 * (1 - by) + this.int_a(255, 25));
+        int n = (by5 & 0x20) != 0 ? 3 : 0;
+        int n2 = this.int_a(255, 3);
+        int n3 = this.int_a(255, 3);
+        this.var_byte_arr_e[6969 + by7] = (byte)(n2 == 0 ? 2 + this.int_a(255, 2 + n) : 1);
+        this.var_byte_arr_e[7070 + by7] = (byte)(n2 == 1 ? 2 + this.int_a(255, 2 + n) : 1);
+        this.var_byte_arr_e[7272 + by7] = (byte)(n2 == 2 ? 2 + this.int_a(255, 2 + n) : 1);
+        this.var_byte_arr_e[7171 + by7] = (byte)(n3 == 0 ? 2 + this.int_a(255, 2 + n) : 1);
+        this.var_byte_arr_e[7373 + by7] = (byte)(n3 == 1 ? 2 + by + this.int_a(255, 2 + n) : 1 + by);
+        this.var_byte_arr_e[7474 + by7] = (byte)(n3 == 2 ? 2 + this.int_a(255, 2 + n) : 1);
+        this.var_byte_arr_e[7575 + by7] = (byte)(1 + (by5 >> 3 & 3) * 3 + this.int_a(255, 3));
+        this.var_byte_arr_e[6464 + by7] = 69;
+        this.var_byte_arr_e[3434 + by7] = -1;
+        this.var_byte_arr_e[3535 + by7] = 0;
+        this.var_byte_arr_e[3636 + by7] = 0;
+        this.var_byte_arr_e[3737 + by7] = (byte)(2 + this.int_a(255, 2));
+        this.var_byte_arr_e[3838 + by7] = by7;
+        this.var_byte_arr_e[4545 + by7] = 0;
+        this.var_byte_arr_e[4646 + by7] = -1;
+        this.var_byte_arr_e[4747 + by7] = by7;
+        this.var_byte_arr_e[4848 + by7] = 0;
+        int n4 = 0;
+        int n5 = 0;
+        n4 = this.int_a(255, 3);
+        n5 = this.int_a(15, 4);
+        this.var_byte_arr_e[5151 + by7] = (byte)(n5 << 2 | n4);
+        if ((this.var_short_arr_arr_a[by][12] <= this.var_short_arr_arr_a[by][13] || this.var_byte_aw == 0) && this.var_byte_aw != 1) {
+            this.var_byte_arr_e[1515 + by7] = 0;
+            short[] sArray = this.var_short_arr_arr_a[by];
+            sArray[12] = (short)(sArray[12] + 1);
+        } else {
+            this.var_byte_arr_e[1515 + by7] = 1;
+            short[] sArray = this.var_short_arr_arr_a[by];
+            sArray[13] = (short)(sArray[13] + 1);
+        }
+        if (by4 < 12) {
+            this.var_byte_arr_e[2828 + by7] = 17;
+            this.var_byte_arr_e[2929 + by7] = 14;
+            byte by10 = (byte)(5 + this.int_a(255, 10));
+            this.var_byte_arr_e[1919 + by7] = by10;
+            this.var_byte_arr_e[6767 + by7] = by10;
+            this.var_byte_arr_e[1010 + by7] = 8;
+        } else {
+            this.var_byte_arr_e[2828 + by7] = 69;
+            this.var_byte_arr_e[2929 + by7] = 8;
+            byte by11 = (byte)((this.var_byte_q == 0 && by == 1 ? 20 : 40) + (this.var_byte_arr_e[1515 + by7] - 1) * -10 + this.int_a(255, 15));
+            this.var_byte_arr_e[1919 + by7] = by11;
+            this.var_byte_arr_e[6767 + by7] = by11;
+            this.var_byte_arr_e[1010 + by7] = (byte)((by5 & 7) == 0 ? 8 : 9 - (by5 & 7));
+        }
+        this.var_byte_arr_e[4444 + by7] = by7;
+        this.var_byte_arr_e[6565 + by7] = 9;
+        if ((by5 & 0x40) != 0) {
+            this.var_byte_arr_e[6565 + by7] = (byte)this.int_a(255, 4 + by * 2);
+        }
+        if (this.var_byte_q == 3) {
+            this.var_byte_arr_e[6565 + by7] = 0;
+        }
+        if ((this.var_byte_q == 4 || this.var_byte_q == 5) && this.var_byte_arr_e[6565 + by7] == 1) {
+            this.var_byte_arr_e[6565 + by7] = 3;
+        }
+        this.var_byte_arr_e[3333 + by7] = -1;
+        this.var_byte_arr_e[8282 + by7] = 0;
+        this.var_byte_arr_e[7979 + by7] = 0;
+        this.var_byte_arr_e[8080 + by7] = 0;
+        this.var_byte_arr_e[2626 + by7] = 0;
+        this.var_byte_arr_e[2525 + by7] = 0;
+        this.var_byte_arr_e[2424 + by7] = 0;
+        this.var_byte_arr_e[2323 + by7] = 0;
+        this.var_byte_arr_e[2222 + by7] = 0;
+        this.g((int)by7);
+        this.b(by7);
+        if (this.var_byte_arr_arr_c[by3][by2] == 0) {
+            this.var_byte_arr_arr_c[by3][by2] = by7;
+        }
+        if (!this.var_boolean_s) {
+            short[] sArray = this.var_short_arr_arr_a[by];
+            sArray[11] = (short)(sArray[11] + 1);
+            if (by == 0) {
+                this.a((byte)1, by2, by3, by7);
             }
+            short[] sArray2 = this.var_short_arr_arr_a[by];
+            sArray2[19] = (short)(sArray2[19] + 1);
+        }
+        if (by == 0) {
+            this.var_b_a.void_a((int)this.var_byte_arr_e[0 + by7], (int)this.var_byte_arr_e[101 + by7], (int)this.var_byte_arr_e[4949 + by7]);
+        }
+        return by7;
+    }
 
-            if (var2 >= 20 && var2 <= 22) {
-               if (var7 == -1) {
-                  for(var10 = 0; var10 < 30 && this.f[0][var10] != 0; ++var10) {
-                  }
-               } else {
-                  var10 = (byte)var7;
-               }
+    final void a(byte by) {
+        byte by2 = (byte)((by - 1) / 50);
+        int n = this.var_byte_arr_e[0 + by] + this.var_byte_arr_a[this.var_short_arr_a[1] + this.var_byte_arr_e[606 + by]];
+        int n2 = this.var_byte_arr_e[101 + by] + this.var_byte_arr_a[this.var_short_arr_a[1] + 8 + this.var_byte_arr_e[606 + by]];
+        if ((this.var_byte_arr_e[2929 + by] & 0xFF) <= 7 && (this.var_byte_arr_e[1111 + by] & 0xF) < (this.var_byte_arr_a[this.var_short_arr_a[15] + (this.var_byte_arr_e[606 + by] & 1) * 9 + this.var_byte_arr_e[1010 + by] - this.var_byte_arr_e[7777 + by]] + 1) / 2 && this.var_byte_arr_arr_c[n2][n] == -128) {
+            this.var_byte_arr_arr_c[n2][n] = this.var_byte_arr_e[4545 + by] >= 111 ? -this.var_byte_arr_e[4545 + by] : (byte)0;
+        }
+        this.void_e((int)by);
+        this.f((int)by);
+        this.var_byte_arr_e[1919 + by] = -1;
+        this.void_c((int)by);
+        if (this.var_boolean_F || by == this.var_byte_arr_e[8810 + this.var_int_q]) {
+            this.var_boolean_P = true;
+        }
+        if (!this.var_boolean_s) {
+            if (by2 == 0) {
+                this.a((byte)3, this.var_byte_arr_e[0 + by], this.var_byte_arr_e[101 + by], by);
+            }
+            short[] sArray = this.var_short_arr_arr_a[1 - by2];
+            sArray[22] = (short)(sArray[22] + 1);
+        }
+    }
 
-               if (var10 == 30) {
-                  return -1;
-               } else {
-                  this.f[0][var10] = (byte)this.q;
-                  this.f[2][var10] = (byte)var3;
-                  this.f[3][var10] = (byte)var4;
-                  this.f[1][var10] = (byte)var2;
-                  if (!var6) {
-                     ++this.a[0][this.au][6 + this.s - 20];
-                     this.c[var4][var3] = (byte)(var1 == 0 ? -123 : -126);
-                  } else {
-                     this.c[var4][var3] = (byte)(20 - var2 - 111 - var1 * 6);
-                  }
+    private void f(int n, int n2) {
+        this.var_byte_J = this.var_byte_I;
+        this.var_byte_L = this.var_byte_K;
+        if (n > 100) {
+            this.var_byte_I = (byte)(this.var_byte_arr_e[9359 + n - 101] - this.var_byte_C);
+            this.var_byte_K = (byte)(this.var_byte_arr_e[9381 + n - 101] - this.var_byte_D + n2);
+        } else if (n > 0) {
+            this.var_byte_I = (byte)(this.var_byte_arr_e[0 + n] - this.var_byte_C);
+            this.var_byte_K = (byte)(this.var_byte_arr_e[101 + n] - this.var_byte_D + n2);
+        } else if (n == -100) {
+            this.var_byte_I = (byte)(this.var_byte_I - this.var_byte_C);
+            this.var_byte_K = (byte)(this.var_byte_K - (this.var_byte_D - n2));
+        } else if (n < 0) {
+            this.var_byte_I = (byte)(this.var_byte_arr_e[8383 + -n] + (this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + this.var_byte_arr_e[8749 + -n]] >> 1) - this.var_byte_C);
+            this.var_byte_K = (byte)(this.var_byte_arr_e[8444 + -n] + (this.var_byte_arr_a[this.var_short_arr_a[138] + 130 + this.var_byte_arr_e[8749 + -n]] >> 1) - this.var_byte_D + n2);
+        } else {
+            return;
+        }
+        this.aK();
+        this.var_boolean_A = true;
+    }
 
-                  this.c(var3, var4, 1, 1);
-                  return var10;
-               }
+    final void void_b(int n, int n2) {
+        int n3;
+        for (n3 = 1; n3 <= 50; n3 = (int)((byte)(n3 + 1))) {
+            if (this.var_byte_arr_e[1919 + n3] <= 0) continue;
+            this.var_byte_arr_arr_c[this.var_byte_arr_e[101 + n3]][this.var_byte_arr_e[0 + n3]] = 0;
+        }
+        for (n3 = 1; n3 <= 50; n3 = (int)((byte)(n3 + 1))) {
+            if (this.var_byte_arr_e[1919 + n3] <= 0) continue;
+            if (this.var_byte_arr_arr_c[n2][n] != 0) {
+                this.var_b_a.var_int_v = 0;
+                this.var_b_a.boolean_a(1, 127, n, n2);
+                n = this.var_byte_arr_e[3131];
+                n2 = this.var_byte_arr_e[3232];
+            }
+            if ((this.var_byte_arr_e[2929 + n3] & 0xFF) <= 7 && (this.var_byte_arr_e[1111 + n3] & 0xF) < (this.var_byte_arr_a[this.var_short_arr_a[15] + (this.var_byte_arr_e[606 + n3] & 1) * 9 + this.var_byte_arr_e[1010 + n3] - this.var_byte_arr_e[7777 + n3]] + 1) / 2 && this.var_byte_arr_arr_c[this.var_byte_arr_e[101 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + 8 + this.var_byte_arr_e[606 + n3]]][this.var_byte_arr_e[0 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + this.var_byte_arr_e[606 + n3]]] == -128) {
+                this.var_byte_arr_arr_c[this.var_byte_arr_e[101 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + 8 + this.var_byte_arr_e[606 + n3]]][this.var_byte_arr_e[0 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + this.var_byte_arr_e[606 + n3]]] = 0;
+            }
+            byte by = (byte)n;
+            this.var_byte_arr_e[3131 + n3] = by;
+            this.var_byte_arr_e[6262 + n3] = by;
+            this.var_byte_arr_e[0 + n3] = by;
+            byte by2 = (byte)n2;
+            this.var_byte_arr_e[3232 + n3] = by2;
+            this.var_byte_arr_e[6363 + n3] = by2;
+            this.var_byte_arr_e[101 + n3] = by2;
+            this.var_byte_arr_e[303 + n3] = 0;
+            this.var_byte_arr_e[202 + n3] = 0;
+            this.var_byte_arr_e[808 + n3] = 0;
+            this.var_byte_arr_e[2828 + n3] = 69;
+            this.var_byte_arr_e[2929 + n3] = 8;
+            this.var_byte_arr_e[3030 + n3] = 0;
+            this.var_byte_arr_e[6161 + n3] = 0;
+            this.var_byte_arr_arr_c[this.var_byte_arr_e[101 + n3]][this.var_byte_arr_e[0 + n3]] = n3;
+            this.var_b_a.void_a((int)this.var_byte_arr_e[0 + n3], (int)this.var_byte_arr_e[101 + n3], (int)this.var_byte_arr_e[4949 + n3]);
+        }
+    }
+
+    final void f(int n) {
+        if (this.var_byte_k == n) {
+            this.var_byte_k = 0;
+            if (this.var_byte_w == 1) {
+                this.var_byte_w = 0;
+                this.var_byte_l = 0;
+                this.a(true, true, false, false);
+                return;
+            }
+            if (this.var_byte_w == 2 && this.var_byte_arr_e[8749 + this.var_int_q] == 6) {
+                this.var_byte_w = 0;
+                this.a(true, true, false, false);
+            }
+        }
+    }
+
+    final void b(byte by) {
+        int n = 2;
+        if (by >= 51) {
+            n = by == 51 ? 4 : 3;
+        } else if (this.var_byte_arr_e[1414 + by] < 12) {
+            n = 0;
+        } else if (this.var_byte_arr_e[1414 + by] < 35) {
+            n = 1;
+        }
+        this.var_byte_arr_e[2727 + by] = (byte)(this.var_byte_arr_a[this.var_short_arr_a[189] + this.var_byte_arr_e[1515 + by] * 10 + n * 2] + this.int_a(255, (int)this.var_byte_arr_a[this.var_short_arr_a[189] + this.var_byte_arr_e[1515 + by] * 10 + n * 2 + 1]));
+        if (by == this.var_byte_l) {
+            this.var_boolean_arr_b[4] = this.var_boolean_arr_a[4];
+        }
+    }
+
+    final void g(int n) {
+        this.var_byte_arr_e[6868 + n] = (byte)(n == 51 || n == 52 ? -2 : (byte)(n > 51 ? -1 : (byte)((n > 3 ? 1 + this.int_a(65535, 58) : n) % 60 + 60 * this.var_byte_arr_e[1515 + n] - 1)));
+    }
+
+    private static byte byte_b(int n) {
+        if (n <= -1 && n >= -30) {
+            return 0;
+        }
+        if (n <= -31 && n >= -60) {
+            return 1;
+        }
+        return 2;
+    }
+
+    final byte a(byte by, int n, int n2, int n3, int n4, boolean bl, int n5) {
+        int n6 = this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + n];
+        int n7 = this.var_byte_arr_a[this.var_short_arr_a[138] + 130 + n];
+        byte by2 = (byte)(1 + by * 30);
+        byte by3 = 0;
+        try {
+            int n8;
+            while (this.var_byte_arr_e[8505 + by2 + by3] != 0) {
+                by3 = (byte)(by3 + 1);
+            }
+            if (by3 >= 30) {
+                if (by == 0) {
+                    this.var_int_s = 100;
+                    this.l(-1);
+                    this.var_byte_arr_u[0] = 0;
+                    this.a((byte)10, (byte)0, (byte)0, (byte)0);
+                }
+                return -1;
+            }
+            by3 = (byte)(by3 + by2);
+            if (n5 == -1) {
+                if (!this.a(n, n2, n3, !bl)) {
+                    return -2;
+                }
             } else {
-               if (var2 == 0) {
-                  byte var12 = 0;
-
-                  while(this.a[var1][var12][11] != 0) {
-                     if (++var12 > 10) {
-                        return -1;
-                     }
-                  }
-
-                  this.a[var1][var12][11] = var10;
-               }
-
-               this.c(var3, var4, var8, var9);
-               this.e[8383 + var10] = (byte)var3;
-               this.e[8444 + var10] = (byte)var4;
-               this.e[8749 + var10] = (byte)var2;
-               this.e[8871 + var10] = 0;
-               this.e[9176 + var10] = 0;
-               this.e[8932 + var10] = 0;
-               this.e[8993 + var10] = 0;
-               this.e[9054 + var10] = 0;
-               if (var5 == 0) {
-                  var5 = this.a[this.a[113] + (this.q < 2 ? 0 : (this.q == 2 ? 12 : 24)) + var2];
-               }
-
-               this.e[9115 + var10] = (byte)var5;
-               this.e[8810 + var10] = 0;
-               this.e[8688 + var10] = 5;
-               this.e[8627 + var10] = 0;
-               this.e[8505 + var10] = this.e[8566 + var10] = this.a[this.a[138] + 182 + var2];
-               if (var2 >= 12 && var2 <= 19) {
-                  if (!this.a.a(var10)) {
-                     if (var1 == 0) {
-                        this.s = 100;
+                by3 = (byte)n5;
+            }
+            if (n >= 20 && n <= 22) {
+                if (n5 == -1) {
+                    for (by3 = 0; by3 < 30 && this.var_byte_arr_arr_f[0][by3] != 0; by3 = (byte)((byte)(by3 + 1))) {
+                    }
+                } else {
+                    by3 = (byte)n5;
+                }
+                if (by3 == 30) {
+                    return -1;
+                }
+                this.var_byte_arr_arr_f[0][by3] = (byte)this.var_int_q;
+                this.var_byte_arr_arr_f[2][by3] = (byte)n2;
+                this.var_byte_arr_arr_f[3][by3] = (byte)n3;
+                this.var_byte_arr_arr_f[1][by3] = (byte)n;
+                if (!bl) {
+                    byte[] byArray = this.var_byte_arr_arr_arr_a[0][this.var_byte_au];
+                    int n9 = 6 + this.var_int_s - 20;
+                    byArray[n9] = (byte)(byArray[n9] + 1);
+                    this.var_byte_arr_arr_c[n3][n2] = by == 0 ? -123 : -126;
+                } else {
+                    this.var_byte_arr_arr_c[n3][n2] = (byte)(20 - n - 111 - by * 6);
+                }
+                this.c(n2, n3, 1, 1);
+                return by3;
+            }
+            if (n == 0) {
+                n8 = 0;
+                while (this.var_byte_arr_arr_arr_a[by][n8][11] != 0) {
+                    byte by4 = (byte)(n8 + 1);
+                    n8 = by4;
+                    if (by4 <= 10) continue;
+                    return -1;
+                }
+                this.var_byte_arr_arr_arr_a[by][n8][11] = by3;
+            }
+            this.c(n2, n3, n6, n7);
+            this.var_byte_arr_e[8383 + by3] = (byte)n2;
+            this.var_byte_arr_e[8444 + by3] = (byte)n3;
+            this.var_byte_arr_e[8749 + by3] = (byte)n;
+            this.var_byte_arr_e[8871 + by3] = 0;
+            this.var_byte_arr_e[9176 + by3] = 0;
+            this.var_byte_arr_e[8932 + by3] = 0;
+            this.var_byte_arr_e[8993 + by3] = 0;
+            this.var_byte_arr_e[9054 + by3] = 0;
+            if (n4 == 0) {
+                n4 = this.var_byte_arr_a[this.var_short_arr_a[113] + (this.var_byte_q < 2 ? 0 : (this.var_byte_q == 2 ? 12 : 24)) + n];
+            }
+            this.var_byte_arr_e[9115 + by3] = (byte)n4;
+            this.var_byte_arr_e[8810 + by3] = 0;
+            this.var_byte_arr_e[8688 + by3] = 5;
+            this.var_byte_arr_e[8627 + by3] = 0;
+            byte by5 = this.var_byte_arr_a[this.var_short_arr_a[138] + 182 + n];
+            this.var_byte_arr_e[8566 + by3] = by5;
+            this.var_byte_arr_e[8505 + by3] = by5;
+            if (n >= 12 && n <= 19) {
+                if (!this.var_b_a.boolean_a(by3)) {
+                    if (by == 0) {
+                        this.var_int_s = 100;
                         this.l(-1);
-                        this.u[0] = 0;
+                        this.var_byte_arr_u[0] = 0;
                         this.a((byte)10, (byte)0, (byte)0, (byte)0);
-                     }
-
-                     this.e[8505 + var10] = 0;
-                     return -1;
-                  }
-
-                  this.e[9237 + var10] = (byte)(var1 == 0 ? this.r[this.as] : this.a.v);
-                  this.e[8566 + var10] = this.a[this.a[138] + 182 + this.e[9237 + var10]];
-                  this.e[9115 + var10] = 3;
-               } else if (var1 == 0) {
-                  this.a.a(this.e[8383 + var10] + this.a[this.a[138] + 104 + this.e[8749 + var10]] / 2, this.e[8444 + var10] + this.a[this.a[138] + 130 + this.e[8749 + var10]] / 2, this.e[8688 + var10] & 15);
-               }
-
-               for(int var17 = 0; var17 < var9; ++var17) {
-                  for(int var13 = 0; var13 < var8; ++var13) {
-                     this.c[var4 + var17][var3 + var13] = (byte)(-var10);
-                  }
-               }
-
-               if (var2 == 2) {
-                  short[] var10000 = this.a[var1];
-                  var10000[16] = (short)(var10000[16] + 4);
-                  if (this.a[var1][16] > 50) {
-                     this.a[var1][16] = 50;
-                  }
-               }
-
-               if (!this.s && var7 == -1) {
-                  ++this.a[var1][14];
-                  ++this.a[var1][20];
-               }
-
-               if (var2 == 2) {
-                  this.a.a((int)var10);
-               }
-
-               if (var6 && var1 == 0) {
-                  this.a((byte)5, (byte)((byte)var3), (byte)((byte)var4), (byte)0);
-               }
-
-               return var10;
+                    }
+                    this.var_byte_arr_e[8505 + by3] = 0;
+                    return -1;
+                }
+                this.var_byte_arr_e[9237 + by3] = (byte)(by == 0 ? this.var_byte_arr_r[this.var_byte_as] : this.var_b_a.var_int_v);
+                this.var_byte_arr_e[8566 + by3] = this.var_byte_arr_a[this.var_short_arr_a[138] + 182 + this.var_byte_arr_e[9237 + by3]];
+                this.var_byte_arr_e[9115 + by3] = 3;
+            } else if (by == 0) {
+                this.var_b_a.void_a(this.var_byte_arr_e[8383 + by3] + this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + this.var_byte_arr_e[8749 + by3]] / 2, this.var_byte_arr_e[8444 + by3] + this.var_byte_arr_a[this.var_short_arr_a[138] + 130 + this.var_byte_arr_e[8749 + by3]] / 2, this.var_byte_arr_e[8688 + by3] & 0xF);
             }
-         }
-      } catch (Exception var14) {
-         return -1;
-      }
-   }
-
-   final void c(int var1, boolean var2) {
-      byte var3 = this.e[8749 + var1];
-      byte var4 = this.e[8383 + var1];
-      byte var5 = this.e[8444 + var1];
-      byte var6 = this.a[this.a[138] + 104 + var3];
-      byte var7 = this.a[this.a[138] + 130 + var3];
-      int var8 = var1 < 31 ? 0 : 1;
-      if (var3 == 2) {
-         this.a.a(var1);
-      }
-
-      try {
-         if (var2) {
-            this.f(var1 == 1 ? -1 : 0, 0);
-            this.e[8505 + var1] = -1;
-            this.a((int)var1, (int)3);
-
-            for(byte var14 = this.e[8993 + var1]; var14 > 0; var14 = this.e[4545 + var14]) {
-               this.a(var14, var1, true, false);
+            for (n8 = 0; n8 < n7; ++n8) {
+                for (int i = 0; i < n6; ++i) {
+                    this.var_byte_arr_arr_c[n3 + n8][n2 + i] = -by3;
+                }
             }
-
-            if (this.e[8810 + var1] > 1 && (this.e[8749 + var1] != 2 || this.e[8627 + var1] != 0)) {
-               this.a(this.e[8810 + var1], var1, true, false);
+            if (n == 2) {
+                short[] sArray = this.var_short_arr_arr_a[by];
+                sArray[16] = (short)(sArray[16] + 4);
+                if (this.var_short_arr_arr_a[by][16] > 50) {
+                    this.var_short_arr_arr_a[by][16] = 50;
+                }
             }
-
-            if ((this.w == 2 || this.w == 4) && var1 == this.q) {
-               this.w = 0;
-               this.q = 0;
-               this.a(true, true, false, false);
-               return;
+            if (!this.var_boolean_s && n5 == -1) {
+                short[] sArray = this.var_short_arr_arr_a[by];
+                sArray[14] = (short)(sArray[14] + 1);
+                short[] sArray2 = this.var_short_arr_arr_a[by];
+                sArray2[20] = (short)(sArray2[20] + 1);
             }
-         } else {
-            this.e[8505 + var1] = 0;
-            this.e[8627 + var1] = 3;
-
-            for(int var9 = 0; var9 < var7; ++var9) {
-               for(int var10 = 0; var10 < var6; ++var10) {
-                  this.c[var5 + var9][var4 + var10] = 0;
-               }
+            if (n == 2) {
+                this.var_b_a.void_a((int)by3);
             }
-
-            if (var3 == 2) {
-               short[] var10000 = this.a[var8];
-               var10000[16] = (short)(var10000[16] - 4);
-               if (this.a[var8][16] < 0) {
-                  this.a[var8][16] = 1;
-               }
-
-               for(int var12 = var8 * 50 + 1; var12 <= (var8 + 1) * 50; ++var12) {
-                  if (this.e[3434 + var12] == var1) {
-                     this.e[3434 + var12] = 0;
-                  }
-               }
+            if (bl && by == 0) {
+                this.a((byte)5, (byte)n2, (byte)n3, (byte)0);
             }
+            return by3;
+        }
+        catch (Exception exception) {
+            return -1;
+        }
+    }
 
-            if (!this.s) {
-               --this.a[var8][14];
-               ++this.a[1 - var8][21];
+    final void c(int n, boolean bl) {
+        int n2;
+        byte by = this.var_byte_arr_e[8749 + n];
+        byte by2 = this.var_byte_arr_e[8383 + n];
+        byte by3 = this.var_byte_arr_e[8444 + n];
+        int n3 = this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + by];
+        int n4 = this.var_byte_arr_a[this.var_short_arr_a[138] + 130 + by];
+        int n5 = n2 = n < 31 ? 0 : 1;
+        if (by == 2) {
+            this.var_b_a.void_a(n);
+        }
+        try {
+            block16: {
+                block15: {
+                    int n6;
+                    block14: {
+                        if (!bl) break block14;
+                        this.f(n == 1 ? -1 : 0, 0);
+                        this.var_byte_arr_e[8505 + n] = -1;
+                        this.void_a(n, 3);
+                        byte by4 = this.var_byte_arr_e[8993 + n];
+                        while (by4 > 0) {
+                            this.a((int)by4, n, true, false);
+                            by4 = this.var_byte_arr_e[4545 + by4];
+                        }
+                        if (this.var_byte_arr_e[8810 + n] > 1 && (this.var_byte_arr_e[8749 + n] != 2 || this.var_byte_arr_e[8627 + n] != 0)) {
+                            this.a((int)this.var_byte_arr_e[8810 + n], n, true, false);
+                        }
+                        if (this.var_byte_w != 2 && this.var_byte_w != 4 || n != this.var_int_q) break block15;
+                        break block16;
+                    }
+                    this.var_byte_arr_e[8505 + n] = 0;
+                    this.var_byte_arr_e[8627 + n] = 3;
+                    for (n6 = 0; n6 < n4; ++n6) {
+                        for (int i = 0; i < n3; ++i) {
+                            this.var_byte_arr_arr_c[by3 + n6][by2 + i] = 0;
+                        }
+                    }
+                    if (by == 2) {
+                        short[] sArray = this.var_short_arr_arr_a[n2];
+                        sArray[16] = (short)(sArray[16] - 4);
+                        if (this.var_short_arr_arr_a[n2][16] < 0) {
+                            this.var_short_arr_arr_a[n2][16] = 1;
+                        }
+                        for (n6 = n2 * 50 + 1; n6 <= (n2 + 1) * 50; ++n6) {
+                            if (this.var_byte_arr_e[3434 + n6] != n) continue;
+                            this.var_byte_arr_e[3434 + n6] = 0;
+                        }
+                    }
+                    if (!this.var_boolean_s) {
+                        short[] sArray = this.var_short_arr_arr_a[n2];
+                        sArray[14] = (short)(sArray[14] - 1);
+                        short[] sArray2 = this.var_short_arr_arr_a[1 - n2];
+                        sArray2[21] = (short)(sArray2[21] + 1);
+                    }
+                    if (by == 0) {
+                        n6 = 0;
+                        while (this.var_byte_arr_arr_arr_a[n2][n6][11] != n) {
+                            byte by5 = (byte)(n6 + 1);
+                            n6 = by5;
+                            if (by5 < 10) continue;
+                            n6 = (byte)(n6 - 1);
+                            break;
+                        }
+                        this.var_byte_arr_arr_arr_a[n2][n6][11] = 0;
+                    }
+                    this.var_b_a.void_c(n);
+                    if (n2 == 0) {
+                        this.a((byte)8, by2, by3, (byte)0);
+                    }
+                }
+                return;
             }
+            this.var_byte_w = 0;
+            this.var_int_q = 0;
+            this.a(true, true, false, false);
+        }
+        catch (Exception exception) {}
+    }
 
-            if (var3 == 0) {
-               byte var13 = 0;
-
-               while(this.a[var8][var13][11] != var1) {
-                  if (++var13 >= 10) {
-                     --var13;
-                     break;
-                  }
-               }
-
-               this.a[var8][var13][11] = 0;
+    private boolean a(int n, int n2, int n3, boolean bl) {
+        int n4 = this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + n];
+        int n5 = this.var_byte_arr_a[this.var_short_arr_a[138] + 130 + n];
+        boolean bl2 = true;
+        for (int i = 0; i < n5; ++i) {
+            for (int j = 0; j < n4; ++j) {
+                if (this.boolean_b(n2 + j, n3 + i) && this.var_byte_arr_arr_c[n3 + i][n2 + j] == 0 && (!bl || this.byte_a(n2 + j, n3 + i) == 0)) continue;
+                bl2 = false;
             }
+        }
+        return bl2;
+    }
 
-            this.a.c(var1);
-            if (var8 == 0) {
-               this.a((byte)8, (byte)((byte)var4), (byte)((byte)var5), (byte)0);
+    /*
+     * Unable to fully structure code
+     */
+    private void a(int var1_1, int var2_2, boolean var3_3, boolean var4_4) {
+        block11: {
+            block7: {
+                block10: {
+                    block8: {
+                        block9: {
+                            if (this.var_byte_arr_e[2828 + var1_1] == 93 || this.var_byte_arr_e[2828 + var1_1] == 92 || this.var_byte_arr_e[2828 + var1_1] == 106) {
+                                var3_3 = true;
+                            }
+                            if (this.var_byte_arr_e[8810 + var2_2] != var1_1 || this.var_byte_arr_e[8749 + var2_2] == 2 && this.var_byte_arr_e[8627 + var2_2] == 0) break block7;
+                            if (var3_3) {
+                                this.var_byte_arr_e[8810 + var2_2] = 0;
+                            }
+                            this.void_d(var2_2);
+                            if (this.var_byte_arr_arr_c[this.var_byte_arr_e[101 + var1_1]][this.var_byte_arr_e[0 + var1_1]] == var1_1) break block8;
+                            if (var3_3) break block9;
+                            this.var_byte_arr_e[2828 + var1_1] = 87;
+                            ** GOTO lbl-1000
+                        }
+                        this.var_byte_arr_e[6161 + var1_1] = 2;
+                        break block10;
+                    }
+                    this.var_byte_arr_e[3131 + var1_1] = this.var_byte_arr_e[0 + var1_1];
+                    this.var_byte_arr_e[3232 + var1_1] = this.var_byte_arr_e[101 + var1_1];
+                    if (var3_3) {
+                        this.var_byte_arr_e[6262 + var1_1] = this.var_byte_arr_e[0 + var1_1];
+                        this.var_byte_arr_e[6363 + var1_1] = this.var_byte_arr_e[101 + var1_1];
+                    }
+                    this.var_byte_arr_e[2828 + var1_1] = 69;
+                    if (var3_3) {
+                        this.var_byte_arr_e[6161 + var1_1] = 2;
+                        this.var_byte_arr_e[4747 + var1_1] = 0;
+                    } else lbl-1000:
+                    // 2 sources
+
+                    {
+                        this.var_byte_arr_e[6161 + var1_1] = 3;
+                    }
+                }
+                if (var4_4) {
+                    this.a(var2_2, false);
+                    return;
+                }
+                break block11;
             }
-         }
-
-      } catch (Exception var11) {
-      }
-   }
-
-   private boolean a(int var1, int var2, int var3, boolean var4) {
-      byte var5 = this.a[this.a[138] + 104 + var1];
-      byte var6 = this.a[this.a[138] + 130 + var1];
-      boolean var7 = true;
-
-      for(int var8 = 0; var8 < var6; ++var8) {
-         for(int var9 = 0; var9 < var5; ++var9) {
-            if (!this.b(var2 + var9, var3 + var8) || this.c[var3 + var8][var2 + var9] != 0 || var4 && this.a(var2 + var9, var3 + var8) != 0) {
-               var7 = false;
+            if (!var3_3 || this.var_byte_arr_e[8627 + var2_2] == 0 && (this.var_byte_arr_e[8749 + var2_2] == 2 || this.var_byte_arr_e[8749 + var2_2] == 7 || this.var_byte_arr_e[8749 + var2_2] == 4 || this.var_byte_arr_e[8749 + var2_2] == 8)) {
+                this.var_byte_arr_e[2828 + var1_1] = 87;
+                this.var_byte_arr_e[6161 + var1_1] = 3;
+                return;
             }
-         }
-      }
+            this.var_byte_arr_e[6161 + var1_1] = 2;
+        }
+    }
 
-      return var7;
-   }
+    final void h(int n) {
+        this.f(n);
+        this.void_e(n);
+    }
 
-   private void a(int var1, int var2, boolean var3, boolean var4) {
-      if (this.e[2828 + var1] == 93 || this.e[2828 + var1] == 92 || this.e[2828 + var1] == 106) {
-         var3 = true;
-      }
+    final byte byte_a(int n, byte by) {
+        byte by2;
+        byte by3 = 1;
+        int n2 = 0;
+        if (n >= 51) {
+            by3 = 31;
+            n2 = 1;
+        }
+        while (by3 < 30) {
+            if (this.var_byte_arr_e[8810 + by3 + 0] == n) {
+                by3 = (byte)(by3 + 0);
+                break;
+            }
+            by3 = (byte)(by3 + 1);
+        }
+        for (by2 = 0; by2 < 30; by2 = (byte)(by2 + 1)) {
+            if (this.var_byte_arr_arr_arr_b[n2][0][by2] != by3) continue;
+            this.var_byte_arr_arr_arr_b[n2][4][by2] = by;
+            break;
+        }
+        return by2;
+    }
 
-      if (this.e[8810 + var2] != var1 || this.e[8749 + var2] == 2 && this.e[8627 + var2] == 0) {
-         if (!var3 || this.e[8627 + var2] == 0 && (this.e[8749 + var2] == 2 || this.e[8749 + var2] == 7 || this.e[8749 + var2] == 4 || this.e[8749 + var2] == 8)) {
-            this.e[2828 + var1] = 87;
-            this.e[6161 + var1] = 3;
+    private static boolean boolean_b(int n) {
+        return n >= 101 && n <= 122;
+    }
+
+    final void b(int n, int n2, int n3, int n4) {
+        int n5;
+        for (n5 = 0; n5 < 22; n5 = (int)((byte)(n5 + 1))) {
+            if (this.var_byte_arr_e[9513 + n5] != 0) continue;
+            if (this.var_byte_q == 3) break;
+            int n6 = n4;
+            this.var_byte_arr_t[n6] = (byte)(this.var_byte_arr_t[n6] + 1);
+            break;
+        }
+        this.var_byte_arr_e[9513 + n5] = this.var_byte_arr_a[this.var_short_arr_a[180] + n];
+        this.var_byte_arr_e[9535 + n5] = (byte)n;
+        byte by = (byte)n2;
+        this.var_byte_arr_e[9645 + n5] = by;
+        this.var_byte_arr_e[9359 + n5] = by;
+        byte by2 = (byte)n3;
+        this.var_byte_arr_e[9667 + n5] = by2;
+        this.var_byte_arr_e[9381 + n5] = by2;
+        this.var_byte_arr_e[9425 + n5] = 0;
+        this.var_byte_arr_e[9403 + n5] = 0;
+        this.var_byte_arr_e[9689 + n5] = 0;
+        this.var_byte_arr_e[9711 + n5] = 0;
+        this.var_byte_arr_e[9601 + n5] = 0;
+        this.var_byte_arr_e[9491 + n5] = (byte)this.int_a(255, 8);
+        this.var_byte_arr_e[9469 + n5] = (byte)n4;
+        this.var_byte_arr_e[9557 + n5] = this.var_byte_arr_a[this.var_short_arr_a[184] + n];
+        this.var_byte_arr_e[9579 + n5] = 0;
+        this.var_byte_arr_e[9447 + n5] = 0;
+        this.var_byte_arr_arr_c[n3][n2] = (byte)(101 + n5);
+    }
+
+    private static boolean boolean_c(int n) {
+        return n <= -61 && n >= -110;
+    }
+
+    final void a(int n, int n2, int n3, byte by) {
+        int n4;
+        for (n4 = 0; n4 < 50 && this.var_byte_arr_e[9833 + n4] != 0; n4 = (int)((byte)(n4 + 1))) {
+        }
+        if (n4 == 50) {
+            n4 = 0;
+            while (this.var_byte_arr_e[9833 + n4] != 6 || this.var_byte_arr_e[9833 + n4] != 7) {
+                n4 = (byte)(n4 + 1);
+            }
+            this.var_byte_arr_arr_c[this.var_byte_arr_e[9783 + n4]][this.var_byte_arr_e[9733 + n4]] = 0;
+        }
+        this.var_byte_arr_e[9833 + n4] = (byte)n;
+        this.var_byte_arr_e[9733 + n4] = (byte)n2;
+        this.var_byte_arr_e[9783 + n4] = (byte)n3;
+        this.var_byte_arr_e[9883 + n4] = by;
+        this.var_byte_arr_arr_c[n3][n2] = (byte)(-61 - n4);
+    }
+
+    private static byte byte_c(int n) {
+        if (n <= -111 && n >= -116) {
+            return 0;
+        }
+        if (n <= -117 && n >= -122) {
+            return 1;
+        }
+        if (n == -123) {
+            return 3;
+        }
+        return 2;
+    }
+
+    private boolean boolean_b(int n, int n2) {
+        return n >= 0 && n2 >= 0 && n < this.var_short_c && n2 < this.var_short_d;
+    }
+
+    private byte byte_a(int n, int n2) {
+        if ((this.var_int_arr_arr_arr_a[0][n >> 5][n2] >> n & 0x1F & 1) == 0) {
+            return 2;
+        }
+        if ((this.var_int_arr_arr_arr_a[1][n >> 5][n2] >> n & 0x1F & 1) == 0) {
+            return 1;
+        }
+        return 0;
+    }
+
+    final void c(int n, int n2, int n3, int n4) {
+        for (int i = n2; i < n2 + n4; ++i) {
+            for (int j = n; j < n + n3; ++j) {
+                if (!this.boolean_a(j, i)) continue;
+                this.var_boolean_arr_arr_a[i - this.var_byte_K][j - this.var_byte_I] = true;
+            }
+        }
+        this.var_boolean_B = true;
+    }
+
+    private void a(boolean bl, boolean bl2, boolean bl3, boolean bl4) {
+        this.a(bl, bl2, bl3, bl4, false, false, false, false, false);
+    }
+
+    private void a(boolean bl, boolean bl2, boolean bl3, boolean bl4, boolean bl5, boolean bl6, boolean bl7, boolean bl8, boolean bl9) {
+        this.var_boolean_arr_b[0] = this.var_boolean_arr_a[0] = bl;
+        this.var_boolean_arr_b[1] = this.var_boolean_arr_a[1] = bl2;
+        this.var_boolean_arr_b[2] = this.var_boolean_arr_a[2] = bl3;
+        this.var_boolean_arr_b[4] = this.var_boolean_arr_a[4] = bl4;
+        this.var_boolean_arr_b[5] = this.var_boolean_arr_a[5] = bl5;
+        this.var_boolean_arr_b[6] = this.var_boolean_arr_a[6] = bl6;
+        this.var_boolean_arr_b[7] = this.var_boolean_arr_a[7] = bl7;
+        this.var_boolean_arr_b[8] = this.var_boolean_arr_a[8] = bl8;
+        this.var_boolean_arr_b[9] = this.var_boolean_arr_a[9] = bl9;
+        this.var_boolean_arr_a[17] = true;
+        this.var_boolean_arr_b[17] = true;
+        if (bl2) {
+            if (this.var_byte_arr_u[0] == 0) {
+                this.var_boolean_arr_a[1] = true;
+                this.var_boolean_arr_b[1] = true;
+                this.var_boolean_arr_a[9] = false;
+                this.var_boolean_arr_b[9] = false;
+            } else if (this.var_byte_arr_u[0] != 0) {
+                this.var_boolean_arr_a[9] = true;
+                this.var_boolean_arr_b[9] = true;
+                this.var_boolean_arr_a[1] = false;
+                this.var_boolean_arr_b[1] = false;
+            }
+        }
+        int n = this.ba;
+        if (this.var_boolean_arr_a[4]) {
+            this.ba = 48;
+            this.var_byte_ax = this.var_byte_arr_d[3];
+        } else {
+            this.ba = 22;
+            this.var_byte_ax = this.var_byte_arr_d[2];
+        }
+        if (n < this.ba && this.var_int_ae == 0 && this.var_byte_K < this.var_short_d - 1) {
+            this.var_int_ae = 1;
+            this.var_byte_K = (byte)(this.var_byte_K + 1);
+            this.var_byte_A = (byte)(this.var_byte_A - 1);
+            if (this.var_byte_K < this.var_short_d - 1) {
+                this.var_byte_K = (byte)(this.var_byte_K + 1);
+                this.var_byte_A = (byte)(this.var_byte_A - 1);
+                this.var_boolean_A = true;
+            }
+        } else if (n > this.ba && !bl4 && this.var_int_ae == 0 && this.var_byte_K > 0) {
+            this.var_int_ae = -1;
+            this.var_byte_K = (byte)(this.var_byte_K - 1);
+            this.var_byte_A = (byte)(this.var_byte_A + 1);
+            if (this.var_byte_K > 0) {
+                this.var_byte_K = (byte)(this.var_byte_K - 1);
+                this.var_byte_A = (byte)(this.var_byte_A + 1);
+                this.var_boolean_A = true;
+            }
+        }
+        if (this.var_boolean_arr_a[1]) {
+            this.var_byte_ad = 1;
+        } else if (this.var_boolean_arr_a[2]) {
+            this.var_byte_ad = (byte)2;
+        } else if (this.var_boolean_arr_a[5]) {
+            this.var_byte_ad = (byte)5;
+        } else if (this.var_boolean_arr_a[6]) {
+            this.var_byte_ad = (byte)6;
+        } else if (this.var_boolean_arr_a[9]) {
+            this.var_byte_ad = (byte)9;
+        }
+        this.aZ = this.var_int_arr_b[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + this.var_byte_ad]];
+        byte by = this.var_byte_P;
+        this.var_byte_P = (byte)((239 - this.ba - this.aZ + this.var_byte_ax) / 16 + 1);
+        if (this.var_byte_P > by) {
+            this.var_boolean_C = true;
+        }
+        this.var_int_arr_c[2] = this.var_int_arr_c[3] = (this.var_int_A = this.var_byte_P * 16);
+        this.var_int_arr_c[7] = this.var_int_arr_c[10] = this.var_int_A + this.ba;
+        this.var_int_arr_c[5] = this.var_int_arr_c[10];
+        this.var_int_arr_c[4] = this.var_int_arr_c[10];
+        this.var_int_arr_c[11] = this.var_int_arr_c[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + this.var_byte_ad]] + this.var_int_arr_b[this.var_byte_arr_a[this.var_short_arr_a[195] + 0 + this.var_byte_ad]];
+    }
+
+    final void a(byte by, byte by2, byte by3, byte by4) {
+        if (this.var_int_c == 0 || this.var_byte_u > 0) {
             return;
-         }
-
-         this.e[6161 + var1] = 2;
-      } else {
-         if (var3) {
-            this.e[8810 + var2] = 0;
-         }
-
-         label42: {
-            this.d(var2);
-            if (this.c[this.e[101 + var1]][this.e[0 + var1]] != var1) {
-               if (var3) {
-                  this.e[6161 + var1] = 2;
-                  break label42;
-               }
-
-               this.e[2828 + var1] = 87;
-            } else {
-               this.e[3131 + var1] = this.e[0 + var1];
-               this.e[3232 + var1] = this.e[101 + var1];
-               if (var3) {
-                  this.e[6262 + var1] = this.e[0 + var1];
-                  this.e[6363 + var1] = this.e[101 + var1];
-               }
-
-               this.e[2828 + var1] = 69;
-               if (var3) {
-                  this.e[6161 + var1] = 2;
-                  this.e[4747 + var1] = 0;
-                  break label42;
-               }
+        }
+        boolean bl = false;
+        if (by != 100) {
+            bl = true;
+            for (int i = 0; i < 10; ++i) {
+                if (this.var_byte_arr_u[i] != 0) continue;
+                this.var_byte_arr_u[i] = by;
+                this.var_byte_arr_arr_k[0][i] = by2;
+                this.var_byte_arr_arr_k[1][i] = by3;
+                this.var_byte_arr_arr_k[2][i] = by4;
+                this.var_int_arr_g[i] = 0;
+                break;
             }
+        } else if (this.var_byte_arr_u[0] != 0) {
+            boolean bl2 = false;
+            bl = true;
+            this.var_byte_ay = 0;
+            int n = 0;
+            while (n < 9) {
+                int n2 = n++;
+                this.var_int_arr_g[n2] = this.var_int_arr_g[n2] + 1;
+            }
+            if (this.var_byte_arr_u[1] != 0) {
+                if (this.var_int_arr_g[0] > 1) {
+                    bl2 = true;
+                }
+            } else if (this.var_int_arr_g[0] > 4) {
+                bl2 = true;
+            }
+            if (bl2) {
+                for (n = 0; n < 9; ++n) {
+                    this.var_byte_arr_u[n] = this.var_byte_arr_u[n + 1];
+                    this.var_byte_arr_arr_k[0][n] = this.var_byte_arr_arr_k[0][n + 1];
+                    this.var_byte_arr_arr_k[1][n] = this.var_byte_arr_arr_k[1][n + 1];
+                    this.var_byte_arr_arr_k[2][n] = this.var_byte_arr_arr_k[2][n + 1];
+                    this.var_int_arr_g[n] = this.var_int_arr_g[n + 1];
+                    this.var_byte_arr_u[n + 1] = 0;
+                }
+                if (this.var_byte_arr_u[0] != 0 && this.var_byte_arr_u[1] == 0) {
+                    this.var_int_arr_g[0] = 0;
+                }
+            }
+        }
+        if (bl && (this.var_boolean_arr_a[1] || this.var_boolean_arr_a[9])) {
+            this.a(this.var_boolean_arr_a[0], true, false, this.var_boolean_arr_a[4]);
+            this.var_byte_ay = this.var_byte_arr_arr_k[0][0] == 0 && this.var_byte_arr_arr_k[1][0] == 0 ? (byte)0 : 1;
+        }
+    }
 
-            this.e[6161 + var1] = 3;
-         }
-
-         if (var4) {
-            this.a(var2, false);
+    private void g(byte by) {
+        try {
+            this.var_byte_q = by;
+            this.aM();
+            this.aN();
+            this.aO();
             return;
-         }
-      }
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-   }
-
-   final void h(int var1) {
-      this.f(var1);
-      this.e(var1);
-   }
-
-   final byte a(int var1, byte var2) {
-      byte var4 = 1;
-      byte var5 = 0;
-      if (var1 >= 51) {
-         var4 = 31;
-         var5 = 1;
-      }
-
-      while(var4 < 30) {
-         if (this.e[8810 + var4 + 0] == var1) {
-            var4 = (byte)(var4 + 0);
-            break;
-         }
-
-         ++var4;
-      }
-
-      byte var3;
-      for(var3 = 0; var3 < 30; ++var3) {
-         if (this.b[var5][0][var3] == var4) {
-            this.b[var5][4][var3] = var2;
-            break;
-         }
-      }
-
-      return var3;
-   }
-
-   private static boolean b(int var0) {
-      return var0 >= 101 && var0 <= 122;
-   }
-
-   final void b(int var1, int var2, int var3, int var4) {
-      byte var5;
-      for(var5 = 0; var5 < 22; ++var5) {
-         if (this.e[9513 + var5] == 0) {
-            if (this.q != 3) {
-               ++this.t[var4];
+    private void aM() {
+        int n;
+        int n2;
+        this.var_boolean_u = false;
+        this.var_boolean_t = false;
+        this.var_byte_F = (byte)-1;
+        for (n2 = 0; n2 < this.var_short_arr_b[121]; ++n2) {
+            this.var_byte_arr_e[n2] = 0;
+        }
+        for (n2 = 0; n2 <= 100; ++n2) {
+            this.var_byte_arr_e[4040 + n2] = -100;
+            this.var_byte_arr_e[4242 + n2] = 1;
+            this.var_byte_arr_e[4343 + n2] = -1;
+        }
+        for (n2 = 0; n2 < 50; ++n2) {
+            this.var_byte_arr_arr_a[4][n2] = 0;
+            this.var_byte_arr_arr_a[3][n2] = 0;
+            this.var_byte_arr_arr_a[2][n2] = 0;
+        }
+        for (n2 = 0; n2 < 10; ++n2) {
+            this.var_byte_arr_u[n2] = 0;
+        }
+        for (n2 = 0; n2 < 5; ++n2) {
+            this.var_byte_arr_arr_arr_c[0][n2][2] = -1;
+        }
+        for (n2 = 0; n2 < 30; n2 = (int)((byte)(n2 + 1))) {
+            this.var_byte_arr_arr_e[0][n2] = 0;
+        }
+        for (n2 = 0; n2 < 3; n2 = (int)((byte)(n2 + 1))) {
+            for (n = 0; n < 96; n = (int)((byte)(n + 1))) {
+                this.var_int_arr_arr_arr_a[0][n2][n] = 0;
             }
-            break;
-         }
-      }
-
-      this.e[9513 + var5] = this.a[this.a[180] + var1];
-      this.e[9535 + var5] = (byte)var1;
-      this.e[9359 + var5] = this.e[9645 + var5] = (byte)var2;
-      this.e[9381 + var5] = this.e[9667 + var5] = (byte)var3;
-      this.e[9403 + var5] = this.e[9425 + var5] = 0;
-      this.e[9711 + var5] = this.e[9689 + var5] = 0;
-      this.e[9601 + var5] = 0;
-      this.e[9491 + var5] = (byte)this.a((int)255, (int)8);
-      this.e[9469 + var5] = (byte)var4;
-      this.e[9557 + var5] = this.a[this.a[184] + var1];
-      this.e[9579 + var5] = 0;
-      this.e[9447 + var5] = 0;
-      this.c[var3][var2] = (byte)(101 + var5);
-   }
-
-   private static boolean c(int var0) {
-      return var0 <= -61 && var0 >= -110;
-   }
-
-   final void a(int var1, int var2, int var3, byte var4) {
-      byte var5;
-      for(var5 = 0; var5 < 50 && this.e[9833 + var5] != 0; ++var5) {
-      }
-
-      if (var5 == 50) {
-         for(var5 = 0; this.e[9833 + var5] != 6 || this.e[9833 + var5] != 7; ++var5) {
-         }
-
-         this.c[this.e[9783 + var5]][this.e[9733 + var5]] = 0;
-      }
-
-      this.e[9833 + var5] = (byte)var1;
-      this.e[9733 + var5] = (byte)var2;
-      this.e[9783 + var5] = (byte)var3;
-      this.e[9883 + var5] = var4;
-      this.c[var3][var2] = (byte)(-61 - var5);
-   }
-
-   private static byte c(int var0) {
-      if (var0 <= -111 && var0 >= -116) {
-         return 0;
-      } else if (var0 <= -117 && var0 >= -122) {
-         return 1;
-      } else {
-         return (byte)(var0 == -123 ? 3 : 2);
-      }
-   }
-
-   private boolean b(int var1, int var2) {
-      return var1 >= 0 && var2 >= 0 && var1 < this.c && var2 < this.d;
-   }
-
-   private byte a(int var1, int var2) {
-      if ((this.a[0][var1 >> 5][var2] >> var1 & 31 & 1) == 0) {
-         return 2;
-      } else {
-         return (byte)((this.a[1][var1 >> 5][var2] >> var1 & 31 & 1) == 0 ? 1 : 0);
-      }
-   }
-
-   final void c(int var1, int var2, int var3, int var4) {
-      for(int var5 = var2; var5 < var2 + var4; ++var5) {
-         for(int var6 = var1; var6 < var1 + var3; ++var6) {
-            if (this.a(var6, var5)) {
-               this.a[var5 - this.K][var6 - this.I] = true;
+        }
+        for (n2 = 0; n2 < 10; n2 = (int)((byte)(n2 + 1))) {
+            for (n = 0; n < 12; n = (byte)(n + 1)) {
+                this.var_byte_arr_arr_arr_a[0][n2][n] = 0;
+                this.var_byte_arr_arr_arr_a[1][n2][n] = 0;
             }
-         }
-      }
-
-      this.B = true;
-   }
-
-   private void a(boolean var1, boolean var2, boolean var3, boolean var4) {
-      this.a(var1, var2, var3, var4, false, false, false, false, false);
-   }
-
-   private void a(boolean var1, boolean var2, boolean var3, boolean var4, boolean var5, boolean var6, boolean var7, boolean var8, boolean var9) {
-      this.b[0] = this.a[0] = var1;
-      this.b[1] = this.a[1] = var2;
-      this.b[2] = this.a[2] = var3;
-      this.b[4] = this.a[4] = var4;
-      this.b[5] = this.a[5] = var5;
-      this.b[6] = this.a[6] = var6;
-      this.b[7] = this.a[7] = var7;
-      this.b[8] = this.a[8] = var8;
-      this.b[9] = this.a[9] = var9;
-      this.b[17] = this.a[17] = true;
-      if (var2) {
-         if (this.u[0] == 0) {
-            this.b[1] = this.a[1] = true;
-            this.b[9] = this.a[9] = false;
-         } else if (this.u[0] != 0) {
-            this.b[9] = this.a[9] = true;
-            this.b[1] = this.a[1] = false;
-         }
-      }
-
-      int var10 = this.ba;
-      if (this.a[4]) {
-         this.ba = 48;
-         this.ax = this.d[3];
-      } else {
-         this.ba = 22;
-         this.ax = this.d[2];
-      }
-
-      if (var10 < this.ba && this.ae == 0 && this.K < this.d - 1) {
-         this.ae = 1;
-         ++this.K;
-         --this.A;
-         if (this.K < this.d - 1) {
-            ++this.K;
-            --this.A;
-            this.A = true;
-         }
-      } else if (var10 > this.ba && !var4 && this.ae == 0 && this.K > 0) {
-         this.ae = -1;
-         --this.K;
-         ++this.A;
-         if (this.K > 0) {
-            --this.K;
-            ++this.A;
-            this.A = true;
-         }
-      }
-
-      if (this.a[1]) {
-         this.ad = 1;
-      } else if (this.a[2]) {
-         this.ad = 2;
-      } else if (this.a[5]) {
-         this.ad = 5;
-      } else if (this.a[6]) {
-         this.ad = 6;
-      } else if (this.a[9]) {
-         this.ad = 9;
-      }
-
-      this.aZ = this.b[this.a[this.a[195] + 0 + this.ad]];
-      byte var11 = this.P;
-      this.P = (byte)((239 - this.ba - this.aZ + this.ax) / 16 + 1);
-      if (this.P > var11) {
-         this.C = true;
-      }
-
-      this.A = this.P * 16;
-      this.c[2] = this.c[3] = this.A;
-      this.c[4] = this.c[5] = this.c[7] = this.c[10] = this.A + this.ba;
-      this.c[11] = this.c[this.a[this.a[195] + 0 + this.ad]] + this.b[this.a[this.a[195] + 0 + this.ad]];
-   }
-
-   final void a(byte var1, byte var2, byte var3, byte var4) {
-      if (this.c != 0 && this.u <= 0) {
-         boolean var5 = false;
-         if (var1 != 100) {
-            var5 = true;
-
-            for(int var6 = 0; var6 < 10; ++var6) {
-               if (this.u[var6] == 0) {
-                  this.u[var6] = var1;
-                  this.k[0][var6] = var2;
-                  this.k[1][var6] = var3;
-                  this.k[2][var6] = var4;
-                  this.g[var6] = 0;
-                  break;
-               }
+        }
+        for (n2 = 0; n2 < 30; n2 = (int)((byte)(n2 + 1))) {
+            for (n = 0; n < 4; n = (int)((byte)(n + 1))) {
+                this.var_byte_arr_arr_f[n][n2] = 0;
             }
-         } else if (this.u[0] != 0) {
-            boolean var8 = false;
-            var5 = true;
-            this.ay = 0;
-
-            for(int var7 = 0; var7 < 9; ++var7) {
-               int var10002 = this.g[var7]++;
+            for (n = 0; n < 5; n = (int)((byte)(n + 1))) {
+                this.var_byte_arr_arr_arr_b[1][n][n2] = 0;
+                this.var_byte_arr_arr_arr_b[0][n][n2] = 0;
             }
-
-            if (this.u[1] != 0) {
-               if (this.g[0] > 1) {
-                  var8 = true;
-               }
-            } else if (this.g[0] > 4) {
-               var8 = true;
+        }
+        for (n2 = 0; n2 < 96; ++n2) {
+            for (n = 0; n < 96; ++n) {
+                this.var_byte_arr_arr_b[n2][n] = 0;
+                this.var_byte_arr_arr_c[n2][n] = 0;
             }
-
-            if (var8) {
-               for(int var9 = 0; var9 < 9; ++var9) {
-                  this.u[var9] = this.u[var9 + 1];
-                  this.k[0][var9] = this.k[0][var9 + 1];
-                  this.k[1][var9] = this.k[1][var9 + 1];
-                  this.k[2][var9] = this.k[2][var9 + 1];
-                  this.g[var9] = this.g[var9 + 1];
-                  this.u[var9 + 1] = 0;
-               }
-
-               if (this.u[0] != 0 && this.u[1] == 0) {
-                  this.g[0] = 0;
-               }
+        }
+        for (n2 = 0; n2 < this.var_byte_P + 3; ++n2) {
+            for (n = 0; n < this.var_byte_O; ++n) {
+                this.var_byte_arr_arr_g[n2][n] = 0;
             }
-         }
-
-         if (var5 && (this.a[1] || this.a[9])) {
-            this.a(this.a[0], true, false, this.a[4]);
-            this.ay = (byte)(this.k[0][0] == 0 && this.k[1][0] == 0 ? 0 : 1);
-         }
-
-      }
-   }
-
-   private void g(byte var1) {
-      try {
-         this.q = var1;
-         this.aM();
-         this.aN();
-         this.aO();
-      } catch (Exception var3) {
-      }
-   }
-
-   private void aM() {
-      this.u = false;
-      this.t = false;
-      this.F = -1;
-
-      for(int var1 = 0; var1 < this.b[121]; ++var1) {
-         this.e[var1] = 0;
-      }
-
-      for(int var3 = 0; var3 <= 100; ++var3) {
-         this.e[4040 + var3] = -100;
-         this.e[4242 + var3] = 1;
-         this.e[4343 + var3] = -1;
-      }
-
-      for(int var4 = 0; var4 < 50; ++var4) {
-         this.a[2][var4] = this.a[3][var4] = this.a[4][var4] = 0;
-      }
-
-      for(int var5 = 0; var5 < 10; ++var5) {
-         this.u[var5] = 0;
-      }
-
-      for(int var6 = 0; var6 < 5; ++var6) {
-         this.c[0][var6][2] = -1;
-      }
-
-      for(byte var7 = 0; var7 < 30; ++var7) {
-         this.e[0][var7] = 0;
-      }
-
-      for(byte var8 = 0; var8 < 3; ++var8) {
-         for(byte var2 = 0; var2 < 96; ++var2) {
-            this.a[0][var8][var2] = 0;
-         }
-      }
-
-      for(byte var9 = 0; var9 < 10; ++var9) {
-         for(byte var14 = 0; var14 < 12; ++var14) {
-            this.a[0][var9][var14] = 0;
-            this.a[1][var9][var14] = 0;
-         }
-      }
-
-      for(byte var10 = 0; var10 < 30; ++var10) {
-         for(byte var15 = 0; var15 < 4; ++var15) {
-            this.f[var15][var10] = 0;
-         }
-
-         for(byte var16 = 0; var16 < 5; ++var16) {
-            this.b[0][var16][var10] = this.b[1][var16][var10] = 0;
-         }
-      }
-
-      for(int var11 = 0; var11 < 96; ++var11) {
-         for(int var17 = 0; var17 < 96; ++var17) {
-            this.c[var11][var17] = this.b[var11][var17] = 0;
-         }
-      }
-
-      for(int var12 = 0; var12 < this.P + 3; ++var12) {
-         for(int var18 = 0; var18 < this.O; ++var18) {
-            this.g[var12][var18] = 0;
-         }
-      }
-
-      if (!this.s) {
-         for(byte var13 = 0; var13 < 26; ++var13) {
-            this.a[0][var13] = this.a[1][var13] = 0;
-         }
-
-         this.a[0][17] = 0;
-      }
-
-      this.a[0][16] = 1;
-      this.t();
-      this.c = 0;
-      this.h = 0;
-      this.L = this.N = false;
-      this.F = false;
-      this.K = false;
-      this.W = this.X = 0;
-      this.aJ = 0;
-      this.u = 0;
-      this.ay = 0;
-      this.a.a();
-      this.i();
-      this.k = true;
-   }
-
-   private void aN() {
-      int var1 = 0;
-
-      try {
-         System.gc();
-         Thread.yield();
-         Object var4 = null;
-         int var5 = 0;
-         this.c = this.e = (short)this.a[this.a[149] + this.q * 2];
-         this.d = this.f = (short)this.a[this.a[149] + this.q * 2 + 1];
-         if (this.q == 0) {
-            this.c = 40;
-            this.d = 32;
-         } else if (this.q == 5) {
-            this.c = (short)(this.c - 32);
-         }
-
-         int var8 = 0;
-         int var7 = 10;
-
-         for(int var3 = 0; var3 < this.f; ++var3) {
-            for(int var2 = 0; var2 < this.e; ++var2) {
-               if (var7 >= this.a[this.a[197] + 0 + var8]) {
-                  var1 = (short)(this.v[this.h[this.a[this.a[248] + this.q]] + var5] & 255);
-                  ++var5;
-                  if (var1 >= 250) {
-                     var7 = 0;
-                     var8 = var1 - 250;
-                     var1 = this.a[this.a[197] + 6 + var8] & 255;
-                  }
-               }
-
-               ++var7;
-               int var6 = var1;
-               if (var1 <= 8) {
-                  var6 = var1 + this.a((int)3, (int)3);
-               }
-
-               this.b[var3][var2] = (byte)var6;
-               int var9 = (this.b[9][var6] & '\uffff') >> 13 & 1;
-               if ((var6 >= 175 || var9 == 1) && this.c[var3][var2] != -127) {
-                  this.c[var3][var2] = -126;
-               } else if (this.c[var3][var2] == -126) {
-                  this.c[var3][var2] = 0;
-               }
-
-               if (this.q != 3) {
-                  if (((this.j[16][var6] & '\uffff') >> 6 & 3) == 2) {
-                     this.c[var3][var2] = -125;
-                  }
-
-                  if (var6 >= 180 && var6 <= 231) {
-                     this.c[var3][var2] = -124;
-                  } else if (var6 >= 175 && var6 <= 179) {
-                     this.a(var6 - 175 + 1, var2, var3, this.a[this.a[110] + var6 - 175 + 1]);
-                  }
-               }
-
-               if (var3 == 0 || var3 == this.f - 1 || var2 == this.e - 1) {
-                  this.c[var3][var2] = -126;
-               }
+        }
+        if (!this.var_boolean_s) {
+            for (n2 = 0; n2 < 26; n2 = (int)((byte)(n2 + 1))) {
+                this.var_short_arr_arr_a[1][n2] = 0;
+                this.var_short_arr_arr_a[0][n2] = 0;
             }
-         }
-
-         for(int var13 = 0; var13 < this.d; ++var13) {
-            for(int var12 = 1; var12 < this.c - 1; ++var12) {
-               if (c((int)this.c[var13][var12]) && this.e[9833 + (this.c[var13][var12] + 61) * -1] == 5) {
-                  byte var14;
-                  if ((var14 = this.b[var13][var12 - 1]) == 33 || var14 == 34 || var14 == 37 || var14 == 38) {
-                     this.c[var13][var12 - 1] = -127;
-                  }
-
-                  if ((var14 = this.b[var13][var12 + 1]) == 33 || var14 == 34 || var14 == 37 || var14 == 38) {
-                     this.c[var13][var12 + 1] = -127;
-                  }
-               }
-            }
-         }
-
-      } catch (Exception var11) {
-      }
-   }
-
-   private void aO() {
-      this.aP();
-      this.a[0][17] = (short)(this.q == 3 ? 0 : 1);
-      this.y = this.C;
-      this.A = this.D;
-      this.I = this.J = (byte)(this.a[this.a[150] + this.q * 2] - this.y);
-      this.K = this.L = (byte)(this.a[this.a[150] + this.q * 2 + 1] - this.A);
-      this.aK();
-      this.J = this.I;
-      this.L = this.K;
-      this.z = this.y;
-      this.B = this.A;
-      this.a.d();
-   }
-
-   private void aP() {
-      if (this.q == 3) {
-         this.aw = 0;
-      }
-
-      short var1 = this.a[250 + this.q];
-      byte var2 = this.a[this.a[262] + this.q];
-
-      for(byte var3 = 0; var3 < var2; ++var3) {
-         if (this.a[var1 + 0 * var2 + var3] != -1) {
-            if (this.a[var1 + 1 * var2 + var3] >= 0) {
-               this.a(this.a[var1 + 0 * var2 + var3], this.a[var1 + 1 * var2 + var3], this.a[var1 + 2 * var2 + var3], this.a[var1 + 3 * var2 + var3], this.a[var1 + 4 * var2 + var3], true, -1);
-            } else if (this.a[var1 + 1 * var2 + var3] == -1) {
-               this.a((byte)(this.a[var1 + 0 * var2 + var3] & 1), this.a[var1 + 2 * var2 + var3], this.a[var1 + 3 * var2 + var3], this.a[var1 + 4 * var2 + var3], (byte)((this.a[var1 + 0 * var2 + var3] >> 1) + ((this.a[var1 + 0 * var2 + var3] & 1) != 0 ? this.b : 0)));
-            } else if (this.a[var1 + 1 * var2 + var3] == -2) {
-               this.b(1, this.a[var1 + 2 * var2 + var3], this.a[var1 + 3 * var2 + var3], this.a[var1 + 0 * var2 + var3]);
-            }
-
-            if (var3 <= 10 && this.q != 1 && this.q != 6) {
-               this.a[0][var3] = (short)this.a[this.a[263] + 11 * this.q * 2 + var3];
-               this.a[1][var3] = (short)(this.a[this.a[263] + 11 * (this.q * 2 + 1) + var3] * 20);
-            }
-         }
-      }
-
-      if (this.q == 0) {
-         this.e[7476] = 4;
-         this.e[7479] = 5;
-      } else {
-         if (this.q == 3) {
-            this.aw = 2;
-         }
-
-      }
-   }
-
-   static boolean a(Graphics var0, Image var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
-      try {
-         var0.drawRegion(var1, var2, var3, var4, var5, 0, var6, var7, var8);
-         return true;
-      } catch (Exception var10) {
-         return false;
-      }
-   }
-
-   private static void b(Graphics var0, int var1, int var2, int var3, int var4) {
-      var0.fillRect(0 + var1, 0 + var2, var3, var4 + 0);
-   }
-
-   static void a(Graphics var0, int var1, int var2, int var3, int var4) {
-      var0.drawRect(var1, var2, var3, var4);
-   }
-
-   private static void c(Graphics var0, int var1, int var2, int var3, int var4) {
-      var0.setClip(var1, var2, var3, var4);
-   }
-
-   private static void d(Graphics var0, int var1, int var2, int var3, int var4) {
-      var0.drawLine(var1, var2, var3, var4);
-   }
-
-   private boolean d(int var1) {
-      boolean var2 = false;
-
-      try {
-         System.gc();
-         Thread.yield();
-         RecordStore var4;
-         if ((var4 = RecordStore.openRecordStore(this.b + var1, true)).getNumRecords() <= 0) {
-            var4.closeRecordStore();
-            return false;
-         } else {
-            DataInputStream var3 = new DataInputStream(new ByteArrayInputStream(var4.getRecord(1)));
-
-            try {
-               if (var1 == 0) {
-                  this.l = var3.readInt();
-                  this.W = var3.readBoolean();
-                  this.r = var3.readByte();
-                  this.V = (byte)(4 + this.r);
-                  this.s = var3.readByte();
-                  this.t = var3.readByte();
-                  this.c = var3.readByte();
-                  this.p = var3.readByte();
-               } else {
-                  this.q = var3.readByte();
-                  this.aM();
-                  this.p = var3.readByte();
-                  this.d = var3.readByte();
-                  if (var1 == 2) {
-                     this.b = this.d;
-                  }
-
-                  this.aN();
-                  var3.read(this.e);
-                  var3.read(this.q);
-                  var3.read(this.a[0]);
-                  var3.read(this.a[1]);
-                  var3.read(this.a[2]);
-                  var3.read(this.a[3]);
-
-                  for(int var5 = 0; var5 < 26; ++var5) {
-                     this.a[0][var5] = var3.readShort();
-                     this.a[1][var5] = var3.readShort();
-                  }
-
-                  var3.read(this.e[0]);
-                  var3.read(this.e[1]);
-                  var3.read(this.e[2]);
-
-                  for(int var12 = 0; var12 < 10; ++var12) {
-                     for(int var6 = 0; var6 < 12; ++var6) {
-                        this.a[0][var12][var6] = var3.readByte();
-                        this.a[1][var12][var6] = var3.readByte();
-                     }
-                  }
-
-                  var3.read(this.f[0]);
-                  var3.read(this.f[1]);
-                  var3.read(this.f[2]);
-                  var3.read(this.f[3]);
-
-                  for(int var13 = 0; var13 < 5; ++var13) {
-                     var3.read(this.b[0][var13]);
-                     var3.read(this.b[1][var13]);
-                     var3.read(this.c[0][var13]);
-                     var3.read(this.c[1][var13]);
-                  }
-
-                  this.aq = var3.readByte();
-                  this.y = this.z = var3.readByte();
-                  this.A = this.B = var3.readByte();
-                  this.I = this.J = var3.readByte();
-                  this.K = this.L = var3.readByte();
-                  this.h = var3.readByte();
-                  this.ai = var3.readByte();
-                  this.c = var3.readInt();
-                  this.L = var3.readBoolean();
-                  this.N = var3.readBoolean();
-
-                  for(int var14 = 0; var14 < 3; ++var14) {
-                     for(int var21 = 0; var21 < 96; ++var21) {
-                        this.a[0][var14][var21] = var3.readInt();
-                     }
-                  }
-
-                  var3.read(this.a.c[0]);
-                  var3.read(this.a.c[1]);
-                  var3.read(this.a.c[2]);
-                  var3.read(this.a.c[3]);
-                  var3.read(this.a.c[4]);
-                  var3.read(this.a.c[5]);
-                  this.a.f = var3.readByte();
-                  this.a.K = var3.readByte();
-                  this.a.R = var3.readByte();
-                  this.a.L = var3.readByte();
-                  this.a.aQ = var3.readInt();
-                  var3.read(this.a.f[0]);
-                  var3.read(this.a.f[1]);
-                  var3.read(this.a.g[0]);
-                  var3.read(this.a.g[1]);
-                  var3.read(this.a.g[2]);
-                  var3.read(this.a.j);
-                  this.a.N = var3.readByte();
-                  this.a.O = var3.readByte();
-                  this.a.g = var3.readByte();
-                  this.a.J = var3.readByte();
-                  this.a.I = var3.readByte();
-                  var3.read(this.t);
-                  int var7 = -111;
-
-                  while(var7 >= -122) {
-                     byte var15;
-                     if ((var15 = var3.readByte()) == 127) {
-                        --var7;
-                     } else {
-                        byte var22 = var3.readByte();
-                        this.c[var22][var15] = (byte)var7;
-                     }
-                  }
-
-                  for(int var16 = 0; var16 < 30; ++var16) {
-                     if (this.f[0][var16] != 0) {
-                        this.c[this.f[3][var16]][this.f[2][var16]] = (byte)(this.f[0][var16] <= 30 ? -123 : -126);
-                     }
-                  }
-
-                  for(int var17 = 0; var17 < 50; ++var17) {
-                     if (this.e[9833 + var17] >= 6) {
-                        this.c[this.e[9783 + var17]][this.e[9733 + var17]] = (byte)(-61 - var17);
-                     }
-                  }
-
-                  for(int var18 = 1; var18 <= 100; ++var18) {
-                     if (this.e[1919 + var18] != 0) {
-                        this.e[808 + var18] = 0;
-                        if (this.e[4646 + var18] < 0) {
-                           this.c[this.e[101 + var18]][this.e[0 + var18]] = (byte)var18;
-                           if ((this.e[2929 + var18] & 255) <= 7 && (this.e[1111 + var18] & 15) < (this.a[this.a[15] + (this.e[606 + var18] & 1) * 9 + this.e[1010 + var18] - this.e[7777 + var18]] + 1) / 2 && this.c[this.e[101 + var18] + this.a[this.a[1] + 8 + this.e[606 + var18]]][this.e[0 + var18] + this.a[this.a[1] + this.e[606 + var18]]] == 0) {
-                              this.c[this.e[101 + var18] + this.a[this.a[1] + 8 + this.e[606 + var18]]][this.e[0 + var18] + this.a[this.a[1] + this.e[606 + var18]]] = -128;
-                           }
-                        }
-                     }
-                  }
-
-                  for(int var19 = 0; var19 < 22; ++var19) {
-                     this.e[9689 + var19] = 0;
-                     if (this.e[9513 + var19] != 0) {
-                        this.c[this.e[9381 + var19]][this.e[9359 + var19]] = (byte)(101 + var19);
-                        if ((this.e[9557 + var19] & 255) <= 7 && (this.e[9623 + var19] & 15) < (this.a[this.a[15] + (this.e[9491 + var19] & 1) * 9 + this.a[this.a[179] + this.e[9535 + var19]]] + 1) / 2 && this.c[this.e[9381 + var19] + this.a[this.a[1] + 8 + this.e[9491 + var19]]][this.e[9359 + var19] + this.a[this.a[1] + this.e[9491 + var19]]] == 0) {
-                           this.c[this.e[9381 + var19] + this.a[this.a[1] + 8 + this.e[9491 + var19]]][this.e[9359 + var19] + this.a[this.a[1] + this.e[9491 + var19]]] = -128;
-                        }
-                     }
-                  }
-
-                  for(int var20 = 1; var20 <= 60; ++var20) {
-                     if (this.e[8505 + var20] != 0) {
-                        for(int var8 = 0; var8 < this.a[this.a[138] + 130 + this.e[8749 + var20]]; ++var8) {
-                           for(int var9 = 0; var9 < this.a[this.a[138] + 104 + this.e[8749 + var20]]; ++var9) {
-                              this.c[this.e[8444 + var20] + var8][this.e[8383 + var20] + var9] = (byte)(-var20);
-                           }
-                        }
-                     }
-                  }
-
-                  this.a.n();
-                  this.a.j();
-                  this.a.d();
-                  this.aK();
-                  this.J = this.I;
-                  this.L = this.K;
-               }
-
-               var2 = true;
-            } catch (Exception var10) {
-            }
-
-            var3.close();
-            var4.closeRecordStore();
-            if (!var2) {
-               RecordStore.deleteRecordStore(this.b + var1);
-               this.d(var1);
-            }
-
-            return var2;
-         }
-      } catch (Exception var11) {
-         return false;
-      }
-   }
-
-   private boolean e(int var1) {
-      boolean var2 = false;
-
-      try {
-         RecordStore var3 = null;
-         ByteArrayOutputStream var4 = null;
-         DataOutputStream var5 = null;
-
-         try {
-            RecordStore.deleteRecordStore(this.b + var1);
-            var3 = RecordStore.openRecordStore(this.b + var1, true);
-            var4 = new ByteArrayOutputStream();
-            var5 = new DataOutputStream(var4);
-            if (var1 == 0) {
-               var5.writeInt(this.l);
-               var5.writeBoolean(this.W);
-               var5.writeByte(this.r);
-               var5.writeByte(this.s);
-               var5.writeByte(this.t);
-               var5.writeByte(this.c);
-               var5.writeByte(this.p);
-            } else {
-               if (var1 == 2) {
-                  this.W = true;
-               } else if (var1 == 1) {
-                  this.t = this.a[this.a[248] + this.q];
-               }
-
-               var5.writeByte(this.q);
-               var5.writeByte(this.p);
-               var5.writeByte(this.d);
-               ((OutputStream)var5).write(this.e);
-               ((OutputStream)var5).write(this.q);
-               ((OutputStream)var5).write(this.a[0]);
-               ((OutputStream)var5).write(this.a[1]);
-               ((OutputStream)var5).write(this.a[2]);
-               ((OutputStream)var5).write(this.a[3]);
-
-               for(int var6 = 0; var6 < 26; ++var6) {
-                  var5.writeShort(this.a[0][var6]);
-                  var5.writeShort(this.a[1][var6]);
-               }
-
-               ((OutputStream)var5).write(this.e[0]);
-               ((OutputStream)var5).write(this.e[1]);
-               ((OutputStream)var5).write(this.e[2]);
-
-               for(int var11 = 0; var11 < 10; ++var11) {
-                  for(int var7 = 0; var7 < 12; ++var7) {
-                     var5.writeByte(this.a[0][var11][var7]);
-                     var5.writeByte(this.a[1][var11][var7]);
-                  }
-               }
-
-               ((OutputStream)var5).write(this.f[0]);
-               ((OutputStream)var5).write(this.f[1]);
-               ((OutputStream)var5).write(this.f[2]);
-               ((OutputStream)var5).write(this.f[3]);
-
-               for(int var12 = 0; var12 < 5; ++var12) {
-                  ((OutputStream)var5).write(this.b[0][var12]);
-                  ((OutputStream)var5).write(this.b[1][var12]);
-                  ((OutputStream)var5).write(this.c[0][var12]);
-                  ((OutputStream)var5).write(this.c[1][var12]);
-               }
-
-               var5.writeByte(this.aq);
-               var5.writeByte(this.y);
-               var5.writeByte(this.A);
-               var5.writeByte(this.I);
-               var5.writeByte(this.K);
-               var5.writeByte(this.h);
-               var5.writeByte(this.ai);
-               var5.writeInt(this.c);
-               var5.writeBoolean(this.L);
-               var5.writeBoolean(this.N);
-
-               for(int var13 = 0; var13 < 3; ++var13) {
-                  for(int var15 = 0; var15 < 96; ++var15) {
-                     var5.writeInt(this.a[0][var13][var15]);
-                  }
-               }
-
-               ((OutputStream)var5).write(this.a.c[0]);
-               ((OutputStream)var5).write(this.a.c[1]);
-               ((OutputStream)var5).write(this.a.c[2]);
-               ((OutputStream)var5).write(this.a.c[3]);
-               ((OutputStream)var5).write(this.a.c[4]);
-               ((OutputStream)var5).write(this.a.c[5]);
-               var5.writeByte(this.a.f);
-               var5.writeByte(this.a.K);
-               var5.writeByte(this.a.R);
-               var5.writeByte(this.a.L);
-               var5.writeInt(this.a.aQ);
-               ((OutputStream)var5).write(this.a.f[0]);
-               ((OutputStream)var5).write(this.a.f[1]);
-               ((OutputStream)var5).write(this.a.g[0]);
-               ((OutputStream)var5).write(this.a.g[1]);
-               ((OutputStream)var5).write(this.a.g[2]);
-               ((OutputStream)var5).write(this.a.j);
-               var5.writeByte(this.a.N);
-               var5.writeByte(this.a.O);
-               var5.writeByte(this.a.g);
-               var5.writeByte(this.a.J);
-               var5.writeByte(this.a.I);
-               ((OutputStream)var5).write(this.t);
-
-               for(int var8 = -111; var8 >= -122; --var8) {
-                  for(int var14 = 0; var14 < this.c; ++var14) {
-                     for(int var16 = 0; var16 < this.d; ++var16) {
-                        if (this.c[var16][var14] == var8) {
-                           var5.writeByte(var14);
-                           var5.writeByte(var16);
-                        }
-                     }
-                  }
-
-                  var5.writeByte(127);
-               }
-            }
-
-            var3.addRecord(var4.toByteArray(), 0, var4.size());
-            var2 = true;
-         } catch (Exception var9) {
-         }
-
-         if (var3 != null) {
-            var3.closeRecordStore();
-         }
-
-         if (var4 != null) {
-            var4.close();
-         }
-
-         if (var5 != null) {
-            var5.close();
-         }
-      } catch (Exception var10) {
-      }
-
-      return var2;
-   }
-
-   final int a(int var1, int var2) {
-      return (this.a.nextInt() & var1) % var2;
-   }
-
-   private static long a() {
-      return System.currentTimeMillis();
-   }
-
-   public final void hideNotify() {
-      this.d();
-   }
-
-   public final void showNotify() {
-      this.e();
-   }
-
-   public final void d() {
-      this.Y = true;
-      this.Z = true;
-      if (this.aa && !this.ad) {
-         this.aR();
-      }
-
-      this.ad = true;
-   }
-
-   public final void e() {
-      this.Y = false;
-   }
-
-   private void aQ() {
-      this.a.k();
-      f = this.b[this.h * 2 + this.a((int)255, (int)2)];
-      if (this.a == null || this.a.a() <= 100 || f != g) {
-         g = f;
-         this.aR();
-         (new StringBuffer()).append("/s").append(f).toString();
-         this.a = new a("audio/midi");
-      }
-
-      this.a.a(this.e);
-   }
-
-   private void aR() {
-      if (this.a != null) {
-         this.a.a();
-         this.a.b();
-         this.a = null;
-      }
-
-   }
-
-   private void aS() {
-      if (this.Z) {
-         if (this.Q != 27 && this.ac) {
-            this.ab = true;
-            this.v = 0;
-            this.S = this.R;
-            this.R = this.Q;
-            this.Q = 27;
-            this.z = this.y;
-            this.B = this.A;
-            this.J = this.I;
-            this.L = this.K;
-         }
-
-         while(this.Y) {
-            this.n = false;
+            this.var_short_arr_arr_a[0][17] = 0;
+        }
+        this.var_short_arr_arr_a[0][16] = 1;
+        this.t();
+        this.var_int_c = 0;
+        this.var_int_h = 0;
+        this.var_boolean_N = false;
+        this.var_boolean_L = false;
+        this.var_boolean_F = false;
+        this.var_boolean_K = false;
+        this.var_int_X = 0;
+        this.var_int_W = 0;
+        this.aJ = 0;
+        this.var_byte_u = 0;
+        this.var_byte_ay = 0;
+        this.var_b_a.void_a();
+        this.i();
+        this.var_boolean_k = true;
+    }
+
+    private void aN() {
+        int n = 0;
+        try {
+            int n2;
+            int n3;
+            int n4;
+            System.gc();
             Thread.yield();
-            tribes.a(10);
-         }
-      }
-
-      this.Z = false;
-      this.ad = false;
-      if (this.Q != 27 && this.e == 2 && (this.a == null || this.a != null && this.a.a() != 400)) {
-         this.aQ();
-      }
-
-      tribes.a(10);
-   }
-
-   private void m(int var1) {
-      if (var1 == this.j[0]) {
-         for(int var4 = 0; var4 < 6; ++var4) {
-            this.i[var4] = 0;
-         }
-
-         this.i[0] = this.j[0];
-      } else {
-         if (this.i[0] == this.j[0]) {
-            for(int var2 = 0; var2 < 6; ++var2) {
-               if (this.i[var2] == 0) {
-                  this.i[var2] = var1;
-                  break;
-               }
+            Object var4_2 = null;
+            int n5 = 0;
+            this.var_short_c = this.var_short_e = (short)this.var_byte_arr_a[this.var_short_arr_a[149] + this.var_byte_q * 2];
+            this.var_short_d = this.var_short_f = (short)this.var_byte_arr_a[this.var_short_arr_a[149] + this.var_byte_q * 2 + 1];
+            if (this.var_byte_q == 0) {
+                this.var_short_c = (short)40;
+                this.var_short_d = (short)32;
+            } else if (this.var_byte_q == 5) {
+                this.var_short_c = (short)(this.var_short_c - 32);
             }
-
-            this.ae = true;
-
-            for(int var3 = 0; var3 < 5; ++var3) {
-               if (this.i[var3] != this.j[var3]) {
-                  this.ae = false;
-                  break;
-               }
+            int n6 = 0;
+            int n7 = 10;
+            for (n4 = 0; n4 < this.var_short_f; ++n4) {
+                for (n3 = 0; n3 < this.var_short_e; ++n3) {
+                    if (n7 >= this.var_byte_arr_a[this.var_short_arr_a[197] + 0 + n6]) {
+                        n = (short)(this.var_byte_arr_v[this.var_int_arr_h[this.var_byte_arr_a[this.var_short_arr_a[248] + this.var_byte_q]] + n5] & 0xFF);
+                        ++n5;
+                        if (n >= 250) {
+                            n7 = 0;
+                            n6 = n - 250;
+                            n = this.var_byte_arr_a[this.var_short_arr_a[197] + 6 + n6] & 0xFF;
+                        }
+                    }
+                    ++n7;
+                    int n8 = n;
+                    if (n8 <= 8) {
+                        n8 += this.int_a(3, 3);
+                    }
+                    this.var_byte_arr_arr_b[n4][n3] = (byte)n8;
+                    n2 = (this.var_short_arr_arr_b[9][n8] & 0xFFFF) >> 13 & 1;
+                    if ((n8 >= 175 || n2 == 1) && this.var_byte_arr_arr_c[n4][n3] != -127) {
+                        this.var_byte_arr_arr_c[n4][n3] = -126;
+                    } else if (this.var_byte_arr_arr_c[n4][n3] == -126) {
+                        this.var_byte_arr_arr_c[n4][n3] = 0;
+                    }
+                    if (this.var_byte_q != 3) {
+                        int n9 = (this.var_byte_arr_arr_j[16][n8] & 0xFFFF) >> 6 & 3;
+                        if (n9 == 2) {
+                            this.var_byte_arr_arr_c[n4][n3] = -125;
+                        }
+                        if (n8 >= 180 && n8 <= 231) {
+                            this.var_byte_arr_arr_c[n4][n3] = -124;
+                        } else if (n8 >= 175 && n8 <= 179) {
+                            this.a(n8 - 175 + 1, n3, n4, this.var_byte_arr_a[this.var_short_arr_a[110] + n8 - 175 + 1]);
+                        }
+                    }
+                    if (n4 != 0 && n4 != this.var_short_f - 1 && n3 != this.var_short_e - 1) continue;
+                    this.var_byte_arr_arr_c[n4][n3] = -126;
+                }
             }
-
-            if (this.ae && this.i[5] != 0) {
-               switch (this.i[5]) {
-                  case 110:
-                     this.u = 1;
-                     if (this.q == 0) {
-                        ++this.q;
-                     }
-                     break;
-                  case 114:
-                     this.af = true;
-                     break;
-                  case 118:
-                     short[] var10000 = this.a[0];
-                     var10000[0] = (short)(var10000[0] + 100);
-                     var10000 = this.a[0];
-                     var10000[1] = (short)(var10000[1] + 100);
-                     var10000 = this.a[0];
-                     var10000[2] = (short)(var10000[2] + 100);
-                     var10000 = this.a[0];
-                     var10000[3] = (short)(var10000[3] + 100);
-                     var10000 = this.a[0];
-                     var10000[4] = (short)(var10000[4] + 100);
-                     var10000 = this.a[0];
-                     var10000[5] = (short)(var10000[5] + 3);
-                     var10000 = this.a[0];
-                     var10000[8] = (short)(var10000[8] + 3);
-                     var10000 = this.a[0];
-                     var10000[10] = (short)(var10000[10] + 3);
-                     break;
-                  case 121:
-                     this.ag = true;
-               }
-
-               this.i[0] = 0;
+            for (n4 = 0; n4 < this.var_short_d; ++n4) {
+                for (n3 = 1; n3 < this.var_short_c - 1; ++n3) {
+                    if (!f.boolean_c(this.var_byte_arr_arr_c[n4][n3]) || this.var_byte_arr_e[9833 + (this.var_byte_arr_arr_c[n4][n3] + 61) * -1] != 5) continue;
+                    n2 = this.var_byte_arr_arr_b[n4][n3 - 1];
+                    if (n2 == 33 || n2 == 34 || n2 == 37 || n2 == 38) {
+                        this.var_byte_arr_arr_c[n4][n3 - 1] = -127;
+                    }
+                    if ((n2 = this.var_byte_arr_arr_b[n4][n3 + 1]) != 33 && n2 != 34 && n2 != 37 && n2 != 38) continue;
+                    this.var_byte_arr_arr_c[n4][n3 + 1] = -127;
+                }
             }
-         }
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-      }
-   }
+    private void aO() {
+        this.aP();
+        this.var_short_arr_arr_a[0][17] = this.var_byte_q == 3 ? (short)0 : 1;
+        this.var_byte_y = this.var_byte_C;
+        this.var_byte_A = this.var_byte_D;
+        this.var_byte_I = this.var_byte_J = (byte)(this.var_byte_arr_a[this.var_short_arr_a[150] + this.var_byte_q * 2] - this.var_byte_y);
+        this.var_byte_K = this.var_byte_L = (byte)(this.var_byte_arr_a[this.var_short_arr_a[150] + this.var_byte_q * 2 + 1] - this.var_byte_A);
+        this.aK();
+        this.var_byte_J = this.var_byte_I;
+        this.var_byte_L = this.var_byte_K;
+        this.var_byte_z = this.var_byte_y;
+        this.var_byte_B = this.var_byte_A;
+        this.var_b_a.void_d();
+    }
+
+    private void aP() {
+        if (this.var_byte_q == 3) {
+            this.var_byte_aw = 0;
+        }
+        short s = this.var_short_arr_a[250 + this.var_byte_q];
+        byte by = this.var_byte_arr_a[this.var_short_arr_a[262] + this.var_byte_q];
+        for (byte by2 = 0; by2 < by; by2 = (byte)(by2 + 1)) {
+            if (this.var_byte_arr_a[s + 0 * by + by2] == -1) continue;
+            if (this.var_byte_arr_a[s + 1 * by + by2] >= 0) {
+                this.a(this.var_byte_arr_a[s + 0 * by + by2], this.var_byte_arr_a[s + 1 * by + by2], this.var_byte_arr_a[s + 2 * by + by2], this.var_byte_arr_a[s + 3 * by + by2], this.var_byte_arr_a[s + 4 * by + by2], true, -1);
+            } else if (this.var_byte_arr_a[s + 1 * by + by2] == -1) {
+                this.a((byte)(this.var_byte_arr_a[s + 0 * by + by2] & 1), this.var_byte_arr_a[s + 2 * by + by2], this.var_byte_arr_a[s + 3 * by + by2], this.var_byte_arr_a[s + 4 * by + by2], (byte)((this.var_byte_arr_a[s + 0 * by + by2] >> 1) + ((this.var_byte_arr_a[s + 0 * by + by2] & 1) != 0 ? this.var_byte_b : (byte)0)));
+            } else if (this.var_byte_arr_a[s + 1 * by + by2] == -2) {
+                this.b(1, this.var_byte_arr_a[s + 2 * by + by2], this.var_byte_arr_a[s + 3 * by + by2], this.var_byte_arr_a[s + 0 * by + by2]);
+            }
+            if (by2 > 10 || this.var_byte_q == 1 || this.var_byte_q == 6) continue;
+            this.var_short_arr_arr_a[0][by2] = this.var_byte_arr_a[this.var_short_arr_a[263] + 11 * this.var_byte_q * 2 + by2];
+            this.var_short_arr_arr_a[1][by2] = (short)(this.var_byte_arr_a[this.var_short_arr_a[263] + 11 * (this.var_byte_q * 2 + 1) + by2] * 20);
+        }
+        if (this.var_byte_q == 0) {
+            this.var_byte_arr_e[7476] = 4;
+            this.var_byte_arr_e[7479] = 5;
+            return;
+        }
+        if (this.var_byte_q == 3) {
+            this.var_byte_aw = (byte)2;
+        }
+    }
+
+    static boolean a(Graphics graphics, Image image, int n, int n2, int n3, int n4, int n5, int n6, int n7) {
+        try {
+            graphics.drawRegion(image, n, n2, n3, n4, 0, n5, n6, n7);
+            return true;
+        }
+        catch (Exception exception) {
+            return false;
+        }
+    }
+
+    private static void b(Graphics graphics, int n, int n2, int n3, int n4) {
+        graphics.fillRect(0 + n, 0 + n2, n3, n4 + 0);
+    }
+
+    static void a(Graphics graphics, int n, int n2, int n3, int n4) {
+        graphics.drawRect(n, n2, n3, n4);
+    }
+
+    private static void c(Graphics graphics, int n, int n2, int n3, int n4) {
+        graphics.setClip(n, n2, n3, n4);
+    }
+
+    private static void d(Graphics graphics, int n, int n2, int n3, int n4) {
+        graphics.drawLine(n, n2, n3, n4);
+    }
+
+    private boolean boolean_d(int n) {
+        boolean bl = false;
+        try {
+            System.gc();
+            Thread.yield();
+            RecordStore recordStore = RecordStore.openRecordStore((String)(this.var_java_lang_String_b + n), (boolean)true);
+            if (recordStore.getNumRecords() <= 0) {
+                recordStore.closeRecordStore();
+                return false;
+            }
+            DataInputStream dataInputStream = new DataInputStream(new ByteArrayInputStream(recordStore.getRecord(1)));
+            try {
+                if (n == 0) {
+                    this.var_int_l = dataInputStream.readInt();
+                    this.var_boolean_W = dataInputStream.readBoolean();
+                    this.var_byte_r = dataInputStream.readByte();
+                    this.var_byte_V = (byte)(4 + this.var_byte_r);
+                    this.var_byte_s = dataInputStream.readByte();
+                    this.var_byte_t = dataInputStream.readByte();
+                    this.var_byte_c = dataInputStream.readByte();
+                    this.var_byte_p = dataInputStream.readByte();
+                } else {
+                    int n2;
+                    int n3;
+                    this.var_byte_q = dataInputStream.readByte();
+                    this.aM();
+                    this.var_byte_p = dataInputStream.readByte();
+                    this.var_byte_d = dataInputStream.readByte();
+                    if (n == 2) {
+                        this.var_byte_b = this.var_byte_d;
+                    }
+                    this.aN();
+                    dataInputStream.read(this.var_byte_arr_e);
+                    dataInputStream.read(this.var_byte_arr_q);
+                    dataInputStream.read(this.var_byte_arr_arr_a[0]);
+                    dataInputStream.read(this.var_byte_arr_arr_a[1]);
+                    dataInputStream.read(this.var_byte_arr_arr_a[2]);
+                    dataInputStream.read(this.var_byte_arr_arr_a[3]);
+                    for (n3 = 0; n3 < 26; ++n3) {
+                        this.var_short_arr_arr_a[0][n3] = dataInputStream.readShort();
+                        this.var_short_arr_arr_a[1][n3] = dataInputStream.readShort();
+                    }
+                    dataInputStream.read(this.var_byte_arr_arr_e[0]);
+                    dataInputStream.read(this.var_byte_arr_arr_e[1]);
+                    dataInputStream.read(this.var_byte_arr_arr_e[2]);
+                    for (n3 = 0; n3 < 10; ++n3) {
+                        for (n2 = 0; n2 < 12; ++n2) {
+                            this.var_byte_arr_arr_arr_a[0][n3][n2] = dataInputStream.readByte();
+                            this.var_byte_arr_arr_arr_a[1][n3][n2] = dataInputStream.readByte();
+                        }
+                    }
+                    dataInputStream.read(this.var_byte_arr_arr_f[0]);
+                    dataInputStream.read(this.var_byte_arr_arr_f[1]);
+                    dataInputStream.read(this.var_byte_arr_arr_f[2]);
+                    dataInputStream.read(this.var_byte_arr_arr_f[3]);
+                    for (n3 = 0; n3 < 5; ++n3) {
+                        dataInputStream.read(this.var_byte_arr_arr_arr_b[0][n3]);
+                        dataInputStream.read(this.var_byte_arr_arr_arr_b[1][n3]);
+                        dataInputStream.read(this.var_byte_arr_arr_arr_c[0][n3]);
+                        dataInputStream.read(this.var_byte_arr_arr_arr_c[1][n3]);
+                    }
+                    this.var_byte_aq = dataInputStream.readByte();
+                    this.var_byte_y = this.var_byte_z = dataInputStream.readByte();
+                    this.var_byte_A = this.var_byte_B = dataInputStream.readByte();
+                    this.var_byte_I = this.var_byte_J = dataInputStream.readByte();
+                    this.var_byte_K = this.var_byte_L = dataInputStream.readByte();
+                    this.var_byte_h = dataInputStream.readByte();
+                    this.var_byte_ai = dataInputStream.readByte();
+                    this.var_int_c = dataInputStream.readInt();
+                    this.var_boolean_L = dataInputStream.readBoolean();
+                    this.var_boolean_N = dataInputStream.readBoolean();
+                    for (n3 = 0; n3 < 3; ++n3) {
+                        for (n2 = 0; n2 < 96; ++n2) {
+                            this.var_int_arr_arr_arr_a[0][n3][n2] = dataInputStream.readInt();
+                        }
+                    }
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_c[0]);
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_c[1]);
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_c[2]);
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_c[3]);
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_c[4]);
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_c[5]);
+                    this.var_b_a.var_byte_f = dataInputStream.readByte();
+                    this.var_b_a.var_byte_K = dataInputStream.readByte();
+                    this.var_b_a.var_byte_R = dataInputStream.readByte();
+                    this.var_b_a.var_byte_L = dataInputStream.readByte();
+                    this.var_b_a.aQ = dataInputStream.readInt();
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_f[0]);
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_f[1]);
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_g[0]);
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_g[1]);
+                    dataInputStream.read(this.var_b_a.var_byte_arr_arr_g[2]);
+                    dataInputStream.read(this.var_b_a.var_byte_arr_j);
+                    this.var_b_a.var_byte_N = dataInputStream.readByte();
+                    this.var_b_a.var_byte_O = dataInputStream.readByte();
+                    this.var_b_a.var_byte_g = dataInputStream.readByte();
+                    this.var_b_a.var_byte_J = dataInputStream.readByte();
+                    this.var_b_a.var_byte_I = dataInputStream.readByte();
+                    dataInputStream.read(this.var_byte_arr_t);
+                    int n4 = -111;
+                    while (n4 >= -122) {
+                        byte by = dataInputStream.readByte();
+                        n3 = by;
+                        if (by == 127) {
+                            --n4;
+                            continue;
+                        }
+                        n2 = dataInputStream.readByte();
+                        this.var_byte_arr_arr_c[n2][n3] = (byte)n4;
+                    }
+                    for (n3 = 0; n3 < 30; ++n3) {
+                        if (this.var_byte_arr_arr_f[0][n3] == 0) continue;
+                        this.var_byte_arr_arr_c[this.var_byte_arr_arr_f[3][n3]][this.var_byte_arr_arr_f[2][n3]] = this.var_byte_arr_arr_f[0][n3] <= 30 ? -123 : -126;
+                    }
+                    for (n3 = 0; n3 < 50; ++n3) {
+                        if (this.var_byte_arr_e[9833 + n3] < 6) continue;
+                        this.var_byte_arr_arr_c[this.var_byte_arr_e[9783 + n3]][this.var_byte_arr_e[9733 + n3]] = (byte)(-61 - n3);
+                    }
+                    for (n3 = 1; n3 <= 100; ++n3) {
+                        if (this.var_byte_arr_e[1919 + n3] == 0) continue;
+                        this.var_byte_arr_e[808 + n3] = 0;
+                        if (this.var_byte_arr_e[4646 + n3] >= 0) continue;
+                        this.var_byte_arr_arr_c[this.var_byte_arr_e[101 + n3]][this.var_byte_arr_e[0 + n3]] = (byte)n3;
+                        if ((this.var_byte_arr_e[2929 + n3] & 0xFF) > 7 || (this.var_byte_arr_e[1111 + n3] & 0xF) >= (this.var_byte_arr_a[this.var_short_arr_a[15] + (this.var_byte_arr_e[606 + n3] & 1) * 9 + this.var_byte_arr_e[1010 + n3] - this.var_byte_arr_e[7777 + n3]] + 1) / 2 || this.var_byte_arr_arr_c[this.var_byte_arr_e[101 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + 8 + this.var_byte_arr_e[606 + n3]]][this.var_byte_arr_e[0 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + this.var_byte_arr_e[606 + n3]]] != 0) continue;
+                        this.var_byte_arr_arr_c[this.var_byte_arr_e[101 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + 8 + this.var_byte_arr_e[606 + n3]]][this.var_byte_arr_e[0 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + this.var_byte_arr_e[606 + n3]]] = -128;
+                    }
+                    for (n3 = 0; n3 < 22; ++n3) {
+                        this.var_byte_arr_e[9689 + n3] = 0;
+                        if (this.var_byte_arr_e[9513 + n3] == 0) continue;
+                        this.var_byte_arr_arr_c[this.var_byte_arr_e[9381 + n3]][this.var_byte_arr_e[9359 + n3]] = (byte)(101 + n3);
+                        if ((this.var_byte_arr_e[9557 + n3] & 0xFF) > 7 || (this.var_byte_arr_e[9623 + n3] & 0xF) >= (this.var_byte_arr_a[this.var_short_arr_a[15] + (this.var_byte_arr_e[9491 + n3] & 1) * 9 + this.var_byte_arr_a[this.var_short_arr_a[179] + this.var_byte_arr_e[9535 + n3]]] + 1) / 2 || this.var_byte_arr_arr_c[this.var_byte_arr_e[9381 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + 8 + this.var_byte_arr_e[9491 + n3]]][this.var_byte_arr_e[9359 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + this.var_byte_arr_e[9491 + n3]]] != 0) continue;
+                        this.var_byte_arr_arr_c[this.var_byte_arr_e[9381 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + 8 + this.var_byte_arr_e[9491 + n3]]][this.var_byte_arr_e[9359 + n3] + this.var_byte_arr_a[this.var_short_arr_a[1] + this.var_byte_arr_e[9491 + n3]]] = -128;
+                    }
+                    for (n3 = 1; n3 <= 60; ++n3) {
+                        if (this.var_byte_arr_e[8505 + n3] == 0) continue;
+                        for (int i = 0; i < this.var_byte_arr_a[this.var_short_arr_a[138] + 130 + this.var_byte_arr_e[8749 + n3]]; ++i) {
+                            for (int j = 0; j < this.var_byte_arr_a[this.var_short_arr_a[138] + 104 + this.var_byte_arr_e[8749 + n3]]; ++j) {
+                                this.var_byte_arr_arr_c[this.var_byte_arr_e[8444 + n3] + i][this.var_byte_arr_e[8383 + n3] + j] = (byte)(-n3);
+                            }
+                        }
+                    }
+                    this.var_b_a.void_n();
+                    this.var_b_a.void_j();
+                    this.var_b_a.void_d();
+                    this.aK();
+                    this.var_byte_J = this.var_byte_I;
+                    this.var_byte_L = this.var_byte_K;
+                }
+                bl = true;
+            }
+            catch (Exception exception) {}
+            dataInputStream.close();
+            recordStore.closeRecordStore();
+            if (!bl) {
+                RecordStore.deleteRecordStore((String)(this.var_java_lang_String_b + n));
+                this.boolean_d(n);
+            }
+            return bl;
+        }
+        catch (Exception exception) {
+            return false;
+        }
+    }
+
+    private boolean boolean_e(int n) {
+        boolean bl = false;
+        try {
+            RecordStore recordStore = null;
+            ByteArrayOutputStream byteArrayOutputStream = null;
+            FilterOutputStream filterOutputStream = null;
+            try {
+                RecordStore.deleteRecordStore((String)(this.var_java_lang_String_b + n));
+                recordStore = RecordStore.openRecordStore((String)(this.var_java_lang_String_b + n), (boolean)true);
+                byteArrayOutputStream = new ByteArrayOutputStream();
+                filterOutputStream = new DataOutputStream(byteArrayOutputStream);
+                if (n == 0) {
+                    ((DataOutputStream)filterOutputStream).writeInt(this.var_int_l);
+                    ((DataOutputStream)filterOutputStream).writeBoolean(this.var_boolean_W);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_r);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_s);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_t);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_c);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_p);
+                } else {
+                    int n2;
+                    int n3;
+                    if (n == 2) {
+                        this.var_boolean_W = true;
+                    } else if (n == 1) {
+                        this.var_byte_t = this.var_byte_arr_a[this.var_short_arr_a[248] + this.var_byte_q];
+                    }
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_q);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_p);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_d);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_e);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_q);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_a[0]);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_a[1]);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_a[2]);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_a[3]);
+                    for (n3 = 0; n3 < 26; ++n3) {
+                        ((DataOutputStream)filterOutputStream).writeShort(this.var_short_arr_arr_a[0][n3]);
+                        ((DataOutputStream)filterOutputStream).writeShort(this.var_short_arr_arr_a[1][n3]);
+                    }
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_e[0]);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_e[1]);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_e[2]);
+                    for (n3 = 0; n3 < 10; ++n3) {
+                        for (n2 = 0; n2 < 12; ++n2) {
+                            ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_arr_arr_arr_a[0][n3][n2]);
+                            ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_arr_arr_arr_a[1][n3][n2]);
+                        }
+                    }
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_f[0]);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_f[1]);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_f[2]);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_f[3]);
+                    for (n3 = 0; n3 < 5; ++n3) {
+                        ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_arr_b[0][n3]);
+                        ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_arr_b[1][n3]);
+                        ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_arr_c[0][n3]);
+                        ((OutputStream)filterOutputStream).write(this.var_byte_arr_arr_arr_c[1][n3]);
+                    }
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_aq);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_y);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_A);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_I);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_K);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_h);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_byte_ai);
+                    ((DataOutputStream)filterOutputStream).writeInt(this.var_int_c);
+                    ((DataOutputStream)filterOutputStream).writeBoolean(this.var_boolean_L);
+                    ((DataOutputStream)filterOutputStream).writeBoolean(this.var_boolean_N);
+                    for (n3 = 0; n3 < 3; ++n3) {
+                        for (n2 = 0; n2 < 96; ++n2) {
+                            ((DataOutputStream)filterOutputStream).writeInt(this.var_int_arr_arr_arr_a[0][n3][n2]);
+                        }
+                    }
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_c[0]);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_c[1]);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_c[2]);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_c[3]);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_c[4]);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_c[5]);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_b_a.var_byte_f);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_b_a.var_byte_K);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_b_a.var_byte_R);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_b_a.var_byte_L);
+                    ((DataOutputStream)filterOutputStream).writeInt(this.var_b_a.aQ);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_f[0]);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_f[1]);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_g[0]);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_g[1]);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_arr_g[2]);
+                    ((OutputStream)filterOutputStream).write(this.var_b_a.var_byte_arr_j);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_b_a.var_byte_N);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_b_a.var_byte_O);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_b_a.var_byte_g);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_b_a.var_byte_J);
+                    ((DataOutputStream)filterOutputStream).writeByte(this.var_b_a.var_byte_I);
+                    ((OutputStream)filterOutputStream).write(this.var_byte_arr_t);
+                    for (byte by = -111; by >= -122; --by) {
+                        for (n3 = 0; n3 < this.var_short_c; ++n3) {
+                            for (n2 = 0; n2 < this.var_short_d; ++n2) {
+                                if (this.var_byte_arr_arr_c[n2][n3] != by) continue;
+                                ((DataOutputStream)filterOutputStream).writeByte(n3);
+                                ((DataOutputStream)filterOutputStream).writeByte(n2);
+                            }
+                        }
+                        ((DataOutputStream)filterOutputStream).writeByte(127);
+                    }
+                }
+                recordStore.addRecord(byteArrayOutputStream.toByteArray(), 0, byteArrayOutputStream.size());
+                bl = true;
+            }
+            catch (Exception exception) {}
+            if (recordStore != null) {
+                recordStore.closeRecordStore();
+            }
+            if (byteArrayOutputStream != null) {
+                byteArrayOutputStream.close();
+            }
+            if (filterOutputStream != null) {
+                filterOutputStream.close();
+            }
+        }
+        catch (Exception exception) {}
+        return bl;
+    }
+
+    final int int_a(int n, int n2) {
+        return (this.var_java_util_Random_a.nextInt() & n) % n2;
+    }
+
+    private static long long_a() {
+        return System.currentTimeMillis();
+    }
+
+    public final void hideNotify() {
+        this.d();
+    }
+
+    public final void showNotify() {
+        this.e();
+    }
+
+    public final void d() {
+        this.var_boolean_Y = true;
+        this.var_boolean_Z = true;
+        if (this.var_boolean_aa && !this.var_boolean_ad) {
+            this.aR();
+        }
+        this.var_boolean_ad = true;
+    }
+
+    public final void e() {
+        this.var_boolean_Y = false;
+    }
+
+    private void aQ() {
+        this.var_b_a.void_k();
+        var_byte_f = this.var_byte_arr_b[this.var_byte_h * 2 + this.int_a(255, 2)];
+        if (this.var_a_a == null || this.var_a_a.int_a() <= 100 || var_byte_f != var_byte_g) {
+            var_byte_g = var_byte_f;
+            this.aR();
+            String cfr_ignored_0 = "/s" + var_byte_f;
+            this.var_a_a = new a("audio/midi");
+        }
+        this.var_a_a.a(this.var_byte_e);
+    }
+
+    private void aR() {
+        if (this.var_a_a != null) {
+            this.var_a_a.void_a();
+            this.var_a_a.b();
+            this.var_a_a = null;
+        }
+    }
+
+    private void aS() {
+        if (this.var_boolean_Z) {
+            if (this.var_byte_Q != 27 && this.var_boolean_ac) {
+                this.var_boolean_ab = true;
+                this.var_byte_v = 0;
+                this.var_byte_S = this.var_byte_R;
+                this.var_byte_R = this.var_byte_Q;
+                this.var_byte_Q = (byte)27;
+                this.var_byte_z = this.var_byte_y;
+                this.var_byte_B = this.var_byte_A;
+                this.var_byte_J = this.var_byte_I;
+                this.var_byte_L = this.var_byte_K;
+            }
+            while (this.var_boolean_Y) {
+                this.var_boolean_n = false;
+                Thread.yield();
+                tribes.a(10);
+            }
+        }
+        this.var_boolean_Z = false;
+        this.var_boolean_ad = false;
+        if (this.var_byte_Q != 27 && this.var_byte_e == 2 && (this.var_a_a == null || this.var_a_a != null && this.var_a_a.int_a() != 400)) {
+            this.aQ();
+        }
+        tribes.a(10);
+    }
+
+    private void m(int n) {
+        if (n == this.var_int_arr_j[0]) {
+            for (int i = 0; i < 6; ++i) {
+                this.var_int_arr_i[i] = 0;
+            }
+            this.var_int_arr_i[0] = this.var_int_arr_j[0];
+            return;
+        }
+        if (this.var_int_arr_i[0] == this.var_int_arr_j[0]) {
+            int n2;
+            for (n2 = 0; n2 < 6; ++n2) {
+                if (this.var_int_arr_i[n2] != 0) continue;
+                this.var_int_arr_i[n2] = n;
+                break;
+            }
+            this.var_boolean_ae = true;
+            for (n2 = 0; n2 < 5; ++n2) {
+                if (this.var_int_arr_i[n2] == this.var_int_arr_j[n2]) continue;
+                this.var_boolean_ae = false;
+                break;
+            }
+            if (this.var_boolean_ae && this.var_int_arr_i[5] != 0) {
+                switch (this.var_int_arr_i[5]) {
+                    case 114: {
+                        this.var_boolean_af = true;
+                        break;
+                    }
+                    case 121: {
+                        this.var_boolean_ag = true;
+                        break;
+                    }
+                    case 118: {
+                        short[] sArray = this.var_short_arr_arr_a[0];
+                        sArray[0] = (short)(sArray[0] + 100);
+                        short[] sArray2 = this.var_short_arr_arr_a[0];
+                        sArray2[1] = (short)(sArray2[1] + 100);
+                        short[] sArray3 = this.var_short_arr_arr_a[0];
+                        sArray3[2] = (short)(sArray3[2] + 100);
+                        short[] sArray4 = this.var_short_arr_arr_a[0];
+                        sArray4[3] = (short)(sArray4[3] + 100);
+                        short[] sArray5 = this.var_short_arr_arr_a[0];
+                        sArray5[4] = (short)(sArray5[4] + 100);
+                        short[] sArray6 = this.var_short_arr_arr_a[0];
+                        sArray6[5] = (short)(sArray6[5] + 3);
+                        short[] sArray7 = this.var_short_arr_arr_a[0];
+                        sArray7[8] = (short)(sArray7[8] + 3);
+                        short[] sArray8 = this.var_short_arr_arr_a[0];
+                        sArray8[10] = (short)(sArray8[10] + 3);
+                        break;
+                    }
+                    case 110: {
+                        this.var_byte_u = 1;
+                        if (this.var_byte_q != 0) break;
+                        this.var_byte_q = (byte)(this.var_byte_q + 1);
+                    }
+                }
+                this.var_int_arr_i[0] = 0;
+            }
+        }
+    }
+
+    static {
+        var_int_a = -6;
+        var_int_b = -7;
+        var_byte_a = 0;
+        var_javax_microedition_lcdui_Image_arr_a = new Image[4];
+        var_javax_microedition_lcdui_Graphics_arr_a = new Graphics[4];
+        var_byte_M = 0;
+        var_byte_ag = (byte)40;
+        var_byte_ah = (byte)47;
+    }
 }
+

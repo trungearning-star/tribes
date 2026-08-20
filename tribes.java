@@ -1,61 +1,75 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.microedition.lcdui.Display
+ *  javax.microedition.lcdui.Displayable
+ *  javax.microedition.midlet.MIDlet
+ */
 import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
 import javax.microedition.midlet.MIDlet;
 
-public class tribes extends MIDlet implements Runnable {
-   f a;
-   d a;
-   Display a;
+public class tribes
+extends MIDlet
+implements Runnable {
+    f var_f_a;
+    d var_d_a;
+    Display var_javax_microedition_lcdui_Display_a;
 
-   public void startApp() {
-      if (this.a != null) {
-         this.a.e();
-      } else {
-         this.a = Display.getDisplay(this);
-         (new Thread(this)).start();
-      }
-   }
+    public void startApp() {
+        if (this.var_f_a != null) {
+            this.var_f_a.e();
+            return;
+        }
+        this.var_javax_microedition_lcdui_Display_a = Display.getDisplay((MIDlet)this);
+        Thread thread = new Thread(this);
+        thread.start();
+    }
 
-   public void pauseApp() {
-      if (this.a != null) {
-         this.a.d();
-      }
+    public void pauseApp() {
+        if (this.var_f_a != null) {
+            this.var_f_a.d();
+        }
+    }
 
-   }
+    public void destroyApp(boolean bl) {
+        if (this.var_f_a != null) {
+            this.var_f_a.void_b();
+        }
+    }
 
-   public void destroyApp(boolean var1) {
-      if (this.a != null) {
-         this.a.b();
-      }
+    public void run() {
+        System.gc();
+        Thread.yield();
+        this.var_d_a = new d(this);
+        this.var_d_a.a();
+        this.var_d_a.var_byte_a = 0;
+        this.var_javax_microedition_lcdui_Display_a.setCurrent((Displayable)this.var_d_a);
+        tribes.a(1000);
+        this.var_d_a.a();
+        tribes.a(2000);
+        this.var_d_a.var_byte_a = 1;
+        this.var_d_a.a();
+        System.gc();
+        Thread.yield();
+        tribes.a(2000);
+        this.var_d_a.var_byte_a = (byte)2;
+        this.var_d_a.a();
+        Thread.yield();
+        this.var_d_a.var_byte_a = (byte)5;
+        this.var_f_a = new f(this);
+        this.var_f_a.void_a();
+    }
 
-   }
-
-   public void run() {
-      System.gc();
-      Thread.yield();
-      this.a = new d(this);
-      this.a.a();
-      this.a.a = 0;
-      this.a.setCurrent(this.a);
-      a(1000);
-      this.a.a();
-      a(2000);
-      this.a.a = 1;
-      this.a.a();
-      System.gc();
-      Thread.yield();
-      a(2000);
-      this.a.a = 2;
-      this.a.a();
-      Thread.yield();
-      this.a.a = 5;
-      this.a = new f(this);
-      this.a.a();
-   }
-
-   static void a(int var0) {
-      try {
-         Thread.sleep((long)var0);
-      } catch (InterruptedException var2) {
-      }
-   }
+    static void a(int n) {
+        try {
+            Thread.sleep(n);
+            return;
+        }
+        catch (InterruptedException interruptedException) {
+            return;
+        }
+    }
 }
+

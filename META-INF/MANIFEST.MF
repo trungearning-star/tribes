@@ -16,3 +16,4 @@ GameUrl-fr: http://wap.jamba.de/jim/go/32/search?search=THQwireless&componentTyp
 GameUrl-es: http://wap.jamba.de/jim/go/32/search?search=THQwireless&componentType=12
 GameUrl-it: http://wap.jamba.de/jim/go/32/search?search=THQwireless&componentType=12
 GameLinkEnabled: false
+MIDlet-Touch-Support: true

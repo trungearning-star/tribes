@@ -1,42 +1,50 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.microedition.lcdui.Canvas
+ *  javax.microedition.lcdui.Graphics
+ *  javax.microedition.lcdui.Image
+ */
 import javax.microedition.lcdui.Canvas;
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;
 
-public final class d extends Canvas {
-   byte a = 0;
-   boolean a;
+public final class d
+extends Canvas {
+    byte var_byte_a = 0;
+    boolean var_boolean_a;
 
-   public d(tribes var1) {
-      ((Canvas)this).setFullScreenMode(true);
-   }
+    public d(tribes tribes2) {
+        this.setFullScreenMode(true);
+    }
 
-   public final void paint(Graphics var1) {
-      var1.drawImage(f.a[0], 0, 0, 0);
-   }
+    public final void paint(Graphics graphics) {
+        graphics.drawImage(f.var_javax_microedition_lcdui_Image_arr_a[0], 0, 0, 0);
+    }
 
-   final void a() {
-      if (!this.a) {
-         this.a = true;
-         f.a[0] = Image.createImage(350, 272);
-         f.a[0] = f.a[0].getGraphics();
-      }
+    final void a() {
+        if (!this.var_boolean_a) {
+            this.var_boolean_a = true;
+            f.var_javax_microedition_lcdui_Image_arr_a[0] = Image.createImage((int)350, (int)272);
+            f.var_javax_microedition_lcdui_Graphics_arr_a[0] = f.var_javax_microedition_lcdui_Image_arr_a[0].getGraphics();
+        }
+        try {
+            if (this.var_byte_a < 4) {
+                f.var_javax_microedition_lcdui_Graphics_arr_a[0].setColor(0xFFFFFF);
+                d.b();
+                f.var_javax_microedition_lcdui_Graphics_arr_a[0].drawImage(Image.createImage((String)("/l" + this.var_byte_a)), 160, 120, 3);
+            }
+        }
+        catch (Exception exception) {}
+        this.repaint();
+    }
 
-      try {
-         if (this.a < 4) {
-            f.a[0].setColor(16777215);
-            b();
-            f.a[0].drawImage(Image.createImage("/l" + this.a), 160, 120, 3);
-         }
-      } catch (Exception var2) {
-      }
+    private static void b() {
+        f.var_javax_microedition_lcdui_Graphics_arr_a[0].fillRect(0, 0, 320, 241);
+    }
 
-      ((Canvas)this).repaint();
-   }
-
-   private static void b() {
-      f.a[0].fillRect(0, 0, 320, 241);
-   }
-
-   protected final void keyPressed(int var1) {
-   }
+    protected final void keyPressed(int n) {
+    }
 }
+

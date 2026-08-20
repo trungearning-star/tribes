@@ -1,99 +1,116 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.microedition.media.Manager
+ *  javax.microedition.media.Player
+ *  javax.microedition.media.PlayerListener
+ *  javax.microedition.media.control.VolumeControl
+ */
 import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 import javax.microedition.media.Manager;
 import javax.microedition.media.Player;
 import javax.microedition.media.PlayerListener;
 import javax.microedition.media.control.VolumeControl;
 
-public final class a implements PlayerListener {
-   VolumeControl a;
-   Player a;
+public final class a
+implements PlayerListener {
+    VolumeControl var_javax_microedition_media_control_VolumeControl_a;
+    Player var_javax_microedition_media_Player_a;
 
-   public a(String var1) {
-      try {
-         ByteArrayInputStream var2 = new ByteArrayInputStream(f.w, f.f[f.f], f.e[f.f]);
-         this.a = Manager.createPlayer(var2, var1);
-         var2.close();
-         this.a.realize();
-         this.a.addPlayerListener(this);
-      } catch (Exception var3) {
-      }
-   }
-
-   private void c() {
-      try {
-         if (this.a != null) {
-            if (this.a.getState() == 300) {
-               this.a();
-            }
-
-            if (this.a.getState() != 400) {
-               this.a.getState();
-               this.a.prefetch();
-               this.a.start();
-            }
-
-         }
-      } catch (Exception var2) {
-      }
-   }
-
-   final void a() {
-      try {
-         if (this.a != null) {
-            if (this.a.getState() == 400) {
-               this.a.setMediaTime(0L);
-               this.a.stop();
-            }
-
-         }
-      } catch (Exception var2) {
-      }
-   }
-
-   final int a() {
-      return this.a == null ? -1 : this.a.getState();
-   }
-
-   final void b() {
-      if (this.a != null) {
-         if (this.a.getState() != 0) {
-            this.a.close();
-         }
-
-      }
-   }
-
-   final void a(int var1) {
-      try {
-         if (this.a == null) {
+    public a(String string) {
+        try {
+            ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(f.var_byte_arr_w, f.var_short_arr_f[f.var_byte_f], f.var_short_arr_e[f.var_byte_f]);
+            this.var_javax_microedition_media_Player_a = Manager.createPlayer((InputStream)byteArrayInputStream, (String)string);
+            byteArrayInputStream.close();
+            this.var_javax_microedition_media_Player_a.realize();
+            this.var_javax_microedition_media_Player_a.addPlayerListener((PlayerListener)this);
             return;
-         }
-
-         this.a = (VolumeControl)this.a.getControl("VolumeControl");
-         if (var1 != 0) {
-            this.a.setLevel(var1 * 20);
-            if (this.a.getState() != 400) {
-               this.c();
-            }
-
+        }
+        catch (Exception exception) {
             return;
-         }
+        }
+    }
 
-         this.a();
-      } catch (Exception var3) {
-      }
+    private void c() {
+        try {
+            if (this.var_javax_microedition_media_Player_a == null) {
+                return;
+            }
+            if (this.var_javax_microedition_media_Player_a.getState() == 300) {
+                this.void_a();
+            }
+            if (this.var_javax_microedition_media_Player_a.getState() != 400) {
+                this.var_javax_microedition_media_Player_a.getState();
+                this.var_javax_microedition_media_Player_a.prefetch();
+                this.var_javax_microedition_media_Player_a.start();
+            }
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-   }
+    final void void_a() {
+        try {
+            if (this.var_javax_microedition_media_Player_a == null) {
+                return;
+            }
+            if (this.var_javax_microedition_media_Player_a.getState() == 400) {
+                this.var_javax_microedition_media_Player_a.setMediaTime(0L);
+                this.var_javax_microedition_media_Player_a.stop();
+            }
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-   public final void playerUpdate(Player var1, String var2, Object var3) {
-      if (var2.equals("deviceUnavailable")) {
-         this.a();
-         System.currentTimeMillis();
-      }
+    final int int_a() {
+        if (this.var_javax_microedition_media_Player_a == null) {
+            return -1;
+        }
+        return this.var_javax_microedition_media_Player_a.getState();
+    }
 
-      if (var2.equals("deviceAvailable")) {
-         this.c();
-      }
+    final void b() {
+        if (this.var_javax_microedition_media_Player_a == null) {
+            return;
+        }
+        if (this.var_javax_microedition_media_Player_a.getState() != 0) {
+            this.var_javax_microedition_media_Player_a.close();
+        }
+    }
 
-   }
+    final void a(int n) {
+        try {
+            if (this.var_javax_microedition_media_Player_a == null) {
+                return;
+            }
+            this.var_javax_microedition_media_control_VolumeControl_a = (VolumeControl)this.var_javax_microedition_media_Player_a.getControl("VolumeControl");
+            if (n != 0) {
+                this.var_javax_microedition_media_control_VolumeControl_a.setLevel(n * 20);
+                if (this.var_javax_microedition_media_Player_a.getState() != 400) {
+                    this.c();
+                }
+                return;
+            }
+            this.void_a();
+        }
+        catch (Exception exception) {}
+    }
+
+    public final void playerUpdate(Player player, String string, Object object) {
+        if (string.equals("deviceUnavailable")) {
+            this.void_a();
+            System.currentTimeMillis();
+        }
+        if (string.equals("deviceAvailable")) {
+            this.c();
+        }
+    }
 }
+

@@ -1,275 +1,275 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  javax.microedition.lcdui.Image
+ */
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import javax.microedition.lcdui.Image;
 
 public final class e {
-   f a;
-   short[] a = new short[]{119, 1308, 162, 162, 2782, 146, 1071, 6903, 823, 1729, 5573, 119, 1308, 1308, 1308, 162, 162, 162, 2782, 2782, 146, 1071, 1071, 6903, 6903, 6903, 823, 1729, 42, 5573, 5573, 1829, 1829, 1829, 1829, 1829};
-   byte a;
-   byte[] a = new byte[]{31, 6, 12};
-   String[] a = new String[]{"/pi0", "/pi9", "/pi8"};
+    f var_f_a;
+    short[] var_short_arr_a = new short[]{119, 1308, 162, 162, 2782, 146, 1071, 6903, 823, 1729, 5573, 119, 1308, 1308, 1308, 162, 162, 162, 2782, 2782, 146, 1071, 1071, 6903, 6903, 6903, 823, 1729, 42, 5573, 5573, 1829, 1829, 1829, 1829, 1829};
+    byte var_byte_a;
+    byte[] var_byte_arr_a = new byte[]{31, 6, 12};
+    String[] var_java_lang_String_arr_a = new String[]{"/pi0", "/pi9", "/pi8"};
 
-   public e(f var1) {
-      this.a = var1;
-      this.a();
-      this.c();
-      this.i();
-      this.a = 0;
-      this.d();
-      this.a = 1;
-      this.d();
-      this.b();
-      this.f();
-      this.e();
-      this.g();
-      this.h();
-   }
+    public e(f f2) {
+        this.var_f_a = f2;
+        this.a();
+        this.c();
+        this.i();
+        this.var_byte_a = 0;
+        this.d();
+        this.var_byte_a = 1;
+        this.d();
+        this.b();
+        this.f();
+        this.e();
+        this.g();
+        this.h();
+    }
 
-   private void a() {
-      System.gc();
-      Thread.yield();
-      int var1 = 0;
-      this.a.b = new short[11][];
-      this.a.j = new byte[25][];
-
-      for(int var2 = 0; var2 <= 24; ++var2) {
-         this.a.j[var2] = new byte[this.a[var1 + 10 + 1]];
-         if (var2 <= 10) {
-            this.a.b[var2] = new short[this.a[var1]];
-         }
-
-         ++var1;
-      }
-
-      System.gc();
-      Thread.yield();
-      this.a.a = new Image[3][];
-      this.a.a[2] = new Image[1];
-   }
-
-   private void b() {
-      System.gc();
-      Thread.yield();
-
-      try {
-         DataInputStream var1;
-         (var1 = new DataInputStream(this.getClass().getResourceAsStream("/pd0"))).readByte();
-         int var2 = 0;
-
-         for(int var3 = 0; var3 <= 10; ++var3) {
-            for(int var4 = 0; var4 < this.a[var2]; ++var4) {
-               this.a.b[var3][var4] = var1.readShort();
+    private void a() {
+        System.gc();
+        Thread.yield();
+        int n = 0;
+        this.var_f_a.var_short_arr_arr_b = new short[11][];
+        this.var_f_a.var_byte_arr_arr_j = new byte[25][];
+        for (int i = 0; i <= 24; ++i) {
+            this.var_f_a.var_byte_arr_arr_j[i] = new byte[this.var_short_arr_a[n + 10 + 1]];
+            if (i <= 10) {
+                this.var_f_a.var_short_arr_arr_b[i] = new short[this.var_short_arr_a[n]];
             }
+            ++n;
+        }
+        System.gc();
+        Thread.yield();
+        this.var_f_a.var_javax_microedition_lcdui_Image_arr_arr_a = new Image[3][];
+        this.var_f_a.var_javax_microedition_lcdui_Image_arr_arr_a[2] = new Image[1];
+    }
 
-            ++var2;
-            this.a.a((int)1);
-         }
-
-         for(int var7 = 0; var7 <= 24; ++var7) {
-            for(int var5 = 0; var5 < this.a[var2]; ++var5) {
-               this.a.j[var7][var5] = var1.readByte();
+    private void b() {
+        System.gc();
+        Thread.yield();
+        try {
+            int n;
+            DataInputStream dataInputStream = new DataInputStream(this.getClass().getResourceAsStream("/pd0"));
+            dataInputStream.readByte();
+            int n2 = 0;
+            for (int i = 0; i <= 10; ++i) {
+                for (n = 0; n < this.var_short_arr_a[n2]; ++n) {
+                    this.var_f_a.var_short_arr_arr_b[i][n] = dataInputStream.readShort();
+                }
+                ++n2;
+                this.var_f_a.void_a(1);
             }
-
-            ++var2;
-            this.a.a((int)1);
-         }
-
-         var1.close();
-         f.aU = this.a.j[23][this.a.b[10][this.a.b[9][552] & 8191] & 8191] + 9;
-         f.aT = (320 - this.a.j[1][1012] * 2) / f.aU;
-      } catch (Exception var6) {
-      }
-   }
-
-   private void c() {
-      try {
-         System.gc();
-         Thread.yield();
-         this.a.A = 208;
-         this.a.O = 15;
-         this.a.P = (byte)((this.a.A - 1) / 16 + 1);
-         boolean var1 = false;
-         this.a.y = (byte)((this.a.O >> 1) - 0);
-         this.a.A = (byte)((this.a.P >> 1) - 0);
-         this.a.C = this.a.y;
-         this.a.D = this.a.A;
-         this.a.a = new int[]{350, 350, 320, 320, 320, 320, 68, 320, 68, 63, 320, 320, 320};
-         this.a.b = new int[]{272, 208, 22, 48, 22, 48, 55, 86, 49, 55, 38, 0, 0};
-         this.a.c = new int[]{0, 0, 208, 208, 230, 230, 0, 230, 0, 0, 230, 0, 0};
-         this.a.d = new int[]{0, 16, 0, 0, 218, 192, 0, 154, 0, 0, 202, 240, 0};
-         this.a.c = new byte[]{0, 1, 0, 0, 0, 0, 2, 0, 2, 2, 0, 0, 0};
-         this.a.d = new byte[]{0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-         f.a[this.a.c[1]] = Image.createImage(350, 208);
-         f.a[this.a.c[1]] = f.a[this.a.c[1]].getGraphics();
-         f.a[this.a.c[6]] = Image.createImage(68, 55);
-         f.a[this.a.c[6]] = f.a[this.a.c[6]].getGraphics();
-         this.a.ba = this.a.b[2];
-      } catch (Exception var10) {
-      }
-   }
-
-   private void d() {
-      System.gc();
-      Thread.yield();
-      byte var1 = this.a[this.a];
-      byte var3 = 0;
-
-      try {
-         System.gc();
-         Thread.yield();
-         DataInputStream var6 = new DataInputStream(this.getClass().getResourceAsStream(this.a[this.a]));
-         byte[] var7 = new byte['\uf426'];
-         var6.read(var7);
-         var6.close();
-         int var8 = 0;
-         var3 = 0;
-
-         while(true) {
-            if (var3 >= var1) {
-               return;
+            for (n = 0; n <= 24; ++n) {
+                for (int i = 0; i < this.var_short_arr_a[n2]; ++i) {
+                    this.var_f_a.var_byte_arr_arr_j[n][i] = dataInputStream.readByte();
+                }
+                ++n2;
+                this.var_f_a.void_a(1);
             }
+            dataInputStream.close();
+            f.aU = this.var_f_a.var_byte_arr_arr_j[23][this.var_f_a.var_short_arr_arr_b[10][this.var_f_a.var_short_arr_arr_b[9][552] & 0x1FFF] & 0x1FFF] + 9;
+            f.aT = (320 - this.var_f_a.var_byte_arr_arr_j[1][1012] * 2) / f.aU;
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-            byte var2 = (byte)(var7[var8] & 255);
-            ++var8;
-            if (var3 == 0) {
-               this.a.a[this.a] = new Image[var1];
-            }
-
-            if (var2 == 255) {
-               break;
-            }
-
-            short var5 = (short)(var2 << 8 | var7[var8] & 255);
-            ++var8;
-
-            try {
-               if (var3 < 27) {
-                  this.a.a[this.a][var3] = Image.createImage(var7, var8, var5);
-               }
-            } catch (Exception var10) {
-            }
-
-            var8 += var5;
-            this.a.a((int)2);
+    private void c() {
+        try {
             System.gc();
             Thread.yield();
-            ++var3;
-         }
-      } catch (Exception var11) {
-      }
+            this.var_f_a.var_int_A = 208;
+            this.var_f_a.var_byte_O = (byte)15;
+            this.var_f_a.var_byte_P = (byte)((this.var_f_a.var_int_A - 1) / 16 + 1);
+            boolean bl = false;
+            this.var_f_a.var_byte_y = (byte)((this.var_f_a.var_byte_O >> 1) - 0);
+            this.var_f_a.var_byte_A = (byte)((this.var_f_a.var_byte_P >> 1) - 0);
+            this.var_f_a.var_byte_C = this.var_f_a.var_byte_y;
+            this.var_f_a.var_byte_D = this.var_f_a.var_byte_A;
+            this.var_f_a.var_int_arr_a = new int[]{350, 350, 320, 320, 320, 320, 68, 320, 68, 63, 320, 320, 320};
+            this.var_f_a.var_int_arr_b = new int[]{272, 208, 22, 48, 22, 48, 55, 86, 49, 55, 38, 0, 0};
+            this.var_f_a.var_int_arr_c = new int[]{0, 0, 208, 208, 230, 230, 0, 230, 0, 0, 230, 0, 0};
+            this.var_f_a.var_int_arr_d = new int[]{0, 16, 0, 0, 218, 192, 0, 154, 0, 0, 202, 240, 0};
+            this.var_f_a.var_byte_arr_c = new byte[]{0, 1, 0, 0, 0, 0, 2, 0, 2, 2, 0, 0, 0};
+            this.var_f_a.var_byte_arr_d = new byte[]{0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+            f.var_javax_microedition_lcdui_Image_arr_a[this.var_f_a.var_byte_arr_c[1]] = Image.createImage((int)350, (int)208);
+            f.var_javax_microedition_lcdui_Graphics_arr_a[this.var_f_a.var_byte_arr_c[1]] = f.var_javax_microedition_lcdui_Image_arr_a[this.var_f_a.var_byte_arr_c[1]].getGraphics();
+            f.var_javax_microedition_lcdui_Image_arr_a[this.var_f_a.var_byte_arr_c[6]] = Image.createImage((int)68, (int)55);
+            f.var_javax_microedition_lcdui_Graphics_arr_a[this.var_f_a.var_byte_arr_c[6]] = f.var_javax_microedition_lcdui_Image_arr_a[this.var_f_a.var_byte_arr_c[6]].getGraphics();
+            this.var_f_a.ba = this.var_f_a.var_int_arr_b[2];
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-   }
-
-   private void e() {
-      System.gc();
-      Thread.yield();
-      this.a.a = new c(this.a);
-      this.a.a.f = new byte[122];
-      this.a.a.e = new byte[33];
-      this.a.a.b = new byte[33][25];
-      this.a.a.c = new byte[33][25];
-      this.a.a.d = new byte[33];
-      this.a.a.d = new short[33];
-      this.a.a.e = new short[33];
-      this.a.a.f = new short[33];
-      this.a.a.g = new short[250];
-      this.a.a.h = new short[250];
-      this.a.a.b(0);
-   }
-
-   private void f() {
-      System.gc();
-      Thread.yield();
-      this.a.a = new byte[17638];
-      this.a.a = new short[312];
-      this.a.b = new short[570];
-      this.a.c = new short[5];
-      Object var1 = null;
-
-      try {
-         InputStream var8;
-         if ((var8 = this.getClass().getResourceAsStream("/a")) != null) {
-            this.a.a[0] = this.a.c[0] = 0;
-
-            for(int var2 = 0; var2 < 312; ++var2) {
-               int var3 = var8.read() & 255;
-               int var5 = ((var8.read() & 255) << 8) + var3;
-               if (var2 < 311) {
-                  this.a.a[var2 + 1] = (short)(this.a.a[var2] + var5);
-               }
-
-               if (var5 > 0) {
-                  var8.read(this.a.a, this.a.a[var2], var5);
-               }
+    private void d() {
+        block7: {
+            System.gc();
+            Thread.yield();
+            byte by = this.var_byte_arr_a[this.var_byte_a];
+            byte by2 = 0;
+            try {
+                System.gc();
+                Thread.yield();
+                DataInputStream dataInputStream = new DataInputStream(this.getClass().getResourceAsStream(this.var_java_lang_String_arr_a[this.var_byte_a]));
+                byte[] byArray = new byte[62502];
+                dataInputStream.read(byArray);
+                dataInputStream.close();
+                int n = 0;
+                for (by2 = 0; by2 < by; by2 = (byte)(by2 + 1)) {
+                    byte by3 = (byte)(byArray[n] & 0xFF);
+                    ++n;
+                    if (by2 == 0) {
+                        this.var_f_a.var_javax_microedition_lcdui_Image_arr_arr_a[this.var_byte_a] = new Image[by];
+                    }
+                    if (by3 == 255) break block7;
+                    short s = (short)(by3 << 8 | byArray[n] & 0xFF);
+                    ++n;
+                    try {
+                        if (by2 < 27) {
+                            this.var_f_a.var_javax_microedition_lcdui_Image_arr_arr_a[this.var_byte_a][by2] = Image.createImage((byte[])byArray, (int)n, (int)s);
+                        }
+                    }
+                    catch (Exception exception) {}
+                    n += s;
+                    this.var_f_a.void_a(2);
+                    System.gc();
+                    Thread.yield();
+                }
+                return;
             }
+            catch (Exception exception) {}
+        }
+    }
 
-            for(int var9 = 0; var9 < 5; ++var9) {
-               int var10 = var8.read() & 255;
-               int var12 = ((var8.read() & 255) << 8) + var10;
-               if (var9 < 4) {
-                  this.a.c[var9 + 1] = (short)(this.a.c[var9] + var12);
-               }
+    private void e() {
+        System.gc();
+        Thread.yield();
+        this.var_f_a.var_c_a = new c(this.var_f_a);
+        this.var_f_a.var_c_a.var_byte_arr_f = new byte[122];
+        this.var_f_a.var_c_a.var_byte_arr_e = new byte[33];
+        this.var_f_a.var_c_a.var_byte_arr_arr_b = new byte[33][25];
+        this.var_f_a.var_c_a.var_byte_arr_arr_c = new byte[33][25];
+        this.var_f_a.var_c_a.var_byte_arr_d = new byte[33];
+        this.var_f_a.var_c_a.var_short_arr_d = new short[33];
+        this.var_f_a.var_c_a.var_short_arr_e = new short[33];
+        this.var_f_a.var_c_a.var_short_arr_f = new short[33];
+        this.var_f_a.var_c_a.var_short_arr_g = new short[250];
+        this.var_f_a.var_c_a.var_short_arr_h = new short[250];
+        this.var_f_a.var_c_a.b(0);
+    }
 
-               for(int var11 = 0; var11 < var12; ++var11) {
-                  int var4 = var8.read() & 255;
-                  this.a.b[this.a.c[var9] + var11] = (short)(((var8.read() & 255) << 8) + var4);
-               }
+    private void f() {
+        System.gc();
+        Thread.yield();
+        this.var_f_a.var_byte_arr_a = new byte[17638];
+        this.var_f_a.var_short_arr_a = new short[312];
+        this.var_f_a.var_short_arr_b = new short[570];
+        this.var_f_a.var_short_arr_c = new short[5];
+        InputStream inputStream = null;
+        try {
+            inputStream = this.getClass().getResourceAsStream("/a");
+            if (inputStream != null) {
+                int n;
+                int n2;
+                int n3;
+                int n4;
+                this.var_f_a.var_short_arr_c[0] = 0;
+                this.var_f_a.var_short_arr_a[0] = 0;
+                for (n4 = 0; n4 < 312; ++n4) {
+                    n3 = inputStream.read() & 0xFF;
+                    n2 = inputStream.read() & 0xFF;
+                    n = (n2 << 8) + n3;
+                    if (n4 < 311) {
+                        this.var_f_a.var_short_arr_a[n4 + 1] = (short)(this.var_f_a.var_short_arr_a[n4] + n);
+                    }
+                    if (n <= 0) continue;
+                    inputStream.read(this.var_f_a.var_byte_arr_a, this.var_f_a.var_short_arr_a[n4], n);
+                }
+                for (n4 = 0; n4 < 5; ++n4) {
+                    n3 = inputStream.read() & 0xFF;
+                    n2 = inputStream.read() & 0xFF;
+                    n = (n2 << 8) + n3;
+                    if (n4 < 4) {
+                        this.var_f_a.var_short_arr_c[n4 + 1] = (short)(this.var_f_a.var_short_arr_c[n4] + n);
+                    }
+                    for (n3 = 0; n3 < n; ++n3) {
+                        n2 = inputStream.read() & 0xFF;
+                        this.var_f_a.var_short_arr_b[this.var_f_a.var_short_arr_c[n4] + n3] = (short)(((inputStream.read() & 0xFF) << 8) + n2);
+                    }
+                }
             }
-         }
+            inputStream.close();
+            return;
+        }
+        catch (IOException iOException) {
+            return;
+        }
+    }
 
-         var8.close();
-      } catch (IOException var7) {
-      }
-   }
+    private void g() {
+        try {
+            System.gc();
+            Thread.yield();
+            f.var_short_arr_e = new short[]{8014, 6315, 5648, 3405, 3234};
+            f.var_short_arr_f = new short[]{0, 8014, 14329, 19977, 23382};
+            f.var_byte_arr_w = new byte[26616];
+            this.var_f_a.var_byte_arr_b = new byte[]{0, 1, 2, 3, 4, 4};
+            InputStream inputStream = this.getClass().getResourceAsStream("/sa");
+            inputStream.read(f.var_byte_arr_w, 0, 26616);
+            inputStream.close();
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-   private void g() {
-      try {
-         System.gc();
-         Thread.yield();
-         f.e = new short[]{8014, 6315, 5648, 3405, 3234};
-         f.f = new short[]{0, 8014, 14329, 19977, 23382};
-         f.w = new byte[26616];
-         this.a.b = new byte[]{0, 1, 2, 3, 4, 4};
-         InputStream var1;
-         (var1 = this.getClass().getResourceAsStream("/sa")).read(f.w, 0, 26616);
-         var1.close();
-      } catch (Exception var2) {
-      }
-   }
+    private void h() {
+        try {
+            System.gc();
+            Thread.yield();
+            this.var_f_a.var_int_arr_h = new int[]{0, 2545, 6965, 10649, 15487, 22633, 27261, 31708, 35466, 39214};
+            this.var_f_a.var_byte_arr_v = new byte[42381];
+            InputStream inputStream = this.getClass().getResourceAsStream("/ma");
+            inputStream.read(this.var_f_a.var_byte_arr_v, 0, 42381);
+            inputStream.close();
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-   private void h() {
-      try {
-         System.gc();
-         Thread.yield();
-         this.a.h = new int[]{0, 2545, 6965, 10649, 15487, 22633, 27261, 31708, 35466, 39214};
-         this.a.v = new byte['ꖍ'];
-         InputStream var1;
-         (var1 = this.getClass().getResourceAsStream("/ma")).read(this.a.v, 0, 42381);
-         var1.close();
-      } catch (Exception var2) {
-      }
-   }
-
-   private void i() {
-      System.gc();
-      Thread.yield();
-      this.a.e = new byte[9983];
-      this.a.b = new byte[96][96];
-      this.a.c = new byte[96][96];
-      this.a.a = new int[3][4];
-
-      try {
-         this.a.a = this.a.a.getAppProperty("MIDlet-Version");
-         this.a.d = this.a.a.getAppProperty("GameLinkEnabled").equals("true");
-         this.a.a = this.a.a.getAppProperty("Cheat-Support").equals("on");
-      } catch (Exception var2) {
-      }
-
-      if (this.a.d) {
-         f var10000 = this.a;
-         this.a.getClass();
-         var10000.U = 1;
-      }
-   }
+    private void i() {
+        System.gc();
+        Thread.yield();
+        this.var_f_a.var_byte_arr_e = new byte[9983];
+        this.var_f_a.var_byte_arr_arr_b = new byte[96][96];
+        this.var_f_a.var_byte_arr_arr_c = new byte[96][96];
+        this.var_f_a.var_int_arr_arr_a = new int[3][4];
+        try {
+            this.var_f_a.var_java_lang_String_a = this.var_f_a.var_tribes_a.getAppProperty("MIDlet-Version");
+            this.var_f_a.var_boolean_d = this.var_f_a.var_tribes_a.getAppProperty("GameLinkEnabled").equals("true");
+            this.var_f_a.var_boolean_a = this.var_f_a.var_tribes_a.getAppProperty("Cheat-Support").equals("on");
+        }
+        catch (Exception exception) {}
+        if (!this.var_f_a.var_boolean_d) {
+            return;
+        }
+        this.var_f_a.getClass();
+        this.var_f_a.var_byte_U = 1;
+    }
 }
+

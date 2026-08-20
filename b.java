@@ -1,6128 +1,5813 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
 public final class b {
-   f a;
-   byte[] a;
-   byte[][][] a;
-   byte[][][] b;
-   short[][] a;
-   byte[] b;
-   short[] a;
-   short[] b;
-   short[] c;
-   byte[][][] c;
-   byte[][] a;
-   byte[][] b;
-   byte a;
-   byte b;
-   byte c;
-   byte[] c;
-   byte[] d;
-   byte[] e;
-   byte[] f;
-   byte[][][] d;
-   byte[] g;
-   byte[][][] e;
-   byte[] h;
-   byte d;
-   byte e;
-   byte[][] c;
-   int a;
-   int b;
-   int c;
-   int d;
-   int e;
-   int f;
-   int g;
-   int h;
-   byte f;
-   byte g;
-   int i;
-   boolean[] a;
-   int j;
-   int k;
-   int l;
-   int m;
-   int n;
-   byte[][] d;
-   byte h;
-   byte i;
-   byte j;
-   byte k;
-   byte l;
-   byte m;
-   int o;
-   int p;
-   int q;
-   int r;
-   byte n;
-   byte o;
-   byte p;
-   int s;
-   int t;
-   byte q;
-   byte r;
-   short[] d;
-   int u;
-   int v;
-   int w;
-   int x;
-   int y;
-   int z;
-   int A;
-   int B;
-   int C;
-   int D;
-   int E;
-   int F;
-   boolean a;
-   boolean b;
-   boolean c;
-   int G;
-   int H;
-   boolean d;
-   byte s;
-   int I;
-   int J;
-   int K;
-   byte t;
-   byte u;
-   int L;
-   byte[] i;
-   byte v;
-   byte w;
-   byte x;
-   int M;
-   byte y;
-   byte z;
-   byte A;
-   byte B;
-   byte C;
-   byte D;
-   byte E;
-   byte F;
-   int N;
-   int O;
-   int P;
-   int Q;
-   byte[][] e;
-   byte G;
-   byte H;
-   boolean e;
-   int R;
-   int S;
-   boolean f;
-   int T;
-   boolean g;
-   int U;
-   int V;
-   int W;
-   int X;
-   int Y;
-   int Z;
-   int aa;
-   int ab;
-   int ac;
-   boolean h;
-   int ad;
-   int ae;
-   int af;
-   byte I;
-   int ag;
-   int ah;
-   int ai;
-   int aj;
-   int ak;
-   int al;
-   int am;
-   int an;
-   int ao;
-   int ap;
-   int aq;
-   int ar;
-   int as;
-   int at;
-   int au;
-   int av;
-   int aw;
-   int ax;
-   int ay;
-   int az;
-   int aA;
-   int aB;
-   int aC;
-   int aD;
-   int aE;
-   int aF;
-   int aG;
-   int aH;
-   int aI;
-   int aJ;
-   byte[][] f;
-   byte[][] g;
-   int aK;
-   int aL;
-   int aM;
-   byte J;
-   byte K;
-   byte L;
-   int aN;
-   int aO;
-   int aP;
-   byte[] j;
-   byte M;
-   byte N;
-   byte O;
-   byte P;
-   byte Q;
-   byte R;
-   int aQ;
-   int aR;
-   int aS;
-   int aT;
-   int aU;
-   int aV;
-   int aW;
-   int aX;
-   int aY;
-   int[] a = new int[26];
-   byte S;
-   byte[] k;
+    f var_f_a;
+    byte[] var_byte_arr_a;
+    byte[][][] var_byte_arr_arr_arr_a;
+    byte[][][] var_byte_arr_arr_arr_b;
+    short[][] var_short_arr_arr_a;
+    byte[] var_byte_arr_b;
+    short[] var_short_arr_a;
+    short[] var_short_arr_b;
+    short[] var_short_arr_c;
+    byte[][][] var_byte_arr_arr_arr_c;
+    byte[][] var_byte_arr_arr_a;
+    byte[][] var_byte_arr_arr_b;
+    byte var_byte_a;
+    byte var_byte_b;
+    byte var_byte_c;
+    byte[] var_byte_arr_c;
+    byte[] var_byte_arr_d;
+    byte[] var_byte_arr_e;
+    byte[] var_byte_arr_f;
+    byte[][][] var_byte_arr_arr_arr_d;
+    byte[] var_byte_arr_g;
+    byte[][][] var_byte_arr_arr_arr_e;
+    byte[] var_byte_arr_h;
+    byte var_byte_d;
+    byte var_byte_e;
+    byte[][] var_byte_arr_arr_c;
+    int var_int_a;
+    int var_int_b;
+    int var_int_c;
+    int var_int_d;
+    int var_int_e;
+    int var_int_f;
+    int var_int_g;
+    int var_int_h;
+    byte var_byte_f;
+    byte var_byte_g;
+    int var_int_i;
+    boolean[] var_boolean_arr_a;
+    int var_int_j;
+    int var_int_k;
+    int var_int_l;
+    int var_int_m;
+    int var_int_n;
+    byte[][] var_byte_arr_arr_d;
+    byte var_byte_h;
+    byte var_byte_i;
+    byte var_byte_j;
+    byte var_byte_k;
+    byte var_byte_l;
+    byte var_byte_m;
+    int var_int_o;
+    int var_int_p;
+    int var_int_q;
+    int var_int_r;
+    byte var_byte_n;
+    byte var_byte_o;
+    byte var_byte_p;
+    int var_int_s;
+    int var_int_t;
+    byte var_byte_q;
+    byte var_byte_r;
+    short[] var_short_arr_d;
+    int var_int_u;
+    int var_int_v;
+    int var_int_w;
+    int var_int_x;
+    int var_int_y;
+    int var_int_z;
+    int var_int_A;
+    int var_int_B;
+    int var_int_C;
+    int var_int_D;
+    int var_int_E;
+    int var_int_F;
+    boolean var_boolean_a;
+    boolean var_boolean_b;
+    boolean var_boolean_c;
+    int var_int_G;
+    int var_int_H;
+    boolean var_boolean_d;
+    byte var_byte_s;
+    int var_int_I;
+    int var_int_J;
+    int var_int_K;
+    byte var_byte_t;
+    byte var_byte_u;
+    int var_int_L;
+    byte[] var_byte_arr_i;
+    byte var_byte_v;
+    byte var_byte_w;
+    byte var_byte_x;
+    int var_int_M;
+    byte var_byte_y;
+    byte var_byte_z;
+    byte var_byte_A;
+    byte var_byte_B;
+    byte var_byte_C;
+    byte var_byte_D;
+    byte var_byte_E;
+    byte var_byte_F;
+    int var_int_N;
+    int var_int_O;
+    int var_int_P;
+    int var_int_Q;
+    byte[][] var_byte_arr_arr_e;
+    byte var_byte_G;
+    byte var_byte_H;
+    boolean var_boolean_e;
+    int var_int_R;
+    int var_int_S;
+    boolean var_boolean_f;
+    int T;
+    boolean var_boolean_g;
+    int U;
+    int V;
+    int W;
+    int X;
+    int Y;
+    int Z;
+    int aa;
+    int ab;
+    int ac;
+    boolean var_boolean_h;
+    int ad;
+    int ae;
+    int af;
+    byte var_byte_I;
+    int ag;
+    int ah;
+    int ai;
+    int aj;
+    int ak;
+    int al;
+    int am;
+    int an;
+    int ao;
+    int ap;
+    int aq;
+    int ar;
+    int as;
+    int at;
+    int au;
+    int av;
+    int aw;
+    int ax;
+    int ay;
+    int az;
+    int aA;
+    int aB;
+    int aC;
+    int aD;
+    int aE;
+    int aF;
+    int aG;
+    int aH;
+    int aI;
+    int aJ;
+    byte[][] var_byte_arr_arr_f;
+    byte[][] var_byte_arr_arr_g;
+    int aK;
+    int aL;
+    int aM;
+    byte var_byte_J;
+    byte var_byte_K;
+    byte var_byte_L;
+    int aN;
+    int aO;
+    int aP;
+    byte[] var_byte_arr_j;
+    byte var_byte_M;
+    byte var_byte_N;
+    byte var_byte_O;
+    byte var_byte_P;
+    byte var_byte_Q;
+    byte var_byte_R;
+    int aQ;
+    int aR;
+    int aS;
+    int aT;
+    int aU;
+    int aV;
+    int aW;
+    int aX;
+    int aY;
+    int[] var_int_arr_a = new int[26];
+    byte var_byte_S;
+    byte[] var_byte_arr_k;
 
-   public b() {
-      this.a[0] = 0;
-      this.a[1] = 1;
-      this.a[2] = 3;
-      this.a[3] = 7;
-      this.a[4] = 15;
-      this.a[5] = 31;
-      this.a[6] = 63;
-      this.a[7] = 127;
-      this.a[8] = 255;
-      this.a[9] = 511;
-      this.a[10] = 1023;
-      this.a[11] = 2047;
-      this.a[12] = 4095;
-      this.a[13] = 8191;
-      this.a[14] = 16383;
-      this.a[15] = 32767;
-      this.a[16] = 65535;
-      this.a[17] = 131071;
-      this.a[18] = 262143;
-      this.a[19] = 524287;
-      this.a[20] = 1048575;
-      this.a[21] = 2097151;
-      this.a[22] = 4194303;
-      this.a[23] = 8388607;
-      this.a[24] = 16777215;
-      this.a[25] = 33554431;
-   }
+    public b() {
+        this.var_int_arr_a[0] = 0;
+        this.var_int_arr_a[1] = 1;
+        this.var_int_arr_a[2] = 3;
+        this.var_int_arr_a[3] = 7;
+        this.var_int_arr_a[4] = 15;
+        this.var_int_arr_a[5] = 31;
+        this.var_int_arr_a[6] = 63;
+        this.var_int_arr_a[7] = 127;
+        this.var_int_arr_a[8] = 255;
+        this.var_int_arr_a[9] = 511;
+        this.var_int_arr_a[10] = 1023;
+        this.var_int_arr_a[11] = 2047;
+        this.var_int_arr_a[12] = 4095;
+        this.var_int_arr_a[13] = 8191;
+        this.var_int_arr_a[14] = 16383;
+        this.var_int_arr_a[15] = Short.MAX_VALUE;
+        this.var_int_arr_a[16] = 65535;
+        this.var_int_arr_a[17] = 131071;
+        this.var_int_arr_a[18] = 262143;
+        this.var_int_arr_a[19] = 524287;
+        this.var_int_arr_a[20] = 1048575;
+        this.var_int_arr_a[21] = 0x1FFFFF;
+        this.var_int_arr_a[22] = 0x3FFFFF;
+        this.var_int_arr_a[23] = 0x7FFFFF;
+        this.var_int_arr_a[24] = 0xFFFFFF;
+        this.var_int_arr_a[25] = 0x1FFFFFF;
+    }
 
-   final void a(f var1) {
-      this.a = var1;
-      this.b = this.a.c;
-      this.a = this.a.e;
-      this.a = this.a.a;
-      this.b = this.a.a;
-      this.a = this.a.a;
-      this.b = this.a.b;
-      this.c = this.a.c;
-   }
+    final void a(f f2) {
+        this.var_f_a = f2;
+        this.var_byte_arr_arr_b = this.var_f_a.var_byte_arr_arr_c;
+        this.var_byte_arr_a = this.var_f_a.var_byte_arr_e;
+        this.var_short_arr_arr_a = this.var_f_a.var_short_arr_arr_a;
+        this.var_byte_arr_b = this.var_f_a.var_byte_arr_a;
+        this.var_short_arr_a = this.var_f_a.var_short_arr_a;
+        this.var_short_arr_b = this.var_f_a.var_short_arr_b;
+        this.var_short_arr_c = this.var_f_a.var_short_arr_c;
+    }
 
-   final void a() {
-      this.f = this.g = 0;
-      this.F = 0;
-      this.J = 0;
-      this.L = 0;
-      this.S = 1;
-      this.K = 50;
-      this.a.a.a();
-      this.I = (byte)(this.a.q == 2 ? 3 : 0);
-      this.O = -1;
-      this.aQ = this.aR = -1;
-      this.R = (byte)(this.a.q != 2 && this.a.q != 4 ? 0 : 128);
-      this.P = this.Q = -1;
+    final void void_a() {
+        this.var_byte_g = 0;
+        this.var_byte_f = 0;
+        this.var_int_F = 0;
+        this.var_byte_J = 0;
+        this.var_byte_L = 0;
+        this.var_byte_S = 1;
+        this.var_byte_K = (byte)50;
+        this.var_f_a.var_c_a.a();
+        this.var_byte_I = (byte)(this.var_f_a.var_byte_q == 2 ? 3 : 0);
+        this.var_byte_O = (byte)-1;
+        this.aR = -1;
+        this.aQ = -1;
+        this.var_byte_R = (byte)(this.var_f_a.var_byte_q == 2 || this.var_f_a.var_byte_q == 4 ? 128 : 0);
+        this.var_byte_Q = (byte)-1;
+        this.var_byte_P = (byte)-1;
+        this.var_int_a = 0;
+        while (this.var_int_a < 3) {
+            this.var_f_a.var_byte_arr_t[this.var_int_a] = 0;
+            ++this.var_int_a;
+        }
+        this.var_int_a = 0;
+        while (this.var_int_a < 10) {
+            this.var_byte_arr_arr_c[4][this.var_int_a] = 0;
+            ++this.var_int_a;
+        }
+        this.var_int_a = 0;
+        while (this.var_int_a < 6) {
+            this.var_short_arr_d[this.var_int_a] = -1;
+            ++this.var_int_a;
+        }
+        this.var_int_a = 0;
+        while (this.var_int_a < 10) {
+            this.var_byte_arr_arr_f[0][this.var_int_a] = 0;
+            ++this.var_int_a;
+        }
+        this.var_int_a = 0;
+        while (this.var_int_a < 20) {
+            this.var_byte_arr_arr_g[0][this.var_int_a] = 0;
+            ++this.var_int_a;
+        }
+        this.var_int_a = 0;
+        while (this.var_int_a < 50) {
+            this.var_byte_arr_j[this.var_int_a] = (byte)this.var_int_a;
+            ++this.var_int_a;
+        }
+        this.void_j();
+        this.var_int_G = this.var_short_arr_a[219] + this.var_f_a.var_byte_q * 4;
+    }
 
-      for(this.a = 0; this.a < 3; ++this.a) {
-         this.a.t[this.a] = 0;
-      }
-
-      for(this.a = 0; this.a < 10; ++this.a) {
-         this.c[4][this.a] = 0;
-      }
-
-      for(this.a = 0; this.a < 6; ++this.a) {
-         this.d[this.a] = -1;
-      }
-
-      for(this.a = 0; this.a < 10; ++this.a) {
-         this.f[0][this.a] = 0;
-      }
-
-      for(this.a = 0; this.a < 20; ++this.a) {
-         this.g[0][this.a] = 0;
-      }
-
-      for(this.a = 0; this.a < 50; ++this.a) {
-         this.j[this.a] = (byte)this.a;
-      }
-
-      this.j();
-      this.G = this.a[219] + this.a.q * 4;
-   }
-
-   private byte a(int var1, int var2, int var3, int var4, int var5, int var6) {
-      try {
-         this.i = var6 == 0 ? 65 : 5;
-         this.a(var2, var1, var4, var3, var6);
-
-         for(this.a = 0; this.a < this.c; ++this.a) {
-            this.f(var6);
-            if (!this.a[0] && !this.a[1]) {
-               this.d(var6);
-               if (this.m < 0) {
-                  this.f[this.g[0]] = (byte)(this.e[0][2][this.a] + 1);
-               } else {
-                  this.f[this.g[(this.m & 1) + 1]] = (byte)((this.m >> 1) + 1);
-                  this.a[this.m & 1] = true;
-                  this.a(false);
-                  this.a[this.m & 1] = false;
-               }
-               break;
+    private byte a(int n, int n2, int n3, int n4, int n5, int n6) {
+        try {
+            this.var_int_i = n6 == 0 ? 65 : 5;
+            this.a(n2, n, n4, n3, n6);
+            this.var_int_a = 0;
+            while (this.var_int_a < this.var_byte_c) {
+                this.f(n6);
+                if (!this.var_boolean_arr_a[0] && !this.var_boolean_arr_a[1]) {
+                    this.void_d(n6);
+                    if (this.var_int_m < 0) {
+                        this.var_byte_arr_f[this.var_byte_arr_g[0]] = (byte)(this.var_byte_arr_arr_arr_e[0][2][this.var_int_a] + 1);
+                        break;
+                    }
+                    this.var_byte_arr_f[this.var_byte_arr_g[(this.var_int_m & 1) + 1]] = (byte)((this.var_int_m >> 1) + 1);
+                    this.var_boolean_arr_a[this.var_int_m & 1] = true;
+                    this.void_a(false);
+                    this.var_boolean_arr_a[this.var_int_m & 1] = false;
+                    break;
+                }
+                this.void_a(true);
+                if (this.var_byte_arr_f[this.var_byte_arr_g[0]] + n5 >= this.var_int_i) break;
+                ++this.var_int_a;
             }
-
-            this.a(true);
-            if (this.f[this.g[0]] + var5 >= this.i) {
-               break;
+            this.var_int_j = 0;
+            while (this.var_int_j < this.var_byte_c) {
+                if (this.var_byte_arr_arr_arr_e[1][0][this.var_int_j] >= 0) {
+                    this.var_f_a.var_byte_arr_arr_b[this.var_byte_arr_arr_arr_e[1][1][this.var_int_j]][this.var_byte_arr_arr_arr_e[1][0][this.var_int_j]] = this.var_byte_arr_h[this.var_int_j];
+                }
+                ++this.var_int_j;
             }
-         }
-
-         for(this.j = 0; this.j < this.c; ++this.j) {
-            if (this.e[1][0][this.j] >= 0) {
-               this.a.b[this.e[1][1][this.j]][this.e[1][0][this.j]] = this.h[this.j];
+            if (this.var_byte_arr_f[this.var_byte_arr_g[0]] + n5 >= this.var_int_i) {
+                this.var_byte_arr_f[this.var_byte_arr_g[0]] = (byte)(this.var_int_i - n5);
             }
-         }
+            this.var_int_a = 0;
+            while (this.var_int_a < this.var_byte_arr_f[this.var_byte_arr_g[0]]) {
+                if (n6 == 0) {
+                    this.var_byte_arr_arr_arr_a[0][this.var_int_v][this.var_int_a + n5] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][0][this.var_int_a];
+                    this.var_byte_arr_arr_arr_a[1][this.var_int_v][this.var_int_a + n5] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][1][this.var_int_a];
+                } else {
+                    this.var_byte_arr_arr_arr_b[0][this.var_int_v][this.var_int_a + n5] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][0][this.var_int_a];
+                    this.var_byte_arr_arr_arr_b[1][this.var_int_v][this.var_int_a + n5] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][1][this.var_int_a];
+                }
+                ++this.var_int_a;
+            }
+            if (n6 == 0) {
+                this.var_byte_arr_a[707 + this.var_int_v] = 0;
+                this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+                this.P();
+            }
+        }
+        catch (Exception exception) {}
+        return this.var_byte_arr_f[this.var_byte_arr_g[0]];
+    }
 
-         if (this.f[this.g[0]] + var5 >= this.i) {
-            this.f[this.g[0]] = (byte)(this.i - var5);
-         }
+    private byte byte_a(int n, int n2, int n3, int n4) {
+        try {
+            this.var_byte_arr_arr_d[0][0] = (byte)n2;
+            this.var_byte_arr_arr_d[1][0] = (byte)n;
+            this.var_int_d = 1;
+            this.a(n2, n, n4, n3, 0);
+            this.var_int_a = 0;
+            while (this.var_int_a < this.var_byte_c) {
+                this.f(0);
+                if (!this.var_boolean_arr_a[0] && !this.var_boolean_arr_a[1]) {
+                    this.void_d(0);
+                    this.var_byte_arr_arr_d[0][this.var_int_d] = this.var_int_m < 0 ? this.var_byte_arr_arr_arr_e[0][0][this.var_int_a] : this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[(this.var_int_m & 1) + 1]][0][this.var_int_m >> 1];
+                    this.var_byte_arr_arr_d[1][this.var_int_d] = this.var_int_m < 0 ? this.var_byte_arr_arr_arr_e[0][1][this.var_int_a] : this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[(this.var_int_m & 1) + 1]][1][this.var_int_m >> 1];
+                    this.var_int_j = 0;
+                    while (this.var_int_j < this.var_byte_c) {
+                        if (this.var_byte_arr_arr_arr_e[1][0][this.var_int_j] >= 0) {
+                            this.var_f_a.var_byte_arr_arr_b[this.var_byte_arr_arr_arr_e[1][1][this.var_int_j]][this.var_byte_arr_arr_arr_e[1][0][this.var_int_j]] = this.var_byte_arr_h[this.var_int_j];
+                        }
+                        ++this.var_int_j;
+                    }
+                    return (byte)this.var_int_d;
+                }
+                this.var_int_b = this.var_boolean_arr_a[0] && this.var_byte_arr_f[this.var_byte_arr_g[1]] < this.var_byte_arr_f[this.var_byte_arr_g[2]] || !this.var_boolean_arr_a[1] ? 1 : 2;
+                this.var_byte_arr_arr_d[0][this.var_int_d] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[this.var_int_b]][0][this.var_byte_arr_f[this.var_byte_arr_g[this.var_int_b]] / 2];
+                this.var_byte_arr_arr_d[1][this.var_int_d] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[this.var_int_b]][1][this.var_byte_arr_f[this.var_byte_arr_g[this.var_int_b]] / 2];
+                this.var_int_a = this.var_byte_arr_e[this.var_byte_arr_g[this.var_int_b]];
+                ++this.var_int_d;
+                ++this.var_int_a;
+            }
+            this.var_int_l = 0;
+            this.var_byte_arr_arr_d[0][this.var_int_d] = (byte)n4;
+            this.var_byte_arr_arr_d[1][this.var_int_d] = (byte)n3;
+            this.var_int_j = 0;
+            while (this.var_int_j < this.var_byte_c) {
+                if (this.var_byte_arr_arr_arr_e[1][0][this.var_int_j] >= 0) {
+                    this.var_f_a.var_byte_arr_arr_b[this.var_byte_arr_arr_arr_e[1][1][this.var_int_j]][this.var_byte_arr_arr_arr_e[1][0][this.var_int_j]] = this.var_byte_arr_h[this.var_int_j];
+                }
+                ++this.var_int_j;
+            }
+        }
+        catch (Exception exception) {}
+        return (byte)this.var_int_d;
+    }
 
-         for(this.a = 0; this.a < this.f[this.g[0]]; ++this.a) {
-            if (var6 == 0) {
-               this.a[0][this.v][this.a + var5] = this.d[this.g[0]][0][this.a];
-               this.a[1][this.v][this.a + var5] = this.d[this.g[0]][1][this.a];
+    private void void_d(int n) {
+        this.int_a((int)this.var_byte_arr_arr_arr_e[0][0][this.var_int_a], (int)this.var_byte_arr_arr_arr_e[0][1][this.var_int_a], n);
+        this.var_int_l = (this.var_byte_q - this.var_byte_arr_arr_arr_e[0][0][this.var_int_a]) * (this.var_byte_q - this.var_byte_arr_arr_arr_e[0][0][this.var_int_a]) + (this.var_byte_r - this.var_byte_arr_arr_arr_e[0][1][this.var_int_a]) * (this.var_byte_r - this.var_byte_arr_arr_arr_e[0][1][this.var_int_a]);
+        this.var_int_m = -1;
+        if (this.var_int_l > this.var_int_B) {
+            this.var_int_n = this.var_byte_arr_f[this.var_byte_arr_g[this.var_byte_arr_f[this.var_byte_arr_g[1]] > this.var_byte_arr_f[this.var_byte_arr_g[2]] ? 1 : 2]] * 2;
+            this.var_int_j = 0;
+            while (this.var_int_j < this.var_int_n) {
+                if (this.var_byte_arr_f[this.var_byte_arr_g[(this.var_int_j & 1) + 1]] > this.var_int_j >> 1) {
+                    this.var_int_k = (this.var_byte_q - this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[(this.var_int_j & 1) + 1]][0][this.var_int_j >> 1]) * (this.var_byte_q - this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[(this.var_int_j & 1) + 1]][0][this.var_int_j >> 1]) + (this.var_byte_r - this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[(this.var_int_j & 1) + 1]][1][this.var_int_j >> 1]) * (this.var_byte_r - this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[(this.var_int_j & 1) + 1]][1][this.var_int_j >> 1]);
+                    if (this.var_int_k < this.var_int_l) {
+                        this.var_int_l = this.var_int_k;
+                        this.var_int_m = this.var_int_j;
+                        if (this.int_a((int)this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[(this.var_int_j & 1) + 1]][0][this.var_int_j >> 1], (int)this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[(this.var_int_j & 1) + 1]][1][this.var_int_j >> 1], n) / 10 <= this.var_int_B) {
+                            return;
+                        }
+                    }
+                }
+                ++this.var_int_j;
+            }
+        }
+    }
+
+    private byte byte_b(int n, int n2, int n3, int n4) {
+        this.var_byte_i = 0;
+        this.var_byte_h = this.byte_a(n, n2, n3, n4);
+        this.var_byte_j = 0;
+        while (this.var_byte_j < this.var_byte_h) {
+            this.var_byte_i = (byte)(this.var_byte_i + this.a(this.var_byte_arr_arr_d[1][this.var_byte_j], this.var_byte_arr_arr_d[0][this.var_byte_j], this.var_byte_arr_arr_d[1][this.var_byte_j + 1], this.var_byte_arr_arr_d[0][this.var_byte_j + 1], this.var_byte_i, 0));
+            if (!this.var_boolean_arr_a[0] && !this.var_boolean_arr_a[1]) break;
+            this.var_byte_j = (byte)(this.var_byte_j + 1);
+        }
+        if (this.var_f_a.var_byte_q == 3 && this.var_byte_i > 2) {
+            return 2;
+        }
+        return this.var_byte_i;
+    }
+
+    private void void_o() {
+        if (this.var_byte_arr_a[4848 + this.var_int_v] > 1) {
+            this.var_byte_arr_a[4848 + this.var_int_v] = 0;
+        }
+        this.var_boolean_arr_a[2] = true;
+        this.var_byte_arr_a[808 + this.var_int_v] = this.byte_b(this.var_byte_arr_a[101 + this.var_int_v], this.var_byte_arr_a[0 + this.var_int_v], this.var_byte_arr_a[3232 + this.var_int_v], this.var_byte_arr_a[3131 + this.var_int_v]);
+    }
+
+    /*
+     * Enabled force condition propagation
+     * Lifted jumps to return sites
+     */
+    private void void_p() {
+        this.void_o();
+        if (this.var_byte_arr_a[808 + this.var_int_v] < 1 && this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0) / 10 > this.var_int_B) {
+            int n = 4848 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+            if (!this.var_boolean_arr_a[2]) {
+                return;
+            }
+            int n2 = 7979 + this.var_int_v;
+            this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] & 0xDF);
+            if (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_arr_a[2828 + this.var_int_v]] == 1) {
+                this.void_b(this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]], this.var_byte_arr_a[4444 + this.var_int_v]);
+            }
+            if (this.var_byte_arr_a[2828 + this.var_int_v] != 69 && this.var_byte_arr_a[2828 + this.var_int_v] != 79 && this.var_byte_arr_a[2828 + this.var_int_v] != 59 && this.var_byte_arr_a[2828 + this.var_int_v] != 87) {
+                if (this.var_byte_arr_a[2828 + this.var_int_v] == 17 || this.var_byte_arr_a[2828 + this.var_int_v] == 109 || this.var_byte_arr_a[2828 + this.var_int_v] == 110 || this.var_byte_arr_a[2828 + this.var_int_v] == 27) {
+                    this.N();
+                    return;
+                }
+                if (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_arr_a[2828 + this.var_int_v]] == 1 || this.var_byte_arr_a[2828 + this.var_int_v] <= 9) return;
+                this.boolean_a(0, this.var_byte_arr_a[4949 + this.var_int_v] * 2 + 1, b.int_b(this.var_byte_arr_a[0 + this.var_int_v] - 3 + this.var_f_a.int_a(255, 6), 0, this.var_f_a.var_short_c - 1), b.int_b(this.var_byte_arr_a[101 + this.var_int_v] - 3 + this.var_f_a.int_a(255, 6), 0, this.var_f_a.var_short_d - 1));
+                return;
+            }
+            this.var_byte_arr_a[4848 + this.var_int_v] = 0;
+            if (this.var_byte_arr_a[6464 + this.var_int_v] == 69 && this.var_byte_arr_a[6262 + this.var_int_v] == this.var_byte_arr_a[3131 + this.var_int_v] && this.var_byte_arr_a[6363 + this.var_int_v] == this.var_byte_arr_a[3232 + this.var_int_v]) {
+                this.var_byte_arr_a[6262 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+                this.var_byte_arr_a[6363 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+            }
+            this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+            this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+            return;
+        }
+        if (this.var_byte_arr_a[808 + this.var_int_v] <= 0 || !(this.var_byte_arr_a[2828 + this.var_int_v] <= 9 || this.var_byte_arr_a[2828 + this.var_int_v] == 59 || this.var_byte_arr_a[2828 + this.var_int_v] == 87 || this.var_int_u == 0 && this.var_f_a.var_boolean_N || this.var_int_u == 1 && this.var_byte_Q > 0) && (this.var_f_a.var_byte_q != 3 || this.var_byte_f != 4)) return;
+        this.var_byte_arr_a[7777 + this.var_int_v] = 3;
+    }
+
+    private void a(int n, int n2, int n3, int n4, int n5) {
+        block10: {
+            try {
+                this.void_a(n3 - n, n4 - n2);
+                this.var_int_a = 0;
+                while (this.var_int_a < 3) {
+                    this.var_byte_arr_d[this.var_int_a << 1] = (byte)n;
+                    this.var_byte_arr_d[(this.var_int_a << 1) + 1] = (byte)n2;
+                    ++this.var_int_a;
+                }
+                this.e(n5);
+                this.var_int_b = 1000;
+                this.var_int_a = 0;
+                while (this.var_int_a < 3) {
+                    if (this.var_byte_arr_e[this.var_int_a] < this.var_int_b) {
+                        this.var_int_b = this.var_byte_arr_e[this.var_int_a];
+                        this.var_byte_arr_g[0] = (byte)this.var_int_a;
+                    }
+                    ++this.var_int_a;
+                }
+                this.var_byte_arr_g[1] = (byte)((this.var_byte_arr_g[0] + 1) % 3);
+                this.var_byte_arr_g[2] = (byte)((this.var_byte_arr_g[0] + 2) % 3);
+                this.var_byte_d = 0;
+                this.var_byte_c = 0;
+                if (this.var_byte_arr_e[this.var_byte_arr_g[0]] > 0) {
+                    this.var_int_a = 0;
+                    while (this.var_int_a < this.var_byte_arr_f[this.var_byte_arr_g[0]]) {
+                        this.var_byte_e = this.var_byte_d;
+                        byte by = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][1][this.var_int_a];
+                        byte by2 = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][0][this.var_int_a];
+                        byte by3 = this.var_byte_d = this.var_byte_arr_arr_b[by][by2] == 0 ? (byte)0 : this.byte_a((int)by2, (int)by, n5);
+                        if (this.var_byte_e == 0 && this.var_byte_d != 0) {
+                            if (this.var_byte_c >= 10) break block10;
+                            this.var_byte_arr_arr_arr_e[0][0][this.var_byte_c] = (byte)(this.var_int_a == 0 ? n : this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][0][this.var_int_a - 1]);
+                            this.var_byte_arr_arr_arr_e[0][1][this.var_byte_c] = (byte)(this.var_int_a == 0 ? n2 : this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][1][this.var_int_a - 1]);
+                            this.var_byte_arr_arr_arr_e[0][2][this.var_byte_c] = (byte)(this.var_int_a - 1);
+                            this.var_byte_arr_arr_arr_e[1][0][this.var_byte_c] = -1;
+                            this.var_byte_c = (byte)(this.var_byte_c + 1);
+                        } else if (this.var_byte_e != 0 && this.var_byte_d == 0) {
+                            this.var_byte_arr_arr_arr_e[1][0][this.var_byte_c - 1] = by2;
+                            this.var_byte_arr_arr_arr_e[1][1][this.var_byte_c - 1] = by;
+                            this.var_byte_arr_arr_arr_e[1][2][this.var_byte_c - 1] = (byte)this.var_int_a;
+                            this.var_byte_arr_h[this.var_byte_c - 1] = this.var_f_a.var_byte_arr_arr_b[by][by2];
+                            this.var_f_a.var_byte_arr_arr_b[by][by2] = (byte)(256 - this.var_byte_c);
+                        }
+                        ++this.var_int_a;
+                    }
+                }
+                return;
+            }
+            catch (Exception exception) {}
+        }
+    }
+
+    private void void_a(int n, int n2) {
+        this.var_byte_a = 0;
+        if (n > 0) {
+            this.var_byte_a = (byte)(this.var_byte_a + 4);
+        } else {
+            n *= -1;
+        }
+        if (n2 > 0) {
+            this.var_byte_a = (byte)(this.var_byte_a + 2);
+        } else {
+            n2 *= -1;
+        }
+        if (n > n2) {
+            this.var_byte_a = (byte)(this.var_byte_a + 1);
+            this.var_byte_arr_c[0] = (byte)(n - n2);
+            this.var_byte_arr_c[1] = (byte)n2;
+            return;
+        }
+        this.var_byte_arr_c[0] = (byte)(n2 - n);
+        this.var_byte_arr_c[1] = (byte)n;
+    }
+
+    private void e(int n) {
+        this.var_int_a = 0;
+        while (this.var_int_a < 3) {
+            this.var_byte_arr_f[this.var_int_a] = (byte)(this.var_byte_arr_c[0] + this.var_byte_arr_c[1]);
+            this.var_byte_arr_e[this.var_int_a] = 0;
+            ++this.var_int_a;
+        }
+        this.var_int_e = 0;
+        while (this.var_int_e < 2) {
+            this.var_int_c = 0;
+            this.var_int_a = this.var_int_e;
+            while (this.var_int_a != 2 - 3 * this.var_int_e) {
+                this.var_int_b = 0;
+                while (this.var_int_b < this.var_byte_arr_c[this.var_int_a]) {
+                    int n2 = this.var_int_e << 1;
+                    this.var_byte_arr_d[n2] = (byte)(this.var_byte_arr_d[n2] + this.var_byte_arr_b[this.var_short_arr_a[0] + this.var_byte_a * 4 + this.var_int_a * 2]);
+                    int n3 = (this.var_int_e << 1) + 1;
+                    this.var_byte_arr_d[n3] = (byte)(this.var_byte_arr_d[n3] + this.var_byte_arr_b[this.var_short_arr_a[0] + this.var_byte_a * 4 + this.var_int_a * 2 + 1]);
+                    this.var_byte_arr_arr_arr_d[this.var_int_e][0][this.var_int_c] = this.var_byte_arr_d[this.var_int_e << 1];
+                    this.var_byte_arr_arr_arr_d[this.var_int_e][1][this.var_int_c] = this.var_byte_arr_d[(this.var_int_e << 1) + 1];
+                    int n4 = this.var_int_e;
+                    this.var_byte_arr_e[n4] = (byte)(this.var_byte_arr_e[n4] + (this.var_byte_arr_arr_b[this.var_byte_arr_d[(this.var_int_e << 1) + 1]][this.var_byte_arr_d[this.var_int_e << 1]] == 0 ? (byte)0 : this.byte_a((int)this.var_byte_arr_d[this.var_int_e << 1], (int)this.var_byte_arr_d[(this.var_int_e << 1) + 1], n)));
+                    ++this.var_int_b;
+                    ++this.var_int_c;
+                }
+                this.var_int_a += 1 - 2 * this.var_int_e;
+            }
+            ++this.var_int_e;
+        }
+        this.var_int_e = 0;
+        this.var_int_f = 0;
+        this.var_int_g = this.var_byte_arr_c[1] > 0 ? this.var_byte_arr_c[0] * 50 / this.var_byte_arr_c[1] : 1000000;
+        this.var_int_b = this.var_int_g;
+        this.var_int_a = 0;
+        while (this.var_int_a < this.var_byte_arr_c[0] + this.var_byte_arr_c[1]) {
+            if (this.var_int_b >= 50 && this.var_int_e < this.var_byte_arr_c[0] || this.var_int_f >= this.var_byte_arr_c[1]) {
+                this.var_byte_arr_d[4] = (byte)(this.var_byte_arr_d[4] + this.var_byte_arr_b[this.var_short_arr_a[0] + this.var_byte_a * 4 + 0]);
+                this.var_byte_arr_d[5] = (byte)(this.var_byte_arr_d[5] + this.var_byte_arr_b[this.var_short_arr_a[0] + this.var_byte_a * 4 + 1]);
+                ++this.var_int_e;
+                this.var_int_b -= 50;
             } else {
-               this.b[0][this.v][this.a + var5] = this.d[this.g[0]][0][this.a];
-               this.b[1][this.v][this.a + var5] = this.d[this.g[0]][1][this.a];
+                this.var_byte_arr_d[4] = (byte)(this.var_byte_arr_d[4] + this.var_byte_arr_b[this.var_short_arr_a[0] + this.var_byte_a * 4 + 2]);
+                this.var_byte_arr_d[5] = (byte)(this.var_byte_arr_d[5] + this.var_byte_arr_b[this.var_short_arr_a[0] + this.var_byte_a * 4 + 3]);
+                ++this.var_int_f;
+                this.var_int_b += this.var_int_g;
             }
-         }
+            this.var_byte_arr_arr_arr_d[2][0][this.var_int_a] = this.var_byte_arr_d[4];
+            this.var_byte_arr_arr_arr_d[2][1][this.var_int_a] = this.var_byte_arr_d[5];
+            this.var_byte_arr_e[2] = (byte)(this.var_byte_arr_e[2] + (this.var_byte_arr_arr_b[this.var_byte_arr_d[5]][this.var_byte_arr_d[4]] == 0 ? (byte)0 : this.byte_a((int)this.var_byte_arr_d[4], (int)this.var_byte_arr_d[5], n)));
+            ++this.var_int_a;
+        }
+    }
 
-         if (var6 == 0) {
-            this.a[707 + this.v] = 0;
-            this.a[3030 + this.v] = 0;
-            this.P();
-         }
-      } catch (Exception var8) {
-      }
-
-      return this.f[this.g[0]];
-   }
-
-   private byte a(int var1, int var2, int var3, int var4) {
-      try {
-         this.d[0][0] = (byte)var2;
-         this.d[1][0] = (byte)var1;
-         this.d = 1;
-         this.a(var2, var1, var4, (int)var3, (int)0);
-
-         for(this.a = 0; this.a < this.c; ++this.a) {
-            this.f(0);
-            if (!this.a[0] && !this.a[1]) {
-               this.d(0);
-               this.d[0][this.d] = this.m < 0 ? this.e[0][0][this.a] : this.d[this.g[(this.m & 1) + 1]][0][this.m >> 1];
-               this.d[1][this.d] = this.m < 0 ? this.e[0][1][this.a] : this.d[this.g[(this.m & 1) + 1]][1][this.m >> 1];
-
-               for(this.j = 0; this.j < this.c; ++this.j) {
-                  if (this.e[1][0][this.j] >= 0) {
-                     this.a.b[this.e[1][1][this.j]][this.e[1][0][this.j]] = this.h[this.j];
-                  }
-               }
-
-               return (byte)this.d;
-            }
-
-            this.b = (!this.a[0] || this.f[this.g[1]] >= this.f[this.g[2]]) && this.a[1] ? 2 : 1;
-            this.d[0][this.d] = this.d[this.g[this.b]][0][this.f[this.g[this.b]] / 2];
-            this.d[1][this.d] = this.d[this.g[this.b]][1][this.f[this.g[this.b]] / 2];
-            this.a = this.e[this.g[this.b]];
-            ++this.d;
-         }
-
-         this.l = 0;
-         this.d[0][this.d] = (byte)var4;
-         this.d[1][this.d] = (byte)var3;
-
-         for(this.j = 0; this.j < this.c; ++this.j) {
-            if (this.e[1][0][this.j] >= 0) {
-               this.a.b[this.e[1][1][this.j]][this.e[1][0][this.j]] = this.h[this.j];
-            }
-         }
-      } catch (Exception var6) {
-      }
-
-      return (byte)this.d;
-   }
-
-   private void d(int var1) {
-      this.a((int)this.e[0][0][this.a], (int)this.e[0][1][this.a], (int)var1);
-      this.l = (this.q - this.e[0][0][this.a]) * (this.q - this.e[0][0][this.a]) + (this.r - this.e[0][1][this.a]) * (this.r - this.e[0][1][this.a]);
-      this.m = -1;
-      if (this.l > this.B) {
-         this.n = this.f[this.g[this.f[this.g[1]] > this.f[this.g[2]] ? 1 : 2]] * 2;
-
-         for(this.j = 0; this.j < this.n; ++this.j) {
-            if (this.f[this.g[(this.j & 1) + 1]] > this.j >> 1) {
-               this.k = (this.q - this.d[this.g[(this.j & 1) + 1]][0][this.j >> 1]) * (this.q - this.d[this.g[(this.j & 1) + 1]][0][this.j >> 1]) + (this.r - this.d[this.g[(this.j & 1) + 1]][1][this.j >> 1]) * (this.r - this.d[this.g[(this.j & 1) + 1]][1][this.j >> 1]);
-               if (this.k < this.l) {
-                  this.l = this.k;
-                  this.m = this.j;
-                  if (this.a((int)this.d[this.g[(this.j & 1) + 1]][0][this.j >> 1], (int)this.d[this.g[(this.j & 1) + 1]][1][this.j >> 1], (int)var1) / 10 <= this.B) {
-                     return;
-                  }
-               }
-            }
-         }
-      }
-
-   }
-
-   private byte b(int var1, int var2, int var3, int var4) {
-      this.i = 0;
-      this.h = this.a(var1, var2, var3, var4);
-
-      for(this.j = 0; this.j < this.h; ++this.j) {
-         this.i += this.a(this.d[1][this.j], this.d[0][this.j], this.d[1][this.j + 1], this.d[0][this.j + 1], this.i, 0);
-         if (!this.a[0] && !this.a[1]) {
-            break;
-         }
-      }
-
-      return this.a.q == 3 && this.i > 2 ? 2 : this.i;
-   }
-
-   private void o() {
-      if (this.a[4848 + this.v] > 1) {
-         this.a[4848 + this.v] = 0;
-      }
-
-      this.a[2] = true;
-      this.a[808 + this.v] = this.b(this.a[101 + this.v], this.a[0 + this.v], this.a[3232 + this.v], this.a[3131 + this.v]);
-   }
-
-   private void p() {
-      this.o();
-      if (this.a[808 + this.v] < 1 && this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0) / 10 > this.B) {
-         ++this.a[4848 + this.v];
-         if (!this.a[2]) {
-            return;
-         }
-
-         byte[] var1 = this.a;
-         int var2 = 7979 + this.v;
-         var1[var2] = (byte)(var1[var2] & 223);
-         if (this.b[this.a[39] + this.a[2828 + this.v]] == 1) {
-            this.b(this.a[8749 + this.a[4444 + this.v]], this.a[4444 + this.v]);
-         }
-
-         if (this.a[2828 + this.v] == 69 || this.a[2828 + this.v] == 79 || this.a[2828 + this.v] == 59 || this.a[2828 + this.v] == 87) {
-            this.a[4848 + this.v] = 0;
-            if (this.a[6464 + this.v] == 69 && this.a[6262 + this.v] == this.a[3131 + this.v] && this.a[6363 + this.v] == this.a[3232 + this.v]) {
-               this.a[6262 + this.v] = this.a[0 + this.v];
-               this.a[6363 + this.v] = this.a[101 + this.v];
-            }
-
-            this.a[3131 + this.v] = this.a[0 + this.v];
-            this.a[3232 + this.v] = this.a[101 + this.v];
-            return;
-         }
-
-         if (this.a[2828 + this.v] == 17 || this.a[2828 + this.v] == 109 || this.a[2828 + this.v] == 110 || this.a[2828 + this.v] == 27) {
-            this.N();
-            return;
-         }
-
-         if (this.b[this.a[39] + this.a[2828 + this.v]] != 1 && this.a[2828 + this.v] > 9) {
-            this.a((int)0, (int)(this.a[4949 + this.v] * 2 + 1), (int)b((int)(this.a[0 + this.v] - 3 + this.a.a((int)255, (int)6)), (int)0, (int)(this.a.c - 1)), (int)b((int)(this.a[101 + this.v] - 3 + this.a.a((int)255, (int)6)), (int)0, (int)(this.a.d - 1)));
-            return;
-         }
-      } else if (this.a[808 + this.v] > 0 && (this.a[2828 + this.v] <= 9 || this.a[2828 + this.v] == 59 || this.a[2828 + this.v] == 87 || this.u == 0 && this.a.N || this.u == 1 && this.Q > 0 || this.a.q == 3 && this.f == 4)) {
-         this.a[7777 + this.v] = 3;
-      }
-
-   }
-
-   private void a(int var1, int var2, int var3, int var4, int var5) {
-      try {
-         this.a(var3 - var1, var4 - var2);
-
-         for(this.a = 0; this.a < 3; ++this.a) {
-            this.d[this.a << 1] = (byte)var1;
-            this.d[(this.a << 1) + 1] = (byte)var2;
-         }
-
-         this.e(var5);
-         this.b = 1000;
-
-         for(this.a = 0; this.a < 3; ++this.a) {
-            if (this.e[this.a] < this.b) {
-               this.b = this.e[this.a];
-               this.g[0] = (byte)this.a;
-            }
-         }
-
-         this.g[1] = (byte)((this.g[0] + 1) % 3);
-         this.g[2] = (byte)((this.g[0] + 2) % 3);
-         this.d = 0;
-         this.c = 0;
-         if (this.e[this.g[0]] > 0) {
-            for(this.a = 0; this.a < this.f[this.g[0]]; ++this.a) {
-               this.e = this.d;
-               byte var6 = this.d[this.g[0]][0][this.a];
-               byte var7 = this.d[this.g[0]][1][this.a];
-               this.d = this.b[var7][var6] == 0 ? 0 : this.a((int)var6, (int)var7, (int)var5);
-               if (this.e == 0 && this.d != 0) {
-                  if (this.c >= 10) {
-                     return;
-                  }
-
-                  this.e[0][0][this.c] = (byte)(this.a == 0 ? var1 : this.d[this.g[0]][0][this.a - 1]);
-                  this.e[0][1][this.c] = (byte)(this.a == 0 ? var2 : this.d[this.g[0]][1][this.a - 1]);
-                  this.e[0][2][this.c] = (byte)(this.a - 1);
-                  this.e[1][0][this.c] = -1;
-                  ++this.c;
-               } else if (this.e != 0 && this.d == 0) {
-                  this.e[1][0][this.c - 1] = var6;
-                  this.e[1][1][this.c - 1] = var7;
-                  this.e[1][2][this.c - 1] = (byte)this.a;
-                  this.h[this.c - 1] = this.a.b[var7][var6];
-                  this.a.b[var7][var6] = (byte)(256 - this.c);
-               }
-            }
-         }
-
-      } catch (Exception var8) {
-      }
-   }
-
-   private void a(int var1, int var2) {
-      this.a = 0;
-      if (var1 > 0) {
-         this.a = (byte)(this.a + 4);
-      } else {
-         var1 *= -1;
-      }
-
-      if (var2 > 0) {
-         this.a = (byte)(this.a + 2);
-      } else {
-         var2 *= -1;
-      }
-
-      if (var1 > var2) {
-         ++this.a;
-         this.c[0] = (byte)(var1 - var2);
-         this.c[1] = (byte)var2;
-      } else {
-         this.c[0] = (byte)(var2 - var1);
-         this.c[1] = (byte)var1;
-      }
-   }
-
-   private void e(int var1) {
-      for(this.a = 0; this.a < 3; ++this.a) {
-         this.f[this.a] = (byte)(this.c[0] + this.c[1]);
-         this.e[this.a] = 0;
-      }
-
-      for(this.e = 0; this.e < 2; ++this.e) {
-         this.c = 0;
-
-         for(this.a = this.e; this.a != 2 - 3 * this.e; this.a += 1 - 2 * this.e) {
-            for(this.b = 0; this.b < this.c[this.a]; ++this.c) {
-               byte[] var10000 = this.d;
-               int var10001 = this.e << 1;
-               var10000[var10001] += this.b[this.a[0] + this.a * 4 + this.a * 2];
-               var10000 = this.d;
-               var10001 = (this.e << 1) + 1;
-               var10000[var10001] += this.b[this.a[0] + this.a * 4 + this.a * 2 + 1];
-               this.d[this.e][0][this.c] = this.d[this.e << 1];
-               this.d[this.e][1][this.c] = this.d[(this.e << 1) + 1];
-               var10000 = this.e;
-               var10001 = this.e;
-               var10000[var10001] += this.b[this.d[(this.e << 1) + 1]][this.d[this.e << 1]] == 0 ? 0 : this.a((int)this.d[this.e << 1], (int)this.d[(this.e << 1) + 1], (int)var1);
-               ++this.b;
-            }
-         }
-      }
-
-      this.e = 0;
-      this.f = 0;
-      this.b = this.g = this.c[1] > 0 ? this.c[0] * 50 / this.c[1] : 1000000;
-
-      for(this.a = 0; this.a < this.c[0] + this.c[1]; ++this.a) {
-         if ((this.b < 50 || this.e >= this.c[0]) && this.f < this.c[1]) {
-            byte[] var6 = this.d;
-            var6[4] += this.b[this.a[0] + this.a * 4 + 2];
-            var6 = this.d;
-            var6[5] += this.b[this.a[0] + this.a * 4 + 3];
-            ++this.f;
-            this.b += this.g;
-         } else {
-            byte[] var4 = this.d;
-            var4[4] += this.b[this.a[0] + this.a * 4 + 0];
-            var4 = this.d;
-            var4[5] += this.b[this.a[0] + this.a * 4 + 1];
-            ++this.e;
-            this.b -= 50;
-         }
-
-         this.d[2][0][this.a] = this.d[4];
-         this.d[2][1][this.a] = this.d[5];
-         byte[] var8 = this.e;
-         var8[2] += this.b[this.d[5]][this.d[4]] == 0 ? 0 : this.a((int)this.d[4], (int)this.d[5], (int)var1);
-      }
-
-   }
-
-   private void f(int var1) {
-      try {
-         this.g = 1;
-
-         for(this.e = 1; this.e < 3; ++this.e) {
-            this.h = this.g[this.e];
-            this.f[this.h] = 0;
-            this.a[this.e - 1] = false;
-            this.b = this.b[this.a[3] + this.d[this.g[0]][0][this.e[0][2][this.a] + 1] - this.e[0][0][this.a] + (this.d[this.g[0]][1][this.e[0][2][this.a] + 1] - this.e[0][1][this.a]) * 3 + 4];
-            this.d[this.h * 2] = this.e[0][0][this.a];
-            this.d[this.h * 2 + 1] = this.e[0][1][this.a];
-
-            for(this.b = 0; this.b < 65; ++this.b) {
-               for(this.f = 0; this.f < 8; ++this.f) {
-                  byte var2 = (byte)(this.d[this.h * 2] + this.b[this.a[1] + this.b]);
-                  byte var3 = (byte)(this.d[this.h * 2 + 1] + this.b[this.a[1] + 8 + this.b]);
-                  if ((this.c = var2 < this.a.c && var3 < this.a.d && var2 >= 0 && var3 >= 0 ? (this.b[var3][var2] == 0 ? 0 : this.a((int)var2, (int)var3, (int)var1)) : 2) == 2) {
-                     this.b = 130;
-                     break;
-                  }
-
-                  if (this.c == 0) {
-                     if ((this.b & 1) > 0) {
-                        if ((var2 = this.a.b[this.d[this.h * 2 + 1] + this.b[this.a[1] + 8 + (this.b + this.g & 7)]][this.d[this.h * 2] + this.b[this.a[1] + (this.b + this.g & 7)]]) < -this.a && var2 >= -10) {
-                           this.e[this.h] = (byte)(-(var2 + 1));
-                           this.a[this.e - 1] = true;
-                           this.b = 130;
-                           break;
+    private void f(int n) {
+        try {
+            this.var_int_g = 1;
+            this.var_int_e = 1;
+            while (this.var_int_e < 3) {
+                this.var_int_h = this.var_byte_arr_g[this.var_int_e];
+                this.var_byte_arr_f[this.var_int_h] = 0;
+                this.var_boolean_arr_a[this.var_int_e - 1] = false;
+                this.var_byte_b = this.var_byte_arr_b[this.var_short_arr_a[3] + this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][0][this.var_byte_arr_arr_arr_e[0][2][this.var_int_a] + 1] - this.var_byte_arr_arr_arr_e[0][0][this.var_int_a] + (this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][1][this.var_byte_arr_arr_arr_e[0][2][this.var_int_a] + 1] - this.var_byte_arr_arr_arr_e[0][1][this.var_int_a]) * 3 + 4];
+                this.var_byte_arr_d[this.var_int_h * 2] = this.var_byte_arr_arr_arr_e[0][0][this.var_int_a];
+                this.var_byte_arr_d[this.var_int_h * 2 + 1] = this.var_byte_arr_arr_arr_e[0][1][this.var_int_a];
+                this.var_int_b = 0;
+                while (this.var_int_b < 65) {
+                    byte by;
+                    this.var_int_f = 0;
+                    while (this.var_int_f < 8) {
+                        by = (byte)(this.var_byte_arr_d[this.var_int_h * 2] + this.var_byte_arr_b[this.var_short_arr_a[1] + this.var_byte_b]);
+                        byte by2 = (byte)(this.var_byte_arr_d[this.var_int_h * 2 + 1] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_b]);
+                        if ((by >= this.var_f_a.var_short_c || by2 >= this.var_f_a.var_short_d || by < 0 || by2 < 0 ? 2 : (this.var_int_c = this.var_byte_arr_arr_b[by2][by] == 0 ? 0 : (int)this.byte_a((int)by, (int)by2, n))) == 2) {
+                            this.var_int_b = 130;
+                            break;
                         }
-
-                        if (this.d[this.h * 2] + this.b[this.a[1] + (this.b + this.g & 7)] == this.e[0][0][this.a] && this.d[this.h * 2 + 1] + this.b[this.a[1] + 8 + (this.b + this.g & 7)] == this.e[0][1][this.a]) {
-                           this.b = 130;
-                           break;
+                        if (this.var_int_c == 0) {
+                            if ((this.var_byte_b & 1) > 0) {
+                                by = this.var_f_a.var_byte_arr_arr_b[this.var_byte_arr_d[this.var_int_h * 2 + 1] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + (this.var_byte_b + this.var_int_g & 7)]][this.var_byte_arr_d[this.var_int_h * 2] + this.var_byte_arr_b[this.var_short_arr_a[1] + (this.var_byte_b + this.var_int_g & 7)]];
+                                if (by < -this.var_int_a && by >= -10) {
+                                    this.var_byte_arr_e[this.var_int_h] = (byte)(-(by + 1));
+                                    this.var_boolean_arr_a[this.var_int_e - 1] = true;
+                                    this.var_int_b = 130;
+                                    break;
+                                }
+                                if (this.var_byte_arr_d[this.var_int_h * 2] + this.var_byte_arr_b[this.var_short_arr_a[1] + (this.var_byte_b + this.var_int_g & 7)] == this.var_byte_arr_arr_arr_e[0][0][this.var_int_a] && this.var_byte_arr_d[this.var_int_h * 2 + 1] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + (this.var_byte_b + this.var_int_g & 7)] == this.var_byte_arr_arr_arr_e[0][1][this.var_int_a]) {
+                                    this.var_int_b = 130;
+                                    break;
+                                }
+                            }
+                            int n2 = this.var_int_h * 2;
+                            this.var_byte_arr_d[n2] = (byte)(this.var_byte_arr_d[n2] + this.var_byte_arr_b[this.var_short_arr_a[1] + this.var_byte_b]);
+                            int n3 = this.var_int_h * 2 + 1;
+                            this.var_byte_arr_d[n3] = (byte)(this.var_byte_arr_d[n3] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_b]);
+                            break;
                         }
-                     }
-
-                     byte[] var10000 = this.d;
-                     int var10001 = this.h * 2;
-                     var10000[var10001] += this.b[this.a[1] + this.b];
-                     var10000 = this.d;
-                     var10001 = this.h * 2 + 1;
-                     var10000[var10001] += this.b[this.a[1] + 8 + this.b];
-                     break;
-                  }
-
-                  this.b = (byte)(this.b + this.g & 7);
-               }
-
-               if (this.f >= 8 || this.d[this.h * 2] == this.e[0][0][this.a] && this.d[this.h * 2 + 1] == this.e[0][1][this.a]) {
-                  if (this.f >= 8) {
-                     this.a[2] = false;
-                  }
-                  break;
-               }
-
-               if (this.b > 127) {
-                  break;
-               }
-
-               byte var6;
-               if ((var6 = this.a.b[this.d[this.h * 2 + 1]][this.d[this.h * 2]]) < -this.a && var6 >= -10) {
-                  this.e[this.h] = (byte)(-(var6 + 1));
-                  this.a[this.e - 1] = true;
-                  break;
-               }
-
-               this.d[this.h][0][this.b] = this.d[this.h * 2];
-               this.d[this.h][1][this.b] = this.d[this.h * 2 + 1];
-               ++this.f[this.h];
-               this.b = (byte)(this.b - this.g * 2 & 7);
+                        this.var_byte_b = (byte)(this.var_byte_b + this.var_int_g & 7);
+                        ++this.var_int_f;
+                    }
+                    if (this.var_int_f >= 8 || this.var_byte_arr_d[this.var_int_h * 2] == this.var_byte_arr_arr_arr_e[0][0][this.var_int_a] && this.var_byte_arr_d[this.var_int_h * 2 + 1] == this.var_byte_arr_arr_arr_e[0][1][this.var_int_a]) {
+                        if (this.var_int_f < 8) break;
+                        this.var_boolean_arr_a[2] = false;
+                        break;
+                    }
+                    if (this.var_int_b > 127) break;
+                    by = this.var_f_a.var_byte_arr_arr_b[this.var_byte_arr_d[this.var_int_h * 2 + 1]][this.var_byte_arr_d[this.var_int_h * 2]];
+                    if (by < -this.var_int_a && by >= -10) {
+                        this.var_byte_arr_e[this.var_int_h] = (byte)(-(by + 1));
+                        this.var_boolean_arr_a[this.var_int_e - 1] = true;
+                        break;
+                    }
+                    this.var_byte_arr_arr_arr_d[this.var_int_h][0][this.var_int_b] = this.var_byte_arr_d[this.var_int_h * 2];
+                    this.var_byte_arr_arr_arr_d[this.var_int_h][1][this.var_int_b] = this.var_byte_arr_d[this.var_int_h * 2 + 1];
+                    int n4 = this.var_int_h;
+                    this.var_byte_arr_f[n4] = (byte)(this.var_byte_arr_f[n4] + 1);
+                    this.var_byte_b = (byte)(this.var_byte_b - this.var_int_g * 2 & 7);
+                    ++this.var_int_b;
+                }
+                this.var_int_g *= -1;
+                ++this.var_int_e;
             }
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
 
-            this.g *= -1;
-         }
+    private void void_a(boolean bl) {
+        if (!this.var_boolean_arr_a[0] || this.var_byte_arr_f[this.var_byte_arr_g[1]] > this.var_byte_arr_f[this.var_byte_arr_g[2]] && this.var_boolean_arr_a[1]) {
+            this.var_int_e = this.var_byte_arr_g[1];
+            this.var_byte_arr_g[1] = this.var_byte_arr_g[2];
+            this.var_byte_arr_g[2] = (byte)this.var_int_e;
+        }
+        this.var_int_e = 0;
+        while (this.var_int_e <= this.var_byte_arr_arr_arr_e[0][2][this.var_int_a]) {
+            this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[2]][0][this.var_int_e] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][0][this.var_int_e];
+            this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[2]][1][this.var_int_e] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][1][this.var_int_e];
+            ++this.var_int_e;
+        }
+        this.var_byte_arr_f[this.var_byte_arr_g[2]] = (byte)(this.var_byte_arr_arr_arr_e[0][2][this.var_int_a] + 1);
+        this.var_int_e = 0;
+        while (this.var_int_e <= this.var_byte_arr_f[this.var_byte_arr_g[1]] && this.var_int_e + this.var_byte_arr_f[this.var_byte_arr_g[2]] < this.var_int_i) {
+            this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[2]][0][this.var_int_e + this.var_byte_arr_f[this.var_byte_arr_g[2]]] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[1]][0][this.var_int_e];
+            this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[2]][1][this.var_int_e + this.var_byte_arr_f[this.var_byte_arr_g[2]]] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[1]][1][this.var_int_e];
+            ++this.var_int_e;
+        }
+        this.var_byte_arr_f[this.var_byte_arr_g[2]] = (byte)b.int_b(this.var_byte_arr_f[this.var_byte_arr_g[2]] + this.var_byte_arr_f[this.var_byte_arr_g[1]], 0, this.var_int_i);
+        this.var_int_e = this.var_byte_arr_g[0];
+        this.var_byte_arr_g[0] = this.var_byte_arr_g[2];
+        this.var_byte_arr_g[2] = (byte)this.var_int_e;
+        if (!bl || this.var_byte_arr_f[this.var_byte_arr_g[0]] >= this.var_int_i) {
+            return;
+        }
+        this.var_int_g = this.var_byte_arr_arr_arr_e[1][2][this.var_byte_arr_e[this.var_byte_arr_g[1]]];
+        this.var_int_h = this.var_byte_arr_f[this.var_byte_arr_g[1]] - this.var_int_g + this.var_byte_arr_arr_arr_e[0][2][this.var_int_a] + 1;
+        this.var_int_e = 0;
+        while (this.var_int_e <= this.var_byte_arr_f[this.var_byte_arr_g[2]] - this.var_int_g && this.var_int_e + this.var_byte_arr_f[this.var_byte_arr_g[0]] < this.var_int_i) {
+            this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][0][this.var_int_e + this.var_byte_arr_f[this.var_byte_arr_g[0]]] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[2]][0][this.var_int_e + this.var_int_g];
+            this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[0]][1][this.var_int_e + this.var_byte_arr_f[this.var_byte_arr_g[0]]] = this.var_byte_arr_arr_arr_d[this.var_byte_arr_g[2]][1][this.var_int_e + this.var_int_g];
+            ++this.var_int_e;
+        }
+        this.var_byte_arr_f[this.var_byte_arr_g[0]] = (byte)b.int_b(this.var_byte_arr_f[this.var_byte_arr_g[0]] + this.var_byte_arr_f[this.var_byte_arr_g[2]] - this.var_int_g, 0, this.var_int_i);
+        this.var_int_a = this.var_byte_arr_e[this.var_byte_arr_g[1]];
+        this.var_int_e = this.var_int_a + 1;
+        while (this.var_int_e < this.var_byte_c) {
+            byte[] byArray = this.var_byte_arr_arr_arr_e[0][2];
+            int n = this.var_int_e;
+            byArray[n] = (byte)(byArray[n] + this.var_int_h);
+            byte[] byArray2 = this.var_byte_arr_arr_arr_e[1][2];
+            int n2 = this.var_int_e++;
+            byArray2[n2] = (byte)(byArray2[n2] + this.var_int_h);
+        }
+    }
 
-      } catch (Exception var4) {
-      }
-   }
-
-   private void a(boolean var1) {
-      if (!this.a[0] || this.f[this.g[1]] > this.f[this.g[2]] && this.a[1]) {
-         this.e = this.g[1];
-         this.g[1] = this.g[2];
-         this.g[2] = (byte)this.e;
-      }
-
-      for(this.e = 0; this.e <= this.e[0][2][this.a]; ++this.e) {
-         this.d[this.g[2]][0][this.e] = this.d[this.g[0]][0][this.e];
-         this.d[this.g[2]][1][this.e] = this.d[this.g[0]][1][this.e];
-      }
-
-      this.f[this.g[2]] = (byte)(this.e[0][2][this.a] + 1);
-
-      for(this.e = 0; this.e <= this.f[this.g[1]] && this.e + this.f[this.g[2]] < this.i; ++this.e) {
-         this.d[this.g[2]][0][this.e + this.f[this.g[2]]] = this.d[this.g[1]][0][this.e];
-         this.d[this.g[2]][1][this.e + this.f[this.g[2]]] = this.d[this.g[1]][1][this.e];
-      }
-
-      this.f[this.g[2]] = (byte)b((int)(this.f[this.g[2]] + this.f[this.g[1]]), (int)0, (int)this.i);
-      this.e = this.g[0];
-      this.g[0] = this.g[2];
-      this.g[2] = (byte)this.e;
-      if (var1 && this.f[this.g[0]] < this.i) {
-         this.g = this.e[1][2][this.e[this.g[1]]];
-         this.h = this.f[this.g[1]] - this.g + this.e[0][2][this.a] + 1;
-
-         for(this.e = 0; this.e <= this.f[this.g[2]] - this.g && this.e + this.f[this.g[0]] < this.i; ++this.e) {
-            this.d[this.g[0]][0][this.e + this.f[this.g[0]]] = this.d[this.g[2]][0][this.e + this.g];
-            this.d[this.g[0]][1][this.e + this.f[this.g[0]]] = this.d[this.g[2]][1][this.e + this.g];
-         }
-
-         this.f[this.g[0]] = (byte)b((int)(this.f[this.g[0]] + this.f[this.g[2]] - this.g), (int)0, (int)this.i);
-         this.a = this.e[this.g[1]];
-
-         for(this.e = this.a + 1; this.e < this.c; ++this.e) {
-            byte[] var10000 = this.e[0][2];
-            int var10001 = this.e;
-            var10000[var10001] = (byte)(var10000[var10001] + this.h);
-            var10000 = this.e[1][2];
-            var10001 = this.e;
-            var10000[var10001] = (byte)(var10000[var10001] + this.h);
-         }
-
-      }
-   }
-
-   private byte a(int var1, int var2, int var3) {
-      if (var3 == 0 && (this.b[var2][var1] > 0 && this.b[var2][var1] <= 122 || this.b[var2][var1] == -128) && this.b[this.a[53] + (var2 - this.a[101 + this.v] >= -12 && var2 - this.a[101 + this.v] <= 12 ? var2 - this.a[101 + this.v] + 12 : 0) * 25 + (var1 - this.a[0 + this.v] >= -12 && var1 - this.a[0 + this.v] <= 12 ? var1 - this.a[0 + this.v] + 12 : 0)] > 29) {
-         if (this.b[var2][var1] == -128) {
+    private byte byte_a(int n, int n2, int n3) {
+        if (n3 == 0 && (this.var_byte_arr_arr_b[n2][n] > 0 && this.var_byte_arr_arr_b[n2][n] <= 122 || this.var_byte_arr_arr_b[n2][n] == -128) && this.var_byte_arr_b[this.var_short_arr_a[53] + (n2 - this.var_byte_arr_a[101 + this.var_int_v] >= -12 && n2 - this.var_byte_arr_a[101 + this.var_int_v] <= 12 ? n2 - this.var_byte_arr_a[101 + this.var_int_v] + 12 : 0) * 25 + (n - this.var_byte_arr_a[0 + this.var_int_v] >= -12 && n - this.var_byte_arr_a[0 + this.var_int_v] <= 12 ? n - this.var_byte_arr_a[0 + this.var_int_v] + 12 : 0)] > 29) {
+            if (this.var_byte_arr_arr_b[n2][n] == -128) {
+                return 0;
+            }
+            if ((this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_arr_b[n2][n] <= 100 ? 29 : 108] + (this.var_byte_arr_arr_b[n2][n] <= 100 ? this.var_byte_arr_arr_b[n2][n] : this.var_byte_arr_arr_b[n2][n] - 101)] & 0xFF) <= 7) {
+                return 0;
+            }
+        }
+        if (this.var_int_u == 0 && n3 == 0 && (this.var_f_a.var_int_arr_arr_arr_a[0][n >> 5][n2] >> (n & 0x1F) & 1) == 0) {
             return 0;
-         }
-
-         if ((this.a[this.b[this.b[var2][var1] <= 100 ? 29 : 108] + (this.b[var2][var1] <= 100 ? this.b[var2][var1] : this.b[var2][var1] - 101)] & 255) <= 7) {
+        }
+        if (n3 == 0 && this.var_byte_arr_arr_b[n2][n] <= -111 - (this.var_int_u ^ 1) * 3 * 2 && this.var_byte_arr_arr_b[n2][n] > -111 - (this.var_int_u ^ 1) * 3 * 2 - 3 && this.var_byte_arr_a[1414 + this.var_int_v] >= 12) {
             return 0;
-         }
-      }
+        }
+        if (this.var_byte_arr_arr_b[n2][n] == this.var_int_v + n3) {
+            return 0;
+        }
+        if (n3 == 0 && this.var_byte_arr_a[4848 + this.var_int_v] > 0 && this.var_byte_arr_arr_b[n2][n] > this.var_int_u * 50 && this.var_byte_arr_arr_b[n2][n] <= (this.var_int_u + 1) * 50 && (this.var_byte_arr_b[this.var_short_arr_a[43] + this.var_byte_arr_a[2828 + this.var_int_v]] > this.var_byte_arr_b[this.var_short_arr_a[43] + this.var_byte_arr_a[2828 + this.var_byte_arr_arr_b[n2][n]]] || this.var_byte_arr_b[this.var_short_arr_a[43] + this.var_byte_arr_a[2828 + this.var_byte_arr_arr_b[n2][n]]] == 0) && (this.var_byte_arr_a[2929 + this.var_byte_arr_arr_b[n2][n]] >= 8 && this.var_byte_arr_a[2929 + this.var_byte_arr_arr_b[n2][n]] < 21 || this.var_byte_arr_a[2929 + this.var_byte_arr_arr_b[n2][n]] == -101 || this.var_byte_arr_a[2929 + this.var_byte_arr_arr_b[n2][n]] == -100 || (this.var_byte_arr_a[2929 + this.var_byte_arr_arr_b[n2][n]] & 0xFF) > 7 && (this.var_byte_arr_a[2828 + this.var_byte_arr_arr_b[n2][n]] == 69 || this.var_byte_arr_a[2828 + this.var_byte_arr_arr_b[n2][n]] == 79 || this.var_byte_arr_a[2828 + this.var_byte_arr_arr_b[n2][n]] == 80 || this.var_byte_arr_a[2828 + this.var_byte_arr_arr_b[n2][n]] >= 83 && this.var_byte_arr_a[2828 + this.var_byte_arr_arr_b[n2][n]] <= 85))) {
+            return 0;
+        }
+        if (n3 == 0 && this.var_byte_arr_arr_b[n2][n] == -127 && this.var_byte_arr_a[2828 + this.var_int_v] == 13) {
+            return 0;
+        }
+        return 1;
+    }
 
-      if (this.u == 0 && var3 == 0 && (this.a.a[0][var1 >> 5][var2] >> (var1 & 31) & 1) == 0) {
-         return 0;
-      } else if (var3 == 0 && this.b[var2][var1] <= -111 - (this.u ^ 1) * 3 * 2 && this.b[var2][var1] > -111 - (this.u ^ 1) * 3 * 2 - 3 && this.a[1414 + this.v] >= 12) {
-         return 0;
-      } else if (this.b[var2][var1] == this.v + var3) {
-         return 0;
-      } else if (var3 != 0 || this.a[4848 + this.v] <= 0 || this.b[var2][var1] <= this.u * 50 || this.b[var2][var1] > (this.u + 1) * 50 || this.b[this.a[43] + this.a[2828 + this.v]] <= this.b[this.a[43] + this.a[2828 + this.b[var2][var1]]] && this.b[this.a[43] + this.a[2828 + this.b[var2][var1]]] != 0 || (this.a[2929 + this.b[var2][var1]] < 8 || this.a[2929 + this.b[var2][var1]] >= 21) && this.a[2929 + this.b[var2][var1]] != -101 && this.a[2929 + this.b[var2][var1]] != -100 && ((this.a[2929 + this.b[var2][var1]] & 255) <= 7 || this.a[2828 + this.b[var2][var1]] != 69 && this.a[2828 + this.b[var2][var1]] != 79 && this.a[2828 + this.b[var2][var1]] != 80 && (this.a[2828 + this.b[var2][var1]] < 83 || this.a[2828 + this.b[var2][var1]] > 85))) {
-         return (byte)(var3 == 0 && this.b[var2][var1] == -127 && this.a[2828 + this.v] == 13 ? 0 : 1);
-      } else {
-         return 0;
-      }
-   }
-
-   private void g(int var1) {
-      try {
-         if (this.a[6161 + this.v] > 1) {
-            this.a[6161 + this.v] = (byte)(this.a[6161 + this.v] == 2 ? 1 : 0);
-            if (this.I == 1 || this.I == 2 || this.a.q == 2 && this.u == 1 && this.f == 1) {
-               this.a[7777 + this.v] = 3;
+    private void g(int n) {
+        try {
+            if (this.var_byte_arr_a[6161 + this.var_int_v] > 1) {
+                this.var_byte_arr_a[6161 + this.var_int_v] = (byte)(this.var_byte_arr_a[6161 + this.var_int_v] == 2 ? 1 : 0);
+                if (this.var_byte_I == 1 || this.var_byte_I == 2 || this.var_f_a.var_byte_q == 2 && this.var_int_u == 1 && this.var_byte_f == 1) {
+                    this.var_byte_arr_a[7777 + this.var_int_v] = 3;
+                }
             }
-         }
-
-         if (var1 < 3) {
-            this.d(this.v, var1);
-         }
-
-         if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) {
-            this.U();
-         } else {
-            this.a(this.a[3131 + this.v], this.a[3232 + this.v], var1 > 0);
-            if (this.l >= 0 && (this.l != 10 || var1 < 2)) {
-               this.a[3131 + this.v] = this.a[0 + this.v];
-               this.a[3232 + this.v] = this.a[101 + this.v];
-               this.Q();
-               if (this.a[6161 + this.v] == 1) {
-                  this.a(this.l, this.v, this.v);
-               }
-
-            } else {
-               this.h(var1);
+            if (n < 3) {
+                this.d(this.var_int_v, n);
             }
-         }
-      } catch (Exception var3) {
-      }
-   }
-
-   private void h(int var1) {
-      this.a[4444 + this.v] = this.k[2];
-      if (this.m == 2 || this.m == 7) {
-         this.a[7979 + this.v] = (byte)(this.a[2828 + this.v] != 60 && var1 != 0 && (this.a[2828 + this.v] != 2 && this.a[2828 + this.v] != 7 || (this.a[7979 + this.v] & 128) != 0) ? this.a[7979 + this.v] | 128 : this.a[7979 + this.v] & 127);
-      }
-
-      if ((var1 == 0 || !this.a.N && (this.m == 12 || this.m == 16) && (this.b[this.a[41] + this.a[6464 + this.v]] == 3 || this.b[this.a[41] + this.a[6464 + this.v]] == 7)) && (!this.a.N && this.K >= 50 || this.b[this.a[41] + this.m] != 0)) {
-         if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v && (this.b[this.a[39] + this.m] != 1 || this.a[8810 + this.k[2]] != this.v && this.b[this.a[41] + this.m] != 0)) {
-            this.a.c(this.v);
-         }
-
-         if (this.b[this.a[39] + this.m] != 1) {
-            this.a[6464 + this.v] = var1 == 0 && this.m >= 19 && this.m <= 26 ? 69 : this.b[this.a[29] + this.m];
-            this.a[6262 + this.v] = this.a[3131 + this.v];
-            this.a[6363 + this.v] = this.a[3232 + this.v];
-         }
-      }
-
-      if (this.a[1414 + this.v] >= 12 && (var1 < 2 || !this.a.N && (this.m == 12 || this.m == 16) && (this.b[this.a[41] + this.a[6464 + this.v]] == 3 || this.b[this.a[41] + this.a[6464 + this.v]] == 7))) {
-         this.a(this.v, this.m);
-      }
-
-      if (this.a[2828 + this.v] == 13) {
-         if (this.a[3131 + this.v] > 0 && (this.b[this.a[3232 + this.v]][this.a[3131 + this.v] - 1] == -127 || this.b[this.a[3232 + this.v]][this.a[3131 + this.v] - 1] == this.v)) {
-            --this.a[3131 + this.v];
-         }
-
-         if (this.a[3131 + this.v] < this.a.c - 1 && (this.b[this.a[3232 + this.v]][this.a[3131 + this.v] + 1] == -127 || this.b[this.a[3232 + this.v]][this.a[3131 + this.v] + 1] == this.v)) {
-            ++this.a[3131 + this.v];
-         }
-      }
-
-      if (this.b[this.a[39] + this.a[2828 + this.v]] == 1) {
-         this.b(this.k[1], this.k[2]);
-      }
-
-   }
-
-   private void a(int var1, int var2, boolean var3) {
-      if (var3) {
-         this.a[4747 + this.v] = this.b[var2][var1];
-      }
-
-      this.c(var1, var2, this.u, 0);
-      this.k = this.k[0];
-      this.l = this.a();
-      if (this.k[3] == 0) {
-         this.m = this.b[this.a[16] + this.b[this.a[17] + this.k] + this.k[this.k != 4 ? 1 : 2]];
-         if (this.k == 2) {
-            if (this.k[1] == 6 && this.a[3636 + this.v] > 0 && this.a[3535 + this.v] <= 13 && !var3) {
-               this.m = this.b[this.a[121] + this.a[3535 + this.v]];
+            if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) {
+                this.U();
+                return;
             }
-
-            if (this.k[1] >= 12 && this.a[8505 + this.k[2]] >= this.b[this.a[138] + 182 + this.a[9237 + this.k[2]]]) {
-               this.m = 69;
+            this.a((int)this.var_byte_arr_a[3131 + this.var_int_v], (int)this.var_byte_arr_a[3232 + this.var_int_v], n > 0);
+            if (this.var_byte_l >= 0 && (this.var_byte_l != 10 || n < 2)) {
+                this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+                this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+                this.Q();
+                if (this.var_byte_arr_a[6161 + this.var_int_v] == 1) {
+                    this.a(this.var_byte_l, this.var_int_v, this.var_int_v);
+                }
+                return;
             }
-         }
-      } else if (this.a[1414 + this.k[2]] < 12 && this.k[0] != 2) {
-         this.m = 107;
-      } else {
-         this.m = (byte)(this.b[this.a[19] + this.k - 1] + (var3 ? 1 : 0));
-      }
-
-      if (this.m <= 9) {
-         this.m += this.b[this.a[18] + this.a[6565 + this.v]];
-      }
-
-      if (this.a.q == 3 && this.b[this.a[41] + this.m] != 0) {
-         this.m = 69;
-      }
-
-   }
-
-   private void a(int var1, byte var2) {
-      if (this.a[2828 + var1] != var2) {
-         this.a[404 + var1] = 0;
-         this.a[2828 + var1] = var2;
-         byte[] var10000 = this.a;
-         var10000[1111 + var1] = (byte)(var10000[1111 + var1] & 15);
-         this.B = this.b[this.a[38] + var2];
-         if (this.B < 0) {
-            this.B = this.a[this.b[-this.B] + var1];
-         }
-
-         if (var2 < 83 || var2 > 85) {
-            this.C();
-         }
-      }
-
-      this.a[3838 + var1] = this.b[this.a[32] + var2] == 0 ? (byte)var1 : this.a[this.b[this.b[this.a[32] + var2]] + var1];
-   }
-
-   private void b(int var1, int var2) {
-      this.o = this.a = 0;
-
-      for(this.p = 10000; this.a < this.b[this.a[20] + var1]; ++this.a) {
-         this.q = this.a[8383 + var2] + this.b[this.a[22] + var1 * 3 + this.a];
-         this.r = this.a[8444 + var2] + this.b[this.a[23] + var1 * 3 + this.a];
-         if (this.q < this.a.c && this.r < this.a.d && this.q >= 0 && this.r >= 0 && (this.b[this.r][this.q] == 0 || this.a((int)this.q, (int)this.r, (int)0) == 0)) {
-            this.q = (this.a[0 + this.v] - this.q) * (this.a[0 + this.v] - this.q) + (this.a[101 + this.v] - this.r) * (this.a[101 + this.v] - this.r);
-            if (this.p > this.q) {
-               this.p = this.q;
-               this.o = this.a;
-            }
-         }
-      }
-
-      this.a[3131 + this.v] = (byte)(this.a[8383 + var2] + this.b[this.a[22] + var1 * 3 + this.o]);
-      this.a[3232 + this.v] = (byte)(this.a[8444 + var2] + this.b[this.a[23] + var1 * 3 + this.o]);
-      this.a[4040 + this.v] = this.b[this.a[21] + var1 * 3 + this.o];
-   }
-
-   private void q() {
-      this.p = this.a[4444 + this.v];
-      if (this.a[this.b[this.b[this.a[26] + this.a[2828 + this.v]]] + this.p] <= 0) {
-         this.r();
-      }
-
-      if ((this.b[this.a[27] + this.a[2828 + this.v]] & 2) > 0) {
-         this.n = (byte)(this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0) / 10);
-         if (this.a[2828 + this.v] == 92 || this.a[2828 + this.v] == 106) {
-            if (this.n > this.a[1818 + this.v]) {
-               this.b(false);
-               this.a(this.v, this.b[this.a[57] + this.b[this.a[174] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]]);
-               this.i(0);
-               this.a[3030 + this.v] = -1;
-               return;
-            }
-
-            this.a[3131 + this.v] = this.a[this.b[this.b[this.a[28] + this.a[2828 + this.v]]] + this.p];
-            this.a[3232 + this.v] = this.a[this.b[this.b[this.a[28] + this.a[2828 + this.v]] + 1] + this.p];
+            this.h(n);
             return;
-         }
-
-         if (this.n <= this.a[4949 + this.v] + 2) {
-            if (this.a[3131 + this.v] != this.a[this.b[this.b[this.a[28] + this.a[2828 + this.v]]] + this.p] || this.a[3232 + this.v] != this.a[this.b[this.b[this.a[28] + this.a[2828 + this.v]] + 1] + this.p]) {
-               this.a[3131 + this.v] = this.a[this.b[this.b[this.a[28] + this.a[2828 + this.v]]] + this.p];
-               this.a[3232 + this.v] = this.a[this.b[this.b[this.a[28] + this.a[2828 + this.v]] + 1] + this.p];
-               if (this.n > this.B) {
-                  this.p();
-                  if (this.a[2828 + this.v] >= 94 && this.a[2828 + this.v] <= 97 && (this.a[7979 + this.v] & 16) > 0) {
-                     this.a.a((int)this.v, (byte)0);
-                     byte[] var10000 = this.a;
-                     int var10001 = 7979 + this.v;
-                     var10000[var10001] = (byte)(var10000[var10001] & 239);
-                  }
-               }
-            }
-
+        }
+        catch (Exception exception) {
             return;
-         }
+        }
+    }
 
-         if (this.a[808 + this.v] == 0) {
-            if (this.a[2828 + this.v] <= 9 && this.a[6161 + this.v] == 0) {
-               this.Q();
-               this.a[3131 + this.v] = this.a[0 + this.v];
-               this.a[3232 + this.v] = this.a[101 + this.v];
-               return;
+    private void h(int n) {
+        this.var_byte_arr_a[4444 + this.var_int_v] = this.var_byte_arr_k[2];
+        if (this.var_byte_m == 2 || this.var_byte_m == 7) {
+            this.var_byte_arr_a[7979 + this.var_int_v] = (byte)(this.var_byte_arr_a[2828 + this.var_int_v] == 60 || n == 0 || (this.var_byte_arr_a[2828 + this.var_int_v] == 2 || this.var_byte_arr_a[2828 + this.var_int_v] == 7) && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x80) == 0 ? this.var_byte_arr_a[7979 + this.var_int_v] & 0x7F : this.var_byte_arr_a[7979 + this.var_int_v] | 0x80);
+        }
+        if (!(n != 0 && (this.var_f_a.var_boolean_N || this.var_byte_m != 12 && this.var_byte_m != 16 || this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]] != 3 && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]] != 7) || (this.var_f_a.var_boolean_N || this.var_byte_K < 50) && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_m] == 0)) {
+            if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v && (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_m] != 1 || this.var_byte_arr_a[8810 + this.var_byte_arr_k[2]] != this.var_int_v && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_m] != 0)) {
+                this.var_f_a.void_c(this.var_int_v);
             }
-
-            this.a[3131 + this.v] = this.a[this.b[this.b[this.a[28] + this.a[2828 + this.v]]] + this.p];
-            this.a[3232 + this.v] = this.a[this.b[this.b[this.a[28] + this.a[2828 + this.v]] + 1] + this.p];
-         }
-      }
-
-   }
-
-   private void r() {
-      if (this.a[2828 + this.v] == 2 || this.a[2828 + this.v] == 7) {
-         if ((this.a[7979 + this.v] & 128) == 0) {
-            this.g(1);
-         } else {
-            this.Q();
-         }
-      }
-
-      if (this.a[2828 + this.v] == 93 || this.a[2828 + this.v] == 92 || this.a[2828 + this.v] == 106) {
-         this.b(false);
-         this.a(this.v, this.b[this.a[57] + this.b[this.a[174] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]]);
-         this.i(0);
-         this.a[3030 + this.v] = -1;
-      }
-
-      if ((this.b[this.a[27] + this.a[2828 + this.v]] & 1) > 0) {
-         if (this.a[1414 + this.v] < 12) {
-            this.Q();
-         } else {
-            if (this.a[6565 + this.v] == 9 && (this.a[2828 + this.v] == 0 || this.a[2828 + this.v] == 3)) {
-               byte[] var10000 = this.a;
-               int var10001 = 2828 + this.v;
-               var10000[var10001] = (byte)(var10000[var10001] ^ 1);
+            if (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_m] != 1) {
+                this.var_byte_arr_a[6464 + this.var_int_v] = n == 0 && this.var_byte_m >= 19 && this.var_byte_m <= 26 ? 69 : this.var_byte_arr_b[this.var_short_arr_a[29] + this.var_byte_m];
+                this.var_byte_arr_a[6262 + this.var_int_v] = this.var_byte_arr_a[3131 + this.var_int_v];
+                this.var_byte_arr_a[6363 + this.var_int_v] = this.var_byte_arr_a[3232 + this.var_int_v];
             }
-
-            this.a = this.b = true;
-            if (this.a[2828 + this.v] > 9 || !this.p()) {
-               this.Q();
-               if ((this.a[2929 + this.v] & 255) > 7) {
-                  this.a[3131 + this.v] = this.a[0 + this.v];
-                  this.a[3232 + this.v] = this.a[101 + this.v];
-               }
+        }
+        if (!(this.var_byte_arr_a[1414 + this.var_int_v] < 12 || n >= 2 && (this.var_f_a.var_boolean_N || this.var_byte_m != 12 && this.var_byte_m != 16 || this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]] != 3 && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]] != 7))) {
+            this.void_a(this.var_int_v, this.var_byte_m);
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 13) {
+            if (this.var_byte_arr_a[3131 + this.var_int_v] > 0 && (this.var_byte_arr_arr_b[this.var_byte_arr_a[3232 + this.var_int_v]][this.var_byte_arr_a[3131 + this.var_int_v] - 1] == -127 || this.var_byte_arr_arr_b[this.var_byte_arr_a[3232 + this.var_int_v]][this.var_byte_arr_a[3131 + this.var_int_v] - 1] == this.var_int_v)) {
+                int n2 = 3131 + this.var_int_v;
+                this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] - 1);
             }
-         }
-      }
-
-      if (this.a[2828 + this.v] >= 94 && this.a[2828 + this.v] <= 96) {
-         this.ap();
-      }
-
-   }
-
-   private void b(boolean var1) {
-      for(this.s = this.u * 30 + 1; this.s <= (this.u + 1) * 30; ++this.s) {
-         if ((this.a[8749 + this.s] == 11 || var1) && this.a[8932 + this.s] >= 1) {
-            for(this.t = this.a[8993 + this.s]; this.t > 0; this.t = this.a[4545 + this.t]) {
-               if (this.t == this.v) {
-                  this.a[4444 + this.v] = (byte)this.s;
-                  this.a[4747 + this.v] = (byte)(-this.s);
-                  this.a[3131 + this.v] = this.a[0 + this.v];
-                  this.a[3232 + this.v] = this.a[101 + this.v];
-                  return;
-               }
+            if (this.var_byte_arr_a[3131 + this.var_int_v] < this.var_f_a.var_short_c - 1 && (this.var_byte_arr_arr_b[this.var_byte_arr_a[3232 + this.var_int_v]][this.var_byte_arr_a[3131 + this.var_int_v] + 1] == -127 || this.var_byte_arr_arr_b[this.var_byte_arr_a[3232 + this.var_int_v]][this.var_byte_arr_a[3131 + this.var_int_v] + 1] == this.var_int_v)) {
+                int n3 = 3131 + this.var_int_v;
+                this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] + 1);
             }
-         }
-      }
+        }
+        if (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_arr_a[2828 + this.var_int_v]] == 1) {
+            this.void_b(this.var_byte_arr_k[1], this.var_byte_arr_k[2]);
+        }
+    }
 
-   }
-
-   private int a(int var1, int var2, int var3) {
-      if (var3 == 0 && this.a[4444 + this.v] < -1) {
-         return 0;
-      } else {
-         byte var4;
-         if ((var4 = this.a[this.b[var3 == 0 ? 44 : 110] + this.v]) >= 1 && this.b[this.a[28] + this.a[2828 + this.v]] != 43 && var3 == 0) {
-            this.q = this.a[this.b[this.b[this.a[28] + this.a[2828 + this.v]]] + var4];
-            this.r = this.a[this.b[this.b[this.a[28] + this.a[2828 + this.v]] + 1] + var4];
-            if (this.b[this.a[28] + this.a[2828 + this.v]] == 83) {
-               this.q = (byte)b((int)var1, (int)this.q, (int)(this.q + this.b[this.a[138] + 104 + this.a[8749 + var4]] - 1));
-               this.r = (byte)b((int)var2, (int)this.r, (int)(this.r + this.b[this.a[138] + 130 + this.a[8749 + var4]] - 1));
-               if (this.a[2828 + this.v] <= 9) {
-                  this.a[3131 + this.v] = this.q;
-                  this.a[3232 + this.v] = this.r;
-               }
+    private void a(int n, int n2, boolean bl) {
+        if (bl) {
+            this.var_byte_arr_a[4747 + this.var_int_v] = this.var_byte_arr_arr_b[n2][n];
+        }
+        this.c(n, n2, this.var_int_u, 0);
+        this.var_byte_k = this.var_byte_arr_k[0];
+        this.var_byte_l = this.byte_a();
+        if (this.var_byte_arr_k[3] == 0) {
+            this.var_byte_m = this.var_byte_arr_b[this.var_short_arr_a[16] + this.var_byte_arr_b[this.var_short_arr_a[17] + this.var_byte_k] + this.var_byte_arr_k[this.var_byte_k != 4 ? 1 : 2]];
+            if (this.var_byte_k == 2) {
+                if (this.var_byte_arr_k[1] == 6 && this.var_byte_arr_a[3636 + this.var_int_v] > 0 && this.var_byte_arr_a[3535 + this.var_int_v] <= 13 && !bl) {
+                    this.var_byte_m = this.var_byte_arr_b[this.var_short_arr_a[121] + this.var_byte_arr_a[3535 + this.var_int_v]];
+                }
+                if (this.var_byte_arr_k[1] >= 12 && this.var_byte_arr_a[8505 + this.var_byte_arr_k[2]] >= this.var_byte_arr_b[this.var_short_arr_a[138] + 182 + this.var_byte_arr_a[9237 + this.var_byte_arr_k[2]]]) {
+                    this.var_byte_m = (byte)69;
+                }
             }
-         } else {
-            this.q = this.a[this.b[var3 == 0 ? 31 : 112] + this.v];
-            this.r = this.a[this.b[var3 == 0 ? 32 : 113] + this.v];
-         }
+        } else {
+            this.var_byte_m = this.var_byte_arr_a[1414 + this.var_byte_arr_k[2]] >= 12 || this.var_byte_arr_k[0] == 2 ? (byte)(this.var_byte_arr_b[this.var_short_arr_a[19] + this.var_byte_k - 1] + (bl ? (byte)1 : 0)) : (byte)107;
+        }
+        if (this.var_byte_m <= 9) {
+            this.var_byte_m = (byte)(this.var_byte_m + this.var_byte_arr_b[this.var_short_arr_a[18] + this.var_byte_arr_a[6565 + this.var_int_v]]);
+        }
+        if (this.var_f_a.var_byte_q == 3 && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_m] != 0) {
+            this.var_byte_m = (byte)69;
+        }
+    }
 
-         byte var5 = (byte)(this.q - var1);
-         byte var6 = (byte)(this.r - var2);
-         return var5 >= -12 && var6 >= -12 && var5 <= 12 && var6 <= 12 ? this.b[this.a[53] + (12 + var6) * 25 + 12 + var5] : 200;
-      }
-   }
-
-   private static int b(int var0, int var1, int var2) {
-      if (var0 < var1) {
-         return var1;
-      } else {
-         return var0 < var2 ? var0 : var2;
-      }
-   }
-
-   final void b() {
-      for(this.v = 1; this.v <= 50; ++this.v) {
-         if ((this.a.N || this.b[this.a[100] + this.b[this.a[41] + this.a[2828 + this.v]]] + this.b[this.a[100] + this.b[this.a[41] + this.a[6464 + this.v]]] > 1 && this.a[6565 + this.v] != 9 && (this.a[1717 + this.v] > 4 || this.a[1616 + this.v] > 4 || this.a[7575 + this.v] > 4)) && (!this.a.L || (this.a[7979 + this.v] & 64) == 0)) {
-            this.a[7979 + this.v] = (byte)(this.a[7979 + this.v] | 96);
-         }
-      }
-
-   }
-
-   final void c() {
-      for(this.v = 1; this.v <= 50; ++this.v) {
-         this.a[7979 + this.v] = (byte)(this.a[7979 + this.v] & 159);
-         if (this.a[1919 + this.v] > 0 && this.a[2828 + this.v] == 69 && this.a[6161 + this.v] == 0) {
-            this.a(this.v, false);
-         }
-      }
-
-   }
-
-   final void d() {
-      for(int var1 = 0; var1 < 3; ++var1) {
-         for(int var2 = 0; var2 < 96; ++var2) {
-            this.a.a[1][var1][var2] = 0;
-         }
-      }
-
-      for(int var4 = 1; var4 <= 50; ++var4) {
-         if (this.a[1919 + var4] != 0) {
-            this.a((int)this.a[0 + var4], (int)this.a[101 + var4], (int)this.a[4949 + var4]);
-         }
-      }
-
-      for(int var5 = 51; var5 <= 100; ++var5) {
-         if (this.a[1919 + var5] != 0 && this.a[2929 + var5] >= 23 && this.a[2929 + var5] <= 36 && this.a[2828 + var5] <= 9 && this.a[2828 + var5] != 2 && this.a[2828 + var5] != 7) {
-            this.a((int)this.a[0 + var5], (int)this.a[101 + var5], (int)0);
-         }
-      }
-
-      for(int var6 = 1; var6 <= 30; ++var6) {
-         if (this.a[8505 + var6] != 0) {
-            if (this.a[8749 + var6] >= 12) {
-               this.a((int)this.a[8383 + var6], (int)this.a[8444 + var6], (int)this.b[this.a[138] + 104 + this.a[8749 + var6]], (int)this.b[this.a[138] + 130 + this.a[8749 + var6]]);
-            } else {
-               this.a(this.a[8383 + var6] + this.b[this.a[138] + 104 + this.a[8749 + var6]] / 2, this.a[8444 + var6] + this.b[this.a[138] + 130 + this.a[8749 + var6]] / 2, this.a[8688 + var6] & 15);
+    private void void_a(int n, byte by) {
+        if (this.var_byte_arr_a[2828 + n] != by) {
+            this.var_byte_arr_a[404 + n] = 0;
+            this.var_byte_arr_a[2828 + n] = by;
+            int n2 = 1111 + n;
+            this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] & 0xF);
+            this.var_int_B = this.var_byte_arr_b[this.var_short_arr_a[38] + by];
+            if (this.var_int_B < 0) {
+                this.var_int_B = this.var_byte_arr_a[this.var_short_arr_b[-this.var_int_B] + n];
             }
-         }
-      }
-
-      for(int var3 = 0; var3 < 3; ++var3) {
-         for(int var7 = 0; var7 < 96; ++var7) {
-            int[] var10000 = this.a.a[0][var3];
-            var10000[var7] |= this.a.a[1][var3][var7];
-         }
-      }
-
-   }
-
-   final void e() {
-      try {
-         this.s();
-
-         for(this.u = 0; this.u < 2; ++this.u) {
-            if (this.u == 1) {
-               this.aq();
+            if (by < 83 || by > 85) {
+                this.C();
             }
+        }
+        this.var_byte_arr_a[3838 + n] = this.var_byte_arr_b[this.var_short_arr_a[32] + by] == 0 ? (byte)n : this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[32] + by]] + n];
+    }
 
-            this.a((int)0);
-            if (this.a[this.u][18] >= 0) {
-               ++this.a[this.u][18];
+    private void void_b(int n, int n2) {
+        this.var_int_a = 0;
+        this.var_int_o = 0;
+        this.var_int_p = 10000;
+        while (this.var_int_a < this.var_byte_arr_b[this.var_short_arr_a[20] + n]) {
+            this.var_int_q = this.var_byte_arr_a[8383 + n2] + this.var_byte_arr_b[this.var_short_arr_a[22] + n * 3 + this.var_int_a];
+            this.var_int_r = this.var_byte_arr_a[8444 + n2] + this.var_byte_arr_b[this.var_short_arr_a[23] + n * 3 + this.var_int_a];
+            if (this.var_int_q < this.var_f_a.var_short_c && this.var_int_r < this.var_f_a.var_short_d && this.var_int_q >= 0 && this.var_int_r >= 0 && (this.var_byte_arr_arr_b[this.var_int_r][this.var_int_q] == 0 || this.byte_a(this.var_int_q, this.var_int_r, 0) == 0)) {
+                this.var_int_q = (this.var_byte_arr_a[0 + this.var_int_v] - this.var_int_q) * (this.var_byte_arr_a[0 + this.var_int_v] - this.var_int_q) + (this.var_byte_arr_a[101 + this.var_int_v] - this.var_int_r) * (this.var_byte_arr_a[101 + this.var_int_v] - this.var_int_r);
+                if (this.var_int_p > this.var_int_q) {
+                    this.var_int_p = this.var_int_q;
+                    this.var_int_o = this.var_int_a;
+                }
             }
+            ++this.var_int_a;
+        }
+        this.var_byte_arr_a[3131 + this.var_int_v] = (byte)(this.var_byte_arr_a[8383 + n2] + this.var_byte_arr_b[this.var_short_arr_a[22] + n * 3 + this.var_int_o]);
+        this.var_byte_arr_a[3232 + this.var_int_v] = (byte)(this.var_byte_arr_a[8444 + n2] + this.var_byte_arr_b[this.var_short_arr_a[23] + n * 3 + this.var_int_o]);
+        this.var_byte_arr_a[4040 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[21] + n * 3 + this.var_int_o];
+    }
 
-            if (this.a[this.u][18] >= (this.u == 0 ? 750 : this.b[this.a[273 + this.a.b] + this.a.q] * 50)) {
-               this.a[this.u][18] = -1;
+    private void void_q() {
+        this.var_byte_p = this.var_byte_arr_a[4444 + this.var_int_v];
+        if (this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[26] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_p] <= 0) {
+            this.void_r();
+        }
+        if ((this.var_byte_arr_b[this.var_short_arr_a[27] + this.var_byte_arr_a[2828 + this.var_int_v]] & 2) > 0) {
+            this.var_byte_n = (byte)(this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0) / 10);
+            if (this.var_byte_arr_a[2828 + this.var_int_v] == 92 || this.var_byte_arr_a[2828 + this.var_int_v] == 106) {
+                if (this.var_byte_n > this.var_byte_arr_a[1818 + this.var_int_v]) {
+                    this.void_b(false);
+                    this.void_a(this.var_int_v, this.var_byte_arr_b[this.var_short_arr_a[57] + this.var_byte_arr_b[this.var_short_arr_a[174] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]]);
+                    this.i(0);
+                    this.var_byte_arr_a[3030 + this.var_int_v] = -1;
+                    return;
+                }
+                this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_p];
+                this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]] + 1] + this.var_byte_p];
+                return;
             }
-
-            for(this.v = this.u * 50 + 1; this.v <= (this.u + 1) * 50; ++this.v) {
-               if (this.a[1919 + this.v] != 0 && !this.a()) {
-                  if (this.a[4545 + this.v] > -111 || this.a[4545 + this.v] < -122) {
-                     this.t();
-                     if (this.a[7575 + this.v] > 3 && this.h()) {
-                        continue;
-                     }
-
-                     if (this.a.c % 15 == (this.v & 7) && this.u == 0 && this.a[1414 + this.v] >= 12) {
-                        this.B();
-                     }
-
-                     if (this.b()) {
-                        continue;
-                     }
-                  }
-
-                  this.v();
-                  this.b = true;
-                  if (this.a[5050 + this.v] == 0 && this.a[1414 + this.v] >= 12 && this.a[2828 + this.v] != 50 && this.a[2828 + this.v] != 105) {
-                     this.a = (this.a[6161 + this.v] == 0 || (this.I & this.u + 1) != 0 || this.a[6161 + this.v] == 1 && this.a[808 + this.v] <= this.a[707 + this.v] && this.z / 10 > this.B && (this.a[2929 + this.v] & 255) > 7) && (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v || this.b[this.a[41] + this.a[2828 + this.v]] == 16 && this.b[this.a[18] + this.a[6565 + this.v]] > 0) && (this.a[7979 + this.v] & 2) == 0 && (this.a[2828 + this.v] > 9 || (this.b[this.a[27] + this.a[2828 + this.v]] & 4) == 0);
-                     this.b = false;
-                     this.p();
-                  }
-
-                  this.u();
-                  if (this.a[5959 + this.v] > 0) {
-                     this.R();
-                  }
-               }
-            }
-
-            this.Z();
-         }
-
-         this.T();
-         if (this.K < 50) {
-            ++this.K;
-         }
-
-         for(this.v = 1; this.v <= 4; ++this.v) {
-            if (this.a[0][this.v] > 999) {
-               this.a[0][this.v] = 999;
-            }
-         }
-
-      } catch (Exception var2) {
-      }
-   }
-
-   private void s() {
-      this.a.a.b();
-      if ((this.a.c & 3) == 0) {
-         this.d();
-      }
-
-      if (this.a.L && (this.a.c & 63) == 2) {
-         this.b();
-      }
-
-      if (this.a.c == this.b[this.a[277] + this.a.q] * (1000 / (1 + this.a.b * 3))) {
-         this.a[1][8] = 5000;
-      }
-
-      if (this.a.c == this.b[this.a[278] + this.a.q] * (1000 / (1 + this.a.b * 3))) {
-         this.a[1][9] = 5000;
-         this.a[1][10] = 5000;
-      }
-
-      if (this.f == 2) {
-         this.F = 0;
-      }
-
-   }
-
-   private boolean a() {
-      if (this.a[1919 + this.v] < 0) {
-         ++this.a[3030 + this.v];
-         if (this.a[3030 + this.v] >= this.a.j[4][this.a[2929 + this.v] & 255]) {
-            this.m(this.v);
-         }
-
-         if (this.a[5959 + this.v] > 0) {
-            this.R();
-         }
-
-         return true;
-      } else {
-         if (this.f == 2 && this.u == 0 && (this.a[1717 + this.v] > 4 || this.a[1616 + this.v] > 4)) {
-            ++this.F;
-         }
-
-         this.B = this.b[this.a[38] + this.a[2828 + this.v]];
-         if (this.B < 0) {
-            this.B = this.a[this.b[-this.B] + this.v];
-         }
-
-         if ((this.a[8282 + this.v] & 128) != 0 && this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-            this.a((int)19, (int)this.a[0 + this.v], (int)this.a[101 + this.v], (byte)((byte)this.v));
-            return true;
-         } else {
-            if ((this.a.c & (this.a[1414 + this.v] < 12 ? 1 : (this.u == 0 ? 3 : 15))) == 0) {
-               ++this.a[6666 + this.v];
-            }
-
-            if ((this.a.c & 3) == (this.v & 3) && !this.q()) {
-               return true;
-            } else {
-               if ((this.a.c & 31) == (this.v & 15)) {
-                  this.W();
-               }
-
-               if (this.a[3434 + this.v] < 1 && this.a[1414 + this.v] >= 12 && (this.a.c & 31) == 0) {
-                  this.V();
-               }
-
-               if ((this.a[7979 + this.v] & 4) != 0 && (this.a.c & 7) == (this.v & 7) && this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-                  this.Y();
-               }
-
-               if ((this.a.c & 1) == 1 && (this.a[7979 + this.v] & 4) == 0) {
-                  this.X();
-               }
-
-               if (this.a[2828 + this.v] <= 9 && this.a[2828 + this.v] != 2 && this.a[2828 + this.v] != 7) {
-                  this.K = 0;
-               }
-
-               ++this.a[5050 + this.v];
-               if (this.a[202 + this.v] == 0 && this.a[303 + this.v] == 0) {
-                  byte[] var2 = this.a;
-                  int var5 = 1111 + this.v;
-                  var2[var5] = (byte)(var2[var5] & 240);
-               }
-
-               if (this.a[3333 + this.v] >= 11 && this.a[2929 + this.v] != 39 && this.a[2929 + this.v] != 104 && this.a[2929 + this.v] != 105) {
-                  this.a[3333 + this.v] = -1;
-               }
-
-               return false;
-            }
-         }
-      }
-   }
-
-   private void t() {
-      if (this.a[6161 + this.v] >= 2 && this.a[202 + this.v] == 0 && this.a[303 + this.v] == 0) {
-         if (this.c = this.a[6161 + this.v] == 2) {
-            this.a(this.a[3131 + this.v], this.a[3232 + this.v], true);
-            if (this.l >= 0) {
-               this.c = false;
-            }
-
-            if (this.b[this.a[41] + this.a[6464 + this.v]] == this.b[this.a[41] + this.m] || this.b[this.a[41] + this.m] == 0 && (this.a.N || this.K < 50)) {
-               this.c = false;
-            }
-         }
-
-         if (this.u != 1 && this.a[505 + this.v] < 10 && this.a[6161 + this.v] == 2 && this.b[this.a[41] + this.m] != 0) {
-            this.a[6161 + this.v] = 0;
-            this.a[3131 + this.v] = this.a[0 + this.v];
-            this.a[3232 + this.v] = this.a[101 + this.v];
-            this.a[4444 + this.v] = this.a[4747 + this.v] = 0;
-            this.Q();
-            this.a((byte)12, (int)this.v, (int)0);
-         } else if (!this.a((byte)-1, this.c)) {
-            if (this.a[6161 + this.v] == 4) {
-               this.a[4444 + this.v] = (byte)(this.a[4747 + this.v] - (this.a[4747 + this.v] <= 100 ? 0 : 101));
-               this.a[4747 + this.v] = (byte)(this.a[4747 + this.v] <= 100 ? 0 : 99);
-               this.a[3131 + this.v] = this.a[this.b[this.a[4747 + this.v]] + this.a[4444 + this.v]];
-               this.a[3232 + this.v] = this.a[this.b[this.a[4747 + this.v] + 1] + this.a[4444 + this.v]];
-               if (this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0) / 10 <= this.a[4949 + this.v]) {
-                  this.g(1);
-                  this.a[6161 + this.v] = 0;
-               } else {
-                  this.a(this.v, (byte)87);
-               }
-            }
-
-            this.a[808 + this.v] = 0;
-            if (this.a[6161 + this.v] > 0) {
-               this.g(this.a[6161 + this.v] == 2 ? 0 : 2);
-               return;
-            }
-         }
-      }
-
-   }
-
-   private boolean b() {
-      if (((this.a.c & 31) == (this.v & 31) || this.a.c == 0) && this.u == 0 && this.a[1414 + this.v] >= 12) {
-         this.A();
-      }
-
-      if (this.a[202 + this.v] == 0 && this.a[303 + this.v] == 0 && this.a[6161 + this.v] < 2) {
-         if (this.a[2828 + this.v] == 109) {
-            this.o();
-         }
-
-         if (this.a[5050 + this.v] >= this.a[1010 + this.v] - this.a[7777 + this.v] && ((this.a[2929 + this.v] & 255) <= 7 || this.a[3030 + this.v] == 0)) {
-            if (this.a[1414 + this.v] >= 12 && this.m()) {
-               this.a[3636 + this.v] = 0;
-               return true;
-            }
-
-            if ((this.b[this.a[31] + this.a[2828 + this.v]] == 13 && this.b[this.a[33] + this.a[2828 + this.v]] == 13 || this.b[this.a[41] + this.a[2828 + this.v]] >= 13 && this.b[this.a[41] + this.a[2828 + this.v]] <= 15) && (this.b[this.a[39] + this.a[2828 + this.v]] != 1 || this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) && this.a[2929 + this.v] != -109 && this.a[3131 + this.v] == this.a[0 + this.v] && this.a[3232 + this.v] == this.a[101 + this.v] || this.a[4444 + this.v] == -1) {
-               if (this.a[4444 + this.v] == -1 && this.a[2828 + this.v] >= 10 && this.a[2828 + this.v] <= 16 && this.a[3636 + this.v] > 0) {
-                  this.an();
-               } else {
-                  this.n();
-               }
-            }
-
-            if ((this.u == 0 && !this.a.N && (!this.a.L || (this.a[7979 + this.v] & 64) == 0) || this.u == 1 && this.Q < 0) && this.a[1414 + this.v] >= 12 && (this.a[2828 + this.v] == 69 || this.a[2828 + this.v] == 84 && this.a[3939 + this.v] == 69) && this.a[7777 + this.v] == 0 && this.a[6161 + this.v] == 0 && (this.a[3131 + this.v] != this.a[6262 + this.v] || this.a[3232 + this.v] != this.a[6363 + this.v])) {
-               this.a(this.a[6262 + this.v], this.a[6363 + this.v], true);
-               this.Q();
-               if (this.b[this.a[41] + this.m] != this.b[this.a[41] + this.a[6464 + this.v]] && (this.m != 16 || this.a[6464 + this.v] != 12)) {
-                  if (this.a[6464 + this.v] != 12 && this.a[6464 + this.v] != 16) {
-                     this.a[4747 + this.v] = 0;
-                  } else {
-                     this.a(this.v, (byte)12);
-                     if (!this.b(false)) {
-                        this.a(this.v, (byte)60);
-                        this.a[6464 + this.v] = 12;
-                        this.a[3131 + this.v] = this.a[6262 + this.v];
-                        this.a[3232 + this.v] = this.a[6363 + this.v];
-                     }
-                  }
-               } else {
-                  this.a[3131 + this.v] = this.a[6262 + this.v];
-                  this.a[3232 + this.v] = this.a[6363 + this.v];
-                  if (this.a[505 + this.v] >= 30) {
-                     this.g(1);
-                  }
-               }
-            }
-
-            this.a[5050 + this.v] = 0;
-         }
-
-         if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v || this.a[2828 + this.v] == 93 || this.a[2828 + this.v] == 92 || this.a[2828 + this.v] == 106) {
-            if (this.a[4444 + this.v] >= 0) {
-               this.q();
-            } else if (this.a[4444 + this.v] >= -1) {
-               if ((this.a.c & 63) == (this.v & 63)) {
-                  this.an();
-               }
-            } else {
-               this.N();
-            }
-         }
-
-         this.z = this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0);
-         if (this.a[5050 + this.v] == 0 && this.a[808 + this.v] <= this.a[707 + this.v] && this.z / 10 > this.B && this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-            this.p();
-         }
-      }
-
-      return false;
-   }
-
-   private void u() {
-      if (this.a[202 + this.v] != 0 || this.a[303 + this.v] != 0 || this.a[1313 + this.v] == -1 || this.z / 10 > this.B && this.a[808 + this.v] > 0) {
-         this.a[2929 + this.v] = this.b(this.v);
-         this.E = 0;
-         if (this.c()) {
-            return;
-         }
-
-         if ((this.a[2929 + this.v] & 255) <= 7 && this.E < 2) {
-            this.D();
-            if (this.a[202 + this.v] == 0 && this.a[303 + this.v] == 0 && this.a[4545 + this.v] <= -111 && this.a[4545 + this.v] >= -122) {
-               this.a[2929 + this.v] = (byte)(-5 - (this.u ^ 1) * 3 * 2 - this.a[4545 + this.v]);
-               this.a[3030 + this.v] = 0;
-               this.a[808 + this.v] = 0;
-               this.a[1313 + this.v] = 1;
-               this.a.c(this.a[0 + this.v], this.a[101 + this.v], 1, 1);
-               if (this.u == 0) {
-                  --this.R;
-                  return;
-               }
-            }
-         }
-      } else if ((this.a[2929 + this.v] & 255) <= 7) {
-         this.a[3030 + this.v] = 0;
-         byte[] var10000 = this.a;
-         int var10001 = 1111 + this.v;
-         var10000[var10001] = (byte)(var10000[var10001] & 15);
-         this.P();
-         this.a[808 + this.v] = 0;
-      }
-
-   }
-
-   private boolean c() {
-      if (this.a[202 + this.v] == 0 && this.a[303 + this.v] == 0 && this.a[1313 + this.v] != -1) {
-         try {
-            this.a[606 + this.v] = this.b[this.a[4] + (this.a[0][this.v][this.a[707 + this.v]] - this.a[0 + this.v] + 1) * 3 + this.a[1][this.v][this.a[707 + this.v]] - this.a[101 + this.v] + 1];
-         } catch (Exception var2) {
-            this.N();
-            this.a[808 + this.v] = 0;
-            return true;
-         }
-
-         if (this.b[this.a[1][this.v][this.a[707 + this.v]]][this.a[0][this.v][this.a[707 + this.v]]] != 0 && this.a((int)this.a[0][this.v][this.a[707 + this.v]], (int)this.a[1][this.v][this.a[707 + this.v]], (int)0) != 0) {
-            if (!this.b && this.y > 1) {
-               if (this.a[2828 + this.v] == 0 || this.a[2828 + this.v] == 3) {
-                  ++this.a[2828 + this.v];
-               }
-
-               if (this.a[6161 + this.v] == 1) {
-                  this.a[6161 + this.v] = 0;
-               }
-            }
-
-            this.p();
-            return true;
-         }
-
-         if (this.b[this.a[1][this.v][this.a[707 + this.v]]][this.a[0][this.v][this.a[707 + this.v]]] > this.u * 50 && this.b[this.a[1][this.v][this.a[707 + this.v]]][this.a[0][this.v][this.a[707 + this.v]]] <= (this.u + 1) * 50) {
-            this.a(this.b[this.a[1][this.v][this.a[707 + this.v]]][this.a[0][this.v][this.a[707 + this.v]]]);
-         } else {
-            this.a[4848 + this.v] = 0;
-         }
-
-         if (this.E == 0) {
-            this.C = this.a[0 + this.v] + this.b[this.a[1] + 0 + this.a[606 + this.v]];
-            this.D = this.a[101 + this.v] + this.b[this.a[1] + 8 + this.a[606 + this.v]];
-            if (this.b[this.D][this.C] != 0) {
-               this.a[4545 + this.v] = (byte)(-this.b[this.D][this.C]);
-            }
-
-            this.b[this.D][this.C] = -128;
-         }
-
-         if ((this.a[2929 + this.v] & 255) <= 7 && this.E < 2) {
-            ++this.a[707 + this.v];
-         }
-      }
-
-      return false;
-   }
-
-   private void v() {
-      try {
-         this.d = false;
-         if (this.a[5959 + this.v] > 0 && this.a[3030 + this.v] == 0 && this.a[6565 + this.v] == 1 && (this.a[2828 + this.v] >= 5 && this.a[2828 + this.v] <= 9 || this.a[2828 + this.v] == 93 || this.a[2828 + this.v] == 92 || this.a[2828 + this.v] == 106) && (this.a[2929 + this.v] & 255) > 7 && this.a[5858 + this.v] + 2 < this.a[5959 + this.v]) {
-            this.a[2929 + this.v] = 34;
-         } else {
-            this.w();
-            if (this.a[3030 + this.v] >= this.a.j[4][this.a[2929 + this.v] & 255]) {
-               this.a[3030 + this.v] = 0;
-               if (this.a[4646 + this.v] < -1) {
-                  this.a[4646 + this.v] = -1;
-               }
-
-               if ((this.a[2929 + this.v] & 255) > 7) {
-                  if (this.d()) {
-                     return;
-                  }
-
-                  if (this.b[this.a[39] + this.a[2828 + this.v]] == 2 && this.a[1313 + this.v] == -3) {
-                     if (this.a[2828 + this.v] == 59 && this.a[4646 + this.v] == 0 && (this.b[this.a[138] + 156 + this.a[8749 + this.a[4444 + this.v]]] >= 0 || this.a[8627 + this.a[4444 + this.v]] != 0)) {
-                        this.a.a(this.a[4444 + this.v], false);
-                     }
-
-                     this.x();
-                     return;
-                  }
-
-                  if (this.e()) {
-                     return;
-                  }
-
-                  this.d = true;
-               }
-            }
-
-            this.y();
-         }
-      } catch (Exception var2) {
-      }
-   }
-
-   private void w() {
-      ++this.a[3030 + this.v];
-      if (this.b[this.a[171] + (this.a[2929 + this.v] & 255)] != -2) {
-         byte[] var1 = this.a;
-         int var3 = 1111 + this.v;
-         var1[var3] = (byte)(var1[var3] + 16);
-      }
-
-      if (this.a[2828 + this.v] <= 4 && this.a[this.b[this.b[this.a[26] + this.a[2828 + this.v]]] + this.a[4444 + this.v]] > 0 && this.a.j[5][this.a[2929 + this.v] & 255] == this.a[3030 + this.v]) {
-         this.c(this.a[0 + this.v] + this.b[this.a[1] + this.a[606 + this.v]], this.a[101 + this.v] + this.b[this.a[1] + 8 + this.a[606 + this.v]], this.a.j[6][this.a[2929 + this.v] & 255]);
-      }
-
-      if (this.a[3030 + this.v] == this.a.j[4][this.a[2929 + this.v] & 255] - 1 && this.a[2929 + this.v] >= 35 && this.a[2929 + this.v] <= 36) {
-         if (this.a[2828 + this.v] >= 5 && this.a[2828 + this.v] <= 9) {
-            this.a((byte)this.a[0 + this.v], (byte)this.a[101 + this.v], (int)0, (int)this.b[this.a[123] + this.a[2828 + this.v] - 5]);
-         } else if (this.a[2828 + this.v] == 93 || this.a[2828 + this.v] == 92 || this.a[2828 + this.v] == 106) {
-            this.a((byte)this.a[0 + this.v], (byte)this.a[101 + this.v], (int)24, (int)37);
-         }
-      }
-
-      if (this.a[2929 + this.v] == 22 && this.a[3030 + this.v] == 10 && this.a[2828 + this.v] <= 26) {
-         if (this.a[2828 + this.v] < 26) {
-            short[] var2 = this.a[this.u];
-            var2[23] = (short)(var2[23] + this.a[3636 + this.v]);
-         }
-
-         this.J();
-      }
-
-      if (this.a[2929 + this.v] == -108 && this.a[3030 + this.v] == 6) {
-         this.a[6464 + this.v] = 69;
-      }
-
-      if (this.a[2929 + this.v] == -109 && this.a[3030 + this.v] == 1) {
-         this.a[6464 + this.v] = this.b[this.a[29] + this.a[2828 + this.v]];
-      }
-
-   }
-
-   private boolean d() {
-      if (this.a[2929 + this.v] != -107 && this.a[2929 + this.v] != -106) {
-         if (this.a[2929 + this.v] == -95) {
-            this.a[3131 + this.v] = this.a[8384];
-            this.a[3232 + this.v] = this.a[8445];
-            this.g(3);
-            this.p();
-            return true;
-         } else {
-            if (this.z / 10 <= this.B && this.a[2828 + this.v] != 85 && this.a[2828 + this.v] != 80) {
-               if (this.a[6161 + this.v] == 1) {
-                  this.a[6161 + this.v] = 0;
-               }
-
-               this.a[7777 + this.v] = 0;
-            }
-
-            if (this.a[2929 + this.v] >= 106 && this.a[2929 + this.v] <= 108) {
-               byte[] var10000 = this.a;
-               int var10001 = 1919 + this.v;
-               var10000[var10001] -= this.b[this.a[106] + this.a[2929 + this.v] - 106];
-               var10000 = this.a.a.f;
-               var10001 = this.v;
-               var10000[var10001] -= this.b[this.a[106] + this.a[2929 + this.v] - 106];
-               this.P();
-               this.a[1313 + this.v] = 0;
-               this.a[4545 + this.v] = 0;
-               if (this.a[1919 + this.v] <= 0) {
-                  this.a((int)19, (int)this.a[0 + this.v], (int)this.a[101 + this.v], (byte)((byte)this.v));
-               }
-
-               return true;
-            } else {
-               return false;
-            }
-         }
-      } else {
-         this.i(this.z);
-         return true;
-      }
-   }
-
-   private void x() {
-      --this.a[8932 + this.a[4444 + this.v]];
-      if (this.a[8993 + this.a[4444 + this.v]] == this.v) {
-         this.a[8993 + this.a[4444 + this.v]] = this.a[4545 + this.v];
-      } else {
-         for(this.x = this.a[8993 + this.a[4444 + this.v]]; this.a[4545 + this.x] != this.v && this.x != 0; this.x = this.a[4545 + this.x]) {
-         }
-
-         this.a[4545 + this.x] = this.a[4545 + this.v];
-      }
-
-      if ((this.a[8871 + this.a[4444 + this.v]] & 2) != 0 && (this.a[7979 + this.v] & 4) != 0) {
-         byte[] var1 = this.a;
-         int var6 = 8871 + this.a[4444 + this.v];
-         var1[var6] = (byte)(var1[var6] & 253);
-
-         for(this.x = this.a[8993 + this.a[4444 + this.v]]; this.a[4545 + this.x] != 0; this.x = this.a[4545 + this.x]) {
-            if ((this.a[7979 + this.x] & 4) != 0 && (this.a[8627 + this.a[4444 + this.v]] != 0 || this.a[8749 + this.a[4444 + this.v]] != 8)) {
-               var1 = this.a;
-               var6 = 8871 + this.a[4444 + this.v];
-               var1[var6] = (byte)(var1[var6] | 2);
-               break;
-            }
-         }
-      }
-
-      this.a[4646 + this.v] = -1;
-      this.a[4545 + this.v] = 0;
-      this.b(this.a[4444 + this.v]);
-      this.a((int)1, (int)127, (int)(this.a[8383 + this.a[4444 + this.v]] + this.b[this.a[24] + this.a[8749 + this.a[4444 + this.v]]]), (int)(this.a[8444 + this.a[4444 + this.v]] + this.b[this.a[25] + this.a[8749 + this.a[4444 + this.v]]]));
-      this.a[0 + this.v] = this.a[3131 + this.v];
-      this.a[101 + this.v] = this.a[3232 + this.v];
-      this.a[202 + this.v] = 0;
-      this.a[303 + this.v] = 0;
-      this.a[606 + this.v] = this.b[this.a[111] + this.a[8749 + this.a[4444 + this.v]]];
-      this.b[this.a[101 + this.v]][this.a[0 + this.v]] = (byte)this.v;
-      this.a[1313 + this.v] = 0;
-      byte[] var3 = this.a;
-      int var8 = 1818 + this.v;
-      var3[var8] = (byte)(var3[var8] - 2);
-      if (this.a[2828 + this.v] == 59) {
-         this.a[6464 + this.v] = 69;
-         this.a[6262 + this.v] = this.a[0 + this.v];
-         this.a[6363 + this.v] = this.a[101 + this.v];
-      }
-
-      this.P();
-      var3 = this.a;
-      var8 = 1111 + this.v;
-      var3[var8] = (byte)(var3[var8] & 240);
-      this.a[5050 + this.v] = this.a[1010 + this.v];
-      this.a.h(this.v);
-      if (this.a[2828 + this.v] >= 109) {
-         this.a[6161 + this.v] = 0;
-      }
-
-      if ((this.a.p & 3) == 1 && this.a[7575 + this.v] > 3 && this.u == 0 && this.a.q < 7) {
-         this.b((int)this.v, (int)0, (int)1);
-         this.a.b((int)61);
-         f var5 = this.a;
-         var5.p = (byte)(var5.p | 2);
-      } else if (this.b[this.a[160] + this.a[2828 + this.v]] == 69 && this.a[2828 + this.v] < 109) {
-         if (!this.n()) {
-            this.a((int)1, (int)21, (int)b((int)(this.a[0 + this.v] - 3 + this.a.a((int)255, (int)6)), (int)0, (int)(this.a.c - 1)), (int)b((int)(this.a[101 + this.v] - 3 + this.a.a((int)255, (int)6)), (int)0, (int)(this.a.d - 1)));
-            this.Q();
-         }
-
-         this.p();
-         this.z = this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0);
-      } else {
-         if (this.a[6161 + this.v] < 2) {
-            this.N();
-         }
-
-      }
-   }
-
-   private boolean e() {
-      if (this.b[this.a[39] + this.a[2828 + this.v]] == 1 && this.a[4040 + this.v] > 0 && (this.a[2929 + this.v] & 255) >= 8 && this.a[3131 + this.v] == this.a[0 + this.v] && this.a[3232 + this.v] == this.a[101 + this.v]) {
-         if (this.c((int)this.a[4444 + this.v])) {
-            this.a[2929 + this.v] = this.b(this.v);
-            if (this.a[8810 + this.a[4444 + this.v]] != this.v || this.a[8749 + this.a[4444 + this.v]] == 2 && this.a[8627 + this.a[4444 + this.v]] == 0) {
-               ++this.a[8932 + this.a[4444 + this.v]];
-            }
-
-            this.a[606 + this.v] = this.a[4040 + this.v];
-            this.a[1313 + this.v] = -1;
-            this.a[4040 + this.v] = -100;
-            byte[] var1 = this.a;
-            int var2 = 1111 + this.v;
-            var1[var2] = (byte)(var1[var2] & 240);
-            this.a[4848 + this.v] = 0;
-         } else if (this.b[this.a[41] + this.a[2828 + this.v]] == 0 && this.a[2828 + this.v] != 69 && this.a[8749 + this.a[4444 + this.v]] != 11) {
-            if (this.a((int)this.a[8749 + this.a[4444 + this.v]])) {
-               this.g(1);
-            }
-         } else if (this.b[this.a[41] + this.a[2828 + this.v]] != 0 && (this.b[this.a[41] + this.a[2828 + this.v]] < 13 || this.b[this.a[41] + this.a[2828 + this.v]] > 15)) {
-            this.Q();
-         }
-
-         return true;
-      } else {
-         return (this.a[2929 + this.v] & 255) <= 7;
-      }
-   }
-
-   private void y() {
-      if (this.b[this.a[171] + (this.a[2929 + this.v] & 255)] != -2 && (this.a[1111 + this.v] & 255) >> 4 >= this.b[this.a[37] + this.a[2828 + this.v]] || this.b[this.a[171] + (this.a[2929 + this.v] & 255)] == -2 && this.d) {
-         byte[] var10000 = this.a;
-         int var10001 = 1111 + this.v;
-         var10000[var10001] = (byte)(var10000[var10001] & 15);
-         if (this.a[2828 + this.v] == 84 && (this.a[3939 + this.v] >= 28 && this.a[3939 + this.v] <= 49 || this.a[3939 + this.v] == 99) && this.b(this.a[3939 + this.v] - 28, true, this.v)) {
-            this.a[404 + this.v] = 100;
-         }
-
-         if ((this.a[4444 + this.v] >= 0 && this.z / 10 <= this.B || this.a[2828 + this.v] == 85 || this.a[2828 + this.v] == 80) && this.i() && (this.a[2828 + this.v] != 69 || this.a[6161 + this.v] < 2)) {
-            if (this.a[3131 + this.v] == this.a[0 + this.v] && this.a[3232 + this.v] == this.a[101 + this.v]) {
-               if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) {
-                  return;
-               }
-            } else {
-               if (this.a[2828 + this.v] == 58 || this.a[2828 + this.v] == 57) {
-                  this.v = this.a(this.v);
-               }
-
-               this.z = this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0);
-               this.p();
-               if (this.a[808 + this.v] > 0) {
-                  return;
-               }
-            }
-
-            this.d = true;
-         }
-      }
-
-      if (this.d) {
-         this.i(this.z);
-      }
-
-   }
-
-   private void i(int var1) {
-      if (!this.f()) {
-         if (this.a[2828 + this.v] == 69 && this.a[202 + this.v] == 0 && this.a[303 + this.v] == 0) {
-            if (this.x < 3) {
-               this.a[606 + this.v] = (byte)(this.a[606 + this.v] + this.x % 3 + 7 & 7);
-            } else if (this.x < 5 && var1 == 0 && (this.a[7979 + this.v] & 2) == 0) {
-               this.M();
-            }
-         } else if (this.a[2828 + this.v] == 84 && this.a[3939 + this.v] == 69 && this.x < 10) {
-            this.a(this.v, (byte)85);
-         }
-
-         if ((this.a[2828 + this.v] <= 9 || this.a[2828 + this.v] == 93 || this.a[2828 + this.v] == 92 || this.a[2828 + this.v] == 106) && var1 / 10 <= this.B) {
-            this.H = this.a[6565 + this.v];
-            this.y = this.a.a(16777215, this.b[this.a[18] + this.H] == 0 ? 2 + this.a[1717 + this.v] : 1);
-            this.a[2929 + this.v] = this.b[this.a[161] + this.b[this.a[163] + this.H] + this.y];
-         } else if (this.b(var1)) {
-            return;
-         }
-
-         if (this.b[this.a[38] + this.H] != 0 && this.H != 105) {
-            this.a[606 + this.v] = (byte)(var1 % 10);
-         }
-
-         if (this.H >= 94 && this.H <= 97 && (this.a[7979 + this.v] & 16) == 0) {
-            this.a.a((int)this.v, (byte)1);
-            this.a[7979 + this.v] = (byte)(this.a[7979 + this.v] | 16);
-         }
-
-         if (this.a[2929 + this.v] == 39 || this.a[2929 + this.v] == 104 || this.a[2929 + this.v] == 105) {
-            this.a[3333 + this.v] = (byte)(11 + (this.x & 1));
-         }
-
-         if (this.H == 57 && this.u == 0 && this.a.q < 7 && ((this.a.p & 5) == 1 || (this.a.p & 9) == 1 && this.a[9115 + this.a[4444 + this.v]] == 2)) {
-            this.b((int)this.v, (int)0, (int)1);
-            this.a.b((this.a.p & 5) == 1 ? 60 : 62);
-            f var10000 = this.a;
-            var10000.p = (byte)(var10000.p | ((this.a.p & 5) == 1 ? 4 : 8));
-         }
-
-      }
-   }
-
-   private boolean f() {
-      if (this.a[2828 + this.v] == 78 && this.a[2929 + this.v] >= 113 && this.a[2929 + this.v] <= 116) {
-         return true;
-      } else {
-         if (this.a[4646 + this.v] >= 0 && this.a[1313 + this.v] == -2) {
-            this.a.d((int)this.a[4444 + this.v]);
-            if (this.a[2828 + this.v] == 51) {
-               this.C = this.a[8810 + this.a[4444 + this.v]];
-               if (this.a[1313 + this.C] >= 0 && this.a[4646 + this.C] >= 0) {
-                  this.a[2828 + this.C] = 55;
-               } else {
-                  this.a[6161 + this.v] = 3;
-                  this.a[2828 + this.v] = 87;
-               }
-            }
-
-            if (this.b[this.a[42] + this.b[this.a[41] + this.a[6464 + this.v]]] != this.b[this.a[42] + this.b[this.a[41] + this.a[2828 + this.v]]] && this.b[this.a[42] + this.b[this.a[41] + this.a[2828 + this.v]]] > 0) {
-               this.a[2929 + this.v] = -109;
-               byte[] var3 = this.a;
-               int var6 = 1313 + this.v;
-               byte var7;
-               if (this.a[8627 + this.a[4444 + this.v]] != 0) {
-                  this.a.getClass();
-                  var7 = 50;
-               } else if (this.a[8749 + this.a[4444 + this.v]] == 7) {
-                  this.a.getClass();
-                  var7 = 51;
-               } else {
-                  this.a.getClass();
-                  var7 = 1;
-               }
-
-               var3[var6] = var7;
-               return true;
-            }
-
-            if (this.a[8810 + this.a[4444 + this.v]] == this.v && (this.a[8749 + this.a[4444 + this.v]] >= 12 || this.a[8627 + this.a[4444 + this.v]] != 0) && this.a[3636 + this.v] == 9) {
-               if (this.a[8749 + this.a[4444 + this.v]] >= 12) {
-                  for(this.v = 0; this.v < 10 && this.f[0][this.v] != this.a[4444 + this.v]; ++this.v) {
-                  }
-
-                  ++this.f[1][this.v];
-               } else {
-                  for(this.v = 0; this.v < 20 && this.g[0][this.v] != this.a[4444 + this.v]; ++this.v) {
-                  }
-
-                  byte[] var1 = this.g[2];
-                  byte var4 = this.v;
-                  var1[var4] *= -1;
-               }
-
-               this.a[3636 + this.v] = 0;
-               this.a[3535 + this.v] = 0;
-               byte[] var2 = this.a;
-               int var5 = 1313 + this.v;
-               byte var10002;
-               if (this.a[8627 + this.a[4444 + this.v]] != 0) {
-                  this.a.getClass();
-                  var10002 = 50;
-               } else {
-                  this.a.getClass();
-                  var10002 = 1;
-               }
-
-               var2[var5] = var10002;
-               this.a[2929 + this.v] = -102;
-               return true;
-            }
-         }
-
-         this.x = this.a.a((int)16777215, (int)100);
-         return false;
-      }
-   }
-
-   private boolean b(int var1) {
-      if ((this.a[4444 + this.v] < 0 || var1 / 10 > this.B || this.b[this.a[39] + this.a[2828 + this.v]] == 1 && this.a[4646 + this.v] < 0) && this.a[2828 + this.v] != 105 && this.a[2828 + this.v] != 85) {
-         if (this.a[1414 + this.v] >= 12) {
-            this.H = 69;
-         } else {
-            this.H = 17;
-         }
-      } else {
-         this.a[4848 + this.v] = 0;
-         this.H = this.a[2828 + this.v];
-      }
-
-      if (this.H == 13) {
-         if ((this.a[2929 + this.v] & 255) < 141) {
-            this.a[2929 + this.v] = -111;
-            this.a[606 + this.v] = (byte)(this.b[this.a[101 + this.v]][this.a[0 + this.v] + 1] <= -61 && this.b[this.a[101 + this.v]][this.a[0 + this.v] + 1] >= -110 ? 0 : 4);
-            return true;
-         }
-
-         if (this.a[2929 + this.v] == -110) {
-            return true;
-         }
-      }
-
-      if ((this.a[2929 + this.v] == -101 || this.a[2929 + this.v] == -100) && this.x > 20) {
-         this.z();
-      } else if (this.H == 69 && (this.a[7979 + this.v] & 2) == 0 && this.x > 98 && this.g()) {
-         return true;
-      }
-
-      if (this.H == 72) {
-         this.y = this.b[this.a[158] + this.b[this.a[77] + this.a[6565 + this.v]]];
-      } else if (this.H == 69 && (this.a[7979 + this.v] & 2) > 0) {
-         this.y = 6;
-      } else if ((this.H == 69 || this.H == 109 || this.H == 60 || this.H == 51 || this.H == 87) && (this.a[3535 + this.v] != 0 || this.a[6565 + this.v] == 1)) {
-         this.y = this.H == 60 ? 1 : (this.H != 51 && this.H != 87 ? 4 : 2);
-      } else if (this.H != 83 && this.H != 85 && this.H != 105) {
-         if (this.H == 84) {
-            this.y = this.b[this.a[167] + this.a[1313 + this.v]];
-         } else {
-            this.y = 0;
-         }
-      } else {
-         this.y = this.a[1313 + this.v];
-      }
-
-      for(this.y += this.b[this.a[166] + this.H] & 255; this.y < (this.b[this.a[166] + this.H + 1] & 255); ++this.y) {
-         if (this.b[this.a[165] + this.y] > this.x) {
-            this.a[2929 + this.v] = this.b[this.a[164] + this.y];
-            if (this.a[4646 + this.v] < 0 || this.a[8749 + this.a[4444 + this.v]] != 2 || this.a[1313 + this.v] <= 0) {
-               if ((this.b[this.a[171] + (this.a[2929 + this.v] & 255)] & 254) != 254 && this.x >= 85) {
-                  this.a[2929 + this.v] = this.b[this.a[171] + (this.a[2929 + this.v] & 255)];
-               }
-
-               if (this.a[4646 + this.v] >= 0) {
-                  byte[] var10000 = this.a;
-                  int var10001 = 1313 + this.v;
-                  byte var10002;
-                  if ((this.a[2828 + this.v] == this.b[this.a[58] + this.b[this.a[174] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]] || this.a[2828 + this.v] == 53 || this.a[2828 + this.v] == 111 || this.a[4646 + this.v] > 0 && this.a[8749 + this.a[4444 + this.v]] < 12) && this.a[8627 + this.a[4444 + this.v]] == 0) {
-                     var10002 = (byte)(this.y - (this.b[this.a[166] + this.H] & 255));
-                  } else {
-                     this.a.getClass();
-                     var10002 = 50;
-                  }
-
-                  var10000[var10001] = var10002;
-               }
-            }
-            break;
-         }
-      }
-
-      return false;
-   }
-
-   private boolean g() {
-      for(this.C = this.a[0 + this.v] - 1; this.C < this.a[0 + this.v] + 2; this.C += 2) {
-         for(this.D = this.a[101 + this.v] - 1; this.D < this.a[101 + this.v] + 2; ++this.D) {
-            if (this.C > 0 && this.C < this.a.c - 1 && this.D > 0 && this.D < this.a.d - 1) {
-               this.y = this.b[this.D][this.C];
-               if (this.y > this.u * 50 && this.y <= (this.u + 1) * 50 && (this.a[2929 + this.y] == 8 || this.a[2929 + this.y] == 9 || this.a[2929 + this.y] >= 15 && this.a[2929 + this.y] <= 18)) {
-                  this.a[2929 + this.v] = (byte)(this.a[3535 + this.v] == 0 && this.a[6565 + this.v] != 1 ? -101 : -100);
-                  this.a[606 + this.v] = (byte)(this.b[this.a[53] + (12 + this.D - this.a[101 + this.v]) * 25 + 12 + this.C - this.a[0 + this.v]] % 10);
-                  this.a[606 + this.y] = (byte)(this.a[606 + this.v] + 4 & 7);
-                  this.a[4646 + this.v] = (byte)(-92 - this.b[this.a[99] + 8 + this.a[606 + this.v]]);
-                  return true;
-               }
-            }
-         }
-      }
-
-      return false;
-   }
-
-   private void z() {
-      this.y = this.b[this.a[101 + this.v] + this.b[this.a[1] + 8 + this.a[606 + this.v]]][this.a[0 + this.v] + this.b[this.a[1] + this.a[606 + this.v]]];
-      if (this.y > this.u * 50 && this.y <= (this.u + 1) * 50 && (this.a[2929 + this.y] == 8 || this.a[2929 + this.y] == 9 || this.a[2929 + this.y] >= 15 && this.a[2929 + this.y] <= 18)) {
-         this.a[2929 + this.y] = (byte)(this.a[3535 + this.y] == 0 && this.a[6565 + this.y] != 1 ? -101 : -100);
-         this.a[606 + this.y] = (byte)(this.a[606 + this.v] + 4 & 7);
-         this.a[3030 + this.y] = (byte)(this.y < this.v ? 0 : -1);
-         this.a[4646 + this.y] = (byte)(-92 - this.b[this.a[99] + 8 + this.a[606 + this.y]]);
-      }
-
-   }
-
-   private boolean c(int var1) {
-      if (!this.d(var1)) {
-         this.Q();
-         return false;
-      } else {
-         this.s = this.a[8627 + var1] == 0 ? this.b[this.a[138] + (this.a[9115 + var1] - 1) * 26 + this.a[8749 + var1]] : this.b[this.a[138] + 494 + this.a[8749 + var1]];
-         if ((this.b[this.a[138] + 156 + this.a[8749 + var1]] > -1 || this.a[8627 + var1] != 0) && this.a[8810 + var1] > 0 && this.a[8810 + var1] != this.v && (this.b[this.a[101 + this.a[8810 + var1]]][this.a[0 + this.a[8810 + var1]]] == this.a[8810 + var1] || this.a[4444 + this.a[8810 + var1]] != var1)) {
-            --this.s;
-         }
-
-         if (this.a[2828 + this.v] == 51) {
-            return this.a[8810 + var1] >= 1 && this.a[2828 + this.a[8810 + var1]] == 57 && this.a[1313 + this.a[8810 + var1]] >= 1 && this.a[8932 + var1] == 1 && this.a[9237 + var1] == 0;
-         } else {
-            return this.s > this.a[8932 + var1];
-         }
-      }
-   }
-
-   final byte a(int var1) {
-      byte var2 = this.a[8932 + var1];
-      if ((this.b[this.a[138] + 156 + this.a[8749 + var1]] > -1 || this.a[8627 + var1] != 0) && this.a[8810 + var1] > 0 && (this.a[4646 + this.a[8810 + var1]] < 0 || this.a[4444 + this.a[8810 + var1]] != var1)) {
-         ++var2;
-      }
-
-      return (byte)(var2 + (b((int)((this.a[8627 + var1] == 0 ? (this.a[8749 + var1] != 3 ? this.b[this.a[138] + (this.a[9115 + var1] - 1) * 26 + this.a[8749 + var1]] : 1) : this.b[this.a[138] + 494 + this.a[8749 + var1]]) - var2), (int)0, (int)7) << 4));
-   }
-
-   private boolean d(int var1) {
-      if (this.a[8749 + var1] >= 12 && this.a[8505 + var1] >= this.b[this.a[138] + 182 + this.a[9237 + var1]]) {
-         return false;
-      } else if (this.a[8505 + var1] <= 0) {
-         return false;
-      } else {
-         this.a(this.a[8383 + var1], this.a[8444 + var1], true);
-         return this.b[this.a[41] + this.m] == this.b[this.a[41] + this.a[2828 + this.v]];
-      }
-   }
-
-   private boolean a(byte var1, boolean var2) {
-      if (this.a[4646 + this.v] < 0 || this.a[2929 + this.v] != this.b[this.a[173] + this.b[this.a[174] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]] && this.a[2929 + this.v] != this.b[this.a[176] + this.b[this.a[177] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]]) {
-         if (this.a[2828 + this.v] == 79 || this.a[2828 + this.v] == 80 || this.a[2828 + this.v] >= 83 && this.a[2828 + this.v] <= 85 || var2 && this.b[this.a[42] + this.b[this.a[41] + this.a[6464 + this.v]]] != 0 || this.a[2929 + this.v] == -108 && this.a[3030 + this.v] != this.a.j[4][this.a[2929 + this.v] & 255] - 1) {
-            if (this.a[2828 + this.v] != 83 && this.a[2828 + this.v] != 84) {
-               if (this.a[2828 + this.v] != 79) {
-                  if (var2 && this.b[this.a[42] + this.b[this.a[41] + this.a[6464 + this.v]]] > 0 && this.a[2929 + this.v] != -108) {
-                     this.a[808 + this.v] = 0;
-                     this.a[2929 + this.v] = -108;
-                     this.a[3030 + this.v] = var1;
-                     if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) {
-                        byte[] var10000 = this.a;
-                        int var10001 = 1313 + this.v;
-                        byte var10002;
-                        if (this.a[8627 + this.a[4444 + this.v]] != 0) {
-                           this.a.getClass();
-                           var10002 = 50;
-                        } else if (this.a[8749 + this.a[4444 + this.v]] == 7) {
-                           this.a.getClass();
-                           var10002 = 51;
-                        } else {
-                           this.a.getClass();
-                           var10002 = 1;
+            if (this.var_byte_n <= this.var_byte_arr_a[4949 + this.var_int_v] + 2) {
+                if (this.var_byte_arr_a[3131 + this.var_int_v] != this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_p] || this.var_byte_arr_a[3232 + this.var_int_v] != this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]] + 1] + this.var_byte_p]) {
+                    this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_p];
+                    this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]] + 1] + this.var_byte_p];
+                    if (this.var_byte_n > this.var_int_B) {
+                        this.void_p();
+                        if (this.var_byte_arr_a[2828 + this.var_int_v] >= 94 && this.var_byte_arr_a[2828 + this.var_int_v] <= 97 && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x10) > 0) {
+                            this.var_f_a.byte_a(this.var_int_v, (byte)0);
+                            int n = 7979 + this.var_int_v;
+                            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xEF);
                         }
-
-                        var10000[var10001] = var10002;
-                     }
-
-                     return true;
-                  }
-
-                  return true;
-               }
-
-               this.a(this.v, (byte)80);
-            } else {
-               this.a(this.v, (byte)85);
+                    }
+                }
+                return;
             }
+            if (this.var_byte_arr_a[808 + this.var_int_v] == 0) {
+                if (this.var_byte_arr_a[2828 + this.var_int_v] <= 9 && this.var_byte_arr_a[6161 + this.var_int_v] == 0) {
+                    this.Q();
+                    this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+                    this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+                    return;
+                }
+                this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_p];
+                this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]] + 1] + this.var_byte_p];
+            }
+        }
+    }
 
+    private void void_r() {
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 2 || this.var_byte_arr_a[2828 + this.var_int_v] == 7) {
+            if ((this.var_byte_arr_a[7979 + this.var_int_v] & 0x80) == 0) {
+                this.g(1);
+            } else {
+                this.Q();
+            }
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 93 || this.var_byte_arr_a[2828 + this.var_int_v] == 92 || this.var_byte_arr_a[2828 + this.var_int_v] == 106) {
+            this.void_b(false);
+            this.void_a(this.var_int_v, this.var_byte_arr_b[this.var_short_arr_a[57] + this.var_byte_arr_b[this.var_short_arr_a[174] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]]);
             this.i(0);
-            this.a[3030 + this.v] = var1;
-            return true;
-         } else {
-            return false;
-         }
-      } else {
-         return true;
-      }
-   }
-
-   private boolean h() {
-      if ((this.a.c & 7) == (this.v & 7)) {
-         this.a[7979 + this.v] = (byte)(this.a[7979 + this.v] | 1);
-         this.a((int)7, (int)17, (int)this.a[0 + this.v], (int)this.a[101 + this.v]);
-         if (this.u == 0) {
-            for(this.B = 0; this.B < 5; ++this.B) {
-               if (this.a.c[1][this.B][2] >= 0 && this.a.c[1][this.B][3] != 1) {
-                  this.z = (byte)(this.a.c[1][this.B][0] - this.a[0 + this.v]);
-                  this.A = (byte)(this.a.c[1][this.B][1] - this.a[101 + this.v]);
-                  if (this.b[this.a[53] + (this.A > -10 && this.A < 10 ? 12 + this.A : 0) * 25 + (this.z > -10 && this.z < 10 ? 12 + this.z : 0)] / 10 <= this.a[7575 + this.v] - 3) {
-                     this.a.c[1][this.B][3] = 1;
-                  }
-               }
-            }
-         }
-      }
-
-      if (this.a[2929 + this.v] != -106 && this.a[2929 + this.v] != -107) {
-         if (this.a[2828 + this.v] == 69 && this.a[6464 + this.v] == 69 && this.a[7777 + this.v] == 0 && (this.a[7979 + this.v] & 3) == 1) {
-            this.a[2929 + this.v] = -107;
-            this.a[3030 + this.v] = 0;
-            return true;
-         } else if ((this.a[7979 + this.v] & 2) == 0 || (this.a[2828 + this.v] == 69 || this.a[2828 + this.v] == 105) && (this.a[7979 + this.v] & 1) != 0 && this.a[7777 + this.v] <= 0) {
-            return false;
-         } else {
-            this.a[2929 + this.v] = -106;
-            this.a[3030 + this.v] = 0;
-            this.a[7979 + this.v] = (byte)(this.a[7979 + this.v] & 253);
-            return true;
-         }
-      } else {
-         ++this.a[3030 + this.v];
-         if (this.a[3030 + this.v] < this.a.j[4][this.a[2929 + this.v] & 255]) {
-            return true;
-         } else {
-            if (this.a[2929 + this.v] == -107) {
-               this.a[7979 + this.v] = (byte)(this.a[7979 + this.v] | 2);
-            }
-
-            return false;
-         }
-      }
-   }
-
-   private void A() {
-      this.a[2222 + this.v] = this.b[this.a[41] + this.a[6464 + this.v]];
-
-      for(this.I = 0; this.I < 4; ++this.I) {
-         this.a[this.b[23 + this.I] + this.v] = (byte)(9 + (this.I >> 1));
-      }
-
-      for(this.I = 2; this.I >= 0; --this.I) {
-         for(this.J = 25; this.J <= 26; ++this.J) {
-            if (this.a[this.b[this.b[this.a[107] + this.a[this.b[this.J] + this.v]]] + this.v] <= this.a[this.b[this.b[this.a[107] + this.I]] + this.v]) {
-               for(this.K = 26; this.K > this.J; --this.K) {
-                  this.a[this.b[this.K] + this.v] = this.a[this.b[this.K - 1] + this.v];
-               }
-
-               this.a[this.b[this.J] + this.v] = (byte)this.I;
-               break;
-            }
-         }
-      }
-
-      this.a[1818 + this.v] = (byte)b((int)this.a[1818 + this.v], (int)(3 + this.a[1616 + this.v] / 2), (int)7);
-      this.a[4949 + this.v] = (byte)b((int)this.a[4949 + this.v], (int)(this.a[1818 + this.v] + 1), (int)9);
-
-      for(this.I = 3; this.I < 9; ++this.I) {
-         for(this.J = 23; this.J <= 24; ++this.J) {
-            if (this.a[this.b[this.b[this.a[107] + this.a[this.b[this.J] + this.v]]] + this.v] < this.a[this.b[this.b[this.a[107] + this.I]] + this.v]) {
-               if (this.I == this.a[2525 + this.v] || this.I == this.a[2626 + this.v] || this.b[this.a[108] + this.I] == (this.a[2222 + this.v] < 8 && this.a[2222 + this.v] > 0 ? 7 : this.a[2222 + this.v])) {
-                  break;
-               }
-
-               for(this.K = 24; this.K > this.J; --this.K) {
-                  this.a[this.b[this.K] + this.v] = this.a[this.b[this.K - 1] + this.v];
-               }
-
-               this.a[this.b[this.J] + this.v] = (byte)this.I;
-               break;
-            }
-         }
-      }
-
-      for(this.J = 23; this.J <= 26; ++this.J) {
-         if (this.a[this.b[this.J] + this.v] > 8) {
-            this.a[this.b[this.J] + this.v] = -1;
-         } else {
-            this.a[this.b[this.J] + this.v] = this.b[this.a[108] + this.a[this.b[this.J] + this.v]];
-         }
-      }
-
-   }
-
-   private void B() {
-      if (this.a[2929 + this.v] != 39 && this.a[2929 + this.v] != 104 && this.a[2929 + this.v] != 105) {
-         if (this.a[3333 + this.v] >= 0) {
-            this.a[3333 + this.v] = (byte)(-2 - this.a.a((int)255, (int)4));
-         } else if (this.a[3333 + this.v] < -1) {
-            ++this.a[3333 + this.v];
-         }
-
-         if (this.a[3333 + this.v] >= -1 && this.a[2828 + this.v] > 9) {
-            if (this.a[2828 + this.v] >= 109 && this.a[2828 + this.v] <= 111) {
-               this.a[3333 + this.v] = 1;
+            this.var_byte_arr_a[3030 + this.var_int_v] = -1;
+        }
+        if ((this.var_byte_arr_b[this.var_short_arr_a[27] + this.var_byte_arr_a[2828 + this.var_int_v]] & 1) > 0) {
+            if (this.var_byte_arr_a[1414 + this.var_int_v] < 12) {
+                this.Q();
             } else {
-               this.I = this.a.a((int)16777215, (int)22);
-               if (this.I < 11 && this.a[this.b[this.b[this.a[56] + this.I]] + this.v] >= this.b[this.a[56] + 11 + this.I] && this.a[this.b[this.b[this.a[56] + this.I]] + this.v] <= this.b[this.a[56] + 22 + this.I] && this.a.a((int)16777215, (int)100) < this.b[this.a[56] + 33 + this.I]) {
-                  this.a[3333 + this.v] = (byte)this.I;
-               }
-
-               if (this.a[3434 + this.v] < 1 && this.a[505 + this.v] < 10) {
-                  this.a[3333 + this.v] = 9;
-               }
-
-               if (this.a[2020 + this.v] == 0) {
-                  this.a[3333 + this.v] = 0;
-               }
-
-               if (this.a[2121 + this.v] == 0) {
-                  this.a[3333 + this.v] = 2;
-               }
-
+                if (this.var_byte_arr_a[6565 + this.var_int_v] == 9 && (this.var_byte_arr_a[2828 + this.var_int_v] == 0 || this.var_byte_arr_a[2828 + this.var_int_v] == 3)) {
+                    int n = 2828 + this.var_int_v;
+                    this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] ^ 1);
+                }
+                this.var_boolean_b = true;
+                this.var_boolean_a = true;
+                if (this.var_byte_arr_a[2828 + this.var_int_v] > 9 || !this.boolean_p()) {
+                    this.Q();
+                    if ((this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) > 7) {
+                        this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+                        this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+                    }
+                }
             }
-         }
-      }
-   }
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] >= 94 && this.var_byte_arr_a[2828 + this.var_int_v] <= 96) {
+            this.ap();
+        }
+    }
 
-   private void C() {
-      if (this.a[2828 + this.v] != 78 || this.a[2929 + this.v] < 113 || this.a[2929 + this.v] > 116) {
-         if (this.b[this.a[40] + this.a[2828 + this.v]] != -1) {
-            if (this.a[3535 + this.v] != this.b[this.a[40] + this.a[2828 + this.v]]) {
-               this.a[3636 + this.v] = 0;
-               this.a[3535 + this.v] = this.b[this.a[40] + this.a[2828 + this.v]];
-               return;
+    private void void_b(boolean bl) {
+        this.var_int_s = this.var_int_u * 30 + 1;
+        while (this.var_int_s <= (this.var_int_u + 1) * 30) {
+            if ((this.var_byte_arr_a[8749 + this.var_int_s] == 11 || bl) && this.var_byte_arr_a[8932 + this.var_int_s] >= 1) {
+                this.var_int_t = this.var_byte_arr_a[8993 + this.var_int_s];
+                while (this.var_int_t > 0) {
+                    if (this.var_int_t == this.var_int_v) {
+                        this.var_byte_arr_a[4444 + this.var_int_v] = (byte)this.var_int_s;
+                        this.var_byte_arr_a[4747 + this.var_int_v] = (byte)(-this.var_int_s);
+                        this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+                        this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+                        return;
+                    }
+                    this.var_int_t = this.var_byte_arr_a[4545 + this.var_int_t];
+                }
             }
-         } else if (this.a[3636 + this.v] == 0) {
-            this.a[3535 + this.v] = 0;
-         }
+            ++this.var_int_s;
+        }
+    }
 
-      }
-   }
+    private int int_a(int n, int n2, int n3) {
+        if (n3 == 0 && this.var_byte_arr_a[4444 + this.var_int_v] < -1) {
+            return 0;
+        }
+        byte by = this.var_byte_arr_a[this.var_short_arr_b[n3 == 0 ? 44 : 110] + this.var_int_v];
+        if (by < 1 || this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]] == 43 || n3 != 0) {
+            this.var_byte_q = this.var_byte_arr_a[this.var_short_arr_b[n3 == 0 ? 31 : 112] + this.var_int_v];
+            this.var_byte_r = this.var_byte_arr_a[this.var_short_arr_b[n3 == 0 ? 32 : 113] + this.var_int_v];
+        } else {
+            this.var_byte_q = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]]] + by];
+            this.var_byte_r = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]] + 1] + by];
+            if (this.var_byte_arr_b[this.var_short_arr_a[28] + this.var_byte_arr_a[2828 + this.var_int_v]] == 83) {
+                this.var_byte_q = (byte)b.int_b(n, this.var_byte_q, this.var_byte_q + this.var_byte_arr_b[this.var_short_arr_a[138] + 104 + this.var_byte_arr_a[8749 + by]] - 1);
+                this.var_byte_r = (byte)b.int_b(n2, this.var_byte_r, this.var_byte_r + this.var_byte_arr_b[this.var_short_arr_a[138] + 130 + this.var_byte_arr_a[8749 + by]] - 1);
+                if (this.var_byte_arr_a[2828 + this.var_int_v] <= 9) {
+                    this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_q;
+                    this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_r;
+                }
+            }
+        }
+        byte by2 = (byte)(this.var_byte_q - n);
+        byte by3 = (byte)(this.var_byte_r - n2);
+        if (by2 >= -12 && by3 >= -12 && by2 <= 12 && by3 <= 12) {
+            return this.var_byte_arr_b[this.var_short_arr_a[53] + (12 + by3) * 25 + 12 + by2];
+        }
+        return 200;
+    }
 
-   private void a(byte var1) {
-      this.u = (byte)this.v;
-      this.v = var1;
-      if (!this.a((byte)(var1 < this.u ? 0 : -1), false)) {
-         this.a[808 + var1] = 0;
-         this.t = this.a[0 + var1];
-         this.a[0 + var1] = this.a[0 + this.u];
-         this.a[0 + this.u] = this.t;
-         this.t = this.a[101 + var1];
-         this.a[101 + var1] = this.a[101 + this.u];
-         this.a[101 + this.u] = this.t;
-         if (this.a[6262 + var1] == this.a[0 + this.u] && this.a[6363 + var1] == this.a[101 + this.u]) {
-            this.a[6262 + var1] = this.a[0 + var1];
-            this.a[6363 + var1] = this.a[101 + var1];
-            this.a[3131 + var1] = this.a[0 + var1];
-            this.a[3232 + var1] = this.a[101 + var1];
-         }
+    private static int int_b(int n, int n2, int n3) {
+        if (n < n2) {
+            return n2;
+        }
+        if (n < n3) {
+            return n;
+        }
+        return n3;
+    }
 
-         this.b[this.a[101 + this.u]][this.a[0 + this.u]] = this.u;
-         this.b[this.a[101 + var1]][this.a[0 + var1]] = var1;
-         this.a[606 + var1] = (byte)(this.a[606 + this.u] + 4 & 7);
-         byte[] var10000 = this.a;
-         var10000[1111 + var1] = (byte)(var10000[1111 + var1] & 240);
-         this.a[4848 + var1] = 120;
-         this.a[4848 + this.u] = 120;
-         this.a[2929 + var1] = this.b((int)var1);
-         this.D();
-         if (var1 > this.u) {
-            var10000 = this.a;
-            var10000[1111 + var1] = (byte)(var10000[1111 + var1] & 240);
-         }
+    final void void_b() {
+        this.var_int_v = 1;
+        while (this.var_int_v <= 50) {
+            if (!(!this.var_f_a.var_boolean_N && (this.var_byte_arr_b[this.var_short_arr_a[100] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_arr_b[this.var_short_arr_a[100] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]]] <= 1 || this.var_byte_arr_a[6565 + this.var_int_v] == 9 || this.var_byte_arr_a[1717 + this.var_int_v] <= 4 && this.var_byte_arr_a[1616 + this.var_int_v] <= 4 && this.var_byte_arr_a[7575 + this.var_int_v] <= 4) || this.var_f_a.var_boolean_L && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x40) != 0)) {
+                this.var_byte_arr_a[7979 + this.var_int_v] = (byte)(this.var_byte_arr_a[7979 + this.var_int_v] | 0x60);
+            }
+            ++this.var_int_v;
+        }
+    }
 
-         this.E = 1;
-      } else {
-         this.E = 2;
-      }
+    final void void_c() {
+        this.var_int_v = 1;
+        while (this.var_int_v <= 50) {
+            this.var_byte_arr_a[7979 + this.var_int_v] = (byte)(this.var_byte_arr_a[7979 + this.var_int_v] & 0x9F);
+            if (this.var_byte_arr_a[1919 + this.var_int_v] > 0 && this.var_byte_arr_a[2828 + this.var_int_v] == 69 && this.var_byte_arr_a[6161 + this.var_int_v] == 0) {
+                this.a(this.var_int_v, false);
+            }
+            ++this.var_int_v;
+        }
+    }
 
-      this.v = this.u;
-   }
+    final void void_d() {
+        int n;
+        int n2;
+        for (n2 = 0; n2 < 3; ++n2) {
+            for (n = 0; n < 96; ++n) {
+                this.var_f_a.var_int_arr_arr_arr_a[1][n2][n] = 0;
+            }
+        }
+        for (n = 1; n <= 50; ++n) {
+            if (this.var_byte_arr_a[1919 + n] == 0) continue;
+            this.void_a((int)this.var_byte_arr_a[0 + n], (int)this.var_byte_arr_a[101 + n], (int)this.var_byte_arr_a[4949 + n]);
+        }
+        for (n = 51; n <= 100; ++n) {
+            if (this.var_byte_arr_a[1919 + n] == 0 || this.var_byte_arr_a[2929 + n] < 23 || this.var_byte_arr_a[2929 + n] > 36 || this.var_byte_arr_a[2828 + n] > 9 || this.var_byte_arr_a[2828 + n] == 2 || this.var_byte_arr_a[2828 + n] == 7) continue;
+            this.void_a((int)this.var_byte_arr_a[0 + n], (int)this.var_byte_arr_a[101 + n], 0);
+        }
+        for (n = 1; n <= 30; ++n) {
+            if (this.var_byte_arr_a[8505 + n] == 0) continue;
+            if (this.var_byte_arr_a[8749 + n] >= 12) {
+                this.void_a((int)this.var_byte_arr_a[8383 + n], (int)this.var_byte_arr_a[8444 + n], (int)this.var_byte_arr_b[this.var_short_arr_a[138] + 104 + this.var_byte_arr_a[8749 + n]], (int)this.var_byte_arr_b[this.var_short_arr_a[138] + 130 + this.var_byte_arr_a[8749 + n]]);
+                continue;
+            }
+            this.void_a(this.var_byte_arr_a[8383 + n] + this.var_byte_arr_b[this.var_short_arr_a[138] + 104 + this.var_byte_arr_a[8749 + n]] / 2, this.var_byte_arr_a[8444 + n] + this.var_byte_arr_b[this.var_short_arr_a[138] + 130 + this.var_byte_arr_a[8749 + n]] / 2, this.var_byte_arr_a[8688 + n] & 0xF);
+        }
+        for (n2 = 0; n2 < 3; ++n2) {
+            for (n = 0; n < 96; ++n) {
+                int[] nArray = this.var_f_a.var_int_arr_arr_arr_a[0][n2];
+                int n3 = n;
+                nArray[n3] = nArray[n3] | this.var_f_a.var_int_arr_arr_arr_a[1][n2][n];
+            }
+        }
+    }
 
-   private void D() {
-      this.E();
-      if ((this.a[1111 + this.v] & 15) == (this.b[this.a[15] + this.w * 9 + this.L] + 1) / 2 && this.a[4848 + this.v] != 120) {
-         this.b[this.a[101 + this.v]][this.a[0 + this.v]] = 0;
-         if (this.a[4545 + this.v] <= -111) {
-            this.b[this.a[101 + this.v]][this.a[0 + this.v]] = this.a[4545 + this.v];
-            this.a[4545 + this.v] = 0;
-         }
-
-         if (this.a[4545 + this.v] >= 111) {
-            byte[] var10000 = this.a;
-            int var10001 = 4545 + this.v;
-            var10000[var10001] *= -1;
-            this.a[1313 + this.v] = 0;
-         }
-
-         if (this.a[1313 + this.v] == -1) {
-            this.F();
+    final void void_e() {
+        try {
+            this.void_s();
+            this.var_int_u = 0;
+            while (this.var_int_u < 2) {
+                if (this.var_int_u == 1) {
+                    this.aq();
+                }
+                this.int_a(0);
+                if (this.var_short_arr_arr_a[this.var_int_u][18] >= 0) {
+                    short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                    sArray[18] = (short)(sArray[18] + 1);
+                }
+                if (this.var_short_arr_arr_a[this.var_int_u][18] >= (this.var_int_u == 0 ? 750 : this.var_byte_arr_b[this.var_short_arr_a[273 + this.var_f_a.var_byte_b] + this.var_f_a.var_byte_q] * 50)) {
+                    this.var_short_arr_arr_a[this.var_int_u][18] = -1;
+                }
+                this.var_int_v = this.var_int_u * 50 + 1;
+                while (this.var_int_v <= (this.var_int_u + 1) * 50) {
+                    block16: {
+                        block17: {
+                            if (this.var_byte_arr_a[1919 + this.var_int_v] == 0 || this.boolean_a()) break block16;
+                            if (this.var_byte_arr_a[4545 + this.var_int_v] <= -111 && this.var_byte_arr_a[4545 + this.var_int_v] >= -122) break block17;
+                            this.void_t();
+                            if (this.var_byte_arr_a[7575 + this.var_int_v] > 3 && this.boolean_h()) break block16;
+                            if (this.var_f_a.var_int_c % 15 == (this.var_int_v & 7) && this.var_int_u == 0 && this.var_byte_arr_a[1414 + this.var_int_v] >= 12) {
+                                this.B();
+                            }
+                            if (this.boolean_b()) break block16;
+                        }
+                        this.void_v();
+                        this.var_boolean_b = true;
+                        if (this.var_byte_arr_a[5050 + this.var_int_v] == 0 && this.var_byte_arr_a[1414 + this.var_int_v] >= 12 && this.var_byte_arr_a[2828 + this.var_int_v] != 50 && this.var_byte_arr_a[2828 + this.var_int_v] != 105) {
+                            this.var_boolean_a = (this.var_byte_arr_a[6161 + this.var_int_v] == 0 || (this.var_byte_I & this.var_int_u + 1) != 0 || this.var_byte_arr_a[6161 + this.var_int_v] == 1 && this.var_byte_arr_a[808 + this.var_int_v] <= this.var_byte_arr_a[707 + this.var_int_v] && this.var_int_z / 10 > this.var_int_B && (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) > 7) && (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v || this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] == 16 && this.var_byte_arr_b[this.var_short_arr_a[18] + this.var_byte_arr_a[6565 + this.var_int_v]] > 0) && (this.var_byte_arr_a[7979 + this.var_int_v] & 2) == 0 && (this.var_byte_arr_a[2828 + this.var_int_v] > 9 || (this.var_byte_arr_b[this.var_short_arr_a[27] + this.var_byte_arr_a[2828 + this.var_int_v]] & 4) == 0);
+                            this.var_boolean_b = false;
+                            this.boolean_p();
+                        }
+                        this.void_u();
+                        if (this.var_byte_arr_a[5959 + this.var_int_v] > 0) {
+                            this.R();
+                        }
+                    }
+                    ++this.var_int_v;
+                }
+                this.Z();
+                ++this.var_int_u;
+            }
+            this.T();
+            if (this.var_byte_K < 50) {
+                this.var_byte_K = (byte)(this.var_byte_K + 1);
+            }
+            this.var_int_v = 1;
+            while (this.var_int_v <= 4) {
+                if (this.var_short_arr_arr_a[0][this.var_int_v] > 999) {
+                    this.var_short_arr_arr_a[0][this.var_int_v] = 999;
+                }
+                ++this.var_int_v;
+            }
             return;
-         }
-
-         byte[] var1 = this.a;
-         int var7 = 0 + this.v;
-         var1[var7] += this.b[this.a[1] + 0 + this.a[606 + this.v]];
-         var1 = this.a;
-         var7 = 101 + this.v;
-         var1[var7] += this.b[this.a[1] + 8 + this.a[606 + this.v]];
-         this.b[this.a[101 + this.v]][this.a[0 + this.v]] = (byte)this.v;
-      }
-
-      if (this.a[4848 + this.v] == 120) {
-         if ((this.a[1111 + this.v] & 15) < (this.b[this.a[15] + this.w * 9 + this.L] + 1) / 2) {
-            byte[] var3 = this.a;
-            int var9 = 202 + this.v;
-            var3[var9] = (byte)(var3[var9] - this.b[this.a[1] + 0 + this.a[606 + this.v]] * 22);
-            var3 = this.a;
-            var9 = 303 + this.v;
-            var3[var9] = (byte)(var3[var9] - this.b[this.a[1] + 8 + this.a[606 + this.v]] * 16);
-         }
-
-         byte[] var5 = this.a;
-         int var11 = 202 + this.v;
-         var5[var11] = (byte)(var5[var11] + this.b[this.a[9 + this.w] + this.b[this.a[12 + this.w * 2] + this.L] + (this.a[1111 + this.v] & 15)] * this.b[this.a[2] + 0 + this.a[606 + this.v]]);
-         var5 = this.a;
-         var11 = 303 + this.v;
-         var5[var11] = (byte)(var5[var11] + this.b[this.a[11 + this.w * 2] + this.b[this.a[12 + this.w * 2] + this.L] + (this.a[1111 + this.v] & 15)] * this.b[this.a[2] + 8 + this.a[606 + this.v]]);
-      }
-
-   }
-
-   private void E() {
-      this.w = this.a[606 + this.v] & 1;
-      this.L = this.a[1010 + this.v] - this.a[7777 + this.v];
-      ++this.a[1111 + this.v];
-      this.a[202 + this.v] = this.b[this.a[5 + this.w] + this.b[this.a[12 + this.w * 2] + this.L] + (this.b[this.a[15] + this.w * 9 + this.L] + (this.a[1111 + this.v] & 15) * this.b[this.a[1] + 0 + this.a[606 + this.v]]) % this.b[this.a[15] + this.w * 9 + this.L]];
-      this.a[303 + this.v] = this.b[this.a[7 + this.w] + this.b[this.a[12 + this.w * 2] + this.L] + (this.b[this.a[15] + this.w * 9 + this.L] + (this.a[1111 + this.v] & 15) * this.b[this.a[1] + 8 + this.a[606 + this.v]]) % this.b[this.a[15] + this.w * 9 + this.L]];
-      if (this.a[202 + this.v] == 0 && this.a[303 + this.v] == 0 && this.a[4848 + this.v] == 120) {
-         this.a[4848 + this.v] = 1;
-      }
-
-      if ((this.a[1111 + this.v] & 15) == (this.b[this.a[15] + this.w * 9 + this.L] + 1) / 2) {
-         if ((this.b[this.a[15] + this.w * 9 + this.L] & 1) == 0 && this.b[this.a[1] + 0 + this.a[606 + this.v]] < 0) {
-            byte[] var1 = this.a;
-            int var3 = 202 + this.v;
-            var1[var3] = (byte)(var1[var3] + 22);
-         }
-
-         if ((this.b[this.a[15] + this.w * 9 + this.L] & 1) == 0 && this.b[this.a[1] + 8 + this.a[606 + this.v]] < 0) {
-            byte[] var2 = this.a;
-            int var4 = 303 + this.v;
-            var2[var4] = (byte)(var2[var4] + 16);
-         }
-      }
-
-   }
-
-   private void F() {
-      this.a[202 + this.v] = 0;
-      this.a[303 + this.v] = 0;
-      this.a[3030 + this.v] = 0;
-      byte[] var10000 = this.a;
-      int var10001 = 1111 + this.v;
-      var10000[var10001] = (byte)(var10000[var10001] & 240);
-      if (this.a[6161 + this.v] <= 1 && this.b[this.a[39] + this.a[2828 + this.v]] == 1 && this.d(this.a[4444 + this.v])) {
-         this.a.h(this.v);
-         this.a[6161 + this.v] = 0;
-         this.a[3131 + this.v] = this.a[0 + this.v];
-         this.a[3232 + this.v] = this.a[101 + this.v];
-         this.a[1313 + this.v] = -2;
-         var10000 = this.a;
-         var10001 = 1818 + this.v;
-         var10000[var10001] = (byte)(var10000[var10001] + 2);
-         this.G();
-         this.a[4545 + this.v] = this.a[8993 + this.a[4444 + this.v]];
-         this.a[8993 + this.a[4444 + this.v]] = (byte)this.v;
-         this.b(this.a[4444 + this.v]);
-         if ((this.b[this.a[27] + this.a[2828 + this.v]] & 128) == 0) {
-            this.a(this.v, this.a[8627 + this.a[4444 + this.v]] == 0 ? this.b[this.a[57] + this.b[this.a[174] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]] : this.b[this.a[59] + this.b[this.a[177] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]]);
-         }
-
-         if (this.a[4646 + this.v] == this.b[this.a[138] + 156 + this.a[8749 + this.a[4444 + this.v]]] || this.b[this.a[138] + 156 + this.a[8749 + this.a[4444 + this.v]]] < 0 && this.a[8749 + this.a[4444 + this.v]] != 2 && this.a[8749 + this.a[4444 + this.v]] != 3 || this.a[8749 + this.a[4444 + this.v]] >= 12 || this.a[8627 + this.a[4444 + this.v]] != 0) {
-            if (this.b[this.a[42] + this.b[this.a[41] + this.b[this.a[16] + this.b[this.a[17] + 2] + this.a[8749 + this.a[4444 + this.v]]]]] == 0 && this.a[8627 + this.a[4444 + this.v]] == 0) {
-               this.a[6464 + this.v] = this.b[this.a[16] + this.b[this.a[17] + 2] + this.a[8749 + this.a[4444 + this.v]]];
-            }
-
-            this.a[6262 + this.v] = this.a[8383 + this.a[4444 + this.v]];
-            this.a[6363 + this.v] = this.a[8444 + this.a[4444 + this.v]];
-         }
-
-         if ((this.a[7979 + this.v] & 4) != 0 && (this.a[8627 + this.a[4444 + this.v]] != 0 || this.a[8749 + this.a[4444 + this.v]] != 8)) {
-            var10000 = this.a;
-            var10001 = 8871 + this.a[4444 + this.v];
-            var10000[var10001] = (byte)(var10000[var10001] | 2);
-         }
-
-         this.a[2929 + this.v] = this.a[8627 + this.a[4444 + this.v]] == 0 ? this.b[this.a[172] + this.b[this.a[174] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]] : this.b[this.a[175] + this.b[this.a[177] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]];
-      } else {
-         if (this.a[6161 + this.v] == 1) {
-            this.a[6161 + this.v] = 0;
-         }
-
-         if (this.a[8810 + this.a[4444 + this.v]] != this.v || this.a[8749 + this.a[4444 + this.v]] == 2 && this.a[8627 + this.a[4444 + this.v]] == 0) {
-            --this.a[8932 + this.a[4444 + this.v]];
-         }
-
-         this.a[1313 + this.v] = 0;
-         this.b[this.a[101 + this.v]][this.a[0 + this.v]] = (byte)this.v;
-         this.P();
-         this.Q();
-      }
-   }
-
-   private void G() {
-      this.x = this.a[8749 + this.a[4444 + this.v]];
-      this.v = this.a[8627 + this.a[4444 + this.v]] == 0 ? this.b[this.a[138] + 156 + this.x] : 0;
-      this.w = this.a[8932 + this.a[4444 + this.v]];
-
-      for(this.x = 0; this.x < 8; ++this.x) {
-         this.i[this.x] = 0;
-      }
-
-      for(this.x = this.a[8993 + this.a[4444 + this.v]]; this.x > 0; this.x = this.a[4545 + this.x]) {
-         this.i[this.a[8627 + this.a[4444 + this.v]] == 0 ? this.a[4646 + this.x] : this.b[this.a[93] + this.b[this.a[94] + this.x] + this.a[4646 + this.x]]] = (byte)this.x;
-      }
-
-      if (this.v >= 0 && this.i[0] == 0) {
-         if (this.a[8810 + this.a[4444 + this.v]] <= 0 || this.a[8810 + this.a[4444 + this.v]] == this.v) {
-            if (this.a[8810 + this.a[4444 + this.v]] == this.v) {
-               ++this.a[8932 + this.a[4444 + this.v]];
-            }
-
-            this.a[4646 + this.v] = this.v;
-            this.a[8810 + this.a[4444 + this.v]] = (byte)this.v;
+        }
+        catch (Exception exception) {
             return;
-         }
+        }
+    }
 
-         this.i[this.v] = this.a[8810 + this.a[4444 + this.v]];
-         if (this.a[4646 + this.i[this.v]] < 0 || this.a[4444 + this.i[this.v]] != this.a[4444 + this.v]) {
-            ++this.w;
-         }
-      }
+    private void void_s() {
+        this.var_f_a.var_c_a.b();
+        if ((this.var_f_a.var_int_c & 3) == 0) {
+            this.void_d();
+        }
+        if (this.var_f_a.var_boolean_L && (this.var_f_a.var_int_c & 0x3F) == 2) {
+            this.void_b();
+        }
+        if (this.var_f_a.var_int_c == this.var_byte_arr_b[this.var_short_arr_a[277] + this.var_f_a.var_byte_q] * (1000 / (1 + this.var_f_a.var_byte_b * 3))) {
+            this.var_short_arr_arr_a[1][8] = 5000;
+        }
+        if (this.var_f_a.var_int_c == this.var_byte_arr_b[this.var_short_arr_a[278] + this.var_f_a.var_byte_q] * (1000 / (1 + this.var_f_a.var_byte_b * 3))) {
+            this.var_short_arr_arr_a[1][9] = 5000;
+            this.var_short_arr_arr_a[1][10] = 5000;
+        }
+        if (this.var_byte_f == 2) {
+            this.var_int_F = 0;
+        }
+    }
 
-      this.a[4646 + this.v] = (byte)(this.a.a(16777215, (this.a[8627 + this.a[4444 + this.v]] == 0 ? this.b[this.a[138] + (this.a[9115 + this.a[4444 + this.v]] - 1) * 26 + this.x] : this.b[this.a[138] + 494 + this.x]) - this.w + 1) + 1);
-      if (this.x == 2 && this.i[0] == 0) {
-         this.a[4646 + this.v] = 0;
-      } else {
-         this.x = 0;
-
-         for(this.y = 0; this.x < (this.a[8627 + this.a[4444 + this.v]] == 0 ? this.b[this.a[138] + (this.a[9115 + this.a[4444 + this.v]] - 1) * 26 + this.x] : this.b[this.a[138] + 494 + this.x]); ++this.x) {
-            if (this.i[this.x] == 0) {
-               ++this.y;
+    private boolean boolean_a() {
+        if (this.var_byte_arr_a[1919 + this.var_int_v] < 0) {
+            int n = 3030 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+            if (this.var_byte_arr_a[3030 + this.var_int_v] >= this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF]) {
+                this.m(this.var_int_v);
             }
-
-            if (this.a[4646 + this.v] == this.y) {
-               this.a[4646 + this.v] = (byte)this.x;
-               break;
+            if (this.var_byte_arr_a[5959 + this.var_int_v] > 0) {
+                this.R();
             }
-         }
+            return true;
+        }
+        if (this.var_byte_f == 2 && this.var_int_u == 0 && (this.var_byte_arr_a[1717 + this.var_int_v] > 4 || this.var_byte_arr_a[1616 + this.var_int_v] > 4)) {
+            ++this.var_int_F;
+        }
+        this.var_int_B = this.var_byte_arr_b[this.var_short_arr_a[38] + this.var_byte_arr_a[2828 + this.var_int_v]];
+        if (this.var_int_B < 0) {
+            this.var_int_B = this.var_byte_arr_a[this.var_short_arr_b[-this.var_int_B] + this.var_int_v];
+        }
+        if ((this.var_byte_arr_a[8282 + this.var_int_v] & 0x80) != 0 && this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+            this.a(19, (int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], (byte)this.var_int_v);
+            return true;
+        }
+        if ((this.var_f_a.var_int_c & (this.var_byte_arr_a[1414 + this.var_int_v] < 12 ? 1 : (this.var_int_u == 0 ? 3 : 15))) == 0) {
+            int n = 6666 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+        }
+        if ((this.var_f_a.var_int_c & 3) == (this.var_int_v & 3) && !this.boolean_q()) {
+            return true;
+        }
+        if ((this.var_f_a.var_int_c & 0x1F) == (this.var_int_v & 0xF)) {
+            this.W();
+        }
+        if (this.var_byte_arr_a[3434 + this.var_int_v] < 1 && this.var_byte_arr_a[1414 + this.var_int_v] >= 12 && (this.var_f_a.var_int_c & 0x1F) == 0) {
+            this.V();
+        }
+        if ((this.var_byte_arr_a[7979 + this.var_int_v] & 4) != 0 && (this.var_f_a.var_int_c & 7) == (this.var_int_v & 7) && this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+            this.Y();
+        }
+        if ((this.var_f_a.var_int_c & 1) == 1 && (this.var_byte_arr_a[7979 + this.var_int_v] & 4) == 0) {
+            this.X();
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] <= 9 && this.var_byte_arr_a[2828 + this.var_int_v] != 2 && this.var_byte_arr_a[2828 + this.var_int_v] != 7) {
+            this.var_byte_K = 0;
+        }
+        int n = 5050 + this.var_int_v;
+        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+        if (this.var_byte_arr_a[202 + this.var_int_v] == 0 && this.var_byte_arr_a[303 + this.var_int_v] == 0) {
+            int n2 = 1111 + this.var_int_v;
+            this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] & 0xF0);
+        }
+        if (this.var_byte_arr_a[3333 + this.var_int_v] >= 11 && this.var_byte_arr_a[2929 + this.var_int_v] != 39 && this.var_byte_arr_a[2929 + this.var_int_v] != 104 && this.var_byte_arr_a[2929 + this.var_int_v] != 105) {
+            this.var_byte_arr_a[3333 + this.var_int_v] = -1;
+        }
+        return false;
+    }
 
-         if (this.a[8627 + this.a[4444 + this.v]] != 0) {
-            this.a[4646 + this.v] = this.b[this.a[95] + this.b[this.a[96] + this.x] + this.a[4646 + this.v]];
-         }
-
-      }
-   }
-
-   private void b(byte var1) {
-      this.a[8688 + var1] = 5;
-      if (this.u == 0 && this.a[8749 + var1] == 11) {
-         for(this.M = this.a[8993 + var1]; this.M > 0; this.M = this.a[4545 + this.M]) {
-            if (this.a[4949 + this.M] + 3 > (this.a[8688 + var1] & 15)) {
-               this.a[8688 + var1] = (byte)((this.a[8688 + var1] & 240) + this.a[4949 + this.M] + 3);
+    private void void_t() {
+        if (this.var_byte_arr_a[6161 + this.var_int_v] >= 2 && this.var_byte_arr_a[202 + this.var_int_v] == 0 && this.var_byte_arr_a[303 + this.var_int_v] == 0) {
+            this.var_boolean_c = this.var_byte_arr_a[6161 + this.var_int_v] == 2;
+            if (this.var_boolean_c) {
+                this.a((int)this.var_byte_arr_a[3131 + this.var_int_v], (int)this.var_byte_arr_a[3232 + this.var_int_v], true);
+                if (this.var_byte_l >= 0) {
+                    this.var_boolean_c = false;
+                }
+                if (this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]] == this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_m] || this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_m] == 0 && (this.var_f_a.var_boolean_N || this.var_byte_K < 50)) {
+                    this.var_boolean_c = false;
+                }
             }
-
-            if (this.a[7575 + this.M] > this.a[8688 + var1] >> 4) {
-               this.a[8688 + var1] = (byte)((this.a[8688 + var1] & 15) + (this.a[7575 + this.M] << 4));
+            if (this.var_int_u == 1 || this.var_byte_arr_a[505 + this.var_int_v] >= 10 || this.var_byte_arr_a[6161 + this.var_int_v] != 2 || this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_m] == 0) {
+                if (!this.a((byte)-1, this.var_boolean_c)) {
+                    if (this.var_byte_arr_a[6161 + this.var_int_v] == 4) {
+                        this.var_byte_arr_a[4444 + this.var_int_v] = (byte)(this.var_byte_arr_a[4747 + this.var_int_v] - (this.var_byte_arr_a[4747 + this.var_int_v] <= 100 ? 0 : 101));
+                        this.var_byte_arr_a[4747 + this.var_int_v] = this.var_byte_arr_a[4747 + this.var_int_v] <= 100 ? 0 : 99;
+                        this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_a[4747 + this.var_int_v]] + this.var_byte_arr_a[4444 + this.var_int_v]];
+                        this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_a[4747 + this.var_int_v] + 1] + this.var_byte_arr_a[4444 + this.var_int_v]];
+                        if (this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0) / 10 <= this.var_byte_arr_a[4949 + this.var_int_v]) {
+                            this.g(1);
+                            this.var_byte_arr_a[6161 + this.var_int_v] = 0;
+                        } else {
+                            this.void_a(this.var_int_v, (byte)87);
+                        }
+                    }
+                    this.var_byte_arr_a[808 + this.var_int_v] = 0;
+                    if (this.var_byte_arr_a[6161 + this.var_int_v] > 0) {
+                        this.g(this.var_byte_arr_a[6161 + this.var_int_v] == 2 ? 0 : 2);
+                        return;
+                    }
+                }
+            } else {
+                this.var_byte_arr_a[6161 + this.var_int_v] = 0;
+                this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+                this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+                this.var_byte_arr_a[4747 + this.var_int_v] = 0;
+                this.var_byte_arr_a[4444 + this.var_int_v] = 0;
+                this.Q();
+                this.a((byte)12, this.var_int_v, 0);
             }
-         }
+        }
+    }
 
-      }
-   }
-
-   final boolean a(int var1, int var2, int var3, int var4) {
-      byte var6 = 0;
-      byte var7 = 1;
-      byte[] var10 = new byte[2];
-      this.y = 0;
-
-      for(byte var9 = (byte)(this.u ^ 1); var6 < var2; var7 *= -1) {
-         ++var6;
-
-         for(byte var5 = 0; var5 < 2; ++var5) {
-            for(byte var8 = 0; var8 < var6; ++var8) {
-               var10[var5] += var7;
-               if (var3 + var10[0] >= 0 && var3 + var10[0] < this.a.c && var4 + var10[1] >= 0 && var4 + var10[1] < this.a.d) {
-                  this.B = this.b[var4 + var10[1]][var3 + var10[0]];
-                  if (var2 < 24) {
-                     this.C = (byte)(this.b[this.a[53] + (12 + var10[1]) * 25 + 12 + var10[0]] / 10);
-                     this.E = (byte)(this.b[this.a[53] + (12 + var10[1]) * 25 + 12 + var10[0]] % 10 + 4 & 7);
-                  }
-
-                  if (var1 > 4) {
-                     if (var1 == 6) {
-                        if (this.C <= 3) {
-                           if (-this.B > 0 && -this.B <= 30 && this.a[9601 + this.v] == 0) {
-                              if (this.a[8505 + -this.B] > 0 && this.a[8932 + -this.B] != 0) {
-                                 this.a((int)(var3 + var10[0]), (int)(var4 + var10[1]), (byte)this.B, (int)50);
-                              }
-                           } else if (this.B > 0 && this.B <= 100 && this.a[1919 + this.B] > 0 && (this.a[9601 + this.v] <= 0 || this.B > 50)) {
-                              this.a((int)(var3 + var10[0]), (int)(var4 + var10[1]), (byte)this.B, (int)50);
-                              if (this.B > 50) {
-                                 return true;
-                              }
-                           }
+    private boolean boolean_b() {
+        if (((this.var_f_a.var_int_c & 0x1F) == (this.var_int_v & 0x1F) || this.var_f_a.var_int_c == 0) && this.var_int_u == 0 && this.var_byte_arr_a[1414 + this.var_int_v] >= 12) {
+            this.A();
+        }
+        if (this.var_byte_arr_a[202 + this.var_int_v] == 0 && this.var_byte_arr_a[303 + this.var_int_v] == 0 && this.var_byte_arr_a[6161 + this.var_int_v] < 2) {
+            if (this.var_byte_arr_a[2828 + this.var_int_v] == 109) {
+                this.boolean_o();
+            }
+            if (this.var_byte_arr_a[5050 + this.var_int_v] >= this.var_byte_arr_a[1010 + this.var_int_v] - this.var_byte_arr_a[7777 + this.var_int_v] && ((this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) <= 7 || this.var_byte_arr_a[3030 + this.var_int_v] == 0)) {
+                if (this.var_byte_arr_a[1414 + this.var_int_v] >= 12 && this.boolean_m()) {
+                    this.var_byte_arr_a[3636 + this.var_int_v] = 0;
+                    return true;
+                }
+                if ((this.var_byte_arr_b[this.var_short_arr_a[31] + this.var_byte_arr_a[2828 + this.var_int_v]] == 13 && this.var_byte_arr_b[this.var_short_arr_a[33] + this.var_byte_arr_a[2828 + this.var_int_v]] == 13 || this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] >= 13 && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] <= 15) && (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_arr_a[2828 + this.var_int_v]] != 1 || this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) && this.var_byte_arr_a[2929 + this.var_int_v] != -109 && this.var_byte_arr_a[3131 + this.var_int_v] == this.var_byte_arr_a[0 + this.var_int_v] && this.var_byte_arr_a[3232 + this.var_int_v] == this.var_byte_arr_a[101 + this.var_int_v] || this.var_byte_arr_a[4444 + this.var_int_v] == -1) {
+                    if (this.var_byte_arr_a[4444 + this.var_int_v] == -1 && this.var_byte_arr_a[2828 + this.var_int_v] >= 10 && this.var_byte_arr_a[2828 + this.var_int_v] <= 16 && this.var_byte_arr_a[3636 + this.var_int_v] > 0) {
+                        this.an();
+                    } else {
+                        this.boolean_n();
+                    }
+                }
+                if (!((this.var_int_u != 0 || this.var_f_a.var_boolean_N || this.var_f_a.var_boolean_L && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x40) != 0) && (this.var_int_u != 1 || this.var_byte_Q >= 0) || this.var_byte_arr_a[1414 + this.var_int_v] < 12 || this.var_byte_arr_a[2828 + this.var_int_v] != 69 && (this.var_byte_arr_a[2828 + this.var_int_v] != 84 || this.var_byte_arr_a[3939 + this.var_int_v] != 69) || this.var_byte_arr_a[7777 + this.var_int_v] != 0 || this.var_byte_arr_a[6161 + this.var_int_v] != 0 || this.var_byte_arr_a[3131 + this.var_int_v] == this.var_byte_arr_a[6262 + this.var_int_v] && this.var_byte_arr_a[3232 + this.var_int_v] == this.var_byte_arr_a[6363 + this.var_int_v])) {
+                    this.a((int)this.var_byte_arr_a[6262 + this.var_int_v], (int)this.var_byte_arr_a[6363 + this.var_int_v], true);
+                    this.Q();
+                    if (this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_m] == this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]] || this.var_byte_m == 16 && this.var_byte_arr_a[6464 + this.var_int_v] == 12) {
+                        this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[6262 + this.var_int_v];
+                        this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[6363 + this.var_int_v];
+                        if (this.var_byte_arr_a[505 + this.var_int_v] >= 30) {
+                            this.g(1);
                         }
-                     } else if (var1 == 7) {
-                        if (this.B > var9 * 50 && this.B <= (var9 + 1) * 50) {
-                           if (this.a[1919 + this.B] > 0 && ((this.a[7979 + this.v] & 2) > 0 && 1 + (10 - this.a[7575 + this.v]) / 3 + this.a[7575 + this.B] / (this.a[7575 + this.v] - 3) >= this.C || (this.a[7979 + this.v] & 2) == 0 && this.a[4949 + this.B] >= this.C)) {
-                              byte[] var12 = this.a;
-                              int var13 = 7979 + this.v;
-                              var12[var13] = (byte)(var12[var13] & 254);
-                              return true;
-                           }
-                        } else if (-this.B > var9 * 30 && -this.B <= (var9 + 1) * 30) {
-                           if (this.a[8505 + -this.B] > 0 && this.a[8932 + -this.B] != 0 && var3 + var10[0] == this.a[8383 + -this.B] + this.b[this.a[138] + 104 + this.a[8749 + -this.B]] / 2 && var4 + var10[1] == this.a[8444 + -this.B] + this.b[this.a[138] + 130 + this.a[8749 + -this.B]] / 2 && ((this.a[7979 + this.v] & 2) > 0 && 1 + (10 - this.a[7575 + this.v]) / 3 + (this.a[8688 + -this.B] >> 4) / (this.a[7575 + this.v] - 3) >= this.C || (this.a[7979 + this.v] & 2) == 0 && (this.a[8688 + -this.B] & 15) >= this.C)) {
-                              byte[] var11 = this.a;
-                              int var10001 = 7979 + this.v;
-                              var11[var10001] = (byte)(var11[var10001] & 254);
-                              return true;
-                           }
-                        } else if (-this.B >= 111 + 6 * (this.u ^ 1) && -this.B < 111 + 6 * (this.u ^ 1) + 3 && this.a[7575 + this.v] >= 6 && this.C <= this.a[7575 + this.v] - 4) {
-                           byte[] var10000 = this.b[var4 + var10[1]];
-                           var10000[var3 + var10[0]] = (byte)(var10000[var3 + var10[0]] + (3 - this.u * 6));
-                           this.a.c(var3 + var10[0], var4 + var10[1], 1, 1);
-                           if (this.u == 0) {
-                              --this.R;
-                           }
+                    } else if (this.var_byte_arr_a[6464 + this.var_int_v] == 12 || this.var_byte_arr_a[6464 + this.var_int_v] == 16) {
+                        this.void_a(this.var_int_v, (byte)12);
+                        if (!this.boolean_b(false)) {
+                            this.void_a(this.var_int_v, (byte)60);
+                            this.var_byte_arr_a[6464 + this.var_int_v] = 12;
+                            this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[6262 + this.var_int_v];
+                            this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[6363 + this.var_int_v];
                         }
-                     } else if (var1 >= 8 && this.B >= (var1 == 9 ? 51 : 1) && this.B <= (var1 == 9 ? 100 : 50) && this.a[1919 + this.B] > 0 && this.a[1414 + this.B] >= 12) {
-                        this.a.p[6 + this.O] = this.B;
-                        ++this.O;
-                     }
-                  } else {
-                     if (var1 == 3) {
-                        if (this.B != 0 && this.B != this.c[0][this.ae] && this.B != this.c[1][this.ae] || var3 + var10[0] >= this.a.c - 1) {
-                           continue;
-                        }
+                    } else {
+                        this.var_byte_arr_a[4747 + this.var_int_v] = 0;
+                    }
+                }
+                this.var_byte_arr_a[5050 + this.var_int_v] = 0;
+            }
+            if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v || this.var_byte_arr_a[2828 + this.var_int_v] == 93 || this.var_byte_arr_a[2828 + this.var_int_v] == 92 || this.var_byte_arr_a[2828 + this.var_int_v] == 106) {
+                if (this.var_byte_arr_a[4444 + this.var_int_v] >= 0) {
+                    this.void_q();
+                } else if (this.var_byte_arr_a[4444 + this.var_int_v] >= -1) {
+                    if ((this.var_f_a.var_int_c & 0x3F) == (this.var_int_v & 0x3F)) {
+                        this.an();
+                    }
+                } else {
+                    this.N();
+                }
+            }
+            this.var_int_z = this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0);
+            if (this.var_byte_arr_a[5050 + this.var_int_v] == 0 && this.var_byte_arr_a[808 + this.var_int_v] <= this.var_byte_arr_a[707 + this.var_int_v] && this.var_int_z / 10 > this.var_int_B && this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+                this.void_p();
+            }
+        }
+        return false;
+    }
 
-                        this.B = this.b[var4 + var10[1]][var3 + var10[0] + 1];
-                        if (this.B != 0 && this.B != this.c[1][this.ae]) {
-                           continue;
-                        }
+    private void void_u() {
+        if (this.var_byte_arr_a[202 + this.var_int_v] != 0 || this.var_byte_arr_a[303 + this.var_int_v] != 0 || this.var_byte_arr_a[1313 + this.var_int_v] == -1 || this.var_int_z / 10 > this.var_int_B && this.var_byte_arr_a[808 + this.var_int_v] > 0) {
+            this.var_byte_arr_a[2929 + this.var_int_v] = this.byte_b(this.var_int_v);
+            this.var_int_E = 0;
+            if (this.boolean_c()) {
+                return;
+            }
+            if ((this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) <= 7 && this.var_int_E < 2) {
+                this.D();
+                if (this.var_byte_arr_a[202 + this.var_int_v] == 0 && this.var_byte_arr_a[303 + this.var_int_v] == 0 && this.var_byte_arr_a[4545 + this.var_int_v] <= -111 && this.var_byte_arr_a[4545 + this.var_int_v] >= -122) {
+                    this.var_byte_arr_a[2929 + this.var_int_v] = (byte)(-5 - (this.var_int_u ^ 1) * 3 * 2 - this.var_byte_arr_a[4545 + this.var_int_v]);
+                    this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+                    this.var_byte_arr_a[808 + this.var_int_v] = 0;
+                    this.var_byte_arr_a[1313 + this.var_int_v] = 1;
+                    this.var_f_a.c(this.var_byte_arr_a[0 + this.var_int_v], this.var_byte_arr_a[101 + this.var_int_v], 1, 1);
+                    if (this.var_int_u == 0) {
+                        this.var_byte_R = (byte)(this.var_byte_R - 1);
+                        return;
+                    }
+                }
+            }
+        } else if ((this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) <= 7) {
+            this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+            int n = 1111 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xF);
+            this.P();
+            this.var_byte_arr_a[808 + this.var_int_v] = 0;
+        }
+    }
 
-                        this.B = this.c[1 - (this.a[8282 + this.v] & 1)][this.ae];
-                        if (this.a[2828 + this.B] == 109) {
-                           this.a[3131 + this.B] = (byte)(var3 + var10[0] + 1 - (this.a[8282 + this.v] & 1));
-                           this.a[3232 + this.B] = (byte)(var4 + var10[1]);
-                        }
-                     } else if (var1 != 2 && var1 != 1) {
-                        if (var1 == 4) {
-                           if (this.a.b[var4 + var10[1]][var3 + var10[0]] < 95 || this.a.b[var4 + var10[1]][var3 + var10[0]] > 114 || this.B != 0) {
-                              continue;
-                           }
-                        } else if (!this.c(this.B)) {
-                           continue;
-                        }
-                     } else if (this.B != 0) {
-                        continue;
-                     }
+    private boolean boolean_c() {
+        if (this.var_byte_arr_a[202 + this.var_int_v] == 0 && this.var_byte_arr_a[303 + this.var_int_v] == 0 && this.var_byte_arr_a[1313 + this.var_int_v] != -1) {
+            try {
+                this.var_byte_arr_a[606 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[4] + (this.var_byte_arr_arr_arr_a[0][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]] - this.var_byte_arr_a[0 + this.var_int_v] + 1) * 3 + this.var_byte_arr_arr_arr_a[1][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]] - this.var_byte_arr_a[101 + this.var_int_v] + 1];
+            }
+            catch (Exception exception) {
+                this.N();
+                this.var_byte_arr_a[808 + this.var_int_v] = 0;
+                return true;
+            }
+            if (this.var_byte_arr_arr_b[this.var_byte_arr_arr_arr_a[1][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]]][this.var_byte_arr_arr_arr_a[0][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]]] != 0 && this.byte_a((int)this.var_byte_arr_arr_arr_a[0][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]], (int)this.var_byte_arr_arr_arr_a[1][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]], 0) != 0) {
+                if (!this.var_boolean_b && this.var_byte_y > 1) {
+                    if (this.var_byte_arr_a[2828 + this.var_int_v] == 0 || this.var_byte_arr_a[2828 + this.var_int_v] == 3) {
+                        int n = 2828 + this.var_int_v;
+                        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+                    }
+                    if (this.var_byte_arr_a[6161 + this.var_int_v] == 1) {
+                        this.var_byte_arr_a[6161 + this.var_int_v] = 0;
+                    }
+                }
+                this.void_p();
+                return true;
+            }
+            if (this.var_byte_arr_arr_b[this.var_byte_arr_arr_arr_a[1][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]]][this.var_byte_arr_arr_arr_a[0][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]]] > this.var_int_u * 50 && this.var_byte_arr_arr_b[this.var_byte_arr_arr_arr_a[1][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]]][this.var_byte_arr_arr_arr_a[0][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]]] <= (this.var_int_u + 1) * 50) {
+                this.void_a(this.var_byte_arr_arr_b[this.var_byte_arr_arr_arr_a[1][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]]][this.var_byte_arr_arr_arr_a[0][this.var_int_v][this.var_byte_arr_a[707 + this.var_int_v]]]);
+            } else {
+                this.var_byte_arr_a[4848 + this.var_int_v] = 0;
+            }
+            if (this.var_int_E == 0) {
+                this.var_int_C = this.var_byte_arr_a[0 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[1] + 0 + this.var_byte_arr_a[606 + this.var_int_v]];
+                this.var_int_D = this.var_byte_arr_a[101 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[606 + this.var_int_v]];
+                if (this.var_byte_arr_arr_b[this.var_int_D][this.var_int_C] != 0) {
+                    this.var_byte_arr_a[4545 + this.var_int_v] = -this.var_byte_arr_arr_b[this.var_int_D][this.var_int_C];
+                }
+                this.var_byte_arr_arr_b[this.var_int_D][this.var_int_C] = -128;
+            }
+            if ((this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) <= 7 && this.var_int_E < 2) {
+                int n = 707 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+            }
+        }
+        return false;
+    }
 
-                     this.a[this.b[var1 == 2 ? 112 : 31] + this.v] = (byte)(var3 + var10[0] + (var1 == 3 ? this.a[8282 + this.v] & 1 : 0));
-                     this.a[this.b[var1 == 2 ? 113 : 32] + this.v] = (byte)(var4 + var10[1]);
-                     if (var1 >= 1 && var1 <= 3 || this.v == 0) {
+    private void void_v() {
+        try {
+            this.var_boolean_d = false;
+            if (this.var_byte_arr_a[5959 + this.var_int_v] > 0 && this.var_byte_arr_a[3030 + this.var_int_v] == 0 && this.var_byte_arr_a[6565 + this.var_int_v] == 1 && (this.var_byte_arr_a[2828 + this.var_int_v] >= 5 && this.var_byte_arr_a[2828 + this.var_int_v] <= 9 || this.var_byte_arr_a[2828 + this.var_int_v] == 93 || this.var_byte_arr_a[2828 + this.var_int_v] == 92 || this.var_byte_arr_a[2828 + this.var_int_v] == 106) && (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) > 7 && this.var_byte_arr_a[5858 + this.var_int_v] + 2 < this.var_byte_arr_a[5959 + this.var_int_v]) {
+                this.var_byte_arr_a[2929 + this.var_int_v] = 34;
+                return;
+            }
+            this.w();
+            if (this.var_byte_arr_a[3030 + this.var_int_v] >= this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF]) {
+                this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+                if (this.var_byte_arr_a[4646 + this.var_int_v] < -1) {
+                    this.var_byte_arr_a[4646 + this.var_int_v] = -1;
+                }
+                if ((this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) > 7) {
+                    if (this.boolean_d()) {
+                        return;
+                    }
+                    if (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_arr_a[2828 + this.var_int_v]] == 2 && this.var_byte_arr_a[1313 + this.var_int_v] == -3) {
+                        if (this.var_byte_arr_a[2828 + this.var_int_v] == 59 && this.var_byte_arr_a[4646 + this.var_int_v] == 0 && (this.var_byte_arr_b[this.var_short_arr_a[138] + 156 + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] >= 0 || this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0)) {
+                            this.var_f_a.a((int)this.var_byte_arr_a[4444 + this.var_int_v], false);
+                        }
+                        this.x();
+                        return;
+                    }
+                    if (this.boolean_e()) {
+                        return;
+                    }
+                    this.var_boolean_d = true;
+                }
+            }
+            this.y();
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
+
+    private void w() {
+        int n = 3030 + this.var_int_v;
+        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+        if (this.var_byte_arr_b[this.var_short_arr_a[171] + (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF)] != -2) {
+            int n2 = 1111 + this.var_int_v;
+            this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] + 16);
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] <= 4 && this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[26] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_arr_a[4444 + this.var_int_v]] > 0 && this.var_f_a.var_byte_arr_arr_j[5][this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF] == this.var_byte_arr_a[3030 + this.var_int_v]) {
+            this.c(this.var_byte_arr_a[0 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[1] + this.var_byte_arr_a[606 + this.var_int_v]], this.var_byte_arr_a[101 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[606 + this.var_int_v]], this.var_f_a.var_byte_arr_arr_j[6][this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF]);
+        }
+        if (this.var_byte_arr_a[3030 + this.var_int_v] == this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF] - 1 && this.var_byte_arr_a[2929 + this.var_int_v] >= 35 && this.var_byte_arr_a[2929 + this.var_int_v] <= 36) {
+            if (this.var_byte_arr_a[2828 + this.var_int_v] >= 5 && this.var_byte_arr_a[2828 + this.var_int_v] <= 9) {
+                this.a(this.var_byte_arr_a[0 + this.var_int_v], this.var_byte_arr_a[101 + this.var_int_v], 0, (int)this.var_byte_arr_b[this.var_short_arr_a[123] + this.var_byte_arr_a[2828 + this.var_int_v] - 5]);
+            } else if (this.var_byte_arr_a[2828 + this.var_int_v] == 93 || this.var_byte_arr_a[2828 + this.var_int_v] == 92 || this.var_byte_arr_a[2828 + this.var_int_v] == 106) {
+                this.a(this.var_byte_arr_a[0 + this.var_int_v], this.var_byte_arr_a[101 + this.var_int_v], 24, 37);
+            }
+        }
+        if (this.var_byte_arr_a[2929 + this.var_int_v] == 22 && this.var_byte_arr_a[3030 + this.var_int_v] == 10 && this.var_byte_arr_a[2828 + this.var_int_v] <= 26) {
+            if (this.var_byte_arr_a[2828 + this.var_int_v] < 26) {
+                short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                sArray[23] = (short)(sArray[23] + this.var_byte_arr_a[3636 + this.var_int_v]);
+            }
+            this.J();
+        }
+        if (this.var_byte_arr_a[2929 + this.var_int_v] == -108 && this.var_byte_arr_a[3030 + this.var_int_v] == 6) {
+            this.var_byte_arr_a[6464 + this.var_int_v] = 69;
+        }
+        if (this.var_byte_arr_a[2929 + this.var_int_v] == -109 && this.var_byte_arr_a[3030 + this.var_int_v] == 1) {
+            this.var_byte_arr_a[6464 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[29] + this.var_byte_arr_a[2828 + this.var_int_v]];
+        }
+    }
+
+    private boolean boolean_d() {
+        if (this.var_byte_arr_a[2929 + this.var_int_v] == -107 || this.var_byte_arr_a[2929 + this.var_int_v] == -106) {
+            this.i(this.var_int_z);
+            return true;
+        }
+        if (this.var_byte_arr_a[2929 + this.var_int_v] == -95) {
+            this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[8384];
+            this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[8445];
+            this.g(3);
+            this.void_p();
+            return true;
+        }
+        if (this.var_int_z / 10 <= this.var_int_B && this.var_byte_arr_a[2828 + this.var_int_v] != 85 && this.var_byte_arr_a[2828 + this.var_int_v] != 80) {
+            if (this.var_byte_arr_a[6161 + this.var_int_v] == 1) {
+                this.var_byte_arr_a[6161 + this.var_int_v] = 0;
+            }
+            this.var_byte_arr_a[7777 + this.var_int_v] = 0;
+        }
+        if (this.var_byte_arr_a[2929 + this.var_int_v] >= 106 && this.var_byte_arr_a[2929 + this.var_int_v] <= 108) {
+            int n = 1919 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] - this.var_byte_arr_b[this.var_short_arr_a[106] + this.var_byte_arr_a[2929 + this.var_int_v] - 106]);
+            int n2 = this.var_int_v;
+            this.var_f_a.var_c_a.var_byte_arr_f[n2] = (byte)(this.var_f_a.var_c_a.var_byte_arr_f[n2] - this.var_byte_arr_b[this.var_short_arr_a[106] + this.var_byte_arr_a[2929 + this.var_int_v] - 106]);
+            this.P();
+            this.var_byte_arr_a[1313 + this.var_int_v] = 0;
+            this.var_byte_arr_a[4545 + this.var_int_v] = 0;
+            if (this.var_byte_arr_a[1919 + this.var_int_v] <= 0) {
+                this.a(19, (int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], (byte)this.var_int_v);
+            }
+            return true;
+        }
+        return false;
+    }
+
+    private void x() {
+        int n = 8932 + this.var_byte_arr_a[4444 + this.var_int_v];
+        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] - 1);
+        if (this.var_byte_arr_a[8993 + this.var_byte_arr_a[4444 + this.var_int_v]] == this.var_int_v) {
+            this.var_byte_arr_a[8993 + this.var_byte_arr_a[4444 + this.var_int_v]] = this.var_byte_arr_a[4545 + this.var_int_v];
+        } else {
+            this.var_int_x = this.var_byte_arr_a[8993 + this.var_byte_arr_a[4444 + this.var_int_v]];
+            while (this.var_byte_arr_a[4545 + this.var_int_x] != this.var_int_v && this.var_int_x != 0) {
+                this.var_int_x = this.var_byte_arr_a[4545 + this.var_int_x];
+            }
+            this.var_byte_arr_a[4545 + this.var_int_x] = this.var_byte_arr_a[4545 + this.var_int_v];
+        }
+        if ((this.var_byte_arr_a[8871 + this.var_byte_arr_a[4444 + this.var_int_v]] & 2) != 0 && (this.var_byte_arr_a[7979 + this.var_int_v] & 4) != 0) {
+            int n2 = 8871 + this.var_byte_arr_a[4444 + this.var_int_v];
+            this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] & 0xFD);
+            this.var_int_x = this.var_byte_arr_a[8993 + this.var_byte_arr_a[4444 + this.var_int_v]];
+            while (this.var_byte_arr_a[4545 + this.var_int_x] != 0) {
+                if ((this.var_byte_arr_a[7979 + this.var_int_x] & 4) != 0 && (this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0 || this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] != 8)) {
+                    int n3 = 8871 + this.var_byte_arr_a[4444 + this.var_int_v];
+                    this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] | 2);
+                    break;
+                }
+                this.var_int_x = this.var_byte_arr_a[4545 + this.var_int_x];
+            }
+        }
+        this.var_byte_arr_a[4646 + this.var_int_v] = -1;
+        this.var_byte_arr_a[4545 + this.var_int_v] = 0;
+        this.void_b(this.var_byte_arr_a[4444 + this.var_int_v]);
+        this.boolean_a(1, 127, this.var_byte_arr_a[8383 + this.var_byte_arr_a[4444 + this.var_int_v]] + this.var_byte_arr_b[this.var_short_arr_a[24] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]], this.var_byte_arr_a[8444 + this.var_byte_arr_a[4444 + this.var_int_v]] + this.var_byte_arr_b[this.var_short_arr_a[25] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]]);
+        this.var_byte_arr_a[0 + this.var_int_v] = this.var_byte_arr_a[3131 + this.var_int_v];
+        this.var_byte_arr_a[101 + this.var_int_v] = this.var_byte_arr_a[3232 + this.var_int_v];
+        this.var_byte_arr_a[202 + this.var_int_v] = 0;
+        this.var_byte_arr_a[303 + this.var_int_v] = 0;
+        this.var_byte_arr_a[606 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[111] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]];
+        this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] = (byte)this.var_int_v;
+        this.var_byte_arr_a[1313 + this.var_int_v] = 0;
+        int n4 = 1818 + this.var_int_v;
+        this.var_byte_arr_a[n4] = (byte)(this.var_byte_arr_a[n4] - 2);
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 59) {
+            this.var_byte_arr_a[6464 + this.var_int_v] = 69;
+            this.var_byte_arr_a[6262 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+            this.var_byte_arr_a[6363 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+        }
+        this.P();
+        int n5 = 1111 + this.var_int_v;
+        this.var_byte_arr_a[n5] = (byte)(this.var_byte_arr_a[n5] & 0xF0);
+        this.var_byte_arr_a[5050 + this.var_int_v] = this.var_byte_arr_a[1010 + this.var_int_v];
+        this.var_f_a.h(this.var_int_v);
+        if (this.var_byte_arr_a[2828 + this.var_int_v] >= 109) {
+            this.var_byte_arr_a[6161 + this.var_int_v] = 0;
+        }
+        if ((this.var_f_a.var_byte_p & 3) == 1 && this.var_byte_arr_a[7575 + this.var_int_v] > 3 && this.var_int_u == 0 && this.var_f_a.var_byte_q < 7) {
+            this.void_b(this.var_int_v, 0, 1);
+            this.var_f_a.void_b(61);
+            this.var_f_a.var_byte_p = (byte)(this.var_f_a.var_byte_p | 2);
+            return;
+        }
+        if (this.var_byte_arr_b[this.var_short_arr_a[160] + this.var_byte_arr_a[2828 + this.var_int_v]] == 69 && this.var_byte_arr_a[2828 + this.var_int_v] < 109) {
+            if (!this.boolean_n()) {
+                this.boolean_a(1, 21, b.int_b(this.var_byte_arr_a[0 + this.var_int_v] - 3 + this.var_f_a.int_a(255, 6), 0, this.var_f_a.var_short_c - 1), b.int_b(this.var_byte_arr_a[101 + this.var_int_v] - 3 + this.var_f_a.int_a(255, 6), 0, this.var_f_a.var_short_d - 1));
+                this.Q();
+            }
+            this.void_p();
+            this.var_int_z = this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0);
+            return;
+        }
+        if (this.var_byte_arr_a[6161 + this.var_int_v] < 2) {
+            this.N();
+        }
+    }
+
+    private boolean boolean_e() {
+        if (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_arr_a[2828 + this.var_int_v]] == 1 && this.var_byte_arr_a[4040 + this.var_int_v] > 0 && (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) >= 8 && this.var_byte_arr_a[3131 + this.var_int_v] == this.var_byte_arr_a[0 + this.var_int_v] && this.var_byte_arr_a[3232 + this.var_int_v] == this.var_byte_arr_a[101 + this.var_int_v]) {
+            if (this.boolean_c((int)this.var_byte_arr_a[4444 + this.var_int_v])) {
+                this.var_byte_arr_a[2929 + this.var_int_v] = this.byte_b(this.var_int_v);
+                if (this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]] != this.var_int_v || this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] == 2 && this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0) {
+                    int n = 8932 + this.var_byte_arr_a[4444 + this.var_int_v];
+                    this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+                }
+                this.var_byte_arr_a[606 + this.var_int_v] = this.var_byte_arr_a[4040 + this.var_int_v];
+                this.var_byte_arr_a[1313 + this.var_int_v] = -1;
+                this.var_byte_arr_a[4040 + this.var_int_v] = -100;
+                int n = 1111 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xF0);
+                this.var_byte_arr_a[4848 + this.var_int_v] = 0;
+            } else if (this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] == 0 && this.var_byte_arr_a[2828 + this.var_int_v] != 69 && this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] != 11) {
+                if (this.boolean_a((int)this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]])) {
+                    this.g(1);
+                }
+            } else if (this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] != 0 && (this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] < 13 || this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] > 15)) {
+                this.Q();
+            }
+            return true;
+        }
+        return (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) <= 7;
+    }
+
+    private void y() {
+        if (this.var_byte_arr_b[this.var_short_arr_a[171] + (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF)] != -2 && (this.var_byte_arr_a[1111 + this.var_int_v] & 0xFF) >> 4 >= this.var_byte_arr_b[this.var_short_arr_a[37] + this.var_byte_arr_a[2828 + this.var_int_v]] || this.var_byte_arr_b[this.var_short_arr_a[171] + (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF)] == -2 && this.var_boolean_d) {
+            int n = 1111 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xF);
+            if (this.var_byte_arr_a[2828 + this.var_int_v] == 84 && (this.var_byte_arr_a[3939 + this.var_int_v] >= 28 && this.var_byte_arr_a[3939 + this.var_int_v] <= 49 || this.var_byte_arr_a[3939 + this.var_int_v] == 99) && this.b(this.var_byte_arr_a[3939 + this.var_int_v] - 28, true, this.var_int_v)) {
+                this.var_byte_arr_a[404 + this.var_int_v] = 100;
+            }
+            if ((this.var_byte_arr_a[4444 + this.var_int_v] >= 0 && this.var_int_z / 10 <= this.var_int_B || this.var_byte_arr_a[2828 + this.var_int_v] == 85 || this.var_byte_arr_a[2828 + this.var_int_v] == 80) && this.boolean_i() && (this.var_byte_arr_a[2828 + this.var_int_v] != 69 || this.var_byte_arr_a[6161 + this.var_int_v] < 2)) {
+                if (this.var_byte_arr_a[3131 + this.var_int_v] != this.var_byte_arr_a[0 + this.var_int_v] || this.var_byte_arr_a[3232 + this.var_int_v] != this.var_byte_arr_a[101 + this.var_int_v]) {
+                    if (this.var_byte_arr_a[2828 + this.var_int_v] == 58 || this.var_byte_arr_a[2828 + this.var_int_v] == 57) {
+                        this.var_int_v = this.int_a(this.var_int_v);
+                    }
+                    this.var_int_z = this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0);
+                    this.void_p();
+                    if (this.var_byte_arr_a[808 + this.var_int_v] > 0) {
+                        return;
+                    }
+                } else if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) {
+                    return;
+                }
+                this.var_boolean_d = true;
+            }
+        }
+        if (this.var_boolean_d) {
+            this.i(this.var_int_z);
+        }
+    }
+
+    private void i(int n) {
+        if (this.boolean_f()) {
+            return;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 69 && this.var_byte_arr_a[202 + this.var_int_v] == 0 && this.var_byte_arr_a[303 + this.var_int_v] == 0) {
+            if (this.var_int_x < 3) {
+                this.var_byte_arr_a[606 + this.var_int_v] = (byte)(this.var_byte_arr_a[606 + this.var_int_v] + (this.var_int_x % 3 + 7) & 7);
+            } else if (this.var_int_x < 5 && n == 0 && (this.var_byte_arr_a[7979 + this.var_int_v] & 2) == 0) {
+                this.M();
+            }
+        } else if (this.var_byte_arr_a[2828 + this.var_int_v] == 84 && this.var_byte_arr_a[3939 + this.var_int_v] == 69 && this.var_int_x < 10) {
+            this.void_a(this.var_int_v, (byte)85);
+        }
+        if ((this.var_byte_arr_a[2828 + this.var_int_v] <= 9 || this.var_byte_arr_a[2828 + this.var_int_v] == 93 || this.var_byte_arr_a[2828 + this.var_int_v] == 92 || this.var_byte_arr_a[2828 + this.var_int_v] == 106) && n / 10 <= this.var_int_B) {
+            this.var_int_H = this.var_byte_arr_a[6565 + this.var_int_v];
+            this.var_int_y = this.var_f_a.int_a(0xFFFFFF, this.var_byte_arr_b[this.var_short_arr_a[18] + this.var_int_H] == 0 ? 2 + this.var_byte_arr_a[1717 + this.var_int_v] : 1);
+            this.var_byte_arr_a[2929 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[161] + this.var_byte_arr_b[this.var_short_arr_a[163] + this.var_int_H] + this.var_int_y];
+        } else if (this.boolean_b(n)) {
+            return;
+        }
+        if (this.var_byte_arr_b[this.var_short_arr_a[38] + this.var_int_H] != 0 && this.var_int_H != 105) {
+            this.var_byte_arr_a[606 + this.var_int_v] = (byte)(n % 10);
+        }
+        if (this.var_int_H >= 94 && this.var_int_H <= 97 && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x10) == 0) {
+            this.var_f_a.byte_a(this.var_int_v, (byte)1);
+            this.var_byte_arr_a[7979 + this.var_int_v] = (byte)(this.var_byte_arr_a[7979 + this.var_int_v] | 0x10);
+        }
+        if (this.var_byte_arr_a[2929 + this.var_int_v] == 39 || this.var_byte_arr_a[2929 + this.var_int_v] == 104 || this.var_byte_arr_a[2929 + this.var_int_v] == 105) {
+            this.var_byte_arr_a[3333 + this.var_int_v] = (byte)(11 + (this.var_int_x & 1));
+        }
+        if (this.var_int_H == 57 && this.var_int_u == 0 && this.var_f_a.var_byte_q < 7 && ((this.var_f_a.var_byte_p & 5) == 1 || (this.var_f_a.var_byte_p & 9) == 1 && this.var_byte_arr_a[9115 + this.var_byte_arr_a[4444 + this.var_int_v]] == 2)) {
+            this.void_b(this.var_int_v, 0, 1);
+            this.var_f_a.void_b((this.var_f_a.var_byte_p & 5) == 1 ? 60 : 62);
+            this.var_f_a.var_byte_p = (byte)(this.var_f_a.var_byte_p | ((this.var_f_a.var_byte_p & 5) == 1 ? 4 : 8));
+        }
+    }
+
+    private boolean boolean_f() {
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 78 && this.var_byte_arr_a[2929 + this.var_int_v] >= 113 && this.var_byte_arr_a[2929 + this.var_int_v] <= 116) {
+            return true;
+        }
+        if (this.var_byte_arr_a[4646 + this.var_int_v] >= 0 && this.var_byte_arr_a[1313 + this.var_int_v] == -2) {
+            this.var_f_a.void_d((int)this.var_byte_arr_a[4444 + this.var_int_v]);
+            if (this.var_byte_arr_a[2828 + this.var_int_v] == 51) {
+                this.var_int_C = this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]];
+                if (this.var_byte_arr_a[1313 + this.var_int_C] >= 0 && this.var_byte_arr_a[4646 + this.var_int_C] >= 0) {
+                    this.var_byte_arr_a[2828 + this.var_int_C] = 55;
+                } else {
+                    this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+                    this.var_byte_arr_a[2828 + this.var_int_v] = 87;
+                }
+            }
+            if (this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]]] != this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]]] && this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]]] > 0) {
+                int n;
+                this.var_byte_arr_a[2929 + this.var_int_v] = -109;
+                if (this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0) {
+                    this.var_f_a.getClass();
+                    n = 50;
+                } else if (this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] == 7) {
+                    this.var_f_a.getClass();
+                    n = 51;
+                } else {
+                    this.var_f_a.getClass();
+                    n = 1;
+                }
+                this.var_byte_arr_a[1313 + this.var_int_v] = n;
+                return true;
+            }
+            if (this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]] == this.var_int_v && (this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] >= 12 || this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0) && this.var_byte_arr_a[3636 + this.var_int_v] == 9) {
+                int n;
+                if (this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] >= 12) {
+                    this.var_byte_v = 0;
+                    while (this.var_byte_v < 10 && this.var_byte_arr_arr_f[0][this.var_byte_v] != this.var_byte_arr_a[4444 + this.var_int_v]) {
+                        this.var_byte_v = (byte)(this.var_byte_v + 1);
+                    }
+                    byte[] byArray = this.var_byte_arr_arr_f[1];
+                    byte by = this.var_byte_v;
+                    byArray[by] = (byte)(byArray[by] + 1);
+                } else {
+                    this.var_byte_v = 0;
+                    while (this.var_byte_v < 20 && this.var_byte_arr_arr_g[0][this.var_byte_v] != this.var_byte_arr_a[4444 + this.var_int_v]) {
+                        this.var_byte_v = (byte)(this.var_byte_v + 1);
+                    }
+                    byte[] byArray = this.var_byte_arr_arr_g[2];
+                    byte by = this.var_byte_v;
+                    byArray[by] = (byte)(byArray[by] * -1);
+                }
+                this.var_byte_arr_a[3636 + this.var_int_v] = 0;
+                this.var_byte_arr_a[3535 + this.var_int_v] = 0;
+                if (this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0) {
+                    this.var_f_a.getClass();
+                    n = 50;
+                } else {
+                    this.var_f_a.getClass();
+                    n = 1;
+                }
+                this.var_byte_arr_a[1313 + this.var_int_v] = n;
+                this.var_byte_arr_a[2929 + this.var_int_v] = -102;
+                return true;
+            }
+        }
+        this.var_int_x = this.var_f_a.int_a(0xFFFFFF, 100);
+        return false;
+    }
+
+    private boolean boolean_b(int n) {
+        if (this.var_byte_arr_a[4444 + this.var_int_v] >= 0 && n / 10 <= this.var_int_B && (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_arr_a[2828 + this.var_int_v]] != 1 || this.var_byte_arr_a[4646 + this.var_int_v] >= 0) || this.var_byte_arr_a[2828 + this.var_int_v] == 105 || this.var_byte_arr_a[2828 + this.var_int_v] == 85) {
+            this.var_byte_arr_a[4848 + this.var_int_v] = 0;
+            this.var_int_H = this.var_byte_arr_a[2828 + this.var_int_v];
+        } else {
+            this.var_int_H = this.var_byte_arr_a[1414 + this.var_int_v] >= 12 ? 69 : 17;
+        }
+        if (this.var_int_H == 13) {
+            if ((this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) < 141) {
+                this.var_byte_arr_a[2929 + this.var_int_v] = -111;
+                this.var_byte_arr_a[606 + this.var_int_v] = (byte)(this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v] + 1] <= -61 && this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v] + 1] >= -110 ? 0 : 4);
+                return true;
+            }
+            if (this.var_byte_arr_a[2929 + this.var_int_v] == -110) {
+                return true;
+            }
+        }
+        if ((this.var_byte_arr_a[2929 + this.var_int_v] == -101 || this.var_byte_arr_a[2929 + this.var_int_v] == -100) && this.var_int_x > 20) {
+            this.z();
+        } else if (this.var_int_H == 69 && (this.var_byte_arr_a[7979 + this.var_int_v] & 2) == 0 && this.var_int_x > 98 && this.boolean_g()) {
+            return true;
+        }
+        this.var_int_y = this.var_int_H == 72 ? this.var_byte_arr_b[this.var_short_arr_a[158] + this.var_byte_arr_b[this.var_short_arr_a[77] + this.var_byte_arr_a[6565 + this.var_int_v]]] : (this.var_int_H == 69 && (this.var_byte_arr_a[7979 + this.var_int_v] & 2) > 0 ? 6 : (!(this.var_int_H != 69 && this.var_int_H != 109 && this.var_int_H != 60 && this.var_int_H != 51 && this.var_int_H != 87 || this.var_byte_arr_a[3535 + this.var_int_v] == 0 && this.var_byte_arr_a[6565 + this.var_int_v] != 1) ? (this.var_int_H == 60 ? 1 : (this.var_int_H == 51 || this.var_int_H == 87 ? 2 : 4)) : (this.var_int_H == 83 || this.var_int_H == 85 || this.var_int_H == 105 ? this.var_byte_arr_a[1313 + this.var_int_v] : (this.var_int_H == 84 ? this.var_byte_arr_b[this.var_short_arr_a[167] + this.var_byte_arr_a[1313 + this.var_int_v]] : 0))));
+        this.var_int_y += this.var_byte_arr_b[this.var_short_arr_a[166] + this.var_int_H] & 0xFF;
+        while (this.var_int_y < (this.var_byte_arr_b[this.var_short_arr_a[166] + this.var_int_H + 1] & 0xFF)) {
+            if (this.var_byte_arr_b[this.var_short_arr_a[165] + this.var_int_y] > this.var_int_x) {
+                byte by;
+                this.var_byte_arr_a[2929 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[164] + this.var_int_y];
+                if (this.var_byte_arr_a[4646 + this.var_int_v] >= 0 && this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] == 2 && this.var_byte_arr_a[1313 + this.var_int_v] > 0) break;
+                if ((this.var_byte_arr_b[this.var_short_arr_a[171] + (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF)] & 0xFE) != 254 && this.var_int_x >= 85) {
+                    this.var_byte_arr_a[2929 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[171] + (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF)];
+                }
+                if (this.var_byte_arr_a[4646 + this.var_int_v] < 0) break;
+                if ((this.var_byte_arr_a[2828 + this.var_int_v] == this.var_byte_arr_b[this.var_short_arr_a[58] + this.var_byte_arr_b[this.var_short_arr_a[174] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]] || this.var_byte_arr_a[2828 + this.var_int_v] == 53 || this.var_byte_arr_a[2828 + this.var_int_v] == 111 || this.var_byte_arr_a[4646 + this.var_int_v] > 0 && this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] < 12) && this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0) {
+                    by = (byte)(this.var_int_y - (this.var_byte_arr_b[this.var_short_arr_a[166] + this.var_int_H] & 0xFF));
+                } else {
+                    this.var_f_a.getClass();
+                    by = 50;
+                }
+                this.var_byte_arr_a[1313 + this.var_int_v] = by;
+                break;
+            }
+            ++this.var_int_y;
+        }
+        return false;
+    }
+
+    private boolean boolean_g() {
+        this.var_int_C = this.var_byte_arr_a[0 + this.var_int_v] - 1;
+        while (this.var_int_C < this.var_byte_arr_a[0 + this.var_int_v] + 2) {
+            this.var_int_D = this.var_byte_arr_a[101 + this.var_int_v] - 1;
+            while (this.var_int_D < this.var_byte_arr_a[101 + this.var_int_v] + 2) {
+                if (this.var_int_C > 0 && this.var_int_C < this.var_f_a.var_short_c - 1 && this.var_int_D > 0 && this.var_int_D < this.var_f_a.var_short_d - 1) {
+                    this.var_int_y = this.var_byte_arr_arr_b[this.var_int_D][this.var_int_C];
+                    if (this.var_int_y > this.var_int_u * 50 && this.var_int_y <= (this.var_int_u + 1) * 50 && (this.var_byte_arr_a[2929 + this.var_int_y] == 8 || this.var_byte_arr_a[2929 + this.var_int_y] == 9 || this.var_byte_arr_a[2929 + this.var_int_y] >= 15 && this.var_byte_arr_a[2929 + this.var_int_y] <= 18)) {
+                        this.var_byte_arr_a[2929 + this.var_int_v] = this.var_byte_arr_a[3535 + this.var_int_v] == 0 && this.var_byte_arr_a[6565 + this.var_int_v] != 1 ? -101 : -100;
+                        this.var_byte_arr_a[606 + this.var_int_v] = (byte)(this.var_byte_arr_b[this.var_short_arr_a[53] + (12 + this.var_int_D - this.var_byte_arr_a[101 + this.var_int_v]) * 25 + 12 + this.var_int_C - this.var_byte_arr_a[0 + this.var_int_v]] % 10);
+                        this.var_byte_arr_a[606 + this.var_int_y] = (byte)(this.var_byte_arr_a[606 + this.var_int_v] + 4 & 7);
+                        this.var_byte_arr_a[4646 + this.var_int_v] = (byte)(-92 - this.var_byte_arr_b[this.var_short_arr_a[99] + 8 + this.var_byte_arr_a[606 + this.var_int_v]]);
                         return true;
-                     }
+                    }
+                }
+                ++this.var_int_D;
+            }
+            this.var_int_C += 2;
+        }
+        return false;
+    }
 
-                     this.a[4444 + this.v] = -1;
-                     this.o();
-                     if (this.a[808 + this.v] > 0 || this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0) / 10 <= this.B) {
-                        if (this.a[6161 + this.v] > 0 || this.a[2828 + this.v] == 10 || this.a[2828 + this.v] == 13 || this.a[2828 + this.v] == 15) {
-                           this.a[6262 + this.v] = this.a[3131 + this.v];
-                           this.a[6363 + this.v] = this.a[3232 + this.v];
+    private void z() {
+        this.var_int_y = this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[606 + this.var_int_v]]][this.var_byte_arr_a[0 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[1] + this.var_byte_arr_a[606 + this.var_int_v]]];
+        if (this.var_int_y > this.var_int_u * 50 && this.var_int_y <= (this.var_int_u + 1) * 50 && (this.var_byte_arr_a[2929 + this.var_int_y] == 8 || this.var_byte_arr_a[2929 + this.var_int_y] == 9 || this.var_byte_arr_a[2929 + this.var_int_y] >= 15 && this.var_byte_arr_a[2929 + this.var_int_y] <= 18)) {
+            this.var_byte_arr_a[2929 + this.var_int_y] = this.var_byte_arr_a[3535 + this.var_int_y] == 0 && this.var_byte_arr_a[6565 + this.var_int_y] != 1 ? -101 : -100;
+            this.var_byte_arr_a[606 + this.var_int_y] = (byte)(this.var_byte_arr_a[606 + this.var_int_v] + 4 & 7);
+            this.var_byte_arr_a[3030 + this.var_int_y] = (byte)(this.var_int_y < this.var_int_v ? 0 : -1);
+            this.var_byte_arr_a[4646 + this.var_int_y] = (byte)(-92 - this.var_byte_arr_b[this.var_short_arr_a[99] + 8 + this.var_byte_arr_a[606 + this.var_int_y]]);
+        }
+    }
+
+    private boolean boolean_c(int n) {
+        if (!this.boolean_d(n)) {
+            this.Q();
+            return false;
+        }
+        byte by = this.var_byte_s = this.var_byte_arr_a[8627 + n] == 0 ? this.var_byte_arr_b[this.var_short_arr_a[138] + (this.var_byte_arr_a[9115 + n] - 1) * 26 + this.var_byte_arr_a[8749 + n]] : this.var_byte_arr_b[this.var_short_arr_a[138] + 494 + this.var_byte_arr_a[8749 + n]];
+        if (!(this.var_byte_arr_b[this.var_short_arr_a[138] + 156 + this.var_byte_arr_a[8749 + n]] <= -1 && this.var_byte_arr_a[8627 + n] == 0 || this.var_byte_arr_a[8810 + n] <= 0 || this.var_byte_arr_a[8810 + n] == this.var_int_v || this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_byte_arr_a[8810 + n]]][this.var_byte_arr_a[0 + this.var_byte_arr_a[8810 + n]]] != this.var_byte_arr_a[8810 + n] && this.var_byte_arr_a[4444 + this.var_byte_arr_a[8810 + n]] == n)) {
+            this.var_byte_s = (byte)(this.var_byte_s - 1);
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 51) {
+            return this.var_byte_arr_a[8810 + n] >= 1 && this.var_byte_arr_a[2828 + this.var_byte_arr_a[8810 + n]] == 57 && this.var_byte_arr_a[1313 + this.var_byte_arr_a[8810 + n]] >= 1 && this.var_byte_arr_a[8932 + n] == 1 && this.var_byte_arr_a[9237 + n] == 0;
+        }
+        return this.var_byte_s > this.var_byte_arr_a[8932 + n];
+    }
+
+    final byte byte_a(int n) {
+        byte by = this.var_byte_arr_a[8932 + n];
+        if (!(this.var_byte_arr_b[this.var_short_arr_a[138] + 156 + this.var_byte_arr_a[8749 + n]] <= -1 && this.var_byte_arr_a[8627 + n] == 0 || this.var_byte_arr_a[8810 + n] <= 0 || this.var_byte_arr_a[4646 + this.var_byte_arr_a[8810 + n]] >= 0 && this.var_byte_arr_a[4444 + this.var_byte_arr_a[8810 + n]] == n)) {
+            by = (byte)(by + 1);
+        }
+        by = (byte)(by + (b.int_b((this.var_byte_arr_a[8627 + n] == 0 ? (this.var_byte_arr_a[8749 + n] != 3 ? this.var_byte_arr_b[this.var_short_arr_a[138] + (this.var_byte_arr_a[9115 + n] - 1) * 26 + this.var_byte_arr_a[8749 + n]] : (byte)1) : this.var_byte_arr_b[this.var_short_arr_a[138] + 494 + this.var_byte_arr_a[8749 + n]]) - by, 0, 7) << 4));
+        return by;
+    }
+
+    private boolean boolean_d(int n) {
+        if (this.var_byte_arr_a[8749 + n] >= 12 && this.var_byte_arr_a[8505 + n] >= this.var_byte_arr_b[this.var_short_arr_a[138] + 182 + this.var_byte_arr_a[9237 + n]]) {
+            return false;
+        }
+        if (this.var_byte_arr_a[8505 + n] <= 0) {
+            return false;
+        }
+        this.a((int)this.var_byte_arr_a[8383 + n], (int)this.var_byte_arr_a[8444 + n], true);
+        return this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_m] == this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]];
+    }
+
+    private boolean a(byte by, boolean bl) {
+        if (this.var_byte_arr_a[4646 + this.var_int_v] >= 0 && (this.var_byte_arr_a[2929 + this.var_int_v] == this.var_byte_arr_b[this.var_short_arr_a[173] + this.var_byte_arr_b[this.var_short_arr_a[174] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]] || this.var_byte_arr_a[2929 + this.var_int_v] == this.var_byte_arr_b[this.var_short_arr_a[176] + this.var_byte_arr_b[this.var_short_arr_a[177] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]])) {
+            return true;
+        }
+        if (!(this.var_byte_arr_a[2828 + this.var_int_v] == 79 || this.var_byte_arr_a[2828 + this.var_int_v] == 80 || this.var_byte_arr_a[2828 + this.var_int_v] >= 83 && this.var_byte_arr_a[2828 + this.var_int_v] <= 85 || bl && this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]]] != 0 || this.var_byte_arr_a[2929 + this.var_int_v] == -108 && this.var_byte_arr_a[3030 + this.var_int_v] != this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF] - 1)) {
+            return false;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 83 || this.var_byte_arr_a[2828 + this.var_int_v] == 84) {
+            this.void_a(this.var_int_v, (byte)85);
+        } else if (this.var_byte_arr_a[2828 + this.var_int_v] == 79) {
+            this.void_a(this.var_int_v, (byte)80);
+        } else {
+            if (bl && this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]]] > 0 && this.var_byte_arr_a[2929 + this.var_int_v] != -108) {
+                this.var_byte_arr_a[808 + this.var_int_v] = 0;
+                this.var_byte_arr_a[2929 + this.var_int_v] = -108;
+                this.var_byte_arr_a[3030 + this.var_int_v] = by;
+                if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) {
+                    int n;
+                    if (this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0) {
+                        this.var_f_a.getClass();
+                        n = 50;
+                    } else if (this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] == 7) {
+                        this.var_f_a.getClass();
+                        n = 51;
+                    } else {
+                        this.var_f_a.getClass();
+                        n = 1;
+                    }
+                    this.var_byte_arr_a[1313 + this.var_int_v] = n;
+                }
+                return true;
+            }
+            return true;
+        }
+        this.i(0);
+        this.var_byte_arr_a[3030 + this.var_int_v] = by;
+        return true;
+    }
+
+    private boolean boolean_h() {
+        if ((this.var_f_a.var_int_c & 7) == (this.var_int_v & 7)) {
+            this.var_byte_arr_a[7979 + this.var_int_v] = (byte)(this.var_byte_arr_a[7979 + this.var_int_v] | 1);
+            this.boolean_a(7, 17, (int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v]);
+            if (this.var_int_u == 0) {
+                this.var_byte_B = 0;
+                while (this.var_byte_B < 5) {
+                    if (this.var_f_a.var_byte_arr_arr_arr_c[1][this.var_byte_B][2] >= 0 && this.var_f_a.var_byte_arr_arr_arr_c[1][this.var_byte_B][3] != 1) {
+                        this.var_byte_z = (byte)(this.var_f_a.var_byte_arr_arr_arr_c[1][this.var_byte_B][0] - this.var_byte_arr_a[0 + this.var_int_v]);
+                        this.var_byte_A = (byte)(this.var_f_a.var_byte_arr_arr_arr_c[1][this.var_byte_B][1] - this.var_byte_arr_a[101 + this.var_int_v]);
+                        if (this.var_byte_arr_b[this.var_short_arr_a[53] + (this.var_byte_A > -10 && this.var_byte_A < 10 ? 12 + this.var_byte_A : 0) * 25 + (this.var_byte_z > -10 && this.var_byte_z < 10 ? 12 + this.var_byte_z : 0)] / 10 <= this.var_byte_arr_a[7575 + this.var_int_v] - 3) {
+                            this.var_f_a.var_byte_arr_arr_arr_c[1][this.var_byte_B][3] = 1;
                         }
+                    }
+                    this.var_byte_B = (byte)(this.var_byte_B + 1);
+                }
+            }
+        }
+        if (this.var_byte_arr_a[2929 + this.var_int_v] == -106 || this.var_byte_arr_a[2929 + this.var_int_v] == -107) {
+            int n = 3030 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+            if (this.var_byte_arr_a[3030 + this.var_int_v] < this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF]) {
+                return true;
+            }
+            if (this.var_byte_arr_a[2929 + this.var_int_v] == -107) {
+                this.var_byte_arr_a[7979 + this.var_int_v] = (byte)(this.var_byte_arr_a[7979 + this.var_int_v] | 2);
+            }
+            return false;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 69 && this.var_byte_arr_a[6464 + this.var_int_v] == 69 && this.var_byte_arr_a[7777 + this.var_int_v] == 0 && (this.var_byte_arr_a[7979 + this.var_int_v] & 3) == 1) {
+            this.var_byte_arr_a[2929 + this.var_int_v] = -107;
+            this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+            return true;
+        }
+        if ((this.var_byte_arr_a[7979 + this.var_int_v] & 2) != 0 && (this.var_byte_arr_a[2828 + this.var_int_v] != 69 && this.var_byte_arr_a[2828 + this.var_int_v] != 105 || (this.var_byte_arr_a[7979 + this.var_int_v] & 1) == 0 || this.var_byte_arr_a[7777 + this.var_int_v] > 0)) {
+            this.var_byte_arr_a[2929 + this.var_int_v] = -106;
+            this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+            this.var_byte_arr_a[7979 + this.var_int_v] = (byte)(this.var_byte_arr_a[7979 + this.var_int_v] & 0xFD);
+            return true;
+        }
+        return false;
+    }
 
+    private void A() {
+        this.var_byte_arr_a[2222 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]];
+        this.var_int_I = 0;
+        while (this.var_int_I < 4) {
+            this.var_byte_arr_a[this.var_short_arr_b[23 + this.var_int_I] + this.var_int_v] = (byte)(9 + (this.var_int_I >> 1));
+            ++this.var_int_I;
+        }
+        this.var_int_I = 2;
+        while (this.var_int_I >= 0) {
+            this.var_int_J = 25;
+            while (this.var_int_J <= 26) {
+                if (this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[107] + this.var_byte_arr_a[this.var_short_arr_b[this.var_int_J] + this.var_int_v]]] + this.var_int_v] <= this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[107] + this.var_int_I]] + this.var_int_v]) {
+                    this.var_int_K = 26;
+                    while (this.var_int_K > this.var_int_J) {
+                        this.var_byte_arr_a[this.var_short_arr_b[this.var_int_K] + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_int_K - 1] + this.var_int_v];
+                        --this.var_int_K;
+                    }
+                    this.var_byte_arr_a[this.var_short_arr_b[this.var_int_J] + this.var_int_v] = (byte)this.var_int_I;
+                    break;
+                }
+                ++this.var_int_J;
+            }
+            --this.var_int_I;
+        }
+        this.var_byte_arr_a[1818 + this.var_int_v] = (byte)b.int_b(this.var_byte_arr_a[1818 + this.var_int_v], 3 + this.var_byte_arr_a[1616 + this.var_int_v] / 2, 7);
+        this.var_byte_arr_a[4949 + this.var_int_v] = (byte)b.int_b(this.var_byte_arr_a[4949 + this.var_int_v], this.var_byte_arr_a[1818 + this.var_int_v] + 1, 9);
+        this.var_int_I = 3;
+        while (this.var_int_I < 9) {
+            this.var_int_J = 23;
+            while (this.var_int_J <= 24) {
+                if (this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[107] + this.var_byte_arr_a[this.var_short_arr_b[this.var_int_J] + this.var_int_v]]] + this.var_int_v] < this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[107] + this.var_int_I]] + this.var_int_v]) {
+                    if (this.var_int_I == this.var_byte_arr_a[2525 + this.var_int_v] || this.var_int_I == this.var_byte_arr_a[2626 + this.var_int_v] || this.var_byte_arr_b[this.var_short_arr_a[108] + this.var_int_I] == (this.var_byte_arr_a[2222 + this.var_int_v] < 8 && this.var_byte_arr_a[2222 + this.var_int_v] > 0 ? (byte)7 : this.var_byte_arr_a[2222 + this.var_int_v])) break;
+                    this.var_int_K = 24;
+                    while (this.var_int_K > this.var_int_J) {
+                        this.var_byte_arr_a[this.var_short_arr_b[this.var_int_K] + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_int_K - 1] + this.var_int_v];
+                        --this.var_int_K;
+                    }
+                    this.var_byte_arr_a[this.var_short_arr_b[this.var_int_J] + this.var_int_v] = (byte)this.var_int_I;
+                    break;
+                }
+                ++this.var_int_J;
+            }
+            ++this.var_int_I;
+        }
+        this.var_int_J = 23;
+        while (this.var_int_J <= 26) {
+            this.var_byte_arr_a[this.var_short_arr_b[this.var_int_J] + this.var_int_v] = this.var_byte_arr_a[this.var_short_arr_b[this.var_int_J] + this.var_int_v] > 8 ? -1 : this.var_byte_arr_b[this.var_short_arr_a[108] + this.var_byte_arr_a[this.var_short_arr_b[this.var_int_J] + this.var_int_v]];
+            ++this.var_int_J;
+        }
+    }
+
+    private void B() {
+        if (this.var_byte_arr_a[2929 + this.var_int_v] == 39 || this.var_byte_arr_a[2929 + this.var_int_v] == 104 || this.var_byte_arr_a[2929 + this.var_int_v] == 105) {
+            return;
+        }
+        if (this.var_byte_arr_a[3333 + this.var_int_v] >= 0) {
+            this.var_byte_arr_a[3333 + this.var_int_v] = (byte)(-2 - this.var_f_a.int_a(255, 4));
+        } else if (this.var_byte_arr_a[3333 + this.var_int_v] < -1) {
+            int n = 3333 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+        }
+        if (this.var_byte_arr_a[3333 + this.var_int_v] < -1 || this.var_byte_arr_a[2828 + this.var_int_v] <= 9) {
+            return;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] >= 109 && this.var_byte_arr_a[2828 + this.var_int_v] <= 111) {
+            this.var_byte_arr_a[3333 + this.var_int_v] = 1;
+            return;
+        }
+        this.var_int_I = this.var_f_a.int_a(0xFFFFFF, 22);
+        if (this.var_int_I < 11 && this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[56] + this.var_int_I]] + this.var_int_v] >= this.var_byte_arr_b[this.var_short_arr_a[56] + 11 + this.var_int_I] && this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[56] + this.var_int_I]] + this.var_int_v] <= this.var_byte_arr_b[this.var_short_arr_a[56] + 22 + this.var_int_I] && this.var_f_a.int_a(0xFFFFFF, 100) < this.var_byte_arr_b[this.var_short_arr_a[56] + 33 + this.var_int_I]) {
+            this.var_byte_arr_a[3333 + this.var_int_v] = (byte)this.var_int_I;
+        }
+        if (this.var_byte_arr_a[3434 + this.var_int_v] < 1 && this.var_byte_arr_a[505 + this.var_int_v] < 10) {
+            this.var_byte_arr_a[3333 + this.var_int_v] = 9;
+        }
+        if (this.var_byte_arr_a[2020 + this.var_int_v] == 0) {
+            this.var_byte_arr_a[3333 + this.var_int_v] = 0;
+        }
+        if (this.var_byte_arr_a[2121 + this.var_int_v] == 0) {
+            this.var_byte_arr_a[3333 + this.var_int_v] = 2;
+        }
+    }
+
+    private void C() {
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 78 && this.var_byte_arr_a[2929 + this.var_int_v] >= 113 && this.var_byte_arr_a[2929 + this.var_int_v] <= 116) {
+            return;
+        }
+        if (this.var_byte_arr_b[this.var_short_arr_a[40] + this.var_byte_arr_a[2828 + this.var_int_v]] != -1) {
+            if (this.var_byte_arr_a[3535 + this.var_int_v] != this.var_byte_arr_b[this.var_short_arr_a[40] + this.var_byte_arr_a[2828 + this.var_int_v]]) {
+                this.var_byte_arr_a[3636 + this.var_int_v] = 0;
+                this.var_byte_arr_a[3535 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[40] + this.var_byte_arr_a[2828 + this.var_int_v]];
+                return;
+            }
+        } else if (this.var_byte_arr_a[3636 + this.var_int_v] == 0) {
+            this.var_byte_arr_a[3535 + this.var_int_v] = 0;
+        }
+    }
+
+    private void void_a(byte by) {
+        this.var_byte_u = (byte)this.var_int_v;
+        this.var_int_v = by;
+        if (!this.a((byte)(by < this.var_byte_u ? 0 : -1), false)) {
+            this.var_byte_arr_a[808 + by] = 0;
+            this.var_byte_t = this.var_byte_arr_a[0 + by];
+            this.var_byte_arr_a[0 + by] = this.var_byte_arr_a[0 + this.var_byte_u];
+            this.var_byte_arr_a[0 + this.var_byte_u] = this.var_byte_t;
+            this.var_byte_t = this.var_byte_arr_a[101 + by];
+            this.var_byte_arr_a[101 + by] = this.var_byte_arr_a[101 + this.var_byte_u];
+            this.var_byte_arr_a[101 + this.var_byte_u] = this.var_byte_t;
+            if (this.var_byte_arr_a[6262 + by] == this.var_byte_arr_a[0 + this.var_byte_u] && this.var_byte_arr_a[6363 + by] == this.var_byte_arr_a[101 + this.var_byte_u]) {
+                this.var_byte_arr_a[6262 + by] = this.var_byte_arr_a[0 + by];
+                this.var_byte_arr_a[6363 + by] = this.var_byte_arr_a[101 + by];
+                this.var_byte_arr_a[3131 + by] = this.var_byte_arr_a[0 + by];
+                this.var_byte_arr_a[3232 + by] = this.var_byte_arr_a[101 + by];
+            }
+            this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_byte_u]][this.var_byte_arr_a[0 + this.var_byte_u]] = this.var_byte_u;
+            this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + by]][this.var_byte_arr_a[0 + by]] = by;
+            this.var_byte_arr_a[606 + by] = (byte)(this.var_byte_arr_a[606 + this.var_byte_u] + 4 & 7);
+            int n = 1111 + by;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xF0);
+            this.var_byte_arr_a[4848 + by] = 120;
+            this.var_byte_arr_a[4848 + this.var_byte_u] = 120;
+            this.var_byte_arr_a[2929 + by] = this.byte_b((int)by);
+            this.D();
+            if (by > this.var_byte_u) {
+                int n2 = 1111 + by;
+                this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] & 0xF0);
+            }
+            this.var_int_E = 1;
+        } else {
+            this.var_int_E = 2;
+        }
+        this.var_int_v = this.var_byte_u;
+    }
+
+    private void D() {
+        this.E();
+        if ((this.var_byte_arr_a[1111 + this.var_int_v] & 0xF) == (this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_int_L] + 1) / 2 && this.var_byte_arr_a[4848 + this.var_int_v] != 120) {
+            this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] = 0;
+            if (this.var_byte_arr_a[4545 + this.var_int_v] <= -111) {
+                this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] = this.var_byte_arr_a[4545 + this.var_int_v];
+                this.var_byte_arr_a[4545 + this.var_int_v] = 0;
+            }
+            if (this.var_byte_arr_a[4545 + this.var_int_v] >= 111) {
+                int n = 4545 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] * -1);
+                this.var_byte_arr_a[1313 + this.var_int_v] = 0;
+            }
+            if (this.var_byte_arr_a[1313 + this.var_int_v] == -1) {
+                this.F();
+                return;
+            }
+            int n = 0 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + this.var_byte_arr_b[this.var_short_arr_a[1] + 0 + this.var_byte_arr_a[606 + this.var_int_v]]);
+            int n2 = 101 + this.var_int_v;
+            this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[606 + this.var_int_v]]);
+            this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] = (byte)this.var_int_v;
+        }
+        if (this.var_byte_arr_a[4848 + this.var_int_v] == 120) {
+            if ((this.var_byte_arr_a[1111 + this.var_int_v] & 0xF) < (this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_int_L] + 1) / 2) {
+                int n = 202 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] - this.var_byte_arr_b[this.var_short_arr_a[1] + 0 + this.var_byte_arr_a[606 + this.var_int_v]] * 22);
+                int n3 = 303 + this.var_int_v;
+                this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] - this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[606 + this.var_int_v]] * 16);
+            }
+            int n = 202 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + this.var_byte_arr_b[this.var_short_arr_a[9 + this.var_int_w] + this.var_byte_arr_b[this.var_short_arr_a[12 + this.var_int_w * 2] + this.var_int_L] + (this.var_byte_arr_a[1111 + this.var_int_v] & 0xF)] * this.var_byte_arr_b[this.var_short_arr_a[2] + 0 + this.var_byte_arr_a[606 + this.var_int_v]]);
+            int n4 = 303 + this.var_int_v;
+            this.var_byte_arr_a[n4] = (byte)(this.var_byte_arr_a[n4] + this.var_byte_arr_b[this.var_short_arr_a[11 + this.var_int_w * 2] + this.var_byte_arr_b[this.var_short_arr_a[12 + this.var_int_w * 2] + this.var_int_L] + (this.var_byte_arr_a[1111 + this.var_int_v] & 0xF)] * this.var_byte_arr_b[this.var_short_arr_a[2] + 8 + this.var_byte_arr_a[606 + this.var_int_v]]);
+        }
+    }
+
+    private void E() {
+        this.var_int_w = this.var_byte_arr_a[606 + this.var_int_v] & 1;
+        this.var_int_L = this.var_byte_arr_a[1010 + this.var_int_v] - this.var_byte_arr_a[7777 + this.var_int_v];
+        int n = 1111 + this.var_int_v;
+        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+        this.var_byte_arr_a[202 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[5 + this.var_int_w] + this.var_byte_arr_b[this.var_short_arr_a[12 + this.var_int_w * 2] + this.var_int_L] + (this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_int_L] + (this.var_byte_arr_a[1111 + this.var_int_v] & 0xF) * this.var_byte_arr_b[this.var_short_arr_a[1] + 0 + this.var_byte_arr_a[606 + this.var_int_v]]) % this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_int_L]];
+        this.var_byte_arr_a[303 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[7 + this.var_int_w] + this.var_byte_arr_b[this.var_short_arr_a[12 + this.var_int_w * 2] + this.var_int_L] + (this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_int_L] + (this.var_byte_arr_a[1111 + this.var_int_v] & 0xF) * this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[606 + this.var_int_v]]) % this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_int_L]];
+        if (this.var_byte_arr_a[202 + this.var_int_v] == 0 && this.var_byte_arr_a[303 + this.var_int_v] == 0 && this.var_byte_arr_a[4848 + this.var_int_v] == 120) {
+            this.var_byte_arr_a[4848 + this.var_int_v] = 1;
+        }
+        if ((this.var_byte_arr_a[1111 + this.var_int_v] & 0xF) == (this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_int_L] + 1) / 2) {
+            if ((this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_int_L] & 1) == 0 && this.var_byte_arr_b[this.var_short_arr_a[1] + 0 + this.var_byte_arr_a[606 + this.var_int_v]] < 0) {
+                int n2 = 202 + this.var_int_v;
+                this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] + 22);
+            }
+            if ((this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_int_L] & 1) == 0 && this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[606 + this.var_int_v]] < 0) {
+                int n3 = 303 + this.var_int_v;
+                this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] + 16);
+            }
+        }
+    }
+
+    private void F() {
+        this.var_byte_arr_a[202 + this.var_int_v] = 0;
+        this.var_byte_arr_a[303 + this.var_int_v] = 0;
+        this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+        int n = 1111 + this.var_int_v;
+        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xF0);
+        if (this.var_byte_arr_a[6161 + this.var_int_v] > 1 || this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_arr_a[2828 + this.var_int_v]] != 1 || !this.boolean_d(this.var_byte_arr_a[4444 + this.var_int_v])) {
+            if (this.var_byte_arr_a[6161 + this.var_int_v] == 1) {
+                this.var_byte_arr_a[6161 + this.var_int_v] = 0;
+            }
+            if (this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]] != this.var_int_v || this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] == 2 && this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0) {
+                int n2 = 8932 + this.var_byte_arr_a[4444 + this.var_int_v];
+                this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] - 1);
+            }
+            this.var_byte_arr_a[1313 + this.var_int_v] = 0;
+            this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] = (byte)this.var_int_v;
+            this.P();
+            this.Q();
+            return;
+        }
+        this.var_f_a.h(this.var_int_v);
+        this.var_byte_arr_a[6161 + this.var_int_v] = 0;
+        this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+        this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+        this.var_byte_arr_a[1313 + this.var_int_v] = -2;
+        int n3 = 1818 + this.var_int_v;
+        this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] + 2);
+        this.G();
+        this.var_byte_arr_a[4545 + this.var_int_v] = this.var_byte_arr_a[8993 + this.var_byte_arr_a[4444 + this.var_int_v]];
+        this.var_byte_arr_a[8993 + this.var_byte_arr_a[4444 + this.var_int_v]] = (byte)this.var_int_v;
+        this.void_b(this.var_byte_arr_a[4444 + this.var_int_v]);
+        if ((this.var_byte_arr_b[this.var_short_arr_a[27] + this.var_byte_arr_a[2828 + this.var_int_v]] & 0x80) == 0) {
+            this.void_a(this.var_int_v, this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0 ? this.var_byte_arr_b[this.var_short_arr_a[57] + this.var_byte_arr_b[this.var_short_arr_a[174] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]] : this.var_byte_arr_b[this.var_short_arr_a[59] + this.var_byte_arr_b[this.var_short_arr_a[177] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]]);
+        }
+        if (this.var_byte_arr_a[4646 + this.var_int_v] == this.var_byte_arr_b[this.var_short_arr_a[138] + 156 + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] || this.var_byte_arr_b[this.var_short_arr_a[138] + 156 + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] < 0 && this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] != 2 && this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] != 3 || this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] >= 12 || this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0) {
+            if (this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_b[this.var_short_arr_a[16] + this.var_byte_arr_b[this.var_short_arr_a[17] + 2] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]]]] == 0 && this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0) {
+                this.var_byte_arr_a[6464 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[16] + this.var_byte_arr_b[this.var_short_arr_a[17] + 2] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]];
+            }
+            this.var_byte_arr_a[6262 + this.var_int_v] = this.var_byte_arr_a[8383 + this.var_byte_arr_a[4444 + this.var_int_v]];
+            this.var_byte_arr_a[6363 + this.var_int_v] = this.var_byte_arr_a[8444 + this.var_byte_arr_a[4444 + this.var_int_v]];
+        }
+        if ((this.var_byte_arr_a[7979 + this.var_int_v] & 4) != 0 && (this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0 || this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] != 8)) {
+            int n4 = 8871 + this.var_byte_arr_a[4444 + this.var_int_v];
+            this.var_byte_arr_a[n4] = (byte)(this.var_byte_arr_a[n4] | 2);
+        }
+        this.var_byte_arr_a[2929 + this.var_int_v] = this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0 ? this.var_byte_arr_b[this.var_short_arr_a[172] + this.var_byte_arr_b[this.var_short_arr_a[174] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]] : this.var_byte_arr_b[this.var_short_arr_a[175] + this.var_byte_arr_b[this.var_short_arr_a[177] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]];
+    }
+
+    private void G() {
+        this.var_byte_x = this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]];
+        this.var_byte_v = this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0 ? this.var_byte_arr_b[this.var_short_arr_a[138] + 156 + this.var_byte_x] : (byte)0;
+        this.var_byte_w = this.var_byte_arr_a[8932 + this.var_byte_arr_a[4444 + this.var_int_v]];
+        this.var_int_x = 0;
+        while (this.var_int_x < 8) {
+            this.var_byte_arr_i[this.var_int_x] = 0;
+            ++this.var_int_x;
+        }
+        this.var_int_x = this.var_byte_arr_a[8993 + this.var_byte_arr_a[4444 + this.var_int_v]];
+        while (this.var_int_x > 0) {
+            this.var_byte_arr_i[this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0 ? this.var_byte_arr_a[4646 + this.var_int_x] : this.var_byte_arr_b[this.var_short_arr_a[93] + this.var_byte_arr_b[this.var_short_arr_a[94] + this.var_byte_x] + this.var_byte_arr_a[4646 + this.var_int_x]]] = (byte)this.var_int_x;
+            this.var_int_x = this.var_byte_arr_a[4545 + this.var_int_x];
+        }
+        if (this.var_byte_v >= 0 && this.var_byte_arr_i[0] == 0) {
+            if (this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]] <= 0 || this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]] == this.var_int_v) {
+                if (this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]] == this.var_int_v) {
+                    int n = 8932 + this.var_byte_arr_a[4444 + this.var_int_v];
+                    this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+                }
+                this.var_byte_arr_a[4646 + this.var_int_v] = this.var_byte_v;
+                this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]] = (byte)this.var_int_v;
+                return;
+            }
+            this.var_byte_arr_i[this.var_byte_v] = this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]];
+            if (this.var_byte_arr_a[4646 + this.var_byte_arr_i[this.var_byte_v]] < 0 || this.var_byte_arr_a[4444 + this.var_byte_arr_i[this.var_byte_v]] != this.var_byte_arr_a[4444 + this.var_int_v]) {
+                this.var_byte_w = (byte)(this.var_byte_w + 1);
+            }
+        }
+        this.var_byte_arr_a[4646 + this.var_int_v] = (byte)(this.var_f_a.int_a(0xFFFFFF, (this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0 ? this.var_byte_arr_b[this.var_short_arr_a[138] + (this.var_byte_arr_a[9115 + this.var_byte_arr_a[4444 + this.var_int_v]] - 1) * 26 + this.var_byte_x] : this.var_byte_arr_b[this.var_short_arr_a[138] + 494 + this.var_byte_x]) - this.var_byte_w + 1) + 1);
+        if (this.var_byte_x == 2 && this.var_byte_arr_i[0] == 0) {
+            this.var_byte_arr_a[4646 + this.var_int_v] = 0;
+            return;
+        }
+        this.var_int_x = 0;
+        this.var_int_y = 0;
+        while (this.var_int_x < (this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0 ? this.var_byte_arr_b[this.var_short_arr_a[138] + (this.var_byte_arr_a[9115 + this.var_byte_arr_a[4444 + this.var_int_v]] - 1) * 26 + this.var_byte_x] : this.var_byte_arr_b[this.var_short_arr_a[138] + 494 + this.var_byte_x])) {
+            if (this.var_byte_arr_i[this.var_int_x] == 0) {
+                ++this.var_int_y;
+            }
+            if (this.var_byte_arr_a[4646 + this.var_int_v] == this.var_int_y) {
+                this.var_byte_arr_a[4646 + this.var_int_v] = (byte)this.var_int_x;
+                break;
+            }
+            ++this.var_int_x;
+        }
+        if (this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0) {
+            this.var_byte_arr_a[4646 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[95] + this.var_byte_arr_b[this.var_short_arr_a[96] + this.var_byte_x] + this.var_byte_arr_a[4646 + this.var_int_v]];
+        }
+    }
+
+    private void void_b(byte by) {
+        this.var_byte_arr_a[8688 + by] = 5;
+        if (this.var_int_u != 0 || this.var_byte_arr_a[8749 + by] != 11) {
+            return;
+        }
+        this.var_int_M = this.var_byte_arr_a[8993 + by];
+        while (this.var_int_M > 0) {
+            if (this.var_byte_arr_a[4949 + this.var_int_M] + 3 > (this.var_byte_arr_a[8688 + by] & 0xF)) {
+                this.var_byte_arr_a[8688 + by] = (byte)((this.var_byte_arr_a[8688 + by] & 0xF0) + this.var_byte_arr_a[4949 + this.var_int_M] + 3);
+            }
+            if (this.var_byte_arr_a[7575 + this.var_int_M] > this.var_byte_arr_a[8688 + by] >> 4) {
+                this.var_byte_arr_a[8688 + by] = (byte)((this.var_byte_arr_a[8688 + by] & 0xF) + (this.var_byte_arr_a[7575 + this.var_int_M] << 4));
+            }
+            this.var_int_M = this.var_byte_arr_a[4545 + this.var_int_M];
+        }
+    }
+
+    final boolean boolean_a(int n, int n2, int n3, int n4) {
+        int n5 = 0;
+        int n6 = 1;
+        byte[] byArray = new byte[2];
+        this.var_byte_y = 0;
+        byte by = (byte)(this.var_int_u ^ 1);
+        while (n5 < n2) {
+            n5 = (byte)(n5 + 1);
+            for (int n7 = 0; n7 < 2; n7 = (int)((byte)(n7 + 1))) {
+                for (int n8 = 0; n8 < n5; n8 = (int)((byte)(n8 + 1))) {
+                    int n9 = n7;
+                    byArray[n9] = (byte)(byArray[n9] + n6);
+                    if (n3 + byArray[0] < 0 || n3 + byArray[0] >= this.var_f_a.var_short_c || n4 + byArray[1] < 0 || n4 + byArray[1] >= this.var_f_a.var_short_d) continue;
+                    this.var_byte_B = this.var_byte_arr_arr_b[n4 + byArray[1]][n3 + byArray[0]];
+                    if (n2 < 24) {
+                        this.var_byte_C = (byte)(this.var_byte_arr_b[this.var_short_arr_a[53] + (12 + byArray[1]) * 25 + 12 + byArray[0]] / 10);
+                        this.var_byte_E = (byte)(this.var_byte_arr_b[this.var_short_arr_a[53] + (12 + byArray[1]) * 25 + 12 + byArray[0]] % 10 + 4 & 7);
+                    }
+                    if (n <= 4) {
+                        if (n == 3) {
+                            if (this.var_byte_B != 0 && this.var_byte_B != this.var_byte_arr_arr_c[0][this.ae] && this.var_byte_B != this.var_byte_arr_arr_c[1][this.ae] || n3 + byArray[0] >= this.var_f_a.var_short_c - 1) continue;
+                            this.var_byte_B = this.var_byte_arr_arr_b[n4 + byArray[1]][n3 + byArray[0] + 1];
+                            if (this.var_byte_B != 0 && this.var_byte_B != this.var_byte_arr_arr_c[1][this.ae]) continue;
+                            this.var_byte_B = this.var_byte_arr_arr_c[1 - (this.var_byte_arr_a[8282 + this.var_int_v] & 1)][this.ae];
+                            if (this.var_byte_arr_a[2828 + this.var_byte_B] == 109) {
+                                this.var_byte_arr_a[3131 + this.var_byte_B] = (byte)(n3 + byArray[0] + 1 - (this.var_byte_arr_a[8282 + this.var_int_v] & 1));
+                                this.var_byte_arr_a[3232 + this.var_byte_B] = (byte)(n4 + byArray[1]);
+                            }
+                        } else if (n == 2 || n == 1) {
+                            if (this.var_byte_B != 0) {
+                                continue;
+                            }
+                        } else if (n != 4 ? !this.boolean_c(this.var_byte_B) : this.var_f_a.var_byte_arr_arr_b[n4 + byArray[1]][n3 + byArray[0]] < 95 || this.var_f_a.var_byte_arr_arr_b[n4 + byArray[1]][n3 + byArray[0]] > 114 || this.var_byte_B != 0) continue;
+                        this.var_byte_arr_a[this.var_short_arr_b[n == 2 ? 112 : 31] + this.var_int_v] = (byte)(n3 + byArray[0] + (n == 3 ? this.var_byte_arr_a[8282 + this.var_int_v] & 1 : 0));
+                        this.var_byte_arr_a[this.var_short_arr_b[n == 2 ? 113 : 32] + this.var_int_v] = (byte)(n4 + byArray[1]);
+                        if (n >= 1 && n <= 3 || this.var_int_v == 0) {
+                            return true;
+                        }
+                        this.var_byte_arr_a[4444 + this.var_int_v] = -1;
+                        this.void_o();
+                        if (this.var_byte_arr_a[808 + this.var_int_v] <= 0 && this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0) / 10 > this.var_int_B) continue;
+                        if (this.var_byte_arr_a[6161 + this.var_int_v] > 0 || this.var_byte_arr_a[2828 + this.var_int_v] == 10 || this.var_byte_arr_a[2828 + this.var_int_v] == 13 || this.var_byte_arr_a[2828 + this.var_int_v] == 15) {
+                            this.var_byte_arr_a[6262 + this.var_int_v] = this.var_byte_arr_a[3131 + this.var_int_v];
+                            this.var_byte_arr_a[6363 + this.var_int_v] = this.var_byte_arr_a[3232 + this.var_int_v];
+                        }
                         this.g(2);
                         return true;
-                     }
-                  }
-               }
+                    }
+                    if (n == 6) {
+                        if (this.var_byte_C > 3) continue;
+                        if (-this.var_byte_B > 0 && -this.var_byte_B <= 30 && this.var_byte_arr_a[9601 + this.var_int_v] == 0) {
+                            if (this.var_byte_arr_a[8505 + -this.var_byte_B] <= 0 || this.var_byte_arr_a[8932 + -this.var_byte_B] == 0) continue;
+                            this.a(n3 + byArray[0], n4 + byArray[1], this.var_byte_B, 50);
+                            continue;
+                        }
+                        if (this.var_byte_B <= 0 || this.var_byte_B > 100 || this.var_byte_arr_a[1919 + this.var_byte_B] <= 0 || this.var_byte_arr_a[9601 + this.var_int_v] > 0 && this.var_byte_B <= 50) continue;
+                        this.a(n3 + byArray[0], n4 + byArray[1], this.var_byte_B, 50);
+                        if (this.var_byte_B <= 50) continue;
+                        return true;
+                    }
+                    if (n == 7) {
+                        if (this.var_byte_B > by * 50 && this.var_byte_B <= (by + 1) * 50) {
+                            if (this.var_byte_arr_a[1919 + this.var_byte_B] <= 0 || ((this.var_byte_arr_a[7979 + this.var_int_v] & 2) <= 0 || 1 + (10 - this.var_byte_arr_a[7575 + this.var_int_v]) / 3 + this.var_byte_arr_a[7575 + this.var_byte_B] / (this.var_byte_arr_a[7575 + this.var_int_v] - 3) < this.var_byte_C) && ((this.var_byte_arr_a[7979 + this.var_int_v] & 2) != 0 || this.var_byte_arr_a[4949 + this.var_byte_B] < this.var_byte_C)) continue;
+                            int n10 = 7979 + this.var_int_v;
+                            this.var_byte_arr_a[n10] = (byte)(this.var_byte_arr_a[n10] & 0xFE);
+                            return true;
+                        }
+                        if (-this.var_byte_B > by * 30 && -this.var_byte_B <= (by + 1) * 30) {
+                            if (this.var_byte_arr_a[8505 + -this.var_byte_B] <= 0 || this.var_byte_arr_a[8932 + -this.var_byte_B] == 0 || n3 + byArray[0] != this.var_byte_arr_a[8383 + -this.var_byte_B] + this.var_byte_arr_b[this.var_short_arr_a[138] + 104 + this.var_byte_arr_a[8749 + -this.var_byte_B]] / 2 || n4 + byArray[1] != this.var_byte_arr_a[8444 + -this.var_byte_B] + this.var_byte_arr_b[this.var_short_arr_a[138] + 130 + this.var_byte_arr_a[8749 + -this.var_byte_B]] / 2 || ((this.var_byte_arr_a[7979 + this.var_int_v] & 2) <= 0 || 1 + (10 - this.var_byte_arr_a[7575 + this.var_int_v]) / 3 + (this.var_byte_arr_a[8688 + -this.var_byte_B] >> 4) / (this.var_byte_arr_a[7575 + this.var_int_v] - 3) < this.var_byte_C) && ((this.var_byte_arr_a[7979 + this.var_int_v] & 2) != 0 || (this.var_byte_arr_a[8688 + -this.var_byte_B] & 0xF) < this.var_byte_C)) continue;
+                            int n11 = 7979 + this.var_int_v;
+                            this.var_byte_arr_a[n11] = (byte)(this.var_byte_arr_a[n11] & 0xFE);
+                            return true;
+                        }
+                        if (-this.var_byte_B < 111 + 6 * (this.var_int_u ^ 1) || -this.var_byte_B >= 111 + 6 * (this.var_int_u ^ 1) + 3 || this.var_byte_arr_a[7575 + this.var_int_v] < 6 || this.var_byte_C > this.var_byte_arr_a[7575 + this.var_int_v] - 4) continue;
+                        byte[] byArray2 = this.var_byte_arr_arr_b[n4 + byArray[1]];
+                        int n12 = n3 + byArray[0];
+                        byArray2[n12] = (byte)(byArray2[n12] + (3 - this.var_int_u * 6));
+                        this.var_f_a.c(n3 + byArray[0], n4 + byArray[1], 1, 1);
+                        if (this.var_int_u != 0) continue;
+                        this.var_byte_R = (byte)(this.var_byte_R - 1);
+                        continue;
+                    }
+                    if (n < 8 || this.var_byte_B < (n == 9 ? (byte)51 : 1) || this.var_byte_B > (n == 9 ? (byte)100 : 50) || this.var_byte_arr_a[1919 + this.var_byte_B] <= 0 || this.var_byte_arr_a[1414 + this.var_byte_B] < 12) continue;
+                    this.var_f_a.var_byte_arr_p[6 + this.var_int_O] = this.var_byte_B;
+                    ++this.var_int_O;
+                }
             }
-         }
-      }
+            n6 = (byte)(n6 * -1);
+        }
+        return false;
+    }
 
-      return false;
-   }
-
-   private void H() {
-      this.P = this.a[101] + this.a.q * 4;
-      if ((this.I & this.u + 1) == 0 || this.f < 50 && (this.y == 2 || this.y == 1 && this.a.q != 2 || this.z < this.b[this.P] || this.A < this.b[this.P + 1] || this.z > this.b[this.P + 2] || this.A > this.b[this.P + 3])) {
-         this.B = this.b[this.A][this.z];
-         if (!this.a) {
-            if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v && this.a[1313 + this.v] > 0) {
-               this.a[2828 + this.v] = 87;
-               this.a[6161 + this.v] = 3;
+    private void H() {
+        this.var_int_P = this.var_short_arr_a[101] + this.var_f_a.var_byte_q * 4;
+        if ((this.var_byte_I & this.var_int_u + 1) != 0 && (this.var_byte_f >= 50 || this.var_byte_y != 2 && (this.var_byte_y != 1 || this.var_f_a.var_byte_q == 2) && this.var_byte_z >= this.var_byte_arr_b[this.var_int_P] && this.var_byte_A >= this.var_byte_arr_b[this.var_int_P + 1] && this.var_byte_z <= this.var_byte_arr_b[this.var_int_P + 2] && this.var_byte_A <= this.var_byte_arr_b[this.var_int_P + 3])) {
+            if (this.var_byte_y == 4) {
+                if (this.var_byte_arr_a[4646 + this.var_int_v] < 0) {
+                    this.a(this.var_int_v, false);
+                    this.void_a(this.var_int_v, (byte)69);
+                } else {
+                    this.void_a(this.var_int_v, (byte)87);
+                    this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+                }
             }
-         } else {
-            this.f = this.a[6565 + this.v] != 9 || this.a[2828 + this.v] <= 9 || this.u == 1 || this.a.N || this.y == 1 || this.a[0 + this.v] - this.a[8384] >= -6 && this.a[0 + this.v] - this.a[8384] <= 6 && this.a[101 + this.v] - this.a[8445] >= -6 && this.a[101 + this.v] - this.a[8445] <= 6;
-            if ((this.f || this.a[2828 + this.v] != 59) && (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v || this.y != 1)) {
-               this.a[3131 + this.v] = this.f ? this.z : this.a[0 + this.v];
-               this.a[3232 + this.v] = this.f ? this.A : this.a[101 + this.v];
-               if (this.f) {
-                  if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-                     this.g(1);
-                     if ((this.z = this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0)) / 10 > this.B) {
-                        this.p();
-                     }
-                  } else {
-                     if (this.a[2828 + this.v] <= 82) {
-                        this.a[0 + this.v] = this.a[8383 + this.a[4444 + this.v]];
-                        this.a[101 + this.v] = this.a[8444 + this.a[4444 + this.v]];
-                     }
-
-                     this.a[4747 + this.v] = this.B;
-                     this.a[4444 + this.v] = (byte)(this.B * this.b[this.a[62] + this.y] - (this.y == 2 ? 101 : 0));
-                     this.a(this.v, this.b[this.a[61] + this.y]);
-                     this.z = this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0);
-                     this.i(this.z);
-                     this.a[3030 + this.v] = 0;
-                     this.a[1313 + this.v] = 1;
-                  }
-               } else {
-                  this.a(this.v, (byte)59);
-                  this.a[2929 + this.v] = -95;
-                  this.a[3030 + this.v] = 0;
-                  this.a[3636 + this.v] = 0;
-                  this.a[808 + this.v] = 0;
-               }
+        } else {
+            this.var_byte_B = this.var_byte_arr_arr_b[this.var_byte_A][this.var_byte_z];
+            if (this.var_boolean_a) {
+                boolean bl = this.var_boolean_f = this.var_byte_arr_a[6565 + this.var_int_v] != 9 || this.var_byte_arr_a[2828 + this.var_int_v] <= 9 || this.var_int_u == 1 || this.var_f_a.var_boolean_N || this.var_byte_y == 1 || this.var_byte_arr_a[0 + this.var_int_v] - this.var_byte_arr_a[8384] >= -6 && this.var_byte_arr_a[0 + this.var_int_v] - this.var_byte_arr_a[8384] <= 6 && this.var_byte_arr_a[101 + this.var_int_v] - this.var_byte_arr_a[8445] >= -6 && this.var_byte_arr_a[101 + this.var_int_v] - this.var_byte_arr_a[8445] <= 6;
+                if (!(!this.var_boolean_f && this.var_byte_arr_a[2828 + this.var_int_v] == 59 || this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v && this.var_byte_y == 1)) {
+                    this.var_byte_arr_a[3131 + this.var_int_v] = this.var_boolean_f ? this.var_byte_z : this.var_byte_arr_a[0 + this.var_int_v];
+                    byte by = this.var_byte_arr_a[3232 + this.var_int_v] = this.var_boolean_f ? this.var_byte_A : this.var_byte_arr_a[101 + this.var_int_v];
+                    if (this.var_boolean_f) {
+                        if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+                            this.g(1);
+                            this.var_int_z = this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0);
+                            if (this.var_int_z / 10 > this.var_int_B) {
+                                this.void_p();
+                            }
+                        } else {
+                            if (this.var_byte_arr_a[2828 + this.var_int_v] <= 82) {
+                                this.var_byte_arr_a[0 + this.var_int_v] = this.var_byte_arr_a[8383 + this.var_byte_arr_a[4444 + this.var_int_v]];
+                                this.var_byte_arr_a[101 + this.var_int_v] = this.var_byte_arr_a[8444 + this.var_byte_arr_a[4444 + this.var_int_v]];
+                            }
+                            this.var_byte_arr_a[4747 + this.var_int_v] = this.var_byte_B;
+                            this.var_byte_arr_a[4444 + this.var_int_v] = (byte)(this.var_byte_B * this.var_byte_arr_b[this.var_short_arr_a[62] + this.var_byte_y] - (this.var_byte_y == 2 ? 101 : 0));
+                            this.void_a(this.var_int_v, this.var_byte_arr_b[this.var_short_arr_a[61] + this.var_byte_y]);
+                            this.var_int_z = this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0);
+                            this.i(this.var_int_z);
+                            this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+                            this.var_byte_arr_a[1313 + this.var_int_v] = 1;
+                        }
+                    } else {
+                        this.void_a(this.var_int_v, (byte)59);
+                        this.var_byte_arr_a[2929 + this.var_int_v] = -95;
+                        this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+                        this.var_byte_arr_a[3636 + this.var_int_v] = 0;
+                        this.var_byte_arr_a[808 + this.var_int_v] = 0;
+                    }
+                }
+            } else if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v && this.var_byte_arr_a[1313 + this.var_int_v] > 0) {
+                this.var_byte_arr_a[2828 + this.var_int_v] = 87;
+                this.var_byte_arr_a[6161 + this.var_int_v] = 3;
             }
-         }
-
-         if (this.y == 4 && this.u == 0) {
-            if ((this.a[7979 + this.v] & 2) == 0) {
-               this.a((byte)4, (int)this.v, (int)this.B);
+            if (this.var_byte_y == 4 && this.var_int_u == 0) {
+                if ((this.var_byte_arr_a[7979 + this.var_int_v] & 2) == 0) {
+                    this.a((byte)4, this.var_int_v, (int)this.var_byte_B);
+                }
+                if (this.var_short_arr_d[0] < 0) {
+                    this.var_short_arr_d[0] = 0;
+                    this.var_f_a.a((byte)6, this.var_byte_z, this.var_byte_A, (byte)0);
+                }
             }
-
-            if (this.d[0] < 0) {
-               this.d[0] = 0;
-               this.a.a((byte)6, (byte)this.z, (byte)this.A, (byte)0);
+            this.var_byte_D = this.var_byte_F;
+            if ((this.var_byte_y == 4 || this.var_byte_y == 2 && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x80) != 0) && (this.var_byte_arr_a[7979 + this.var_int_v] & 2) == 0) {
+                this.a(this.var_byte_arr_a[0 + this.var_int_v], this.var_byte_arr_a[101 + this.var_int_v], this.var_byte_arr_a[4949 + this.var_int_v]);
             }
-         }
+        }
+        if (this.var_byte_f < this.var_byte_arr_b[this.var_short_arr_a[291] + this.var_f_a.var_byte_q] && this.var_int_u == 0 && this.var_byte_arr_b[this.var_short_arr_a[287] + this.var_byte_arr_b[this.var_short_arr_a[288] + this.var_f_a.var_byte_q] + this.var_byte_f] == 1 && this.var_byte_y == 4 && this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+            this.void_b(this.var_int_v, this.var_byte_B > 0 ? this.var_byte_B : (byte)0, this.var_byte_z, this.var_byte_A);
+        }
+    }
 
-         this.D = this.F;
-         if ((this.y == 4 || this.y == 2 && (this.a[7979 + this.v] & 128) != 0) && (this.a[7979 + this.v] & 2) == 0) {
-            this.a(this.a[0 + this.v], this.a[101 + this.v], this.a[4949 + this.v]);
-         }
-      } else if (this.y == 4) {
-         if (this.a[4646 + this.v] < 0) {
-            this.a(this.v, false);
-            this.a(this.v, (byte)69);
-         } else {
-            this.a(this.v, (byte)87);
-            this.a[6161 + this.v] = 3;
-         }
-      }
+    private void a(int n, int n2, byte by, int n3) {
+        if (this.var_byte_arr_b[this.var_short_arr_a[181] + this.var_byte_arr_a[9535 + this.var_int_v]] > n3 || this.var_byte_arr_a[9601 + this.var_int_v] != 0) {
+            this.var_byte_arr_a[9645 + this.var_int_v] = (byte)n;
+            this.var_byte_arr_a[9667 + this.var_int_v] = (byte)n2;
+            this.var_byte_arr_a[9601 + this.var_int_v] = by;
+            return;
+        }
+        this.e(true);
+    }
 
-      if (this.f < this.b[this.a[291] + this.a.q] && this.u == 0 && this.b[this.a[287] + this.b[this.a[288] + this.a.q] + this.f] == 1 && this.y == 4 && this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-         this.b(this.v, this.B > 0 ? this.B : 0, this.z, this.A);
-      }
-
-   }
-
-   private void a(int var1, int var2, byte var3, int var4) {
-      if (this.b[this.a[181] + this.a[9535 + this.v]] <= var4 && this.a[9601 + this.v] == 0) {
-         this.e(true);
-      } else {
-         this.a[9645 + this.v] = (byte)var1;
-         this.a[9667 + this.v] = (byte)var2;
-         this.a[9601 + this.v] = var3;
-      }
-   }
-
-   private boolean c(byte var1) {
-      if (var1 == this.a[4747 + this.v] && this.a[2828 + this.v] != 10 && this.a[2828 + this.v] != 15 && this.a[2828 + this.v] != 12 && this.a[2828 + this.v] != 16 && this.a[2828 + this.v] != 13) {
-         return true;
-      } else {
-         if (this.a[2828 + this.v] >= 10 && this.a[2828 + this.v] <= 16 && var1 <= -61 && var1 >= -110) {
-            byte var2 = this.b[this.a[16] + this.b[this.a[17] + 3] + this.a[9772 - var1]];
-            if ((this.a[2828 + this.v] == 12 || this.a[2828 + this.v] == 16) && (var2 == 12 || var2 == 16) && this.a[9822 - var1] > 0 || this.a[9872 - var1] > 0 && var2 == this.a[2828 + this.v]) {
-               return true;
-            }
-         }
-
-         return false;
-      }
-   }
-
-   private void b(int var1, int var2, int var3, int var4) {
-      this.N = this.a[289] + this.b[this.a[290] + this.a.q] + this.f * 4;
-      if (var3 >= this.b[this.N] && var4 >= this.b[this.N + 1] && var3 <= this.b[this.N + 2] && var4 <= this.b[this.N + 3] && (this.a.q == 3 || this.a[1919 + this.a[0][17]] > 0 && this.a[1414 + this.a[0][17]] >= 12)) {
-         if (this.a.q == 4 && this.f == 1) {
-            this.c(false);
-
-            for(this.N = 0; this.N < 4; ++this.N) {
-               this.a.p[this.N + 1] = this.e[this.N][0] != 0 ? this.e[this.N][0] : this.e[0][0];
-            }
-         } else {
-            this.b((int)var1, (int)var2, (int)1);
-            this.a[3131 + var2] = this.a[0 + var2];
-            this.a[3232 + var2] = this.a[101 + var2];
-            this.O = 0;
-            this.a((int)(this.a.q == 2 ? 9 : 8), (int)25, (int)this.a[0 + (this.a.q == 2 ? var2 : var1)], (int)this.a[101 + (this.a.q == 2 ? var2 : var1)]);
-         }
-
-         this.a.b((int)this.b[this.a[286] + this.b[this.a[288] + this.a.q] + this.f]);
-         this.f = (byte)(this.f + 50);
-      }
-
-   }
-
-   private void b(int var1, int var2, int var3) {
-      this.a.p[1] = this.a.p[2] = (byte)this.a[0][17];
-      this.a.p[5] = (byte)var2;
-      if (var1 != 0) {
-         this.a.p[0] = this.a.p[2] = this.a.p[3] = this.a.p[4] = (byte)var1;
-      }
-
-      this.O = var3;
-
-      for(this.N = var1 != this.a[0][17] && var1 != 0 ? 3 : 2; this.O <= 50 && this.N <= 4; ++this.O) {
-         if (this.a[1919 + this.O] > 0 && this.a[1414 + this.O] >= 12 && this.O != var1 && this.O != this.a[0][17]) {
-            this.a.p[this.N] = (byte)this.O;
-            ++this.N;
-         }
-      }
-
-   }
-
-   private void c(boolean var1) {
-      this.e = false;
-      this.H = 0;
-      if (this.a[8994] == this.a[0][17]) {
-         this.H = 1;
-      }
-
-      this.c(this.a[0][17], 0);
-
-      for(this.N = 1; this.N < 4; ++this.N) {
-         this.e[this.N][0] = this.e[this.N][1] = 0;
-      }
-
-      for(this.O = 1; this.O <= 50; ++this.O) {
-         if (this.a[1919 + this.O] > 0 && this.a[0][17] != this.O && this.a[1414 + this.O] >= 12) {
-            this.Q = this.a[1717 + this.O] > this.a[1616 + this.O] ? this.a[1717 + this.O] : this.a[1616 + this.O];
-            b var10000 = this;
-            int var10001 = 1;
-            int var10002 = var1 && this.e ? 1 : 0;
-
-            while(true) {
-               var10000.N = var10001 + var10002;
-               if (this.N >= 4) {
-                  break;
-               }
-
-               if (this.e[this.N][1] < this.Q || var1 && !this.e && this.a[6464 + this.O] == 57) {
-                  for(this.P = 3; this.P > this.N; --this.P) {
-                     this.e[this.P][0] = this.e[this.P - 1][0];
-                     this.e[this.P][1] = this.e[this.P - 1][1];
-                  }
-
-                  this.e[this.N][0] = (byte)this.O;
-                  this.e[this.N][1] = (byte)this.Q;
-                  if (var1 && !this.e && this.a[6464 + this.O] == 57) {
-                     this.e = true;
-                  }
-                  break;
-               }
-
-               var10000 = this;
-               var10001 = this.N;
-               var10002 = 1;
-            }
-         }
-      }
-
-      for(this.G = 1; this.G < 4 && this.e[this.G][0] != 0; ++this.G) {
-         this.c(this.e[this.G][0], this.G);
-         if (this.G == 1 && var1) {
-            this.a[6464 + this.e[this.G][0]] = 57;
-         }
-      }
-
-      this.a[8933] = this.G;
-   }
-
-   private void c(int var1, int var2) {
-      this.e[var2][0] = (byte)var1;
-
-      for(this.N = 1; this.N < 8; ++this.N) {
-         this.e[var2][this.N] = this.a[this.b[this.b[this.a[186] + this.N]] + var1];
-         this.a[this.b[this.b[this.a[186] + this.N]] + var1] = (byte)(this.b[this.a[186] + this.N] == 29 ? this.b[this.a[188] + var2] : (this.b[this.a[186] + this.N] == 46 ? var2 + 1 : this.b[this.a[187] + this.N]));
-      }
-
-      if (var1 != this.a[0][17] || this.H == 0) {
-         this.a[4545 + var1] = this.a[8994];
-         this.a[8994] = (byte)var1;
-      }
-
-   }
-
-   final void f() {
-      this.a[8933] = this.H;
-
-      for(this.O = this.G - 1; this.O >= 0; --this.O) {
-         for(this.N = 1; this.N < 8; ++this.N) {
-            this.a[this.b[this.b[this.a[186] + this.N]] + this.e[this.O][0]] = this.e[this.O][this.N];
-         }
-      }
-
-      this.a[8994] = (byte)(this.H > 0 ? this.a[0][17] : 0);
-   }
-
-   private boolean i() {
-      if ((this.a[2929 + this.v] & 255) < 8 || (this.a[2929 + this.v] & 255) > 14 || this.a[2828 + this.v] == 60 || this.a[2828 + this.v] == 87) {
-         this.f = false;
-         if (this.a[2828 + this.v] > 9 && !this.l()) {
-            return false;
-         }
-
-         if ((this.a[2828 + this.v] < 28 || this.a[2828 + this.v] > 49) && this.a[2828 + this.v] != 99) {
-            this.J();
-            if (this.a[2929 + this.v] == 117) {
-               this.j(0);
-            }
-
-            if (this.a[4646 + this.v] >= 0) {
-               if ((this.b[this.a[70] + this.a[8749 + this.a[4444 + this.v]]] & 2) > 0 && this.a[8627 + this.a[4444 + this.v]] == 0 && (this.a[8810 + this.a[4444 + this.v]] == this.v || (this.b[this.a[70] + this.a[8749 + this.a[4444 + this.v]]] & 1) > 0) && this.a[1313 + this.v] > 0) {
-                  this.f = this.b(this.a[8749 + this.a[4444 + this.v]], this.a[9115 + this.a[4444 + this.v]] - 1);
-               }
-            } else if ((this.b[this.a[48] + this.a[2828 + this.v]] & 2) > 0) {
-               this.a(this.b[this.a[45] + this.a[2828 + this.v]], this.b[this.a[46] + this.a[2828 + this.v]], this.b[this.a[47] + this.a[2828 + this.v]], this.b[this.a[64] + this.b[this.a[45] + this.a[2828 + this.v]]]);
-            }
-
-            if (this.j()) {
-               return true;
-            }
-
-            if (this.a[2828 + this.v] == 84 && this.a[404 + this.v] == 100) {
-               this.f = true;
-            }
-
-            if (this.a[2828 + this.v] == 70 || this.a[2828 + this.v] == 71) {
-               this.S = (this.a[6767 + this.v] + 12) / 12;
-               if (this.a[2020 + this.v] % (100 / this.S) <= 4) {
-                  --this.a[this.u][0];
-               }
-            }
-
-            if (this.R * this.A >= this.b[this.a[30] + this.a[2828 + this.v]] * this.A) {
-               if (this.b[this.a[31] + this.a[2828 + this.v]] > 0 && this.a[2828 + this.v] > 9) {
-                  this.a[this.b[this.b[this.a[31] + this.a[2828 + this.v]]] + this.a[3838 + this.v]] = this.b[this.a[30] + this.a[2828 + this.v]];
-               }
-
-               this.f = true;
-            }
-         } else {
-            this.a(this.a[2828 + this.v], true, this.v);
-         }
-
-         if (this.f) {
-            if (this.a[2828 + this.v] == 13 && (this.a[2929 + this.v] & 255) < 145) {
-               this.a[2929 + this.v] = -110;
-               --this.a[3636 + this.v];
-               this.a[404 + this.v] = 99;
-               return false;
-            }
-
-            if (this.k()) {
-               return true;
-            }
-
-            this.I();
+    private boolean boolean_c(byte by) {
+        if (by == this.var_byte_arr_a[4747 + this.var_int_v] && this.var_byte_arr_a[2828 + this.var_int_v] != 10 && this.var_byte_arr_a[2828 + this.var_int_v] != 15 && this.var_byte_arr_a[2828 + this.var_int_v] != 12 && this.var_byte_arr_a[2828 + this.var_int_v] != 16 && this.var_byte_arr_a[2828 + this.var_int_v] != 13) {
             return true;
-         }
-      }
-
-      return false;
-   }
-
-   private boolean j() {
-      if (this.a[2929 + this.v] == -116 && this.a[404 + this.v] >= this.b[this.a[49] + this.a[2828 + this.v]]) {
-         if (this.a[2828 + this.v] >= 94 && this.a[2828 + this.v] <= 97) {
-            this.K();
-         } else if (this.a[2828 + this.v] == 55) {
-            this.j(1);
-            this.a[404 + this.v] = 0;
-         }
-      } else if (this.b[this.a[33] + this.a[2828 + this.v]] == 4 && this.a[404 + this.v] >= this.b[this.a[49] + this.a[2828 + this.v]]) {
-         if (this.a[4646 + this.v] < 0) {
-            if ((this.b[this.a[48] + this.a[2828 + this.v]] & 2) == 0) {
-               this.a(this.b[this.a[45] + this.a[2828 + this.v]], this.b[this.a[46] + this.a[2828 + this.v]], this.b[this.a[47] + this.a[2828 + this.v]], this.b[this.a[64] + this.b[this.a[45] + this.a[2828 + this.v]]]);
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] >= 10 && this.var_byte_arr_a[2828 + this.var_int_v] <= 16 && by <= -61 && by >= -110) {
+            byte by2 = this.var_byte_arr_b[this.var_short_arr_a[16] + this.var_byte_arr_b[this.var_short_arr_a[17] + 3] + this.var_byte_arr_a[9772 - by]];
+            if ((this.var_byte_arr_a[2828 + this.var_int_v] == 12 || this.var_byte_arr_a[2828 + this.var_int_v] == 16) && (by2 == 12 || by2 == 16) && this.var_byte_arr_a[9822 - by] > 0 || this.var_byte_arr_a[9872 - by] > 0 && by2 == this.var_byte_arr_a[2828 + this.var_int_v]) {
+                return true;
             }
-         } else {
-            if ((this.b[this.a[70] + this.a[8749 + this.a[4444 + this.v]]] & 2) == 0 && (this.a[8810 + this.a[4444 + this.v]] == this.v || (this.b[this.a[70] + this.a[8749 + this.a[4444 + this.v]]] & 1) > 0) || this.a[8627 + this.a[4444 + this.v]] != 0) {
-               this.f = this.b(this.a[8627 + this.a[4444 + this.v]] == 0 ? this.a[8749 + this.a[4444 + this.v]] : 16, this.a[9115 + this.a[4444 + this.v]] - 1);
-            }
+        }
+        return false;
+    }
 
-            if (this.a[8627 + this.a[4444 + this.v]] != 0) {
-               for(this.S = 0; this.S < 20 && this.g[0][this.S] != this.a[4444 + this.v]; ++this.S) {
-               }
-
-               ++this.g[1][this.S];
-            }
-         }
-
-         if (this.b[this.a[31] + this.a[2828 + this.v]] != 13) {
-            byte[] var1 = this.a;
-            int var4 = this.b[this.b[this.a[31] + this.a[2828 + this.v]]] + this.a[3838 + this.v];
-            var1[var4] = (byte)(var1[var4] + this.A);
-         }
-
-         this.a[404 + this.v] = 0;
-         if (this.a[2828 + this.v] == 111) {
-            this.f = true;
-         }
-
-         if (this.a[2828 + this.v] == 107) {
-            if (this.z < 20) {
-               this.f = true;
+    private void void_b(int n, int n2, int n3, int n4) {
+        this.var_int_N = this.var_short_arr_a[289] + this.var_byte_arr_b[this.var_short_arr_a[290] + this.var_f_a.var_byte_q] + this.var_byte_f * 4;
+        if (n3 >= this.var_byte_arr_b[this.var_int_N] && n4 >= this.var_byte_arr_b[this.var_int_N + 1] && n3 <= this.var_byte_arr_b[this.var_int_N + 2] && n4 <= this.var_byte_arr_b[this.var_int_N + 3] && (this.var_f_a.var_byte_q == 3 || this.var_byte_arr_a[1919 + this.var_short_arr_arr_a[0][17]] > 0 && this.var_byte_arr_a[1414 + this.var_short_arr_arr_a[0][17]] >= 12)) {
+            if (this.var_f_a.var_byte_q == 4 && this.var_byte_f == 1) {
+                this.c(false);
+                this.var_int_N = 0;
+                while (this.var_int_N < 4) {
+                    this.var_f_a.var_byte_arr_p[this.var_int_N + 1] = this.var_byte_arr_arr_e[this.var_int_N][0] != 0 ? this.var_byte_arr_arr_e[this.var_int_N][0] : this.var_byte_arr_arr_e[0][0];
+                    ++this.var_int_N;
+                }
             } else {
-               this.a[4444 + this.a[4444 + this.v]] = (byte)this.v;
+                this.void_b(n, n2, 1);
+                this.var_byte_arr_a[3131 + n2] = this.var_byte_arr_a[0 + n2];
+                this.var_byte_arr_a[3232 + n2] = this.var_byte_arr_a[101 + n2];
+                this.var_int_O = 0;
+                this.boolean_a(this.var_f_a.var_byte_q == 2 ? 9 : 8, 25, (int)this.var_byte_arr_a[0 + (this.var_f_a.var_byte_q == 2 ? n2 : n)], (int)this.var_byte_arr_a[101 + (this.var_f_a.var_byte_q == 2 ? n2 : n)]);
             }
-         }
+            this.var_f_a.void_b((int)this.var_byte_arr_b[this.var_short_arr_a[286] + this.var_byte_arr_b[this.var_short_arr_a[288] + this.var_f_a.var_byte_q] + this.var_byte_f]);
+            this.var_byte_f = (byte)(this.var_byte_f + 50);
+        }
+    }
 
-         if (this.b[this.a[31] + this.a[2828 + this.v]] == 36 && this.b[this.a[30] + this.a[2828 + this.v]] == 99 && this.a[3636 + this.v] >= this.a[3737 + this.v]) {
-            this.f = true;
-         }
+    private void void_b(int n, int n2, int n3) {
+        this.var_f_a.var_byte_arr_p[1] = this.var_f_a.var_byte_arr_p[2] = (byte)this.var_short_arr_arr_a[0][17];
+        this.var_f_a.var_byte_arr_p[5] = (byte)n2;
+        if (n != 0) {
+            this.var_f_a.var_byte_arr_p[3] = this.var_f_a.var_byte_arr_p[4] = (byte)n;
+            this.var_f_a.var_byte_arr_p[2] = this.var_f_a.var_byte_arr_p[4];
+            this.var_f_a.var_byte_arr_p[0] = this.var_f_a.var_byte_arr_p[4];
+        }
+        this.var_int_O = n3;
+        int n4 = this.var_int_N = n != this.var_short_arr_arr_a[0][17] && n != 0 ? 3 : 2;
+        while (this.var_int_O <= 50 && this.var_int_N <= 4) {
+            if (this.var_byte_arr_a[1919 + this.var_int_O] > 0 && this.var_byte_arr_a[1414 + this.var_int_O] >= 12 && this.var_int_O != n && this.var_int_O != this.var_short_arr_arr_a[0][17]) {
+                this.var_f_a.var_byte_arr_p[this.var_int_N] = (byte)this.var_int_O;
+                ++this.var_int_N;
+            }
+            ++this.var_int_O;
+        }
+    }
 
-         if ((this.a[2828 + this.v] == 11 || this.a[2828 + this.v] == 14) && this.a[3636 + this.v] < this.a[3737 + this.v]) {
-            this.N();
+    private void c(boolean bl) {
+        this.var_boolean_e = false;
+        this.var_byte_H = 0;
+        if (this.var_byte_arr_a[8994] == this.var_short_arr_arr_a[0][17]) {
+            this.var_byte_H = 1;
+        }
+        this.c(this.var_short_arr_arr_a[0][17], 0);
+        this.var_int_N = 1;
+        while (this.var_int_N < 4) {
+            this.var_byte_arr_arr_e[this.var_int_N][1] = 0;
+            this.var_byte_arr_arr_e[this.var_int_N][0] = 0;
+            ++this.var_int_N;
+        }
+        this.var_int_O = 1;
+        while (this.var_int_O <= 50) {
+            if (this.var_byte_arr_a[1919 + this.var_int_O] > 0 && this.var_short_arr_arr_a[0][17] != this.var_int_O && this.var_byte_arr_a[1414 + this.var_int_O] >= 12) {
+                this.var_int_Q = this.var_byte_arr_a[1717 + this.var_int_O] > this.var_byte_arr_a[1616 + this.var_int_O] ? this.var_byte_arr_a[1717 + this.var_int_O] : this.var_byte_arr_a[1616 + this.var_int_O];
+                b b2 = this;
+                int n = 1;
+                int n2 = bl && this.var_boolean_e ? 1 : 0;
+                while (true) {
+                    b2.var_int_N = n + n2;
+                    if (this.var_int_N >= 4) break;
+                    if (this.var_byte_arr_arr_e[this.var_int_N][1] < this.var_int_Q || bl && !this.var_boolean_e && this.var_byte_arr_a[6464 + this.var_int_O] == 57) {
+                        this.var_int_P = 3;
+                        while (this.var_int_P > this.var_int_N) {
+                            this.var_byte_arr_arr_e[this.var_int_P][0] = this.var_byte_arr_arr_e[this.var_int_P - 1][0];
+                            this.var_byte_arr_arr_e[this.var_int_P][1] = this.var_byte_arr_arr_e[this.var_int_P - 1][1];
+                            --this.var_int_P;
+                        }
+                        this.var_byte_arr_arr_e[this.var_int_N][0] = (byte)this.var_int_O;
+                        this.var_byte_arr_arr_e[this.var_int_N][1] = (byte)this.var_int_Q;
+                        if (!bl || this.var_boolean_e || this.var_byte_arr_a[6464 + this.var_int_O] != 57) break;
+                        this.var_boolean_e = true;
+                        break;
+                    }
+                    b b3 = this;
+                    b2 = b3;
+                    n = b3.var_int_N;
+                    n2 = 1;
+                }
+            }
+            ++this.var_int_O;
+        }
+        this.var_byte_G = 1;
+        while (this.var_byte_G < 4 && this.var_byte_arr_arr_e[this.var_byte_G][0] != 0) {
+            this.c(this.var_byte_arr_arr_e[this.var_byte_G][0], this.var_byte_G);
+            if (this.var_byte_G == 1 && bl) {
+                this.var_byte_arr_a[6464 + this.var_byte_arr_arr_e[this.var_byte_G][0]] = 57;
+            }
+            this.var_byte_G = (byte)(this.var_byte_G + 1);
+        }
+        this.var_byte_arr_a[8933] = this.var_byte_G;
+    }
+
+    private void c(int n, int n2) {
+        this.var_byte_arr_arr_e[n2][0] = (byte)n;
+        this.var_int_N = 1;
+        while (this.var_int_N < 8) {
+            this.var_byte_arr_arr_e[n2][this.var_int_N] = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[186] + this.var_int_N]] + n];
+            this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[186] + this.var_int_N]] + n] = (byte)(this.var_byte_arr_b[this.var_short_arr_a[186] + this.var_int_N] == 29 ? this.var_byte_arr_b[this.var_short_arr_a[188] + n2] : (this.var_byte_arr_b[this.var_short_arr_a[186] + this.var_int_N] == 46 ? n2 + 1 : this.var_byte_arr_b[this.var_short_arr_a[187] + this.var_int_N]));
+            ++this.var_int_N;
+        }
+        if (n != this.var_short_arr_arr_a[0][17] || this.var_byte_H == 0) {
+            this.var_byte_arr_a[4545 + n] = this.var_byte_arr_a[8994];
+            this.var_byte_arr_a[8994] = (byte)n;
+        }
+    }
+
+    final void void_f() {
+        this.var_byte_arr_a[8933] = this.var_byte_H;
+        this.var_int_O = this.var_byte_G - 1;
+        while (this.var_int_O >= 0) {
+            this.var_int_N = 1;
+            while (this.var_int_N < 8) {
+                this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[186] + this.var_int_N]] + this.var_byte_arr_arr_e[this.var_int_O][0]] = this.var_byte_arr_arr_e[this.var_int_O][this.var_int_N];
+                ++this.var_int_N;
+            }
+            --this.var_int_O;
+        }
+        this.var_byte_arr_a[8994] = (byte)(this.var_byte_H > 0 ? this.var_short_arr_arr_a[0][17] : (short)0);
+    }
+
+    private boolean boolean_i() {
+        if ((this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) < 8 || (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) > 14 || this.var_byte_arr_a[2828 + this.var_int_v] == 60 || this.var_byte_arr_a[2828 + this.var_int_v] == 87) {
+            this.var_boolean_f = false;
+            if (this.var_byte_arr_a[2828 + this.var_int_v] > 9 && !this.boolean_l()) {
+                return false;
+            }
+            if (this.var_byte_arr_a[2828 + this.var_int_v] >= 28 && this.var_byte_arr_a[2828 + this.var_int_v] <= 49 || this.var_byte_arr_a[2828 + this.var_int_v] == 99) {
+                this.a((int)this.var_byte_arr_a[2828 + this.var_int_v], true, this.var_int_v);
+            } else {
+                this.J();
+                if (this.var_byte_arr_a[2929 + this.var_int_v] == 117) {
+                    this.j(0);
+                }
+                if (this.var_byte_arr_a[4646 + this.var_int_v] >= 0) {
+                    if ((this.var_byte_arr_b[this.var_short_arr_a[70] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] & 2) > 0 && this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0 && (this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]] == this.var_int_v || (this.var_byte_arr_b[this.var_short_arr_a[70] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] & 1) > 0) && this.var_byte_arr_a[1313 + this.var_int_v] > 0) {
+                        this.var_boolean_f = this.boolean_b(this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]], this.var_byte_arr_a[9115 + this.var_byte_arr_a[4444 + this.var_int_v]] - 1);
+                    }
+                } else if ((this.var_byte_arr_b[this.var_short_arr_a[48] + this.var_byte_arr_a[2828 + this.var_int_v]] & 2) > 0) {
+                    this.boolean_a(this.var_byte_arr_b[this.var_short_arr_a[45] + this.var_byte_arr_a[2828 + this.var_int_v]], this.var_byte_arr_b[this.var_short_arr_a[46] + this.var_byte_arr_a[2828 + this.var_int_v]], this.var_byte_arr_b[this.var_short_arr_a[47] + this.var_byte_arr_a[2828 + this.var_int_v]], this.var_byte_arr_b[this.var_short_arr_a[64] + this.var_byte_arr_b[this.var_short_arr_a[45] + this.var_byte_arr_a[2828 + this.var_int_v]]]);
+                }
+                if (this.boolean_j()) {
+                    return true;
+                }
+                if (this.var_byte_arr_a[2828 + this.var_int_v] == 84 && this.var_byte_arr_a[404 + this.var_int_v] == 100) {
+                    this.var_boolean_f = true;
+                }
+                if (this.var_byte_arr_a[2828 + this.var_int_v] == 70 || this.var_byte_arr_a[2828 + this.var_int_v] == 71) {
+                    this.var_int_S = (this.var_byte_arr_a[6767 + this.var_int_v] + 12) / 12;
+                    if (this.var_byte_arr_a[2020 + this.var_int_v] % (100 / this.var_int_S) <= 4) {
+                        short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                        sArray[0] = (short)(sArray[0] - 1);
+                    }
+                }
+                if (this.var_int_R * this.var_int_A >= this.var_byte_arr_b[this.var_short_arr_a[30] + this.var_byte_arr_a[2828 + this.var_int_v]] * this.var_int_A) {
+                    if (this.var_byte_arr_b[this.var_short_arr_a[31] + this.var_byte_arr_a[2828 + this.var_int_v]] > 0 && this.var_byte_arr_a[2828 + this.var_int_v] > 9) {
+                        this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[31] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_arr_a[3838 + this.var_int_v]] = this.var_byte_arr_b[this.var_short_arr_a[30] + this.var_byte_arr_a[2828 + this.var_int_v]];
+                    }
+                    this.var_boolean_f = true;
+                }
+            }
+            if (this.var_boolean_f) {
+                if (this.var_byte_arr_a[2828 + this.var_int_v] == 13 && (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) < 145) {
+                    this.var_byte_arr_a[2929 + this.var_int_v] = -110;
+                    int n = 3636 + this.var_int_v;
+                    this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] - 1);
+                    this.var_byte_arr_a[404 + this.var_int_v] = 99;
+                    return false;
+                }
+                if (this.boolean_k()) {
+                    return true;
+                }
+                this.I();
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean boolean_j() {
+        if (this.var_byte_arr_a[2929 + this.var_int_v] == -116 && this.var_byte_arr_a[404 + this.var_int_v] >= this.var_byte_arr_b[this.var_short_arr_a[49] + this.var_byte_arr_a[2828 + this.var_int_v]]) {
+            if (this.var_byte_arr_a[2828 + this.var_int_v] >= 94 && this.var_byte_arr_a[2828 + this.var_int_v] <= 97) {
+                this.K();
+            } else if (this.var_byte_arr_a[2828 + this.var_int_v] == 55) {
+                this.j(1);
+                this.var_byte_arr_a[404 + this.var_int_v] = 0;
+            }
+        } else if (this.var_byte_arr_b[this.var_short_arr_a[33] + this.var_byte_arr_a[2828 + this.var_int_v]] == 4 && this.var_byte_arr_a[404 + this.var_int_v] >= this.var_byte_arr_b[this.var_short_arr_a[49] + this.var_byte_arr_a[2828 + this.var_int_v]]) {
+            if (this.var_byte_arr_a[4646 + this.var_int_v] >= 0) {
+                if ((this.var_byte_arr_b[this.var_short_arr_a[70] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] & 2) == 0 && (this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]] == this.var_int_v || (this.var_byte_arr_b[this.var_short_arr_a[70] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] & 1) > 0) || this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0) {
+                    this.var_boolean_f = this.boolean_b(this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0 ? this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] : 16, this.var_byte_arr_a[9115 + this.var_byte_arr_a[4444 + this.var_int_v]] - 1);
+                }
+                if (this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] != 0) {
+                    this.var_int_S = 0;
+                    while (this.var_int_S < 20 && this.var_byte_arr_arr_g[0][this.var_int_S] != this.var_byte_arr_a[4444 + this.var_int_v]) {
+                        ++this.var_int_S;
+                    }
+                    byte[] byArray = this.var_byte_arr_arr_g[1];
+                    int n = this.var_int_S;
+                    byArray[n] = (byte)(byArray[n] + 1);
+                }
+            } else if ((this.var_byte_arr_b[this.var_short_arr_a[48] + this.var_byte_arr_a[2828 + this.var_int_v]] & 2) == 0) {
+                this.boolean_a(this.var_byte_arr_b[this.var_short_arr_a[45] + this.var_byte_arr_a[2828 + this.var_int_v]], this.var_byte_arr_b[this.var_short_arr_a[46] + this.var_byte_arr_a[2828 + this.var_int_v]], this.var_byte_arr_b[this.var_short_arr_a[47] + this.var_byte_arr_a[2828 + this.var_int_v]], this.var_byte_arr_b[this.var_short_arr_a[64] + this.var_byte_arr_b[this.var_short_arr_a[45] + this.var_byte_arr_a[2828 + this.var_int_v]]]);
+            }
+            if (this.var_byte_arr_b[this.var_short_arr_a[31] + this.var_byte_arr_a[2828 + this.var_int_v]] != 13) {
+                int n = this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[31] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_arr_a[3838 + this.var_int_v];
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + this.var_int_A);
+            }
+            this.var_byte_arr_a[404 + this.var_int_v] = 0;
+            if (this.var_byte_arr_a[2828 + this.var_int_v] == 111) {
+                this.var_boolean_f = true;
+            }
+            if (this.var_byte_arr_a[2828 + this.var_int_v] == 107) {
+                if (this.var_int_z < 20) {
+                    this.var_boolean_f = true;
+                } else {
+                    this.var_byte_arr_a[4444 + this.var_byte_arr_a[4444 + this.var_int_v]] = (byte)this.var_int_v;
+                }
+            }
+            if (this.var_byte_arr_b[this.var_short_arr_a[31] + this.var_byte_arr_a[2828 + this.var_int_v]] == 36 && this.var_byte_arr_b[this.var_short_arr_a[30] + this.var_byte_arr_a[2828 + this.var_int_v]] == 99 && this.var_byte_arr_a[3636 + this.var_int_v] >= this.var_byte_arr_a[3737 + this.var_int_v]) {
+                this.var_boolean_f = true;
+            }
+            if ((this.var_byte_arr_a[2828 + this.var_int_v] == 11 || this.var_byte_arr_a[2828 + this.var_int_v] == 14) && this.var_byte_arr_a[3636 + this.var_int_v] < this.var_byte_arr_a[3737 + this.var_int_v]) {
+                this.N();
+                return true;
+            }
+            if (this.var_byte_arr_a[2828 + this.var_int_v] == 10 || this.var_byte_arr_a[2828 + this.var_int_v] == 15 || this.var_byte_arr_a[2828 + this.var_int_v] == 12 || this.var_byte_arr_a[2828 + this.var_int_v] == 16 || this.var_byte_arr_a[2828 + this.var_int_v] == 13) {
+                int n = 9883 + this.var_byte_arr_a[4444 + this.var_int_v];
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] - 1);
+                if (this.var_byte_arr_a[9883 + this.var_byte_arr_a[4444 + this.var_int_v]] < 0) {
+                    this.var_byte_arr_a[9883 + this.var_byte_arr_a[4444 + this.var_int_v]] = 0;
+                }
+            } else if (this.var_byte_arr_a[2828 + this.var_int_v] == 54) {
+                short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                sArray[0] = (short)(sArray[0] + 1);
+            }
+        }
+        return false;
+    }
+
+    private boolean boolean_k() {
+        if (this.var_byte_arr_a[2828 + this.var_int_v] <= 9) {
+            if (this.var_byte_arr_a[6565 + this.var_int_v] == 9 && (this.var_byte_arr_a[2828 + this.var_int_v] == 0 || this.var_byte_arr_a[2828 + this.var_int_v] == 3)) {
+                int n = 2828 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] ^ 1);
+            }
+            this.var_boolean_b = true;
+            this.var_boolean_a = true;
+            if (this.boolean_p()) {
+                return true;
+            }
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 26 || this.var_byte_arr_a[2828 + this.var_int_v] == 27) {
+            this.f(true);
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] >= 94 && this.var_byte_arr_a[2828 + this.var_int_v] <= 97) {
+            this.ao();
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 50) {
+            int n = 7979 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xBF);
+            this.L();
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 111) {
+            this.var_byte_arr_a[3636 + this.var_int_v] = 0;
+            this.boolean_o();
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 109) {
+            this.d(this.var_int_v, 0);
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 110) {
+            this.var_byte_arr_a[3535 + this.var_int_v] = 15;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 107) {
+            this.void_c(this.var_byte_arr_a[4444 + this.var_int_v]);
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 79) {
+            this.var_byte_arr_a[3333 + this.var_int_v] = -1;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] <= 4 && this.var_byte_arr_arr_b[this.var_byte_arr_a[3232 + this.var_int_v]][this.var_byte_arr_a[3131 + this.var_int_v]] == this.var_byte_arr_a[4747 + this.var_int_v] && this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[31] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_arr_a[4444 + this.var_int_v]] == 0) {
+            this.a((int)this.var_byte_arr_b[this.var_short_arr_a[31] + this.var_byte_arr_a[2828 + this.var_int_v]], (int)this.var_byte_arr_a[3131 + this.var_int_v], (int)this.var_byte_arr_a[3232 + this.var_int_v], this.var_byte_arr_a[4444 + this.var_int_v]);
+        }
+        if ((this.var_byte_arr_b[this.var_short_arr_a[27] + this.var_byte_arr_a[2828 + this.var_int_v]] & 8) != 0 && this.boolean_n()) {
             return true;
-         }
-
-         if (this.a[2828 + this.v] != 10 && this.a[2828 + this.v] != 15 && this.a[2828 + this.v] != 12 && this.a[2828 + this.v] != 16 && this.a[2828 + this.v] != 13) {
-            if (this.a[2828 + this.v] == 54) {
-               ++this.a[this.u][0];
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 60) {
+            this.void_a(this.var_int_v, (byte)12);
+            if (this.boolean_b(true)) {
+                return true;
             }
-         } else {
-            --this.a[9883 + this.a[4444 + this.v]];
-            if (this.a[9883 + this.a[4444 + this.v]] < 0) {
-               this.a[9883 + this.a[4444 + this.v]] = 0;
-            }
-         }
-      }
-
-      return false;
-   }
-
-   private boolean k() {
-      if (this.a[2828 + this.v] <= 9) {
-         if (this.a[6565 + this.v] == 9 && (this.a[2828 + this.v] == 0 || this.a[2828 + this.v] == 3)) {
-            byte[] var10000 = this.a;
-            int var10001 = 2828 + this.v;
-            var10000[var10001] = (byte)(var10000[var10001] ^ 1);
-         }
-
-         this.a = this.b = true;
-         if (this.p()) {
-            return true;
-         }
-      }
-
-      if (this.a[2828 + this.v] == 26 || this.a[2828 + this.v] == 27) {
-         this.f(true);
-      }
-
-      if (this.a[2828 + this.v] >= 94 && this.a[2828 + this.v] <= 97) {
-         this.ao();
-      }
-
-      if (this.a[2828 + this.v] == 50) {
-         byte[] var1 = this.a;
-         int var2 = 7979 + this.v;
-         var1[var2] = (byte)(var1[var2] & 191);
-         this.L();
-      }
-
-      if (this.a[2828 + this.v] == 111) {
-         this.a[3636 + this.v] = 0;
-         this.o();
-      }
-
-      if (this.a[2828 + this.v] == 109) {
-         this.d(this.v, 0);
-      }
-
-      if (this.a[2828 + this.v] == 110) {
-         this.a[3535 + this.v] = 15;
-      }
-
-      if (this.a[2828 + this.v] == 107) {
-         this.c(this.a[4444 + this.v]);
-      }
-
-      if (this.a[2828 + this.v] == 79) {
-         this.a[3333 + this.v] = -1;
-      }
-
-      if (this.a[2828 + this.v] <= 4 && this.b[this.a[3232 + this.v]][this.a[3131 + this.v]] == this.a[4747 + this.v] && this.a[this.b[this.b[this.a[31] + this.a[2828 + this.v]]] + this.a[4444 + this.v]] == 0) {
-         this.a((int)this.b[this.a[31] + this.a[2828 + this.v]], (int)this.a[3131 + this.v], (int)this.a[3232 + this.v], (byte)this.a[4444 + this.v]);
-      }
-
-      if ((this.b[this.a[27] + this.a[2828 + this.v]] & 8) != 0 && this.n()) {
-         return true;
-      } else {
-         if (this.a[2828 + this.v] == 60) {
-            this.a(this.v, (byte)12);
-            if (this.b(true)) {
-               return true;
-            }
-
-            this.a(this.v, (byte)60);
-         }
-
-         if (this.a[1414 + this.v] < 11 && this.a[2828 + this.v] == 17 && this.a((int)10)) {
-            this.a(this.v, (byte)73);
+            this.void_a(this.var_int_v, (byte)60);
+        }
+        if (this.var_byte_arr_a[1414 + this.var_int_v] < 11 && this.var_byte_arr_a[2828 + this.var_int_v] == 17 && this.boolean_a(10)) {
+            this.void_a(this.var_int_v, (byte)73);
             this.g(1);
             return true;
-         } else {
-            return false;
-         }
-      }
-   }
+        }
+        return false;
+    }
 
-   private void I() {
-      if (this.a[2828 + this.v] >= 83 && this.a[3939 + this.v] >= 44 && this.a[3939 + this.v] <= 48) {
-         this.a[3535 + this.v] = (byte)(this.a[3939 + this.v] - 44 + 8);
-      }
-
-      if (this.a[2828 + this.v] == 85) {
-         if (this.a[6161 + this.v] >= 2) {
-            this.a[3939 + this.v] = 69;
-         }
-
-         this.a(this.v, this.a[3939 + this.v]);
-         if (this.a[2828 + this.v] >= 44 && this.a[2828 + this.v] <= 48) {
-            this.a[3535 + this.v] = 0;
-         }
-
-         this.a[3939 + this.v] = 69;
-         this.a[1313 + this.v] = 0;
-         this.a[404 + this.v] = 0;
-      } else {
-         this.a(this.v, this.a[2828 + this.v] >= 19 && this.a[2828 + this.v] <= 26 && this.a[6464 + this.v] == 69 ? 69 : this.b[this.a[160] + this.a[2828 + this.v]]);
-      }
-
-      if (this.a[2828 + this.v] == 26 || this.a[2828 + this.v] == 27) {
-         this.f(false);
-      }
-
-      if (this.a[6161 + this.v] < 2 && (this.b[this.a[39] + this.a[2828 + this.v]] == 2 || this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v)) {
-         this.N();
-      }
-
-      if (this.a[2828 + this.v] == 16) {
-         this.an();
-      }
-
-   }
-
-   private void J() {
-      this.A = 1;
-      if ((this.b[this.a[27] + this.a[2828 + this.v]] & 32) == 0) {
-         this.A = -1;
-      }
-
-      this.C = (this.a[this.b[this.b[this.a[35] + this.a[2828 + this.v]]] + this.v] + this.b[this.a[36] + this.a[2828 + this.v]]) * this.A;
-      if (this.b[this.a[35] + this.a[2828 + this.v]] >= 69 && this.b[this.a[35] + this.a[2828 + this.v]] <= 74 && this.u == 0 && this.a[0 + this.v] - this.a[0 + this.a[0][17]] >= -4 && this.a[0 + this.v] - this.a[0 + this.a[0][17]] <= 4 && this.a[101 + this.v] - this.a[101 + this.a[0][17]] >= -4 && this.a[101 + this.v] - this.a[101 + this.a[0][17]] <= 4) {
-         this.C = this.C * 3 / 2;
-      }
-
-      if (this.b[this.a[33] + this.a[2828 + this.v]] <= 0) {
-         short[] var10000 = this.a[this.u];
-         int var10001 = -this.b[this.a[33] + this.a[2828 + this.v]];
-         var10000[var10001] = (short)(var10000[var10001] + this.C);
-      } else {
-         byte[] var1 = this.a;
-         int var3 = this.b[this.b[this.a[33] + this.a[2828 + this.v]]] + this.v;
-         var1[var3] = (byte)(var1[var3] + this.C);
-      }
-
-      this.A = 1;
-      if ((this.b[this.a[27] + this.a[2828 + this.v]] & 16) == 0) {
-         this.A = -1;
-      }
-
-      this.C = this.b[this.a[34] + this.a[2828 + this.v]] >= 0 ? this.b[this.a[34] + this.a[2828 + this.v]] : this.a[this.b[-this.b[this.a[34] + this.a[2828 + this.v]]] + this.v];
-      byte[] var2 = this.a;
-      int var4 = this.b[this.b[this.a[31] + this.a[2828 + this.v]]] + this.a[3838 + this.v];
-      var2[var4] = (byte)(var2[var4] + this.C * this.A);
-      this.R = this.a[this.b[this.b[this.a[31] + this.a[2828 + this.v]]] + this.a[3838 + this.v]];
-   }
-
-   private void K() {
-      this.a[404 + this.v] = 0;
-      this.a(this.b[this.a[45] + this.a[2828 + this.v]], this.b[this.a[46] + this.a[2828 + this.v]], this.b[this.a[47] + this.a[2828 + this.v]], this.b[this.a[64] + this.b[this.a[45] + this.a[2828 + this.v]]]);
-      this.f = true;
-      switch (this.a[2828 + this.v]) {
-         case 94:
-            this.f = this.a(this.a[4444 + this.v], (int)10);
-            return;
-         case 95:
-            this.a[8181 + this.a[4444 + this.v]] = 0;
-            this.a[7979 + this.a[4444 + this.v]] = (byte)(this.a[7979 + this.a[4444 + this.v]] | 8);
-            return;
-         case 96:
-            this.a[505 + this.R] = 99;
-            this.R = this.v;
-            this.v = this.a[4444 + this.v];
-            if ((this.a[8282 + this.v] & 127) >> 1 == 0) {
-               this.a(true);
+    private void I() {
+        if (this.var_byte_arr_a[2828 + this.var_int_v] >= 83 && this.var_byte_arr_a[3939 + this.var_int_v] >= 44 && this.var_byte_arr_a[3939 + this.var_int_v] <= 48) {
+            this.var_byte_arr_a[3535 + this.var_int_v] = (byte)(this.var_byte_arr_a[3939 + this.var_int_v] - 44 + 8);
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 85) {
+            if (this.var_byte_arr_a[6161 + this.var_int_v] >= 2) {
+                this.var_byte_arr_a[3939 + this.var_int_v] = 69;
             }
-
-            this.v = this.R;
-            return;
-         case 97:
-            for(this.R = 3; this.R >= 0; --this.R) {
-               if (this.a.c[this.u][this.R][2] >= 0) {
-                  for(this.S = 0; this.S < 4; ++this.S) {
-                     this.a.c[this.u][this.R + 1][this.S] = this.a.c[this.u][this.R][this.S];
-                  }
-               }
+            this.void_a(this.var_int_v, this.var_byte_arr_a[3939 + this.var_int_v]);
+            if (this.var_byte_arr_a[2828 + this.var_int_v] >= 44 && this.var_byte_arr_a[2828 + this.var_int_v] <= 48) {
+                this.var_byte_arr_a[3535 + this.var_int_v] = 0;
             }
-
-            this.a.c[this.u][0][0] = this.a[3131 + this.v];
-            this.a.c[this.u][0][1] = this.a[3232 + this.v];
-            this.a.c[this.u][0][2] = 0;
-            this.a.c[this.u][0][3] = (byte)(this.u ^ 1);
-         default:
-      }
-   }
-
-   private boolean a(int var1, int var2) {
-      if (var2 > 1) {
-         this.a[8080 + var1] = -100;
-         byte[] var10000 = this.a;
-         var10000[7979 + var1] = (byte)(var10000[7979 + var1] & 251);
-      }
-
-      if (this.a[1919 + var1] >= this.a[6767 + var1] && var2 > 0) {
-         return true;
-      } else {
-         if (this.u == 0 || var2 < 0) {
-            byte[] var3 = this.a.a.f;
-            var3[var1] = (byte)(var3[var1] + var2);
-         }
-
-         this.a[1919 + var1] = (byte)b((int)(this.a[1919 + var1] + var2), (int)0, (int)this.a[6767 + var1]);
-         return this.a[1919 + var1] >= this.a[6767 + var1];
-      }
-   }
-
-   private void c(byte var1) {
-      for(this.R = this.u * 50 + 1; this.R <= (this.u + 1) * 50; ++this.R) {
-         if (this.a[1919 + this.R] == 0) {
-            if (this.u == 1) {
-               this.a.e((int)var1);
-               this.a.f((int)var1);
-               this.a((byte)17, (int)this.a[0][17], (int)var1);
-            }
-
-            this.a[4444 + var1] = 0;
-
-            for(this.S = 0; this.S < 83; ++this.S) {
-               this.a[this.b[this.S] + this.R] = this.a[this.b[this.S] + var1];
-            }
-
-            for(this.S = 0; this.S < 65; ++this.S) {
-               this.a[0][this.R][this.S] = this.a[0][var1][this.S];
-               this.a[1][this.R][this.S] = this.a[1][var1][this.S];
-            }
-
-            ++this.a[this.u][11];
-            --this.a[this.u ^ 1][11];
-            ++this.a[this.u][12 + this.a[1515 + this.R]];
-            --this.a[this.u ^ 1][12 + this.a[1515 + this.R]];
-            this.a[1919 + var1] = 0;
-            this.b[this.a[101 + this.R]][this.a[0 + this.R]] = (byte)this.R;
-            this.a.b((byte)this.R);
-            this.a.g((int)((byte)this.R));
-            return;
-         }
-      }
-
-   }
-
-   private void j(int var1) {
-      for(this.S = this.a[8993 + this.a[4444 + this.v]]; this.S > 0; this.S = this.a[4545 + this.S]) {
-         if (this.S != this.v) {
-            if (var1 == 0) {
-               this.a[505 + this.S] = (byte)b((int)(this.a[505 + this.S] + (this.a[7272 + this.v] + 2) / 2), (int)0, (int)99);
-               this.a[2121 + this.S] = (byte)b((int)(this.a[2121 + this.S] + (this.a[7272 + this.v] + 2) / 2), (int)0, (int)99);
-            } else {
-               this.a(this.S, (int)10);
-               if (this.a[1919 + this.S] >= this.a[6767 + this.S]) {
-                  this.a[2828 + this.S] = 87;
-                  this.a[6161 + this.S] = 3;
-               }
-            }
-         }
-      }
-
-   }
-
-   private boolean l() {
-      for(this.A = this.b[this.a[166] + this.a[2828 + this.v]] & 255; this.A < (this.b[this.a[166] + this.a[2828 + this.v] + 1] & 255); ++this.A) {
-         if (this.a[2929 + this.v] == this.b[this.a[164] + this.A]) {
-            return true;
-         }
-      }
-
-      return false;
-   }
-
-   private boolean b(int var1, int var2) {
-      this.g = true;
-
-      for(this.T = this.b[this.a[69] + var1 * 4 + var2]; this.T < this.b[this.a[69] + var1 * 4 + var2 + 1]; ++this.T) {
-         if (!this.a(this.b[this.a[65] + this.b[this.a[68] + var1] + this.T], this.b[this.a[66] + this.b[this.a[68] + var1] + this.T], this.b[this.a[67] + this.b[this.a[68] + var1] + this.T], this.b[this.a[63] + this.b[this.a[68] + var1] + this.T])) {
-            this.g = false;
-         }
-      }
-
-      return this.g;
-   }
-
-   private boolean a(byte var1, byte var2, byte var3, byte var4) {
-      this.U = this.a[this.b[this.b[this.a[44] + var1]] + this.v];
-      if (this.a.a((int)16777215, (int)100) < var2 && this.U * var4 < var3 * var4) {
-         byte[] var10000 = this.a;
-         int var10001 = this.b[this.b[this.a[44] + var1]] + this.v;
-         var10000[var10001] += var4;
-         if (var1 == 4) {
-            if (this.a[6767 + this.v] >= this.b[this.a[98] + this.a[1414 + this.v]]) {
-               this.a[6767 + this.v] = this.b[this.a[98] + this.a[1414 + this.v]];
-            }
-
-            var10000 = this.a;
-            var10001 = 1919 + this.v;
-            var10000[var10001] = (byte)(var10000[var10001] + (this.a[6767 + this.v] - this.U));
-            return true;
-         }
-      }
-
-      return this.a[this.b[this.b[this.a[44] + var1]] + this.v] * var4 >= var3 * var4 && var2 >= 100;
-   }
-
-   private boolean a(int var1, boolean var2, int var3) {
-      this.S = var1 - 28;
-      this.f = this.b(this.S, var2, var3);
-      if (!this.f) {
-         if (var2) {
-            this.M();
+            this.var_byte_arr_a[3939 + this.var_int_v] = 69;
+            this.var_byte_arr_a[1313 + this.var_int_v] = 0;
+            this.var_byte_arr_a[404 + this.var_int_v] = 0;
+        } else {
+            this.void_a(this.var_int_v, (byte)(this.var_byte_arr_a[2828 + this.var_int_v] >= 19 && this.var_byte_arr_a[2828 + this.var_int_v] <= 26 && this.var_byte_arr_a[6464 + this.var_int_v] == 69 ? 69 : this.var_byte_arr_b[this.var_short_arr_a[160] + this.var_byte_arr_a[2828 + this.var_int_v]]));
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 26 || this.var_byte_arr_a[2828 + this.var_int_v] == 27) {
+            this.f(false);
+        }
+        if (this.var_byte_arr_a[6161 + this.var_int_v] < 2 && (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_arr_a[2828 + this.var_int_v]] == 2 || this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v)) {
             this.N();
-         }
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 16) {
+            this.an();
+        }
+    }
 
-         return false;
-      } else {
-         int var4 = var1 == 37 ? b((int)9, (int)1, (int)this.a[this.u][1]) : 0;
-         if (var1 != 99) {
-            for(this.R = this.b[this.a[73] + this.S]; this.R < this.b[this.a[73] + this.S + 1]; ++this.R) {
-               short[] var10000 = this.a[this.u];
-               byte var10001 = this.b[this.a[71] + this.R];
-               var10000[var10001] = (short)(var10000[var10001] - (var1 == 37 ? var4 : this.b[this.a[72] + this.R]));
+    private void J() {
+        this.var_int_A = 1;
+        if ((this.var_byte_arr_b[this.var_short_arr_a[27] + this.var_byte_arr_a[2828 + this.var_int_v]] & 0x20) == 0) {
+            this.var_int_A = -1;
+        }
+        this.var_int_C = (this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[35] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[36] + this.var_byte_arr_a[2828 + this.var_int_v]]) * this.var_int_A;
+        if (this.var_byte_arr_b[this.var_short_arr_a[35] + this.var_byte_arr_a[2828 + this.var_int_v]] >= 69 && this.var_byte_arr_b[this.var_short_arr_a[35] + this.var_byte_arr_a[2828 + this.var_int_v]] <= 74 && this.var_int_u == 0 && this.var_byte_arr_a[0 + this.var_int_v] - this.var_byte_arr_a[0 + this.var_short_arr_arr_a[0][17]] >= -4 && this.var_byte_arr_a[0 + this.var_int_v] - this.var_byte_arr_a[0 + this.var_short_arr_arr_a[0][17]] <= 4 && this.var_byte_arr_a[101 + this.var_int_v] - this.var_byte_arr_a[101 + this.var_short_arr_arr_a[0][17]] >= -4 && this.var_byte_arr_a[101 + this.var_int_v] - this.var_byte_arr_a[101 + this.var_short_arr_arr_a[0][17]] <= 4) {
+            this.var_int_C = this.var_int_C * 3 / 2;
+        }
+        if (this.var_byte_arr_b[this.var_short_arr_a[33] + this.var_byte_arr_a[2828 + this.var_int_v]] <= 0) {
+            short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+            byte by = -this.var_byte_arr_b[this.var_short_arr_a[33] + this.var_byte_arr_a[2828 + this.var_int_v]];
+            sArray[by] = (short)(sArray[by] + this.var_int_C);
+        } else {
+            int n = this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[33] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + this.var_int_C);
+        }
+        this.var_int_A = 1;
+        if ((this.var_byte_arr_b[this.var_short_arr_a[27] + this.var_byte_arr_a[2828 + this.var_int_v]] & 0x10) == 0) {
+            this.var_int_A = -1;
+        }
+        this.var_int_C = this.var_byte_arr_b[this.var_short_arr_a[34] + this.var_byte_arr_a[2828 + this.var_int_v]] >= 0 ? this.var_byte_arr_b[this.var_short_arr_a[34] + this.var_byte_arr_a[2828 + this.var_int_v]] : this.var_byte_arr_a[this.var_short_arr_b[-this.var_byte_arr_b[this.var_short_arr_a[34] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_int_v];
+        int n = this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[31] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_arr_a[3838 + this.var_int_v];
+        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + this.var_int_C * this.var_int_A);
+        this.var_int_R = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[31] + this.var_byte_arr_a[2828 + this.var_int_v]]] + this.var_byte_arr_a[3838 + this.var_int_v]];
+    }
+
+    private void K() {
+        this.var_byte_arr_a[404 + this.var_int_v] = 0;
+        this.boolean_a(this.var_byte_arr_b[this.var_short_arr_a[45] + this.var_byte_arr_a[2828 + this.var_int_v]], this.var_byte_arr_b[this.var_short_arr_a[46] + this.var_byte_arr_a[2828 + this.var_int_v]], this.var_byte_arr_b[this.var_short_arr_a[47] + this.var_byte_arr_a[2828 + this.var_int_v]], this.var_byte_arr_b[this.var_short_arr_a[64] + this.var_byte_arr_b[this.var_short_arr_a[45] + this.var_byte_arr_a[2828 + this.var_int_v]]]);
+        this.var_boolean_f = true;
+        switch (this.var_byte_arr_a[2828 + this.var_int_v]) {
+            case 95: {
+                this.var_byte_arr_a[8181 + this.var_byte_arr_a[4444 + this.var_int_v]] = 0;
+                this.var_byte_arr_a[7979 + this.var_byte_arr_a[4444 + this.var_int_v]] = (byte)(this.var_byte_arr_a[7979 + this.var_byte_arr_a[4444 + this.var_int_v]] | 8);
+                return;
             }
-         } else {
-            if (this.a[8627 + this.W] == 2) {
-               for(this.R = 0; this.R < 3; ++this.R) {
-                  short[] var6 = this.a[this.u];
-                  int var10 = 2 + this.R;
-                  var6[var10] = (short)(var6[var10] - this.b[this.a[138] + (10 + this.R) * 26 + this.a[8749 + this.W]] * this.V / (this.a[8566 + this.W] * 2));
-               }
-            } else {
-               for(this.R = 0; this.R < 3; ++this.R) {
-                  short[] var5 = this.a[this.u];
-                  int var9 = 2 + this.R;
-                  var5[var9] = (short)(var5[var9] - this.b[this.a[138] + (13 + this.R) * 26 + this.a[8749 + this.W]]);
-               }
+            case 94: {
+                this.var_boolean_f = this.boolean_a((int)this.var_byte_arr_a[4444 + this.var_int_v], 10);
+                return;
             }
-
-            for(this.aK = 0; this.aK < 20; ++this.aK) {
-               if (this.g[0][this.aK] == this.W) {
-                  this.g[2][this.aK] = (byte)(this.a[8627 + this.W] == 2 ? -this.V : this.b[this.a[138] + (7 + this.a[9115 + this.W] - 1) * 26 + this.a[8749 + this.W]] - this.b[this.a[138] + (7 + this.a[9115 + this.W]) * 26 + this.a[8749 + this.W]]);
-                  if (!var2) {
-                     byte[] var7 = this.g[2];
-                     int var11 = this.aK;
-                     var7[var11] *= -1;
-                  }
-                  break;
-               }
+            case 96: {
+                this.var_byte_arr_a[505 + this.var_int_R] = 99;
+                this.var_int_R = this.var_int_v;
+                this.var_int_v = this.var_byte_arr_a[4444 + this.var_int_v];
+                if ((this.var_byte_arr_a[8282 + this.var_int_v] & 0x7F) >> 1 == 0) {
+                    this.boolean_a(true);
+                }
+                this.var_int_v = this.var_int_R;
+                return;
             }
-         }
-
-         if (var2) {
-            if (this.a[2828 + var3] == 99) {
-               this.a[3636 + var3] = 9;
-               this.a[3535 + var3] = 2;
-            } else if (this.a[2828 + var3] >= 44) {
-               if (this.a[6565 + var3] <= 5) {
-                  short[] var8 = this.a[this.u];
-                  byte var12 = this.b[this.a[88] + this.a[6565 + var3]];
-                  var8[var12] = (short)(var8[var12] + this.b[this.a[105] + this.a[6565 + var3]]);
-               }
-
-               this.a[6565 + var3] = (byte)(this.a[2828 + var3] - 44);
-               this.a.d((int)this.a[4444 + var3]);
-            } else {
-               this.a[3636 + var3] = (byte)(var1 == 37 ? var4 : this.b[this.a[75] + this.S]);
-               this.a[3535 + var3] = this.b[this.a[74] + this.S];
-            }
-         }
-
-         return true;
-      }
-   }
-
-   private boolean b(int var1, boolean var2, int var3) {
-      if (var1 == 71) {
-         this.W = var2 ? -this.b[this.a[6363 + var3]][this.a[6262 + var3]] : this.v;
-         if (this.a[8627 + this.W] == 2) {
-            this.V = this.a[8566 + this.W] - this.a[8505 + this.W];
-
-            for(this.R = 0; this.R < 3; ++this.R) {
-               if (this.a[this.u][2 + this.R] < this.b[this.a[138] + (10 + this.R) * 26 + this.a[8749 + this.W]] * this.V / (this.a[8566 + this.W] * 2)) {
-                  this.a[3535 + var3] = this.b[this.a[76] + 2 + this.R];
-                  if (this.d[1] < 0 && this.u == 0) {
-                     this.d[1] = 0;
-                     this.a.a((byte)9, (byte)0, (byte)0, (byte)0);
-                  }
-
-                  return false;
-               }
-            }
-
-            return true;
-         } else {
-            for(this.R = 0; this.R < 3; ++this.R) {
-               if (this.a[this.u][2 + this.R] < this.b[this.a[138] + (13 + this.R) * 26 + this.a[8749 + this.W]]) {
-                  this.a[3535 + var3] = this.b[this.a[76] + 2 + this.R];
-                  if (this.d[1] < 0 && this.u == 0) {
-                     this.d[1] = 0;
-                     this.a.a((byte)9, (byte)0, (byte)0, (byte)0);
-                  }
-
-                  return false;
-               }
-            }
-
-            return true;
-         }
-      } else {
-         for(this.R = this.b[this.a[73] + var1]; this.R < this.b[this.a[73] + var1 + 1]; ++this.R) {
-            if (this.a[this.u][this.b[this.a[71] + this.R]] < this.b[this.a[72] + this.R] && this.a[6565 + var3] != var1 - 16) {
-               if (var1 < 16) {
-                  this.a[3535 + var3] = this.b[this.a[76] + this.b[this.a[71] + this.R]];
-                  if (this.d[1] < 0 && this.u == 0) {
-                     this.d[1] = 0;
-                     this.a.a((byte)9, (byte)0, (byte)0, (byte)0);
-                  }
-               }
-
-               return false;
-            }
-         }
-
-         return true;
-      }
-   }
-
-   private void L() {
-      this.X = this.a[1717 + this.v] < this.a[1616 + this.v] ? 3 : 0;
-
-      for(this.Y = this.X; this.Y < 6 + this.X; ++this.Y) {
-         if (this.a[this.u][this.b[this.a[88] + this.b[this.a[103] + this.Y]]] >= this.b[this.a[104] + this.Y]) {
-            short[] var10000 = this.a[this.u];
-            byte var10001 = this.b[this.a[88] + this.b[this.a[103] + this.Y]];
-            var10000[var10001] = (short)(var10000[var10001] - this.b[this.a[104] + this.Y]);
-            this.a[6565 + this.v] = this.b[this.a[103] + this.Y];
-            this.a.d((int)this.a[4444 + this.v]);
-            return;
-         }
-      }
-
-   }
-
-   private void M() {
-      this.a[3939 + this.v] = this.a[2828 + this.v];
-      this.a(this.v, (byte)83);
-      this.R = this.b[this.a[169] + this.a[3939 + this.v]];
-      this.a[1313 + this.v] = (byte)(this.b[this.a[168] + 0 + this.R] + this.a.a(16777215, this.b[this.a[168] + 2 + this.R] - this.b[this.a[168] + 0 + this.R] + 1));
-   }
-
-   private void N() {
-      if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) {
-         if (this.a[8749 + this.a[4444 + this.v]] == 2 && this.a[4646 + this.v] == 0) {
-            this.Z = this.a[8993 + this.a[4444 + this.v]];
-            if (this.Z == this.v) {
-               this.Z = this.a[4545 + this.v];
-            }
-
-            if (this.Z > 0) {
-               this.a[4646 + this.v] = this.a[4646 + this.Z];
-               this.a[4646 + this.Z] = 0;
-            }
-         }
-
-         this.g(2);
-      } else if (this.a[2828 + this.v] == 17 || this.a[2828 + this.v] == 60 || this.a[2828 + this.v] == 83 || (this.a[2828 + this.v] == 11 || this.a[2828 + this.v] == 14) && this.a[3636 + this.v] > 0) {
-         this.a[1313 + this.v] = 0;
-         if (this.a[2828 + this.v] == 17 && this.a[4444 + this.v] > (this.u ^ 1) * 50 && this.a[4444 + this.v] <= ((this.u ^ 1) + 1) * 50) {
-            if (this.a[2828 + this.a[4444 + this.v]] == 107) {
-               this.a[3131 + this.v] = this.a[0 + this.a[4444 + this.v]];
-               this.a[3232 + this.v] = this.a[101 + this.a[4444 + this.v]];
-            } else {
-               this.a[4444 + this.v] = 0;
-            }
-         } else {
-            if (this.a[2828 + this.v] == 17 || this.a[2828 + this.v] == 60 || this.a[2828 + this.v] == 83) {
-               this.a[4747 + this.v] = 0;
-            }
-
-            this.a((int)0, (int)(this.a[4949 + this.v] * 2 + 1), (int)b((int)(this.a[0 + this.v] - 3 + this.a.a((int)255, (int)6)), (int)0, (int)(this.a.c - 1)), (int)b((int)(this.a[101 + this.v] - 3 + this.a.a((int)255, (int)6)), (int)0, (int)(this.a.d - 1)));
-         }
-      } else if (this.a[2828 + this.v] == 109) {
-         this.ae = ((this.a[8282 + this.v] & 127) >> 1) - 1;
-         this.a((int)3, (int)127, (int)this.c[2][this.ae], (int)this.c[3][this.ae]);
-         this.g(3);
-      } else if (this.a[2828 + this.v] == 110) {
-         if (!this.a((int)4, (int)(this.a[4949 + this.v] * 2 + 1), (int)this.a[0 + this.v], (int)this.a[101 + this.v])) {
-            this.a(this.v, (byte)109);
-            this.ae = ((this.a[8282 + this.v] & 127) >> 1) - 1;
-            this.a((int)3, (int)127, (int)this.c[2][this.ae], (int)this.c[3][this.ae]);
-         }
-
-         this.g(3);
-      } else {
-         this.O();
-      }
-   }
-
-   private void O() {
-      if (this.a[2828 + this.v] != 69 && this.a[2828 + this.v] != 80 && this.a[2828 + this.v] != 84 && this.a[2828 + this.v] != 85) {
-         if (this.a[2828 + this.v] >= 94 && this.a[2828 + this.v] <= 97) {
-            for(this.aO = 0; this.aO < 30 && this.a.b[this.u][0][this.aO] != this.a[4040 + this.v]; ++this.aO) {
-            }
-
-            if (this.a.b[this.u][2][this.aO] < 0) {
-               this.ap();
-            } else if (this.a[2828 + this.v] != 97) {
-               this.a[3131 + this.v] = this.a[0 + this.a.b[this.u][2][this.aO]];
-               this.a[3232 + this.v] = this.a[101 + this.a.b[this.u][2][this.aO]];
-               this.a[4444 + this.v] = this.a[4747 + this.v] = this.a.b[this.u][2][this.aO];
-            } else {
-               this.a[3131 + this.v] = this.a.b[this.u][2][this.aO];
-               this.a[3232 + this.v] = this.a.b[this.u][3][this.aO];
-               this.g(2);
-            }
-         } else {
-            if (this.a[2828 + this.v] == 27) {
-               for(this.aN = 0; this.aN < 10; ++this.aN) {
-                  this.aP = this.a.a[this.u][this.aN][11];
-                  if (this.aP > 0 && this.v == this.a[8810 + this.aP]) {
-                     for(this.aO = 0; this.aO < 30; ++this.aO) {
-                        if (this.a.f[0][this.aO] == this.aP && this.a.f[1][this.aO] == this.a.a[this.u][this.aN][10] + 14) {
-                           this.a[3131 + this.v] = this.a.f[2][this.aO];
-                           this.a[3232 + this.v] = this.a.f[3][this.aO];
-                           this.g(2);
-                           return;
+            case 97: {
+                this.var_int_R = 3;
+                while (this.var_int_R >= 0) {
+                    if (this.var_f_a.var_byte_arr_arr_arr_c[this.var_int_u][this.var_int_R][2] >= 0) {
+                        this.var_int_S = 0;
+                        while (this.var_int_S < 4) {
+                            this.var_f_a.var_byte_arr_arr_arr_c[this.var_int_u][this.var_int_R + 1][this.var_int_S] = this.var_f_a.var_byte_arr_arr_arr_c[this.var_int_u][this.var_int_R][this.var_int_S];
+                            ++this.var_int_S;
                         }
-                     }
-
-                     return;
-                  }
-               }
-            } else {
-               if ((this.b[this.a[27] + this.a[2828 + this.v]] & 64) > 0) {
-                  if (this.a[2828 + this.v] != 65) {
-                     this.a[3131 + this.v] = this.a[6262 + this.v];
-                     this.a[3232 + this.v] = this.a[6363 + this.v];
-                  } else {
-                     this.a[3131 + this.v] = this.a[8383 + this.a[3434 + this.v]];
-                     this.a[3232 + this.v] = this.a[8444 + this.a[3434 + this.v]];
-                  }
-
-                  this.g(2);
-                  return;
-               }
-
-               if (this.a((int)6)) {
-                  this.g(2);
-                  return;
-               }
-
-               this.a[4444 + this.v] = -6;
+                    }
+                    --this.var_int_R;
+                }
+                this.var_f_a.var_byte_arr_arr_arr_c[this.var_int_u][0][0] = this.var_byte_arr_a[3131 + this.var_int_v];
+                this.var_f_a.var_byte_arr_arr_arr_c[this.var_int_u][0][1] = this.var_byte_arr_a[3232 + this.var_int_v];
+                this.var_f_a.var_byte_arr_arr_arr_c[this.var_int_u][0][2] = 0;
+                this.var_f_a.var_byte_arr_arr_arr_c[this.var_int_u][0][3] = (byte)(this.var_int_u ^ 1);
             }
+        }
+    }
 
-         }
-      } else {
-         this.a[3131 + this.v] = this.a[0 + this.v];
-         this.a[3232 + this.v] = this.a[101 + this.v];
-      }
-   }
-
-   final boolean a(int var1) {
-      this.aa = 1000000;
-      this.h = false;
-      boolean var2 = var1 == 6;
-
-      for(this.Z = this.u * 30 + 1; this.Z <= (this.u + 1) * 30; ++this.Z) {
-         if (this.a[8505 + this.Z] > 0 && (this.a[8749 + this.Z] == var1 || var2 && this.a[8749 + this.Z] == 16 && this.a[9237 + this.Z] == 6 && this.a[2828 + this.v] <= 25)) {
-            this.h = true;
-            if ((this.a[8627 + this.Z] == 0 || var1 == 6) && (this.b[this.a[138] + 156 + var1] < 0 || this.a[8810 + this.Z] >= 1) && (this.a[8932 + this.Z] <= 0 || this.a[8932 + this.Z] < this.b[this.a[138] + (this.a[9115 + this.Z] - 1) * 26 + var1] || var1 == 6)) {
-               this.ab = (this.a[8383 + this.Z] + this.b[this.a[138] + 104 + this.a[8749 + this.Z]] / 2 - this.a[0 + this.v]) * (this.a[8383 + this.Z] + this.b[this.a[138] + 104 + this.a[8749 + this.Z]] / 2 - this.a[0 + this.v]) + (this.a[8444 + this.Z] + this.b[this.a[138] + 130 + this.a[8749 + this.Z]] / 2 - this.a[101 + this.v]) * (this.a[8444 + this.Z] + this.b[this.a[138] + 130 + this.a[8749 + this.Z]] / 2 - this.a[101 + this.v]);
-               if (this.aa > this.ab || var2 && this.a[8749 + this.Z] == var1) {
-                  var2 = this.a[8749 + this.Z] != var1;
-                  this.aa = this.ab;
-                  this.ac = this.Z;
-               }
-            }
-         }
-      }
-
-      if (this.aa < 1000000) {
-         this.a[3131 + this.v] = (byte)b((int)this.a[0 + this.v], (int)this.a[8383 + this.ac], (int)(this.a[8383 + this.ac] + this.b[this.a[138] + 104 + this.a[8749 + this.ac]] - 1));
-         this.a[3232 + this.v] = (byte)b((int)this.a[101 + this.v], (int)this.a[8444 + this.ac], (int)(this.a[8444 + this.ac] + this.b[this.a[138] + 130 + this.a[8749 + this.ac]] - 1));
-         return true;
-      } else {
-         this.a[3131 + this.v] = this.a[0 + this.v];
-         this.a[3232 + this.v] = this.a[101 + this.v];
-         return false;
-      }
-   }
-
-   private boolean m() {
-      if (this.u == 1) {
-         if ((this.a[7979 + this.v] & 32) != 0 && this.Q >= 1) {
-            if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-               this.a[3131 + this.v] = this.a[0 + this.Q];
-               this.a[3232 + this.v] = this.a[101 + this.Q];
-               byte[] var2 = this.a;
-               int var4 = 7979 + this.v;
-               var2[var4] = (byte)(var2[var4] & 223);
-               this.a(this.v, (byte)69);
-            } else {
-               this.a[2828 + this.v] = 87;
-            }
-
-            this.a[6161 + this.v] = 3;
+    private boolean boolean_a(int n, int n2) {
+        if (n2 > 1) {
+            this.var_byte_arr_a[8080 + n] = -100;
+            int n3 = 7979 + n;
+            this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] & 0xFB);
+        }
+        if (this.var_byte_arr_a[1919 + n] >= this.var_byte_arr_a[6767 + n] && n2 > 0) {
             return true;
-         } else {
+        }
+        if (this.var_int_u == 0 || n2 < 0) {
+            int n4 = n;
+            this.var_f_a.var_c_a.var_byte_arr_f[n4] = (byte)(this.var_f_a.var_c_a.var_byte_arr_f[n4] + n2);
+        }
+        this.var_byte_arr_a[1919 + n] = (byte)b.int_b(this.var_byte_arr_a[1919 + n] + n2, 0, this.var_byte_arr_a[6767 + n]);
+        return this.var_byte_arr_a[1919 + n] >= this.var_byte_arr_a[6767 + n];
+    }
+
+    private void void_c(byte by) {
+        this.var_int_R = this.var_int_u * 50 + 1;
+        while (this.var_int_R <= (this.var_int_u + 1) * 50) {
+            if (this.var_byte_arr_a[1919 + this.var_int_R] == 0) {
+                if (this.var_int_u == 1) {
+                    this.var_f_a.void_e((int)by);
+                    this.var_f_a.f((int)by);
+                    this.a((byte)17, (int)this.var_short_arr_arr_a[0][17], (int)by);
+                }
+                this.var_byte_arr_a[4444 + by] = 0;
+                this.var_int_S = 0;
+                while (this.var_int_S < 83) {
+                    this.var_byte_arr_a[this.var_short_arr_b[this.var_int_S] + this.var_int_R] = this.var_byte_arr_a[this.var_short_arr_b[this.var_int_S] + by];
+                    ++this.var_int_S;
+                }
+                this.var_int_S = 0;
+                while (this.var_int_S < 65) {
+                    this.var_byte_arr_arr_arr_a[0][this.var_int_R][this.var_int_S] = this.var_byte_arr_arr_arr_a[0][by][this.var_int_S];
+                    this.var_byte_arr_arr_arr_a[1][this.var_int_R][this.var_int_S] = this.var_byte_arr_arr_arr_a[1][by][this.var_int_S];
+                    ++this.var_int_S;
+                }
+                short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                sArray[11] = (short)(sArray[11] + 1);
+                short[] sArray2 = this.var_short_arr_arr_a[this.var_int_u ^ 1];
+                sArray2[11] = (short)(sArray2[11] - 1);
+                short[] sArray3 = this.var_short_arr_arr_a[this.var_int_u];
+                int n = 12 + this.var_byte_arr_a[1515 + this.var_int_R];
+                sArray3[n] = (short)(sArray3[n] + 1);
+                short[] sArray4 = this.var_short_arr_arr_a[this.var_int_u ^ 1];
+                int n2 = 12 + this.var_byte_arr_a[1515 + this.var_int_R];
+                sArray4[n2] = (short)(sArray4[n2] - 1);
+                this.var_byte_arr_a[1919 + by] = 0;
+                this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_R]][this.var_byte_arr_a[0 + this.var_int_R]] = (byte)this.var_int_R;
+                this.var_f_a.b((byte)this.var_int_R);
+                this.var_f_a.g((int)((byte)this.var_int_R));
+                return;
+            }
+            ++this.var_int_R;
+        }
+    }
+
+    private void j(int n) {
+        this.var_int_S = this.var_byte_arr_a[8993 + this.var_byte_arr_a[4444 + this.var_int_v]];
+        while (this.var_int_S > 0) {
+            if (this.var_int_S != this.var_int_v) {
+                if (n == 0) {
+                    this.var_byte_arr_a[505 + this.var_int_S] = (byte)b.int_b(this.var_byte_arr_a[505 + this.var_int_S] + (this.var_byte_arr_a[7272 + this.var_int_v] + 2) / 2, 0, 99);
+                    this.var_byte_arr_a[2121 + this.var_int_S] = (byte)b.int_b(this.var_byte_arr_a[2121 + this.var_int_S] + (this.var_byte_arr_a[7272 + this.var_int_v] + 2) / 2, 0, 99);
+                } else {
+                    this.boolean_a(this.var_int_S, 10);
+                    if (this.var_byte_arr_a[1919 + this.var_int_S] >= this.var_byte_arr_a[6767 + this.var_int_S]) {
+                        this.var_byte_arr_a[2828 + this.var_int_S] = 87;
+                        this.var_byte_arr_a[6161 + this.var_int_S] = 3;
+                    }
+                }
+            }
+            this.var_int_S = this.var_byte_arr_a[4545 + this.var_int_S];
+        }
+    }
+
+    private boolean boolean_l() {
+        this.var_int_A = this.var_byte_arr_b[this.var_short_arr_a[166] + this.var_byte_arr_a[2828 + this.var_int_v]] & 0xFF;
+        while (this.var_int_A < (this.var_byte_arr_b[this.var_short_arr_a[166] + this.var_byte_arr_a[2828 + this.var_int_v] + 1] & 0xFF)) {
+            if (this.var_byte_arr_a[2929 + this.var_int_v] == this.var_byte_arr_b[this.var_short_arr_a[164] + this.var_int_A]) {
+                return true;
+            }
+            ++this.var_int_A;
+        }
+        return false;
+    }
+
+    private boolean boolean_b(int n, int n2) {
+        this.var_boolean_g = true;
+        this.T = this.var_byte_arr_b[this.var_short_arr_a[69] + n * 4 + n2];
+        while (this.T < this.var_byte_arr_b[this.var_short_arr_a[69] + n * 4 + n2 + 1]) {
+            if (!this.boolean_a(this.var_byte_arr_b[this.var_short_arr_a[65] + this.var_byte_arr_b[this.var_short_arr_a[68] + n] + this.T], this.var_byte_arr_b[this.var_short_arr_a[66] + this.var_byte_arr_b[this.var_short_arr_a[68] + n] + this.T], this.var_byte_arr_b[this.var_short_arr_a[67] + this.var_byte_arr_b[this.var_short_arr_a[68] + n] + this.T], this.var_byte_arr_b[this.var_short_arr_a[63] + this.var_byte_arr_b[this.var_short_arr_a[68] + n] + this.T])) {
+                this.var_boolean_g = false;
+            }
+            ++this.T;
+        }
+        return this.var_boolean_g;
+    }
+
+    private boolean boolean_a(byte by, byte by2, byte by3, byte by4) {
+        this.U = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[44] + by]] + this.var_int_v];
+        if (this.var_f_a.int_a(0xFFFFFF, 100) < by2 && this.U * by4 < by3 * by4) {
+            int n = this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[44] + by]] + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + by4);
+            if (by == 4) {
+                if (this.var_byte_arr_a[6767 + this.var_int_v] >= this.var_byte_arr_b[this.var_short_arr_a[98] + this.var_byte_arr_a[1414 + this.var_int_v]]) {
+                    this.var_byte_arr_a[6767 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[98] + this.var_byte_arr_a[1414 + this.var_int_v]];
+                }
+                int n2 = 1919 + this.var_int_v;
+                this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] + (this.var_byte_arr_a[6767 + this.var_int_v] - this.U));
+                return true;
+            }
+        }
+        return this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[44] + by]] + this.var_int_v] * by4 >= by3 * by4 && by2 >= 100;
+    }
+
+    private boolean a(int n, boolean bl, int n2) {
+        int n3;
+        this.var_int_S = n - 28;
+        this.var_boolean_f = this.b(this.var_int_S, bl, n2);
+        if (!this.var_boolean_f) {
+            if (bl) {
+                this.M();
+                this.N();
+            }
             return false;
-         }
-      } else if ((this.a[7979 + this.v] & 32) != 0 || this.a.N && this.a[3131 + this.v] == this.a[0 + this.v] && this.a[3232 + this.v] == this.a[101 + this.v] && (this.a.c & 31) <= this.a[1010 + this.v]) {
-         if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-            if (this.a.N && (this.a[7979 + this.v] & 64) != 0) {
-               this.a[3636 + this.v] = 0;
-               if (this.a[2828 + this.v] != 50) {
-                  if (this.a((int)6) && this.a[6565 + this.v] == 9) {
-                     this.a(this.v, (byte)50);
-                     this.a[6161 + this.v] = 3;
-                     this.a[7777 + this.v] = 3;
-                     return true;
-                  }
-
-                  byte[] var1 = this.a;
-                  int var3 = 7979 + this.v;
-                  var1[var3] = (byte)(var1[var3] & 191);
-               }
-            } else {
-               this.a[3131 + this.v] = this.a.q[0];
-               this.a[3232 + this.v] = this.a.q[1];
-               byte[] var10000 = this.a;
-               int var10001 = 7979 + this.v;
-               var10000[var10001] = (byte)(var10000[var10001] & 223);
-               if (this.a[0 + this.v] != this.a[3131 + this.v] || this.a[101 + this.v] != this.a[3232 + this.v]) {
-                  this.a(this.v, (byte)69);
-                  this.a[6161 + this.v] = 3;
-                  this.a[7777 + this.v] = 3;
-                  return true;
-               }
+        }
+        int n4 = n3 = n == 37 ? b.int_b(9, 1, this.var_short_arr_arr_a[this.var_int_u][1]) : 0;
+        if (n != 99) {
+            this.var_int_R = this.var_byte_arr_b[this.var_short_arr_a[73] + this.var_int_S];
+            while (this.var_int_R < this.var_byte_arr_b[this.var_short_arr_a[73] + this.var_int_S + 1]) {
+                short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                byte by = this.var_byte_arr_b[this.var_short_arr_a[71] + this.var_int_R];
+                sArray[by] = (short)(sArray[by] - (n == 37 ? n3 : this.var_byte_arr_b[this.var_short_arr_a[72] + this.var_int_R]));
+                ++this.var_int_R;
             }
-         } else if ((this.a.N || this.a[2020 + this.v] > 30 || this.a[8749 + this.a[4444 + this.v]] != 4) && this.a[1313 + this.v] > 0) {
-            this.a[2828 + this.v] = 87;
-            this.a[6161 + this.v] = 3;
+        } else {
+            if (this.var_byte_arr_a[8627 + this.W] == 2) {
+                this.var_int_R = 0;
+                while (this.var_int_R < 3) {
+                    short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                    int n5 = 2 + this.var_int_R;
+                    sArray[n5] = (short)(sArray[n5] - this.var_byte_arr_b[this.var_short_arr_a[138] + (10 + this.var_int_R) * 26 + this.var_byte_arr_a[8749 + this.W]] * this.V / (this.var_byte_arr_a[8566 + this.W] * 2));
+                    ++this.var_int_R;
+                }
+            } else {
+                this.var_int_R = 0;
+                while (this.var_int_R < 3) {
+                    short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                    int n6 = 2 + this.var_int_R;
+                    sArray[n6] = (short)(sArray[n6] - this.var_byte_arr_b[this.var_short_arr_a[138] + (13 + this.var_int_R) * 26 + this.var_byte_arr_a[8749 + this.W]]);
+                    ++this.var_int_R;
+                }
+            }
+            this.aK = 0;
+            while (this.aK < 20) {
+                if (this.var_byte_arr_arr_g[0][this.aK] == this.W) {
+                    this.var_byte_arr_arr_g[2][this.aK] = (byte)(this.var_byte_arr_a[8627 + this.W] == 2 ? -this.V : this.var_byte_arr_b[this.var_short_arr_a[138] + (7 + this.var_byte_arr_a[9115 + this.W] - 1) * 26 + this.var_byte_arr_a[8749 + this.W]] - this.var_byte_arr_b[this.var_short_arr_a[138] + (7 + this.var_byte_arr_a[9115 + this.W]) * 26 + this.var_byte_arr_a[8749 + this.W]]);
+                    if (bl) break;
+                    byte[] byArray = this.var_byte_arr_arr_g[2];
+                    int n7 = this.aK;
+                    byArray[n7] = (byte)(byArray[n7] * -1);
+                    break;
+                }
+                ++this.aK;
+            }
+        }
+        if (bl) {
+            if (this.var_byte_arr_a[2828 + n2] == 99) {
+                this.var_byte_arr_a[3636 + n2] = 9;
+                this.var_byte_arr_a[3535 + n2] = 2;
+            } else if (this.var_byte_arr_a[2828 + n2] >= 44) {
+                if (this.var_byte_arr_a[6565 + n2] <= 5) {
+                    short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                    byte by = this.var_byte_arr_b[this.var_short_arr_a[88] + this.var_byte_arr_a[6565 + n2]];
+                    sArray[by] = (short)(sArray[by] + this.var_byte_arr_b[this.var_short_arr_a[105] + this.var_byte_arr_a[6565 + n2]]);
+                }
+                this.var_byte_arr_a[6565 + n2] = (byte)(this.var_byte_arr_a[2828 + n2] - 44);
+                this.var_f_a.void_d((int)this.var_byte_arr_a[4444 + n2]);
+            } else {
+                this.var_byte_arr_a[3636 + n2] = (byte)(n == 37 ? n3 : this.var_byte_arr_b[this.var_short_arr_a[75] + this.var_int_S]);
+                this.var_byte_arr_a[3535 + n2] = this.var_byte_arr_b[this.var_short_arr_a[74] + this.var_int_S];
+            }
+        }
+        return true;
+    }
+
+    private boolean b(int n, boolean bl, int n2) {
+        if (n == 71) {
+            int n3 = this.W = bl ? -this.var_byte_arr_arr_b[this.var_byte_arr_a[6363 + n2]][this.var_byte_arr_a[6262 + n2]] : this.var_int_v;
+            if (this.var_byte_arr_a[8627 + this.W] == 2) {
+                this.V = this.var_byte_arr_a[8566 + this.W] - this.var_byte_arr_a[8505 + this.W];
+                this.var_int_R = 0;
+                while (this.var_int_R < 3) {
+                    if (this.var_short_arr_arr_a[this.var_int_u][2 + this.var_int_R] < this.var_byte_arr_b[this.var_short_arr_a[138] + (10 + this.var_int_R) * 26 + this.var_byte_arr_a[8749 + this.W]] * this.V / (this.var_byte_arr_a[8566 + this.W] * 2)) {
+                        this.var_byte_arr_a[3535 + n2] = this.var_byte_arr_b[this.var_short_arr_a[76] + 2 + this.var_int_R];
+                        if (this.var_short_arr_d[1] < 0 && this.var_int_u == 0) {
+                            this.var_short_arr_d[1] = 0;
+                            this.var_f_a.a((byte)9, (byte)0, (byte)0, (byte)0);
+                        }
+                        return false;
+                    }
+                    ++this.var_int_R;
+                }
+                return true;
+            }
+            this.var_int_R = 0;
+            while (this.var_int_R < 3) {
+                if (this.var_short_arr_arr_a[this.var_int_u][2 + this.var_int_R] < this.var_byte_arr_b[this.var_short_arr_a[138] + (13 + this.var_int_R) * 26 + this.var_byte_arr_a[8749 + this.W]]) {
+                    this.var_byte_arr_a[3535 + n2] = this.var_byte_arr_b[this.var_short_arr_a[76] + 2 + this.var_int_R];
+                    if (this.var_short_arr_d[1] < 0 && this.var_int_u == 0) {
+                        this.var_short_arr_d[1] = 0;
+                        this.var_f_a.a((byte)9, (byte)0, (byte)0, (byte)0);
+                    }
+                    return false;
+                }
+                ++this.var_int_R;
+            }
             return true;
-         }
-
-         return false;
-      } else {
-         return false;
-      }
-   }
-
-   private boolean n() {
-      if (this.a.q != 3 && !this.a.N && (!this.a.L && this.u != 1 || (this.a[7979 + this.v] & 64) == 0) && this.a[1414 + this.v] >= 12) {
-         if (this.u == 0) {
-            if (this.o()) {
-               return true;
+        }
+        this.var_int_R = this.var_byte_arr_b[this.var_short_arr_a[73] + n];
+        while (this.var_int_R < this.var_byte_arr_b[this.var_short_arr_a[73] + n + 1]) {
+            if (this.var_short_arr_arr_a[this.var_int_u][this.var_byte_arr_b[this.var_short_arr_a[71] + this.var_int_R]] < this.var_byte_arr_b[this.var_short_arr_a[72] + this.var_int_R] && this.var_byte_arr_a[6565 + n2] != n - 16) {
+                if (n < 16) {
+                    this.var_byte_arr_a[3535 + n2] = this.var_byte_arr_b[this.var_short_arr_a[76] + this.var_byte_arr_b[this.var_short_arr_a[71] + this.var_int_R]];
+                    if (this.var_short_arr_d[1] < 0 && this.var_int_u == 0) {
+                        this.var_short_arr_d[1] = 0;
+                        this.var_f_a.a((byte)9, (byte)0, (byte)0, (byte)0);
+                    }
+                }
+                return false;
             }
+            ++this.var_int_R;
+        }
+        return true;
+    }
 
-            if (this.a(false)) {
-               return true;
+    private void L() {
+        this.Y = this.X = this.var_byte_arr_a[1717 + this.var_int_v] < this.var_byte_arr_a[1616 + this.var_int_v] ? 3 : 0;
+        while (this.Y < 6 + this.X) {
+            if (this.var_short_arr_arr_a[this.var_int_u][this.var_byte_arr_b[this.var_short_arr_a[88] + this.var_byte_arr_b[this.var_short_arr_a[103] + this.Y]]] >= this.var_byte_arr_b[this.var_short_arr_a[104] + this.Y]) {
+                short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                byte by = this.var_byte_arr_b[this.var_short_arr_a[88] + this.var_byte_arr_b[this.var_short_arr_a[103] + this.Y]];
+                sArray[by] = (short)(sArray[by] - this.var_byte_arr_b[this.var_short_arr_a[104] + this.Y]);
+                this.var_byte_arr_a[6565 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[103] + this.Y];
+                this.var_f_a.void_d((int)this.var_byte_arr_a[4444 + this.var_int_v]);
+                return;
             }
-         }
+            ++this.Y;
+        }
+    }
 
-         if (this.b[this.a[50] + this.a[2828 + this.v]] != 127 && this.b[this.a[52] + this.a[2828 + this.v]] != 127) {
-            if (this.a[2121 + this.v] <= (this.a[505 + this.v] > 5 ? 20 : 50)) {
-               if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) {
-                  this.a(this.v, (byte)87);
-                  this.g(1);
-               } else {
-                  this.aJ = this.a.a((int)255, (int)3);
-                  if (this.a[3434 + this.v] > 0 && this.a[8627 + this.a[3434 + this.v]] == 0 && this.a[9237 + this.a[3434 + this.v]] < 2) {
-                     this.a[3131 + this.v] = this.a[8383 + this.a[3434 + this.v]];
-                     this.a[3232 + this.v] = this.a[8444 + this.a[3434 + this.v]];
-                     this.g(1);
-                  } else if (this.aJ == 1 && this.a((int)7)) {
-                     this.g(1);
-                  } else {
-                     this.a[3131 + this.v] = this.a[0 + this.v];
-                     this.a[3232 + this.v] = this.a[101 + this.v];
-                     this.a(this.v, (byte)79);
-                     this.a[2929 + this.v] = 40;
-                     this.a[3030 + this.v] = 0;
-                  }
+    private void M() {
+        this.var_byte_arr_a[3939 + this.var_int_v] = this.var_byte_arr_a[2828 + this.var_int_v];
+        this.void_a(this.var_int_v, (byte)83);
+        this.var_int_R = this.var_byte_arr_b[this.var_short_arr_a[169] + this.var_byte_arr_a[3939 + this.var_int_v]];
+        this.var_byte_arr_a[1313 + this.var_int_v] = (byte)(this.var_byte_arr_b[this.var_short_arr_a[168] + 0 + this.var_int_R] + this.var_f_a.int_a(0xFFFFFF, this.var_byte_arr_b[this.var_short_arr_a[168] + 2 + this.var_int_R] - this.var_byte_arr_b[this.var_short_arr_a[168] + 0 + this.var_int_R] + 1));
+    }
 
-                  if (this.a[3434 + this.v] <= 0) {
-                     this.a((byte)1, (int)this.v, (int)this.v);
-                  }
-               }
+    private void N() {
+        if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) {
+            if (this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] == 2 && this.var_byte_arr_a[4646 + this.var_int_v] == 0) {
+                this.Z = this.var_byte_arr_a[8993 + this.var_byte_arr_a[4444 + this.var_int_v]];
+                if (this.Z == this.var_int_v) {
+                    this.Z = this.var_byte_arr_a[4545 + this.var_int_v];
+                }
+                if (this.Z > 0) {
+                    this.var_byte_arr_a[4646 + this.var_int_v] = this.var_byte_arr_a[4646 + this.Z];
+                    this.var_byte_arr_a[4646 + this.Z] = 0;
+                }
+            }
+            this.g(2);
+            return;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 17 || this.var_byte_arr_a[2828 + this.var_int_v] == 60 || this.var_byte_arr_a[2828 + this.var_int_v] == 83 || (this.var_byte_arr_a[2828 + this.var_int_v] == 11 || this.var_byte_arr_a[2828 + this.var_int_v] == 14) && this.var_byte_arr_a[3636 + this.var_int_v] > 0) {
+            this.var_byte_arr_a[1313 + this.var_int_v] = 0;
+            if (this.var_byte_arr_a[2828 + this.var_int_v] == 17 && this.var_byte_arr_a[4444 + this.var_int_v] > (this.var_int_u ^ 1) * 50 && this.var_byte_arr_a[4444 + this.var_int_v] <= ((this.var_int_u ^ 1) + 1) * 50) {
+                if (this.var_byte_arr_a[2828 + this.var_byte_arr_a[4444 + this.var_int_v]] == 107) {
+                    this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_byte_arr_a[4444 + this.var_int_v]];
+                    this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_byte_arr_a[4444 + this.var_int_v]];
+                    return;
+                }
+                this.var_byte_arr_a[4444 + this.var_int_v] = 0;
+                return;
+            }
+            if (this.var_byte_arr_a[2828 + this.var_int_v] == 17 || this.var_byte_arr_a[2828 + this.var_int_v] == 60 || this.var_byte_arr_a[2828 + this.var_int_v] == 83) {
+                this.var_byte_arr_a[4747 + this.var_int_v] = 0;
+            }
+            this.boolean_a(0, this.var_byte_arr_a[4949 + this.var_int_v] * 2 + 1, b.int_b(this.var_byte_arr_a[0 + this.var_int_v] - 3 + this.var_f_a.int_a(255, 6), 0, this.var_f_a.var_short_c - 1), b.int_b(this.var_byte_arr_a[101 + this.var_int_v] - 3 + this.var_f_a.int_a(255, 6), 0, this.var_f_a.var_short_d - 1));
+            return;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 109) {
+            this.ae = ((this.var_byte_arr_a[8282 + this.var_int_v] & 0x7F) >> 1) - 1;
+            this.boolean_a(3, 127, (int)this.var_byte_arr_arr_c[2][this.ae], (int)this.var_byte_arr_arr_c[3][this.ae]);
+            this.g(3);
+            return;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 110) {
+            if (!this.boolean_a(4, this.var_byte_arr_a[4949 + this.var_int_v] * 2 + 1, (int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v])) {
+                this.void_a(this.var_int_v, (byte)109);
+                this.ae = ((this.var_byte_arr_a[8282 + this.var_int_v] & 0x7F) >> 1) - 1;
+                this.boolean_a(3, 127, (int)this.var_byte_arr_arr_c[2][this.ae], (int)this.var_byte_arr_arr_c[3][this.ae]);
+            }
+            this.g(3);
+            return;
+        }
+        this.O();
+    }
 
-               return true;
-            } else if (this.a[2020 + this.v] <= (this.a[505 + this.v] > 5 ? 20 : 50) && this.a[6464 + this.v] != 66 && this.a[2828 + this.v] != 66 && this.a(4, (byte)0)) {
-               return true;
+    private void O() {
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 69 || this.var_byte_arr_a[2828 + this.var_int_v] == 80 || this.var_byte_arr_a[2828 + this.var_int_v] == 84 || this.var_byte_arr_a[2828 + this.var_int_v] == 85) {
+            this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+            this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+            return;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] >= 94 && this.var_byte_arr_a[2828 + this.var_int_v] <= 97) {
+            this.aO = 0;
+            while (this.aO < 30 && this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][0][this.aO] != this.var_byte_arr_a[4040 + this.var_int_v]) {
+                ++this.aO;
+            }
+            if (this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][2][this.aO] < 0) {
+                this.ap();
+                return;
+            }
+            if (this.var_byte_arr_a[2828 + this.var_int_v] != 97) {
+                this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][2][this.aO]];
+                this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][2][this.aO]];
+                byte by = this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][2][this.aO];
+                this.var_byte_arr_a[4747 + this.var_int_v] = by;
+                this.var_byte_arr_a[4444 + this.var_int_v] = by;
+                return;
+            }
+            this.var_byte_arr_a[3131 + this.var_int_v] = this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][2][this.aO];
+            this.var_byte_arr_a[3232 + this.var_int_v] = this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][3][this.aO];
+            this.g(2);
+            return;
+        }
+        if (this.var_byte_arr_a[2828 + this.var_int_v] == 27) {
+            this.aN = 0;
+            while (this.aN < 10) {
+                this.aP = this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][11];
+                if (this.aP > 0 && this.var_int_v == this.var_byte_arr_a[8810 + this.aP]) {
+                    this.aO = 0;
+                    while (this.aO < 30) {
+                        if (this.var_f_a.var_byte_arr_arr_f[0][this.aO] == this.aP && this.var_f_a.var_byte_arr_arr_f[1][this.aO] == this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][10] + 14) {
+                            this.var_byte_arr_a[3131 + this.var_int_v] = this.var_f_a.var_byte_arr_arr_f[2][this.aO];
+                            this.var_byte_arr_a[3232 + this.var_int_v] = this.var_f_a.var_byte_arr_arr_f[3][this.aO];
+                            this.g(2);
+                            return;
+                        }
+                        ++this.aO;
+                    }
+                    return;
+                }
+                ++this.aN;
+            }
+        } else {
+            if ((this.var_byte_arr_b[this.var_short_arr_a[27] + this.var_byte_arr_a[2828 + this.var_int_v]] & 0x40) > 0) {
+                if (this.var_byte_arr_a[2828 + this.var_int_v] != 65) {
+                    this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[6262 + this.var_int_v];
+                    this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[6363 + this.var_int_v];
+                } else {
+                    this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[8383 + this.var_byte_arr_a[3434 + this.var_int_v]];
+                    this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[8444 + this.var_byte_arr_a[3434 + this.var_int_v]];
+                }
+                this.g(2);
+                return;
+            }
+            if (this.boolean_a(6)) {
+                this.g(2);
+                return;
+            }
+            this.var_byte_arr_a[4444 + this.var_int_v] = -6;
+        }
+    }
+
+    final boolean boolean_a(int n) {
+        this.aa = 1000000;
+        this.var_boolean_h = false;
+        boolean bl = n == 6;
+        this.Z = this.var_int_u * 30 + 1;
+        while (this.Z <= (this.var_int_u + 1) * 30) {
+            if (this.var_byte_arr_a[8505 + this.Z] > 0 && (this.var_byte_arr_a[8749 + this.Z] == n || bl && this.var_byte_arr_a[8749 + this.Z] == 16 && this.var_byte_arr_a[9237 + this.Z] == 6 && this.var_byte_arr_a[2828 + this.var_int_v] <= 25)) {
+                this.var_boolean_h = true;
+                if (!(this.var_byte_arr_a[8627 + this.Z] != 0 && n != 6 || this.var_byte_arr_b[this.var_short_arr_a[138] + 156 + n] >= 0 && this.var_byte_arr_a[8810 + this.Z] < 1 || this.var_byte_arr_a[8932 + this.Z] > 0 && this.var_byte_arr_a[8932 + this.Z] >= this.var_byte_arr_b[this.var_short_arr_a[138] + (this.var_byte_arr_a[9115 + this.Z] - 1) * 26 + n] && n != 6)) {
+                    this.ab = (this.var_byte_arr_a[8383 + this.Z] + this.var_byte_arr_b[this.var_short_arr_a[138] + 104 + this.var_byte_arr_a[8749 + this.Z]] / 2 - this.var_byte_arr_a[0 + this.var_int_v]) * (this.var_byte_arr_a[8383 + this.Z] + this.var_byte_arr_b[this.var_short_arr_a[138] + 104 + this.var_byte_arr_a[8749 + this.Z]] / 2 - this.var_byte_arr_a[0 + this.var_int_v]) + (this.var_byte_arr_a[8444 + this.Z] + this.var_byte_arr_b[this.var_short_arr_a[138] + 130 + this.var_byte_arr_a[8749 + this.Z]] / 2 - this.var_byte_arr_a[101 + this.var_int_v]) * (this.var_byte_arr_a[8444 + this.Z] + this.var_byte_arr_b[this.var_short_arr_a[138] + 130 + this.var_byte_arr_a[8749 + this.Z]] / 2 - this.var_byte_arr_a[101 + this.var_int_v]);
+                    if (this.aa > this.ab || bl && this.var_byte_arr_a[8749 + this.Z] == n) {
+                        bl = this.var_byte_arr_a[8749 + this.Z] != n;
+                        this.aa = this.ab;
+                        this.ac = this.Z;
+                    }
+                }
+            }
+            ++this.Z;
+        }
+        if (this.aa < 1000000) {
+            this.var_byte_arr_a[3131 + this.var_int_v] = (byte)b.int_b(this.var_byte_arr_a[0 + this.var_int_v], this.var_byte_arr_a[8383 + this.ac], this.var_byte_arr_a[8383 + this.ac] + this.var_byte_arr_b[this.var_short_arr_a[138] + 104 + this.var_byte_arr_a[8749 + this.ac]] - 1);
+            this.var_byte_arr_a[3232 + this.var_int_v] = (byte)b.int_b(this.var_byte_arr_a[101 + this.var_int_v], this.var_byte_arr_a[8444 + this.ac], this.var_byte_arr_a[8444 + this.ac] + this.var_byte_arr_b[this.var_short_arr_a[138] + 130 + this.var_byte_arr_a[8749 + this.ac]] - 1);
+            return true;
+        }
+        this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+        this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+        return false;
+    }
+
+    private boolean boolean_m() {
+        if (this.var_int_u == 1) {
+            if ((this.var_byte_arr_a[7979 + this.var_int_v] & 0x20) == 0 || this.var_byte_Q < 1) {
+                return false;
+            }
+            if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+                this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_byte_Q];
+                this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_byte_Q];
+                int n = 7979 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xDF);
+                this.void_a(this.var_int_v, (byte)69);
             } else {
-               if (this.a[505 + this.v] <= 30 && this.a[6464 + this.v] != 86 && this.a[2828 + this.v] != 86) {
-                  if (this.a(7, (byte)2)) {
-                     return true;
-                  }
-
-                  if (this.a[505 + this.v] <= 5 && this.b[this.a[41] + this.a[2828 + this.v]] != 0) {
-                     if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) {
-                        this.a(this.v, (byte)87);
-                        this.a[6161 + this.v] = 3;
+                this.var_byte_arr_a[2828 + this.var_int_v] = 87;
+            }
+            this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+            return true;
+        }
+        if (!((this.var_byte_arr_a[7979 + this.var_int_v] & 0x20) != 0 || this.var_f_a.var_boolean_N && this.var_byte_arr_a[3131 + this.var_int_v] == this.var_byte_arr_a[0 + this.var_int_v] && this.var_byte_arr_a[3232 + this.var_int_v] == this.var_byte_arr_a[101 + this.var_int_v] && (this.var_f_a.var_int_c & 0x1F) <= this.var_byte_arr_a[1010 + this.var_int_v])) {
+            return false;
+        }
+        if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+            if (this.var_f_a.var_boolean_N && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x40) != 0) {
+                this.var_byte_arr_a[3636 + this.var_int_v] = 0;
+                if (this.var_byte_arr_a[2828 + this.var_int_v] != 50) {
+                    if (this.boolean_a(6) && this.var_byte_arr_a[6565 + this.var_int_v] == 9) {
+                        this.void_a(this.var_int_v, (byte)50);
+                        this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+                        this.var_byte_arr_a[7777 + this.var_int_v] = 3;
                         return true;
-                     }
-
-                     this.Q();
-                  }
-               }
-
-               return (this.a[1919 + this.v] < this.a[6767 + this.v] * 2 / 3 || (this.a[7979 + this.v] & 4) != 0) && this.a[6464 + this.v] != 57 && this.a[2828 + this.v] != 57 && this.a(8, (byte)3);
+                    }
+                    int n = 7979 + this.var_int_v;
+                    this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xBF);
+                }
+            } else {
+                this.var_byte_arr_a[3131 + this.var_int_v] = this.var_f_a.var_byte_arr_q[0];
+                this.var_byte_arr_a[3232 + this.var_int_v] = this.var_f_a.var_byte_arr_q[1];
+                int n = 7979 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xDF);
+                if (this.var_byte_arr_a[0 + this.var_int_v] != this.var_byte_arr_a[3131 + this.var_int_v] || this.var_byte_arr_a[101 + this.var_int_v] != this.var_byte_arr_a[3232 + this.var_int_v]) {
+                    this.void_a(this.var_int_v, (byte)69);
+                    this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+                    this.var_byte_arr_a[7777 + this.var_int_v] = 3;
+                    return true;
+                }
             }
-         } else {
+        } else if ((this.var_f_a.var_boolean_N || this.var_byte_arr_a[2020 + this.var_int_v] > 30 || this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] != 4) && this.var_byte_arr_a[1313 + this.var_int_v] > 0) {
+            this.var_byte_arr_a[2828 + this.var_int_v] = 87;
+            this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+            return true;
+        }
+        return false;
+    }
+
+    private boolean boolean_n() {
+        if (this.var_f_a.var_byte_q == 3 || this.var_f_a.var_boolean_N || (this.var_f_a.var_boolean_L || this.var_int_u == 1) && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x40) != 0 || this.var_byte_arr_a[1414 + this.var_int_v] < 12) {
             return false;
-         }
-      } else {
-         return false;
-      }
-   }
-
-   private boolean a(int var1, byte var2) {
-      if (this.a(var1)) {
-         if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) {
-            this.a(this.v, (byte)87);
-         }
-
-         this.g(1);
-         return true;
-      } else {
-         if (!this.h) {
-            this.a(var2, this.v, this.v);
-         }
-
-         return false;
-      }
-   }
-
-   private boolean a(boolean var1) {
-      if (!var1) {
-         if (this.a[this.u][18] >= 0) {
-            return false;
-         }
-
-         if (this.a.a((int)65535, (int)10) < 4 || this.a[505 + this.v] < 75) {
-            return false;
-         }
-      }
-
-      int var3 = this.a.a((int)65535, (int)(this.a[this.u][11] / 2 + 1));
-      this.ad = this.u * 50 + 1;
-      int var2 = 0;
-
-      while(true) {
-         if ((this.a[505 + this.ad] >= 75 || var1) && (!var1 || this.ad != this.R) && this.a[1515 + this.v] != this.a[1515 + this.ad] && this.a[1919 + this.ad] > 0 && this.a[1414 + this.ad] >= 12 && this.a[2828 + this.ad] < 109 && (this.a[8282 + this.ad] & 127) == 0) {
-            ++var2;
-            if (var2 > var3) {
-               break;
+        }
+        if (this.var_int_u == 0) {
+            if (this.boolean_o()) {
+                return true;
             }
-         }
-
-         if (this.ad > (this.u + 1) * 50) {
-            if (var2 == 0) {
-               break;
+            if (this.boolean_a(false)) {
+                return true;
             }
+        }
+        if (this.var_byte_arr_b[this.var_short_arr_a[50] + this.var_byte_arr_a[2828 + this.var_int_v]] == 127 || this.var_byte_arr_b[this.var_short_arr_a[52] + this.var_byte_arr_a[2828 + this.var_int_v]] == 127) {
+            return false;
+        }
+        if (this.var_byte_arr_a[2121 + this.var_int_v] <= (this.var_byte_arr_a[505 + this.var_int_v] > 5 ? (byte)20 : 50)) {
+            if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) {
+                this.void_a(this.var_int_v, (byte)87);
+                this.g(1);
+            } else {
+                this.aJ = this.var_f_a.int_a(255, 3);
+                if (this.var_byte_arr_a[3434 + this.var_int_v] > 0 && this.var_byte_arr_a[8627 + this.var_byte_arr_a[3434 + this.var_int_v]] == 0 && this.var_byte_arr_a[9237 + this.var_byte_arr_a[3434 + this.var_int_v]] < 2) {
+                    this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[8383 + this.var_byte_arr_a[3434 + this.var_int_v]];
+                    this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[8444 + this.var_byte_arr_a[3434 + this.var_int_v]];
+                    this.g(1);
+                } else if (this.aJ == 1 && this.boolean_a(7)) {
+                    this.g(1);
+                } else {
+                    this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+                    this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+                    this.void_a(this.var_int_v, (byte)79);
+                    this.var_byte_arr_a[2929 + this.var_int_v] = 40;
+                    this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+                }
+                if (this.var_byte_arr_a[3434 + this.var_int_v] <= 0) {
+                    this.a((byte)1, this.var_int_v, this.var_int_v);
+                }
+            }
+            return true;
+        }
+        if (this.var_byte_arr_a[2020 + this.var_int_v] <= (this.var_byte_arr_a[505 + this.var_int_v] > 5 ? (byte)20 : 50) && this.var_byte_arr_a[6464 + this.var_int_v] != 66 && this.var_byte_arr_a[2828 + this.var_int_v] != 66 && this.boolean_a(4, (byte)0)) {
+            return true;
+        }
+        if (this.var_byte_arr_a[505 + this.var_int_v] <= 30 && this.var_byte_arr_a[6464 + this.var_int_v] != 86 && this.var_byte_arr_a[2828 + this.var_int_v] != 86) {
+            if (!this.boolean_a(7, (byte)2)) {
+                if (this.var_byte_arr_a[505 + this.var_int_v] <= 5 && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] != 0) {
+                    if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) {
+                        this.void_a(this.var_int_v, (byte)87);
+                        this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+                        return true;
+                    }
+                    this.Q();
+                }
+            } else {
+                return true;
+            }
+        }
+        return (this.var_byte_arr_a[1919 + this.var_int_v] < this.var_byte_arr_a[6767 + this.var_int_v] * 2 / 3 || (this.var_byte_arr_a[7979 + this.var_int_v] & 4) != 0) && this.var_byte_arr_a[6464 + this.var_int_v] != 57 && this.var_byte_arr_a[2828 + this.var_int_v] != 57 && this.boolean_a(8, (byte)3);
+    }
 
-            this.ad = this.u * 50;
-         }
+    private boolean boolean_a(int n, byte by) {
+        if (this.boolean_a(n)) {
+            if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) {
+                this.void_a(this.var_int_v, (byte)87);
+            }
+            this.g(1);
+            return true;
+        }
+        if (!this.var_boolean_h) {
+            this.a(by, this.var_int_v, this.var_int_v);
+        }
+        return false;
+    }
 
-         ++this.ad;
-      }
-
-      if (this.ad > (this.u + 1) * 50) {
-         return false;
-      } else {
-         for(this.x = 0; this.x < 10; ++this.x) {
-            if (this.c[4][this.x] == 0) {
-               var3 = this.a.a((int)65535, (int)(this.a[this.u][14] / 2 + 1));
-               this.ae = this.u * 30 + 1;
-               var2 = 0;
-
-               while(true) {
-                  if (this.a[8505 + this.ae] >= 0 && this.a[8749 + this.ae] == 2 && this.a[8627 + this.ae] == 0 && this.a[9237 + this.ae] == 0 && this.a[8932 + this.ae] <= 1) {
-                     ++var2;
-                     if (var2 > var3) {
-                        this.a[this.u][18] = 0;
-                        this.c[4][this.x] = 1;
-                        this.c[0][this.x] = (byte)this.v;
-                        this.c[1][this.x] = (byte)this.ad;
-                        byte[] var10000 = this.a;
-                        int var10001 = 8282 + this.v;
-                        var10000[var10001] = (byte)(var10000[var10001] + (this.x + 1 << 1));
-                        var10000 = this.a;
-                        var10001 = 8282 + this.ad;
-                        var10000[var10001] = (byte)(var10000[var10001] + (this.x + 1 << 1) + 1);
-                        this.c[5][this.x] = (byte)this.ae;
-                        this.a[9237 + this.ae] = 1;
-                        this.c[2][this.x] = (byte)(this.a[8383 + this.ae] + 1);
-                        this.c[3][this.x] = (byte)(this.a[8444 + this.ae] + 2);
-                        this.a(this.v, (byte)(110 - this.a[1515 + this.v]));
+    private boolean boolean_a(boolean bl) {
+        if (!bl) {
+            if (this.var_short_arr_arr_a[this.var_int_u][18] >= 0) {
+                return false;
+            }
+            if (this.var_f_a.int_a(65535, 10) < 4 || this.var_byte_arr_a[505 + this.var_int_v] < 75) {
+                return false;
+            }
+        }
+        int n = this.var_f_a.int_a(65535, this.var_short_arr_arr_a[this.var_int_u][11] / 2 + 1);
+        this.ad = this.var_int_u * 50 + 1;
+        int n2 = 0;
+        while (this.var_byte_arr_a[505 + this.ad] < 75 && !bl || bl && this.ad == this.var_int_R || this.var_byte_arr_a[1515 + this.var_int_v] == this.var_byte_arr_a[1515 + this.ad] || this.var_byte_arr_a[1919 + this.ad] <= 0 || this.var_byte_arr_a[1414 + this.ad] < 12 || this.var_byte_arr_a[2828 + this.ad] >= 109 || (this.var_byte_arr_a[8282 + this.ad] & 0x7F) != 0 || ++n2 <= n) {
+            if (this.ad > (this.var_int_u + 1) * 50) {
+                if (n2 == 0) break;
+                this.ad = this.var_int_u * 50;
+            }
+            ++this.ad;
+        }
+        if (this.ad > (this.var_int_u + 1) * 50) {
+            return false;
+        }
+        this.var_int_x = 0;
+        while (this.var_int_x < 10) {
+            if (this.var_byte_arr_arr_c[4][this.var_int_x] == 0) {
+                n = this.var_f_a.int_a(65535, this.var_short_arr_arr_a[this.var_int_u][14] / 2 + 1);
+                this.ae = this.var_int_u * 30 + 1;
+                n2 = 0;
+                while (true) {
+                    if (this.var_byte_arr_a[8505 + this.ae] >= 0 && this.var_byte_arr_a[8749 + this.ae] == 2 && this.var_byte_arr_a[8627 + this.ae] == 0 && this.var_byte_arr_a[9237 + this.ae] == 0 && this.var_byte_arr_a[8932 + this.ae] <= 1 && ++n2 > n) {
+                        this.var_short_arr_arr_a[this.var_int_u][18] = 0;
+                        this.var_byte_arr_arr_c[4][this.var_int_x] = 1;
+                        this.var_byte_arr_arr_c[0][this.var_int_x] = (byte)this.var_int_v;
+                        this.var_byte_arr_arr_c[1][this.var_int_x] = (byte)this.ad;
+                        int n3 = 8282 + this.var_int_v;
+                        this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] + (this.var_int_x + 1 << 1));
+                        int n4 = 8282 + this.ad;
+                        this.var_byte_arr_a[n4] = (byte)(this.var_byte_arr_a[n4] + ((this.var_int_x + 1 << 1) + 1));
+                        this.var_byte_arr_arr_c[5][this.var_int_x] = (byte)this.ae;
+                        this.var_byte_arr_a[9237 + this.ae] = 1;
+                        this.var_byte_arr_arr_c[2][this.var_int_x] = (byte)(this.var_byte_arr_a[8383 + this.ae] + 1);
+                        this.var_byte_arr_arr_c[3][this.var_int_x] = (byte)(this.var_byte_arr_a[8444 + this.ae] + 2);
+                        this.void_a(this.var_int_v, (byte)(110 - this.var_byte_arr_a[1515 + this.var_int_v]));
                         this.N();
                         return true;
-                     }
-                  }
-
-                  if (this.ae > (this.u + 1) * 30) {
-                     if (var2 == 0) {
-                        return false;
-                     }
-
-                     this.ae = this.u * 30;
-                  }
-
-                  ++this.ae;
-               }
+                    }
+                    if (this.ae > (this.var_int_u + 1) * 30) {
+                        if (n2 == 0) break;
+                        this.ae = this.var_int_u * 30;
+                    }
+                    ++this.ae;
+                }
+                return false;
             }
-         }
+            ++this.var_int_x;
+        }
+        return false;
+    }
 
-         return false;
-      }
-   }
-
-   private boolean o() {
-      this.x = ((this.a[8282 + this.v] & 127) >> 1) - 1;
-      if (this.x < 0) {
-         return false;
-      } else {
-         if (this.a[2828 + this.v] < 109) {
-            this.a(this.v, (byte)(110 - this.a[1515 + this.v]));
-            this.c[4][this.x] = 2;
-            if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-               this.N();
-            } else {
-               this.g(3);
+    private boolean boolean_o() {
+        this.var_int_x = ((this.var_byte_arr_a[8282 + this.var_int_v] & 0x7F) >> 1) - 1;
+        if (this.var_int_x >= 0) {
+            if (this.var_byte_arr_a[2828 + this.var_int_v] < 109) {
+                this.void_a(this.var_int_v, (byte)(110 - this.var_byte_arr_a[1515 + this.var_int_v]));
+                this.var_byte_arr_arr_c[4][this.var_int_x] = 2;
+                if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+                    this.N();
+                } else {
+                    this.g(3);
+                }
+            } else if (this.var_byte_arr_arr_c[4][this.var_int_x] == 2) {
+                if (this.var_byte_arr_a[0 + this.var_byte_arr_arr_c[0][this.var_int_x]] != this.var_byte_arr_a[3131 + this.var_byte_arr_arr_c[0][this.var_int_x]] || this.var_byte_arr_a[101 + this.var_byte_arr_arr_c[0][this.var_int_x]] != this.var_byte_arr_a[3232 + this.var_byte_arr_arr_c[0][this.var_int_x]] || this.var_byte_arr_a[0 + this.var_byte_arr_arr_c[1][this.var_int_x]] != this.var_byte_arr_a[3131 + this.var_byte_arr_arr_c[0][this.var_int_x]] + 1 || this.var_byte_arr_a[101 + this.var_byte_arr_arr_c[1][this.var_int_x]] != this.var_byte_arr_a[3232 + this.var_byte_arr_arr_c[0][this.var_int_x]] || this.var_byte_arr_a[2828 + this.var_byte_arr_arr_c[0][this.var_int_x]] != 109 || this.var_byte_arr_a[2828 + this.var_byte_arr_arr_c[1][this.var_int_x]] != 109 || this.var_byte_arr_a[202 + this.var_byte_arr_arr_c[0][this.var_int_x]] != 0 || this.var_byte_arr_a[303 + this.var_byte_arr_arr_c[0][this.var_int_x]] != 0 || this.var_byte_arr_a[202 + this.var_byte_arr_arr_c[1][this.var_int_x]] != 0 || this.var_byte_arr_a[303 + this.var_byte_arr_arr_c[1][this.var_int_x]] != 0) {
+                    return true;
+                }
+                this.var_int_C = this.var_byte_arr_arr_c[0 + this.var_byte_arr_a[1515 + this.var_byte_arr_arr_c[0][this.var_int_x]]][this.var_int_x];
+                this.var_int_D = this.var_byte_arr_arr_c[1 - this.var_byte_arr_a[1515 + this.var_byte_arr_arr_c[0][this.var_int_x]]][this.var_int_x];
+                if (this.var_byte_arr_a[2929 + this.var_int_C] != -99) {
+                    this.var_byte_arr_a[2929 + this.var_int_C] = -99;
+                    this.var_byte_arr_a[2929 + this.var_int_D] = -98;
+                    this.var_byte_arr_a[2828 + this.var_int_C] = 109;
+                    this.var_byte_arr_a[3030 + this.var_int_C] = 0;
+                    this.var_byte_arr_a[3030 + this.var_int_D] = 0;
+                    this.var_byte_arr_a[606 + this.var_byte_arr_arr_c[0][this.var_int_x]] = 0;
+                    this.var_byte_arr_a[606 + this.var_byte_arr_arr_c[1][this.var_int_x]] = 4;
+                    this.var_byte_arr_a[4646 + this.var_byte_arr_arr_c[0][this.var_int_x]] = -90;
+                    this.var_byte_arr_a[9237 + this.var_byte_arr_arr_c[5][this.var_int_x]] = 2;
+                    this.var_f_a.a((int)this.var_byte_arr_arr_c[5][this.var_int_x], true);
+                } else if (this.var_byte_arr_a[3030 + this.var_int_v] == 6 && this.var_byte_arr_a[3535 + this.var_int_C] == 15) {
+                    this.var_byte_arr_a[3535 + this.var_int_C] = 0;
+                    this.var_byte_arr_a[3535 + this.var_int_D] = 15;
+                    this.var_byte_arr_a[3636 + this.var_int_C] = 0;
+                    this.var_byte_arr_a[3636 + this.var_int_D] = 1;
+                } else if (this.var_byte_arr_a[3030 + this.var_int_v] == this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF] - 1) {
+                    this.var_byte_arr_a[3131 + this.var_int_C] = this.var_byte_arr_a[8383 + this.var_byte_arr_arr_c[5][this.var_int_x]];
+                    this.var_byte_arr_a[3232 + this.var_int_C] = this.var_byte_arr_a[8444 + this.var_byte_arr_arr_c[5][this.var_int_x]];
+                    this.var_byte_arr_a[3131 + this.var_int_D] = this.var_byte_arr_a[8383 + this.var_byte_arr_arr_c[5][this.var_int_x]];
+                    this.var_byte_arr_a[3232 + this.var_int_D] = this.var_byte_arr_a[8444 + this.var_byte_arr_arr_c[5][this.var_int_x]];
+                    this.var_byte_arr_a[2828 + this.var_int_C] = 111;
+                    this.var_byte_arr_a[2828 + this.var_int_D] = 111;
+                    this.var_byte_arr_a[808 + this.var_int_C] = 0;
+                    this.var_byte_arr_a[808 + this.var_int_D] = 0;
+                    this.var_byte_arr_arr_c[4][this.var_int_x] = 3;
+                    this.ae = this.var_int_v;
+                    this.var_int_v = this.var_byte_arr_arr_c[0][this.var_int_x];
+                    this.g(3);
+                    this.var_int_v = this.var_byte_arr_arr_c[1][this.var_int_x];
+                    this.g(3);
+                    this.var_int_v = this.ae;
+                }
+            } else if (this.var_byte_arr_a[2828 + this.var_int_v] == 111) {
+                this.var_byte_arr_a[9237 + this.var_byte_arr_arr_c[5][this.var_int_x]] = 3;
+                this.d(this.var_int_v, 0);
             }
-         } else if (this.c[4][this.x] == 2) {
-            if (this.a[0 + this.c[0][this.x]] != this.a[3131 + this.c[0][this.x]] || this.a[101 + this.c[0][this.x]] != this.a[3232 + this.c[0][this.x]] || this.a[0 + this.c[1][this.x]] != this.a[3131 + this.c[0][this.x]] + 1 || this.a[101 + this.c[1][this.x]] != this.a[3232 + this.c[0][this.x]] || this.a[2828 + this.c[0][this.x]] != 109 || this.a[2828 + this.c[1][this.x]] != 109 || this.a[202 + this.c[0][this.x]] != 0 || this.a[303 + this.c[0][this.x]] != 0 || this.a[202 + this.c[1][this.x]] != 0 || this.a[303 + this.c[1][this.x]] != 0) {
-               return true;
+            return true;
+        }
+        return false;
+    }
+
+    private void d(int n, int n2) {
+        this.ae = ((this.var_byte_arr_a[8282 + n] & 0x7F) >> 1) - 1;
+        if (this.ae >= 0) {
+            if (n2 > 0 && this.var_byte_arr_arr_c[4][this.ae] != 3) {
+                return;
             }
-
-            this.C = this.c[0 + this.a[1515 + this.c[0][this.x]]][this.x];
-            this.D = this.c[1 - this.a[1515 + this.c[0][this.x]]][this.x];
-            if (this.a[2929 + this.C] != -99) {
-               this.a[2929 + this.C] = -99;
-               this.a[2929 + this.D] = -98;
-               this.a[2828 + this.C] = 109;
-               this.a[3030 + this.C] = 0;
-               this.a[3030 + this.D] = 0;
-               this.a[606 + this.c[0][this.x]] = 0;
-               this.a[606 + this.c[1][this.x]] = 4;
-               this.a[4646 + this.c[0][this.x]] = -90;
-               this.a[9237 + this.c[5][this.x]] = 2;
-               this.a.a(this.c[5][this.x], true);
-            } else if (this.a[3030 + this.v] == 6 && this.a[3535 + this.C] == 15) {
-               this.a[3535 + this.C] = 0;
-               this.a[3535 + this.D] = 15;
-               this.a[3636 + this.C] = 0;
-               this.a[3636 + this.D] = 1;
-            } else if (this.a[3030 + this.v] == this.a.j[4][this.a[2929 + this.v] & 255] - 1) {
-               this.a[3131 + this.C] = this.a[8383 + this.c[5][this.x]];
-               this.a[3232 + this.C] = this.a[8444 + this.c[5][this.x]];
-               this.a[3131 + this.D] = this.a[8383 + this.c[5][this.x]];
-               this.a[3232 + this.D] = this.a[8444 + this.c[5][this.x]];
-               this.a[2828 + this.C] = 111;
-               this.a[2828 + this.D] = 111;
-               this.a[808 + this.C] = 0;
-               this.a[808 + this.D] = 0;
-               this.c[4][this.x] = 3;
-               this.ae = this.v;
-               this.v = this.c[0][this.x];
-               this.g(3);
-               this.v = this.c[1][this.x];
-               this.g(3);
-               this.v = this.ae;
+            this.var_byte_arr_arr_c[4][this.ae] = 0;
+            this.k(this.var_byte_arr_arr_c[0 + (this.var_byte_arr_a[8282 + n] + 1 & 1)][this.ae]);
+            if (n2 < 0) {
+                this.k(n);
             }
-         } else if (this.a[2828 + this.v] == 111) {
-            this.a[9237 + this.c[5][this.x]] = 3;
-            this.d(this.v, 0);
-         }
+            if (this.var_byte_arr_a[3535 + n] == 15) {
+                this.var_byte_arr_a[3636 + n] = 0;
+            }
+            int n3 = 8282 + this.var_byte_arr_arr_c[0][this.ae];
+            this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] & 0x80);
+            int n4 = 8282 + this.var_byte_arr_arr_c[1][this.ae];
+            this.var_byte_arr_a[n4] = (byte)(this.var_byte_arr_a[n4] & 0x80);
+            if (this.var_byte_arr_a[9237 + this.var_byte_arr_arr_c[5][this.ae]] < 3) {
+                this.var_byte_arr_a[9237 + this.var_byte_arr_arr_c[5][this.ae]] = 0;
+            }
+        }
+    }
 
-         return true;
-      }
-   }
-
-   private void d(int var1, int var2) {
-      this.ae = ((this.a[8282 + var1] & 127) >> 1) - 1;
-      if (this.ae >= 0) {
-         if (var2 > 0 && this.c[4][this.ae] != 3) {
+    final void void_a(int n) {
+        if (this.var_byte_arr_a[9237 + n] < 1) {
             return;
-         }
-
-         this.c[4][this.ae] = 0;
-         this.k(this.c[0 + (this.a[8282 + var1] + 1 & 1)][this.ae]);
-         if (var2 < 0) {
-            this.k(var1);
-         }
-
-         if (this.a[3535 + var1] == 15) {
-            this.a[3636 + var1] = 0;
-         }
-
-         byte[] var10000 = this.a;
-         int var10001 = 8282 + this.c[0][this.ae];
-         var10000[var10001] = (byte)(var10000[var10001] & 128);
-         var10000 = this.a;
-         var10001 = 8282 + this.c[1][this.ae];
-         var10000[var10001] = (byte)(var10000[var10001] & 128);
-         if (this.a[9237 + this.c[5][this.ae]] < 3) {
-            this.a[9237 + this.c[5][this.ae]] = 0;
-         }
-      }
-
-   }
-
-   final void a(int var1) {
-      if (this.a[9237 + var1] >= 1) {
-         for(this.af = 0; this.af < 10; ++this.af) {
-            if (this.c[4][this.af] != 0 && this.c[5][this.af] == var1) {
-               this.d(this.c[0][this.af], -1);
-               return;
+        }
+        this.af = 0;
+        while (this.af < 10) {
+            if (this.var_byte_arr_arr_c[4][this.af] != 0 && this.var_byte_arr_arr_c[5][this.af] == n) {
+                this.d(this.var_byte_arr_arr_c[0][this.af], -1);
+                return;
             }
-         }
+            ++this.af;
+        }
+    }
 
-      }
-   }
+    private void k(int n) {
+        if (this.var_byte_arr_a[3535 + n] == 15) {
+            this.var_byte_arr_a[3636 + n] = 0;
+        }
+        if (this.var_byte_arr_a[2828 + n] >= 109) {
+            if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + n]][this.var_byte_arr_a[0 + n]] == n) {
+                this.var_byte_arr_a[3131 + n] = this.var_byte_arr_a[0 + n];
+                this.var_byte_arr_a[3232 + n] = this.var_byte_arr_a[101 + n];
+                this.void_a(n, (byte)69);
+                return;
+            }
+            this.var_byte_arr_a[6161 + n] = 3;
+            this.void_a(n, (byte)87);
+        }
+    }
 
-   private void k(int var1) {
-      if (this.a[3535 + var1] == 15) {
-         this.a[3636 + var1] = 0;
-      }
-
-      if (this.a[2828 + var1] >= 109) {
-         if (this.b[this.a[101 + var1]][this.a[0 + var1]] == var1) {
-            this.a[3131 + var1] = this.a[0 + var1];
-            this.a[3232 + var1] = this.a[101 + var1];
-            this.a(var1, (byte)69);
-            return;
-         }
-
-         this.a[6161 + var1] = 3;
-         this.a(var1, (byte)87);
-      }
-
-   }
-
-   final byte b(int var1) {
-      if (this.a[1414 + var1] < 12) {
-         this.a[7777 + var1] = 0;
-         return 6;
-      } else if ((this.a[7979 + var1] & 2) <= 0 || this.a[7777 + var1] != 0 && this.a[3535 + var1] == 0 && this.a[6565 + var1] != 1) {
-         if (this.a[3535 + var1] == 0 && this.a[6565 + var1] != 1) {
-            return (byte)(this.a[7777 + var1] > 0 ? 7 : 0);
-         } else {
-            this.a[7777 + var1] = 0;
+    final byte byte_b(int n) {
+        if (this.var_byte_arr_a[1414 + n] >= 12) {
+            if ((this.var_byte_arr_a[7979 + n] & 2) > 0 && (this.var_byte_arr_a[7777 + n] == 0 || this.var_byte_arr_a[3535 + n] != 0 || this.var_byte_arr_a[6565 + n] == 1)) {
+                this.var_byte_arr_a[7777 + n] = 0;
+                return 5;
+            }
+            if (this.var_byte_arr_a[3535 + n] == 0 && this.var_byte_arr_a[6565 + n] != 1) {
+                if (this.var_byte_arr_a[7777 + n] > 0) {
+                    return 7;
+                }
+                return 0;
+            }
+            this.var_byte_arr_a[7777 + n] = 0;
             return 1;
-         }
-      } else {
-         this.a[7777 + var1] = 0;
-         return 5;
-      }
-   }
+        }
+        this.var_byte_arr_a[7777 + n] = 0;
+        return 6;
+    }
 
-   private void P() {
-      this.a[2929 + this.v] = (byte)(this.b(this.v) % 7 + 8);
-   }
+    private void P() {
+        this.var_byte_arr_a[2929 + this.var_int_v] = (byte)(this.byte_b(this.var_int_v) % 7 + 8);
+    }
 
-   private void Q() {
-      if (this.a[1414 + this.v] >= 12) {
-         this.a(this.v, (byte)69);
-      } else {
-         this.a(this.v, (byte)17);
-      }
-   }
+    private void Q() {
+        if (this.var_byte_arr_a[1414 + this.var_int_v] >= 12) {
+            this.void_a(this.var_int_v, (byte)69);
+            return;
+        }
+        this.void_a(this.var_int_v, (byte)17);
+    }
 
-   private boolean p() {
-      if ((this.a.q != 3 || this.f < 5) && (this.a.q != 2 || this.f != 1)) {
-         this.b(this.a[0 + this.v], this.a[101 + this.v], this.a[4949 + this.v]);
-         this.y = 0;
-
-         for(this.ag = this.u * (this.a.q == 3 ? 6 : 3); this.ag <= this.u * (this.a.q == 3 ? 6 : 3) + 2; ++this.ag) {
-            if (this.a.q != 3 || this.ag != 1) {
-               this.aj = this.b[this.a[120] + this.ag];
-               this.a((byte)this.a[0 + this.v], (byte)this.a[101 + this.v], (byte)0, (byte)0);
-               if (this.y == this.b[this.a[119] + this.aj]) {
-                  break;
-               }
-            }
-         }
-
-         if (this.y <= 0) {
+    private boolean boolean_p() {
+        if (this.var_f_a.var_byte_q == 3 && this.var_byte_f >= 5 || this.var_f_a.var_byte_q == 2 && this.var_byte_f == 1) {
             return false;
-         } else {
-            if (!this.b && this.a[2828 + this.v] <= 9) {
-               this.a = this.a && (this.b[this.a[122] + this.a[2828 + this.v]] < this.y || this.z / 10 > this.B && this.an <= this.B);
+        }
+        this.b(this.var_byte_arr_a[0 + this.var_int_v], this.var_byte_arr_a[101 + this.var_int_v], this.var_byte_arr_a[4949 + this.var_int_v]);
+        this.var_byte_y = 0;
+        this.ag = this.var_int_u * (this.var_f_a.var_byte_q == 3 ? 6 : 3);
+        while (this.ag <= this.var_int_u * (this.var_f_a.var_byte_q == 3 ? 6 : 3) + 2) {
+            if (this.var_f_a.var_byte_q != 3 || this.ag != 1) {
+                this.aj = this.var_byte_arr_b[this.var_short_arr_a[120] + this.ag];
+                this.void_a(this.var_byte_arr_a[0 + this.var_int_v], this.var_byte_arr_a[101 + this.var_int_v], (byte)0, (byte)0);
+                if (this.var_byte_y == this.var_byte_arr_b[this.var_short_arr_a[119] + this.aj]) break;
             }
-
-            this.B = this.b[this.A][this.z];
+            ++this.ag;
+        }
+        if (this.var_byte_y > 0) {
+            if (!this.var_boolean_b && this.var_byte_arr_a[2828 + this.var_int_v] <= 9) {
+                this.var_boolean_a = this.var_boolean_a && (this.var_byte_arr_b[this.var_short_arr_a[122] + this.var_byte_arr_a[2828 + this.var_int_v]] < this.var_byte_y || this.var_int_z / 10 > this.var_int_B && this.an <= this.var_int_B);
+            }
+            this.var_byte_B = this.var_byte_arr_arr_b[this.var_byte_A][this.var_byte_z];
             this.H();
             return true;
-         }
-      } else {
-         return false;
-      }
-   }
+        }
+        return false;
+    }
 
-   private void a(byte var1, byte var2, byte var3) {
-      this.b(var1, var2, var3);
-      this.aj = this.u;
-      this.a(var1, var2, this.D, var3);
-   }
+    private void a(byte by, byte by2, byte by3) {
+        this.b(by, by2, by3);
+        this.aj = this.var_int_u;
+        this.void_a(by, by2, this.var_byte_D, by3);
+    }
 
-   private void b(byte var1, byte var2, byte var3) {
-      this.an = 0;
-      this.at = b((int)(var1 - var3 >> 4), (int)0, (int)5);
-      this.au = b((int)(var1 + var3 >> 4), (int)0, (int)5);
-      this.av = b((int)(var2 - var3 >> 4), (int)0, (int)5);
-      this.aw = b((int)(var2 + var3 >> 4), (int)0, (int)5);
-   }
+    private void b(byte by, byte by2, byte by3) {
+        this.an = 0;
+        this.at = b.int_b(by - by3 >> 4, 0, 5);
+        this.au = b.int_b(by + by3 >> 4, 0, 5);
+        this.av = b.int_b(by2 - by3 >> 4, 0, 5);
+        this.aw = b.int_b(by2 + by3 >> 4, 0, 5);
+    }
 
-   private void a(byte var1, byte var2, byte var3, byte var4) {
-      for(this.ah = this.at; this.ah <= this.au; ++this.ah) {
-         for(this.ai = this.av; this.ai <= this.aw; ++this.ai) {
-            for(this.ak = this.c[this.aj][this.ai][this.ah]; this.ak >= 0; this.ak = this.a[this.aj][this.ak]) {
-               this.al = this.ak + this.b[this.a[115] + this.aj];
-               this.ap = this.a[this.b[this.b[this.a[118] + this.aj]] + this.al] + (this.aj != 2 && this.aj != 3 ? 0 : this.b[this.a[138] + 104 + this.a[8749 + this.al]] / 2);
-               this.aq = this.a[this.b[this.b[this.a[118] + this.aj] + 1] + this.al] + (this.aj != 2 && this.aj != 3 ? 0 : this.b[this.a[138] + 130 + this.a[8749 + this.al]] / 2);
-               this.ar = this.ap - var1;
-               this.as = this.aq - var2;
-               this.ao = this.b[this.a[53] + (this.ar >= -12 && this.ar <= 12 ? 12 + this.ar : 0) * 25 + (this.as >= -12 && this.as <= 12 ? 12 + this.as : 0)] / 10;
-               if (var3 == 0) {
-                  if (this.a[this.b[this.b[this.a[117] + this.aj]] + this.al] > 0 && (this.aj > 1 || (this.a[7979 + this.al] & 1) == 0) && (this.aj != 4 || this.a[2828 + this.v] == 60 || this.a[9601 + this.al] != 0) && this.ao <= this.a[this.b[this.b[var2][var1] == this.v ? 49 : 18] + this.v]) {
-                     this.am = this.aj < 2 && this.a[1414 + this.al] < 12 ? 1 : this.b[this.a[119] + this.aj];
-                     if (this.y < this.am || this.y == this.am && this.ao < this.an) {
-                        this.y = (byte)this.am;
-                        this.an = this.ao;
-                        this.z = (byte)this.ap;
-                        this.A = (byte)this.aq;
-                        this.F = (byte)this.al;
-                     }
-                  }
-               } else if (this.ao <= var4 && this.b[this.a[101 + this.al]][this.a[0 + this.al]] == this.al && this.a[1919 + this.al] > 0 && this.a[1414 + this.al] >= 12 && this.a[6161 + this.al] == 0 && this.a[2828 + this.al] > 9 && this.a[2828 + this.al] != 59 && this.a[2828 + this.al] != 87 && this.a[2828 + this.al] != 50) {
-                  this.a[6161 + this.al] = 4;
-                  this.a[4747 + this.al] = var3;
-               }
+    private void void_a(byte by, byte by2, byte by3, byte by4) {
+        this.ah = this.at;
+        while (this.ah <= this.au) {
+            this.ai = this.av;
+            while (this.ai <= this.aw) {
+                this.ak = this.var_byte_arr_arr_arr_c[this.aj][this.ai][this.ah];
+                while (this.ak >= 0) {
+                    this.al = this.ak + this.var_byte_arr_b[this.var_short_arr_a[115] + this.aj];
+                    this.ap = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[118] + this.aj]] + this.al] + (this.aj == 2 || this.aj == 3 ? this.var_byte_arr_b[this.var_short_arr_a[138] + 104 + this.var_byte_arr_a[8749 + this.al]] / 2 : 0);
+                    this.aq = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[118] + this.aj] + 1] + this.al] + (this.aj == 2 || this.aj == 3 ? this.var_byte_arr_b[this.var_short_arr_a[138] + 130 + this.var_byte_arr_a[8749 + this.al]] / 2 : 0);
+                    this.ar = this.ap - by;
+                    this.as = this.aq - by2;
+                    this.ao = this.var_byte_arr_b[this.var_short_arr_a[53] + (this.ar >= -12 && this.ar <= 12 ? 12 + this.ar : 0) * 25 + (this.as >= -12 && this.as <= 12 ? 12 + this.as : 0)] / 10;
+                    if (by3 == 0) {
+                        if (!(this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[117] + this.aj]] + this.al] <= 0 || this.aj <= 1 && (this.var_byte_arr_a[7979 + this.al] & 1) != 0 || this.aj == 4 && this.var_byte_arr_a[2828 + this.var_int_v] != 60 && this.var_byte_arr_a[9601 + this.al] == 0 || this.ao > this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_arr_b[by2][by] == this.var_int_v ? 49 : 18] + this.var_int_v])) {
+                            int n = this.am = this.aj < 2 && this.var_byte_arr_a[1414 + this.al] < 12 ? 1 : this.var_byte_arr_b[this.var_short_arr_a[119] + this.aj];
+                            if (this.var_byte_y < this.am || this.var_byte_y == this.am && this.ao < this.an) {
+                                this.var_byte_y = (byte)this.am;
+                                this.an = this.ao;
+                                this.var_byte_z = (byte)this.ap;
+                                this.var_byte_A = (byte)this.aq;
+                                this.var_byte_F = (byte)this.al;
+                            }
+                        }
+                    } else if (this.ao <= by4 && this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.al]][this.var_byte_arr_a[0 + this.al]] == this.al && this.var_byte_arr_a[1919 + this.al] > 0 && this.var_byte_arr_a[1414 + this.al] >= 12 && this.var_byte_arr_a[6161 + this.al] == 0 && this.var_byte_arr_a[2828 + this.al] > 9 && this.var_byte_arr_a[2828 + this.al] != 59 && this.var_byte_arr_a[2828 + this.al] != 87 && this.var_byte_arr_a[2828 + this.al] != 50) {
+                        this.var_byte_arr_a[6161 + this.al] = 4;
+                        this.var_byte_arr_a[4747 + this.al] = by3;
+                    }
+                    this.ak = this.var_byte_arr_arr_a[this.aj][this.ak];
+                }
+                ++this.ai;
             }
-         }
-      }
+            ++this.ah;
+        }
+    }
 
-   }
-
-   private void a(byte var1, byte var2, int var3, int var4) {
-      try {
-         if (this.a[5959 + this.v] <= 0) {
-            this.aG = this.b[this.a[77] + this.a[6565 + this.v]];
-            this.aE = this.a[3131 + this.v] - var1;
-            this.aF = this.a[3232 + this.v] - var2;
-            if (this.b[this.a[53] + (this.aF >= -12 && this.aF <= 12 ? 12 + this.aF : 0) * 25 + (this.aE >= -12 && this.aE <= 12 ? 12 + this.aE : 0)] / 10 <= this.B) {
-               this.ax = this.b[this.c[1] + (this.aF > 0 ? this.aF : -this.aF) * 11 + (this.aE > 0 ? this.aE : -this.aE)];
-               this.a[5959 + this.v] = (byte)(this.ax > this.b[this.a[159] + this.aG] ? this.ax / this.b[this.a[159] + this.aG] : 1);
-               this.ay = this.az = this.aA = this.aB = 0;
-               this.a[7878 + this.v] = 9;
-               if ((this.b[this.a[27] + this.a[2828 + this.v]] & 2) > 0) {
-                  if (this.a[4747 + this.v] > 100) {
-                     if ((this.a[9557 + this.a[4444 + this.v]] & 255) <= 7) {
-                        this.aB = this.b[this.a[179] + this.a[9535 + this.a[4444 + this.v]]];
-                        this.aC = this.a[9491 + this.a[4444 + this.v]];
+    private void a(byte by, byte by2, int n, int n2) {
+        try {
+            if (this.var_byte_arr_a[5959 + this.var_int_v] > 0) {
+                return;
+            }
+            this.aG = this.var_byte_arr_b[this.var_short_arr_a[77] + this.var_byte_arr_a[6565 + this.var_int_v]];
+            this.aE = this.var_byte_arr_a[3131 + this.var_int_v] - by;
+            this.aF = this.var_byte_arr_a[3232 + this.var_int_v] - by2;
+            if (this.var_byte_arr_b[this.var_short_arr_a[53] + (this.aF >= -12 && this.aF <= 12 ? 12 + this.aF : 0) * 25 + (this.aE >= -12 && this.aE <= 12 ? 12 + this.aE : 0)] / 10 > this.var_int_B) {
+                return;
+            }
+            this.ax = this.var_short_arr_b[this.var_short_arr_c[1] + (this.aF > 0 ? this.aF : -this.aF) * 11 + (this.aE > 0 ? this.aE : -this.aE)];
+            this.var_byte_arr_a[5959 + this.var_int_v] = (byte)(this.ax > this.var_byte_arr_b[this.var_short_arr_a[159] + this.aG] ? this.ax / this.var_byte_arr_b[this.var_short_arr_a[159] + this.aG] : 1);
+            this.aB = 0;
+            this.aA = 0;
+            this.az = 0;
+            this.ay = 0;
+            this.var_byte_arr_a[7878 + this.var_int_v] = 9;
+            if ((this.var_byte_arr_b[this.var_short_arr_a[27] + this.var_byte_arr_a[2828 + this.var_int_v]] & 2) > 0) {
+                if (this.var_byte_arr_a[4747 + this.var_int_v] > 100) {
+                    if ((this.var_byte_arr_a[9557 + this.var_byte_arr_a[4444 + this.var_int_v]] & 0xFF) <= 7) {
+                        this.aB = this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_byte_arr_a[4444 + this.var_int_v]]];
+                        this.aC = this.var_byte_arr_a[9491 + this.var_byte_arr_a[4444 + this.var_int_v]];
                         this.aD = 101;
-                     }
-                  } else if ((this.a[2929 + this.a[4444 + this.v]] & 255) <= 7) {
-                     this.aB = this.a[1010 + this.a[4444 + this.v]] - this.a[7777 + this.a[4444 + this.v]];
-                     this.aC = this.a[606 + this.a[4444 + this.v]];
-                     this.aD = 2;
-                  }
-
-                  if (this.aB > 0) {
-                     this.a[7878 + this.v] = (byte)this.aB;
-                     this.az = this.a[this.b[this.aD] + this.a[4444 + this.v]] + this.b[this.a[1] + 0 + this.aC] * 22 * this.a[5959 + this.v] / this.b[this.a[15] + (this.aC & 1) * 9 + this.aB];
-                     this.aA = this.a[this.b[this.aD + 1] + this.a[4444 + this.v]] + this.b[this.a[1] + 8 + this.aC] * 16 * this.a[5959 + this.v] / this.b[this.a[15] + (this.aC & 1) * 9 + this.aB];
-                  }
-               }
-
-               this.a[5656 + this.v] = (byte)((this.aE * 22 + this.az + (this.aE > 0 ? 1 : -1) * this.a[5959 + this.v] / 2) / this.a[5959 + this.v]);
-               this.a[5757 + this.v] = (byte)((this.aF * 16 + this.aA + (this.aF > 0 ? 1 : -1) * this.a[5959 + this.v] / 2) / this.a[5959 + this.v]);
-
-               for(this.ay = 0; this.ay <= this.a[5959 + this.v]; ++this.ay) {
-                  this.a.h[this.ay][this.v] = (byte)((-this.b[this.a[159] + this.aG] * this.ay * this.b[this.a[159] + this.aG] * this.ay + this.ax * this.b[this.a[159] + this.aG] * this.ay) / this.b[this.c[3] + this.aG * 8 + this.a[606 + this.v]] + var3 - var4 * this.ay / this.a[5959 + this.v]);
-                  this.a.i[this.ay][this.v] = (byte)(this.aG == 2 ? this.ay & 1 : b((int)((this.ax - 2 * this.b[this.a[159] + this.aG] * this.ay - var4 * this.b[this.c[3] + this.aG * 8 + this.a[606 + this.v]] / this.ax) * -4 / this.b[this.c[3] + this.aG * 8 + this.a[606 + this.v]] + 8), (int)0, (int)16));
-               }
-
-               this.a[7676 + this.v] = (byte)(this.b[this.a[53] + (this.aF + 12) * 25 + this.aE + 12] % 10);
-               this.a[5858 + this.v] = this.a[5454 + this.v] = this.a[5555 + this.v] = 0;
-               this.a[5252 + this.v] = var1;
-               this.a[5353 + this.v] = var2;
+                    }
+                } else if ((this.var_byte_arr_a[2929 + this.var_byte_arr_a[4444 + this.var_int_v]] & 0xFF) <= 7) {
+                    this.aB = this.var_byte_arr_a[1010 + this.var_byte_arr_a[4444 + this.var_int_v]] - this.var_byte_arr_a[7777 + this.var_byte_arr_a[4444 + this.var_int_v]];
+                    this.aC = this.var_byte_arr_a[606 + this.var_byte_arr_a[4444 + this.var_int_v]];
+                    this.aD = 2;
+                }
+                if (this.aB > 0) {
+                    this.var_byte_arr_a[7878 + this.var_int_v] = (byte)this.aB;
+                    this.az = this.var_byte_arr_a[this.var_short_arr_b[this.aD] + this.var_byte_arr_a[4444 + this.var_int_v]] + this.var_byte_arr_b[this.var_short_arr_a[1] + 0 + this.aC] * 22 * this.var_byte_arr_a[5959 + this.var_int_v] / this.var_byte_arr_b[this.var_short_arr_a[15] + (this.aC & 1) * 9 + this.aB];
+                    this.aA = this.var_byte_arr_a[this.var_short_arr_b[this.aD + 1] + this.var_byte_arr_a[4444 + this.var_int_v]] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.aC] * 16 * this.var_byte_arr_a[5959 + this.var_int_v] / this.var_byte_arr_b[this.var_short_arr_a[15] + (this.aC & 1) * 9 + this.aB];
+                }
             }
-         }
-      } catch (Exception var6) {
-         this.a[5959 + this.v] = 0;
-      }
-   }
-
-   private void R() {
-      if (this.a[5858 + this.v] < this.a[5959 + this.v]) {
-         byte[] var10000 = this.a;
-         int var10001 = 5454 + this.v;
-         var10000[var10001] += this.a[5656 + this.v];
-         var10000 = this.a;
-         var10001 = 5555 + this.v;
-         var10000[var10001] += this.a[5757 + this.v];
-         var10000 = this.a;
-         var10001 = 5252 + this.v;
-         var10000[var10001] = (byte)(var10000[var10001] + ((this.a[5454 + this.v] + 11 + 66) / 22 - 3));
-         var10000 = this.a;
-         var10001 = 5353 + this.v;
-         var10000[var10001] = (byte)(var10000[var10001] + ((this.a[5555 + this.v] + 8 + 48) / 16 - 3));
-         var10000 = this.a;
-         var10001 = 5454 + this.v;
-         var10000[var10001] = (byte)(var10000[var10001] - ((this.a[5454 + this.v] + 11 + 66) / 22 - 3) * 22);
-         var10000 = this.a;
-         var10001 = 5555 + this.v;
-         var10000[var10001] = (byte)(var10000[var10001] - ((this.a[5555 + this.v] + 8 + 48) / 16 - 3) * 16);
-      }
-
-      ++this.a[5858 + this.v];
-      if (this.a[5858 + this.v] > this.a[5959 + this.v]) {
-         this.S();
-      }
-
-   }
-
-   private void S() {
-      this.a[5959 + this.v] = 0;
-      this.a(this.a[5252 + this.v], this.a[5353 + this.v], this.u, this.a[2828 + this.v] <= 9 ? this.b[this.a[79] + this.a[2828 + this.v]] : (this.a[2828 + this.v] == 92 ? 1 : (this.a[2828 + this.v] == 93 ? 2 : (this.a[2828 + this.v] == 106 ? 5 : 0))), this.a[4444 + this.v], 0, (this.a[1616 + this.v] / 3 + this.b[this.a[102] + this.a[6565 + this.v]]) * (this.a.a((int)65535, (int)(11 - this.a[7878 + this.v])) + this.a[7878 + this.v]) / 10, 1);
-   }
-
-   private void a(int var1, int var2, int var3, byte var4) {
-      if (var1 == 106) {
-         this.l(var4);
-         this.a.a((int)6, (int)var2, (int)var3, (byte)this.b[this.a[183] + this.a[9535 + var4]]);
-         this.a.c(var2, var3, 1, 1);
-      } else if (var1 == 19) {
-         if (var4 <= 50) {
-            switch (this.b[this.a[41] + this.a[6464 + var4]]) {
-               case 8:
-                  this.a.a((byte)14, (byte)((byte)var2), (byte)((byte)var3), (byte)var4);
-                  break;
-               case 9:
-                  this.a.a((byte)12, (byte)((byte)var2), (byte)((byte)var3), (byte)var4);
-                  break;
-               case 10:
-                  this.a.a((byte)15, (byte)((byte)var2), (byte)((byte)var3), (byte)var4);
-                  break;
-               case 11:
-                  this.a.a((byte)13, (byte)((byte)var2), (byte)((byte)var3), (byte)var4);
+            this.var_byte_arr_a[5656 + this.var_int_v] = (byte)((this.aE * 22 + this.az + (this.aE > 0 ? 1 : -1) * this.var_byte_arr_a[5959 + this.var_int_v] / 2) / this.var_byte_arr_a[5959 + this.var_int_v]);
+            this.var_byte_arr_a[5757 + this.var_int_v] = (byte)((this.aF * 16 + this.aA + (this.aF > 0 ? 1 : -1) * this.var_byte_arr_a[5959 + this.var_int_v] / 2) / this.var_byte_arr_a[5959 + this.var_int_v]);
+            this.ay = 0;
+            while (this.ay <= this.var_byte_arr_a[5959 + this.var_int_v]) {
+                this.var_f_a.var_byte_arr_arr_h[this.ay][this.var_int_v] = (byte)((-this.var_byte_arr_b[this.var_short_arr_a[159] + this.aG] * this.ay * this.var_byte_arr_b[this.var_short_arr_a[159] + this.aG] * this.ay + this.ax * this.var_byte_arr_b[this.var_short_arr_a[159] + this.aG] * this.ay) / this.var_short_arr_b[this.var_short_arr_c[3] + this.aG * 8 + this.var_byte_arr_a[606 + this.var_int_v]] + n - n2 * this.ay / this.var_byte_arr_a[5959 + this.var_int_v]);
+                this.var_f_a.var_byte_arr_arr_i[this.ay][this.var_int_v] = (byte)(this.aG == 2 ? this.ay & 1 : b.int_b((this.ax - 2 * this.var_byte_arr_b[this.var_short_arr_a[159] + this.aG] * this.ay - n2 * this.var_short_arr_b[this.var_short_arr_c[3] + this.aG * 8 + this.var_byte_arr_a[606 + this.var_int_v]] / this.ax) * -4 / this.var_short_arr_b[this.var_short_arr_c[3] + this.aG * 8 + this.var_byte_arr_a[606 + this.var_int_v]] + 8, 0, 16));
+                ++this.ay;
             }
-
-            if (var4 == this.a[0][17]) {
-               for(int var5 = 1; var5 <= 50; ++var5) {
-                  if (this.a[1414 + var5] >= 12) {
-                     this.a[505 + var5] = (byte)b((int)(this.a[505 + var5] - 25), (int)0, (int)99);
-                  }
-               }
-            }
-         }
-
-         this.a.a(var4);
-         this.a[2929 + var4] = (byte)(this.a[1414 + var4] >= 12 ? 43 : 44);
-         this.a[3030 + var4] = (byte)(var4 > this.v ? -1 : 0);
-         this.a[4646 + var4] = -64;
-         this.e((var4 - 1) / 50, var4);
-      } else if (var1 == 85) {
-         this.a.c(var4, true);
-      }
-
-      if (this.f < this.b[this.a[291] + this.a.q] && this.b[this.a[287] + this.b[this.a[288] + this.a.q] + this.f] == 10 && (var1 == 106 || var1 == 19 && var4 > 50)) {
-         this.b((int)0, (int)0, (int)1);
-         this.a.b((int)this.b[this.a[286] + this.b[this.a[288] + this.a.q] + this.f]);
-         this.f = (byte)(this.f + 50);
-      }
-
-   }
-
-   private void l(int var1) {
-      if ((this.a[9557 + var1] & 255) <= 7 && this.a[9623 + var1] < (this.b[this.a[15] + (this.a[9491 + var1] & 1) * 9 + this.b[this.a[179] + this.a[9535 + var1]]] + 1) / 2 && this.b[this.a[9381 + var1] + this.b[this.a[1] + 8 + this.a[9491 + var1]]][this.a[9359 + var1] + this.b[this.a[1] + this.a[9491 + var1]]] == -128) {
-         this.b[this.a[9381 + var1] + this.b[this.a[1] + 8 + this.a[9491 + var1]]][this.a[9359 + var1] + this.b[this.a[1] + this.a[9491 + var1]]] = 0;
-      }
-
-      this.b[this.a[9381 + var1]][this.a[9359 + var1]] = 0;
-      this.a[9513 + var1] = 0;
-      if (this.a[9469 + var1] < this.b[this.a[202] + this.a.q]) {
-         --this.a.t[this.a[9469 + var1]];
-      }
-
-   }
-
-   private void m(int var1) {
-      this.d(var1, 0);
-      this.a[1919 + var1] = 0;
-      this.a[5959 + var1] = 0;
-      this.b[this.a[101 + var1]][this.a[0 + var1]] = this.a[4545 + var1] <= -111 ? this.a[4545 + var1] : 0;
-      --this.a[(var1 - 1) / 50][11];
-      --this.a[(var1 - 1) / 50][12 + this.a[1515 + var1]];
-      this.b(var1);
-   }
-
-   private void c(int var1, int var2, int var3) {
-      if (this.a(var1, var2, this.u, this.b[this.a[79] + this.a[2828 + this.v]], this.a[4444 + this.v], var3, this.b[this.a[124] + this.a[1717 + this.v]] + this.b[this.a[102] + this.a[6565 + this.v]], 0) && (this.a[2929 + this.v] & 255) >= 31 && this.a[6565 + this.v] != 9 && this.k[0] == 1 && this.a[202 + this.k[2]] == 0 && this.a[303 + this.k[2]] == 0 && (this.a[2929 + this.k[2]] < 106 || this.a[2929 + this.k[2]] > 108)) {
-         this.a[2929 + this.k[2]] = 42;
-         this.a[3030 + this.k[2]] = 0;
-         this.a[4646 + this.k[2]] = (byte)(-(62 + (this.x & 1)));
-      }
-
-   }
-
-   private boolean a(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
-      this.ax = this.b[this.a[78] + 14 + var4];
-      this.ay = var4 == 0 ? 10 : (var4 == 2 ? 0 : this.b[this.a[53] + (12 + this.a[this.b[this.ax + 1] + var5] - var2) * 25 + 12 + this.a[this.b[this.ax] + var5] - var1] / 10);
-      if (this.ay <= var8 && this.ay > 0) {
-         var1 = this.a[this.b[this.ax] + var5];
-         var2 = this.a[this.b[this.ax + 1] + var5];
-      }
-
-      this.c(var1, var2, var3 & 1, 1);
-      if (this.a.ag && this.k[0] == 1 && this.k[2] <= 50) {
-         return false;
-      } else if (this.b[this.a[78] + this.k[0]] == 127) {
-         return false;
-      } else if (this.a[this.b[this.b[this.a[78] + this.k[0]]] + this.k[2]] <= 0) {
-         return false;
-      } else if (var3 >= 2 || this.k[3] != 0 || this.k[0] != 1 && this.k[0] != 2) {
-         if (var3 == 0 && this.a[0 + this.v] - this.a[0 + this.a[0][17]] >= -4 && this.a[0 + this.v] - this.a[0 + this.a[0][17]] <= 4 && this.a[101 + this.v] - this.a[101 + this.a[0][17]] >= -4 && this.a[101 + this.v] - this.a[101 + this.a[0][17]] <= 4) {
-            var7 = var7 * 3 / 2;
-         }
-
-         if (this.k[0] == 2) {
-            if ((this.a[9054 + this.k[2]] & 128) == 0) {
-               this.D = (byte)(this.v + (var3 == 2 ? 101 : 0));
-               this.u ^= 1;
-               this.a((byte)((byte)(this.a[8383 + this.k[2]] + this.b[this.a[138] + 104 + this.k[1]] / 2)), (byte)((byte)(this.a[8444 + this.k[2]] + this.b[this.a[138] + 130 + this.k[1]] / 2)), (byte)8);
-               this.u ^= 1;
-            }
-
-            byte[] var10000 = this.a;
-            int var10001 = 9054 + this.k[2];
-            var10000[var10001] = (byte)(var10000[var10001] | 128);
-            this.a.a(this.k[2], true);
-            var7 /= var7 > 1 ? 2 : 1;
-         }
-
-         if (this.k[0] == 1 && (this.a[7979 + this.k[2]] & 8) != 0) {
-            var7 /= var7 > 1 ? 2 : 1;
-         }
-
-         if ((var7 = var7 / (this.ay + 1)) < 1) {
-            return false;
-         } else {
-            if (this.k[0] == 1 && this.a[1919 + this.k[2]] > 0 && this.a[1414 + this.k[2]] >= 12 && this.a[6161 + this.k[2]] == 0 && this.a[2828 + this.k[2]] > 9 && this.a[2828 + this.k[2]] != 59 && this.a[2828 + this.k[2]] != 87 && this.a[2828 + this.k[2]] != 50) {
-               this.a[6161 + this.k[2]] = 4;
-               this.a[4747 + this.k[2]] = (byte)this.v;
-            }
-
-            if (this.k[0] == 1 || this.k[0] == 5) {
-               byte[] var10 = this.a.a.f;
-               int var12 = this.k[2] + (this.k[0] == 5 ? 101 : 0);
-               var10[var12] = (byte)(var10[var12] - var7);
-            }
-
-            if (this.k[0] == 5 && var3 != 2 && this.a[9601 + this.k[2]] <= 0) {
-               this.a[9447 + this.k[2]] = (byte)(19 + this.v);
-            }
-
-            byte[] var11 = this.a;
-            int var13 = this.b[this.b[this.a[78] + this.k[0]]] + this.k[2];
-            var11[var13] = (byte)(var11[var13] - var7);
-            if (this.a[this.b[this.b[this.a[78] + this.k[0]]] + this.k[2]] <= 0) {
-               this.a((int)this.b[this.a[78] + this.k[0]], (int)var1, (int)var2, (byte)this.k[2]);
-               return false;
-            } else {
-               if (this.k[0] == 2) {
-                  var6 = var1 - this.a[8383 + this.k[2]] + (var2 - this.a[8444 + this.k[2]] << 4);
-               }
-
-               this.a.a((int)this.k[2], (int)this.b[this.a[178] + this.k[0]], (int)var6, (int)b((int)(52 + var7 / 4 * 3 + this.a.a((int)255, (int)3)), (int)52, (int)61));
-               if (this.k[0] == 1 && this.k[2] <= 50) {
-                  if (this.a[1414 + this.k[2]] < 12) {
-                     this.a((byte)16, (int)this.a[0][17], (int)this.k[2]);
-                  } else if (this.d[0] < 0) {
-                     this.d[0] = 0;
-                     this.a.a((byte)7, (byte)((byte)var1), (byte)((byte)var2), (byte)0);
-                  } else if (var3 == 2 && this.a[2828 + this.k[2]] != 2 && this.a[2828 + this.k[2]] != 7) {
-                     this.z = (byte)var1;
-                     this.A = (byte)var2;
-                     this.a((byte)5, (int)this.k[2], (int)this.k[2]);
-                  }
-               }
-
-               return true;
-            }
-         }
-      } else {
-         return false;
-      }
-   }
-
-   private void T() {
-      for(this.u = 0; this.u < 2; ++this.u) {
-         for(this.v = this.u * 50 + 1; this.v <= (this.u + 1) * 50; ++this.v) {
-            if (this.a[5959 + this.v] > 0 && this.a[5252 + this.v] >= this.a.I && this.a[5252 + this.v] < this.a.I + this.a.O && this.a[5353 + this.v] >= this.a.K && this.a[5353 + this.v] < this.a.K + this.a.P) {
-               this.a[6060 + this.v] = this.a.g[this.a[5353 + this.v] - this.a.K][this.a[5252 + this.v] - this.a.I];
-               this.a.g[this.a[5353 + this.v] - this.a.K][this.a[5252 + this.v] - this.a.I] = (byte)this.v;
-            }
-         }
-      }
-
-   }
-
-   private void U() {
-      this.b(true);
-      if (this.a[4646 + this.v] == 1 && this.a[8749 + this.a[4444 + this.v]] == 8 && this.a[8627 + this.a[4444 + this.v]] == 0) {
-         this.a[2828 + this.a[8810 + this.a[4444 + this.v]]] = 57;
-         this.a[2929 + this.a[8810 + this.a[4444 + this.v]]] = 105;
-         this.a[3030 + this.a[8810 + this.a[4444 + this.v]]] = 0;
-      }
-
-      this.a[2929 + this.v] = this.a[1414 + this.v] >= 12 && this.a[8749 + this.a[4444 + this.v]] < 12 && (this.a[8627 + this.a[4444 + this.v]] != 0 || this.b[this.a[41] + this.a[2828 + this.v]] == 12) ? this.b[this.a[176] + this.b[this.a[177] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]] : this.b[this.a[173] + this.b[this.a[174] + this.a[8749 + this.a[4444 + this.v]]] + this.a[4646 + this.v]];
-      this.a[3030 + this.v] = 0;
-      this.a[1313 + this.v] = -3;
-      this.a.d((int)this.a[4444 + this.v]);
-      this.a[3131 + this.v] = this.a[0 + this.v];
-      this.a[3232 + this.v] = this.a[101 + this.v];
-      if (this.b[this.a[39] + this.a[2828 + this.v]] != 2) {
-         this.a(this.v, (byte)59);
-      }
-
-   }
-
-   private void V() {
-      if (this.v == this.a[this.u][17]) {
-         this.a[3434 + this.v] = 1;
-      } else {
-         for(this.aI = this.u * 30 + 1; this.aI <= (this.u + 1) * 30; ++this.aI) {
-            if (this.a[8749 + this.aI] == 2 && this.a[8627 + this.aI] == 0 && this.a[8810 + this.aI] < this.b[this.a[138] + (this.a[9115 + this.aI] - 1) * 26 + 2]) {
-               this.a[3434 + this.v] = (byte)this.aI;
-               ++this.a[8810 + this.aI];
-               return;
-            }
-         }
-
-      }
-   }
-
-   final void b(int var1) {
-      byte var2;
-      if ((var2 = this.a[3434 + var1]) > 0) {
-         --this.a[this.b[this.a[8627 + var2] == 0 ? 90 : 97] + var2];
-         this.a[3434 + var1] = 0;
-      }
-
-   }
-
-   private boolean q() {
-      if (this.a[6666 + this.v] >= (this.u == 0 ? 125 : 50)) {
-         this.a[6666 + this.v] = 0;
-         ++this.a[1414 + this.v];
-         this.aJ = this.b[this.a[97] + this.a[1414 + this.v]] + this.a.a((int)255, (int)5) - 2;
-         if (this.a[1515 + this.v] == 1) {
-            this.aJ += this.aJ > 0 ? -1 : 1;
-         }
-
-         this.a[6767 + this.v] = (byte)b((int)(this.a[6767 + this.v] + this.aJ), (int)0, (int)this.b[this.a[98] + this.a[1414 + this.v]]);
-         if (this.aJ > 0) {
-            byte[] var1 = this.a;
-            int var5 = 1919 + this.v;
-            var1[var5] = (byte)(var1[var5] + this.aJ);
-            if (this.a[6767 + this.v] >= 55 && this.a[6767 + this.v] - this.aJ < 55 && this.a[1010 + this.v] > 6 && this.a[202 + this.v] == 0 && this.a[303 + this.v] == 0) {
-               --this.a[1010 + this.v];
-            }
-         }
-
-         this.a[1919 + this.v] = (byte)b((int)this.a[1919 + this.v], (int)0, (int)this.a[6767 + this.v]);
-         if (!this.s()) {
-            return false;
-         }
-
-         if (this.a[1414 + this.v] == 12) {
-            this.a(this.v, (byte)69);
-            this.A();
-            this.a[6464 + this.v] = 69;
-            this.a[3030 + this.v] = 20;
-            this.a[6262 + this.v] = this.a[3131 + this.v] = this.a[0 + this.v];
-            this.a[6363 + this.v] = this.a[3232 + this.v] = this.a[101 + this.v];
-         }
-
-         if (this.a[1414 + this.v] == 12 || this.a[1414 + this.v] == 35) {
-            this.a.b((byte)this.v);
-         }
-      }
-
-      if (this.a[1414 + this.v] == 11 && this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v && this.a[1313 + this.v] >= 0) {
-         this.a[6161 + this.v] = 3;
-         this.a(this.v, (byte)59);
-      }
-
-      if (!this.r()) {
-         return false;
-      } else {
-         if ((this.a[7979 + this.v] & 8) > 0) {
-            ++this.a[8181 + this.v];
-            if (this.a[8181 + this.v] >= 120) {
-               this.a[8181 + this.v] = 0;
-               byte[] var4 = this.a;
-               int var8 = 7979 + this.v;
-               var4[var8] = (byte)(var4[var8] & 247);
-            }
-         }
-
-         return true;
-      }
-   }
-
-   private boolean r() {
-      if (this.a[1414 + this.v] >= 12 && this.a.c >= this.b[this.c[4] + this.a.q]) {
-         if (this.b[this.a[41] + this.a[6464 + this.v]] == 9 && (this.a.c & 63) == (this.v & 63)) {
-            if (this.a[2020 + this.v] < 100) {
-               ++this.a[2020 + this.v];
-            }
-         } else if (this.b[this.a[50] + this.a[2828 + this.v]] < 127 && this.a.c % (this.b[this.a[50] + this.a[2828 + this.v]] * (this.u * 4 + 1)) <= 3) {
-            if (this.a[2020 + this.v] > 0) {
-               --this.a[2020 + this.v];
-            } else {
-               this.a(this.v, (int)-1);
-            }
-
-            if (this.a[2020 + this.v] <= 5 && this.a.L && (this.a[7979 + this.v] & 64) != 0) {
-               this.a((byte)14, (int)this.v, (int)this.v);
-            }
-         }
-
-         this.aJ = (this.a[2929 + this.v] & 255) <= 14 ? this.b[this.a[170] + this.a[2929 + this.v]] : this.b[this.a[52] + this.a[2828 + this.v]];
-         if (this.aJ < 127 && this.a.c % (this.aJ * (this.u * 4 + 1)) <= 3) {
-            if (this.a[2121 + this.v] > 0) {
-               --this.a[2121 + this.v];
-            } else {
-               this.a(this.v, (int)-1);
-            }
-
-            if (this.a[2121 + this.v] <= 5 && this.a.L && (this.a[7979 + this.v] & 64) != 0) {
-               this.a((byte)15, (int)this.v, (int)this.v);
-            }
-         }
-
-         if (!this.s()) {
-            return false;
-         }
-      }
-
-      if (this.a[7373 + this.v] > 1 && this.b[this.a[41] + this.a[6464 + this.v]] == 11) {
-         if (this.a.c % (46 - this.a[7373 + this.v] * 3) <= 3) {
-            this.a(this.v, (int)2);
-         }
-      } else if ((this.a.c & 127) == (this.v & 15)) {
-         if ((this.a[7979 + this.v] & 4) == 0) {
-            this.a(this.v, (int)1);
-         }
-      } else if ((this.a[7979 + this.v] & 4) > 0 && (this.a.c & 31) == (this.v & 15)) {
-         this.a(this.v, (int)-1);
-         if (!this.s()) {
-            return false;
-         }
-      }
-
-      return true;
-   }
-
-   private boolean s() {
-      if (this.a[1919 + this.v] <= 0) {
-         if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-            this.a((int)19, (int)this.a[0 + this.v], (int)this.a[101 + this.v], (byte)((byte)this.v));
-            return false;
-         }
-
-         this.a[1919 + this.v] = this.a[6767 + this.v] = 1;
-         this.a[6161 + this.v] = 2;
-         byte[] var10000 = this.a;
-         int var10001 = 8282 + this.v;
-         var10000[var10001] = (byte)(var10000[var10001] | 128);
-      }
-
-      return true;
-   }
-
-   private void W() {
-      if (this.a.c >= this.b[this.c[4] + this.a.q]) {
-         this.w = this.a[505 + this.v] + this.b[this.a[51] + this.a[2828 + this.v]] + (this.b[this.a[51] + this.a[2828 + this.v]] < 0 && this.a[3434 + this.v] < 1 ? -3 : 0) - (this.a[2121 + this.v] < 20 ? 1 : 0) - (this.a[2020 + this.v] < 20 ? 1 : 0);
-         this.w += this.a[4646 + this.v] >= 0 && this.a[2828 + this.v] != 92 && this.a[2828 + this.v] != 93 && this.a[2828 + this.v] != 106 ? this.b[this.a[138] + (21 + this.a[9115 + this.a[4444 + this.v]] - 1) * 26 + this.a[8749 + this.a[4444 + this.v]]] : 0;
-         this.a[505 + this.v] = (byte)b((int)(this.w + (this.a.q < 2 ? 1 : 0) + this.u), (int)0, (int)99);
-      }
-   }
-
-   private void X() {
-      if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-         if (this.a[8080 + this.v] > 0) {
-            --this.a[8080 + this.v];
-         }
-      } else if (this.a[2828 + this.v] != 92 && this.a[2828 + this.v] != 93 && this.a[2828 + this.v] != 106) {
-         this.a[8080 + this.v] = (byte)b((int)(this.a[8080 + this.v] + ((this.a[8871 + this.a[4444 + this.v]] & 2) != 0 ? 1 : -1)), (int)0, (int)30);
-      }
-
-      if (this.a[8080 + this.v] >= 30) {
-         byte[] var1 = this.a;
-         int var2 = 7979 + this.v;
-         var1[var2] = (byte)(var1[var2] | 4);
-         this.a[8080 + this.v] = 0;
-      }
-
-   }
-
-   private void Y() {
-      for(this.n = -1; this.n < 2; ++this.n) {
-         for(this.o = -1; this.o < 2; ++this.o) {
-            if (this.a[0 + this.v] + this.n >= 0 && this.a[0 + this.v] + this.n < this.a.c && this.a[101 + this.v] + this.n >= 0 && this.a[101 + this.v] + this.n < this.a.d) {
-               this.p = this.b[this.a[101 + this.v] + this.o][this.a[0 + this.v] + this.n];
-               if (this.p > 0 && this.p <= 100 && (this.a[7979 + this.p] & 4) == 0 && this.a[1414 + this.p] >= 12) {
-                  byte[] var10000 = this.a;
-                  int var10001 = 8080 + this.p;
-                  var10000[var10001] = (byte)(var10000[var10001] + 8);
-               }
-            }
-         }
-      }
-
-   }
-
-   private void Z() {
-      if (this.a.q != 3) {
-         if (this.u == 1) {
-            if (this.a[1][11] >= this.b[this.a[275 + this.a.b] + this.a.q]) {
-               this.a[1][18] = 0;
-            }
-
-            if (this.a[1][18] != -1) {
-               return;
-            }
-         }
-
-         for(this.aH = this.u * 30 + 1; this.aH <= (this.u + 1) * 30; ++this.aH) {
-            if (this.a[8505 + this.aH] != 0 && this.a[8749 + this.aH] == 2 && this.a[8627 + this.aH] == 0 && this.a[8932 + this.aH] <= 3) {
-               if (this.u == 0) {
-                  if (this.a[9237 + this.aH] < 9) {
-                     if (this.a[9237 + this.aH] >= 3) {
-                        ++this.a[9237 + this.aH];
-                     }
-                     continue;
-                  }
-               } else {
-                  if (this.a[8383 + this.aH] >= this.a.I - 1 && this.a[8444 + this.aH] >= this.a.K - 1 && this.a[8383 + this.aH] <= this.a.I + this.a.O && this.a[8444 + this.aH] <= this.a.K + this.a.P) {
-                     continue;
-                  }
-
-                  this.a[this.u][18] = 0;
-                  if (this.u == 1 && this.Q > 0) {
-                     return;
-                  }
-
-                  this.v = this.u * 30 + 1;
-
-                  for(this.w = 0; this.v <= (this.u + 1) * 30; ++this.v) {
-                     if (this.a[1919 + this.v] > 0 && this.a[1414 + this.v] >= 12) {
-                        this.w |= this.a[1515 + this.v] + 1;
-                     }
-                  }
-
-                  if (this.w != 3) {
-                     return;
-                  }
-               }
-
-               this.a[9237 + this.aH] = 0;
-               this.v = this.a.a((byte)((byte)this.u), (byte)this.a[8383 + this.aH], (byte)this.a[8444 + this.aH], (byte)2, (byte)(this.u == 0 ? 0 : this.b[this.a[212 + this.a.b] + this.a.q] / 4));
-               if (this.v < 1) {
-                  return;
-               }
-
-               this.a[4444 + this.v] = (byte)this.aH;
-               ++this.a[8932 + this.aH];
-               this.G();
-               this.a[4545 + this.v] = this.a[8993 + this.aH];
-               this.a[8993 + this.aH] = (byte)this.v;
-               this.a[1313 + this.v] = -3;
-               this.a[2929 + this.v] = 71;
-               this.a[3030 + this.v] = 0;
-               this.a[2828 + this.v] = 59;
-               if (this.u == 1) {
-                  return;
-               }
-            }
-         }
-
-      }
-   }
-
-   final void g() {
-      if (this.a.c % 10 == 0) {
-         this.n();
-      }
-
-      try {
-         this.ax();
-
-         for(this.u = 0; this.u < 2; ++this.u) {
-            for(this.v = this.u * 30 + 1; this.v <= (this.u + 1) * 30; ++this.v) {
-               if (this.a[8505 + this.v] != 0) {
-                  this.z = this.a[8749 + this.v];
-                  if ((this.a.c & 15) == 0) {
-                     byte[] var10000 = this.a;
-                     int var10001 = 9054 + this.v;
-                     var10000[var10001] = (byte)(var10000[var10001] & 127);
-                  }
-
-                  if (this.z >= 12 || this.z == 4 || this.z == 2 || this.a[8627 + this.v] != 0) {
-                     this.x = this.A = 0;
-                     if (this.z >= 12) {
-                        while(this.x < 10 && this.f[0][this.x] != this.v) {
-                           ++this.x;
-                        }
-                     }
-
-                     if (this.a[8627 + this.v] != 0) {
-                        while(this.x < 20 && this.g[0][this.x] != this.v) {
-                           ++this.x;
-                        }
-                     }
-
-                     if (this.a[8627 + this.v] == 0 || (this.g[2][this.x] <= 0 || this.g[1][this.x] < this.g[2][this.x] || this.a[8627 + this.v] != 1) && (this.a[8627 + this.v] != 2 || this.a[8505 + this.v] < this.a[8566 + this.v]) && (this.a[9054 + this.v] & 1) == 0) {
-                        this.C = 0;
-                        this.aa();
-                        if ((this.a.c & 255) == this.v) {
-                           this.ac();
-                        }
-
-                        if (this.z == 2 && this.x > 0) {
-                           if (this.a[1313 + this.x] == 2 && this.A != 3) {
-                              this.a[1313 + this.x] = 1;
-                           }
-
-                           if (this.a[1313 + this.x] == 1 && this.A == 3) {
-                              this.a[1313 + this.x] = 2;
-                           }
-                        }
-
-                        if (this.z >= 12 && this.a[8505 + this.v] >= this.b[this.a[138] + 182 + this.a[9237 + this.v]] && this.a[8932 + this.v] == 0) {
-                           this.a.a((byte)this.u, this.a[9237 + this.v], this.a[8383 + this.v], this.a[8444 + this.v], 1, true, this.v);
-                           this.a.a((int)this.v, (int)0);
-                           this.a[9237 + this.v] = 0;
-                           this.f[0][this.x] = 0;
-                        }
-
-                        if ((this.z >= 12 || this.a[8627 + this.v] != 0) && (this.a.c & 15) == (this.v & 15)) {
-                           this.ae();
-                        }
-                     } else {
-                        this.a.a(this.v, true);
-                        this.ad();
-                     }
-                  }
-               }
-            }
-         }
-
-      } catch (Exception var2) {
-      }
-   }
-
-   private void aa() {
-      for(this.w = this.a[8993 + this.v]; this.w > 0; this.w = this.a[4545 + this.w]) {
-         ++this.C;
-         if (this.z == 2 && this.a[8627 + this.v] == 0) {
-            if (this.a[4646 + this.w] == 0) {
-               this.x = this.w;
-            }
-
-            if (this.a[1313 + this.w] > 0 && this.a[2828 + this.w] == 111) {
-               this.A |= 1 + this.a[1515 + this.w];
-            }
-         } else if (this.z >= 12 && this.a[8505 + this.v] >= this.b[this.a[138] + 182 + this.a[9237 + this.v]]) {
-            switch (this.u) {
-               case 0:
-                  this.a[2828 + this.w] = 87;
-                  this.a[6161 + this.w] = 3;
-                  break;
-               case 1:
-                  this.a[6161 + this.w] = 2;
-            }
-         } else if (this.a[2828 + this.w] != 87 && this.a[1313 + this.w] != -3 && (this.a[1313 + this.w] != -2 || this.a[3030 + this.w] >= this.a.j[4][this.a[2929 + this.w] & 255] - 1 && this.b[this.a[42] + this.b[this.a[41] + this.a[6464 + this.w]]] == this.b[this.a[42] + this.b[this.a[41] + this.a[2828 + this.w]]] && this.a[3636 + this.w] <= 0) && (this.a[2929 + this.w] != -109 && this.a[2929 + this.w] != -102 || this.a[3030 + this.w] >= this.a.j[4][this.a[2929 + this.w] & 255] - 1) && (this.a[8627 + this.v] == 0 || this.a[2828 + this.w] == 56 || this.a[2828 + this.w] == 76 || this.a[2828 + this.w] == 77 || this.a[2828 + this.w] == 78)) {
-            this.ab();
-         }
-      }
-
-   }
-
-   private void ab() {
-      if (this.a[4646 + this.w] == 0) {
-         if (this.a[6161 + this.w] == 2) {
+            this.var_byte_arr_a[7676 + this.var_int_v] = (byte)(this.var_byte_arr_b[this.var_short_arr_a[53] + (this.aF + 12) * 25 + this.aE + 12] % 10);
+            this.var_byte_arr_a[5555 + this.var_int_v] = 0;
+            this.var_byte_arr_a[5454 + this.var_int_v] = 0;
+            this.var_byte_arr_a[5858 + this.var_int_v] = 0;
+            this.var_byte_arr_a[5252 + this.var_int_v] = by;
+            this.var_byte_arr_a[5353 + this.var_int_v] = by2;
             return;
-         }
-
-         if (this.a[8627 + this.v] != 0) {
-            if (this.g[1][this.x] >= this.g[2][this.x]) {
-               this.g[1][this.x] = this.g[2][this.x] = 0;
-            }
-
-            if (this.g[2][this.x] == 0) {
-               this.a(this.w, (byte)99);
-               this.a[6161 + this.w] = 3;
-            }
-         } else if (this.f[1][this.x] < this.b[this.a[80] + this.a[9237 + this.v]] && this.z >= 12 || this.z == 4 && this.a[this.u][0] < 40 && this.a[2828 + this.w] == 66) {
-            this.a[6161 + this.w] = 3;
-            if (this.z >= 12) {
-               this.a(this.w, this.b[this.a[81] + this.b[this.a[82] + this.a[9237 + this.v]] + this.f[1][this.x]]);
-            } else if (this.a[3636 + this.w] <= 0 || this.a[3535 + this.w] != 1 && this.a[3535 + this.w] != 5 && this.a[3535 + this.w] != 6 && this.a[3535 + this.w] != 7) {
-               this.a(this.w, (byte)37);
-            } else {
-               this.a(this.w, (byte)54);
-               this.a[6161 + this.w] = 0;
-            }
-         }
-
-         if (this.a[8749 + this.v] == 6 || this.a[8749 + this.v] == 16 && this.a[9237 + this.v] == 6) {
-            if (this.a[6161 + this.w] == 3) {
-               this.a[6161 + this.w] = 0;
-               if (this.a(this.a[2828 + this.w], false, this.w)) {
-                  if (this.a[8749 + this.v] == 16) {
-                     ++this.f[1][this.x];
-                  }
-
-                  this.d(false);
-                  return;
-               }
-
-               this.f = true;
-               if (this.a[8749 + this.v] != 6 && this.a[8505 + this.v] < this.b[this.a[83] + this.b[this.a[84] + this.a[9237 + this.v]] + this.f[1][this.x]]) {
-                  this.f = false;
-               }
-
-               this.d(this.f);
-               return;
-            }
-
-            this.d(false);
+        }
+        catch (Exception exception) {
+            this.var_byte_arr_a[5959 + this.var_int_v] = 0;
             return;
-         }
-      } else if (this.a[2828 + this.w] != 59) {
-         if (this.a[8627 + this.v] != 0) {
-            if (this.g[1][this.x] < this.g[2][this.x]) {
-               this.a(this.w, this.b[this.a[60] + this.b[this.a[177] + this.z] + this.a[4646 + this.w]]);
-               return;
-            }
-
-            this.a(this.w, this.b[this.a[59] + this.b[this.a[177] + this.z] + this.a[4646 + this.w]]);
-            return;
-         }
-
-         if (this.a[8505 + this.v] < this.b[this.a[83] + this.b[this.a[84] + this.a[9237 + this.v]] + this.f[1][this.x]] && this.z >= 12 || this.z == 4 && this.a[this.u][0] > 0) {
-            this.a(this.w, this.b[this.a[58] + this.b[this.a[174] + this.z] + this.a[4646 + this.w]]);
-            return;
-         }
-
-         this.a(this.w, this.b[this.a[57] + this.b[this.a[174] + this.z] + this.a[4646 + this.w]]);
-      }
-
-   }
-
-   private void ac() {
-      for(int var1 = this.u * 50 + 1; var1 <= (this.u + 1) * 50; ++var1) {
-         if (this.a[1919 + var1] > 0 && this.a[4444 + var1] == this.v && this.a[4646 + var1] < 0 && this.a[1313 + var1] == -1 && (var1 != this.a[8810 + this.v] || this.a[8749 + this.v] == 2 && this.a[8627 + this.v] == 0)) {
-            ++this.C;
-         }
-      }
-
-      this.a[8932 + this.v] = (byte)this.C;
-   }
-
-   private void ad() {
-      if ((this.a[9054 + this.v] & 1) == 0) {
-         this.a.a((int)this.v, (int)0);
-         if (this.a[8627 + this.v] == 1) {
-            ++this.a[9115 + this.v];
-         }
-      }
-
-      byte[] var1 = this.a;
-      int var2 = 9054 + this.v;
-      var1[var2] = (byte)(var1[var2] & 254);
-      this.a[8627 + this.v] = 0;
-      this.a[8810 + this.v] = this.a[9237 + this.v];
-      this.a[9237 + this.v] = 0;
-      this.g[0][this.x] = 0;
-      this.a.d(this.v);
-   }
-
-   final boolean a(byte var1) {
-      for(this.aK = 0; this.aK < 10; ++this.aK) {
-         if (this.f[0][this.aK] < 1) {
-            this.f[0][this.aK] = var1;
-            this.f[1][this.aK] = 0;
-            this.a[9298 + var1] = 0;
-            return true;
-         }
-      }
-
-      return false;
-   }
-
-   final boolean b(byte var1) {
-      for(this.aK = 0; this.aK < 20; ++this.aK) {
-         if (this.g[0][this.aK] < 1) {
-            this.g[0][this.aK] = var1;
-            this.g[1][this.aK] = 0;
-            this.g[2][this.aK] = 0;
-            this.a[9237 + var1] = this.a[8810 + var1];
-            this.a[8810 + var1] = 0;
-            this.a[9298 + var1] = 0;
-            if (this.a[8749 + var1] == 2) {
-               this.a((int)var1);
-            }
-
-            return true;
-         }
-      }
-
-      return false;
-   }
-
-   private void ae() {
-      if ((this.u != 0 || !this.a.N) && (this.u != 1 || this.Q <= 0)) {
-         this.aK = this.a[8627 + this.v] == 0 ? this.b[this.a[138] + (this.a[9115 + this.v] - 1) * 26 + this.a[8749 + this.v]] : this.b[this.a[138] + 494 + this.a[8749 + this.v]];
-         if (this.a[9298 + this.v] < this.a[8932 + this.v] && this.a[8810 + this.v] > 0) {
-            this.a[9298 + this.v] = this.a[8932 + this.v];
-         }
-
-         if (this.a[9298 + this.v] < this.aK) {
-            for(this.aL = this.u * 50 + 1; this.aL <= (this.u + 1) * 50 && this.a[9298 + this.v] < this.aK; ++this.aL) {
-               int var1;
-               if ((this.u == 0 && (this.a[2828 + this.aL] == 69 || this.a[2828 + this.aL] == 84 && this.a[3939 + this.aL] == 69) && this.a[6161 + this.aL] == 0 && this.b[this.a[42] + this.b[this.a[41] + this.a[6464 + this.aL]]] == 2 || this.u == 1 && this.j[this.aL - this.u * 50 - 1] < this.b[this.a[242] + this.a.q] && this.b[this.a[42] + this.b[this.a[41] + this.a[6464 + this.aL]]] != 2) && (this.u != 0 || (var1 = -this.b[this.a[6363 + this.aL]][this.a[6262 + this.aL]]) <= this.u * 30 || var1 > (this.u + 1) * 30 || this.a[8749 + var1] < 12 && this.a[8627 + var1] == 0)) {
-                  this.a[6262 + this.aL] = this.a[3131 + this.aL] = this.a[8383 + this.v];
-                  this.a[6363 + this.aL] = this.a[3232 + this.aL] = this.a[8444 + this.v];
-                  this.a[6464 + this.aL] = this.a[2828 + this.aL] = 77;
-                  this.a[6161 + this.aL] = 3;
-                  ++this.a[9298 + this.v];
-                  if (this.b[this.a[101 + this.aL]][this.a[0 + this.aL]] != this.aL) {
-                     this.a[2828 + this.aL] = 87;
-                  }
-               }
-            }
-
-         }
-      }
-   }
-
-   final void c(int var1) {
-      for(this.aK = 0; this.aK < 10; ++this.aK) {
-         if (this.f[0][this.aK] == var1) {
-            this.f[0][this.aK] = 0;
-         }
-      }
-
-   }
-
-   private void d(boolean var1) {
-      if (var1) {
-         this.a(this.w, (byte)78);
-         if (this.a[2929 + this.w] != 115 && this.a[2929 + this.w] != 113) {
-            this.a[2929 + this.w] = 115;
-            this.a[3030 + this.w] = -1;
-            this.a[1313 + this.w] = 1;
-            return;
-         }
-
-         if (this.a[3030 + this.w] == this.a.j[4][this.a[2929 + this.w] & 255] - 1) {
-            this.a[2929 + this.w] = 113;
-            return;
-         }
-      } else {
-         if (this.a[2929 + this.w] == 115 || this.a[2929 + this.w] == 113) {
-            this.a[2929 + this.w] = 116;
-            this.a[3030 + this.w] = -1;
-            return;
-         }
-
-         if (this.a[3030 + this.w] == this.a.j[4][this.a[2929 + this.w] & 255] - 1) {
-            this.a(this.w, (byte)56);
-         }
-      }
-
-   }
-
-   final void h() {
-      try {
-         if (this.b[this.a[202] + this.a.q] > 0 && this.a.c % (this.b[this.a[204] + this.a.q] * 40) == 10 && (this.a.q != 4 || this.a.c > 5000)) {
-            if (this.a.t[this.u = this.a.a((int)16777215, (int)this.b[this.a[202] + this.a.q])] >= this.b[this.a[205] + this.a.q]) {
-               for(this.u = 0; this.u < this.b[this.a[202] + this.a.q] && this.a.t[this.u] >= this.b[this.a[205] + this.a.q]; ++this.u) {
-               }
-            }
-
-            if (this.u < this.b[this.a[202] + this.a.q]) {
-               this.v = this.a.a((int)16777215, (int)100);
-
-               for(this.w = 0; this.w < 3 && this.v >= this.b[this.a[185] + (this.b[this.a[201] + this.a.q] + this.u) * 3 + this.w]; ++this.w) {
-               }
-
-               this.v = 0;
-               this.a((int)1, (int)10, (int)this.b[this.a[199] + this.b[this.a[201] + this.a.q] + this.u], (int)this.b[this.a[200] + this.b[this.a[201] + this.a.q] + this.u]);
-               this.a.b(this.w, this.a[3131], this.a[3232], this.u);
-               if (this.a.q == 4 && this.a.t[0] > 1 && this.a.a((int)16777215, (int)10) < this.a.t[0]) {
-                  for(this.v = 0; this.v < 22; ++this.v) {
-                     if (this.a[9469 + this.v] == 0) {
-                        this.a[9469 + this.v] = 2;
-                     }
-                  }
-
-                  this.a.t[0] = 0;
-               }
-            }
-         }
-
-         for(this.v = 0; this.v < 22; ++this.v) {
-            if (this.a[9513 + this.v] > 0) {
-               this.af();
-               this.ah();
-            }
-         }
-
-      } catch (Exception var2) {
-      }
-   }
-
-   private void af() {
-      ++this.a[9579 + this.v];
-      if (this.a[9579 + this.v] >= this.a.j[4][this.a[9557 + this.v] & 255]) {
-         this.a[9579 + this.v] = 0;
-         if (this.a[9557 + this.v] == 37 + this.a[9535 + this.v]) {
-            this.a(this.a[9359 + this.v] + this.b[this.a[1] + this.a[9491 + this.v]], this.a[9381 + this.v] + this.b[this.a[1] + 8 + this.a[9491 + this.v]], 2, this.a[9601 + this.v] > 0 ? 1 : 2, this.a[9601 + this.v] > 0 ? this.a[9601 + this.v] : -this.a[9601 + this.v], 0, this.b[this.a[182] + this.a[9535 + this.v]] * (2 + this.a.a((int)255, (int)3)) / 4, 0);
-         }
-      }
-
-      if (this.a[9403 + this.v] == 0 && this.a[9425 + this.v] == 0) {
-         this.a[9623 + this.v] = 0;
-         if (this.a[9447 + this.v] > 5) {
-            if (this.a[9447 + this.v] > 19) {
-               byte[] var1 = this.a;
-               int var2 = 9447 + this.v;
-               var1[var2] = (byte)(var1[var2] - 19);
-               this.a((int)this.a[0 + this.a[9447 + this.v]], (int)this.a[101 + this.a[9447 + this.v]], (byte)this.a[9447 + this.v], (int)0);
-            } else {
-               this.e(false);
-               this.a[9557 + this.v] = (byte)(10 + this.a[9535 + this.v]);
-               this.a[9579 + this.v] = 0;
-            }
-
-            this.a[9447 + this.v] = 0;
-         } else if ((this.a.c % this.b[this.a[179] + this.a[9535 + this.v]] == 0 || (this.a[9557 + this.v] & 255) <= 7) && (this.a.q != 3 || this.f < 5)) {
-            this.a((int)6, (int)6, (int)this.a[9359 + this.v], (int)this.a[9381 + this.v]);
-            if (this.a[9601 + this.v] != 0) {
-               if (this.a[9601 + this.v] > 0) {
-                  if (this.a[1919 + this.a[9601 + this.v]] > 0 && this.b[this.a[101 + this.a[9601 + this.v]]][this.a[0 + this.a[9601 + this.v]]] == this.a[9601 + this.v]) {
-                     this.a[9645 + this.v] = this.a[0 + this.a[9601 + this.v]];
-                     this.a[9667 + this.v] = this.a[101 + this.a[9601 + this.v]];
-                     this.a[9689 + this.v] = 0;
-                     if (this.a((int)this.a[9359 + this.v], (int)this.a[9381 + this.v], (int)101) > 59 && (this.a.q != 3 || this.f != 4)) {
-                        this.a[9601 + this.v] = 0;
-                        this.a[9645 + this.v] = this.a[9359 + this.v];
-                        this.a[9667 + this.v] = this.a[9381 + this.v];
-                     }
-                  } else {
-                     this.a[9601 + this.v] = 0;
-                  }
-               } else if (this.a[8505 + -this.a[9601 + this.v]] <= 0) {
-                  this.a[9601 + this.v] = 0;
-               }
-            }
-         }
-
-         this.z = this.a((int)this.a[9359 + this.v], (int)this.a[9381 + this.v], (int)101);
-         this.ag();
-      } else {
-         this.a[9557 + this.v] = (byte)(2 + this.a[9535 + this.v]);
-      }
-   }
-
-   private void ag() {
-      if (this.z / 10 - (this.a[9601 + this.v] != 0 ? 1 : 0) > 0) {
-         if (this.a[9711 + this.v] >= this.a[9689 + this.v]) {
-            if (this.a.c % this.b[this.a[179] + this.a[9535 + this.v]] == 0 || this.a[9601 + this.v] != 0) {
-               this.a[9689 + this.v] = this.a[9711 + this.v] = 0;
-               this.a[9689 + this.v] = this.a(this.a[9381 + this.v], this.a[9359 + this.v], this.a[9667 + this.v], this.a[9645 + this.v], 0, 101);
-               if (this.a[9689 + this.v] == 0 && this.a[2]) {
-                  this.e(false);
-               }
-            }
-
-            if (this.a[9557 + this.v] > 7 || this.a[9711 + this.v] >= this.a[9689 + this.v]) {
-               this.a[9557 + this.v] = (byte)(10 + this.a[9535 + this.v]);
-               this.a[9579 + this.v] = 0;
-            }
-         }
-
-         if (this.a[9711 + this.v] < this.a[9689 + this.v]) {
-            if (this.b[this.b[1][this.v][this.a[9711 + this.v]]][this.b[0][this.v][this.a[9711 + this.v]]] != 0) {
-               this.a[9689 + this.v] = this.a[9711 + this.v] = 0;
-               this.a[9557 + this.v] = (byte)(10 + this.a[9535 + this.v]);
-               this.a[9579 + this.v] = 0;
-               return;
-            }
-
-            this.a[9491 + this.v] = this.b[this.a[4] + (this.b[0][this.v][this.a[9711 + this.v]] - this.a[9359 + this.v] + 1) * 3 + this.b[1][this.v][this.a[9711 + this.v]] - this.a[9381 + this.v] + 1];
-            this.a[9557 + this.v] = (byte)(2 + this.a[9535 + this.v]);
-            this.b[this.a[9381 + this.v] + this.b[this.a[1] + 8 + this.a[9491 + this.v]]][this.a[9359 + this.v] + this.b[this.a[1] + this.a[9491 + this.v]]] = -128;
-            ++this.a[9711 + this.v];
-            this.a[9447 + this.v] = 0;
-            return;
-         }
-      } else {
-         if ((this.a[9557 + this.v] & 255) <= 7) {
-            this.a[9579 + this.v] = 0;
-         }
-
-         if (this.a[9579 + this.v] == 0) {
-            if (this.a[9447 + this.v] == 0) {
-               this.ai();
-            }
-
-            if (this.a[9601 + this.v] == 0 && this.a[9447 + this.v] < 19) {
-               ++this.a[9447 + this.v];
-               return;
-            }
-
-            this.a[9447 + this.v] = 0;
-            this.a[9491 + this.v] = (byte)(this.z % 10);
-         }
-      }
-
-   }
-
-   private void ah() {
-      if ((this.a[9557 + this.v] & 255) <= 7) {
-         this.w = this.a[9491 + this.v] & 1;
-         ++this.a[9623 + this.v];
-         this.a[9403 + this.v] = this.b[this.a[5 + this.w] + this.b[this.a[12 + this.w * 2] + this.b[this.a[179] + this.a[9535 + this.v]]] + (this.b[this.a[15] + this.w * 9 + this.b[this.a[179] + this.a[9535 + this.v]]] + this.a[9623 + this.v] * this.b[this.a[1] + 0 + this.a[9491 + this.v]]) % this.b[this.a[15] + this.w * 9 + this.b[this.a[179] + this.a[9535 + this.v]]]];
-         this.a[9425 + this.v] = this.b[this.a[7 + this.w] + this.b[this.a[12 + this.w * 2] + this.b[this.a[179] + this.a[9535 + this.v]]] + (this.b[this.a[15] + this.w * 9 + this.b[this.a[179] + this.a[9535 + this.v]]] + this.a[9623 + this.v] * this.b[this.a[1] + 8 + this.a[9491 + this.v]]) % this.b[this.a[15] + this.w * 9 + this.b[this.a[179] + this.a[9535 + this.v]]]];
-         if (this.a[9623 + this.v] == (this.b[this.a[15] + this.w * 9 + this.b[this.a[179] + this.a[9535 + this.v]]] + 1) / 2) {
-            this.b[this.a[9381 + this.v]][this.a[9359 + this.v]] = 0;
-            byte[] var1 = this.a;
-            int var5 = 9359 + this.v;
-            var1[var5] += this.b[this.a[1] + 0 + this.a[9491 + this.v]];
-            var1 = this.a;
-            var5 = 9381 + this.v;
-            var1[var5] += this.b[this.a[1] + 8 + this.a[9491 + this.v]];
-            if ((this.b[this.a[15] + this.w * 9 + this.b[this.a[179] + this.a[9535 + this.v]]] & 1) == 0 && this.b[this.a[1] + 0 + this.a[9491 + this.v]] < 0) {
-               var1 = this.a;
-               var5 = 9403 + this.v;
-               var1[var5] = (byte)(var1[var5] + 22);
-            }
-
-            if ((this.b[this.a[15] + this.w * 9 + this.b[this.a[179] + this.a[9535 + this.v]]] & 1) == 0 && this.b[this.a[1] + 8 + this.a[9491 + this.v]] < 0) {
-               var1 = this.a;
-               var5 = 9425 + this.v;
-               var1[var5] = (byte)(var1[var5] + 16);
-            }
-
-            this.b[this.a[9381 + this.v]][this.a[9359 + this.v]] = (byte)(this.v + 101);
-         }
-      }
-
-   }
-
-   private void ai() {
-      if (this.a[9601 + this.v] == 0) {
-         this.x = this.a.a((int)16777215, (int)100);
-         this.a[9557 + this.v] = this.b[this.a[184] + this.x / 50 * 3 + this.a[9535 + this.v]];
-      } else {
-         this.a[9557 + this.v] = (byte)(37 + this.a[9535 + this.v]);
-      }
-
-      if (this.a.q == 4 && this.a[9469 + this.v] == 2) {
-         this.a[9469 + this.v] = 3;
-      }
-
-   }
-
-   private void e(boolean var1) {
-      boolean var2 = this.a.q != 3 || this.a[9469 + this.v] != 0 || this.a[9359 + this.v] > 27 || this.a[9359 + this.v] < 20 || this.a[9381 + this.v] > 6;
-      this.a[9689 + this.v] = 0;
-      this.x = this.a.a((int)16777215, (int)63);
-      this.w = this.b[this.a[201] + this.a.q] + this.a[9469 + this.v];
-      this.B = this.b[this.a[203] + this.a.q];
-      this.a[9645 + this.v] = (byte)(!var2 ? this.a[9359 + this.v] : b(this.a[9359 + this.v] + (var1 ? this.b[this.a[1] + this.E] : (this.x & 7) - 4), var1 ? 0 : this.b[this.a[199] + this.w] - this.B, var1 ? this.a.c - 1 : this.b[this.a[199] + this.w] + this.B));
-      this.a[9667 + this.v] = (byte)(!var2 ? this.a[9381 + this.v] : b(this.a[9381 + this.v] + (var1 ? this.b[this.a[1] + 8 + this.E] : (this.x >> 3 & 7) - 4), var1 ? 0 : this.b[this.a[200] + this.w] - this.B, var1 ? this.a.d - 1 : this.b[this.a[200] + this.w] + this.B));
-      if (this.b[this.a[9667 + this.v]][this.a[9645 + this.v]] != 0 && var2) {
-         this.a((int)2, (int)127, (int)this.a[9645 + this.v], (int)this.a[9667 + this.v]);
-      }
-
-   }
-
-   final void i() {
-      for(this.aM = 0; this.aM < 50; ++this.aM) {
-         if (this.a[9833 + this.aM] != 0) {
-            if ((this.a.c & 127) == 1 && this.a[9833 + this.aM] == 6) {
-               if (this.a[9883 + this.aM] > 0) {
-                  --this.a[9883 + this.aM];
-               }
-            } else if ((this.a.c & 511) == 1 && this.a[9833 + this.aM] != 7 && this.a[9883 + this.aM] < this.b[this.a[110] + this.a[9833 + this.aM]]) {
-               ++this.a[9883 + this.aM];
-            }
-
-            if ((this.a.c & 7) == (this.aM & 7)) {
-               this.aj();
-            }
-
-            for(this.w = 0; this.w <= 3; ++this.w) {
-               if (this.a[9883 + this.aM] <= this.b[this.a[110] + this.a[9833 + this.aM]] * this.b[this.a[85] + this.w] / 10) {
-                  if (this.a[9933 + this.aM] != this.w) {
-                     this.a.c(this.a[9733 + this.aM], this.a[9783 + this.aM], 1, 1);
-                  }
-
-                  this.a[9933 + this.aM] = (byte)this.w;
-                  break;
-               }
-            }
-         }
-      }
-
-      if (!this.t()) {
-         if (this.a.q == 4) {
-            if (this.u()) {
-               return;
-            }
-         } else if (this.v()) {
-            return;
-         }
-
-         this.ak();
-         this.al();
-         if (this.a.q <= 4) {
-            this.v = this.b[this.a[302] + this.a.q] + this.L;
-            if (this.K >= 50 && this.v < this.b[this.a[302] + this.a.q + 1] && this.a.c >= this.b[this.a[299] + this.v] * 100) {
-               this.L = (byte)(this.L + (this.a.c >= this.b[this.a[299] + this.v + 1] * 100 ? 2 : 1));
-               this.j();
-               this.b((int)0, (int)0, (int)3);
-               this.a.b((int)this.b[this.a[301] + this.v]);
-            }
-         }
-
-      }
-   }
-
-   private void aj() {
-      if (this.a[9883 + this.aM] == 0) {
-         if (this.a[9833 + this.aM] == 7) {
-            this.a[9833 + this.aM] = 0;
-            this.b[this.a[9783 + this.aM]][this.a[9733 + this.aM]] = 0;
-            this.a.c(this.a[9733 + this.aM], this.a[9783 + this.aM], 1, 1);
-         }
-
-         if (this.a[9833 + this.aM] == 6) {
-            this.a[9833 + this.aM] = 7;
-            this.a[9883 + this.aM] = this.b[this.a[110] + 7];
-            this.a.c(this.a[9733 + this.aM], this.a[9783 + this.aM], 1, 1);
-         }
-
-         this.am();
-      }
-
-   }
-
-   private boolean t() {
-      for(this.aM = 0; this.aM < 2; ++this.aM) {
-         for(this.w = 0; this.w < 5 && this.a.c[this.aM][this.w][2] >= 0; ++this.w) {
-            if ((this.a.c & 7) == 0) {
-               ++this.a.c[this.aM][this.w][2];
-            }
-
-            if (this.a.c[this.aM][this.w][2] >= 100) {
-               this.a.c[this.aM][this.w][2] = -1;
-            } else {
-               for(this.u = -1; this.u < 2; ++this.u) {
-                  for(this.v = -1; this.v < 2; ++this.v) {
-                     this.C = this.a.c[this.aM][this.w][0] + this.u;
-                     this.D = this.a.c[this.aM][this.w][1] + this.v;
-                     if (this.C >= 0 && this.C < this.a.c && this.D >= 0 && this.D < this.a.d) {
-                        this.A = this.b[this.D][this.C];
-                        if (this.A >= 1 && this.A <= 100 && this.a[1414 + this.A] >= 12) {
-                           byte[] var1 = this.a;
-                           int var10001 = 7979 + this.A;
-                           var1[var10001] = (byte)(var1[var10001] | 4);
-                        }
-                     }
-                  }
-               }
-            }
-         }
-      }
-
-      if (this.a.q != 3 && (this.a.q != 2 || this.f <= 2) && (this.a[1919 + this.a[0][17]] == 0 || this.a[1414 + this.a[0][17]] < 12) && !this.a.K && this.a[0][11] > 0 && this.f < 50 && this.a.u == 0 && this.K >= 50) {
-         for(this.v = 1; this.v <= 50; ++this.v) {
-            if (this.a[1919 + this.v] > 0 && this.a[1414 + this.v] >= 12) {
-               this.a.K = true;
-               this.a.a((byte)18, (byte)((byte)this.v), (byte)((byte)this.v));
-               return true;
-            }
-         }
-      }
-
-      return false;
-   }
-
-   private boolean u() {
-      if (this.a[1919 + this.a[0][17]] > 0 && this.a[1414 + this.a[0][17]] >= 12) {
-         if ((this.a.a[1][0][67] & 256) != 0 && (this.R & 64) == 0 && this.K >= 50) {
-            this.b((int)this.a[0][17], (int)0, (int)1);
-            this.a.b((int)51);
-            this.R = (byte)(this.R | 64);
-            return true;
-         }
-
-         if (this.f > 0 && this.f < 3 && this.a.c >= 3000 + this.f * 7000 && this.K >= 50) {
-            this.c(false);
-
-            for(this.N = 0; this.N < 4; ++this.N) {
-               this.a.p[this.N + 1] = this.e[this.N][0] != 0 ? this.e[this.N][0] : this.e[0][0];
-            }
-
-            this.a.b(this.f == 1 ? 53 : 54);
-            this.f = (byte)(this.f + 50);
-            return true;
-         }
-      }
-
-      return false;
-   }
-
-   private boolean v() {
-      if (this.f < this.b[this.a[291] + this.a.q] && (this.a.q == 3 || this.a[1919 + this.a[0][17]] > 0 && this.a[1414 + this.a[0][17]] >= 12)) {
-         this.N = this.b[this.a[287] + this.b[this.a[288] + this.a.q] + this.f];
-         if (this.a[1][11] <= 0 && this.N == 3 && this.F == 1000000) {
-            this.F = this.a.c;
-         }
-
-         if (this.N >= 3 && this.N <= 9) {
-            if (this.N == 7) {
-               if (this.a.q != 3 || this.f != 2 || this.K >= 50) {
-                  for(this.aM = 1; this.aM <= 50; ++this.aM) {
-                     if (this.a[1919 + this.aM] > 0 && this.a[1414 + this.aM] >= 12 && this.a[202 + this.aM] == 0 && this.a[303 + this.aM] == 0) {
-                        this.b(this.aM, 0, this.a[0 + this.aM], this.a[101 + this.aM]);
-                        if (this.f >= 50) {
-                           if (this.a.q == 3) {
-                              for(this.aM = 0; this.aM < 5; ++this.aM) {
-                                 if (this.a.p[this.aM] != 0) {
-                                    this.a((int)this.a.p[this.aM], true);
-                                 }
-                              }
-                           }
-
-                           return true;
-                        }
-                     }
-                  }
-               }
-            } else if (this.N == 3 && this.a.c - this.F > 40 || this.F > 2 && this.N == 4 || this.a.c - this.F > (this.a.q < 2 ? 30 : 120) && this.N == 5 || this.N == 6 && this.a[1][14] < 5 || this.N == 8 && this.a[8536] == 0) {
-               if (this.a.q < 2) {
-                  this.I = (byte)(this.N == 4 ? 3 : 0);
-               }
-
-               if (this.N == 8) {
-                  this.a.b(58, 30);
-                  f var10000 = this.a;
-                  this.a.getClass();
-                  var10000.aw = 1;
-                  this.a(3, 57, 30, (byte)0, (byte)9);
-                  var10000 = this.a;
-                  this.a.getClass();
-                  var10000.aw = 2;
-
-                  for(this.N = 1; this.N < 9; ++this.N) {
-                     if (this.a[1919 + this.N] > 0) {
-                        if (this.a[1515 + this.N] == 0) {
-                           if (this.a.p[4] < 1) {
-                              this.a.p[4] = (byte)this.N;
-                           }
-                        } else if (this.a.p[2] < 1) {
-                           this.a.p[2] = (byte)this.N;
-                        } else if (this.a.p[3] < 1) {
-                           this.a.p[3] = (byte)this.N;
-                        }
-
-                        this.a[606 + this.N] = (byte)(3 + (this.a[1515 + this.N] << 2));
-                     }
-                  }
-
-                  this.a.a((byte)0, (byte)56, (byte)30, (byte)2, (byte)0);
-                  this.a.a((byte)0, (byte)55, (byte)31, (byte)2, (byte)0);
-                  short[] var2 = this.a[0];
-                  var2[19] = (short)(var2[19] - 5);
-               } else if (this.N == 6) {
-                  this.a(8, 21, 72, (byte)1, (byte)3);
-                  this.a(8, 21, 75, (byte)1, (byte)3);
-
-                  for(this.N = 51; this.N <= 100; ++this.N) {
-                     if (this.a[1919 + this.N] > 0) {
-                        this.a[6161 + this.N] = 2;
-                        this.a[4747 + this.N] = -1;
-                        this.a[3131 + this.N] = this.a[8384];
-                        this.a[3232 + this.N] = this.a[8445];
-                     }
-                  }
-               } else if (this.a.q == 5) {
-                  this.b((int)0, (int)0, (int)1);
-               } else {
-                  this.c(this.a.q == 2);
-
-                  for(this.N = 0; this.N < 4; ++this.N) {
-                     this.a.p[this.N + 1] = this.e[this.N][0] != 0 ? this.e[this.N][0] : this.e[0][0];
-                  }
-               }
-
-               this.a.b((int)this.b[this.a[286] + this.b[this.a[288] + this.a.q] + this.f]);
-               this.f = (byte)(this.f + 50);
-               return true;
-            }
-         }
-      }
-
-      return false;
-   }
-
-   private void ak() {
-      if (this.a[1][14] <= 0 && (this.b[this.a[279] + this.a.q] & 1) != 0) {
-         if (this.a.u == 0) {
-            this.a.u = 1;
-         }
-      } else if ((this.a[0][11] <= 0 || this.a[8506] <= 0 && (this.b[this.a[279] + this.a.q] & 2) != 0) && this.a.u == 0) {
-         this.a.u = 50;
-      }
-
-      if (this.a[1][14] <= 4 && this.a[1][11] <= 0) {
-         switch (this.a.q) {
-            case 2:
-               if (this.f < 2) {
-                  this.f = 2;
-               }
-               break;
-            case 5:
-               if (this.a.u == 0) {
-                  this.a.u = 1;
-                  return;
-               }
-
-               if (this.a.u == 20) {
-                  this.a.u = 0;
-                  this.a.c();
-                  return;
-               }
-         }
-      }
-
-   }
-
-   private void al() {
-      if ((this.a.p & 1) == 1 && this.a.q < 2 && this.g < this.b[this.a[294] + this.f] && !this.a.K) {
-         if (this.J < 120 - this.b[this.a[298] + this.g]) {
-            switch (this.b[this.a[296] + this.g]) {
-               case 1:
-                  for(this.v = 1; this.v <= 30; ++this.v) {
-                     if (!this.a.F && this.a[8505 + this.v] > 0 && this.a[8749 + this.v] == this.b[this.a[297] + this.g]) {
-                        this.J = (byte)(120 - this.b[this.a[298] + this.g]);
+        }
+    }
+
+    private void R() {
+        if (this.var_byte_arr_a[5858 + this.var_int_v] < this.var_byte_arr_a[5959 + this.var_int_v]) {
+            int n = 5454 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + this.var_byte_arr_a[5656 + this.var_int_v]);
+            int n2 = 5555 + this.var_int_v;
+            this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] + this.var_byte_arr_a[5757 + this.var_int_v]);
+            int n3 = 5252 + this.var_int_v;
+            this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] + ((this.var_byte_arr_a[5454 + this.var_int_v] + 11 + 66) / 22 - 3));
+            int n4 = 5353 + this.var_int_v;
+            this.var_byte_arr_a[n4] = (byte)(this.var_byte_arr_a[n4] + ((this.var_byte_arr_a[5555 + this.var_int_v] + 8 + 48) / 16 - 3));
+            int n5 = 5454 + this.var_int_v;
+            this.var_byte_arr_a[n5] = (byte)(this.var_byte_arr_a[n5] - ((this.var_byte_arr_a[5454 + this.var_int_v] + 11 + 66) / 22 - 3) * 22);
+            int n6 = 5555 + this.var_int_v;
+            this.var_byte_arr_a[n6] = (byte)(this.var_byte_arr_a[n6] - ((this.var_byte_arr_a[5555 + this.var_int_v] + 8 + 48) / 16 - 3) * 16);
+        }
+        int n = 5858 + this.var_int_v;
+        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+        if (this.var_byte_arr_a[5858 + this.var_int_v] > this.var_byte_arr_a[5959 + this.var_int_v]) {
+            this.S();
+        }
+    }
+
+    private void S() {
+        this.var_byte_arr_a[5959 + this.var_int_v] = 0;
+        this.a(this.var_byte_arr_a[5252 + this.var_int_v], this.var_byte_arr_a[5353 + this.var_int_v], this.var_int_u, this.var_byte_arr_a[2828 + this.var_int_v] <= 9 ? this.var_byte_arr_b[this.var_short_arr_a[79] + this.var_byte_arr_a[2828 + this.var_int_v]] : (this.var_byte_arr_a[2828 + this.var_int_v] == 92 ? 1 : (this.var_byte_arr_a[2828 + this.var_int_v] == 93 ? 2 : (this.var_byte_arr_a[2828 + this.var_int_v] == 106 ? 5 : 0))), this.var_byte_arr_a[4444 + this.var_int_v], 0, (this.var_byte_arr_a[1616 + this.var_int_v] / 3 + this.var_byte_arr_b[this.var_short_arr_a[102] + this.var_byte_arr_a[6565 + this.var_int_v]]) * (this.var_f_a.int_a(65535, 11 - this.var_byte_arr_a[7878 + this.var_int_v]) + this.var_byte_arr_a[7878 + this.var_int_v]) / 10, 1);
+    }
+
+    private void a(int n, int n2, int n3, byte by) {
+        if (n == 106) {
+            this.l(by);
+            this.var_f_a.a(6, n2, n3, this.var_byte_arr_b[this.var_short_arr_a[183] + this.var_byte_arr_a[9535 + by]]);
+            this.var_f_a.c(n2, n3, 1, 1);
+        } else if (n == 19) {
+            if (by <= 50) {
+                switch (this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + by]]) {
+                    case 9: {
+                        this.var_f_a.a((byte)12, (byte)n2, (byte)n3, by);
                         break;
-                     }
-                  }
-
-                  if (this.J < 120 - this.b[this.a[298] + this.g]) {
-                     this.J = 0;
-                  }
-                  break;
-               case 2:
-                  for(this.v = 1; this.v <= 50; ++this.v) {
-                     if (this.a[1919 + this.v] > 0 && this.b[this.a[41] + this.a[2828 + this.v]] == this.b[this.a[297] + this.g]) {
-                        this.J = (byte)(120 - this.b[this.a[298] + this.g]);
+                    }
+                    case 11: {
+                        this.var_f_a.a((byte)13, (byte)n2, (byte)n3, by);
                         break;
-                     }
-                  }
-               case 3:
-               default:
-                  break;
-               case 4:
-                  if (this.a[1][11] == 0 && this.a.N) {
-                     this.J = (byte)(120 - this.b[this.a[298] + this.g]);
-                  }
+                    }
+                    case 8: {
+                        this.var_f_a.a((byte)14, (byte)n2, (byte)n3, by);
+                        break;
+                    }
+                    case 10: {
+                        this.var_f_a.a((byte)15, (byte)n2, (byte)n3, by);
+                    }
+                }
+                if (by == this.var_short_arr_arr_a[0][17]) {
+                    for (int i = 1; i <= 50; ++i) {
+                        if (this.var_byte_arr_a[1414 + i] < 12) continue;
+                        this.var_byte_arr_a[505 + i] = (byte)b.int_b(this.var_byte_arr_a[505 + i] - 25, 0, 99);
+                    }
+                }
             }
-         }
+            this.var_f_a.a(by);
+            this.var_byte_arr_a[2929 + by] = this.var_byte_arr_a[1414 + by] >= 12 ? 43 : 44;
+            this.var_byte_arr_a[3030 + by] = (byte)(by > this.var_int_v ? -1 : 0);
+            this.var_byte_arr_a[4646 + by] = -64;
+            this.e((by - 1) / 50, by);
+        } else if (n == 85) {
+            this.var_f_a.c((int)by, true);
+        }
+        if (this.var_byte_f < this.var_byte_arr_b[this.var_short_arr_a[291] + this.var_f_a.var_byte_q] && this.var_byte_arr_b[this.var_short_arr_a[287] + this.var_byte_arr_b[this.var_short_arr_a[288] + this.var_f_a.var_byte_q] + this.var_byte_f] == 10 && (n == 106 || n == 19 && by > 50)) {
+            this.void_b(0, 0, 1);
+            this.var_f_a.void_b((int)this.var_byte_arr_b[this.var_short_arr_a[286] + this.var_byte_arr_b[this.var_short_arr_a[288] + this.var_f_a.var_byte_q] + this.var_byte_f]);
+            this.var_byte_f = (byte)(this.var_byte_f + 50);
+        }
+    }
 
-         if ((this.a.c & 7) == 0) {
-            ++this.J;
-         }
+    private void l(int n) {
+        if ((this.var_byte_arr_a[9557 + n] & 0xFF) <= 7 && this.var_byte_arr_a[9623 + n] < (this.var_byte_arr_b[this.var_short_arr_a[15] + (this.var_byte_arr_a[9491 + n] & 1) * 9 + this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + n]]] + 1) / 2 && this.var_byte_arr_arr_b[this.var_byte_arr_a[9381 + n] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[9491 + n]]][this.var_byte_arr_a[9359 + n] + this.var_byte_arr_b[this.var_short_arr_a[1] + this.var_byte_arr_a[9491 + n]]] == -128) {
+            this.var_byte_arr_arr_b[this.var_byte_arr_a[9381 + n] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[9491 + n]]][this.var_byte_arr_a[9359 + n] + this.var_byte_arr_b[this.var_short_arr_a[1] + this.var_byte_arr_a[9491 + n]]] = 0;
+        }
+        this.var_byte_arr_arr_b[this.var_byte_arr_a[9381 + n]][this.var_byte_arr_a[9359 + n]] = 0;
+        this.var_byte_arr_a[9513 + n] = 0;
+        if (this.var_byte_arr_a[9469 + n] < this.var_byte_arr_b[this.var_short_arr_a[202] + this.var_f_a.var_byte_q]) {
+            byte by = this.var_byte_arr_a[9469 + n];
+            this.var_f_a.var_byte_arr_t[by] = (byte)(this.var_f_a.var_byte_arr_t[by] - 1);
+        }
+    }
 
-         if (this.J >= (this.b[this.a[296] + this.g] == 0 ? this.b[this.a[298] + this.g] : 120)) {
-            this.J = 0;
-            this.b((int)0, (int)0, (int)3);
-            this.a.b((int)this.b[this.a[295] + this.g]);
-            ++this.g;
-            if (this.g == 11) {
-               this.aQ = this.a.c + 500;
+    private void m(int n) {
+        this.d(n, 0);
+        this.var_byte_arr_a[1919 + n] = 0;
+        this.var_byte_arr_a[5959 + n] = 0;
+        this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + n]][this.var_byte_arr_a[0 + n]] = this.var_byte_arr_a[4545 + n] <= -111 ? this.var_byte_arr_a[4545 + n] : (byte)0;
+        short[] sArray = this.var_short_arr_arr_a[(n - 1) / 50];
+        sArray[11] = (short)(sArray[11] - 1);
+        short[] sArray2 = this.var_short_arr_arr_a[(n - 1) / 50];
+        int n2 = 12 + this.var_byte_arr_a[1515 + n];
+        sArray2[n2] = (short)(sArray2[n2] - 1);
+        this.void_b(n);
+    }
+
+    private void c(int n, int n2, int n3) {
+        if (this.a(n, n2, this.var_int_u, this.var_byte_arr_b[this.var_short_arr_a[79] + this.var_byte_arr_a[2828 + this.var_int_v]], this.var_byte_arr_a[4444 + this.var_int_v], n3, this.var_byte_arr_b[this.var_short_arr_a[124] + this.var_byte_arr_a[1717 + this.var_int_v]] + this.var_byte_arr_b[this.var_short_arr_a[102] + this.var_byte_arr_a[6565 + this.var_int_v]], 0) && (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) >= 31 && this.var_byte_arr_a[6565 + this.var_int_v] != 9 && this.var_byte_arr_k[0] == 1 && this.var_byte_arr_a[202 + this.var_byte_arr_k[2]] == 0 && this.var_byte_arr_a[303 + this.var_byte_arr_k[2]] == 0 && (this.var_byte_arr_a[2929 + this.var_byte_arr_k[2]] < 106 || this.var_byte_arr_a[2929 + this.var_byte_arr_k[2]] > 108)) {
+            this.var_byte_arr_a[2929 + this.var_byte_arr_k[2]] = 42;
+            this.var_byte_arr_a[3030 + this.var_byte_arr_k[2]] = 0;
+            this.var_byte_arr_a[4646 + this.var_byte_arr_k[2]] = (byte)(-(62 + (this.var_int_x & 1)));
+        }
+    }
+
+    private boolean a(int n, int n2, int n3, int n4, int n5, int n6, int n7, int n8) {
+        this.ax = this.var_byte_arr_b[this.var_short_arr_a[78] + 14 + n4];
+        int n9 = n4 == 0 ? 10 : (this.ay = n4 == 2 ? 0 : this.var_byte_arr_b[this.var_short_arr_a[53] + (12 + this.var_byte_arr_a[this.var_short_arr_b[this.ax + 1] + n5] - n2) * 25 + 12 + this.var_byte_arr_a[this.var_short_arr_b[this.ax] + n5] - n] / 10);
+        if (this.ay <= n8 && this.ay > 0) {
+            n = this.var_byte_arr_a[this.var_short_arr_b[this.ax] + n5];
+            n2 = this.var_byte_arr_a[this.var_short_arr_b[this.ax + 1] + n5];
+        }
+        this.c(n, n2, n3 & 1, 1);
+        if (this.var_f_a.var_boolean_ag && this.var_byte_arr_k[0] == 1 && this.var_byte_arr_k[2] <= 50) {
+            return false;
+        }
+        if (this.var_byte_arr_b[this.var_short_arr_a[78] + this.var_byte_arr_k[0]] == 127) {
+            return false;
+        }
+        if (this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[78] + this.var_byte_arr_k[0]]] + this.var_byte_arr_k[2]] <= 0) {
+            return false;
+        }
+        if (n3 < 2 && this.var_byte_arr_k[3] == 0 && (this.var_byte_arr_k[0] == 1 || this.var_byte_arr_k[0] == 2)) {
+            return false;
+        }
+        if (n3 == 0 && this.var_byte_arr_a[0 + this.var_int_v] - this.var_byte_arr_a[0 + this.var_short_arr_arr_a[0][17]] >= -4 && this.var_byte_arr_a[0 + this.var_int_v] - this.var_byte_arr_a[0 + this.var_short_arr_arr_a[0][17]] <= 4 && this.var_byte_arr_a[101 + this.var_int_v] - this.var_byte_arr_a[101 + this.var_short_arr_arr_a[0][17]] >= -4 && this.var_byte_arr_a[101 + this.var_int_v] - this.var_byte_arr_a[101 + this.var_short_arr_arr_a[0][17]] <= 4) {
+            n7 = n7 * 3 / 2;
+        }
+        if (this.var_byte_arr_k[0] == 2) {
+            if ((this.var_byte_arr_a[9054 + this.var_byte_arr_k[2]] & 0x80) == 0) {
+                this.var_byte_D = (byte)(this.var_int_v + (n3 == 2 ? 101 : 0));
+                this.var_int_u ^= 1;
+                this.a((byte)(this.var_byte_arr_a[8383 + this.var_byte_arr_k[2]] + this.var_byte_arr_b[this.var_short_arr_a[138] + 104 + this.var_byte_arr_k[1]] / 2), (byte)(this.var_byte_arr_a[8444 + this.var_byte_arr_k[2]] + this.var_byte_arr_b[this.var_short_arr_a[138] + 130 + this.var_byte_arr_k[1]] / 2), (byte)8);
+                this.var_int_u ^= 1;
             }
-         }
-      }
-
-   }
-
-   private void a(int var1, boolean var2) {
-      this.a[3131 + var1] = this.a[0 + var1];
-      this.a[3232 + var1] = this.a[101 + var1];
-      if ((this.a[2929 + var1] & 255) <= 7 && (this.a[1111 + var1] & 15) < (this.b[this.a[15] + (this.a[606 + var1] & 1) * 9 + this.a[1010 + var1] - this.a[7777 + var1]] + 1) / 2 && this.a[1313 + var1] >= 0 && this.a[808 + var1] > 0) {
-         byte[] var10000 = this.a;
-         var10000[3131 + var1] += this.b[this.a[1] + this.a[606 + var1]];
-         var10000 = this.a;
-         var10000[3232 + var1] += this.b[this.a[1] + 8 + this.a[606 + var1]];
-      }
-
-      this.a[808 + var1] = 0;
-      if (var2) {
-         this.a[6262 + var1] = this.a[3131 + var1];
-         this.a[6363 + var1] = this.a[3232 + var1];
-         this.a(var1, (byte)69);
-      }
-
-   }
-
-   final void j() {
-      for(this.w = 0; this.w < 12; ++this.w) {
-         this.a.f[this.w] = this.b[this.a[113] + (this.a.q < 4 ? 0 : (this.a.q == 4 ? 12 : 24)) + this.w];
-      }
-
-      if (this.a.q <= 4) {
-         for(this.w = this.b[this.a[302] + this.a.q]; this.w < this.b[this.a[302] + this.a.q + 1]; ++this.w) {
-            if (this.a.c < this.b[this.a[299] + this.w] * 100) {
-               return;
+            int n10 = 9054 + this.var_byte_arr_k[2];
+            this.var_byte_arr_a[n10] = (byte)(this.var_byte_arr_a[n10] | 0x80);
+            this.var_f_a.a((int)this.var_byte_arr_k[2], true);
+            n7 /= n7 > 1 ? 2 : 1;
+        }
+        if (this.var_byte_arr_k[0] == 1 && (this.var_byte_arr_a[7979 + this.var_byte_arr_k[2]] & 8) != 0) {
+            n7 /= n7 > 1 ? 2 : 1;
+        }
+        if ((n7 /= this.ay + 1) < 1) {
+            return false;
+        }
+        if (this.var_byte_arr_k[0] == 1 && this.var_byte_arr_a[1919 + this.var_byte_arr_k[2]] > 0 && this.var_byte_arr_a[1414 + this.var_byte_arr_k[2]] >= 12 && this.var_byte_arr_a[6161 + this.var_byte_arr_k[2]] == 0 && this.var_byte_arr_a[2828 + this.var_byte_arr_k[2]] > 9 && this.var_byte_arr_a[2828 + this.var_byte_arr_k[2]] != 59 && this.var_byte_arr_a[2828 + this.var_byte_arr_k[2]] != 87 && this.var_byte_arr_a[2828 + this.var_byte_arr_k[2]] != 50) {
+            this.var_byte_arr_a[6161 + this.var_byte_arr_k[2]] = 4;
+            this.var_byte_arr_a[4747 + this.var_byte_arr_k[2]] = (byte)this.var_int_v;
+        }
+        if (this.var_byte_arr_k[0] == 1 || this.var_byte_arr_k[0] == 5) {
+            byte[] byArray = this.var_f_a.var_c_a.var_byte_arr_f;
+            int n11 = this.var_byte_arr_k[2] + (this.var_byte_arr_k[0] == 5 ? 101 : 0);
+            byArray[n11] = (byte)(byArray[n11] - n7);
+        }
+        if (this.var_byte_arr_k[0] == 5 && n3 != 2 && this.var_byte_arr_a[9601 + this.var_byte_arr_k[2]] <= 0) {
+            this.var_byte_arr_a[9447 + this.var_byte_arr_k[2]] = (byte)(19 + this.var_int_v);
+        }
+        int n12 = this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[78] + this.var_byte_arr_k[0]]] + this.var_byte_arr_k[2];
+        this.var_byte_arr_a[n12] = (byte)(this.var_byte_arr_a[n12] - n7);
+        if (this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[78] + this.var_byte_arr_k[0]]] + this.var_byte_arr_k[2]] <= 0) {
+            this.a((int)this.var_byte_arr_b[this.var_short_arr_a[78] + this.var_byte_arr_k[0]], n, n2, this.var_byte_arr_k[2]);
+            return false;
+        }
+        if (this.var_byte_arr_k[0] == 2) {
+            n6 = n - this.var_byte_arr_a[8383 + this.var_byte_arr_k[2]] + (n2 - this.var_byte_arr_a[8444 + this.var_byte_arr_k[2]] << 4);
+        }
+        this.var_f_a.a((int)this.var_byte_arr_k[2], (int)this.var_byte_arr_b[this.var_short_arr_a[178] + this.var_byte_arr_k[0]], n6, b.int_b(52 + n7 / 4 * 3 + this.var_f_a.int_a(255, 3), 52, 61));
+        if (this.var_byte_arr_k[0] == 1 && this.var_byte_arr_k[2] <= 50) {
+            if (this.var_byte_arr_a[1414 + this.var_byte_arr_k[2]] < 12) {
+                this.a((byte)16, (int)this.var_short_arr_arr_a[0][17], (int)this.var_byte_arr_k[2]);
+            } else if (this.var_short_arr_d[0] < 0) {
+                this.var_short_arr_d[0] = 0;
+                this.var_f_a.a((byte)7, (byte)n, (byte)n2, (byte)0);
+            } else if (n3 == 2 && this.var_byte_arr_a[2828 + this.var_byte_arr_k[2]] != 2 && this.var_byte_arr_a[2828 + this.var_byte_arr_k[2]] != 7) {
+                this.var_byte_z = (byte)n;
+                this.var_byte_A = (byte)n2;
+                this.a((byte)5, (int)this.var_byte_arr_k[2], (int)this.var_byte_arr_k[2]);
             }
+        }
+        return true;
+    }
 
-            ++this.a.f[this.b[this.a[300] + this.w]];
-         }
-
-      }
-   }
-
-   final void k() {
-      if (this.a.v == 1 && this.K < 50) {
-         this.a.h = 2;
-      } else if ((this.a.N || this.a.L || this.O >= 0 && this.O == this.b[this.a[236] + this.b[this.a[238] + this.a.q] + this.N] - 1) && this.a.v == 1) {
-         this.a.h = 1;
-      } else {
-         this.a.h = 0;
-      }
-   }
-
-   private void am() {
-      for(this.u = 0; this.u < 2; ++this.u) {
-         for(this.v = this.u * 50 + 1; this.v <= (this.u + 1) * 50; ++this.v) {
-            if (this.a[3232 + this.v] == this.a[9783 + this.aM] && (this.a[3131 + this.v] == this.a[9733 + this.aM] || this.a[2828 + this.v] == 13) && this.a[2828 + this.v] >= 10 && this.a[2828 + this.v] <= 16) {
-               if (this.a[4444 + this.v] >= 0) {
-                  this.a[4444 + this.v] = -1;
-                  this.a[808 + this.v] = 0;
-               }
-
-               if ((this.a[2828 + this.v] == 16 || this.a[2828 + this.v] == 12) && this.a[3636 + this.v] > 0) {
-                  this.a(this.v, this.b[this.a[160] + this.a[2828 + this.v]]);
-                  this.N();
-               }
+    private void T() {
+        this.var_int_u = 0;
+        while (this.var_int_u < 2) {
+            this.var_int_v = this.var_int_u * 50 + 1;
+            while (this.var_int_v <= (this.var_int_u + 1) * 50) {
+                if (this.var_byte_arr_a[5959 + this.var_int_v] > 0 && this.var_byte_arr_a[5252 + this.var_int_v] >= this.var_f_a.var_byte_I && this.var_byte_arr_a[5252 + this.var_int_v] < this.var_f_a.var_byte_I + this.var_f_a.var_byte_O && this.var_byte_arr_a[5353 + this.var_int_v] >= this.var_f_a.var_byte_K && this.var_byte_arr_a[5353 + this.var_int_v] < this.var_f_a.var_byte_K + this.var_f_a.var_byte_P) {
+                    this.var_byte_arr_a[6060 + this.var_int_v] = this.var_f_a.var_byte_arr_arr_g[this.var_byte_arr_a[5353 + this.var_int_v] - this.var_f_a.var_byte_K][this.var_byte_arr_a[5252 + this.var_int_v] - this.var_f_a.var_byte_I];
+                    this.var_f_a.var_byte_arr_arr_g[this.var_byte_arr_a[5353 + this.var_int_v] - this.var_f_a.var_byte_K][this.var_byte_arr_a[5252 + this.var_int_v] - this.var_f_a.var_byte_I] = (byte)this.var_int_v;
+                }
+                ++this.var_int_v;
             }
-         }
-      }
+            ++this.var_int_u;
+        }
+    }
 
-   }
+    private void U() {
+        this.void_b(true);
+        if (this.var_byte_arr_a[4646 + this.var_int_v] == 1 && this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] == 8 && this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0) {
+            this.var_byte_arr_a[2828 + this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]]] = 57;
+            this.var_byte_arr_a[2929 + this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]]] = 105;
+            this.var_byte_arr_a[3030 + this.var_byte_arr_a[8810 + this.var_byte_arr_a[4444 + this.var_int_v]]] = 0;
+        }
+        this.var_byte_arr_a[2929 + this.var_int_v] = this.var_byte_arr_a[1414 + this.var_int_v] < 12 || this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]] >= 12 || this.var_byte_arr_a[8627 + this.var_byte_arr_a[4444 + this.var_int_v]] == 0 && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] != 12 ? this.var_byte_arr_b[this.var_short_arr_a[173] + this.var_byte_arr_b[this.var_short_arr_a[174] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]] : this.var_byte_arr_b[this.var_short_arr_a[176] + this.var_byte_arr_b[this.var_short_arr_a[177] + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] + this.var_byte_arr_a[4646 + this.var_int_v]];
+        this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+        this.var_byte_arr_a[1313 + this.var_int_v] = -3;
+        this.var_f_a.void_d((int)this.var_byte_arr_a[4444 + this.var_int_v]);
+        this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_int_v];
+        this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_int_v];
+        if (this.var_byte_arr_b[this.var_short_arr_a[39] + this.var_byte_arr_a[2828 + this.var_int_v]] != 2) {
+            this.void_a(this.var_int_v, (byte)59);
+        }
+    }
 
-   private void an() {
-      if (this.a[2828 + this.v] >= 10 && this.a[2828 + this.v] <= 16 && this.a[2828 + this.v] != 11 && this.a[2828 + this.v] != 14) {
-         this.a[3131 + this.v] = this.a[6262 + this.v];
-         this.a[3232 + this.v] = this.a[6363 + this.v];
-         if (this.c(this.b[this.a[6363 + this.v]][this.a[6262 + this.v]])) {
+    private void V() {
+        if (this.var_int_v == this.var_short_arr_arr_a[this.var_int_u][17]) {
+            this.var_byte_arr_a[3434 + this.var_int_v] = 1;
+            return;
+        }
+        this.aI = this.var_int_u * 30 + 1;
+        while (this.aI <= (this.var_int_u + 1) * 30) {
+            if (this.var_byte_arr_a[8749 + this.aI] == 2 && this.var_byte_arr_a[8627 + this.aI] == 0 && this.var_byte_arr_a[8810 + this.aI] < this.var_byte_arr_b[this.var_short_arr_a[138] + (this.var_byte_arr_a[9115 + this.aI] - 1) * 26 + 2]) {
+                this.var_byte_arr_a[3434 + this.var_int_v] = (byte)this.aI;
+                int n = 8810 + this.aI;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+                return;
+            }
+            ++this.aI;
+        }
+    }
+
+    final void void_b(int n) {
+        byte by = this.var_byte_arr_a[3434 + n];
+        if (by > 0) {
+            int n2 = this.var_short_arr_b[this.var_byte_arr_a[8627 + by] == 0 ? 90 : 97] + by;
+            this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] - 1);
+            this.var_byte_arr_a[3434 + n] = 0;
+        }
+    }
+
+    private boolean boolean_q() {
+        if (this.var_byte_arr_a[6666 + this.var_int_v] >= (this.var_int_u == 0 ? (byte)125 : 50)) {
+            this.var_byte_arr_a[6666 + this.var_int_v] = 0;
+            int n = 1414 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+            this.aJ = this.var_byte_arr_b[this.var_short_arr_a[97] + this.var_byte_arr_a[1414 + this.var_int_v]] + this.var_f_a.int_a(255, 5) - 2;
+            if (this.var_byte_arr_a[1515 + this.var_int_v] == 1) {
+                this.aJ += this.aJ > 0 ? -1 : 1;
+            }
+            this.var_byte_arr_a[6767 + this.var_int_v] = (byte)b.int_b(this.var_byte_arr_a[6767 + this.var_int_v] + this.aJ, 0, this.var_byte_arr_b[this.var_short_arr_a[98] + this.var_byte_arr_a[1414 + this.var_int_v]]);
+            if (this.aJ > 0) {
+                int n2 = 1919 + this.var_int_v;
+                this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] + this.aJ);
+                if (this.var_byte_arr_a[6767 + this.var_int_v] >= 55 && this.var_byte_arr_a[6767 + this.var_int_v] - this.aJ < 55 && this.var_byte_arr_a[1010 + this.var_int_v] > 6 && this.var_byte_arr_a[202 + this.var_int_v] == 0 && this.var_byte_arr_a[303 + this.var_int_v] == 0) {
+                    int n3 = 1010 + this.var_int_v;
+                    this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] - 1);
+                }
+            }
+            this.var_byte_arr_a[1919 + this.var_int_v] = (byte)b.int_b(this.var_byte_arr_a[1919 + this.var_int_v], 0, this.var_byte_arr_a[6767 + this.var_int_v]);
+            if (!this.boolean_s()) {
+                return false;
+            }
+            if (this.var_byte_arr_a[1414 + this.var_int_v] == 12) {
+                this.void_a(this.var_int_v, (byte)69);
+                this.A();
+                this.var_byte_arr_a[6464 + this.var_int_v] = 69;
+                this.var_byte_arr_a[3030 + this.var_int_v] = 20;
+                byte by = this.var_byte_arr_a[0 + this.var_int_v];
+                this.var_byte_arr_a[3131 + this.var_int_v] = by;
+                this.var_byte_arr_a[6262 + this.var_int_v] = by;
+                byte by2 = this.var_byte_arr_a[101 + this.var_int_v];
+                this.var_byte_arr_a[3232 + this.var_int_v] = by2;
+                this.var_byte_arr_a[6363 + this.var_int_v] = by2;
+            }
+            if (this.var_byte_arr_a[1414 + this.var_int_v] == 12 || this.var_byte_arr_a[1414 + this.var_int_v] == 35) {
+                this.var_f_a.b((byte)this.var_int_v);
+            }
+        }
+        if (this.var_byte_arr_a[1414 + this.var_int_v] == 11 && this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v && this.var_byte_arr_a[1313 + this.var_int_v] >= 0) {
+            this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+            this.void_a(this.var_int_v, (byte)59);
+        }
+        if (!this.boolean_r()) {
+            return false;
+        }
+        if ((this.var_byte_arr_a[7979 + this.var_int_v] & 8) > 0) {
+            int n = 8181 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+            if (this.var_byte_arr_a[8181 + this.var_int_v] >= 120) {
+                this.var_byte_arr_a[8181 + this.var_int_v] = 0;
+                int n4 = 7979 + this.var_int_v;
+                this.var_byte_arr_a[n4] = (byte)(this.var_byte_arr_a[n4] & 0xF7);
+            }
+        }
+        return true;
+    }
+
+    private boolean boolean_r() {
+        if (this.var_byte_arr_a[1414 + this.var_int_v] >= 12 && this.var_f_a.var_int_c >= this.var_short_arr_b[this.var_short_arr_c[4] + this.var_f_a.var_byte_q]) {
+            if (this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]] == 9 && (this.var_f_a.var_int_c & 0x3F) == (this.var_int_v & 0x3F)) {
+                if (this.var_byte_arr_a[2020 + this.var_int_v] < 100) {
+                    int n = 2020 + this.var_int_v;
+                    this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+                }
+            } else if (this.var_byte_arr_b[this.var_short_arr_a[50] + this.var_byte_arr_a[2828 + this.var_int_v]] < 127 && this.var_f_a.var_int_c % (this.var_byte_arr_b[this.var_short_arr_a[50] + this.var_byte_arr_a[2828 + this.var_int_v]] * (this.var_int_u * 4 + 1)) <= 3) {
+                if (this.var_byte_arr_a[2020 + this.var_int_v] > 0) {
+                    int n = 2020 + this.var_int_v;
+                    this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] - 1);
+                } else {
+                    this.boolean_a(this.var_int_v, -1);
+                }
+                if (this.var_byte_arr_a[2020 + this.var_int_v] <= 5 && this.var_f_a.var_boolean_L && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x40) != 0) {
+                    this.a((byte)14, this.var_int_v, this.var_int_v);
+                }
+            }
+            int n = this.aJ = (this.var_byte_arr_a[2929 + this.var_int_v] & 0xFF) <= 14 ? this.var_byte_arr_b[this.var_short_arr_a[170] + this.var_byte_arr_a[2929 + this.var_int_v]] : this.var_byte_arr_b[this.var_short_arr_a[52] + this.var_byte_arr_a[2828 + this.var_int_v]];
+            if (this.aJ < 127 && this.var_f_a.var_int_c % (this.aJ * (this.var_int_u * 4 + 1)) <= 3) {
+                if (this.var_byte_arr_a[2121 + this.var_int_v] > 0) {
+                    int n2 = 2121 + this.var_int_v;
+                    this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] - 1);
+                } else {
+                    this.boolean_a(this.var_int_v, -1);
+                }
+                if (this.var_byte_arr_a[2121 + this.var_int_v] <= 5 && this.var_f_a.var_boolean_L && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x40) != 0) {
+                    this.a((byte)15, this.var_int_v, this.var_int_v);
+                }
+            }
+            if (!this.boolean_s()) {
+                return false;
+            }
+        }
+        if (this.var_byte_arr_a[7373 + this.var_int_v] > 1 && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]] == 11) {
+            if (this.var_f_a.var_int_c % (46 - this.var_byte_arr_a[7373 + this.var_int_v] * 3) <= 3) {
+                this.boolean_a(this.var_int_v, 2);
+            }
+        } else if ((this.var_f_a.var_int_c & 0x7F) == (this.var_int_v & 0xF)) {
+            if ((this.var_byte_arr_a[7979 + this.var_int_v] & 4) == 0) {
+                this.boolean_a(this.var_int_v, 1);
+            }
+        } else if ((this.var_byte_arr_a[7979 + this.var_int_v] & 4) > 0 && (this.var_f_a.var_int_c & 0x1F) == (this.var_int_v & 0xF)) {
+            this.boolean_a(this.var_int_v, -1);
+            if (!this.boolean_s()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean boolean_s() {
+        if (this.var_byte_arr_a[1919 + this.var_int_v] <= 0) {
+            if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+                this.a(19, (int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], (byte)this.var_int_v);
+                return false;
+            }
+            this.var_byte_arr_a[6767 + this.var_int_v] = 1;
+            this.var_byte_arr_a[1919 + this.var_int_v] = 1;
+            this.var_byte_arr_a[6161 + this.var_int_v] = 2;
+            int n = 8282 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] | 0x80);
+        }
+        return true;
+    }
+
+    private void W() {
+        if (this.var_f_a.var_int_c < this.var_short_arr_b[this.var_short_arr_c[4] + this.var_f_a.var_byte_q]) {
+            return;
+        }
+        this.var_int_w = this.var_byte_arr_a[505 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[51] + this.var_byte_arr_a[2828 + this.var_int_v]] + (this.var_byte_arr_b[this.var_short_arr_a[51] + this.var_byte_arr_a[2828 + this.var_int_v]] < 0 && this.var_byte_arr_a[3434 + this.var_int_v] < 1 ? -3 : 0) - (this.var_byte_arr_a[2121 + this.var_int_v] < 20 ? 1 : 0) - (this.var_byte_arr_a[2020 + this.var_int_v] < 20 ? 1 : 0);
+        this.var_int_w += this.var_byte_arr_a[4646 + this.var_int_v] >= 0 && this.var_byte_arr_a[2828 + this.var_int_v] != 92 && this.var_byte_arr_a[2828 + this.var_int_v] != 93 && this.var_byte_arr_a[2828 + this.var_int_v] != 106 ? this.var_byte_arr_b[this.var_short_arr_a[138] + (21 + this.var_byte_arr_a[9115 + this.var_byte_arr_a[4444 + this.var_int_v]] - 1) * 26 + this.var_byte_arr_a[8749 + this.var_byte_arr_a[4444 + this.var_int_v]]] : 0;
+        this.var_byte_arr_a[505 + this.var_int_v] = (byte)b.int_b(this.var_int_w + (this.var_f_a.var_byte_q < 2 ? 1 : 0) + this.var_int_u, 0, 99);
+    }
+
+    private void X() {
+        if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+            if (this.var_byte_arr_a[8080 + this.var_int_v] > 0) {
+                int n = 8080 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] - 1);
+            }
+        } else if (this.var_byte_arr_a[2828 + this.var_int_v] != 92 && this.var_byte_arr_a[2828 + this.var_int_v] != 93 && this.var_byte_arr_a[2828 + this.var_int_v] != 106) {
+            this.var_byte_arr_a[8080 + this.var_int_v] = (byte)b.int_b(this.var_byte_arr_a[8080 + this.var_int_v] + ((this.var_byte_arr_a[8871 + this.var_byte_arr_a[4444 + this.var_int_v]] & 2) != 0 ? 1 : -1), 0, 30);
+        }
+        if (this.var_byte_arr_a[8080 + this.var_int_v] >= 30) {
+            int n = 7979 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] | 4);
+            this.var_byte_arr_a[8080 + this.var_int_v] = 0;
+        }
+    }
+
+    private void Y() {
+        this.var_byte_n = (byte)-1;
+        while (this.var_byte_n < 2) {
+            this.var_byte_o = (byte)-1;
+            while (this.var_byte_o < 2) {
+                if (this.var_byte_arr_a[0 + this.var_int_v] + this.var_byte_n >= 0 && this.var_byte_arr_a[0 + this.var_int_v] + this.var_byte_n < this.var_f_a.var_short_c && this.var_byte_arr_a[101 + this.var_int_v] + this.var_byte_n >= 0 && this.var_byte_arr_a[101 + this.var_int_v] + this.var_byte_n < this.var_f_a.var_short_d) {
+                    this.var_byte_p = this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v] + this.var_byte_o][this.var_byte_arr_a[0 + this.var_int_v] + this.var_byte_n];
+                    if (this.var_byte_p > 0 && this.var_byte_p <= 100 && (this.var_byte_arr_a[7979 + this.var_byte_p] & 4) == 0 && this.var_byte_arr_a[1414 + this.var_byte_p] >= 12) {
+                        int n = 8080 + this.var_byte_p;
+                        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 8);
+                    }
+                }
+                this.var_byte_o = (byte)(this.var_byte_o + 1);
+            }
+            this.var_byte_n = (byte)(this.var_byte_n + 1);
+        }
+    }
+
+    /*
+     * Unable to fully structure code
+     */
+    private void Z() {
+        if (this.var_f_a.var_byte_q == 3) {
+            return;
+        }
+        if (this.var_int_u == 1) {
+            if (this.var_short_arr_arr_a[1][11] >= this.var_byte_arr_b[this.var_short_arr_a[275 + this.var_f_a.var_byte_b] + this.var_f_a.var_byte_q]) {
+                this.var_short_arr_arr_a[1][18] = 0;
+            }
+            if (this.var_short_arr_arr_a[1][18] != -1) {
+                return;
+            }
+        }
+        this.aH = this.var_int_u * 30 + 1;
+        while (this.aH <= (this.var_int_u + 1) * 30) {
+            block13: {
+                block15: {
+                    block14: {
+                        if (this.var_byte_arr_a[8505 + this.aH] == 0 || this.var_byte_arr_a[8749 + this.aH] != 2 || this.var_byte_arr_a[8627 + this.aH] != 0 || this.var_byte_arr_a[8932 + this.aH] > 3) break block13;
+                        if (this.var_int_u != 0) break block14;
+                        if (this.var_byte_arr_a[9237 + this.aH] >= 9) break block15;
+                        if (this.var_byte_arr_a[9237 + this.aH] >= 3) {
+                            v0 = 9237 + this.aH;
+                            this.var_byte_arr_a[v0] = (byte)(this.var_byte_arr_a[v0] + 1);
+                        }
+                        break block13;
+                    }
+                    if (this.var_byte_arr_a[8383 + this.aH] < this.var_f_a.var_byte_I - 1 || this.var_byte_arr_a[8444 + this.aH] < this.var_f_a.var_byte_K - 1 || this.var_byte_arr_a[8383 + this.aH] > this.var_f_a.var_byte_I + this.var_f_a.var_byte_O || this.var_byte_arr_a[8444 + this.aH] > this.var_f_a.var_byte_K + this.var_f_a.var_byte_P) {
+                        this.var_short_arr_arr_a[this.var_int_u][18] = 0;
+                        if (this.var_int_u == 1 && this.var_byte_Q > 0) {
+                            return;
+                        }
+                        this.var_int_v = this.var_int_u * 30 + 1;
+                        this.var_int_w = 0;
+                        while (this.var_int_v <= (this.var_int_u + 1) * 30) {
+                            if (this.var_byte_arr_a[1919 + this.var_int_v] > 0 && this.var_byte_arr_a[1414 + this.var_int_v] >= 12) {
+                                this.var_int_w |= this.var_byte_arr_a[1515 + this.var_int_v] + 1;
+                            }
+                            ++this.var_int_v;
+                        }
+                        if (this.var_int_w != 3) {
+                            return;
+                        } else {
+                            ** GOTO lbl32
+                        }
+                    }
+                    break block13;
+                }
+                this.var_byte_arr_a[9237 + this.aH] = 0;
+                this.var_int_v = this.var_f_a.a((byte)this.var_int_u, this.var_byte_arr_a[8383 + this.aH], this.var_byte_arr_a[8444 + this.aH], (byte)2, (byte)(this.var_int_u == 0 ? 0 : this.var_byte_arr_b[this.var_short_arr_a[212 + this.var_f_a.var_byte_b] + this.var_f_a.var_byte_q] / 4));
+                if (this.var_int_v < 1) {
+                    return;
+                }
+                this.var_byte_arr_a[4444 + this.var_int_v] = (byte)this.aH;
+                v1 = 8932 + this.aH;
+                this.var_byte_arr_a[v1] = (byte)(this.var_byte_arr_a[v1] + 1);
+                this.G();
+                this.var_byte_arr_a[4545 + this.var_int_v] = this.var_byte_arr_a[8993 + this.aH];
+                this.var_byte_arr_a[8993 + this.aH] = (byte)this.var_int_v;
+                this.var_byte_arr_a[1313 + this.var_int_v] = -3;
+                this.var_byte_arr_a[2929 + this.var_int_v] = 71;
+                this.var_byte_arr_a[3030 + this.var_int_v] = 0;
+                this.var_byte_arr_a[2828 + this.var_int_v] = 59;
+                if (this.var_int_u == 1) {
+                    return;
+                }
+            }
+            ++this.aH;
+        }
+    }
+
+    final void void_g() {
+        if (this.var_f_a.var_int_c % 10 == 0) {
+            this.void_n();
+        }
+        try {
+            this.ax();
+            this.var_int_u = 0;
+            while (this.var_int_u < 2) {
+                this.var_int_v = this.var_int_u * 30 + 1;
+                while (this.var_int_v <= (this.var_int_u + 1) * 30) {
+                    if (this.var_byte_arr_a[8505 + this.var_int_v] != 0) {
+                        this.var_int_z = this.var_byte_arr_a[8749 + this.var_int_v];
+                        if ((this.var_f_a.var_int_c & 0xF) == 0) {
+                            int n = 9054 + this.var_int_v;
+                            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0x7F);
+                        }
+                        if (this.var_int_z >= 12 || this.var_int_z == 4 || this.var_int_z == 2 || this.var_byte_arr_a[8627 + this.var_int_v] != 0) {
+                            this.var_int_A = 0;
+                            this.var_int_x = 0;
+                            if (this.var_int_z >= 12) {
+                                while (this.var_int_x < 10 && this.var_byte_arr_arr_f[0][this.var_int_x] != this.var_int_v) {
+                                    ++this.var_int_x;
+                                }
+                            }
+                            if (this.var_byte_arr_a[8627 + this.var_int_v] != 0) {
+                                while (this.var_int_x < 20 && this.var_byte_arr_arr_g[0][this.var_int_x] != this.var_int_v) {
+                                    ++this.var_int_x;
+                                }
+                            }
+                            if (this.var_byte_arr_a[8627 + this.var_int_v] != 0 && (this.var_byte_arr_arr_g[2][this.var_int_x] > 0 && this.var_byte_arr_arr_g[1][this.var_int_x] >= this.var_byte_arr_arr_g[2][this.var_int_x] && this.var_byte_arr_a[8627 + this.var_int_v] == 1 || this.var_byte_arr_a[8627 + this.var_int_v] == 2 && this.var_byte_arr_a[8505 + this.var_int_v] >= this.var_byte_arr_a[8566 + this.var_int_v] || (this.var_byte_arr_a[9054 + this.var_int_v] & 1) != 0)) {
+                                this.var_f_a.a(this.var_int_v, true);
+                                this.ad();
+                            } else {
+                                this.var_int_C = 0;
+                                this.aa();
+                                if ((this.var_f_a.var_int_c & 0xFF) == this.var_int_v) {
+                                    this.ac();
+                                }
+                                if (this.var_int_z == 2 && this.var_int_x > 0) {
+                                    if (this.var_byte_arr_a[1313 + this.var_int_x] == 2 && this.var_int_A != 3) {
+                                        this.var_byte_arr_a[1313 + this.var_int_x] = 1;
+                                    }
+                                    if (this.var_byte_arr_a[1313 + this.var_int_x] == 1 && this.var_int_A == 3) {
+                                        this.var_byte_arr_a[1313 + this.var_int_x] = 2;
+                                    }
+                                }
+                                if (this.var_int_z >= 12 && this.var_byte_arr_a[8505 + this.var_int_v] >= this.var_byte_arr_b[this.var_short_arr_a[138] + 182 + this.var_byte_arr_a[9237 + this.var_int_v]] && this.var_byte_arr_a[8932 + this.var_int_v] == 0) {
+                                    this.var_f_a.a((byte)this.var_int_u, this.var_byte_arr_a[9237 + this.var_int_v], this.var_byte_arr_a[8383 + this.var_int_v], this.var_byte_arr_a[8444 + this.var_int_v], 1, true, this.var_int_v);
+                                    this.var_f_a.void_a(this.var_int_v, 0);
+                                    this.var_byte_arr_a[9237 + this.var_int_v] = 0;
+                                    this.var_byte_arr_arr_f[0][this.var_int_x] = 0;
+                                }
+                                if ((this.var_int_z >= 12 || this.var_byte_arr_a[8627 + this.var_int_v] != 0) && (this.var_f_a.var_int_c & 0xF) == (this.var_int_v & 0xF)) {
+                                    this.ae();
+                                }
+                            }
+                        }
+                    }
+                    ++this.var_int_v;
+                }
+                ++this.var_int_u;
+            }
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
+
+    private void aa() {
+        this.var_int_w = this.var_byte_arr_a[8993 + this.var_int_v];
+        while (this.var_int_w > 0) {
+            ++this.var_int_C;
+            if (this.var_int_z == 2 && this.var_byte_arr_a[8627 + this.var_int_v] == 0) {
+                if (this.var_byte_arr_a[4646 + this.var_int_w] == 0) {
+                    this.var_int_x = this.var_int_w;
+                }
+                if (this.var_byte_arr_a[1313 + this.var_int_w] > 0 && this.var_byte_arr_a[2828 + this.var_int_w] == 111) {
+                    this.var_int_A |= 1 + this.var_byte_arr_a[1515 + this.var_int_w];
+                }
+            } else if (this.var_int_z >= 12 && this.var_byte_arr_a[8505 + this.var_int_v] >= this.var_byte_arr_b[this.var_short_arr_a[138] + 182 + this.var_byte_arr_a[9237 + this.var_int_v]]) {
+                switch (this.var_int_u) {
+                    case 0: {
+                        this.var_byte_arr_a[2828 + this.var_int_w] = 87;
+                        this.var_byte_arr_a[6161 + this.var_int_w] = 3;
+                        break;
+                    }
+                    case 1: {
+                        this.var_byte_arr_a[6161 + this.var_int_w] = 2;
+                    }
+                }
+            } else if (this.var_byte_arr_a[2828 + this.var_int_w] != 87 && this.var_byte_arr_a[1313 + this.var_int_w] != -3 && (this.var_byte_arr_a[1313 + this.var_int_w] != -2 || this.var_byte_arr_a[3030 + this.var_int_w] >= this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[2929 + this.var_int_w] & 0xFF] - 1 && this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_w]]] == this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_w]]] && this.var_byte_arr_a[3636 + this.var_int_w] <= 0) && (this.var_byte_arr_a[2929 + this.var_int_w] != -109 && this.var_byte_arr_a[2929 + this.var_int_w] != -102 || this.var_byte_arr_a[3030 + this.var_int_w] >= this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[2929 + this.var_int_w] & 0xFF] - 1) && (this.var_byte_arr_a[8627 + this.var_int_v] == 0 || this.var_byte_arr_a[2828 + this.var_int_w] == 56 || this.var_byte_arr_a[2828 + this.var_int_w] == 76 || this.var_byte_arr_a[2828 + this.var_int_w] == 77 || this.var_byte_arr_a[2828 + this.var_int_w] == 78)) {
+                this.ab();
+            }
+            this.var_int_w = this.var_byte_arr_a[4545 + this.var_int_w];
+        }
+    }
+
+    private void ab() {
+        if (this.var_byte_arr_a[4646 + this.var_int_w] == 0) {
+            if (this.var_byte_arr_a[6161 + this.var_int_w] == 2) {
+                return;
+            }
+            if (this.var_byte_arr_a[8627 + this.var_int_v] != 0) {
+                if (this.var_byte_arr_arr_g[1][this.var_int_x] >= this.var_byte_arr_arr_g[2][this.var_int_x]) {
+                    this.var_byte_arr_arr_g[2][this.var_int_x] = 0;
+                    this.var_byte_arr_arr_g[1][this.var_int_x] = 0;
+                }
+                if (this.var_byte_arr_arr_g[2][this.var_int_x] == 0) {
+                    this.void_a(this.var_int_w, (byte)99);
+                    this.var_byte_arr_a[6161 + this.var_int_w] = 3;
+                }
+            } else if (this.var_byte_arr_arr_f[1][this.var_int_x] < this.var_byte_arr_b[this.var_short_arr_a[80] + this.var_byte_arr_a[9237 + this.var_int_v]] && this.var_int_z >= 12 || this.var_int_z == 4 && this.var_short_arr_arr_a[this.var_int_u][0] < 40 && this.var_byte_arr_a[2828 + this.var_int_w] == 66) {
+                this.var_byte_arr_a[6161 + this.var_int_w] = 3;
+                if (this.var_int_z >= 12) {
+                    this.void_a(this.var_int_w, this.var_byte_arr_b[this.var_short_arr_a[81] + this.var_byte_arr_b[this.var_short_arr_a[82] + this.var_byte_arr_a[9237 + this.var_int_v]] + this.var_byte_arr_arr_f[1][this.var_int_x]]);
+                } else if (this.var_byte_arr_a[3636 + this.var_int_w] > 0 && (this.var_byte_arr_a[3535 + this.var_int_w] == 1 || this.var_byte_arr_a[3535 + this.var_int_w] == 5 || this.var_byte_arr_a[3535 + this.var_int_w] == 6 || this.var_byte_arr_a[3535 + this.var_int_w] == 7)) {
+                    this.void_a(this.var_int_w, (byte)54);
+                    this.var_byte_arr_a[6161 + this.var_int_w] = 0;
+                } else {
+                    this.void_a(this.var_int_w, (byte)37);
+                }
+            }
+            if (this.var_byte_arr_a[8749 + this.var_int_v] == 6 || this.var_byte_arr_a[8749 + this.var_int_v] == 16 && this.var_byte_arr_a[9237 + this.var_int_v] == 6) {
+                if (this.var_byte_arr_a[6161 + this.var_int_w] == 3) {
+                    this.var_byte_arr_a[6161 + this.var_int_w] = 0;
+                    if (this.a((int)this.var_byte_arr_a[2828 + this.var_int_w], false, this.var_int_w)) {
+                        if (this.var_byte_arr_a[8749 + this.var_int_v] == 16) {
+                            byte[] byArray = this.var_byte_arr_arr_f[1];
+                            int n = this.var_int_x;
+                            byArray[n] = (byte)(byArray[n] + 1);
+                        }
+                        this.d(false);
+                        return;
+                    }
+                    this.var_boolean_f = true;
+                    if (this.var_byte_arr_a[8749 + this.var_int_v] != 6 && this.var_byte_arr_a[8505 + this.var_int_v] < this.var_byte_arr_b[this.var_short_arr_a[83] + this.var_byte_arr_b[this.var_short_arr_a[84] + this.var_byte_arr_a[9237 + this.var_int_v]] + this.var_byte_arr_arr_f[1][this.var_int_x]]) {
+                        this.var_boolean_f = false;
+                    }
+                    this.d(this.var_boolean_f);
+                    return;
+                }
+                this.d(false);
+                return;
+            }
+        } else if (this.var_byte_arr_a[2828 + this.var_int_w] != 59) {
+            if (this.var_byte_arr_a[8627 + this.var_int_v] != 0) {
+                if (this.var_byte_arr_arr_g[1][this.var_int_x] < this.var_byte_arr_arr_g[2][this.var_int_x]) {
+                    this.void_a(this.var_int_w, this.var_byte_arr_b[this.var_short_arr_a[60] + this.var_byte_arr_b[this.var_short_arr_a[177] + this.var_int_z] + this.var_byte_arr_a[4646 + this.var_int_w]]);
+                    return;
+                }
+                this.void_a(this.var_int_w, this.var_byte_arr_b[this.var_short_arr_a[59] + this.var_byte_arr_b[this.var_short_arr_a[177] + this.var_int_z] + this.var_byte_arr_a[4646 + this.var_int_w]]);
+                return;
+            }
+            if (this.var_byte_arr_a[8505 + this.var_int_v] < this.var_byte_arr_b[this.var_short_arr_a[83] + this.var_byte_arr_b[this.var_short_arr_a[84] + this.var_byte_arr_a[9237 + this.var_int_v]] + this.var_byte_arr_arr_f[1][this.var_int_x]] && this.var_int_z >= 12 || this.var_int_z == 4 && this.var_short_arr_arr_a[this.var_int_u][0] > 0) {
+                this.void_a(this.var_int_w, this.var_byte_arr_b[this.var_short_arr_a[58] + this.var_byte_arr_b[this.var_short_arr_a[174] + this.var_int_z] + this.var_byte_arr_a[4646 + this.var_int_w]]);
+                return;
+            }
+            this.void_a(this.var_int_w, this.var_byte_arr_b[this.var_short_arr_a[57] + this.var_byte_arr_b[this.var_short_arr_a[174] + this.var_int_z] + this.var_byte_arr_a[4646 + this.var_int_w]]);
+        }
+    }
+
+    private void ac() {
+        for (int i = this.var_int_u * 50 + 1; i <= (this.var_int_u + 1) * 50; ++i) {
+            if (this.var_byte_arr_a[1919 + i] <= 0 || this.var_byte_arr_a[4444 + i] != this.var_int_v || this.var_byte_arr_a[4646 + i] >= 0 || this.var_byte_arr_a[1313 + i] != -1 || i == this.var_byte_arr_a[8810 + this.var_int_v] && (this.var_byte_arr_a[8749 + this.var_int_v] != 2 || this.var_byte_arr_a[8627 + this.var_int_v] != 0)) continue;
+            ++this.var_int_C;
+        }
+        this.var_byte_arr_a[8932 + this.var_int_v] = (byte)this.var_int_C;
+    }
+
+    private void ad() {
+        if ((this.var_byte_arr_a[9054 + this.var_int_v] & 1) == 0) {
+            this.var_f_a.void_a(this.var_int_v, 0);
+            if (this.var_byte_arr_a[8627 + this.var_int_v] == 1) {
+                int n = 9115 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+            }
+        }
+        int n = 9054 + this.var_int_v;
+        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] & 0xFE);
+        this.var_byte_arr_a[8627 + this.var_int_v] = 0;
+        this.var_byte_arr_a[8810 + this.var_int_v] = this.var_byte_arr_a[9237 + this.var_int_v];
+        this.var_byte_arr_a[9237 + this.var_int_v] = 0;
+        this.var_byte_arr_arr_g[0][this.var_int_x] = 0;
+        this.var_f_a.void_d(this.var_int_v);
+    }
+
+    final boolean boolean_a(byte by) {
+        this.aK = 0;
+        while (this.aK < 10) {
+            if (this.var_byte_arr_arr_f[0][this.aK] < 1) {
+                this.var_byte_arr_arr_f[0][this.aK] = by;
+                this.var_byte_arr_arr_f[1][this.aK] = 0;
+                this.var_byte_arr_a[9298 + by] = 0;
+                return true;
+            }
+            ++this.aK;
+        }
+        return false;
+    }
+
+    final boolean boolean_b(byte by) {
+        this.aK = 0;
+        while (this.aK < 20) {
+            if (this.var_byte_arr_arr_g[0][this.aK] < 1) {
+                this.var_byte_arr_arr_g[0][this.aK] = by;
+                this.var_byte_arr_arr_g[1][this.aK] = 0;
+                this.var_byte_arr_arr_g[2][this.aK] = 0;
+                this.var_byte_arr_a[9237 + by] = this.var_byte_arr_a[8810 + by];
+                this.var_byte_arr_a[8810 + by] = 0;
+                this.var_byte_arr_a[9298 + by] = 0;
+                if (this.var_byte_arr_a[8749 + by] == 2) {
+                    this.void_a((int)by);
+                }
+                return true;
+            }
+            ++this.aK;
+        }
+        return false;
+    }
+
+    private void ae() {
+        if (this.var_int_u == 0 && this.var_f_a.var_boolean_N || this.var_int_u == 1 && this.var_byte_Q > 0) {
+            return;
+        }
+        int n = this.aK = this.var_byte_arr_a[8627 + this.var_int_v] == 0 ? this.var_byte_arr_b[this.var_short_arr_a[138] + (this.var_byte_arr_a[9115 + this.var_int_v] - 1) * 26 + this.var_byte_arr_a[8749 + this.var_int_v]] : this.var_byte_arr_b[this.var_short_arr_a[138] + 494 + this.var_byte_arr_a[8749 + this.var_int_v]];
+        if (this.var_byte_arr_a[9298 + this.var_int_v] < this.var_byte_arr_a[8932 + this.var_int_v] && this.var_byte_arr_a[8810 + this.var_int_v] > 0) {
+            this.var_byte_arr_a[9298 + this.var_int_v] = this.var_byte_arr_a[8932 + this.var_int_v];
+        }
+        if (this.var_byte_arr_a[9298 + this.var_int_v] >= this.aK) {
+            return;
+        }
+        this.aL = this.var_int_u * 50 + 1;
+        while (this.aL <= (this.var_int_u + 1) * 50 && this.var_byte_arr_a[9298 + this.var_int_v] < this.aK) {
+            byte by;
+            if ((this.var_int_u == 0 && (this.var_byte_arr_a[2828 + this.aL] == 69 || this.var_byte_arr_a[2828 + this.aL] == 84 && this.var_byte_arr_a[3939 + this.aL] == 69) && this.var_byte_arr_a[6161 + this.aL] == 0 && this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.aL]]] == 2 || this.var_int_u == 1 && this.var_byte_arr_j[this.aL - this.var_int_u * 50 - 1] < this.var_byte_arr_b[this.var_short_arr_a[242] + this.var_f_a.var_byte_q] && this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.aL]]] != 2) && (this.var_int_u != 0 || (by = -this.var_byte_arr_arr_b[this.var_byte_arr_a[6363 + this.aL]][this.var_byte_arr_a[6262 + this.aL]]) <= this.var_int_u * 30 || by > (this.var_int_u + 1) * 30 || this.var_byte_arr_a[8749 + by] < 12 && this.var_byte_arr_a[8627 + by] == 0)) {
+                byte by2 = this.var_byte_arr_a[8383 + this.var_int_v];
+                this.var_byte_arr_a[3131 + this.aL] = by2;
+                this.var_byte_arr_a[6262 + this.aL] = by2;
+                byte by3 = this.var_byte_arr_a[8444 + this.var_int_v];
+                this.var_byte_arr_a[3232 + this.aL] = by3;
+                this.var_byte_arr_a[6363 + this.aL] = by3;
+                this.var_byte_arr_a[2828 + this.aL] = 77;
+                this.var_byte_arr_a[6464 + this.aL] = 77;
+                this.var_byte_arr_a[6161 + this.aL] = 3;
+                int n2 = 9298 + this.var_int_v;
+                this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] + 1);
+                if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.aL]][this.var_byte_arr_a[0 + this.aL]] != this.aL) {
+                    this.var_byte_arr_a[2828 + this.aL] = 87;
+                }
+            }
+            ++this.aL;
+        }
+    }
+
+    final void void_c(int n) {
+        this.aK = 0;
+        while (this.aK < 10) {
+            if (this.var_byte_arr_arr_f[0][this.aK] == n) {
+                this.var_byte_arr_arr_f[0][this.aK] = 0;
+            }
+            ++this.aK;
+        }
+    }
+
+    private void d(boolean bl) {
+        if (bl) {
+            this.void_a(this.var_int_w, (byte)78);
+            if (this.var_byte_arr_a[2929 + this.var_int_w] != 115 && this.var_byte_arr_a[2929 + this.var_int_w] != 113) {
+                this.var_byte_arr_a[2929 + this.var_int_w] = 115;
+                this.var_byte_arr_a[3030 + this.var_int_w] = -1;
+                this.var_byte_arr_a[1313 + this.var_int_w] = 1;
+                return;
+            }
+            if (this.var_byte_arr_a[3030 + this.var_int_w] == this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[2929 + this.var_int_w] & 0xFF] - 1) {
+                this.var_byte_arr_a[2929 + this.var_int_w] = 113;
+                return;
+            }
+        } else {
+            if (this.var_byte_arr_a[2929 + this.var_int_w] == 115 || this.var_byte_arr_a[2929 + this.var_int_w] == 113) {
+                this.var_byte_arr_a[2929 + this.var_int_w] = 116;
+                this.var_byte_arr_a[3030 + this.var_int_w] = -1;
+                return;
+            }
+            if (this.var_byte_arr_a[3030 + this.var_int_w] == this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[2929 + this.var_int_w] & 0xFF] - 1) {
+                this.void_a(this.var_int_w, (byte)56);
+            }
+        }
+    }
+
+    final void void_h() {
+        try {
+            if (this.var_byte_arr_b[this.var_short_arr_a[202] + this.var_f_a.var_byte_q] > 0 && this.var_f_a.var_int_c % (this.var_byte_arr_b[this.var_short_arr_a[204] + this.var_f_a.var_byte_q] * 40) == 10 && (this.var_f_a.var_byte_q != 4 || this.var_f_a.var_int_c > 5000)) {
+                this.var_int_u = this.var_f_a.int_a(0xFFFFFF, (int)this.var_byte_arr_b[this.var_short_arr_a[202] + this.var_f_a.var_byte_q]);
+                if (this.var_f_a.var_byte_arr_t[this.var_int_u] >= this.var_byte_arr_b[this.var_short_arr_a[205] + this.var_f_a.var_byte_q]) {
+                    this.var_int_u = 0;
+                    while (this.var_int_u < this.var_byte_arr_b[this.var_short_arr_a[202] + this.var_f_a.var_byte_q] && this.var_f_a.var_byte_arr_t[this.var_int_u] >= this.var_byte_arr_b[this.var_short_arr_a[205] + this.var_f_a.var_byte_q]) {
+                        ++this.var_int_u;
+                    }
+                }
+                if (this.var_int_u < this.var_byte_arr_b[this.var_short_arr_a[202] + this.var_f_a.var_byte_q]) {
+                    this.var_int_v = this.var_f_a.int_a(0xFFFFFF, 100);
+                    this.var_int_w = 0;
+                    while (this.var_int_w < 3 && this.var_int_v >= this.var_byte_arr_b[this.var_short_arr_a[185] + (this.var_byte_arr_b[this.var_short_arr_a[201] + this.var_f_a.var_byte_q] + this.var_int_u) * 3 + this.var_int_w]) {
+                        ++this.var_int_w;
+                    }
+                    this.var_int_v = 0;
+                    this.boolean_a(1, 10, (int)this.var_byte_arr_b[this.var_short_arr_a[199] + this.var_byte_arr_b[this.var_short_arr_a[201] + this.var_f_a.var_byte_q] + this.var_int_u], (int)this.var_byte_arr_b[this.var_short_arr_a[200] + this.var_byte_arr_b[this.var_short_arr_a[201] + this.var_f_a.var_byte_q] + this.var_int_u]);
+                    this.var_f_a.b(this.var_int_w, this.var_byte_arr_a[3131], this.var_byte_arr_a[3232], this.var_int_u);
+                    if (this.var_f_a.var_byte_q == 4 && this.var_f_a.var_byte_arr_t[0] > 1 && this.var_f_a.int_a(0xFFFFFF, 10) < this.var_f_a.var_byte_arr_t[0]) {
+                        this.var_int_v = 0;
+                        while (this.var_int_v < 22) {
+                            if (this.var_byte_arr_a[9469 + this.var_int_v] == 0) {
+                                this.var_byte_arr_a[9469 + this.var_int_v] = 2;
+                            }
+                            ++this.var_int_v;
+                        }
+                        this.var_f_a.var_byte_arr_t[0] = 0;
+                    }
+                }
+            }
+            this.var_int_v = 0;
+            while (this.var_int_v < 22) {
+                if (this.var_byte_arr_a[9513 + this.var_int_v] > 0) {
+                    this.af();
+                    this.ah();
+                }
+                ++this.var_int_v;
+            }
+            return;
+        }
+        catch (Exception exception) {
+            return;
+        }
+    }
+
+    private void af() {
+        int n = 9579 + this.var_int_v;
+        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+        if (this.var_byte_arr_a[9579 + this.var_int_v] >= this.var_f_a.var_byte_arr_arr_j[4][this.var_byte_arr_a[9557 + this.var_int_v] & 0xFF]) {
+            this.var_byte_arr_a[9579 + this.var_int_v] = 0;
+            if (this.var_byte_arr_a[9557 + this.var_int_v] == 37 + this.var_byte_arr_a[9535 + this.var_int_v]) {
+                this.a(this.var_byte_arr_a[9359 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[1] + this.var_byte_arr_a[9491 + this.var_int_v]], this.var_byte_arr_a[9381 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[9491 + this.var_int_v]], 2, this.var_byte_arr_a[9601 + this.var_int_v] > 0 ? 1 : 2, this.var_byte_arr_a[9601 + this.var_int_v] > 0 ? this.var_byte_arr_a[9601 + this.var_int_v] : -this.var_byte_arr_a[9601 + this.var_int_v], 0, this.var_byte_arr_b[this.var_short_arr_a[182] + this.var_byte_arr_a[9535 + this.var_int_v]] * (2 + this.var_f_a.int_a(255, 3)) / 4, 0);
+            }
+        }
+        if (this.var_byte_arr_a[9403 + this.var_int_v] == 0 && this.var_byte_arr_a[9425 + this.var_int_v] == 0) {
+            this.var_byte_arr_a[9623 + this.var_int_v] = 0;
+            if (this.var_byte_arr_a[9447 + this.var_int_v] > 5) {
+                if (this.var_byte_arr_a[9447 + this.var_int_v] > 19) {
+                    int n2 = 9447 + this.var_int_v;
+                    this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] - 19);
+                    this.a((int)this.var_byte_arr_a[0 + this.var_byte_arr_a[9447 + this.var_int_v]], (int)this.var_byte_arr_a[101 + this.var_byte_arr_a[9447 + this.var_int_v]], this.var_byte_arr_a[9447 + this.var_int_v], 0);
+                } else {
+                    this.e(false);
+                    this.var_byte_arr_a[9557 + this.var_int_v] = (byte)(10 + this.var_byte_arr_a[9535 + this.var_int_v]);
+                    this.var_byte_arr_a[9579 + this.var_int_v] = 0;
+                }
+                this.var_byte_arr_a[9447 + this.var_int_v] = 0;
+            } else if (!(this.var_f_a.var_int_c % this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]] != 0 && (this.var_byte_arr_a[9557 + this.var_int_v] & 0xFF) > 7 || this.var_f_a.var_byte_q == 3 && this.var_byte_f >= 5)) {
+                this.boolean_a(6, 6, (int)this.var_byte_arr_a[9359 + this.var_int_v], (int)this.var_byte_arr_a[9381 + this.var_int_v]);
+                if (this.var_byte_arr_a[9601 + this.var_int_v] != 0) {
+                    if (this.var_byte_arr_a[9601 + this.var_int_v] > 0) {
+                        if (this.var_byte_arr_a[1919 + this.var_byte_arr_a[9601 + this.var_int_v]] <= 0 || this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_byte_arr_a[9601 + this.var_int_v]]][this.var_byte_arr_a[0 + this.var_byte_arr_a[9601 + this.var_int_v]]] != this.var_byte_arr_a[9601 + this.var_int_v]) {
+                            this.var_byte_arr_a[9601 + this.var_int_v] = 0;
+                        } else {
+                            this.var_byte_arr_a[9645 + this.var_int_v] = this.var_byte_arr_a[0 + this.var_byte_arr_a[9601 + this.var_int_v]];
+                            this.var_byte_arr_a[9667 + this.var_int_v] = this.var_byte_arr_a[101 + this.var_byte_arr_a[9601 + this.var_int_v]];
+                            this.var_byte_arr_a[9689 + this.var_int_v] = 0;
+                            if (this.int_a((int)this.var_byte_arr_a[9359 + this.var_int_v], (int)this.var_byte_arr_a[9381 + this.var_int_v], 101) > 59 && (this.var_f_a.var_byte_q != 3 || this.var_byte_f != 4)) {
+                                this.var_byte_arr_a[9601 + this.var_int_v] = 0;
+                                this.var_byte_arr_a[9645 + this.var_int_v] = this.var_byte_arr_a[9359 + this.var_int_v];
+                                this.var_byte_arr_a[9667 + this.var_int_v] = this.var_byte_arr_a[9381 + this.var_int_v];
+                            }
+                        }
+                    } else if (this.var_byte_arr_a[8505 + -this.var_byte_arr_a[9601 + this.var_int_v]] <= 0) {
+                        this.var_byte_arr_a[9601 + this.var_int_v] = 0;
+                    }
+                }
+            }
+            this.var_int_z = this.int_a((int)this.var_byte_arr_a[9359 + this.var_int_v], (int)this.var_byte_arr_a[9381 + this.var_int_v], 101);
+            this.ag();
+            return;
+        }
+        this.var_byte_arr_a[9557 + this.var_int_v] = (byte)(2 + this.var_byte_arr_a[9535 + this.var_int_v]);
+    }
+
+    private void ag() {
+        if (this.var_int_z / 10 - (this.var_byte_arr_a[9601 + this.var_int_v] != 0 ? 1 : 0) > 0) {
+            if (this.var_byte_arr_a[9711 + this.var_int_v] >= this.var_byte_arr_a[9689 + this.var_int_v]) {
+                if (this.var_f_a.var_int_c % this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]] == 0 || this.var_byte_arr_a[9601 + this.var_int_v] != 0) {
+                    this.var_byte_arr_a[9711 + this.var_int_v] = 0;
+                    this.var_byte_arr_a[9689 + this.var_int_v] = 0;
+                    this.var_byte_arr_a[9689 + this.var_int_v] = this.a(this.var_byte_arr_a[9381 + this.var_int_v], this.var_byte_arr_a[9359 + this.var_int_v], this.var_byte_arr_a[9667 + this.var_int_v], this.var_byte_arr_a[9645 + this.var_int_v], 0, 101);
+                    if (this.var_byte_arr_a[9689 + this.var_int_v] == 0 && this.var_boolean_arr_a[2]) {
+                        this.e(false);
+                    }
+                }
+                if (this.var_byte_arr_a[9557 + this.var_int_v] > 7 || this.var_byte_arr_a[9711 + this.var_int_v] >= this.var_byte_arr_a[9689 + this.var_int_v]) {
+                    this.var_byte_arr_a[9557 + this.var_int_v] = (byte)(10 + this.var_byte_arr_a[9535 + this.var_int_v]);
+                    this.var_byte_arr_a[9579 + this.var_int_v] = 0;
+                }
+            }
+            if (this.var_byte_arr_a[9711 + this.var_int_v] < this.var_byte_arr_a[9689 + this.var_int_v]) {
+                if (this.var_byte_arr_arr_b[this.var_byte_arr_arr_arr_b[1][this.var_int_v][this.var_byte_arr_a[9711 + this.var_int_v]]][this.var_byte_arr_arr_arr_b[0][this.var_int_v][this.var_byte_arr_a[9711 + this.var_int_v]]] != 0) {
+                    this.var_byte_arr_a[9711 + this.var_int_v] = 0;
+                    this.var_byte_arr_a[9689 + this.var_int_v] = 0;
+                    this.var_byte_arr_a[9557 + this.var_int_v] = (byte)(10 + this.var_byte_arr_a[9535 + this.var_int_v]);
+                    this.var_byte_arr_a[9579 + this.var_int_v] = 0;
+                    return;
+                }
+                this.var_byte_arr_a[9491 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[4] + (this.var_byte_arr_arr_arr_b[0][this.var_int_v][this.var_byte_arr_a[9711 + this.var_int_v]] - this.var_byte_arr_a[9359 + this.var_int_v] + 1) * 3 + this.var_byte_arr_arr_arr_b[1][this.var_int_v][this.var_byte_arr_a[9711 + this.var_int_v]] - this.var_byte_arr_a[9381 + this.var_int_v] + 1];
+                this.var_byte_arr_a[9557 + this.var_int_v] = (byte)(2 + this.var_byte_arr_a[9535 + this.var_int_v]);
+                this.var_byte_arr_arr_b[this.var_byte_arr_a[9381 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[9491 + this.var_int_v]]][this.var_byte_arr_a[9359 + this.var_int_v] + this.var_byte_arr_b[this.var_short_arr_a[1] + this.var_byte_arr_a[9491 + this.var_int_v]]] = -128;
+                int n = 9711 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+                this.var_byte_arr_a[9447 + this.var_int_v] = 0;
+                return;
+            }
+        } else {
+            if ((this.var_byte_arr_a[9557 + this.var_int_v] & 0xFF) <= 7) {
+                this.var_byte_arr_a[9579 + this.var_int_v] = 0;
+            }
+            if (this.var_byte_arr_a[9579 + this.var_int_v] == 0) {
+                if (this.var_byte_arr_a[9447 + this.var_int_v] == 0) {
+                    this.ai();
+                }
+                if (this.var_byte_arr_a[9601 + this.var_int_v] == 0 && this.var_byte_arr_a[9447 + this.var_int_v] < 19) {
+                    int n = 9447 + this.var_int_v;
+                    this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+                    return;
+                }
+                this.var_byte_arr_a[9447 + this.var_int_v] = 0;
+                this.var_byte_arr_a[9491 + this.var_int_v] = (byte)(this.var_int_z % 10);
+            }
+        }
+    }
+
+    private void ah() {
+        if ((this.var_byte_arr_a[9557 + this.var_int_v] & 0xFF) <= 7) {
+            this.var_int_w = this.var_byte_arr_a[9491 + this.var_int_v] & 1;
+            int n = 9623 + this.var_int_v;
+            this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+            this.var_byte_arr_a[9403 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[5 + this.var_int_w] + this.var_byte_arr_b[this.var_short_arr_a[12 + this.var_int_w * 2] + this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]]] + (this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]]] + this.var_byte_arr_a[9623 + this.var_int_v] * this.var_byte_arr_b[this.var_short_arr_a[1] + 0 + this.var_byte_arr_a[9491 + this.var_int_v]]) % this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]]]];
+            this.var_byte_arr_a[9425 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[7 + this.var_int_w] + this.var_byte_arr_b[this.var_short_arr_a[12 + this.var_int_w * 2] + this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]]] + (this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]]] + this.var_byte_arr_a[9623 + this.var_int_v] * this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[9491 + this.var_int_v]]) % this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]]]];
+            if (this.var_byte_arr_a[9623 + this.var_int_v] == (this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]]] + 1) / 2) {
+                this.var_byte_arr_arr_b[this.var_byte_arr_a[9381 + this.var_int_v]][this.var_byte_arr_a[9359 + this.var_int_v]] = 0;
+                int n2 = 9359 + this.var_int_v;
+                this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] + this.var_byte_arr_b[this.var_short_arr_a[1] + 0 + this.var_byte_arr_a[9491 + this.var_int_v]]);
+                int n3 = 9381 + this.var_int_v;
+                this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[9491 + this.var_int_v]]);
+                if ((this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]]] & 1) == 0 && this.var_byte_arr_b[this.var_short_arr_a[1] + 0 + this.var_byte_arr_a[9491 + this.var_int_v]] < 0) {
+                    int n4 = 9403 + this.var_int_v;
+                    this.var_byte_arr_a[n4] = (byte)(this.var_byte_arr_a[n4] + 22);
+                }
+                if ((this.var_byte_arr_b[this.var_short_arr_a[15] + this.var_int_w * 9 + this.var_byte_arr_b[this.var_short_arr_a[179] + this.var_byte_arr_a[9535 + this.var_int_v]]] & 1) == 0 && this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[9491 + this.var_int_v]] < 0) {
+                    int n5 = 9425 + this.var_int_v;
+                    this.var_byte_arr_a[n5] = (byte)(this.var_byte_arr_a[n5] + 16);
+                }
+                this.var_byte_arr_arr_b[this.var_byte_arr_a[9381 + this.var_int_v]][this.var_byte_arr_a[9359 + this.var_int_v]] = (byte)(this.var_int_v + 101);
+            }
+        }
+    }
+
+    private void ai() {
+        if (this.var_byte_arr_a[9601 + this.var_int_v] == 0) {
+            this.var_int_x = this.var_f_a.int_a(0xFFFFFF, 100);
+            this.var_byte_arr_a[9557 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[184] + this.var_int_x / 50 * 3 + this.var_byte_arr_a[9535 + this.var_int_v]];
+        } else {
+            this.var_byte_arr_a[9557 + this.var_int_v] = (byte)(37 + this.var_byte_arr_a[9535 + this.var_int_v]);
+        }
+        if (this.var_f_a.var_byte_q == 4 && this.var_byte_arr_a[9469 + this.var_int_v] == 2) {
+            this.var_byte_arr_a[9469 + this.var_int_v] = 3;
+        }
+    }
+
+    private void e(boolean bl) {
+        boolean bl2 = this.var_f_a.var_byte_q != 3 || this.var_byte_arr_a[9469 + this.var_int_v] != 0 || this.var_byte_arr_a[9359 + this.var_int_v] > 27 || this.var_byte_arr_a[9359 + this.var_int_v] < 20 || this.var_byte_arr_a[9381 + this.var_int_v] > 6;
+        this.var_byte_arr_a[9689 + this.var_int_v] = 0;
+        this.var_int_x = this.var_f_a.int_a(0xFFFFFF, 63);
+        this.var_int_w = this.var_byte_arr_b[this.var_short_arr_a[201] + this.var_f_a.var_byte_q] + this.var_byte_arr_a[9469 + this.var_int_v];
+        this.var_int_B = this.var_byte_arr_b[this.var_short_arr_a[203] + this.var_f_a.var_byte_q];
+        this.var_byte_arr_a[9645 + this.var_int_v] = (byte)(!bl2 ? this.var_byte_arr_a[9359 + this.var_int_v] : b.int_b(this.var_byte_arr_a[9359 + this.var_int_v] + (bl ? this.var_byte_arr_b[this.var_short_arr_a[1] + this.var_byte_E] : (this.var_int_x & 7) - 4), bl ? 0 : this.var_byte_arr_b[this.var_short_arr_a[199] + this.var_int_w] - this.var_int_B, bl ? this.var_f_a.var_short_c - 1 : this.var_byte_arr_b[this.var_short_arr_a[199] + this.var_int_w] + this.var_int_B));
+        this.var_byte_arr_a[9667 + this.var_int_v] = (byte)(!bl2 ? this.var_byte_arr_a[9381 + this.var_int_v] : b.int_b(this.var_byte_arr_a[9381 + this.var_int_v] + (bl ? this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_E] : (this.var_int_x >> 3 & 7) - 4), bl ? 0 : this.var_byte_arr_b[this.var_short_arr_a[200] + this.var_int_w] - this.var_int_B, bl ? this.var_f_a.var_short_d - 1 : this.var_byte_arr_b[this.var_short_arr_a[200] + this.var_int_w] + this.var_int_B));
+        if (this.var_byte_arr_arr_b[this.var_byte_arr_a[9667 + this.var_int_v]][this.var_byte_arr_a[9645 + this.var_int_v]] != 0 && bl2) {
+            this.boolean_a(2, 127, (int)this.var_byte_arr_a[9645 + this.var_int_v], (int)this.var_byte_arr_a[9667 + this.var_int_v]);
+        }
+    }
+
+    final void void_i() {
+        this.aM = 0;
+        while (this.aM < 50) {
+            if (this.var_byte_arr_a[9833 + this.aM] != 0) {
+                if ((this.var_f_a.var_int_c & 0x7F) == 1 && this.var_byte_arr_a[9833 + this.aM] == 6) {
+                    if (this.var_byte_arr_a[9883 + this.aM] > 0) {
+                        int n = 9883 + this.aM;
+                        this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] - 1);
+                    }
+                } else if ((this.var_f_a.var_int_c & 0x1FF) == 1 && this.var_byte_arr_a[9833 + this.aM] != 7 && this.var_byte_arr_a[9883 + this.aM] < this.var_byte_arr_b[this.var_short_arr_a[110] + this.var_byte_arr_a[9833 + this.aM]]) {
+                    int n = 9883 + this.aM;
+                    this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] + 1);
+                }
+                if ((this.var_f_a.var_int_c & 7) == (this.aM & 7)) {
+                    this.aj();
+                }
+                this.var_int_w = 0;
+                while (this.var_int_w <= 3) {
+                    if (this.var_byte_arr_a[9883 + this.aM] <= this.var_byte_arr_b[this.var_short_arr_a[110] + this.var_byte_arr_a[9833 + this.aM]] * this.var_byte_arr_b[this.var_short_arr_a[85] + this.var_int_w] / 10) {
+                        if (this.var_byte_arr_a[9933 + this.aM] != this.var_int_w) {
+                            this.var_f_a.c(this.var_byte_arr_a[9733 + this.aM], this.var_byte_arr_a[9783 + this.aM], 1, 1);
+                        }
+                        this.var_byte_arr_a[9933 + this.aM] = (byte)this.var_int_w;
+                        break;
+                    }
+                    ++this.var_int_w;
+                }
+            }
+            ++this.aM;
+        }
+        if (this.boolean_t()) {
+            return;
+        }
+        if (this.var_f_a.var_byte_q == 4 ? this.boolean_u() : this.boolean_v()) {
+            return;
+        }
+        this.ak();
+        this.al();
+        if (this.var_f_a.var_byte_q <= 4) {
+            this.var_int_v = this.var_byte_arr_b[this.var_short_arr_a[302] + this.var_f_a.var_byte_q] + this.var_byte_L;
+            if (this.var_byte_K >= 50 && this.var_int_v < this.var_byte_arr_b[this.var_short_arr_a[302] + this.var_f_a.var_byte_q + 1] && this.var_f_a.var_int_c >= this.var_byte_arr_b[this.var_short_arr_a[299] + this.var_int_v] * 100) {
+                this.var_byte_L = (byte)(this.var_byte_L + (this.var_f_a.var_int_c >= this.var_byte_arr_b[this.var_short_arr_a[299] + this.var_int_v + 1] * 100 ? 2 : 1));
+                this.void_j();
+                this.void_b(0, 0, 3);
+                this.var_f_a.void_b((int)this.var_byte_arr_b[this.var_short_arr_a[301] + this.var_int_v]);
+            }
+        }
+    }
+
+    private void aj() {
+        if (this.var_byte_arr_a[9883 + this.aM] == 0) {
+            if (this.var_byte_arr_a[9833 + this.aM] == 7) {
+                this.var_byte_arr_a[9833 + this.aM] = 0;
+                this.var_byte_arr_arr_b[this.var_byte_arr_a[9783 + this.aM]][this.var_byte_arr_a[9733 + this.aM]] = 0;
+                this.var_f_a.c(this.var_byte_arr_a[9733 + this.aM], this.var_byte_arr_a[9783 + this.aM], 1, 1);
+            }
+            if (this.var_byte_arr_a[9833 + this.aM] == 6) {
+                this.var_byte_arr_a[9833 + this.aM] = 7;
+                this.var_byte_arr_a[9883 + this.aM] = this.var_byte_arr_b[this.var_short_arr_a[110] + 7];
+                this.var_f_a.c(this.var_byte_arr_a[9733 + this.aM], this.var_byte_arr_a[9783 + this.aM], 1, 1);
+            }
+            this.am();
+        }
+    }
+
+    private boolean boolean_t() {
+        this.aM = 0;
+        while (this.aM < 2) {
+            this.var_int_w = 0;
+            while (this.var_int_w < 5 && this.var_f_a.var_byte_arr_arr_arr_c[this.aM][this.var_int_w][2] >= 0) {
+                if ((this.var_f_a.var_int_c & 7) == 0) {
+                    byte[] byArray = this.var_f_a.var_byte_arr_arr_arr_c[this.aM][this.var_int_w];
+                    byArray[2] = (byte)(byArray[2] + 1);
+                }
+                if (this.var_f_a.var_byte_arr_arr_arr_c[this.aM][this.var_int_w][2] >= 100) {
+                    this.var_f_a.var_byte_arr_arr_arr_c[this.aM][this.var_int_w][2] = -1;
+                } else {
+                    this.var_int_u = -1;
+                    while (this.var_int_u < 2) {
+                        this.var_int_v = -1;
+                        while (this.var_int_v < 2) {
+                            this.var_int_C = this.var_f_a.var_byte_arr_arr_arr_c[this.aM][this.var_int_w][0] + this.var_int_u;
+                            this.var_int_D = this.var_f_a.var_byte_arr_arr_arr_c[this.aM][this.var_int_w][1] + this.var_int_v;
+                            if (this.var_int_C >= 0 && this.var_int_C < this.var_f_a.var_short_c && this.var_int_D >= 0 && this.var_int_D < this.var_f_a.var_short_d) {
+                                this.var_int_A = this.var_byte_arr_arr_b[this.var_int_D][this.var_int_C];
+                                if (this.var_int_A >= 1 && this.var_int_A <= 100 && this.var_byte_arr_a[1414 + this.var_int_A] >= 12) {
+                                    int n = 7979 + this.var_int_A;
+                                    this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] | 4);
+                                }
+                            }
+                            ++this.var_int_v;
+                        }
+                        ++this.var_int_u;
+                    }
+                }
+                ++this.var_int_w;
+            }
+            ++this.aM;
+        }
+        if (!(this.var_f_a.var_byte_q == 3 || this.var_f_a.var_byte_q == 2 && this.var_byte_f > 2 || this.var_byte_arr_a[1919 + this.var_short_arr_arr_a[0][17]] != 0 && this.var_byte_arr_a[1414 + this.var_short_arr_arr_a[0][17]] >= 12 || this.var_f_a.var_boolean_K || this.var_short_arr_arr_a[0][11] <= 0 || this.var_byte_f >= 50 || this.var_f_a.var_byte_u != 0 || this.var_byte_K < 50)) {
+            this.var_int_v = 1;
+            while (this.var_int_v <= 50) {
+                if (this.var_byte_arr_a[1919 + this.var_int_v] > 0 && this.var_byte_arr_a[1414 + this.var_int_v] >= 12) {
+                    this.var_f_a.var_boolean_K = true;
+                    this.var_f_a.a((byte)18, (byte)this.var_int_v, (byte)this.var_int_v);
+                    return true;
+                }
+                ++this.var_int_v;
+            }
+        }
+        return false;
+    }
+
+    private boolean boolean_u() {
+        if (this.var_byte_arr_a[1919 + this.var_short_arr_arr_a[0][17]] > 0 && this.var_byte_arr_a[1414 + this.var_short_arr_arr_a[0][17]] >= 12) {
+            if ((this.var_f_a.var_int_arr_arr_arr_a[1][0][67] & 0x100) != 0 && (this.var_byte_R & 0x40) == 0 && this.var_byte_K >= 50) {
+                this.void_b((int)this.var_short_arr_arr_a[0][17], 0, 1);
+                this.var_f_a.void_b(51);
+                this.var_byte_R = (byte)(this.var_byte_R | 0x40);
+                return true;
+            }
+            if (this.var_byte_f > 0 && this.var_byte_f < 3 && this.var_f_a.var_int_c >= 3000 + this.var_byte_f * 7000 && this.var_byte_K >= 50) {
+                this.c(false);
+                this.var_int_N = 0;
+                while (this.var_int_N < 4) {
+                    this.var_f_a.var_byte_arr_p[this.var_int_N + 1] = this.var_byte_arr_arr_e[this.var_int_N][0] != 0 ? this.var_byte_arr_arr_e[this.var_int_N][0] : this.var_byte_arr_arr_e[0][0];
+                    ++this.var_int_N;
+                }
+                this.var_f_a.void_b(this.var_byte_f == 1 ? 53 : 54);
+                this.var_byte_f = (byte)(this.var_byte_f + 50);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean boolean_v() {
+        block27: {
+            block29: {
+                block28: {
+                    if (this.var_byte_f >= this.var_byte_arr_b[this.var_short_arr_a[291] + this.var_f_a.var_byte_q] || this.var_f_a.var_byte_q != 3 && (this.var_byte_arr_a[1919 + this.var_short_arr_arr_a[0][17]] <= 0 || this.var_byte_arr_a[1414 + this.var_short_arr_arr_a[0][17]] < 12)) break block27;
+                    this.var_int_N = this.var_byte_arr_b[this.var_short_arr_a[287] + this.var_byte_arr_b[this.var_short_arr_a[288] + this.var_f_a.var_byte_q] + this.var_byte_f];
+                    if (this.var_short_arr_arr_a[1][11] <= 0 && this.var_int_N == 3 && this.var_int_F == 1000000) {
+                        this.var_int_F = this.var_f_a.var_int_c;
+                    }
+                    if (this.var_int_N < 3 || this.var_int_N > 9) break block27;
+                    if (this.var_int_N != 7) break block28;
+                    if (this.var_f_a.var_byte_q != 3 || this.var_byte_f != 2 || this.var_byte_K >= 50) {
+                        this.aM = 1;
+                        while (this.aM <= 50) {
+                            if (this.var_byte_arr_a[1919 + this.aM] > 0 && this.var_byte_arr_a[1414 + this.aM] >= 12 && this.var_byte_arr_a[202 + this.aM] == 0 && this.var_byte_arr_a[303 + this.aM] == 0) {
+                                this.void_b(this.aM, 0, this.var_byte_arr_a[0 + this.aM], this.var_byte_arr_a[101 + this.aM]);
+                                if (this.var_byte_f >= 50) {
+                                    if (this.var_f_a.var_byte_q == 3) {
+                                        this.aM = 0;
+                                        while (this.aM < 5) {
+                                            if (this.var_f_a.var_byte_arr_p[this.aM] != 0) {
+                                                this.a((int)this.var_f_a.var_byte_arr_p[this.aM], true);
+                                            }
+                                            ++this.aM;
+                                        }
+                                    }
+                                    return true;
+                                }
+                            }
+                            ++this.aM;
+                        }
+                    }
+                    break block27;
+                }
+                if (this.var_int_N == 3 && this.var_f_a.var_int_c - this.var_int_F > 40 || this.var_int_F > 2 && this.var_int_N == 4) break block29;
+                int n = this.var_f_a.var_int_c - this.var_int_F;
+                int n2 = this.var_f_a.var_byte_q < 2 ? 30 : 120;
+                if (!(n > n2 && this.var_int_N == 5 || this.var_int_N == 6 && this.var_short_arr_arr_a[1][14] < 5) && (this.var_int_N != 8 || this.var_byte_arr_a[8536] != 0)) break block27;
+            }
+            if (this.var_f_a.var_byte_q < 2) {
+                this.var_byte_I = (byte)(this.var_int_N == 4 ? 3 : 0);
+            }
+            if (this.var_int_N == 8) {
+                this.var_f_a.void_b(58, 30);
+                this.var_f_a.getClass();
+                this.var_f_a.var_byte_aw = 1;
+                this.a(3, 57, 30, (byte)0, (byte)9);
+                this.var_f_a.getClass();
+                this.var_f_a.var_byte_aw = (byte)2;
+                this.var_int_N = 1;
+                while (this.var_int_N < 9) {
+                    if (this.var_byte_arr_a[1919 + this.var_int_N] > 0) {
+                        if (this.var_byte_arr_a[1515 + this.var_int_N] == 0) {
+                            if (this.var_f_a.var_byte_arr_p[4] < 1) {
+                                this.var_f_a.var_byte_arr_p[4] = (byte)this.var_int_N;
+                            }
+                        } else if (this.var_f_a.var_byte_arr_p[2] < 1) {
+                            this.var_f_a.var_byte_arr_p[2] = (byte)this.var_int_N;
+                        } else if (this.var_f_a.var_byte_arr_p[3] < 1) {
+                            this.var_f_a.var_byte_arr_p[3] = (byte)this.var_int_N;
+                        }
+                        this.var_byte_arr_a[606 + this.var_int_N] = (byte)(3 + (this.var_byte_arr_a[1515 + this.var_int_N] << 2));
+                    }
+                    ++this.var_int_N;
+                }
+                this.var_f_a.a((byte)0, (byte)56, (byte)30, (byte)2, (byte)0);
+                this.var_f_a.a((byte)0, (byte)55, (byte)31, (byte)2, (byte)0);
+                short[] sArray = this.var_short_arr_arr_a[0];
+                sArray[19] = (short)(sArray[19] - 5);
+            } else if (this.var_int_N == 6) {
+                this.a(8, 21, 72, (byte)1, (byte)3);
+                this.a(8, 21, 75, (byte)1, (byte)3);
+                this.var_int_N = 51;
+                while (this.var_int_N <= 100) {
+                    if (this.var_byte_arr_a[1919 + this.var_int_N] > 0) {
+                        this.var_byte_arr_a[6161 + this.var_int_N] = 2;
+                        this.var_byte_arr_a[4747 + this.var_int_N] = -1;
+                        this.var_byte_arr_a[3131 + this.var_int_N] = this.var_byte_arr_a[8384];
+                        this.var_byte_arr_a[3232 + this.var_int_N] = this.var_byte_arr_a[8445];
+                    }
+                    ++this.var_int_N;
+                }
+            } else if (this.var_f_a.var_byte_q == 5) {
+                this.void_b(0, 0, 1);
+            } else {
+                this.c(this.var_f_a.var_byte_q == 2);
+                this.var_int_N = 0;
+                while (this.var_int_N < 4) {
+                    this.var_f_a.var_byte_arr_p[this.var_int_N + 1] = this.var_byte_arr_arr_e[this.var_int_N][0] != 0 ? this.var_byte_arr_arr_e[this.var_int_N][0] : this.var_byte_arr_arr_e[0][0];
+                    ++this.var_int_N;
+                }
+            }
+            this.var_f_a.void_b((int)this.var_byte_arr_b[this.var_short_arr_a[286] + this.var_byte_arr_b[this.var_short_arr_a[288] + this.var_f_a.var_byte_q] + this.var_byte_f]);
+            this.var_byte_f = (byte)(this.var_byte_f + 50);
+            return true;
+        }
+        return false;
+    }
+
+    private void ak() {
+        if (this.var_short_arr_arr_a[1][14] <= 0 && (this.var_byte_arr_b[this.var_short_arr_a[279] + this.var_f_a.var_byte_q] & 1) != 0) {
+            if (this.var_f_a.var_byte_u == 0) {
+                this.var_f_a.var_byte_u = 1;
+            }
+        } else if ((this.var_short_arr_arr_a[0][11] <= 0 || this.var_byte_arr_a[8506] <= 0 && (this.var_byte_arr_b[this.var_short_arr_a[279] + this.var_f_a.var_byte_q] & 2) != 0) && this.var_f_a.var_byte_u == 0) {
+            this.var_f_a.var_byte_u = (byte)50;
+        }
+        if (this.var_short_arr_arr_a[1][14] <= 4 && this.var_short_arr_arr_a[1][11] <= 0) {
+            switch (this.var_f_a.var_byte_q) {
+                case 5: {
+                    if (this.var_f_a.var_byte_u == 0) {
+                        this.var_f_a.var_byte_u = 1;
+                        return;
+                    }
+                    if (this.var_f_a.var_byte_u != 20) break;
+                    this.var_f_a.var_byte_u = 0;
+                    this.var_f_a.void_c();
+                    return;
+                }
+                case 2: {
+                    if (this.var_byte_f >= 2) break;
+                    this.var_byte_f = (byte)2;
+                }
+            }
+        }
+    }
+
+    private void al() {
+        if ((this.var_f_a.var_byte_p & 1) == 1 && this.var_f_a.var_byte_q < 2 && this.var_byte_g < this.var_byte_arr_b[this.var_short_arr_a[294] + this.var_byte_f] && !this.var_f_a.var_boolean_K) {
+            if (this.var_byte_J < 120 - this.var_byte_arr_b[this.var_short_arr_a[298] + this.var_byte_g]) {
+                block0 : switch (this.var_byte_arr_b[this.var_short_arr_a[296] + this.var_byte_g]) {
+                    case 1: {
+                        this.var_int_v = 1;
+                        while (this.var_int_v <= 30) {
+                            if (!this.var_f_a.var_boolean_F && this.var_byte_arr_a[8505 + this.var_int_v] > 0 && this.var_byte_arr_a[8749 + this.var_int_v] == this.var_byte_arr_b[this.var_short_arr_a[297] + this.var_byte_g]) {
+                                this.var_byte_J = (byte)(120 - this.var_byte_arr_b[this.var_short_arr_a[298] + this.var_byte_g]);
+                                break;
+                            }
+                            ++this.var_int_v;
+                        }
+                        if (this.var_byte_J >= 120 - this.var_byte_arr_b[this.var_short_arr_a[298] + this.var_byte_g]) break;
+                        this.var_byte_J = 0;
+                        break;
+                    }
+                    case 2: {
+                        this.var_int_v = 1;
+                        while (this.var_int_v <= 50) {
+                            if (this.var_byte_arr_a[1919 + this.var_int_v] > 0 && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] == this.var_byte_arr_b[this.var_short_arr_a[297] + this.var_byte_g]) {
+                                this.var_byte_J = (byte)(120 - this.var_byte_arr_b[this.var_short_arr_a[298] + this.var_byte_g]);
+                                break block0;
+                            }
+                            ++this.var_int_v;
+                        }
+                        break;
+                    }
+                    case 4: {
+                        if (this.var_short_arr_arr_a[1][11] != 0 || !this.var_f_a.var_boolean_N) break;
+                        this.var_byte_J = (byte)(120 - this.var_byte_arr_b[this.var_short_arr_a[298] + this.var_byte_g]);
+                    }
+                }
+            }
+            if ((this.var_f_a.var_int_c & 7) == 0) {
+                this.var_byte_J = (byte)(this.var_byte_J + 1);
+            }
+            if (this.var_byte_J >= (this.var_byte_arr_b[this.var_short_arr_a[296] + this.var_byte_g] == 0 ? this.var_byte_arr_b[this.var_short_arr_a[298] + this.var_byte_g] : (byte)120)) {
+                this.var_byte_J = 0;
+                this.void_b(0, 0, 3);
+                this.var_f_a.void_b((int)this.var_byte_arr_b[this.var_short_arr_a[295] + this.var_byte_g]);
+                this.var_byte_g = (byte)(this.var_byte_g + 1);
+                if (this.var_byte_g == 11) {
+                    this.aQ = this.var_f_a.var_int_c + 500;
+                }
+            }
+        }
+    }
+
+    private void a(int n, boolean bl) {
+        this.var_byte_arr_a[3131 + n] = this.var_byte_arr_a[0 + n];
+        this.var_byte_arr_a[3232 + n] = this.var_byte_arr_a[101 + n];
+        if ((this.var_byte_arr_a[2929 + n] & 0xFF) <= 7 && (this.var_byte_arr_a[1111 + n] & 0xF) < (this.var_byte_arr_b[this.var_short_arr_a[15] + (this.var_byte_arr_a[606 + n] & 1) * 9 + this.var_byte_arr_a[1010 + n] - this.var_byte_arr_a[7777 + n]] + 1) / 2 && this.var_byte_arr_a[1313 + n] >= 0 && this.var_byte_arr_a[808 + n] > 0) {
+            int n2 = 3131 + n;
+            this.var_byte_arr_a[n2] = (byte)(this.var_byte_arr_a[n2] + this.var_byte_arr_b[this.var_short_arr_a[1] + this.var_byte_arr_a[606 + n]]);
+            int n3 = 3232 + n;
+            this.var_byte_arr_a[n3] = (byte)(this.var_byte_arr_a[n3] + this.var_byte_arr_b[this.var_short_arr_a[1] + 8 + this.var_byte_arr_a[606 + n]]);
+        }
+        this.var_byte_arr_a[808 + n] = 0;
+        if (bl) {
+            this.var_byte_arr_a[6262 + n] = this.var_byte_arr_a[3131 + n];
+            this.var_byte_arr_a[6363 + n] = this.var_byte_arr_a[3232 + n];
+            this.void_a(n, (byte)69);
+        }
+    }
+
+    final void void_j() {
+        this.var_int_w = 0;
+        while (this.var_int_w < 12) {
+            this.var_f_a.var_byte_arr_f[this.var_int_w] = this.var_byte_arr_b[this.var_short_arr_a[113] + (this.var_f_a.var_byte_q < 4 ? 0 : (this.var_f_a.var_byte_q == 4 ? 12 : 24)) + this.var_int_w];
+            ++this.var_int_w;
+        }
+        if (this.var_f_a.var_byte_q > 4) {
+            return;
+        }
+        this.var_int_w = this.var_byte_arr_b[this.var_short_arr_a[302] + this.var_f_a.var_byte_q];
+        while (this.var_int_w < this.var_byte_arr_b[this.var_short_arr_a[302] + this.var_f_a.var_byte_q + 1]) {
+            if (this.var_f_a.var_int_c < this.var_byte_arr_b[this.var_short_arr_a[299] + this.var_int_w] * 100) {
+                return;
+            }
+            byte by = this.var_byte_arr_b[this.var_short_arr_a[300] + this.var_int_w];
+            this.var_f_a.var_byte_arr_f[by] = (byte)(this.var_f_a.var_byte_arr_f[by] + 1);
+            ++this.var_int_w;
+        }
+    }
+
+    final void void_k() {
+        if (this.var_f_a.var_byte_v == 1 && this.var_byte_K < 50) {
+            this.var_f_a.var_byte_h = (byte)2;
+            return;
+        }
+        if ((this.var_f_a.var_boolean_N || this.var_f_a.var_boolean_L || this.var_byte_O >= 0 && this.var_byte_O == this.var_byte_arr_b[this.var_short_arr_a[236] + this.var_byte_arr_b[this.var_short_arr_a[238] + this.var_f_a.var_byte_q] + this.var_byte_N] - 1) && this.var_f_a.var_byte_v == 1) {
+            this.var_f_a.var_byte_h = 1;
+            return;
+        }
+        this.var_f_a.var_byte_h = 0;
+    }
+
+    private void am() {
+        this.var_int_u = 0;
+        while (this.var_int_u < 2) {
+            this.var_int_v = this.var_int_u * 50 + 1;
+            while (this.var_int_v <= (this.var_int_u + 1) * 50) {
+                if (this.var_byte_arr_a[3232 + this.var_int_v] == this.var_byte_arr_a[9783 + this.aM] && (this.var_byte_arr_a[3131 + this.var_int_v] == this.var_byte_arr_a[9733 + this.aM] || this.var_byte_arr_a[2828 + this.var_int_v] == 13) && this.var_byte_arr_a[2828 + this.var_int_v] >= 10 && this.var_byte_arr_a[2828 + this.var_int_v] <= 16) {
+                    if (this.var_byte_arr_a[4444 + this.var_int_v] >= 0) {
+                        this.var_byte_arr_a[4444 + this.var_int_v] = -1;
+                        this.var_byte_arr_a[808 + this.var_int_v] = 0;
+                    }
+                    if ((this.var_byte_arr_a[2828 + this.var_int_v] == 16 || this.var_byte_arr_a[2828 + this.var_int_v] == 12) && this.var_byte_arr_a[3636 + this.var_int_v] > 0) {
+                        this.void_a(this.var_int_v, this.var_byte_arr_b[this.var_short_arr_a[160] + this.var_byte_arr_a[2828 + this.var_int_v]]);
+                        this.N();
+                    }
+                }
+                ++this.var_int_v;
+            }
+            ++this.var_int_u;
+        }
+    }
+
+    /*
+     * Enabled force condition propagation
+     * Lifted jumps to return sites
+     */
+    private void an() {
+        if (this.var_byte_arr_a[2828 + this.var_int_v] >= 10 && this.var_byte_arr_a[2828 + this.var_int_v] <= 16 && this.var_byte_arr_a[2828 + this.var_int_v] != 11 && this.var_byte_arr_a[2828 + this.var_int_v] != 14) {
+            this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[6262 + this.var_int_v];
+            this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[6363 + this.var_int_v];
+            if (!this.boolean_c(this.var_byte_arr_arr_b[this.var_byte_arr_a[6363 + this.var_int_v]][this.var_byte_arr_a[6262 + this.var_int_v]])) {
+                if (this.boolean_b(false)) return;
+                if (this.var_byte_arr_a[3636 + this.var_int_v] > 0) {
+                    this.void_a(this.var_int_v, this.var_byte_arr_b[this.var_short_arr_a[160] + this.var_byte_arr_a[2828 + this.var_int_v]]);
+                    this.N();
+                    return;
+                }
+                if (this.var_byte_arr_a[2828 + this.var_int_v] != 12 && this.var_byte_arr_a[2828 + this.var_int_v] != 16) return;
+                this.void_a(this.var_int_v, (byte)60);
+                this.var_byte_arr_a[6464 + this.var_int_v] = 12;
+                this.var_byte_arr_a[4444 + this.var_int_v] = 0;
+                return;
+            }
             this.g(1);
             return;
-         }
+        }
+        this.boolean_a(0, 19, b.int_b(this.var_byte_arr_a[0 + this.var_int_v] - 3 + this.var_f_a.int_a(255, 6), 0, this.var_f_a.var_short_c - 1), b.int_b(this.var_byte_arr_a[101 + this.var_int_v] - 3 + this.var_f_a.int_a(255, 6), 0, this.var_f_a.var_short_d - 1));
+    }
 
-         if (!this.b(false)) {
-            if (this.a[3636 + this.v] > 0) {
-               this.a(this.v, this.b[this.a[160] + this.a[2828 + this.v]]);
-               this.N();
-               return;
+    private boolean boolean_b(boolean bl) {
+        byte by = 0;
+        byte by2 = 0;
+        this.var_byte_E = (byte)12;
+        this.aM = 0;
+        while (this.aM < 50) {
+            if (this.var_byte_arr_a[9833 + this.aM] != 0) {
+                this.var_byte_z = (byte)(this.var_byte_arr_a[9733 + this.aM] - this.var_byte_arr_a[this.var_short_arr_b[bl ? 0 : 62] + this.var_int_v]);
+                this.var_byte_A = (byte)(this.var_byte_arr_a[9783 + this.aM] - this.var_byte_arr_a[this.var_short_arr_b[bl ? 1 : 63] + this.var_int_v]);
+                this.var_byte_C = (byte)(this.var_byte_arr_b[this.var_short_arr_a[53] + (this.var_byte_A > -12 && this.var_byte_A < 12 ? 12 + this.var_byte_A : 0) * 25 + (this.var_byte_z > -12 && this.var_byte_z < 12 ? 12 + this.var_byte_z : 0)] / 10);
+                if (this.var_byte_C <= (bl ? this.var_byte_arr_a[4949 + this.var_int_v] : (byte)9) && this.var_byte_C < this.var_byte_E && this.boolean_c((byte)(-this.aM - 61))) {
+                    by = this.var_byte_arr_a[9733 + this.aM];
+                    by2 = this.var_byte_arr_a[9783 + this.aM];
+                    this.var_byte_E = this.var_byte_C;
+                }
             }
+            ++this.aM;
+        }
+        if (this.var_byte_E < 12) {
+            this.var_byte_arr_a[3131 + this.var_int_v] = by;
+            this.var_byte_arr_a[3232 + this.var_int_v] = by2;
+            this.g(2);
+            return true;
+        }
+        return false;
+    }
 
-            if (this.a[2828 + this.v] == 12 || this.a[2828 + this.v] == 16) {
-               this.a(this.v, (byte)60);
-               this.a[6464 + this.v] = 12;
-               this.a[4444 + this.v] = 0;
-               return;
-            }
-         }
-      } else {
-         this.a((int)0, (int)19, (int)b((int)(this.a[0 + this.v] - 3 + this.a.a((int)255, (int)6)), (int)0, (int)(this.a.c - 1)), (int)b((int)(this.a[101 + this.v] - 3 + this.a.a((int)255, (int)6)), (int)0, (int)(this.a.d - 1)));
-      }
-
-   }
-
-   private boolean b(boolean var1) {
-      byte var2 = 0;
-      byte var3 = 0;
-      this.E = 12;
-
-      for(this.aM = 0; this.aM < 50; ++this.aM) {
-         if (this.a[9833 + this.aM] != 0) {
-            this.z = (byte)(this.a[9733 + this.aM] - this.a[this.b[var1 ? 0 : 62] + this.v]);
-            this.A = (byte)(this.a[9783 + this.aM] - this.a[this.b[var1 ? 1 : 63] + this.v]);
-            this.C = (byte)(this.b[this.a[53] + (this.A > -12 && this.A < 12 ? 12 + this.A : 0) * 25 + (this.z > -12 && this.z < 12 ? 12 + this.z : 0)] / 10);
-            if (this.C <= (var1 ? this.a[4949 + this.v] : 9) && this.C < this.E && this.c((byte)(-this.aM - 61))) {
-               var2 = this.a[9733 + this.aM];
-               var3 = this.a[9783 + this.aM];
-               this.E = this.C;
-            }
-         }
-      }
-
-      if (this.E < 12) {
-         this.a[3131 + this.v] = var2;
-         this.a[3232 + this.v] = var3;
-         this.g(2);
-         return true;
-      } else {
-         return false;
-      }
-   }
-
-   private int a(int var1) {
-      for(this.aN = 0; this.aN < 10; ++this.aN) {
-         if (this.a.a[this.u][this.aN][11] > 0) {
-            this.v = this.a[8810 + this.a.a[this.u][this.aN][11]];
-            if (this.v > 0 && this.a[2828 + this.v] == 58 && this.a[1313 + this.v] >= 0) {
-               for(this.aO = 0; this.aO < 10 && this.a.a[this.u][this.aN][this.aO] <= 0; ++this.aO) {
-               }
-
-               if (this.aO != 10) {
-                  this.a(this.v, this.b[this.a[86] + this.aO]);
-                  if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-                     this.N();
-                  } else {
-                     this.a[6161 + this.v] = 3;
-                  }
-
-                  this.a.a[this.u][this.aN][10] = (byte)this.aO;
-               }
-            }
-         }
-      }
-
-      for(this.aN = this.u * 30 + 1; this.aN <= (this.u + 1) * 30; ++this.aN) {
-         if (this.a[8505 + this.aN] > 0 && this.a[8749 + this.aN] == 8 && this.a[8810 + this.aN] >= 1) {
-            this.v = this.a[8810 + this.aN];
-            if (this.a[2828 + this.v] == 57 && this.a[1313 + this.v] >= 0 && this.a[2929 + this.v] != -109 && (this.a[8932 + this.aN] == 1 || this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v)) {
-               for(this.aO = 0; this.aO < 30 && this.a.b[this.u][0][this.aO] != this.aN && this.a.b[this.u][0][this.aO] != 0; ++this.aO) {
-               }
-
-               if (this.aO < 30 && this.a.b[this.u][0][this.aO] != 0) {
-                  if (this.a.b[this.u][2][this.aO] >= 0) {
-                     this.a(this.v, this.b[this.a[87] + this.a.b[this.u][1][this.aO]]);
-                     this.a[4040 + this.v] = (byte)this.aN;
-                     this.a[7979 + this.v] = (byte)(this.a[7979 + this.v] & 239);
-                     if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-                        this.N();
-                     } else {
-                        this.a[6161 + this.v] = 3;
-                     }
-
-                     this.a[9237 + this.aN] = 1;
-                  } else {
-                     while(this.aO < 29) {
-                        for(this.aP = 0; this.aP < 5; ++this.aP) {
-                           this.a.b[this.u][this.aP][this.aO] = this.a.b[this.u][this.aP][this.aO + 1];
-                        }
-
+    private int int_a(int n) {
+        this.aN = 0;
+        while (this.aN < 10) {
+            if (this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][11] > 0) {
+                this.var_int_v = this.var_byte_arr_a[8810 + this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][11]];
+                if (this.var_int_v > 0 && this.var_byte_arr_a[2828 + this.var_int_v] == 58 && this.var_byte_arr_a[1313 + this.var_int_v] >= 0) {
+                    this.aO = 0;
+                    while (this.aO < 10 && this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][this.aO] <= 0) {
                         ++this.aO;
-                     }
-
-                     this.a.b[this.u][0][29] = 0;
-                     --this.aN;
-                  }
-               }
+                    }
+                    if (this.aO != 10) {
+                        this.void_a(this.var_int_v, this.var_byte_arr_b[this.var_short_arr_a[86] + this.aO]);
+                        if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+                            this.N();
+                        } else {
+                            this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+                        }
+                        this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][10] = (byte)this.aO;
+                    }
+                }
             }
-         }
-      }
-
-      return var1;
-   }
-
-   private void f(boolean var1) {
-      for(this.aN = 0; this.aN < 10; ++this.aN) {
-         if (this.a.a[this.u][this.aN][11] > 0 && this.v == this.a[8810 + this.a.a[this.u][this.aN][11]]) {
-            this.aO = this.a.a[this.u][this.aN][10];
-            if (!var1) {
-               this.a[3535 + this.v] = (byte)(this.b[this.a[88] + this.aO] - 5 + 8);
-               this.a[3636 + this.v] = 1;
-               return;
+            ++this.aN;
+        }
+        this.aN = this.var_int_u * 30 + 1;
+        while (this.aN <= (this.var_int_u + 1) * 30) {
+            if (this.var_byte_arr_a[8505 + this.aN] > 0 && this.var_byte_arr_a[8749 + this.aN] == 8 && this.var_byte_arr_a[8810 + this.aN] >= 1) {
+                this.var_int_v = this.var_byte_arr_a[8810 + this.aN];
+                if (this.var_byte_arr_a[2828 + this.var_int_v] == 57 && this.var_byte_arr_a[1313 + this.var_int_v] >= 0 && this.var_byte_arr_a[2929 + this.var_int_v] != -109 && (this.var_byte_arr_a[8932 + this.aN] == 1 || this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v)) {
+                    this.aO = 0;
+                    while (this.aO < 30 && this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][0][this.aO] != this.aN && this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][0][this.aO] != 0) {
+                        ++this.aO;
+                    }
+                    if (this.aO < 30 && this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][0][this.aO] != 0) {
+                        if (this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][2][this.aO] < 0) {
+                            while (this.aO < 29) {
+                                this.aP = 0;
+                                while (this.aP < 5) {
+                                    this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][this.aP][this.aO] = this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][this.aP][this.aO + 1];
+                                    ++this.aP;
+                                }
+                                ++this.aO;
+                            }
+                            this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][0][29] = 0;
+                            --this.aN;
+                        } else {
+                            this.void_a(this.var_int_v, this.var_byte_arr_b[this.var_short_arr_a[87] + this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][1][this.aO]]);
+                            this.var_byte_arr_a[4040 + this.var_int_v] = (byte)this.aN;
+                            this.var_byte_arr_a[7979 + this.var_int_v] = (byte)(this.var_byte_arr_a[7979 + this.var_int_v] & 0xEF);
+                            if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+                                this.N();
+                            } else {
+                                this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+                            }
+                            this.var_byte_arr_a[9237 + this.aN] = 1;
+                        }
+                    }
+                }
             }
+            ++this.aN;
+        }
+        return n;
+    }
 
-            if (this.a[2828 + this.v] == 26) {
-               ++this.a[this.u][this.b[this.a[88] + this.aO]];
-               this.a.d((int)this.a[4444 + this.v]);
-            } else {
-               for(this.aP = 0; this.aP < 30 && (this.a.f[0][this.aP] != this.a.a[this.u][this.aN][11] || this.a.f[2][this.aP] != this.a[3131 + this.v] || this.a.f[3][this.aP] != this.a[3232 + this.v]); ++this.aP) {
-               }
-
-               this.b[this.a[3232 + this.v]][this.a[3131 + this.v]] = (byte)(-111 - this.u * 3 * 2 - this.aO + 6);
-               this.a.c(this.a[3131 + this.v], this.a[3232 + this.v], 1, 1);
-               this.a.f[0][this.aP] = 0;
-               if (this.u == 1) {
-                  ++this.R;
-               }
+    private void f(boolean bl) {
+        this.aN = 0;
+        while (this.aN < 10) {
+            if (this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][11] > 0 && this.var_int_v == this.var_byte_arr_a[8810 + this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][11]]) {
+                this.aO = this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][10];
+                if (!bl) {
+                    this.var_byte_arr_a[3535 + this.var_int_v] = (byte)(this.var_byte_arr_b[this.var_short_arr_a[88] + this.aO] - 5 + 8);
+                    this.var_byte_arr_a[3636 + this.var_int_v] = 1;
+                    return;
+                }
+                if (this.var_byte_arr_a[2828 + this.var_int_v] == 26) {
+                    short[] sArray = this.var_short_arr_arr_a[this.var_int_u];
+                    byte by = this.var_byte_arr_b[this.var_short_arr_a[88] + this.aO];
+                    sArray[by] = (short)(sArray[by] + 1);
+                    this.var_f_a.void_d((int)this.var_byte_arr_a[4444 + this.var_int_v]);
+                } else {
+                    this.aP = 0;
+                    while (this.aP < 30 && (this.var_f_a.var_byte_arr_arr_f[0][this.aP] != this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][11] || this.var_f_a.var_byte_arr_arr_f[2][this.aP] != this.var_byte_arr_a[3131 + this.var_int_v] || this.var_f_a.var_byte_arr_arr_f[3][this.aP] != this.var_byte_arr_a[3232 + this.var_int_v])) {
+                        ++this.aP;
+                    }
+                    this.var_byte_arr_arr_b[this.var_byte_arr_a[3232 + this.var_int_v]][this.var_byte_arr_a[3131 + this.var_int_v]] = (byte)(-111 - this.var_int_u * 3 * 2 - this.aO + 6);
+                    this.var_f_a.c(this.var_byte_arr_a[3131 + this.var_int_v], this.var_byte_arr_a[3232 + this.var_int_v], 1, 1);
+                    this.var_f_a.var_byte_arr_arr_f[0][this.aP] = 0;
+                    if (this.var_int_u == 1) {
+                        this.var_byte_R = (byte)(this.var_byte_R + 1);
+                    }
+                }
+                if (this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][this.aO] > 0) {
+                    byte[] byArray = this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN];
+                    int n = this.aO;
+                    byArray[n] = (byte)(byArray[n] - 1);
+                }
+                this.var_f_a.void_d((int)this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][11]);
+                return;
             }
+            ++this.aN;
+        }
+    }
 
-            if (this.a.a[this.u][this.aN][this.aO] > 0) {
-               --this.a.a[this.u][this.aN][this.aO];
+    private void ao() {
+        this.aN = this.var_int_u * 30 + 1;
+        while (this.aN <= (this.var_int_u + 1) * 30) {
+            if (this.var_byte_arr_a[8505 + this.aN] > 0 && this.var_byte_arr_a[8749 + this.aN] == 8 && this.var_byte_arr_a[8810 + this.aN] == this.var_int_v) {
+                this.aO = 0;
+                while (this.aO < 30 && this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][0][this.aO] != this.aN) {
+                    ++this.aO;
+                }
+                while (this.aO < 29) {
+                    this.aP = 0;
+                    while (this.aP < 5) {
+                        this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][this.aP][this.aO] = this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][this.aP][this.aO + 1];
+                        ++this.aP;
+                    }
+                    ++this.aO;
+                }
+                this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][0][29] = 0;
+                this.var_byte_arr_a[9237 + this.aN] = 0;
+                return;
             }
+            ++this.aN;
+        }
+    }
 
-            this.a.d((int)this.a.a[this.u][this.aN][11]);
+    private void ap() {
+        this.ao();
+        this.void_a(this.var_int_v, (byte)57);
+        this.N();
+        this.var_int_v = this.int_a(this.var_int_v);
+        this.var_int_z = this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0);
+        this.void_p();
+    }
+
+    private void e(int n, int n2) {
+        for (int n3 = 0; n3 < 30 && this.var_f_a.var_byte_arr_arr_arr_b[n][0][n3] != 0; n3 = (int)((byte)(n3 + 1))) {
+            if (this.var_f_a.var_byte_arr_arr_arr_b[n][2][n3] != n2 || this.var_f_a.var_byte_arr_arr_arr_b[n][1][n3] == 3) continue;
+            this.var_f_a.var_byte_arr_arr_arr_b[n][2][n3] = -2;
+        }
+    }
+
+    private void aq() {
+        if (this.var_byte_f >= 50) {
             return;
-         }
-      }
-
-   }
-
-   private void ao() {
-      for(this.aN = this.u * 30 + 1; this.aN <= (this.u + 1) * 30; ++this.aN) {
-         if (this.a[8505 + this.aN] > 0 && this.a[8749 + this.aN] == 8 && this.a[8810 + this.aN] == this.v) {
-            for(this.aO = 0; this.aO < 30 && this.a.b[this.u][0][this.aO] != this.aN; ++this.aO) {
-            }
-
-            while(this.aO < 29) {
-               for(this.aP = 0; this.aP < 5; ++this.aP) {
-                  this.a.b[this.u][this.aP][this.aO] = this.a.b[this.u][this.aP][this.aO + 1];
-               }
-
-               ++this.aO;
-            }
-
-            this.a.b[this.u][0][29] = 0;
-            this.a[9237 + this.aN] = 0;
-            return;
-         }
-      }
-
-   }
-
-   private void ap() {
-      this.ao();
-      this.a(this.v, (byte)57);
-      this.N();
-      this.v = this.a(this.v);
-      this.z = this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0);
-      this.p();
-   }
-
-   private void e(int var1, int var2) {
-      for(byte var3 = 0; var3 < 30 && this.a.b[var1][0][var3] != 0; ++var3) {
-         if (this.a.b[var1][2][var3] == var2 && this.a.b[var1][1][var3] != 3) {
-            this.a.b[var1][2][var3] = -2;
-         }
-      }
-
-   }
-
-   private void aq() {
-      if (this.f < 50) {
-         this.M = this.b[this.a[220] + this.a.q];
-         this.A = this.b[this.a[216] + this.a.q] * 500;
-         if (this.a[this.u][11] > 0 && this.Q < 1) {
+        }
+        this.var_byte_M = this.var_byte_arr_b[this.var_short_arr_a[220] + this.var_f_a.var_byte_q];
+        this.var_int_A = this.var_byte_arr_b[this.var_short_arr_a[216] + this.var_f_a.var_byte_q] * 500;
+        if (this.var_short_arr_arr_a[this.var_int_u][11] > 0 && this.var_byte_Q < 1) {
             this.ar();
-         }
-
-         this.as();
-         if (this.a.c % (this.b[this.a[264] + this.a.q] * 50) == 50) {
-            for(this.aN = 0; this.aN < 10; ++this.aN) {
-               if ((this.aP = this.a.a[this.u][this.aN][11]) > 0) {
-                  for(this.aO = 0; this.aO < 9 && this.a.a[this.u][this.aN][this.aO] == 0; ++this.aO) {
-                  }
-
-                  if (this.aO >= 9) {
-                     for(this.aO = 0; this.aO < 2; ++this.aO) {
-                        for(this.v = this.aO * 3; this.v < 5; ++this.v) {
-                           if (this.a[this.u][5 + this.b[this.a[109] + this.v]] != 0) {
-                              this.a.a[this.u][this.aN][this.b[this.a[109] + this.v]] = this.b[this.a[265] + this.a.q * 5 + this.aO];
-                              break;
-                           }
+        }
+        this.as();
+        if (this.var_f_a.var_int_c % (this.var_byte_arr_b[this.var_short_arr_a[264] + this.var_f_a.var_byte_q] * 50) == 50) {
+            this.aN = 0;
+            while (this.aN < 10) {
+                this.aP = this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][11];
+                if (this.aP > 0) {
+                    this.aO = 0;
+                    while (this.aO < 9 && this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][this.aO] == 0) {
+                        ++this.aO;
+                    }
+                    if (this.aO >= 9) {
+                        this.aO = 0;
+                        while (this.aO < 2) {
+                            this.var_int_v = this.aO * 3;
+                            while (this.var_int_v < 5) {
+                                if (this.var_short_arr_arr_a[this.var_int_u][5 + this.var_byte_arr_b[this.var_short_arr_a[109] + this.var_int_v]] != 0) {
+                                    this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][this.var_byte_arr_b[this.var_short_arr_a[109] + this.var_int_v]] = this.var_byte_arr_b[this.var_short_arr_a[265] + this.var_f_a.var_byte_q * 5 + this.aO];
+                                    break;
+                                }
+                                ++this.var_int_v;
+                            }
+                            ++this.aO;
                         }
-                     }
-
-                     if (this.a.c > this.A / 3 && (this.R & 63) < this.b[this.a[268] + this.a.q]) {
-                        for(this.aO = 2; this.aO < 5; ++this.aO) {
-                           this.a.a[this.u][this.aN][this.aO + 4] = this.b[this.a[265] + this.a.q * 5 + this.aO];
-
-                           for(this.aS = 0; this.aS < this.a.a[this.u][this.aN][this.aO + 4]; ++this.aS) {
-                              this.n(266);
-
-                              for(this.aT = 0; this.aT < 29 && this.a.f[0][this.aT] != 0; ++this.aT) {
-                              }
-
-                              this.a.f[0][this.aT] = (byte)this.aP;
-                              this.a.f[2][this.aT] = this.a[3131];
-                              this.a.f[3][this.aT] = this.a[3232];
-                              this.a.f[1][this.aT] = (byte)(this.aO + 4 + 14);
-                              this.b[this.a[3232]][this.a[3131]] = -126;
-                           }
+                        if (this.var_f_a.var_int_c > this.var_int_A / 3 && (this.var_byte_R & 0x3F) < this.var_byte_arr_b[this.var_short_arr_a[268] + this.var_f_a.var_byte_q]) {
+                            this.aO = 2;
+                            while (this.aO < 5) {
+                                this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][this.aO + 4] = this.var_byte_arr_b[this.var_short_arr_a[265] + this.var_f_a.var_byte_q * 5 + this.aO];
+                                this.aS = 0;
+                                while (this.aS < this.var_f_a.var_byte_arr_arr_arr_a[this.var_int_u][this.aN][this.aO + 4]) {
+                                    this.n(266);
+                                    this.aT = 0;
+                                    while (this.aT < 29 && this.var_f_a.var_byte_arr_arr_f[0][this.aT] != 0) {
+                                        ++this.aT;
+                                    }
+                                    this.var_f_a.var_byte_arr_arr_f[0][this.aT] = (byte)this.aP;
+                                    this.var_f_a.var_byte_arr_arr_f[2][this.aT] = this.var_byte_arr_a[3131];
+                                    this.var_f_a.var_byte_arr_arr_f[3][this.aT] = this.var_byte_arr_a[3232];
+                                    this.var_f_a.var_byte_arr_arr_f[1][this.aT] = (byte)(this.aO + 4 + 14);
+                                    this.var_byte_arr_arr_b[this.var_byte_arr_a[3232]][this.var_byte_arr_a[3131]] = -126;
+                                    ++this.aS;
+                                }
+                                ++this.aO;
+                            }
                         }
-                     }
-                  }
-               }
+                    }
+                }
+                ++this.aN;
             }
-         }
-
-         if (this.a.c % (this.b[this.a[269] + this.a.q] * 50) == 50 && this.a.c > this.A / 2) {
-            for(this.aN = this.u * 30 + 1; this.aN <= (this.u + 1) * 30; ++this.aN) {
-               if (this.a[8505 + this.aN] > 0 && this.a[8749 + this.aN] == 8) {
-                  for(this.aS = 0; this.aS < this.b[this.a[270] + this.a.q]; ++this.aS) {
-                     this.n(271);
-
-                     for(this.aT = 0; this.aT < 29 && this.a.b[this.u][0][this.aT] != 0; ++this.aT) {
-                     }
-
-                     this.a.b[this.u][0][this.aT] = (byte)this.aN;
-                     this.a.b[this.u][2][this.aT] = this.a[3131];
-                     this.a.b[this.u][3][this.aT] = this.a[3232];
-                     this.a.b[this.u][1][this.aT] = 3;
-                  }
-               }
+        }
+        if (this.var_f_a.var_int_c % (this.var_byte_arr_b[this.var_short_arr_a[269] + this.var_f_a.var_byte_q] * 50) == 50 && this.var_f_a.var_int_c > this.var_int_A / 2) {
+            this.aN = this.var_int_u * 30 + 1;
+            while (this.aN <= (this.var_int_u + 1) * 30) {
+                if (this.var_byte_arr_a[8505 + this.aN] > 0 && this.var_byte_arr_a[8749 + this.aN] == 8) {
+                    this.aS = 0;
+                    while (this.aS < this.var_byte_arr_b[this.var_short_arr_a[270] + this.var_f_a.var_byte_q]) {
+                        this.n(271);
+                        this.aT = 0;
+                        while (this.aT < 29 && this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][0][this.aT] != 0) {
+                            ++this.aT;
+                        }
+                        this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][0][this.aT] = (byte)this.aN;
+                        this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][2][this.aT] = this.var_byte_arr_a[3131];
+                        this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][3][this.aT] = this.var_byte_arr_a[3232];
+                        this.var_f_a.var_byte_arr_arr_arr_b[this.var_int_u][1][this.aT] = 3;
+                        ++this.aS;
+                    }
+                }
+                ++this.aN;
             }
-         }
+        }
+    }
 
-      }
-   }
+    private void n(int n) {
+        this.var_int_v = 0;
+        this.var_int_w = this.var_short_arr_a[n] + (this.var_byte_arr_b[this.var_short_arr_a[n + 1] + this.var_f_a.var_byte_q] + this.var_f_a.int_a(255, this.var_byte_arr_b[this.var_short_arr_a[n + 1] + this.var_f_a.var_byte_q + 1] - this.var_byte_arr_b[this.var_short_arr_a[n + 1] + this.var_f_a.var_byte_q])) * 4;
+        this.boolean_a(1, 127, this.var_byte_arr_b[this.var_int_w] + this.var_f_a.int_a(65535, this.var_byte_arr_b[this.var_int_w + 2] - this.var_byte_arr_b[this.var_int_w] + 1), this.var_byte_arr_b[this.var_int_w + 1] + this.var_f_a.int_a(65535, this.var_byte_arr_b[this.var_int_w + 3] - this.var_byte_arr_b[this.var_int_w + 1] + 1));
+    }
 
-   private void n(int var1) {
-      this.v = 0;
-      this.w = this.a[var1] + (this.b[this.a[var1 + 1] + this.a.q] + this.a.a((int)255, (int)(this.b[this.a[var1 + 1] + this.a.q + 1] - this.b[this.a[var1 + 1] + this.a.q]))) * 4;
-      this.a((int)1, (int)127, (int)(this.b[this.w] + this.a.a((int)65535, (int)(this.b[this.w + 2] - this.b[this.w] + 1))), (int)(this.b[this.w + 1] + this.a.a((int)65535, (int)(this.b[this.w + 3] - this.b[this.w + 1] + 1))));
-   }
-
-   private void ar() {
-      if ((this.a.c & 31) == 0 || this.a.c % (this.b[this.a[241] + this.a.q] * 10) == 0) {
-         for(this.aS = this.b[this.a[247] + this.a.q] & 255; this.aS < (this.b[this.a[247] + this.a.q + 1] & 255); ++this.aS) {
-            this.aT = -this.b[this.b[this.a[246] + this.aS]][this.b[this.a[245] + this.aS]];
+    private void ar() {
+        if ((this.var_f_a.var_int_c & 0x1F) != 0 && this.var_f_a.var_int_c % (this.var_byte_arr_b[this.var_short_arr_a[241] + this.var_f_a.var_byte_q] * 10) != 0) {
+            return;
+        }
+        this.aS = this.var_byte_arr_b[this.var_short_arr_a[247] + this.var_f_a.var_byte_q] & 0xFF;
+        while (this.aS < (this.var_byte_arr_b[this.var_short_arr_a[247] + this.var_f_a.var_byte_q + 1] & 0xFF)) {
+            this.aT = -this.var_byte_arr_arr_b[this.var_byte_arr_b[this.var_short_arr_a[246] + this.aS]][this.var_byte_arr_b[this.var_short_arr_a[245] + this.aS]];
             if (this.aT >= 31 && this.aT <= 60) {
-               if (this.a[8749 + this.aT] == this.b[this.a[243] + this.aS] && this.a[8505 + this.aT] > 0 && this.a[8627 + this.aT] == 0) {
-                  if ((this.a.c & 31) == 0) {
-                     if (this.a[8505 + this.aT] < this.a[8566 + this.aT] / 4) {
-                        this.a.b(this.aT, false);
-                     }
-                  } else if (this.a[9115 + this.aT] < this.b[this.a[244] + this.aS]) {
-                     this.a.b(this.aT, true);
-                  }
-               }
-            } else if (this.aT == 0 && (this.a.c & 31) != 0 && this.P == -1) {
-               this.P = (byte)this.aS;
+                if (this.var_byte_arr_a[8749 + this.aT] == this.var_byte_arr_b[this.var_short_arr_a[243] + this.aS] && this.var_byte_arr_a[8505 + this.aT] > 0 && this.var_byte_arr_a[8627 + this.aT] == 0) {
+                    if ((this.var_f_a.var_int_c & 0x1F) == 0) {
+                        if (this.var_byte_arr_a[8505 + this.aT] < this.var_byte_arr_a[8566 + this.aT] / 4) {
+                            this.var_f_a.b(this.aT, false);
+                        }
+                    } else if (this.var_byte_arr_a[9115 + this.aT] < this.var_byte_arr_b[this.var_short_arr_a[244] + this.aS]) {
+                        this.var_f_a.b(this.aT, true);
+                    }
+                }
+            } else if (this.aT == 0 && (this.var_f_a.var_int_c & 0x1F) != 0 && this.var_byte_P == -1) {
+                this.var_byte_P = (byte)this.aS;
             }
-         }
-
-         if (this.P != -1) {
-            this.v = this.b[this.a[243] + (this.P & 255)];
-            if (this.a.a((byte)1, this.b[this.a[138] + 416 + this.b[this.a[243] + (this.P & 255)]], this.b[this.a[245] + (this.P & 255)], this.b[this.a[246] + (this.P & 255)], 3, true, -1) > 0) {
-               this.P = -1;
+            ++this.aS;
+        }
+        if (this.var_byte_P != -1) {
+            this.var_int_v = this.var_byte_arr_b[this.var_short_arr_a[243] + (this.var_byte_P & 0xFF)];
+            if (this.var_f_a.a((byte)1, this.var_byte_arr_b[this.var_short_arr_a[138] + 416 + this.var_byte_arr_b[this.var_short_arr_a[243] + (this.var_byte_P & 0xFF)]], this.var_byte_arr_b[this.var_short_arr_a[245] + (this.var_byte_P & 0xFF)], this.var_byte_arr_b[this.var_short_arr_a[246] + (this.var_byte_P & 0xFF)], 3, true, -1) > 0) {
+                this.var_byte_P = (byte)-1;
             }
-         }
+        }
+    }
 
-      }
-   }
-
-   private void as() {
-      if (this.aQ < this.a.c) {
-         this.aQ = (this.b[this.a[214] + this.a.q] - this.b[this.a[215] + this.a.q] * this.a.b) * 100;
-         this.aQ = this.a.c + this.aQ / 4 + this.a.a(16777215, this.aQ * 3 / 2);
-      }
-
-      if (this.f >= this.b[this.a[217] + this.a.q]) {
-         if ((this.a.c & 63) == 25) {
-            this.aT = this.a[218] + this.a.q * 4;
-            this.Q = -1;
-
-            for(this.v = 1; this.v <= 50; ++this.v) {
-               if (this.a[1919 + this.v] > 0 && this.a[1414 + this.v] >= 12 && this.a[0 + this.v] >= this.b[this.aT] && this.a[101 + this.v] >= this.b[this.aT + 1] && this.a[0 + this.v] <= this.b[this.aT + 2] && this.a[101 + this.v] <= this.b[this.aT + 3]) {
-                  this.Q = (byte)this.v;
-
-                  for(this.w = 51; this.w <= 100; ++this.w) {
-                     if (this.a[1919 + this.w] > 0 && this.a[1414 + this.w] >= 12 && (this.a[7979 + this.w] & 64) == 0) {
-                        byte[] var10000 = this.a;
-                        int var10001 = 7979 + this.w;
-                        var10000[var10001] = (byte)(var10000[var10001] | 32);
-                     }
-                  }
-                  break;
-               }
+    private void as() {
+        if (this.aQ < this.var_f_a.var_int_c) {
+            this.aQ = (this.var_byte_arr_b[this.var_short_arr_a[214] + this.var_f_a.var_byte_q] - this.var_byte_arr_b[this.var_short_arr_a[215] + this.var_f_a.var_byte_q] * this.var_f_a.var_byte_b) * 100;
+            this.aQ = this.var_f_a.var_int_c + this.aQ / 4 + this.var_f_a.int_a(0xFFFFFF, this.aQ * 3 / 2);
+        }
+        if (this.var_byte_f >= this.var_byte_arr_b[this.var_short_arr_a[217] + this.var_f_a.var_byte_q]) {
+            if ((this.var_f_a.var_int_c & 0x3F) == 25) {
+                this.aT = this.var_short_arr_a[218] + this.var_f_a.var_byte_q * 4;
+                this.var_byte_Q = (byte)-1;
+                this.var_int_v = 1;
+                while (this.var_int_v <= 50) {
+                    if (this.var_byte_arr_a[1919 + this.var_int_v] > 0 && this.var_byte_arr_a[1414 + this.var_int_v] >= 12 && this.var_byte_arr_a[0 + this.var_int_v] >= this.var_byte_arr_b[this.aT] && this.var_byte_arr_a[101 + this.var_int_v] >= this.var_byte_arr_b[this.aT + 1] && this.var_byte_arr_a[0 + this.var_int_v] <= this.var_byte_arr_b[this.aT + 2] && this.var_byte_arr_a[101 + this.var_int_v] <= this.var_byte_arr_b[this.aT + 3]) {
+                        this.var_byte_Q = (byte)this.var_int_v;
+                        this.var_int_w = 51;
+                        while (this.var_int_w <= 100) {
+                            if (this.var_byte_arr_a[1919 + this.var_int_w] > 0 && this.var_byte_arr_a[1414 + this.var_int_w] >= 12 && (this.var_byte_arr_a[7979 + this.var_int_w] & 0x40) == 0) {
+                                int n = 7979 + this.var_int_w;
+                                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] | 0x20);
+                            }
+                            ++this.var_int_w;
+                        }
+                        break;
+                    }
+                    ++this.var_int_v;
+                }
             }
-         }
-
-         for(this.v = this.u * 50 + 1 + 0; this.v <= (this.u + 1) * 50; ++this.v) {
-            this.aT = (byte)(this.v - this.u * 50 - 1);
-            if (this.a[1919 + this.v] > 0 && this.a[1414 + this.v] >= 12) {
-               if ((this.a[7979 + this.v] & 64) != 0) {
-                  if (this.O < 0 && (this.a[7979 + this.v] & 2) != 0 && this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0) < 29 && this.a[202 + this.v] == 0 && this.a[303 + this.v] == 0) {
-                     this.a[3131 + this.v] = this.a[8384];
-                     this.a[3232 + this.v] = this.a[8445];
-                     this.g(1);
-                  }
-               } else {
-                  this.at();
-               }
-            } else if ((this.a.c & 63) == (this.v & 31) && this.j[this.aT] < this.M) {
-               for(this.aU = this.u * 50 + 1; this.aU <= (this.u + 1) * 50; ++this.aU) {
-                  if (this.j[this.aU - this.u * 50 - 1] >= this.M && this.a[1919 + this.v] > 0 && this.a[1414 + this.v] >= 12) {
-                     this.j[this.aU - this.u * 50 - 1] = this.j[this.aT];
-                     this.j[this.aT] = this.M;
-                     break;
-                  }
-               }
+            this.var_int_v = this.var_int_u * 50 + 1 + 0;
+            while (this.var_int_v <= (this.var_int_u + 1) * 50) {
+                this.aT = (byte)(this.var_int_v - this.var_int_u * 50 - 1);
+                if (this.var_byte_arr_a[1919 + this.var_int_v] <= 0 || this.var_byte_arr_a[1414 + this.var_int_v] < 12) {
+                    if ((this.var_f_a.var_int_c & 0x3F) == (this.var_int_v & 0x1F) && this.var_byte_arr_j[this.aT] < this.var_byte_M) {
+                        this.aU = this.var_int_u * 50 + 1;
+                        while (this.aU <= (this.var_int_u + 1) * 50) {
+                            if (this.var_byte_arr_j[this.aU - this.var_int_u * 50 - 1] >= this.var_byte_M && this.var_byte_arr_a[1919 + this.var_int_v] > 0 && this.var_byte_arr_a[1414 + this.var_int_v] >= 12) {
+                                this.var_byte_arr_j[this.aU - this.var_int_u * 50 - 1] = this.var_byte_arr_j[this.aT];
+                                this.var_byte_arr_j[this.aT] = this.var_byte_M;
+                                break;
+                            }
+                            ++this.aU;
+                        }
+                    }
+                } else if ((this.var_byte_arr_a[7979 + this.var_int_v] & 0x40) != 0) {
+                    if (this.var_byte_O < 0 && (this.var_byte_arr_a[7979 + this.var_int_v] & 2) != 0 && this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0) < 29 && this.var_byte_arr_a[202 + this.var_int_v] == 0 && this.var_byte_arr_a[303 + this.var_int_v] == 0) {
+                        this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_a[8384];
+                        this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_a[8445];
+                        this.g(1);
+                    }
+                } else {
+                    this.at();
+                }
+                ++this.var_int_v;
             }
-         }
-      }
+        }
+        if (this.var_byte_Q < 0 && this.var_f_a.var_byte_q != 3 && this.var_f_a.var_int_c == this.aQ) {
+            this.aR = this.aQ;
+            this.av();
+        }
+        if (this.var_byte_O >= 0 && (this.var_f_a.var_int_c & 0xF) == 0) {
+            this.aw();
+        }
+        this.aU = -1;
+    }
 
-      if (this.Q < 0 && this.a.q != 3 && this.a.c == this.aQ) {
-         this.aR = this.aQ;
-         this.av();
-      }
-
-      if (this.O >= 0 && (this.a.c & 15) == 0) {
-         this.aw();
-      }
-
-      this.aU = -1;
-   }
-
-   private void at() {
-      if (this.Q < 0) {
-         if (this.j[this.aT] < this.M) {
-            this.x = this.b[this.a[221 + this.a.q] + this.M * 3 + this.j[this.aT]];
-            this.x = this.a.q >= 4 && this.a.b != 0 && (this.aT >= this.b[this.a[242] + this.a.q] || this.x != 2) ? (this.x == 0 ? 4 : 5) : this.x;
-            if (this.a[6565 + this.v] != this.x) {
-               this.a[6565 + this.v] = (byte)this.x;
+    private void at() {
+        if (this.var_byte_Q < 0) {
+            if (this.var_byte_arr_j[this.aT] < this.var_byte_M) {
+                this.var_int_x = this.var_byte_arr_b[this.var_short_arr_a[221 + this.var_f_a.var_byte_q] + this.var_byte_M * 3 + this.var_byte_arr_j[this.aT]];
+                int n = this.var_f_a.var_byte_q < 4 || this.var_f_a.var_byte_b == 0 || this.aT < this.var_byte_arr_b[this.var_short_arr_a[242] + this.var_f_a.var_byte_q] && this.var_int_x == 2 ? this.var_int_x : (this.var_int_x = this.var_int_x == 0 ? 4 : 5);
+                if (this.var_byte_arr_a[6565 + this.var_int_v] != this.var_int_x) {
+                    this.var_byte_arr_a[6565 + this.var_int_v] = (byte)this.var_int_x;
+                }
+            } else if (this.var_byte_arr_a[6565 + this.var_int_v] == 9) {
+                this.o(-1);
             }
-         } else if (this.a[6565 + this.v] == 9) {
-            this.o(-1);
-         }
-      }
-
-      if ((this.a.c & 15) == (this.v & 15)) {
-         boolean var1;
-         if ((var1 = this.a[0 + this.v] < this.b[this.G] || this.a[101 + this.v] < this.b[this.G + 1] || this.a[0 + this.v] > this.b[this.G + 2] || this.a[101 + this.v] > this.b[this.G + 3]) && this.b[this.a[41] + this.a[2828 + this.v]] == 0 && this.a[6161 + this.v] == 0 && (this.a.q != 5 || this.a.c > 120)) {
-            this.a[3131 + this.v] = this.b[this.a[233] + this.a.q];
-            this.a[3232 + this.v] = this.b[this.a[234] + this.a.q];
-            this.a[6161 + this.v] = 2;
-         }
-
-         if (this.Q < 0 && !var1) {
-            if (this.j[this.aT] < this.M) {
-               if ((this.a[2828 + this.v] == 69 || this.a[2828 + this.v] == 84 && this.a[3939 + this.v] == 69) && this.b[this.a[42] + this.b[this.a[41] + this.a[6464 + this.v]]] != 2 && this.a[6161 + this.v] == 0 && (this.a[6262 + this.v] != this.b[this.a[221 + this.a.q] + this.M + this.j[this.aT]] || this.a[6363 + this.v] != this.b[this.a[221 + this.a.q] + this.M * 2 + this.j[this.aT]])) {
-                  this.a[6262 + this.v] = this.b[this.a[221 + this.a.q] + this.M + this.j[this.aT]];
-                  this.a[6363 + this.v] = this.b[this.a[221 + this.a.q] + this.M * 2 + this.j[this.aT]];
-                  this.a[6464 + this.v] = this.b[this.a[221 + this.a.q] + this.j[this.aT]];
-                  return;
-               }
-            } else if (this.a[2828 + this.v] == 69 || this.a[2828 + this.v] == 84 && this.a[3939 + this.v] == 69 || this.b[this.a[41] + this.a[2828 + this.v]] >= 13 && this.b[this.a[41] + this.a[2828 + this.v]] <= 15 && this.b[this.a[101 + this.v]][this.a[0 + this.v]] == this.v) {
-               this.w = this.b[this.a[212 + this.a.b] + this.a.q];
-               this.x = (this.v & 3) == 0 && this.a.q >= 4 ? 2 : (this.a[1717 + this.v] >= this.a[1616 + this.v] ? 0 : 1);
-               if (this.a[this.b[this.b[this.a[107] + this.x]] + this.v] < this.w) {
-                  if (this.a((int)this.b[this.a[114] + this.x])) {
-                     this.a(this.v, this.b[this.a[114] + 3 + this.x]);
-                     this.a[6161 + this.v] = 3;
-                     return;
-                  }
-
-                  this.au();
-                  return;
-               }
-
-               this.au();
+        }
+        if ((this.var_f_a.var_int_c & 0xF) != (this.var_int_v & 0xF)) {
+            return;
+        }
+        boolean bl = this.var_byte_arr_a[0 + this.var_int_v] < this.var_byte_arr_b[this.var_int_G] || this.var_byte_arr_a[101 + this.var_int_v] < this.var_byte_arr_b[this.var_int_G + 1] || this.var_byte_arr_a[0 + this.var_int_v] > this.var_byte_arr_b[this.var_int_G + 2] || this.var_byte_arr_a[101 + this.var_int_v] > this.var_byte_arr_b[this.var_int_G + 3];
+        if (bl && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] == 0 && this.var_byte_arr_a[6161 + this.var_int_v] == 0 && (this.var_f_a.var_byte_q != 5 || this.var_f_a.var_int_c > 120)) {
+            this.var_byte_arr_a[3131 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[233] + this.var_f_a.var_byte_q];
+            this.var_byte_arr_a[3232 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[234] + this.var_f_a.var_byte_q];
+            this.var_byte_arr_a[6161 + this.var_int_v] = 2;
+        }
+        if (this.var_byte_Q < 0 && !bl) {
+            if (this.var_byte_arr_j[this.aT] < this.var_byte_M) {
+                if ((this.var_byte_arr_a[2828 + this.var_int_v] == 69 || this.var_byte_arr_a[2828 + this.var_int_v] == 84 && this.var_byte_arr_a[3939 + this.var_int_v] == 69) && this.var_byte_arr_b[this.var_short_arr_a[42] + this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[6464 + this.var_int_v]]] != 2 && this.var_byte_arr_a[6161 + this.var_int_v] == 0 && (this.var_byte_arr_a[6262 + this.var_int_v] != this.var_byte_arr_b[this.var_short_arr_a[221 + this.var_f_a.var_byte_q] + this.var_byte_M + this.var_byte_arr_j[this.aT]] || this.var_byte_arr_a[6363 + this.var_int_v] != this.var_byte_arr_b[this.var_short_arr_a[221 + this.var_f_a.var_byte_q] + this.var_byte_M * 2 + this.var_byte_arr_j[this.aT]])) {
+                    this.var_byte_arr_a[6262 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[221 + this.var_f_a.var_byte_q] + this.var_byte_M + this.var_byte_arr_j[this.aT]];
+                    this.var_byte_arr_a[6363 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[221 + this.var_f_a.var_byte_q] + this.var_byte_M * 2 + this.var_byte_arr_j[this.aT]];
+                    this.var_byte_arr_a[6464 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[221 + this.var_f_a.var_byte_q] + this.var_byte_arr_j[this.aT]];
+                    return;
+                }
+            } else if (this.var_byte_arr_a[2828 + this.var_int_v] == 69 || this.var_byte_arr_a[2828 + this.var_int_v] == 84 && this.var_byte_arr_a[3939 + this.var_int_v] == 69 || this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] >= 13 && this.var_byte_arr_b[this.var_short_arr_a[41] + this.var_byte_arr_a[2828 + this.var_int_v]] <= 15 && this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] == this.var_int_v) {
+                this.var_int_w = this.var_byte_arr_b[this.var_short_arr_a[212 + this.var_f_a.var_byte_b] + this.var_f_a.var_byte_q];
+                int n = (this.var_int_v & 3) == 0 && this.var_f_a.var_byte_q >= 4 ? 2 : (this.var_int_x = this.var_byte_arr_a[1717 + this.var_int_v] >= this.var_byte_arr_a[1616 + this.var_int_v] ? 0 : 1);
+                if (this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[107] + this.var_int_x]] + this.var_int_v] < this.var_int_w) {
+                    if (this.boolean_a((int)this.var_byte_arr_b[this.var_short_arr_a[114] + this.var_int_x])) {
+                        this.void_a(this.var_int_v, this.var_byte_arr_b[this.var_short_arr_a[114] + 3 + this.var_int_x]);
+                        this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+                        return;
+                    }
+                    this.au();
+                    return;
+                }
+                this.au();
             }
-         }
+        }
+    }
 
-      }
-   }
+    private void au() {
+        if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) {
+            this.var_byte_arr_a[6161 + this.var_int_v] = 2;
+            return;
+        }
+        this.var_int_C = this.var_byte_arr_a[0 + this.var_int_v] - this.var_byte_arr_b[this.var_short_arr_a[233] + this.var_f_a.var_byte_q];
+        this.var_int_D = this.var_byte_arr_a[101 + this.var_int_v] - this.var_byte_arr_b[this.var_short_arr_a[234] + this.var_f_a.var_byte_q];
+        if (this.var_int_C < -5 || this.var_int_C > 5 || this.var_int_D < -5 || this.var_int_D > 5) {
+            this.var_byte_arr_a[6262 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[233] + this.var_f_a.var_byte_q];
+            this.var_byte_arr_a[6363 + this.var_int_v] = this.var_byte_arr_b[this.var_short_arr_a[234] + this.var_f_a.var_byte_q];
+            this.void_a(this.var_int_v, (byte)69);
+            this.var_byte_arr_a[6464 + this.var_int_v] = 69;
+        }
+    }
 
-   private void au() {
-      if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) {
-         this.a[6161 + this.v] = 2;
-      } else {
-         this.C = this.a[0 + this.v] - this.b[this.a[233] + this.a.q];
-         this.D = this.a[101 + this.v] - this.b[this.a[234] + this.a.q];
-         if (this.C < -5 || this.C > 5 || this.D < -5 || this.D > 5) {
-            this.a[6262 + this.v] = this.b[this.a[233] + this.a.q];
-            this.a[6363 + this.v] = this.b[this.a[234] + this.a.q];
-            this.a(this.v, (byte)69);
-            this.a[6464 + this.v] = 69;
-         }
-
-      }
-   }
-
-   private void o(int var1) {
-      if (this.a[2828 + this.v] > 9 && (this.a[2828 + this.v] < 44 || this.a[2828 + this.v] > 50)) {
-         if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) {
-            this.a(this.v, (byte)59);
-            this.a[6161 + this.v] = 3;
-         } else {
-            if (this.a[202 + this.v] == 0 && this.a[303 + this.v] == 0) {
-               this.a(this.v, (byte)(var1 >= 0 ? 44 + var1 : 50));
-               if (this.a((int)6)) {
-                  this.g(2);
-                  return;
-               }
-
-               this.a(this.v, (byte)69);
+    private void o(int n) {
+        if (this.var_byte_arr_a[2828 + this.var_int_v] <= 9 || this.var_byte_arr_a[2828 + this.var_int_v] >= 44 && this.var_byte_arr_a[2828 + this.var_int_v] <= 50) {
+            return;
+        }
+        if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) {
+            this.void_a(this.var_int_v, (byte)59);
+            this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+            return;
+        }
+        if (this.var_byte_arr_a[202 + this.var_int_v] == 0 && this.var_byte_arr_a[303 + this.var_int_v] == 0) {
+            this.void_a(this.var_int_v, (byte)(n >= 0 ? 44 + n : 50));
+            if (this.boolean_a(6)) {
+                this.g(2);
+                return;
             }
+            this.void_a(this.var_int_v, (byte)69);
+        }
+    }
 
-         }
-      }
-   }
-
-   private void av() {
-      this.aU = 0;
-      if (this.a.q < 7 || this.a.c >= this.A / 7) {
-         this.x = b((int)(this.b[this.a[206 + this.a.b] + this.a.q] + this.a.c / this.b[this.a[210 + this.a.b] + this.a.q] / 1000), (int)0, (int)this.b[this.a[208 + this.a.b] + this.a.q]);
-         this.x = this.x / 2 + this.a.a(16777215, this.x + 1);
-         this.y = this.b[this.a[212 + this.a.b] + this.a.q];
-         if (this.a.c < this.A && (this.a.q != 0 || this.g < 11)) {
-            if (this.a.q == 0) {
-               return;
+    private void av() {
+        this.aU = 0;
+        if (this.var_f_a.var_byte_q >= 7 && this.var_f_a.var_int_c < this.var_int_A / 7) {
+            return;
+        }
+        this.var_int_x = b.int_b(this.var_byte_arr_b[this.var_short_arr_a[206 + this.var_f_a.var_byte_b] + this.var_f_a.var_byte_q] + this.var_f_a.var_int_c / this.var_byte_arr_b[this.var_short_arr_a[210 + this.var_f_a.var_byte_b] + this.var_f_a.var_byte_q] / 1000, 0, this.var_byte_arr_b[this.var_short_arr_a[208 + this.var_f_a.var_byte_b] + this.var_f_a.var_byte_q]);
+        this.var_int_x = this.var_int_x / 2 + this.var_f_a.int_a(0xFFFFFF, this.var_int_x + 1);
+        this.var_int_y = this.var_byte_arr_b[this.var_short_arr_a[212 + this.var_f_a.var_byte_b] + this.var_f_a.var_byte_q];
+        if (this.var_f_a.var_int_c < this.var_int_A && (this.var_f_a.var_byte_q != 0 || this.var_byte_g < 11)) {
+            if (this.var_f_a.var_byte_q == 0) {
+                return;
             }
-
-            this.y = this.y / (3 - this.a.b) + this.y * this.a.c / this.A / 2;
-         }
-
-         this.z = this.a.a((int)65535, (int)10);
-
-         for(this.v = this.u * 50 + 1; this.v <= (this.u + 1) * 50; ++this.v) {
-            if (this.a[1919 + this.v] > 0 && this.a[1414 + this.v] >= 12 && this.j[this.v - this.u * 50 - 1] >= this.M && (this.a[7979 + this.v] & 64) == 0 && this.a[6565 + this.v] != 9 && (this.a[1515 + this.v] != 1 || (this.R & 128) == 0) && (this.a[1717 + this.v] >= this.y / 2 || this.a[1616 + this.v] >= this.y / 2 || this.a[7575 + this.v] >= this.y / 2) && (this.z < 2 || this.a[7575 + this.v] <= 3)) {
-               byte[] var10000 = this.a;
-               int var10001 = 7979 + this.v;
-               var10000[var10001] = (byte)(var10000[var10001] | 64);
-               this.a[1717 + this.v] = (byte)b((int)this.a[1717 + this.v], (int)0, (int)this.y);
-               this.a[1616 + this.v] = (byte)b((int)this.a[1616 + this.v], (int)0, (int)this.y);
-               if (this.a.c < this.A) {
-                  this.a[1919 + this.v] = this.a[6767 + this.v] = (byte)(this.a[6767 + this.v] / 2 + this.a[6767 + this.v] * this.a.c / this.A / 2);
-               }
-
-               ++this.aU;
-               if (this.aU >= this.x) {
-                  break;
-               }
+            this.var_int_y = this.var_int_y / (3 - this.var_f_a.var_byte_b) + this.var_int_y * this.var_f_a.var_int_c / this.var_int_A / 2;
+        }
+        this.var_int_z = this.var_f_a.int_a(65535, 10);
+        this.var_int_v = this.var_int_u * 50 + 1;
+        while (this.var_int_v <= (this.var_int_u + 1) * 50) {
+            if (!(this.var_byte_arr_a[1919 + this.var_int_v] <= 0 || this.var_byte_arr_a[1414 + this.var_int_v] < 12 || this.var_byte_arr_j[this.var_int_v - this.var_int_u * 50 - 1] < this.var_byte_M || (this.var_byte_arr_a[7979 + this.var_int_v] & 0x40) != 0 || this.var_byte_arr_a[6565 + this.var_int_v] == 9 || this.var_byte_arr_a[1515 + this.var_int_v] == 1 && (this.var_byte_R & 0x80) != 0 || this.var_byte_arr_a[1717 + this.var_int_v] < this.var_int_y / 2 && this.var_byte_arr_a[1616 + this.var_int_v] < this.var_int_y / 2 && this.var_byte_arr_a[7575 + this.var_int_v] < this.var_int_y / 2 || this.var_int_z >= 2 && this.var_byte_arr_a[7575 + this.var_int_v] > 3)) {
+                int n = 7979 + this.var_int_v;
+                this.var_byte_arr_a[n] = (byte)(this.var_byte_arr_a[n] | 0x40);
+                this.var_byte_arr_a[1717 + this.var_int_v] = (byte)b.int_b(this.var_byte_arr_a[1717 + this.var_int_v], 0, this.var_int_y);
+                this.var_byte_arr_a[1616 + this.var_int_v] = (byte)b.int_b(this.var_byte_arr_a[1616 + this.var_int_v], 0, this.var_int_y);
+                if (this.var_f_a.var_int_c < this.var_int_A) {
+                    byte by = (byte)(this.var_byte_arr_a[6767 + this.var_int_v] / 2 + this.var_byte_arr_a[6767 + this.var_int_v] * this.var_f_a.var_int_c / this.var_int_A / 2);
+                    this.var_byte_arr_a[6767 + this.var_int_v] = by;
+                    this.var_byte_arr_a[1919 + this.var_int_v] = by;
+                }
+                ++this.aU;
+                if (this.aU >= this.var_int_x) break;
             }
-         }
+            ++this.var_int_v;
+        }
+        this.var_byte_R = (byte)(this.var_byte_R & 0x7F);
+        this.a(this.var_int_x - this.aU, (int)this.var_byte_arr_b[this.var_short_arr_a[233] + this.var_f_a.var_byte_q], (int)this.var_byte_arr_b[this.var_short_arr_a[234] + this.var_f_a.var_byte_q], (byte)this.var_int_u, (byte)0);
+        this.var_byte_N = (byte)this.var_f_a.int_a(65535, (int)this.var_byte_arr_b[this.var_short_arr_a[235] + this.var_f_a.var_byte_q]);
+        this.var_byte_O = 0;
+    }
 
-         this.R = (byte)(this.R & 127);
-         this.a(this.x - this.aU, this.b[this.a[233] + this.a.q], this.b[this.a[234] + this.a.q], (byte)((byte)this.u), (byte)0);
-         this.N = (byte)this.a.a((int)65535, (int)this.b[this.a[235] + this.a.q]);
-         this.O = 0;
-      }
-   }
+    private void aw() {
+        boolean bl = true;
+        this.aU = 0;
+        this.var_int_v = this.var_int_u * 50 + 1;
+        while (this.var_int_v <= (this.var_int_u + 1) * 50) {
+            if (this.var_byte_arr_a[1919 + this.var_int_v] > 0 && this.var_byte_arr_a[1414 + this.var_int_v] >= 12 && (this.var_byte_arr_a[7979 + this.var_int_v] & 0x40) != 0) {
+                ++this.aU;
+                if (this.var_byte_arr_arr_b[this.var_byte_arr_a[101 + this.var_int_v]][this.var_byte_arr_a[0 + this.var_int_v]] != this.var_int_v) {
+                    bl = false;
+                    this.var_byte_arr_a[2828 + this.var_int_v] = 87;
+                    this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+                } else {
+                    if (this.var_byte_arr_a[6161 + this.var_int_v] == 0) {
+                        this.aT = this.var_short_arr_a[239] + (this.var_byte_arr_b[this.var_short_arr_a[240] + this.var_f_a.var_byte_q] & 0xFF) + this.var_byte_arr_b[this.var_short_arr_a[237] + this.var_byte_arr_b[this.var_short_arr_a[238] + this.var_f_a.var_byte_q] + this.var_byte_N] + this.var_byte_O * 2;
+                        byte by = this.var_byte_arr_b[this.aT];
+                        this.var_byte_arr_a[3131 + this.var_int_v] = by;
+                        this.var_byte_arr_a[6262 + this.var_int_v] = by;
+                        byte by2 = this.var_byte_arr_b[this.aT + 1];
+                        this.var_byte_arr_a[3232 + this.var_int_v] = by2;
+                        this.var_byte_arr_a[6363 + this.var_int_v] = by2;
+                        this.var_byte_arr_a[6161 + this.var_int_v] = 3;
+                        this.var_byte_arr_a[2828 + this.var_int_v] = 69;
+                    } else {
+                        bl = false;
+                    }
+                    if (bl && this.int_a((int)this.var_byte_arr_a[0 + this.var_int_v], (int)this.var_byte_arr_a[101 + this.var_int_v], 0) > 69) {
+                        bl = false;
+                    }
+                }
+            }
+            ++this.var_int_v;
+        }
+        if (bl || this.aR + (this.var_byte_O + 1) * 150 < this.var_f_a.var_int_c) {
+            this.var_byte_O = (byte)(this.var_byte_O + 1);
+        }
+        if (this.aU == 0 || this.var_byte_O >= this.var_byte_arr_b[this.var_short_arr_a[236] + this.var_byte_arr_b[this.var_short_arr_a[238] + this.var_f_a.var_byte_q] + this.var_byte_N]) {
+            this.var_byte_O = (byte)-1;
+        }
+    }
 
-   private void aw() {
-      boolean var1 = true;
-      this.aU = 0;
+    final void a(int n, int n2, int n3, byte by, byte by2) {
+        this.var_int_a = 0;
+        while (this.var_int_a < n) {
+            int n4 = n3;
+            int n5 = n2;
+            if (this.var_byte_arr_arr_b[n4][n5] != 0) {
+                this.var_int_v = 0;
+                this.boolean_a(1, 127, n5, n4);
+                n5 = this.var_byte_arr_a[3131];
+                n4 = this.var_byte_arr_a[3232];
+            }
+            byte by3 = this.var_f_a.a(by, (byte)n5, (byte)n4, (byte)20, (byte)0);
+            this.var_int_b = by3;
+            if (by3 > 0) {
+                this.var_byte_arr_a[6565 + this.var_int_b] = by2;
+                if (this.aU >= 0 && by == 1) {
+                    this.var_int_v = this.var_int_b;
+                    this.var_byte_arr_a[this.var_short_arr_b[16 + (this.var_int_b & 1)] + this.var_int_b] = (byte)this.var_int_y;
+                    this.L();
+                    int n6 = 7979 + this.var_int_b;
+                    this.var_byte_arr_a[n6] = (byte)(this.var_byte_arr_a[n6] | 0x40);
+                }
+            }
+            ++this.var_int_a;
+        }
+    }
 
-      for(this.v = this.u * 50 + 1; this.v <= (this.u + 1) * 50; ++this.v) {
-         if (this.a[1919 + this.v] > 0 && this.a[1414 + this.v] >= 12 && (this.a[7979 + this.v] & 64) != 0) {
-            ++this.aU;
-            if (this.b[this.a[101 + this.v]][this.a[0 + this.v]] != this.v) {
-               var1 = false;
-               this.a[2828 + this.v] = 87;
-               this.a[6161 + this.v] = 3;
+    final void void_l() {
+        this.var_int_a = 1;
+        while (this.var_int_a <= 60) {
+            this.var_f_a.c(this.var_int_a, false);
+            ++this.var_int_a;
+        }
+        this.var_int_a = 1;
+        while (this.var_int_a <= 100) {
+            if (this.var_byte_arr_a[1919 + this.var_int_a] != 0) {
+                this.var_f_a.a((byte)this.var_int_a);
+                this.m(this.var_int_a);
+            }
+            ++this.var_int_a;
+        }
+        this.var_int_a = 0;
+        while (this.var_int_a < 22) {
+            this.l(this.var_int_a);
+            ++this.var_int_a;
+        }
+    }
+
+    final void void_m() {
+        this.var_int_a = 51;
+        while (this.var_int_a <= 100) {
+            if (this.var_byte_arr_a[1919 + this.var_int_a] != 0) {
+                this.var_f_a.a((byte)this.var_int_a);
+                this.m(this.var_int_a);
+            }
+            ++this.var_int_a;
+        }
+        this.var_int_a = 0;
+        while (this.var_int_a < 22) {
+            this.l(this.var_int_a);
+            ++this.var_int_a;
+        }
+    }
+
+    final void void_a(int n, int n2, int n3) {
+        this.aV = 0;
+        while (this.aV <= n3 << 1) {
+            if (n2 - n3 + this.aV >= 0) {
+                if (n2 - n3 + this.aV >= this.var_f_a.var_short_d) {
+                    return;
+                }
+                this.aY = this.var_byte_arr_b[this.var_short_arr_a[54] + (this.var_byte_arr_b[this.var_short_arr_a[55] + n3] & 0xFF) + this.aV];
+                this.d(n - (this.aY >> 1), n2 - n3 + this.aV, this.aY);
+            }
+            ++this.aV;
+        }
+    }
+
+    final void void_a(int n, int n2, int n3, int n4) {
+        this.aV = 0;
+        while (this.aV < n4) {
+            if (n2 + this.aV >= 0) {
+                if (n2 + this.aV >= this.var_f_a.var_short_d) {
+                    return;
+                }
+                this.d(n, n2 + this.aV, n3);
+            }
+            ++this.aV;
+        }
+    }
+
+    private void d(int n, int n2, int n3) {
+        this.aW = 0;
+        while (this.aW < 3) {
+            this.aX = 0;
+            if (n >= this.aW << 5) {
+                if (n < this.aW + 1 << 5) {
+                    this.aX = this.var_int_arr_a[n3] << n - (this.aW << 5);
+                }
+            } else if (n + n3 >= this.aW << 5) {
+                this.aX = this.var_int_arr_a[n3] >> (this.aW << 5) - n;
+            }
+            if (this.aX != 0) {
+                int[] nArray = this.var_f_a.var_int_arr_arr_arr_a[this.var_byte_S][this.aW];
+                int n4 = n2;
+                nArray[n4] = nArray[n4] | this.aX;
+            }
+            ++this.aW;
+        }
+    }
+
+    private void c(int n, int n2, int n3, int n4) {
+        byte by = this.var_byte_arr_arr_b[n2][n];
+        if (n4 == 0) {
+            by = this.var_byte_arr_a[4747 + this.var_int_v];
+        }
+        if (n3 == 0 && (this.var_f_a.var_int_arr_arr_arr_a[0][n >> 5][n2] >> (n & 0x1F) & 1) == 0) {
+            this.e(0, 0, n3);
+        } else {
+            for (int n5 = 0; n5 < 7; n5 = (int)((byte)(n5 + 1))) {
+                if (by < this.var_byte_arr_b[this.var_short_arr_a[89] + 0 + n5] || by > this.var_byte_arr_b[this.var_short_arr_a[89] + 7 + n5]) continue;
+                if (n3 == 0 && n5 == 1 && (this.var_f_a.var_int_arr_arr_arr_a[1][n >> 5][n2] >> (n & 0x1F) & 1) == 0) {
+                    this.e(0, 0, n3);
+                    break;
+                }
+                this.e(by, n5, n3);
+                break;
+            }
+        }
+        if ((this.var_byte_arr_k[0] == 1 || this.var_byte_arr_k[0] == 2) && this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[78] + 0 + this.var_byte_arr_k[0]]] + this.var_byte_arr_k[2]] <= 0) {
+            this.e(-126, 6, n3);
+        }
+    }
+
+    private void e(int n, int n2, int n3) {
+        this.var_byte_arr_k[0] = (byte)n2;
+        this.var_byte_arr_k[2] = (byte)(n * this.var_byte_arr_b[this.var_short_arr_a[90] + 0 + n2] + this.var_byte_arr_b[this.var_short_arr_a[90] + 7 + n2]);
+        this.var_byte_arr_k[1] = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[91] + n2]] + this.var_byte_arr_k[2]];
+        if (this.var_byte_arr_b[this.var_short_arr_a[92] + n2] < 127) {
+            this.var_byte_arr_k[3] = (byte)((this.var_byte_arr_k[2] - (this.var_byte_arr_k[0] == 1 || this.var_byte_arr_k[0] == 2 ? (byte)1 : 0)) / this.var_byte_arr_b[this.var_short_arr_a[92] + n2] + n3 & 1);
+            return;
+        }
+        this.var_byte_arr_k[3] = 0;
+    }
+
+    private byte byte_a() {
+        if (this.var_byte_arr_k[3] == 0) {
+            if (this.var_byte_arr_k[0] == 2) {
+                if (this.var_byte_arr_k[1] != 10 && this.var_byte_arr_a[1414 + this.var_int_v] < 12) {
+                    return 11;
+                }
+                if (this.var_byte_arr_k[1] == 2 && this.var_byte_arr_a[8627 + this.var_byte_arr_k[2]] == 0 && this.var_byte_arr_a[9237 + this.var_byte_arr_k[2]] > 1 && this.var_byte_arr_a[2828 + this.var_int_v] != 111) {
+                    return 13;
+                }
+                if (this.var_byte_arr_a[8627 + this.var_byte_arr_k[2]] == 1 || this.var_byte_arr_a[8627 + this.var_byte_arr_k[2]] == 2) {
+                    this.var_byte_k = (byte)8;
+                } else {
+                    if (this.var_byte_arr_k[1] == 1 && this.var_byte_arr_b[this.var_short_arr_a[77] + this.var_byte_arr_a[6565 + this.var_int_v]] != -1) {
+                        return 6;
+                    }
+                    if (this.var_byte_arr_k[1] == 5 && this.var_byte_arr_b[this.var_short_arr_a[77] + this.var_byte_arr_a[6565 + this.var_int_v]] < 0) {
+                        return 7;
+                    }
+                    if (this.var_byte_arr_k[1] == 10 && this.var_byte_arr_a[1414 + this.var_int_v] >= 11) {
+                        return 9;
+                    }
+                    if (this.var_byte_arr_k[1] == 3 && this.var_int_v != this.var_short_arr_arr_a[0][17]) {
+                        return 10;
+                    }
+                    if (this.var_byte_arr_a[8810 + this.var_byte_arr_k[2]] > 0 && this.var_byte_arr_a[8810 + this.var_byte_arr_k[2]] != this.var_int_v) {
+                        this.var_byte_k = (byte)7;
+                    }
+                }
+            } else if (this.var_byte_arr_k[0] == 3 && this.var_byte_arr_k[1] == 5 && this.var_byte_arr_a[6565 + this.var_int_v] != 2) {
+                return 8;
+            }
+        }
+        return -1;
+    }
+
+    final void a(byte by, int n, int n2) {
+        if (n > 50) {
+            return;
+        }
+        if (this.var_f_a.var_byte_q < this.var_byte_arr_b[this.var_short_arr_a[293] + by]) {
+            return;
+        }
+        if (this.var_short_arr_d[this.var_byte_arr_b[this.var_short_arr_a[292] + by]] < 0) {
+            this.var_short_arr_d[this.var_byte_arr_b[this.var_short_arr_a[292] + by]] = 0;
+            if (by != 4 && by != 5 && this.var_byte_K >= 50 || (by == 4 || by == 5) && (this.var_byte_z < this.var_f_a.var_byte_I || this.var_byte_z >= this.var_f_a.var_byte_I + this.var_f_a.var_byte_O || this.var_byte_A < this.var_f_a.var_byte_K || this.var_byte_A >= this.var_f_a.var_byte_K + this.var_f_a.var_byte_P)) {
+                this.var_f_a.a(by, (byte)n, (byte)n2);
+            }
+        }
+    }
+
+    private void ax() {
+        this.var_int_a = 0;
+        while (this.var_int_a < 6) {
+            if (this.var_f_a.var_int_l != 1) {
+                this.var_short_arr_d[this.var_int_a] = this.var_short_arr_b[this.var_short_arr_c[2] + this.var_int_a];
             } else {
-               if (this.a[6161 + this.v] == 0) {
-                  this.aT = this.a[239] + (this.b[this.a[240] + this.a.q] & 255) + this.b[this.a[237] + this.b[this.a[238] + this.a.q] + this.N] + this.O * 2;
-                  this.a[6262 + this.v] = this.a[3131 + this.v] = this.b[this.aT];
-                  this.a[6363 + this.v] = this.a[3232 + this.v] = this.b[this.aT + 1];
-                  this.a[6161 + this.v] = 3;
-                  this.a[2828 + this.v] = 69;
-               } else {
-                  var1 = false;
-               }
-
-               if (var1 && this.a((int)this.a[0 + this.v], (int)this.a[101 + this.v], (int)0) > 69) {
-                  var1 = false;
-               }
+                if (this.var_short_arr_d[this.var_int_a] >= 0) {
+                    int n = this.var_int_a;
+                    this.var_short_arr_d[n] = (short)(this.var_short_arr_d[n] + 1);
+                }
+                if (this.var_short_arr_d[this.var_int_a] >= this.var_short_arr_b[this.var_short_arr_c[2] + this.var_int_a]) {
+                    this.var_short_arr_d[this.var_int_a] = -1;
+                }
             }
-         }
-      }
+            ++this.var_int_a;
+        }
+    }
 
-      if (var1 || this.aR + (this.O + 1) * 150 < this.a.c) {
-         ++this.O;
-      }
-
-      if (this.aU == 0 || this.O >= this.b[this.a[236] + this.b[this.a[238] + this.a.q] + this.N]) {
-         this.O = -1;
-      }
-
-   }
-
-   final void a(int var1, int var2, int var3, byte var4, byte var5) {
-      for(this.a = 0; this.a < var1; ++this.a) {
-         int var6 = var2;
-         int var7 = var3;
-         if (this.b[var3][var2] != 0) {
-            this.v = 0;
-            this.a((int)1, (int)127, (int)var2, (int)var3);
-            var6 = this.a[3131];
-            var7 = this.a[3232];
-         }
-
-         if ((this.b = this.a.a((byte)var4, (byte)((byte)var6), (byte)((byte)var7), (byte)20, (byte)0)) > 0) {
-            this.a[6565 + this.b] = var5;
-            if (this.aU >= 0 && var4 == 1) {
-               this.v = this.b;
-               this.a[this.b[16 + (this.b & 1)] + this.b] = (byte)this.y;
-               this.L();
-               byte[] var10000 = this.a;
-               int var10001 = 7979 + this.b;
-               var10000[var10001] = (byte)(var10000[var10001] | 64);
+    final void void_n() {
+        int n;
+        int n2;
+        int n3;
+        for (n3 = 0; n3 < 5; ++n3) {
+            for (n2 = 0; n2 < 6; ++n2) {
+                for (n = 0; n < 6; ++n) {
+                    this.var_byte_arr_arr_arr_c[n3][n2][n] = -1;
+                }
             }
-         }
-      }
-
-   }
-
-   final void l() {
-      for(this.a = 1; this.a <= 60; ++this.a) {
-         this.a.c(this.a, false);
-      }
-
-      for(this.a = 1; this.a <= 100; ++this.a) {
-         if (this.a[1919 + this.a] != 0) {
-            this.a.a((byte)this.a);
-            this.m(this.a);
-         }
-      }
-
-      for(this.a = 0; this.a < 22; ++this.a) {
-         this.l(this.a);
-      }
-
-   }
-
-   final void m() {
-      for(this.a = 51; this.a <= 100; ++this.a) {
-         if (this.a[1919 + this.a] != 0) {
-            this.a.a((byte)this.a);
-            this.m(this.a);
-         }
-      }
-
-      for(this.a = 0; this.a < 22; ++this.a) {
-         this.l(this.a);
-      }
-
-   }
-
-   final void a(int var1, int var2, int var3) {
-      for(this.aV = 0; this.aV <= var3 << 1; ++this.aV) {
-         if (var2 - var3 + this.aV >= 0) {
-            if (var2 - var3 + this.aV >= this.a.d) {
-               return;
+        }
+        for (n3 = 0; n3 < 5; ++n3) {
+            for (n2 = this.var_byte_arr_b[this.var_short_arr_a[115] + n3]; n2 <= this.var_byte_arr_b[this.var_short_arr_a[116] + n3]; ++n2) {
+                if (this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[117] + n3]] + n2] <= 0 || n3 <= 1 && this.var_byte_arr_arr_b[this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[118] + n3] + 1] + n2]][this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[118] + n3]] + n2]] != n2 && this.var_byte_arr_a[2828 + n2] != 93 && this.var_byte_arr_a[2828 + n2] != 92 && this.var_byte_arr_a[2828 + n2] != 106) continue;
+                int n4 = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[118] + n3]] + n2] >> 4;
+                int n5 = this.var_byte_arr_a[this.var_short_arr_b[this.var_byte_arr_b[this.var_short_arr_a[118] + n3] + 1] + n2] >> 4;
+                n = n2 - this.var_byte_arr_b[this.var_short_arr_a[115] + n3];
+                this.var_byte_arr_arr_a[n3][n] = this.var_byte_arr_arr_arr_c[n3][n5][n4];
+                this.var_byte_arr_arr_arr_c[n3][n5][n4] = (byte)n;
             }
-
-            this.aY = this.b[this.a[54] + (this.b[this.a[55] + var3] & 255) + this.aV];
-            this.d(var1 - (this.aY >> 1), var2 - var3 + this.aV, this.aY);
-         }
-      }
-
-   }
-
-   final void a(int var1, int var2, int var3, int var4) {
-      for(this.aV = 0; this.aV < var4; ++this.aV) {
-         if (var2 + this.aV >= 0) {
-            if (var2 + this.aV >= this.a.d) {
-               return;
-            }
-
-            this.d(var1, var2 + this.aV, var3);
-         }
-      }
-
-   }
-
-   private void d(int var1, int var2, int var3) {
-      for(this.aW = 0; this.aW < 3; ++this.aW) {
-         this.aX = 0;
-         if (var1 >= this.aW << 5) {
-            if (var1 < this.aW + 1 << 5) {
-               this.aX = this.a[var3] << var1 - (this.aW << 5);
-            }
-         } else if (var1 + var3 >= this.aW << 5) {
-            this.aX = this.a[var3] >> (this.aW << 5) - var1;
-         }
-
-         if (this.aX != 0) {
-            int[] var10000 = this.a.a[this.S][this.aW];
-            var10000[var2] |= this.aX;
-         }
-      }
-
-   }
-
-   private void c(int var1, int var2, int var3, int var4) {
-      byte var5 = this.b[var2][var1];
-      if (var4 == 0) {
-         var5 = this.a[4747 + this.v];
-      }
-
-      if (var3 == 0 && (this.a.a[0][var1 >> 5][var2] >> (var1 & 31) & 1) == 0) {
-         this.e(0, 0, var3);
-      } else {
-         for(byte var6 = 0; var6 < 7; ++var6) {
-            if (var5 >= this.b[this.a[89] + 0 + var6] && var5 <= this.b[this.a[89] + 7 + var6]) {
-               if (var3 == 0 && var6 == 1 && (this.a.a[1][var1 >> 5][var2] >> (var1 & 31) & 1) == 0) {
-                  this.e(0, 0, var3);
-               } else {
-                  this.e(var5, var6, var3);
-               }
-               break;
-            }
-         }
-      }
-
-      if ((this.k[0] == 1 || this.k[0] == 2) && this.a[this.b[this.b[this.a[78] + 0 + this.k[0]]] + this.k[2]] <= 0) {
-         this.e(-126, 6, var3);
-      }
-
-   }
-
-   private void e(int var1, int var2, int var3) {
-      this.k[0] = (byte)var2;
-      this.k[2] = (byte)(var1 * this.b[this.a[90] + 0 + var2] + this.b[this.a[90] + 7 + var2]);
-      this.k[1] = this.a[this.b[this.b[this.a[91] + var2]] + this.k[2]];
-      if (this.b[this.a[92] + var2] >= 127) {
-         this.k[3] = 0;
-      } else {
-         this.k[3] = (byte)((this.k[2] - (this.k[0] != 1 && this.k[0] != 2 ? 0 : 1)) / this.b[this.a[92] + var2] + var3 & 1);
-      }
-   }
-
-   private byte a() {
-      if (this.k[3] == 0) {
-         if (this.k[0] == 2) {
-            if (this.k[1] != 10 && this.a[1414 + this.v] < 12) {
-               return 11;
-            }
-
-            if (this.k[1] == 2 && this.a[8627 + this.k[2]] == 0 && this.a[9237 + this.k[2]] > 1 && this.a[2828 + this.v] != 111) {
-               return 13;
-            }
-
-            if (this.a[8627 + this.k[2]] != 1 && this.a[8627 + this.k[2]] != 2) {
-               if (this.k[1] == 1 && this.b[this.a[77] + this.a[6565 + this.v]] != -1) {
-                  return 6;
-               }
-
-               if (this.k[1] == 5 && this.b[this.a[77] + this.a[6565 + this.v]] < 0) {
-                  return 7;
-               }
-
-               if (this.k[1] == 10 && this.a[1414 + this.v] >= 11) {
-                  return 9;
-               }
-
-               if (this.k[1] == 3 && this.v != this.a[0][17]) {
-                  return 10;
-               }
-
-               if (this.a[8810 + this.k[2]] > 0 && this.a[8810 + this.k[2]] != this.v) {
-                  this.k = 7;
-               }
-            } else {
-               this.k = 8;
-            }
-         } else if (this.k[0] == 3 && this.k[1] == 5 && this.a[6565 + this.v] != 2) {
-            return 8;
-         }
-      }
-
-      return -1;
-   }
-
-   final void a(byte var1, int var2, int var3) {
-      if (var2 <= 50) {
-         if (this.a.q >= this.b[this.a[293] + var1]) {
-            if (this.d[this.b[this.a[292] + var1]] < 0) {
-               this.d[this.b[this.a[292] + var1]] = 0;
-               if (var1 != 4 && var1 != 5 && this.K >= 50 || (var1 == 4 || var1 == 5) && (this.z < this.a.I || this.z >= this.a.I + this.a.O || this.A < this.a.K || this.A >= this.a.K + this.a.P)) {
-                  this.a.a(var1, (byte)var2, (byte)var3);
-               }
-            }
-
-         }
-      }
-   }
-
-   private void ax() {
-      for(this.a = 0; this.a < 6; ++this.a) {
-         if (this.a.l != 1) {
-            this.d[this.a] = this.b[this.c[2] + this.a];
-         } else {
-            if (this.d[this.a] >= 0) {
-               ++this.d[this.a];
-            }
-
-            if (this.d[this.a] >= this.b[this.c[2] + this.a]) {
-               this.d[this.a] = -1;
-            }
-         }
-      }
-
-   }
-
-   final void n() {
-      for(int var1 = 0; var1 < 5; ++var1) {
-         for(int var2 = 0; var2 < 6; ++var2) {
-            for(int var3 = 0; var3 < 6; ++var3) {
-               this.c[var1][var2][var3] = -1;
-            }
-         }
-      }
-
-      for(int var6 = 0; var6 < 5; ++var6) {
-         for(int var7 = this.b[this.a[115] + var6]; var7 <= this.b[this.a[116] + var6]; ++var7) {
-            if (this.a[this.b[this.b[this.a[117] + var6]] + var7] > 0 && (var6 > 1 || this.b[this.a[this.b[this.b[this.a[118] + var6] + 1] + var7]][this.a[this.b[this.b[this.a[118] + var6]] + var7]] == var7 || this.a[2828 + var7] == 93 || this.a[2828 + var7] == 92 || this.a[2828 + var7] == 106)) {
-               int var4 = this.a[this.b[this.b[this.a[118] + var6]] + var7] >> 4;
-               int var5 = this.a[this.b[this.b[this.a[118] + var6] + 1] + var7] >> 4;
-               int var8 = var7 - this.b[this.a[115] + var6];
-               this.a[var6][var8] = this.c[var6][var5][var4];
-               this.c[var6][var5][var4] = (byte)var8;
-            }
-         }
-      }
-
-   }
+        }
+    }
 }
+
