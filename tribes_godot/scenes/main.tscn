@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://main_scene"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="Script" path="res://scripts/game_state_manager.gd" id="2_state"]
+[ext_resource type="Script" path="res://scripts/sprite_data_manager.gd" id="3_sprite"]
+[ext_resource type="Script" path="res://scripts/audio_manager.gd" id="4_audio"]
+[ext_resource type="Script" path="res://scripts/text_manager.gd" id="5_text"]
+[ext_resource type="Script" path="res://scripts/virtual_controls.gd" id="6_controls"]
+[ext_resource type="Script" path="res://scenes/main_menu_scene.gd" id="7_menu"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="SplashSprite" type="Sprite2D" parent="."]
+position = Vector2(160, 120)
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="VirtualControls" parent="UILayer" type="CanvasLayer"]
+script = ExtResource("6_controls")
+
+[node name="MainMenuScene" parent="UILayer" type="CanvasLayer"]
+script = ExtResource("7_menu")
+
+[node name="GameStateManager" type="Node" parent="."]
+script = ExtResource("2_state")
+
+[node name="SpriteDataManager" type="Node" parent="."]
+script = ExtResource("3_sprite")
+
+[node name="AudioManager" type="Node" parent="."]
+script = ExtResource("4_audio")
+
+[node name="TextManager" type="Node" parent="."]
+script = ExtResource("5_text")
